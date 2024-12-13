@@ -13,8 +13,12 @@ const Header: React.FC = () => {
   return (
     <header className="bg-white shadow-md">
       {/* Logo Section */}
-      <div className="flex justify-center py-4">
-        <div className="text-2xl font-bold text-gray-800">LOGO</div>
+      <div className="flex justify-center items-center py-4">
+        <img
+          src="/logos/APEC-only.png"
+          alt="APEC Logo"
+          className="h-12 w-auto md:h-16"
+        />
       </div>
 
       {/* Navigation Section */}
