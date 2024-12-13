@@ -1,105 +1,57 @@
-'use client';
+"use client";
 
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState } from 'react';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsOpen(!isOpen);
   };
 
   return (
-    <header className="bg-white shadow-md">
-      {/* Logo Section */}
-      <div className="flex justify-center items-center py-4">
-        <img
+    <header className="bg-black text-white shadow">
+      <div className="container mx-auto flex flex-col items-center py-6">
+        <Image
           src="/logos/APEC-only.png"
           alt="APEC Logo"
-          className="h-12 w-auto md:h-16"
+          width={150}
+          height={60}
+          className="mb-4"
         />
-      </div>
-
-      {/* Navigation Section */}
-      <nav className="relative">
         <button
-          className="block md:hidden absolute top-6 right-6 text-2xl"
+          className="md:hidden text-white focus:outline-none"
           onClick={toggleMenu}
-          aria-label="Toggle Menu"
         >
-          ☰
+          {isOpen ? 'Close' : 'Menu'}
         </button>
-        <ul
-          className={`flex flex-col md:flex-row justify-center items-center md:space-x-8 md:static absolute top-16 left-0 w-full bg-white md:bg-transparent transition-transform duration-300 ${isMenuOpen ? "translate-y-0" : "-translate-y-full md:translate-y-0"
-            }`}
+        <nav
+          className={`flex-col md:flex md:flex-row md:space-x-6 transition-transform duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex`}
         >
-          <li className="py-2 md:py-0">
-            <Link href="/" className="text-gray-800 hover:text-blue-500">
-              Home
-            </Link>
-          </li>
-          <li className="py-2 md:py-0">
-            <Link href="/about-us" className="text-gray-800 hover:text-blue-500">
-              About Us
-            </Link>
-          </li>
-          <li className="py-2 md:py-0">
-            <Link href="/our-team" className="text-gray-800 hover:text-blue-500">
-              Our Team
-            </Link>
-          </li>
-          <li className="relative group py-2 md:py-0">
-            <span className="text-gray-800 hover:text-blue-500 cursor-pointer">
-              APEC Services
-            </span>
-            <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md hidden group-hover:block">
-              <li>
-                <Link
-                  href="/services/service1"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
-                >
-                  Service 1
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/service2"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
-                >
-                  Service 2
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/service3"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
-                >
-                  Service 3
-                </Link>
-              </li>
-            </ul>
-          </li>
-          <li className="py-2 md:py-0">
-            <Link href="/careers" className="text-gray-800 hover:text-blue-500">
-              Careers
-            </Link>
-          </li>
-          <li className="py-2 md:py-0">
-            <Link href="/blog" className="text-gray-800 hover:text-blue-500">
-              Blog
-            </Link>
-          </li>
-          <li className="py-2 md:py-0">
-            <Link
-              href="/contact-us"
-              className="text-gray-800 hover:text-blue-500"
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
-      </nav>
+          <a href="/" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            Home
+          </a>
+          <a href="/about" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            About Us
+          </a>
+          <a href="/team" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            Our Team
+          </a>
+          <a href="/services" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            APEC Services
+          </a>
+          <a href="/careers" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            Careers
+          </a>
+          <a href="/blog" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            Blog
+          </a>
+          <a href="/contact" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            Contact Us
+          </a>
+        </nav>
+      </div>
     </header>
   );
 };
