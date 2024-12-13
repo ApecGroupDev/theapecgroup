@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,27 +30,27 @@ const Header: React.FC = () => {
         <nav
           className={`flex-col md:flex md:flex-row md:space-x-6 transition-transform duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex`}
         >
-          <a href="/" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          <Link href="/" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Home
-          </a>
-          <a href="/about" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          </Link>
+          <Link href="/about" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             About Us
-          </a>
-          <a href="/team" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          </Link>
+          <Link href="/team" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Our Team
-          </a>
-          <a href="/services" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          </Link>
+          <Link href="/services" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             APEC Services
-          </a>
-          <a href="/careers" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          </Link>
+          <Link href="/careers" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Careers
-          </a>
-          <a href="/blog" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          </Link>
+          <Link href="/blog" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Blog
-          </a>
-          <a href="/contact" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          </Link>
+          <Link href="/contact" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Contact Us
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
