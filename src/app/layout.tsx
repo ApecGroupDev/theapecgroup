@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 export const metadata = {
   title: 'APEC main Website',
@@ -13,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen">
 
         {/* Add the Header here */}
-        <Header/>
+        <Header />
 
         {/* Main content of the page */}
         <div className="max-w-7xl mx-auto p-4">
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Add the Footer here */}
+        <Footer />
 
       </body>
     </html>
