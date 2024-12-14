@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home: React.FC = () => {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-12">
       <h1 className="text-4xl font-bold text-center my-4">
         Welcome to APEC
       </h1>
