@@ -1,9 +1,18 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <header className="bg-white shadow">
+    <header className="bg-black text-white shadow">
       <div className="container mx-auto flex flex-col items-center py-6">
         <Image
           src="/logos/APEC-only.png"
@@ -12,28 +21,36 @@ const Header: React.FC = () => {
           height={60}
           className="mb-4"
         />
-        <nav className="flex space-x-6">
-          <a href="/" className="text-gray-700 hover:text-blue-500">
+        <button
+          className="md:hidden text-white focus:outline-none"
+          onClick={toggleMenu}
+        >
+          {isOpen ? 'Close' : 'Menu'}
+        </button>
+        <nav
+          className={`flex-col md:flex md:flex-row md:space-x-6 transition-transform duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex`}
+        >
+          <Link href="/" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Home
-          </a>
-          <a href="/about" className="text-gray-700 hover:text-blue-500">
+          </Link>
+          <Link href="/about" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             About Us
-          </a>
-          <a href="/team" className="text-gray-700 hover:text-blue-500">
+          </Link>
+          <Link href="/team" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Our Team
-          </a>
-          <a href="/services" className="text-gray-700 hover:text-blue-500">
+          </Link>
+          <Link href="/services" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             APEC Services
-          </a>
-          <a href="/careers" className="text-gray-700 hover:text-blue-500">
+          </Link>
+          <Link href="/careers" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Careers
-          </a>
-          <a href="/blog" className="text-gray-700 hover:text-blue-500">
+          </Link>
+          <Link href="/blog" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Blog
-          </a>
-          <a href="/contact" className="text-gray-700 hover:text-blue-500">
+          </Link>
+          <Link href="/contact" className="my-2 md:my-0 text-gray-300 hover:text-blue-400 transition-colors duration-200">
             Contact Us
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
