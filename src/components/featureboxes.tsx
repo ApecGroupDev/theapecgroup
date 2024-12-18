@@ -39,12 +39,12 @@ const FeatureBoxes: React.FC = () => {
           {/* Icon and Title */}
           <div className="flex flex-col items-center justify-center h-72">
             {feature.icon}
-            <h2 className="text-xl font-bold text-center mt-4">{feature.title}</h2>
+            <h2 className="text-2xl font-bold text-center mt-4">{feature.title}</h2>
           </div>
 
           {/* Description (Hidden by default, revealed on hover) */}
           <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-            <p className="text-sm text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+            <p className="text-lg text-gray-700 text-center overflow-y-auto max-h-48 px-4">
               {feature.description}
             </p>
           </div>
