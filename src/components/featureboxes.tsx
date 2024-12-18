@@ -30,27 +30,40 @@ const features: FeatureBox[] = [
 
 const FeatureBoxes: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 py-8">
-      {features.map((feature, index) => (
-        <div
-          key={index}
-          className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 transform hover:scale-105 hover:h-auto"
-        >
-          {/* Icon and Title */}
-          <div className="flex flex-col items-center justify-center h-72">
-            {feature.icon}
-            <h2 className="text-2xl font-bold text-center mt-4">{feature.title}</h2>
-          </div>
+    <section className="px-6 py-12 bg-gray-50">
+      {/* Section Title */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-extrabold text-gray-800 mb-4">WHY APEC?</h2>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          Discover what makes APEC unique and why our team, execution, and customer-first approach set us apart.
+        </p>
+      </div>
 
-          {/* Description (Hidden by default, revealed on hover) */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-            <p className="text-lg text-gray-700 text-center overflow-y-auto max-h-48 px-4">
-              {feature.description}
-            </p>
+      {/* Feature Boxes */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 transform hover:scale-105"
+          >
+            {/* Icon and Title */}
+            <div className="flex flex-col items-center justify-center h-72">
+              {feature.icon}
+              <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">
+                {feature.title}
+              </h3>
+            </div>
+
+            {/* Description (Hidden by default, revealed on hover) */}
+            <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
+              <p className="text-lg text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+                {feature.description}
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
