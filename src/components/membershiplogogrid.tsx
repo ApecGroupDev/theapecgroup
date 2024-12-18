@@ -10,11 +10,11 @@ const associations = [
   { src: "/associations/TFFA.png", alt: "TFFA - Texas Food & Fuel Association", name: "Texas Food & Fuel Association" },
 ];
 
-const truncateText = (text: string, maxWords: number): string => {
+const splitText = (text: string, maxWords: number): [string, string] => {
   const words = text.split(" ");
-  return words.length > maxWords
-    ? words.slice(0, maxWords).join(" ") + "..."
-    : text;
+  const firstLine = words.slice(0, maxWords).join(" ");
+  const secondLine = words.slice(maxWords).join(" ");
+  return [firstLine, secondLine]; // Return both lines as an array
 };
 
 const MembershipLogosGrid: React.FC = () => {
@@ -24,27 +24,32 @@ const MembershipLogosGrid: React.FC = () => {
         Proud Member Of
       </h2>
       <div className="flex flex-wrap justify-center gap-10 px-4 sm:px-6 lg:px-8">
-        {associations.map((association, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center p-6 transition:hover-105"
-          >
-            {/* Logo */}
-            <img
-              src={association.src}
-              alt={association.alt}
-              className="h-48 max-w-full object-contain mb-4"
-              style={{ backgroundColor: "transparent" }}
-            />
-            {/* Placeholder for Company Name */}
-            <p className="text-md text-gray-700 text-center font-normal">
-              {truncateText(association.name, 3)}
-            </p>
-          </div>
-        ))}
+        {associations.map((association, index) => {
+          const [firstLine, secondLine] = splitText(association.name, 3); // Destructure the two lines
+          return (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center p-6 transition:hover-105"
+            >
+              {/* Logo */}
+              <img
+                src={association.src}
+                alt={association.alt}
+                className="h-48 max-w-full object-contain mb-4"
+                style={{ backgroundColor: "transparent" }}
+              />
+              {/* Company Name */}
+              <p className="text-md text-gray-700 text-center font-normal">
+                <span>{firstLine}</span>
+                {secondLine && <span className="block">{secondLine}</span>}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
 };
 
 export default MembershipLogosGrid;
+
