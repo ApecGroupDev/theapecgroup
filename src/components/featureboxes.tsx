@@ -33,7 +33,7 @@ const FeatureBoxes: React.FC = () => {
     <section className="px-6 py-12 bg-gray-50">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-4">WHY APEC?</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">WHY <span className="text-red-600">APEC?</span></h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Discover what makes APEC unique and why our team, execution, and customer-first approach set us apart.
         </p>

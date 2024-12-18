@@ -20,16 +20,21 @@ const splitText = (text: string, maxWords: number): [string, string] => {
 const MembershipLogosGrid: React.FC = () => {
   return (
     <section className="py-10 bg-gray-50">
-      <h2 className="text-center text-3xl font-bold text-gray-800 mb-8">
-        Proud Member Of
-      </h2>
+      <div className="text-center mb-8">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight leading-tight">
+          <span className="text-red-600">Proud</span> Member Of
+        </h2>
+        <p className="text-lg md:text-xl text-gray-500 mt-2 max-w-2xl mx-auto">
+          Our associations reflect our dedication to quality, collaboration, and industry leadership.
+        </p>
+      </div>
       <div className="flex flex-wrap justify-center gap-10 px-4 sm:px-6 lg:px-8">
         {associations.map((association, index) => {
           const [firstLine, secondLine] = splitText(association.name, 3); // Destructure the two lines
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center p-6 transition:hover-105"
+              className="flex flex-col items-center justify-center p-6 hover:scale-110"
             >
               {/* Logo */}
               <img
