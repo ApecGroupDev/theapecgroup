@@ -1,9 +1,11 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import '../styles/membershiplogoslider.css';
 
 const associations = [
   { src: "/associations/ARA.png", alt: "ARA - Atlanta Retailers Association", name: "Atlanta Retailers Association" },
@@ -27,14 +29,15 @@ const MembershipLogosCarousel: React.FC = () => {
         </p>
       </div>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={20}
+        modules={[Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
+        slidesPerView={3}
+        spaceBetween={20}
         breakpoints={{
-          1024: { slidesPerView: 3 },
-          768: { slidesPerView: 2 },
           640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
         }}
         className="mySwiper"
       >
@@ -46,7 +49,7 @@ const MembershipLogosCarousel: React.FC = () => {
                 alt={association.alt}
                 className="h-48 max-w-full object-contain mb-4"
               />
-              <p className="text-md text-gray-700 text-center">{association.name}</p>
+              <p className="text-sm text-gray-700 text-center">{association.name}</p>
             </div>
           </SwiperSlide>
         ))}
