@@ -5,7 +5,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../styles/membershiplogoslider.css';
+import '../../styles/membershiplogoslider.css';
 
 const associations = [
   { src: "/associations/ARA.png", alt: "ARA - Atlanta Retailers Association", name: "Atlanta Retailers Association" },

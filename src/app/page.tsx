@@ -1,8 +1,8 @@
 import React from 'react';
-import FeatureBoxes from '@/components/featureboxes';
-import MembershipLogosGrid from '@/components/membershiplogogrid';
-import MembershipLogosCarousel from '@/components/membershiplogoslider';
-import News from '@/components/news';
+import FeatureBoxes from '@/components/Home/featureboxes';
+import News from '@/components/Home/news';
+import MembershipLogosCarousel from '@/components/Home/membershiplogoslider';
+import MembershipLogosGrid from '@/components/Home/membershiplogogrid';
 
 const Home: React.FC = () => {
   return (
