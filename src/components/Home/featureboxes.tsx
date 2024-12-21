@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUsers, FaTasks, FaHandshake } from "react-icons/fa";
+import { FaUsers, FaTasks, FaHandshake, FaCogs, FaChartLine } from "react-icons/fa";
 
 interface FeatureBox {
   title: string;
@@ -26,6 +26,18 @@ const features: FeatureBox[] = [
       "“Get closer than ever to your customers. So close that you tell them what they need well before they realize it themselves” – Steve Jobs. One thing that clearly separates APEC from other petroleum equipment companies across the nation is that we don’t just sell solutions. Our ownership has years of experience being a retailer, which helps us know our customer’s needs first-hand. Add to this our team’s diversity, which is our Superpower. It’s this diversity that connects us to our customer’s culture, and their language. This is a true differentiator for us and our customers too.",
     icon: <FaHandshake className="text-5xl text-red-600" />,
   },
+  {
+    title: "EXPERIENCE",
+    description:
+      "“Experience is the teacher of all things” – Julius Caesar. APEC boasts decades of industry experience that has been honed to provide customers with world-class solutions. We leverage our collective knowledge to anticipate challenges and deliver unmatched value. From seasoned professionals to enthusiastic newcomers, our experience spans across various fields, ensuring our ability to meet any challenge head-on.",
+    icon: <FaChartLine className="text-5xl text-red-600" />,
+  },
+  {
+    title: "SERVICE",
+    description:
+      "“Great customer service doesn’t mean that the customer is always right; it means that the customer is always honored” – Chris LoCurto. At APEC, we pride ourselves on offering exceptional service that puts our customers at the forefront. We listen, adapt, and provide personalized solutions, ensuring satisfaction and building long-lasting relationships.",
+    icon: <FaCogs className="text-5xl text-red-600" />,
+  },
 ];
 
 const FeatureBoxes: React.FC = () => {
@@ -33,7 +45,9 @@ const FeatureBoxes: React.FC = () => {
     <section className="px-6 py-12 bg-gray-50">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">WHY <span className="text-red-600">APEC?</span></h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
+          WHY <span className="text-red-600">APEC?</span>
+        </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
           Discover what makes APEC unique and why our team, execution, and customer-first approach set us apart.
         </p>
