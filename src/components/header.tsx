@@ -7,7 +7,6 @@ import { useRouter } from 'next/navigation'; // For navigation functions
 import { usePathname } from 'next/navigation'; // For accessing the current pathname
 
 const Header: React.FC = () => {
-  const router = useRouter();
   const pathname = usePathname(); // Get the current pathname
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
