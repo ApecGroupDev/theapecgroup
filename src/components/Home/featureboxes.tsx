@@ -10,32 +10,27 @@ interface FeatureBox {
 const features: FeatureBox[] = [
   {
     title: "TEAM",
-    description:
-      "“The truth is that teamwork is at the heart of great achievement” – John C. Maxwell. At the APEC group we are laser focused on recruiting and nourishing the best talent. To form an unbeatable team, we must provide not only a learning environment for our enthusiastic new team members but also culture for existing team members to grow their experience and capabilities too. Our diverse, motivated team requires a safe, stable work environment for them to flourish. The importance of a loyal, dedicated team is foundational at APEC.",
+    description: "“The truth is that teamwork is at the heart of great achievement” – John C. Maxwell.",
     icon: <FaUsers className="text-5xl text-red-600" />,
   },
   {
     title: "EXECUTION",
-    description:
-      "“You can’t build a reputation on what you are going to do” – Henry Ford. With the goal of delivering incredible results that amaze our customers, APEC is committed to providing the very best execution on the management of our projects and services. This is easy to say, not so easy to do. A deep analysis of each project, constant communications with our customers, and an organized, foresight mentality to uncover unforeseen challenges is the key to our success. There’s a distinct reason we’re growing at the rate we are and our execution is at the heart of it.",
+    description: "“You can’t build a reputation on what you are going to do” – Henry Ford.",
     icon: <FaTasks className="text-5xl text-red-600" />,
   },
   {
     title: "CUSTOMER",
-    description:
-      "“Get closer than ever to your customers. So close that you tell them what they need well before they realize it themselves” – Steve Jobs. One thing that clearly separates APEC from other petroleum equipment companies across the nation is that we don’t just sell solutions. Our ownership has years of experience being a retailer, which helps us know our customer’s needs first-hand. Add to this our team’s diversity, which is our Superpower. It’s this diversity that connects us to our customer’s culture, and their language. This is a true differentiator for us and our customers too.",
+    description: "“Get closer than ever to your customers.” – Steve Jobs.",
     icon: <FaHandshake className="text-5xl text-red-600" />,
   },
   {
     title: "EXPERIENCE",
-    description:
-      "“Experience is the teacher of all things” – Julius Caesar. APEC boasts decades of industry experience that has been honed to provide customers with world-class solutions. We leverage our collective knowledge to anticipate challenges and deliver unmatched value. From seasoned professionals to enthusiastic newcomers, our experience spans across various fields, ensuring our ability to meet any challenge head-on.",
+    description: "“Experience is the teacher of all things” – Julius Caesar.",
     icon: <FaChartLine className="text-5xl text-red-600" />,
   },
   {
     title: "SERVICE",
-    description:
-      "“Great customer service doesn’t mean that the customer is always right; it means that the customer is always honored” – Chris LoCurto. At APEC, we pride ourselves on offering exceptional service that puts our customers at the forefront. We listen, adapt, and provide personalized solutions, ensuring satisfaction and building long-lasting relationships.",
+    description: "“Great customer service means honoring the customer” – Chris LoCurto.",
     icon: <FaCogs className="text-5xl text-red-600" />,
   },
 ];
@@ -54,18 +49,16 @@ const FeatureBoxes: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
-        {features.map((feature, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12 gap-8">
+        {/* First Row: 3 Boxes */}
+        {features.slice(0, 3).map((feature, index) => (
           <div
             key={index}
-            className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 transform hover:scale-105"
+            className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500"
           >
-            {/* Icon and Title */}
-            <div className="flex flex-col items-center justify-center h-48">
+            <div className="flex flex-col items-center justify-center h-40 lg:h-48">
               {feature.icon}
-              <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">
-                {feature.title}
-              </h3>
+              <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
             </div>
 
             {/* Description (Hidden by default, revealed on hover) */}
@@ -76,6 +69,28 @@ const FeatureBoxes: React.FC = () => {
             </div>
           </div>
         ))}
+
+        {/* Second Row: 2 Boxes (Centered) */}
+        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3">
+          {features.slice(3).map((feature, index) => (
+            <div
+              key={index}
+              className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-full sm:w-1/2 md:w-1/3 lg:w-1/3"
+            >
+              <div className="flex flex-col items-center justify-center h-40 lg:h-48">
+                {feature.icon}
+                <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
+              </div>
+
+              {/* Description (Hidden by default, revealed on hover) */}
+              <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
+                <p className="text-lg text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
