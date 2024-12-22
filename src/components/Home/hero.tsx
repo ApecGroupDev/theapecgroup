@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
           src="/backgrounds/Img1.jpg" // Replace with your image name
           alt="Hero Background"
           layout="fill"
-          objectFit="cover"
+          objectFit="fill"
           objectPosition="center"
           className="opacity-100"
         />
