@@ -54,14 +54,14 @@ const FeatureBoxes: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
         {features.map((feature, index) => (
           <div
             key={index}
             className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 transform hover:scale-105"
           >
             {/* Icon and Title */}
-            <div className="flex flex-col items-center justify-center h-72">
+            <div className="flex flex-col items-center justify-center h-48">
               {feature.icon}
               <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">
                 {feature.title}
