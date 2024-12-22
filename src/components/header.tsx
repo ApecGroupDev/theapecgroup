@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation'; // For navigation functions
 import { usePathname } from 'next/navigation'; // For accessing the current pathname
 
 const Header: React.FC = () => {
