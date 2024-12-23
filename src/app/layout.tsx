@@ -11,13 +11,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="bg-gray-200 text-gray-800">
       <head />
-      <body className="min-h-screen">
+      <body>
 
         {/* Add the Header here */}
         <Header />
 
         {/* Main content of the page */}
-        <div className="w-full mx-auto">
+        <div className="w-full">
           {children}  {/* This will render page content */}
         </div>
 

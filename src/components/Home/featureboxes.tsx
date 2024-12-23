@@ -37,7 +37,7 @@ const features: FeatureBox[] = [
 
 const FeatureBoxes: React.FC = () => {
   return (
-    <section className="px-6 py-12 bg-gray-50">
+    <section className="px-6 py-12 min-h-[70rem]">
       {/* Section Title */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
