@@ -1,6 +1,6 @@
 const About: React.FC = () => {
   return (
-    <div className="relative w-full min-h-[60rem] bg-transparent flex items-center justify-center">
+    <div className="relative w-full min-h-[80rem] bg-transparent flex items-center justify-center">
       {/* Centered Content */}
       <div className="text-center">
         <h2 className="text-4xl font-bold text-gray-800">About Us</h2>
