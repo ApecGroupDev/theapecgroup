@@ -21,7 +21,7 @@ const Contacts: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6 py-12">
-      <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">Contact Us</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center mt-24">Contact Us</h1>
       <div className="grid gap-8 lg:grid-cols-2">
         {/* Contact Form */}
         <div className="bg-white p-8 rounded-xl shadow-xl">
