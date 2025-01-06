@@ -40,7 +40,7 @@ const FeatureBoxes: React.FC = () => {
     <section className="px-6 py-12 min-h-[70rem]">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 outlined-text-white">
           WHY <span className="text-red-600">APEC?</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">

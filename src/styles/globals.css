@@ -20,3 +20,11 @@
   white-space: normal;
   /* Ensures text wraps rather than staying on one line */
 }
+
+.outlined-text-white {
+  text-shadow: 
+    1px 1px 0 #fff, /* Top-right */
+    -1px 1px 0 #fff, /* Top-left */
+    -1px -1px 0 #fff, /* Bottom-left */
+    1px -1px 0 #fff; /* Bottom-right */
+}
