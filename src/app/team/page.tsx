@@ -20,10 +20,10 @@ const teamMembers = [
 
 const Team: React.FC = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-50 to-gray-100 py-16">
+    <section className="bg-gradient-to-r from-gray-50 to-gray-100 py-16 mt-24">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-6">
-          Meet Our Team
+          Meet Our <span className='text-red-600'>Team</span>
         </h1>
         <p className="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Dedicated professionals delivering exceptional service. 100% privately owned and operated.
