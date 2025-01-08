@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen bg-transparent px-8 md:px-16 md:pt-16 lg:px-40 xl:px-28">
+    <div className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen bg-transparent px-8 md:px-16 md:pt-16 lg:px-40 xl:px-28 macbook-pro-16:pb-28">
       {/* Left Text Section */}
       <div className="text-center md:text-left 2xl:mb-20 text-black">
         <p className="text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl 2k:text-8xl font-extrabold">YOUR TOP CHOICE</p>
