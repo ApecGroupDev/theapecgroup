@@ -4,14 +4,14 @@ const Hero: React.FC = () => {
   return (
     <div className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen bg-transparent px-8 md:px-16 md:pt-16 lg:px-40 xl:px-28 macbook-pro-16:pb-28">
       {/* Left Text Section */}
-      <div className="text-center md:text-left 2xl:mb-20 text-black">
-        <p className="text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-7xl 2k:text-8xl font-extrabold">YOUR TOP CHOICE</p>
-        <p className="text-5xl md:text-4xl lg:text-7xl xl:text-6xl 2xl:text-8xl 2k:text-9xl xl:mt-4 2xl:mt-4 italic text-red-500 tracking-wider whitespace-nowrap">ONE-STOP SHOP</p>
-        <p className="text-3xl md:text-4xl lg:text-6xl xl:text-5xl 2xl:text-7xl 2k:text-8xl xl:mt-4 2xl:mt-4 font-medium">ATLANTA COMPANY</p>
+      <div className="text-center md:text-left 2xl:mb-20 text-black macbook-pro-14:mb-20">
+        <p className="text-4xl md:text-5xl lg:text-5xl xl:text-5xl macbook-pro-14:text-6xl 2xl:text-7xl 2k:text-8xl font-extrabold">YOUR TOP CHOICE</p>
+        <p className="text-5xl md:text-4xl lg:text-7xl xl:text-6xl macbook-pro-14:text-7xl 2xl:text-8xl 2k:text-9xl xl:mt-4 2xl:mt-4 italic text-red-500 tracking-wider whitespace-nowrap">ONE-STOP SHOP</p>
+        <p className="text-3xl md:text-4xl lg:text-6xl xl:text-5xl macbook-pro-14:text-6xl 2xl:text-7xl 2k:text-8xl xl:mt-4 2xl:mt-4 font-medium">ATLANTA COMPANY</p>
       </div>
 
       {/* Right Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+      <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0 macbook-pro-14:mb-20">
         <img
           src="/products/Pump.png"
           alt="Hero"
