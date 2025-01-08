@@ -5,9 +5,9 @@ const Hero: React.FC = () => {
     <div className="relative flex flex-col-reverse md:flex-row items-center justify-between min-h-screen bg-transparent px-8 md:px-16 md:pt-16 lg:px-40">
       {/* Left Text Section */}
       <div className="text-center md:text-left 2xl:mb-20 text-black">
-        <p className="text-4xl md:text-5xl lg:text-5xl 2xl:text-7xl font-extrabold">YOUR TOP CHOICE</p>
-        <p className="text-5xl md:text-4xl lg:text-7xl 2xl:text-8xl 2xl:mt-4 italic text-red-500 tracking-wider">ONE-STOP SHOP</p>
-        <p className="text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl 2xl:mt-4 font-medium">ATLANTA COMPANY</p>
+        <p className="text-4xl md:text-5xl lg:text-5xl 2xl:text-7xl 2k:text-8xl font-extrabold">YOUR TOP CHOICE</p>
+        <p className="text-5xl md:text-4xl lg:text-7xl 2xl:text-8xl 2k:text-9xl 2xl:mt-4 italic text-red-500 tracking-wider">ONE-STOP SHOP</p>
+        <p className="text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl 2k:text-8xl 2xl:mt-4 font-medium">ATLANTA COMPANY</p>
       </div>
 
       {/* Right Image Section */}
@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <img
           src="/products/Pump.png"
           alt="Hero"
-          className="rounded-lg object-cover w-full max-w-[500px] md:max-w-[600px] lg:max-w-[600px] 2xl:max-w-[700px]"
+          className="rounded-lg object-cover w-full max-w-[500px] md:max-w-[600px] lg:max-w-[600px] 2xl:max-w-[700px] 2k:max-w-[900px]"
         />
       </div>
     </div>
