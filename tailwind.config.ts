@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        '2xl': '1536px',
+        '2k': '2560px', // Default 2xl (adjust as needed)
+      }
     },
   },
   plugins: [],
