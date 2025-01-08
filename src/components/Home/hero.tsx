@@ -6,8 +6,8 @@ const Hero: React.FC = () => {
       {/* Left Text Section */}
       <div className="text-center md:text-left 2xl:mb-20 text-black">
         <p className="text-4xl md:text-5xl lg:text-5xl 2xl:text-7xl font-extrabold">YOUR TOP CHOICE</p>
-        <p className="text-5xl md:text-4xl lg:text-7xl 2xl:text-8xl italic text-red-500 tracking-wider">ONE-STOP SHOP</p>
-        <p className="text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl font-medium">ATLANTA COMPANY</p>
+        <p className="text-5xl md:text-4xl lg:text-7xl 2xl:text-8xl 2xl:mt-4 italic text-red-500 tracking-wider">ONE-STOP SHOP</p>
+        <p className="text-3xl md:text-4xl lg:text-6xl 2xl:text-7xl 2xl:mt-4 font-medium">ATLANTA COMPANY</p>
       </div>
 
       {/* Right Image Section */}
