@@ -37,19 +37,16 @@ const features: FeatureBox[] = [
 
 const FeatureBoxes: React.FC = () => {
   return (
-    <section className="px-6 py-12 min-h-[70rem]">
+    <section className="2xl:mt-24 2xl:px-60">
       {/* Section Title */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 outlined-text-white">
+      <div className="text-center">
+        <p className="text-7xl font-extrabold text-gray-800 mb-4 outlined-text-white">
           WHY <span className="text-red-600">APEC?</span>
-        </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Discover what makes APEC unique and why our team, execution, and customer-first approach set us apart.
         </p>
       </div>
 
       {/* Feature Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12 gap-8 2xl:gap-40 2xl:mt-24">
         {/* First Row: 3 Boxes */}
         {features.slice(0, 3).map((feature, index) => (
           <div
@@ -71,11 +68,11 @@ const FeatureBoxes: React.FC = () => {
         ))}
 
         {/* Second Row: 2 Boxes (Centered) */}
-        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3">
+        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 2xl:col-span-3 2xl:gap-40">
           {features.slice(3).map((feature, index) => (
             <div
               key={index}
-              className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-full sm:w-1/2 md:w-1/3 lg:w-1/3"
+              className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-full sm:w-1/2 md:w-1/3 lg:w-3/12"
             >
               <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64">
                 {feature.icon}
