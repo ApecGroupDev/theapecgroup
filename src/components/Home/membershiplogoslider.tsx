@@ -19,7 +19,7 @@ const associations = [
 
 const MembershipLogosCarousel: React.FC = () => {
   return (
-    <section className="py-10">
+    <section className="2xl:mt-60 2xl:px-16">
       <div className="text-center mb-8">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <span className="text-red-600">Proud</span> Member Of
