@@ -25,6 +25,14 @@ const About: React.FC = () => {
           to evolve technically year after year. APEC is committed to staying on the leading edge of all the latest innovations
           and technologies to not only support our customer’s needs but so we can also be the industry experts you can rely on.
         </p>
+        {/* Button */}
+        <div className="mt-12 flex justify-center">
+          <button
+            className="px-20 py-2 border-2 border-red-600 text-gray-800 text-lg font-semibold rounded-lg hover:bg-red-600 hover:text-white transition duration-200"
+          >
+            Sales@TheAPECgroup.com
+          </button>
+        </div>
       </div>
     </div>
   );
