@@ -1,12 +1,12 @@
 const About: React.FC = () => {
   return (
-    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center lg:px-12 xl:px-28 lg:mt-24 xl:mt-12 macbook-pro-14:mt-0 macbook-pro-16:mt-0 2xl:mt-28">
+    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center lg:px-12 xl:px-28 lg:mt-24 xl:mt-32 macbook-pro-14:mt-0 macbook-pro-16:mt-0 2xl:mt-28">
       {/* Left Image Section */}
-      <div className="w-full md:w-2/5 flex justify-center lg:py-24 p-6 md:p-12 2xl:pt-0 macbook-pro-14:pt-0 macbook-pro-16:px-14">
+      <div className="w-full md:w-2/5 flex justify-center lg:py-24 p-6 md:p-12 xl:pt-0 2xl:pt-0 macbook-pro-14:pt-0 macbook-pro-16:px-14">
         <img
           src="/products/station.png"
           alt="Hero"
-          className="rounded-lg object-cover w-full max-w-[400px] md:max-w-[500px] lg:max-w-[450px] 2xl:max-w-[650px] 2k:max-w-[700px]"
+          className="rounded-lg object-cover w-full max-w-[400px] md:max-w-[500px] lg:max-w-[450px] xl:max-w-[350px] 2xl:max-w-[650px] 2k:max-w-[700px]"
         />
       </div>
 
