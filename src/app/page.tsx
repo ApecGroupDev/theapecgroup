@@ -24,7 +24,7 @@ const Home: React.FC = () => {
       <About />
       <FeatureBoxes />
       <MembershipLogosCarousel />
-      <News />
+      {/* <News /> */}
     </div>
   );
 };

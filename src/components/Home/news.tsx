@@ -34,35 +34,35 @@ const mockNews: NewsItem[] = [
     date: '2024-12-19',
     author: 'Alex Johnson',
   },
-  // {
-  //   id: 4,
-  //   title: 'Breaking News 4',
-  //   description: 'Sed id diam consequat, sodales enim sit amet, blandit libero.',
-  //   image: 'https://via.placeholder.com/150',
-  //   date: '2024-12-18',
-  //   author: 'Chris Lee',
-  // },
-  // {
-  //   id: 5,
-  //   title: 'Breaking News 5',
-  //   description: 'Etiam nec eros sed ligula porttitor dignissim.',
-  //   image: 'https://via.placeholder.com/150',
-  //   date: '2024-12-17',
-  //   author: 'Pat Taylor',
-  // },
-  // {
-  //   id: 6,
-  //   title: 'Breaking News 6',
-  //   description: 'Quisque fermentum, lacus ut ultricies tincidunt, nisl elit dictum est.',
-  //   image: 'https://via.placeholder.com/150',
-  //   date: '2024-12-16',
-  //   author: 'Morgan Brown',
-  // },
+  {
+    id: 4,
+    title: 'Breaking News 4',
+    description: 'Sed id diam consequat, sodales enim sit amet, blandit libero.',
+    image: 'https://via.placeholder.com/150',
+    date: '2024-12-18',
+    author: 'Chris Lee',
+  },
+  {
+    id: 5,
+    title: 'Breaking News 5',
+    description: 'Etiam nec eros sed ligula porttitor dignissim.',
+    image: 'https://via.placeholder.com/150',
+    date: '2024-12-17',
+    author: 'Pat Taylor',
+  },
+  {
+    id: 6,
+    title: 'Breaking News 6',
+    description: 'Quisque fermentum, lacus ut ultricies tincidunt, nisl elit dictum est.',
+    image: 'https://via.placeholder.com/150',
+    date: '2024-12-16',
+    author: 'Morgan Brown',
+  },
 ];
 
 const News: React.FC = () => {
   return (
-    <div className="container bg-white mx-auto px-8 py-12">
+    <div className="container bg-white mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Latest News</h1>
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {mockNews.map((news) => (
