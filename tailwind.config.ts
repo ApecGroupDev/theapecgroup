@@ -13,8 +13,8 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        'macbook-pro-14': { 'min': '1500px', 'max': '1600px' },
-        'macbook-pro-16': { 'min': '1720px', 'max': '1800px' },
+        'mac-14': { 'min': '1500px', 'max': '1600px' },
+        'mac-16': { 'min': '1720px', 'max': '1800px' },
         '2xl': '1536px',
         '2k': '2560px', // Default 2xl (adjust as needed)
       }
