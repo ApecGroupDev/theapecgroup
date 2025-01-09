@@ -6,7 +6,7 @@ const About: React.FC = () => {
         <img
           src="/products/station.png"
           alt="Hero"
-          className="rounded-lg object-cover w-full max-w-[400px] md:max-w-[500px] lg:max-w-[300px] xl:max-w-[350px] 2xl:max-w-[650px] 2k:max-w-[700px]"
+          className="rounded-lg object-cover w-full max-w-[400px] md:max-w-[500px] lg:max-w-[300px] mac-14:max-w-full xl:max-w-[350px] 2xl:max-w-[650px] 2k:max-w-[700px]"
         />
       </div>
 
