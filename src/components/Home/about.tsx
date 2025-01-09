@@ -1,6 +1,6 @@
 const About: React.FC = () => {
   return (
-    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center xl:px-28 macbook-pro-16:mt-0 2xl:mt-28 2k:mt-60">
+    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center lg:px-12 xl:px-28 xl:mt-12  macbook-pro-14:mt-0 macbook-pro-16:mt-0 2xl:mt-28 2k:mt-60">
       {/* Left Image Section */}
       <div className="w-full md:w-2/5 flex justify-center items-center p-6 md:p-12 macbook-pro-14:pt-0 macbook-pro-16:pt-0">
         <img
@@ -12,15 +12,15 @@ const About: React.FC = () => {
 
       {/* Right Text Section */}
       <div className="w-full md:w-3/5 p-6 md:p-12 2xl:px-24 2k:px-28 macbook-pro-14:pt-0 macbook-pro-16:pt-0 flex flex-col">
-        <p className="text-5xl md:text-6xl 2k:text-8xl font-bold tracking-wider italic">Welcome to</p>
-        <p className="text-5xl md:text-6xl 2k:text-8xl font-extrabold text-red-600 mt-3">APEC</p>
-        <p className="text-2xl md:text-3xl 2k:text-5xl font-bold text-gray-800 mt-4">Petroleum Equipment Services</p>
-        <p className="mt-6 text-lg md:text-xl 2k:text-2xl text-gray-600 tracking-wider">
+        <p className="text-5xl md:text-6xl lg:text-4xl macbook-pro-14:text-6xl 2xl:text-6xl 2k:text-8xl font-bold tracking-wider italic">Welcome to</p>
+        <p className="text-5xl md:text-6xl lg:text-4xl macbook-pro-14:text-6xl 2xl:text-6xl 2k:text-8xl font-extrabold text-red-600 mt-3 xl:mt-0">APEC</p>
+        <p className="text-2xl md:text-3xl lg:text-2xl macbook-pro-14:text-3xl 2xl:text-3xl 2k:text-5xl font-bold text-gray-800 mt-4 xl:mt-0">Petroleum Equipment Services</p>
+        <p className="mt-6 text-lg md:text-xl lg:text-lg xl:text-md macbook-pro-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600 tracking-wider">
           The APEC group you know today started out originally as Atlanta Petroleum Equipment Company in September of 1989.
           From our modest beginning as a small service company, we have grown to a leader in our industry offering a full
           line of petroleum equipment, installation, repair and support services.
         </p>
-        <p className="mt-4 text-lg md:text-xl 2k:text-2xl text-gray-600 tracking-wider">
+        <p className="mt-4 text-lg md:text-xl lg:text-lg xl:text-md macbook-pro-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600 tracking-wider">
           APEC is committed to providing only the highest quality products and services available. Our industry continues
           to evolve technically year after year. APEC is committed to staying on the leading edge of all the latest innovations
           and technologies to not only support our customer’s needs but so we can also be the industry experts you can rely on.
