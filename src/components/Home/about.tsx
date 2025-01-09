@@ -1,8 +1,8 @@
 const About: React.FC = () => {
   return (
-    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center lg:px-12 xl:px-28 lg:mt-24 xl:mt-12 macbook-pro-14:mt-0 macbook-pro-16:mt-0 2xl:mt-28 2k:mt-60">
+    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center lg:px-12 xl:px-28 lg:mt-24 xl:mt-12 macbook-pro-14:mt-0 macbook-pro-16:mt-0 2xl:mt-28">
       {/* Left Image Section */}
-      <div className="w-full md:w-2/5 flex justify-center lg:py-24 p-6 md:p-12 2xl:pt-0 macbook-pro-14:pt-0 macbook-pro-16:pt-0">
+      <div className="w-full md:w-2/5 flex justify-center lg:py-24 p-6 md:p-12 2xl:pt-0 macbook-pro-14:pt-0 macbook-pro-16:px-14">
         <img
           src="/products/station.png"
           alt="Hero"
@@ -11,7 +11,7 @@ const About: React.FC = () => {
       </div>
 
       {/* Right Text Section */}
-      <div className="w-full md:w-3/5 p-6 md:p-12 2xl:px-24 2xl:mt-8 2k:px-28 macbook-pro-14:pt-0 macbook-pro-16:pt-0 flex flex-col">
+      <div className="w-full md:w-3/5 p-6 md:p-12 2xl:px-24 2xl:mt-8 2k:px-28 macbook-pro-14:pt-12 macbook-pro-16:pt-8 flex flex-col">
         <p className="text-5xl md:text-6xl lg:text-4xl macbook-pro-14:text-6xl 2xl:text-6xl 2k:text-8xl font-bold tracking-wider italic">Welcome to</p>
         <p className="text-5xl md:text-6xl lg:text-4xl macbook-pro-14:text-6xl 2xl:text-6xl 2k:text-8xl font-extrabold text-red-600 mt-3 lg:mt-0 xl:mt-0">APEC</p>
         <p className="text-2xl md:text-3xl lg:text-2xl macbook-pro-14:text-3xl 2xl:text-3xl 2k:text-5xl font-bold text-gray-800 mt-4 lg:mt-0 xl:mt-0">Petroleum Equipment Services</p>
