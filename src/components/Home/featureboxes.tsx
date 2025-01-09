@@ -51,7 +51,7 @@ const FeatureBoxes: React.FC = () => {
         {features.slice(0, 3).map((feature, index) => (
           <div
             key={index}
-            className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500"
+            className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all 2xl:w-11/12 duration-500"
           >
             <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64">
               {feature.icon}
@@ -68,7 +68,7 @@ const FeatureBoxes: React.FC = () => {
         ))}
 
         {/* Second Row: 2 Boxes (Centered) */}
-        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 2xl:col-span-3 2xl:gap-40">
+        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 2xl:col-span-3 2xl:gap-44">
           {features.slice(3).map((feature, index) => (
             <div
               key={index}
