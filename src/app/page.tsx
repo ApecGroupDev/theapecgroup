@@ -1,6 +1,6 @@
 import React from 'react';
 import FeatureBoxes from '@/components/Home/featureboxes';
-import News from '@/components/Home/news';
+// import News from '@/components/Home/news';
 import MembershipLogosCarousel from '@/components/Home/membershiplogoslider';
 import Hero from '@/components/Home/hero';
 import About from '@/components/Home/about';
