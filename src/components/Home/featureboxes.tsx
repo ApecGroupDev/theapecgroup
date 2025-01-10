@@ -37,10 +37,10 @@ const features: FeatureBox[] = [
 
 const FeatureBoxes: React.FC = () => {
   return (
-    <section className="2xl:mt-24 2xl:px-60">
+    <section className="2xl:mt-24 2xl:px-60 2k:mt-52 2k:px-42">
       {/* Section Title */}
       <div className="text-center">
-        <p className="text-7xl font-extrabold text-gray-800 mb-4 outlined-text-white">
+        <p className="text-7xl 2k:text-8xl font-extrabold text-gray-800 mb-4 outlined-text-white">
           WHY <span className="text-red-600">APEC?</span>
         </p>
       </div>
@@ -53,7 +53,7 @@ const FeatureBoxes: React.FC = () => {
             key={index}
             className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all 2xl:w-11/12 duration-500"
           >
-            <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64">
+            <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64 2k:h-96">
               {feature.icon}
               <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
             </div>
@@ -74,7 +74,7 @@ const FeatureBoxes: React.FC = () => {
               key={index}
               className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-full sm:w-1/2 md:w-1/3 lg:w-3/12"
             >
-              <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64">
+              <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64 2k:h-96">
                 {feature.icon}
                 <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
               </div>
