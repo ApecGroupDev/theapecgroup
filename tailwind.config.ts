@@ -8,6 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+      spacing: {
+        '128': '32rem',  // Adds a value for mt-128 (512px)
+        '144': '36rem',  // Adds a value for mt-144 (576px)
+        '160': '40rem',  // Adds a value for mt-160 (640px)
+        // Add any other values you need
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
