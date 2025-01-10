@@ -1,7 +1,8 @@
 'use client';
 
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,6 +19,12 @@ const associations = [
 ];
 
 const MembershipLogosCarousel: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleSlideChange = (swiper: any) => {
+    setActiveIndex(swiper.activeIndex);
+  };
+
   return (
     <section className="bg-transparent pb-96 2xl:mt-96 2xl:px-60">
       <div className="text-center">
@@ -29,31 +36,35 @@ const MembershipLogosCarousel: React.FC = () => {
         </p>
       </div>
       <Swiper
-        modules={[Navigation, Pagination]}
+        modules={[Navigation]}
         navigation
-        pagination={{ clickable: true }}
         slidesPerView={3}
-        spaceBetween={20}
+        spaceBetween={30} /* Increase spacing */
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="mySwiper"
+        onActiveIndexChange={handleSlideChange}
+        className="mySwiper 2xl:mt-12"
       >
         {associations.map((association, index) => (
-          <SwiperSlide key={index}>
-            <div className="flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110">
+          <SwiperSlide
+            key={index}
+            className={index === activeIndex + 1 ? 'middle-slide' : ''}
+          >
+            <div className="flex flex-col items-center p-4 transition-transform duration-300 ease-in-out">
               <img
                 src={association.src}
                 alt={association.alt}
-                className="h-60 max-w-full object-contain mb-4"
+                className="h-60 max-w-full object-contain"
               />
               <p className="text-sm text-gray-700 text-center">{association.name}</p>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
     </section>
   );
 };
