@@ -37,23 +37,23 @@ const features: FeatureBox[] = [
 
 const FeatureBoxes: React.FC = () => {
   return (
-    <section className="mac-14:mt-24 mac-14:px-32 mac-16:px-42 2xl:mt-24 2xl:px-60 2k:mt-52 2k:px-42">
+    <section className="xl:mt-16 xl:px-36 mac-14:mt-24 mac-14:px-32 mac-16:px-42 2xl:mt-24 2xl:px-60 2k:mt-52 2k:px-42">
       {/* Section Title */}
       <div className="text-center">
-        <p className="text-7xl 2k:text-8xl font-extrabold text-gray-800 mb-4">
+        <p className="text-7xl xl:text-6xl 2k:text-8xl font-extrabold text-gray-800 mb-4">
           WHY <span className="text-red-600">APEC?</span>
         </p>
       </div>
 
       {/* Feature Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12 gap-8 mac-14:mt-16 mac-14:gap-16 mac-16:gap-24 2xl:gap-40 2xl:mt-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12 gap-8 xl:mt-14 mac-14:mt-16 mac-14:gap-16 mac-16:gap-24 2xl:gap-40 2xl:mt-24">
         {/* First Row: 3 Boxes */}
         {features.slice(0, 3).map((feature, index) => (
           <div
             key={index}
-            className="relative mx-auto group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all mac-14:w-11/12 2xl:w-11/12 duration-500"
+            className="relative mx-auto group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all xl:w-10/12 mac-14:w-11/12 2xl:w-11/12 duration-500"
           >
-            <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64 2k:h-96">
+            <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-54 2k:h-96">
               {feature.icon}
               <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
             </div>
@@ -68,13 +68,13 @@ const FeatureBoxes: React.FC = () => {
         ))}
 
         {/* Second Row: 2 Boxes (Centered) */}
-        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 mac-14:mt-8 mac-14:gap-32 mac-16:gap-36 2xl:col-span-3 2xl:gap-44">
+        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 xl:gap-24 mac-14:mt-8 mac-14:gap-32 mac-16:gap-36 2xl:col-span-3 2xl:gap-44">
           {features.slice(3).map((feature, index) => (
             <div
               key={index}
               className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-full sm:w-1/2 md:w-1/3 lg:w-3/12"
             >
-              <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-64 2k:h-96">
+              <div className="flex flex-col items-center justify-center h-40 lg:h-48 xl:h-54 2k:h-96">
                 {feature.icon}
                 <h3 className="text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
               </div>
