@@ -37,7 +37,7 @@ const features: FeatureBox[] = [
 
 const FeatureBoxes: React.FC = () => {
   return (
-    <section className="md:mt-12 md:px-28 w-800:mt-16 w-900:mt-24 lg:mt-8 lg:px-32 xl:mt-16 xl:px-36 mac-14:mt-24 mac-14:px-32 mac-16:px-42 2xl:mt-24 2xl:px-60 2k:mt-52 2k:px-42">
+    <section className="md:mt-24 md:px-28 w-800:mt-16 w-900:mt-24 lg:mt-8 lg:px-32 xl:mt-16 xl:px-36 mac-14:mt-24 mac-14:px-32 mac-16:px-42 2xl:mt-24 2xl:px-60 2k:mt-52 2k:px-42">
       {/* Section Title */}
       <div className="text-center">
         <p className="text-7xl md:text-3xl lg:text-5xl xl:text-6xl 2k:text-8xl font-extrabold text-gray-800 mb-4">
@@ -46,7 +46,7 @@ const FeatureBoxes: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12 gap-8 w-900:mt-12 lg:mt-8 xl:mt-12 mac-14:mt-16 mac-14:gap-16 mac-16:gap-24 2xl:gap-40 2xl:mt-24">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:gap-12 gap-8 md:mt-16 w-900:mt-12 lg:mt-8 xl:mt-12 mac-14:mt-16 mac-14:gap-16 mac-16:gap-24 2xl:gap-40 2xl:mt-24">
         {/* First Row: 3 Boxes */}
         {features.slice(0, 3).map((feature, index) => (
           <div
@@ -68,7 +68,7 @@ const FeatureBoxes: React.FC = () => {
         ))}
 
         {/* Second Row: 2 Boxes (Centered) */}
-        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 xl:gap-24 w-900:mt-8 lg:mt-0 mac-14:mt-8 mac-14:gap-32 mac-16:gap-36 2xl:col-span-3 2xl:gap-44">
+        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 xl:gap-24 md:mt-8 w-900:mt-8 lg:mt-0 mac-14:mt-8 mac-14:gap-32 mac-16:gap-36 2xl:col-span-3 2xl:gap-44">
           {features.slice(3).map((feature, index) => (
             <div
               key={index}
