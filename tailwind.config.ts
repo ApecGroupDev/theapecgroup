@@ -19,8 +19,8 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        'w-800':'800px',
-        'w-900':'900px',
+        'w-800':{'min': '800px', 'max': '870px'},
+        'w-900':{'min': '900px', 'max': '970px'},
         'mac-14': { 'min': '1500px', 'max': '1600px' },
         'mac-16': { 'min': '1720px', 'max': '1800px' },
         '2xl': '1536px',
