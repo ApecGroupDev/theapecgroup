@@ -13,11 +13,11 @@
   /* Darker red on hover */
 }
 
-@media (max-width: 768px) {
+/* Hide arrows on smaller screens */
+/* @media (max-width: 768px) {
 
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
-    /* Hide arrows on smaller screens */
   }
-}
+} */
