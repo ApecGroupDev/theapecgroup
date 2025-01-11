@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         <img
           src="/products/Pump.png"
           alt="Hero"
-          className="rounded-lg object-cover w-full max-w-[500px] md:max-w-[280px] lg:max-w-[320px] xl:max-w-[600px] xl:mt-12 2xl:max-w-[700px] 2k:max-w-[900px]"
+          className="rounded-lg object-cover w-full max-w-[500px] md:max-w-[250px] lg:max-w-[320px] xl:max-w-[600px] xl:mt-12 2xl:max-w-[700px] 2k:max-w-[900px]"
         />
       </div>
     </div>
