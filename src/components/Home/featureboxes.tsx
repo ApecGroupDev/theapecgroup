@@ -37,7 +37,7 @@ const features: FeatureBox[] = [
 
 const FeatureBoxes: React.FC = () => {
   return (
-    <section className="md:mt-12 md:px-28 lg:mt-8 lg:px-32 xl:mt-16 xl:px-36 mac-14:mt-24 mac-14:px-32 mac-16:px-42 2xl:mt-24 2xl:px-60 2k:mt-52 2k:px-42">
+    <section className="md:mt-12 md:px-28 w-800:mt-16 lg:mt-8 lg:px-32 xl:mt-16 xl:px-36 mac-14:mt-24 mac-14:px-32 mac-16:px-42 2xl:mt-24 2xl:px-60 2k:mt-52 2k:px-42">
       {/* Section Title */}
       <div className="text-center">
         <p className="text-7xl md:text-3xl lg:text-5xl xl:text-6xl 2k:text-8xl font-extrabold text-gray-800 mb-4">
