@@ -11,11 +11,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center mb-8 md:mt-24 lg:mt-24 xl:mt-0 2k:mt-12">
+      <div className="w-full md:w-1/2 flex justify-center mb-8 md:mt-16 lg:mt-24 xl:mt-0 2k:mt-12">
         <img
           src="/products/Pump.png"
           alt="Hero"
-          className="rounded-lg object-cover w-full max-w-[500px] md:max-w-[600px] lg:max-w-[320px] xl:max-w-[600px] xl:mt-12 2xl:max-w-[700px] 2k:max-w-[900px]"
+          className="rounded-lg object-cover w-full max-w-[500px] md:max-w-[280px] lg:max-w-[320px] xl:max-w-[600px] xl:mt-12 2xl:max-w-[700px] 2k:max-w-[900px]"
         />
       </div>
     </div>
