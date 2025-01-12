@@ -3,27 +3,25 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export const metadata = {
-  title: 'APEC main Website',
+  title: 'APEC Main Website',
   description: 'APEC Main Website',
+  icons: {
+    icon: '/logos/One-Stop-Shop-Logo.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="bg-gray-200 text-gray-800">
-      <head />
       <body>
-
-        {/* Add the Header here */}
+        {/* Header */}
         <Header />
 
-        {/* Main content of the page */}
-        <div className="w-full">
-          {children}  {/* This will render page content */}
-        </div>
+        {/* Main content */}
+        <div className="w-full">{children}</div>
 
-        {/* Add the Footer here */}
+        {/* Footer */}
         <Footer />
-
       </body>
     </html>
   );
