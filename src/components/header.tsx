@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
 import { usePathname } from 'next/navigation'; // For accessing the current pathname
 
 const Header: React.FC = () => {
@@ -33,10 +32,6 @@ const Header: React.FC = () => {
   return (
     <header className={`bg-transparent text-white fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        {/* Logo */}
-        {/* <div className="flex items-center mb-4 md:mb-0">
-          <Image src="/logos/APEC.png" alt="Logo" width={90} height={0} />
-        </div> */}
 
         {/* Menu Button */}
         <button
