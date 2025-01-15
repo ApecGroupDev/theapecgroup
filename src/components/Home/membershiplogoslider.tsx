@@ -18,7 +18,7 @@ const associations = [
 
 const MembershipLogosCarousel: React.FC = () => {
   return (
-    <section className="bg-transparent pb-96 md:px-20 md:mt-32 lg:mt-60 lg:px-16 xl:mt-72 xl:px-24 mac-14:mt-80 mac-14:px-48 2xl:mt-96 2xl:px-60 2k:mt-128">
+    <section className="bg-transparent pb-96 md:px-20 md:mt-32 lg:mt-60 lg:px-16 xl:mt-72 xl:px-24 mac-14:mt-80 mac-14:px-48 2xl:mt-128 2xl:px-60 2k:mt-128">
       <div className="text-center">
         <h2 className="text-4xl md:text-3xl 2xl:text-6xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <span className="text-red-600">Proud</span> Member Of
