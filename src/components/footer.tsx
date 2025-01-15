@@ -4,96 +4,94 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-transparent text-black py-12 font-inter">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Row 1: Logo */}
-        <div className="flex justify-center mb-8">
-          <Link href="/">
-            <img
-              src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
-              alt="APEC Logo"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 max-w-[200px] h-auto" // Adjust size here
-            />
-          </Link>
-        </div>
+    <footer className="bg-transparent text-black py-6 font-inter mt-60">
+      <div className="2xl:px-32">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-gray-300">
+          {/* Column 1: Social Media Icons */}
+          <div className="flex flex-col items-center md:items-start space-y-4">
+            <span className="text-lg">For More Information</span>
+            <span className='ps-6'>855-444-APEC | Sales@TheAPECgroup.com</span>
+            <div className="flex space-x-4 ps-12">
+              <SocialIcon
+                url="https://twitter.com"
+                target="_blank"
+                style={{ height: 40, width: 40, borderRadius: 8 }}
+                bgColor="#e82228"
+                className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              />
+              <SocialIcon
+                url="https://www.instagram.com"
+                target="_blank"
+                style={{ height: 40, width: 40, borderRadius: 8 }}
+                bgColor="#e82228"
+                className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              />
+              <SocialIcon
+                url="https://www.facebook.com"
+                target="_blank"
+                style={{ height: 40, width: 40, borderRadius: 8 }}
+                bgColor="#e82228"
+                className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              />
+              <SocialIcon
+                url="https://www.linkedin.com"
+                target="_blank"
+                style={{ height: 40, width: 40, borderRadius: 8 }}
+                bgColor="#e82228"
+                className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              />
+            </div>
+          </div>
 
-        {/* Row 2: For More Information */}
-        <div className="flex justify-center mb-6">
-          <h3 className="text-xl lg:text-xl font-semibold text-gray-800 tracking-tight">For More Information</h3>
-        </div>
+          {/* Column 2: Addresses and Contact Information */}
+          <div className="flex flex-col items-center text-left space-y-4 pb-6">
+            <p className="text-base leading-relaxed">
+              Main Office: Atlanta, Georgia<br />
+              4732-E North Royal Atlanta<br />
+              Drive Tucker, GA 30084
+            </p>
+            <p className="text-base leading-relaxed">
+              Branch Office: Houston, Texas<br />
+              505 Garden Oaks Boulevard<br />
+              Houston, TX 77018
+            </p>
+            <p className="text-base leading-relaxed">
+              For More Info: 855-444-APEC<br />
+              <a
+                href="mailto:Service@TheAPECgroup.com"
+                className="text-[#e82228] hover:text-[#9c2e2b] transition-colors"
+              >
+                Service@TheAPECgroup.com
+              </a>
+              <br />
+              <a
+                href="mailto:Sales@TheAPECgroup.com"
+                className="text-[#e82228] hover:text-[#9c2e2b] transition-colors"
+              >
+                Sales@TheAPECgroup.com
+              </a>
+            </p>
+          </div>
 
-        {/* Row 3: Contact Information */}
-        <div className="flex justify-center mb-6">
-          <p className="text-base lg:text-lg text-gray-600">
-            855-444-APEC |{' '}
-            <a href="mailto:sales@TheAPECgroup.com" className="text-[#e82228] hover:text-[#9c2e2b] transition-colors">
-              Sales@TheAPECgroup.com
-            </a>
-          </p>
-        </div>
-
-        {/* Row 4: Address */}
-        <div className="flex justify-center mb-6">
-          <p className="text-base lg:text-lg text-gray-600 text-center leading-relaxed">
-            4732-E North Royal Atlanta Drive, Tucker, Georgia 30084 |{' '}
-            505 Garden Oaks Boulevard, Houston, Texas 77018
-          </p>
-        </div>
-
-        {/* Row 5: Social Media Icons */}
-        <div className="flex justify-center space-x-6 mb-8 flex-wrap gap-4">
-          <SocialIcon
-            url="https://twitter.com"
-            className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
-            target="_blank"
-            style={{ height: 40, width: 40, borderRadius: 8 }}
-            bgColor="#e82228"
-          />
-          <SocialIcon
-            url="https://www.instagram.com"
-            className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
-            target="_blank"
-            style={{ height: 40, width: 40, borderRadius: 8 }}
-            bgColor="#e82228"
-          />
-          <SocialIcon
-            url="https://www.facebook.com"
-            className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
-            target="_blank"
-            style={{ height: 40, width: 40, borderRadius: 8 }}
-            bgColor="#e82228"
-          />
-          <SocialIcon
-            url="https://www.linkedin.com"
-            className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
-            target="_blank"
-            style={{ height: 40, width: 40, borderRadius: 8 }}
-            bgColor="#e82228"
-          />
-        </div>
-
-        {/* Row 6: Legal Information */}
-        <div className="flex justify-center mb-6">
-          <p className="text-sm lg:text-base text-gray-600">
-            <Link href="/terms">
-              <span className="hover:text-[#e82228] cursor-pointer transition-colors">
-                Terms & Conditions
-              </span>
-            </Link>{' '}
-            |{' '}
-            <Link href="/privacy">
-              <span className="hover:text-[#e82228] cursor-pointer transition-colors">
-                Privacy Policy
-              </span>
+          {/* Column 3: Logo */}
+          <div className="flex justify-end">
+            <Link href="/">
+              <img
+                src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
+                alt="APEC Logo"
+                className="transition-transform duration-300 ease-in-out transform hover:scale-105 2xl:h-60"
+              />
             </Link>
-          </p>
+          </div>
         </div>
       </div>
 
-      {/* Copyright & Last Row Design */}
-      <div className="w-full bg-gradient-to-r from-[#e82228] via-[#9c2e2b] to-[#720b0d] py-6 mt-12">
-        <p className="text-lg lg:text-lg text-center text-gray-100 font-light">
-          © 2023–2024 The APEC Group. All rights reserved.
+      <hr className="h-px bg-gray-600 border-0"></hr>
+
+      {/* Copyright*/}
+      <div className="w-full 2xl:pt-6">
+        <p className="text-md text-center text-gray-300 font-light">
+          Copyright 2024–2025 © The APEC Group. All rights reserved.
         </p>
       </div>
     </footer>
