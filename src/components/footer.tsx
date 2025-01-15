@@ -1,9 +1,10 @@
 import { SocialIcon } from 'react-social-icons';
 import Link from 'next/link';
+import React from 'react';
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#f5f5f5] text-black py-12 font-inter">
+    <footer className="bg-transparent text-black py-12 font-inter">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Row 1: Logo */}
         <div className="flex justify-center mb-8">
@@ -97,4 +98,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

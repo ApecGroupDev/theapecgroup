@@ -13,7 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="bg-gray-200 text-gray-800">
-      <body>
+      <body
+        style={{
+          backgroundImage: "url('/backgrounds/WebBg2.jpg')",
+          backgroundSize: 'cover', // Cover the entire container
+          backgroundPosition: 'center top', // Center horizontally, align top
+          backgroundRepeat: 'no-repeat',
+          minHeight: '100vh',
+        }}>
         {/* Header */}
         <Header />
 

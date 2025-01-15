@@ -7,18 +7,7 @@ import About from '@/components/Home/about';
 
 const Home: React.FC = () => {
   return (
-    <div
-      style={{
-        backgroundImage: "url('/backgrounds/WebBg.jpg')",
-        backgroundSize: 'cover', // Cover the entire container
-        backgroundPosition: 'center top', // Center horizontally, align top
-        backgroundRepeat: 'no-repeat',
-        minHeight: '100vh',
-        width: '100vw', // Use full viewport width
-        margin: 0,
-        padding: 0,
-      }}
-    >
+    <div>
       {/* Sections */}
       <Hero />
       <About />
