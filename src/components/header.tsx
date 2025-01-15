@@ -39,9 +39,9 @@ const Header: React.FC = () => {
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
           <Link href="/">
             <img
-              src="/logos/APEC.png" 
+              src="/logos/APEC.png"
               alt="Logo"
-              className="md:h-16 w-800:h-18 w-900:h-20 lg:h-24 w-auto" 
+              className="md:h-16 w-800:h-18 w-900:h-20 lg:h-24 2k:h-28 w-auto"
             />
           </Link>
         </div>
