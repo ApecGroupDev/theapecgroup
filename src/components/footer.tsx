@@ -5,12 +5,12 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-transparent text-black py-6 font-inter 2xl:mt-24 2k:mt-80">
-      <div className="lg:px-12 xl:px-12 mac-14:px-24 2xl:px-32">
+      <div className="w-900:px-8 lg:px-12 xl:px-12 mac-14:px-24 2xl:px-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-gray-300">
           {/* Column 1: Social Media Icons */}
           <div className="flex flex-col items-center md:items-start space-y-4">
-            <span className="text-lg xl:text-sm">For More Information</span>
-            <span className='ps-6  xl:text-sm'>855-444-APEC | Sales@TheAPECgroup.com</span>
+            <span className="text-lg w-900:text-sm xl:text-sm">For More Information</span>
+            <span className='ps-6 w-900:text-sm xl:text-sm'>855-444-APEC | Sales@TheAPECgroup.com</span>
             <div className="flex space-x-4 ps-12">
               <SocialIcon
                 url="https://twitter.com"
@@ -45,17 +45,17 @@ const Footer: React.FC = () => {
 
           {/* Column 2: Addresses and Contact Information */}
           <div className="flex flex-col items-center text-left space-y-4 pb-6">
-            <p className="text-base xl:text-sm leading-relaxed">
+            <p className="text-base w-900:text-sm xl:text-sm leading-relaxed">
               Main Office: Atlanta, Georgia<br />
               4732-E North Royal Atlanta<br />
               Drive Tucker, GA 30084
             </p>
-            <p className="text-base xl:text-sm leading-relaxed">
+            <p className="text-base w-900:text-sm xl:text-sm leading-relaxed">
               Branch Office: Houston, Texas<br />
               505 Garden Oaks Boulevard<br />
               Houston, TX 77018
             </p>
-            <p className="text-base xl:text-sm leading-relaxed">
+            <p className="text-base w-900:text-sm xl:text-sm leading-relaxed">
               For More Info: 855-444-APEC<br />
               <a
                 href="mailto:Service@TheAPECgroup.com"
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
               <img
                 src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
                 alt="APEC Logo"
-                className="transition-transform duration-300 ease-in-out transform hover:scale-105 lg:h-48 xl:h-48 mac-14:h-52 2xl:h-60"
+                className="transition-transform duration-300 ease-in-out transform hover:scale-105 w-900:h-44 lg:h-48 xl:h-48 mac-14:h-52 2xl:h-60"
               />
             </Link>
           </div>
@@ -89,8 +89,8 @@ const Footer: React.FC = () => {
       <hr className="h-px bg-gray-600 border-0"></hr>
 
       {/* Copyright*/}
-      <div className="w-full lg:pt-6 xl:pt-6 mac-14:pt-6 2xl:pt-6">
-        <p className="text-md xl:text-sm text-center text-gray-300 font-light">
+      <div className="w-full pt-6">
+        <p className="text-md w-900:text-sm xl:text-sm text-center text-gray-300 font-light">
           Copyright 2024–2025 © The APEC Group. All rights reserved.
         </p>
       </div>
