@@ -4,8 +4,8 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-transparent text-black py-6 font-inter 2xl:mt-24 2k:mt-80">
-      <div className="2xl:px-32">
+    <footer className="bg-transparent text-black py-6 font-inter mac-14:mt-24 2xl:mt-24 2k:mt-80">
+      <div className="mac-14:px-24 2xl:px-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-gray-300">
           {/* Column 1: Social Media Icons */}
           <div className="flex flex-col items-center md:items-start space-y-4">
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
               <img
                 src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
                 alt="APEC Logo"
-                className="transition-transform duration-300 ease-in-out transform hover:scale-105 2xl:h-60"
+                className="transition-transform duration-300 ease-in-out transform hover:scale-105 mac-14:h-52 2xl:h-60"
               />
             </Link>
           </div>
