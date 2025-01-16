@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-transparent text-black py-6 font-inter mac-14:mt-24 2xl:mt-24 2k:mt-80">
+    <footer className="bg-transparent text-black py-6 font-inter 2xl:mt-24 2k:mt-80">
       <div className="mac-14:px-24 2xl:px-32">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-gray-300">
           {/* Column 1: Social Media Icons */}
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
       <hr className="h-px bg-gray-600 border-0"></hr>
 
       {/* Copyright*/}
-      <div className="w-full 2xl:pt-6">
+      <div className="w-full mac-14:pt-6 2xl:pt-6">
         <p className="text-md text-center text-gray-300 font-light">
           Copyright 2024–2025 © The APEC Group. All rights reserved.
         </p>

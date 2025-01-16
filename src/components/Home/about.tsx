@@ -1,6 +1,6 @@
 const About: React.FC = () => {
   return (
-    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center md:px-8 md:mt-24 lg:px-8 xl:px-28 w-800:mt-12 lg:mt-0 xl:mt-8 mac-14:mt-0 mac-16:mt-0 2xl:mt-28">
+    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center md:px-8 md:mt-24 lg:px-8 xl:px-28 w-800:mt-12 lg:mt-0 xl:mt-8 mac-14:mt-24 mac-16:mt-0 2xl:mt-28">
       {/* Left Image Section */}
       <div className="w-full md:w-2/5 flex justify-center md:py-8 lg:py-16 lg:p-12 xl:pt-0 mac-14:pt-0 mac-16:px-14 2xl:pt-0">
         <img
