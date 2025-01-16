@@ -1,8 +1,8 @@
 const About: React.FC = () => {
   return (
-    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center md:px-8 md:mt-24 lg:px-8 xl:px-28 w-800:mt-12 lg:mt-0 xl:mt-8 mac-14:mt-24 mac-16:mt-0 2xl:mt-28">
+    <div className="relative w-full bg-transparent flex flex-col md:flex-row justify-center md:px-8 md:mt-24 lg:px-8 xl:px-28 w-800:mt-12 lg:mt-0 xl:mt-24 mac-14:mt-24 mac-16:mt-0 2xl:mt-28">
       {/* Left Image Section */}
-      <div className="w-full md:w-2/5 flex justify-center md:py-8 lg:py-16 lg:p-12 xl:pt-0 mac-14:pt-0 mac-16:px-14 2xl:pt-0">
+      <div className="w-full md:w-2/5 flex justify-center md:py-8 lg:py-16 lg:p-12 mac-14:pt-0 mac-16:px-14 2xl:pt-0">
         <img
           src="/products/station.png"
           alt="Hero"
@@ -15,12 +15,12 @@ const About: React.FC = () => {
         <p className="text-5xl md:text-2xl lg:text-3xl mac-14:text-6xl 2xl:text-6xl 2k:text-8xl font-bold tracking-wider italic">Welcome to</p>
         <p className="text-5xl md:text-xl md:mt-0 lg:text-2xl lg:mt-0 mac-14:text-6xl xl:mt-0 2xl:text-6xl 2xl:mt-3 2k:text-8xl font-extrabold text-red-600">APEC</p>
         <p className="text-2xl md:text-xl md:mt-0 lg:mt-0 lg:text-2xl mac-14:text-3xl xl:mt-0 2xl:text-3xl 2xl:mt-4 2k:text-5xl font-bold text-gray-800">Petroleum Equipment Services</p>
-        <p className="mt-6 md:text-xs lg:text-md xl:text-md mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600 tracking-wider">
+        <p className="mt-6 md:text-xs lg:text-md xl:text-lg mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600 tracking-wider">
           The APEC group you know today started out originally as Atlanta Petroleum Equipment Company in September of 1989.
           From our modest beginning as a small service company, we have grown to a leader in our industry offering a full
           line of petroleum equipment, installation, repair and support services.
         </p>
-        <p className="mt-4 md:text-xs lg:text-md xl:text-md mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600 tracking-wider">
+        <p className="mt-4 md:text-xs lg:text-md xl:text-lg mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600 tracking-wider">
           APEC is committed to providing only the highest quality products and services available. Our industry continues
           to evolve technically year after year. APEC is committed to staying on the leading edge of all the latest innovations
           and technologies to not only support our customer’s needs but so we can also be the industry experts you can rely on.

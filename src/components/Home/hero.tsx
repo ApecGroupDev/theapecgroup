@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center mb-8 md:mt-32 lg:mt-24 mac-14:mt-20 xl:mt-0 2k:mt-12">
+      <div className="w-full md:w-1/2 flex justify-center mb-8 md:mt-32 lg:mt-24 mac-14:mt-20 xl:mt-16 2k:mt-12">
         <img
           src="/products/Pump.png"
           alt="Hero"
