@@ -90,7 +90,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright*/}
       <div className="w-full pt-6">
-        <p className="text-md w-900:text-sm xl:text-sm text-center text-gray-300 font-light">
+        <p className="w-800:text-sm w-900:text-sm xl:text-sm text-center text-gray-300 font-light">
           Copyright 2024–2025 © The APEC Group. All rights reserved.
         </p>
       </div>
