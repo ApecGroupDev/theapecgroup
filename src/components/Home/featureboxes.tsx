@@ -53,7 +53,7 @@ const FeatureBoxes: React.FC = () => {
             key={index}
             className="relative mx-auto group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all md:w-10/12 lg:w-11/12 xl:w-10/12 mac-14:w-11/12 2xl:w-11/12 duration-500"
           >
-            <div className="flex flex-col items-center justify-center md:h-20 w-900:h-32 lg:h-40 xl:h-48 mac-14:h-60 2xl:h-64 2k:h-96">
+            <div className="flex flex-col items-center justify-center md:h-20 w-900:h-32 lg:h-40 xl:h-52 mac-14:h-60 2xl:h-64 2k:h-96">
               {feature.icon}
               <h3 className="md:text-sm lg:text-xl 2xl:text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
             </div>
@@ -74,7 +74,7 @@ const FeatureBoxes: React.FC = () => {
               key={index}
               className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-full sm:w-1/2 md:w-1/4 lg:w-3/12"
             >
-              <div className="flex flex-col items-center justify-center md:h-20 w-900:h-32 lg:h-40 xl:h-48 mac-14:h-60 2xl:h-64 2k:h-96">
+              <div className="flex flex-col items-center justify-center md:h-20 w-900:h-32 lg:h-40 xl:h-52 mac-14:h-60 2xl:h-64 2k:h-96">
                 {feature.icon}
                 <h3 className="md:text-sm lg:text-xl xl:text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
               </div>
