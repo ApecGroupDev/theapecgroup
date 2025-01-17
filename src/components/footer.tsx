@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-black font-inter md:px-8">
+    <footer className="text-black font-inter md:px-8 pt-4">
       <div className="grid md:grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
         <div className="flex flex-col items-center md:items-start md:space-y-1 space-y-4">

@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
-      <div className='md:mt-12'>
+      <div className='md:mt-12 w-800:mt-14'>
         <Hero />
       </div>
 
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <FeatureBoxes />
       </div>
 
-      <div className='md:mt-40 md:mb-28'>
+      <div className='md:mt-40 md:mb-28 w-800:mt-48'>
         <MembershipLogosCarousel />
       </div>
     </div>
