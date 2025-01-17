@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 2: Addresses and Contact Information */}
-        <div className="flex flex-col items-center text-left space-y-4 pb-4 md:pt-2">
+        <div className="flex flex-col space-y-4 pb-4 items-center md:pt-2">
           <p className="md:text-xs leading-relaxed">
             Main Office: Atlanta, Georgia<br />
             4732-E North Royal Atlanta<br />
