@@ -20,10 +20,10 @@ const MembershipLogosCarousel: React.FC = () => {
   return (
     <div className="bg-transparent md:px-12">
       <div className="text-center">
-        <h2 className="text-4xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-6xl 2k:text-8xl font-extrabold text-gray-800 tracking-tight leading-tight">
+        <h2 className="text-4xl md:text-3xl w-900:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl 2k:text-8xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <span className="text-red-600">Proud</span> Member Of
         </h2>
-        <p className="md:text-sm text-lg text-gray-500 mt-2 max-w-2xl mx-auto">
+        <p className="md:text-sm w-900:text-base text-gray-500 mt-2 max-w-2xl mx-auto">
           Our associations reflect our dedication to quality, collaboration, and industry leadership.
         </p>
       </div>
