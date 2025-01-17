@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <FeatureBoxes />
       </div>
 
-      <div className='md:mt-40 md:mb-28 w-800:mt-48 w-900:mb-48'>
+      <div className='md:mt-40 md:mb-28 w-800:mt-48 w-900:mb-48 lg:mt-60 lg:mb-40'>
         <MembershipLogosCarousel />
       </div>
     </div>

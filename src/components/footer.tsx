@@ -4,13 +4,13 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-black font-inter md:px-8 pt-4">
+    <footer className="text-black font-inter md:px-8 md:pt-4 lg:pt-6">
       <div className="grid md:grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
-        <div className="flex flex-col items-center md:items-start md:space-y-1 space-y-4">
+        <div className="flex flex-col items-center md:items-start md:space-y-1 lg:space-y-2">
           <span className="md:text-xs md:pt-6">For More Information</span>
-          <span className='md:ps-0 ps-6 md:text-xs whitespace-nowrap'>855-444-APEC | Sales@TheAPECgroup.com</span>
-          <div className="flex  space-x-4 md:ps-0 ps-12">
+          <span className='md:ps-0 lg:ps-6 md:text-xs whitespace-nowrap'>855-444-APEC | Sales@TheAPECgroup.com</span>
+          <div className="flex  space-x-4 md:ps-0 lg:ps-12">
             <SocialIcon
               url="https://twitter.com"
               target="_blank"
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <p className="md:hidden md:text-xs leading-relaxed">
+          <p className="md:max-lg:hidden md:text-xs leading-relaxed">
             For More Info: 855-444-APEC<br />
             <a
               href="mailto:Service@TheAPECgroup.com"
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
             <img
               src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
               alt="APEC Logo"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 md:h-28"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 md:h-28 lg:h-40"
             />
           </Link>
         </div>
