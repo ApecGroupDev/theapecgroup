@@ -18,12 +18,12 @@ const associations = [
 
 const MembershipLogosCarousel: React.FC = () => {
   return (
-    <section className="bg-transparent pb-96 md:px-20 md:mt-32 w-900:mt-96 lg:px-16 lg:mt-96 xl:mt-80 xl:px-24 mac-14:mt-80 mac-14:px-48 2xl:mt-128 2xl:px-60 2k:mt-160">
+    <div className="bg-transparent md:px-12">
       <div className="text-center">
         <h2 className="text-4xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-6xl 2k:text-8xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <span className="text-red-600">Proud</span> Member Of
         </h2>
-        <p className="text-lg text-gray-500 mt-2 max-w-2xl mx-auto">
+        <p className="md:text-sm text-lg text-gray-500 mt-2 max-w-2xl mx-auto">
           Our associations reflect our dedication to quality, collaboration, and industry leadership.
         </p>
       </div>
@@ -41,7 +41,7 @@ const MembershipLogosCarousel: React.FC = () => {
       >
         {associations.map((association, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center md:mt-12 w-800:mt-0 w-900:mt-12 lg:mt-0 mac-14:mt-12 2k:mt-24 p-4 transition-transform duration-300 ease-in-out hover:scale-110">
+            <div className="flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110">
               <img
                 src={association.src}
                 alt={association.alt}
@@ -52,7 +52,7 @@ const MembershipLogosCarousel: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
 };
 

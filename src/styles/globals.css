@@ -1,5 +1,7 @@
 /* src/styles/globals.css */
 
+@import '@fontsource/metropolis/index.css';
+
 /* Import Tailwind's base styles */
 @tailwind base;
 
@@ -8,6 +10,10 @@
 
 /* Import Tailwind's utility classes */
 @tailwind utilities;
+
+body {
+  @apply font-sans;
+}
 
 /* Add this to the relevant element */
 .text-wrap {

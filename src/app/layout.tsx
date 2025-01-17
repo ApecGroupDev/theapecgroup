@@ -27,8 +27,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Main content */}
         <div className="w-full">{children}</div>
 
-        {/* Footer */}
         <Footer />
+        {/* Footer */}
       </body>
     </html>
   );
