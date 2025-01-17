@@ -4,10 +4,10 @@ const Hero: React.FC = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center justify-between bg-transparent md:px-12">
       {/* Left Text Section */}
-      <div className="text-center md:text-left text-black">
-        <p className="text-4xl md:text-3xl lg:text-4xl xl:text-5xl mac-14:text-6xl 2xl:text-7xl 2k:text-8xl font-extrabold">YOUR TOP CHOICE</p>
-        <p className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl mac-14:text-7xl 2xl:text-8xl 2k:text-9xl italic text-red-500 tracking-wider whitespace-nowrap">ONE-STOP SHOP</p>
-        <p className="text-3xl md:text-3xl lg:text-4xl xl:text-5xl mac-14:text-6xl 2xl:text-7xl 2k:text-8xl font-medium">ATLANTA COMPANY</p>
+      <div className="text-center md:text-left -space-y-1.5 text-black">
+        <p className="md:text-xl lg:text-4xl xl:text-5xl mac-14:text-6xl 2xl:text-7xl 2k:text-8xl font-bold whitespace-nowrap">YOUR TOP CHOICE</p>
+        <p className="md:text-3xl lg:text-5xl xl:text-6xl mac-14:text-7xl 2xl:text-8xl 2k:text-9xl font-regular italic text-red-500 tracking-wider whitespace-nowrap">ONE-STOP SHOP</p>
+        <p className="md:text-xl lg:text-4xl xl:text-5xl mac-14:text-6xl 2xl:text-7xl 2k:text-8xl font-regular">ATLANTA COMPANY</p>
       </div>
 
       {/* Right Image Section */}
