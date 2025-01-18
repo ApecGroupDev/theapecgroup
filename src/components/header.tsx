@@ -66,12 +66,12 @@ const Header: React.FC = () => {
 
         {/* Navigation Links */}
         <nav
-          className={`flex flex-col items-start space-y-4 md:flex-row md:space-y-0 md:space-x-6 mx-auto transition-all duration-300 ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+          className={`flex flex-col sm: items-start space-y-4 md:flex-row md:space-y-0 md:space-x-6 mx-auto transition-all duration-300 ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
             } md:max-h-none md:opacity-100`}
         >
           {/* Frosted Background */}
           <div
-            className={`absolute inset-0 bg-white bg-opacity-90 p-4 rounded-md z-10 transform transition-all duration-200 ease-out ${isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"} md:hidden`}
+            className={`absolute inset-0 bg-gray-100 bg-opacity-90 p-4 rounded-3xl z-10 transform transition-all duration-200 ease-out ${isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"} md:hidden`}
             onClick={toggleMenu}
           ></div>
 

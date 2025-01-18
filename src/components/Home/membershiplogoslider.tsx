@@ -18,9 +18,9 @@ const associations = [
 
 const MembershipLogosCarousel: React.FC = () => {
   return (
-    <div className="bg-transparent md:px-12 2k:px-32">
+    <div className="bg-transparent px-12 md:px-12 2k:px-32">
       <div className="text-center">
-        <h2 className="text-4xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
+        <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <span className="text-red-600">Proud</span> Member Of
         </h2>
         <p className="md:text-sm w-900:text-base xl:text-lg mac-14:text-xl mac-16:text-2xl 2xl:text-2xl 2k:text-4xl text-gray-500 mt-2 max-w-2xl mac-14:max-w-full mac-16:max-w-full 2xl:max-w-full mx-auto">
@@ -33,7 +33,7 @@ const MembershipLogosCarousel: React.FC = () => {
         slidesPerView={3}
         spaceBetween={20}
         breakpoints={{
-          640: { slidesPerView: 1 },
+          300: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
@@ -41,11 +41,11 @@ const MembershipLogosCarousel: React.FC = () => {
       >
         {associations.map((association, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110">
+            <div className="mt-12 md:mt-0 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110">
               <img
                 src={association.src}
                 alt={association.alt}
-                className="md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-128 max-w-full object-contain mb-4"
+                className="h-44 md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-128 max-w-full object-contain mb-4"
               />
               <p className="text-sm 2xl:text-md 2k:text-2xl text-gray-700 text-center">{association.name}</p>
             </div>

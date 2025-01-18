@@ -22,7 +22,7 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        'xs': '380px',
+        'xs': '300px',
         'sm': '540px',
         'w-800': { 'min': '800px', 'max': '870px' },
         'w-900': { 'min': '900px', 'max': '970px' },
