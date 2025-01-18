@@ -18,12 +18,12 @@ const associations = [
 
 const MembershipLogosCarousel: React.FC = () => {
   return (
-    <div className="bg-transparent md:px-12">
+    <div className="bg-transparent md:px-12 2k:px-32">
       <div className="text-center">
-        <h2 className="text-4xl md:text-3xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-8xl font-extrabold text-gray-800 tracking-tight leading-tight">
+        <h2 className="text-4xl md:text-3xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <span className="text-red-600">Proud</span> Member Of
         </h2>
-        <p className="md:text-sm w-900:text-base xl:text-lg mac-14:text-xl mac-16:text-2xl 2xl:text-2xl text-gray-500 mt-2 max-w-2xl mac-14:max-w-full mac-16:max-w-full 2xl:max-w-full mx-auto">
+        <p className="md:text-sm w-900:text-base xl:text-lg mac-14:text-xl mac-16:text-2xl 2xl:text-2xl 2k:text-4xl text-gray-500 mt-2 max-w-2xl mac-14:max-w-full mac-16:max-w-full 2xl:max-w-full mx-auto">
           Our associations reflect our dedication to quality, collaboration, and industry leadership.
         </p>
       </div>
@@ -37,7 +37,7 @@ const MembershipLogosCarousel: React.FC = () => {
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="mySwiper mac-14:mt-16 mac-16:mt-20 2xl:mt-24"
+        className="mySwiper mac-14:mt-16 mac-16:mt-20 2xl:mt-24 2k:mt-40"
       >
         {associations.map((association, index) => (
           <SwiperSlide key={index}>
@@ -45,9 +45,9 @@ const MembershipLogosCarousel: React.FC = () => {
               <img
                 src={association.src}
                 alt={association.alt}
-                className="md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-96 max-w-full object-contain mb-4"
+                className="md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-128 max-w-full object-contain mb-4"
               />
-              <p className="text-sm 2xl:text-md text-gray-700 text-center">{association.name}</p>
+              <p className="text-sm 2xl:text-md 2k:text-2xl text-gray-700 text-center">{association.name}</p>
             </div>
           </SwiperSlide>
         ))}

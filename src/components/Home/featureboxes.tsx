@@ -40,7 +40,7 @@ const FeatureBoxes: React.FC = () => {
     <div className="bg-transparent md:px-24">
       {/* Section Title */}
       <div className="text-center">
-        <p className="md:text-3xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-8xl font-extrabold text-gray-800 mb-4">
+        <p className="md:text-3xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 mb-4">
           WHY CHOOSE<span className="text-red-600"> APEC?</span>
         </p>
       </div>
@@ -68,7 +68,7 @@ const FeatureBoxes: React.FC = () => {
         ))}
 
         {/* Second Row: 2 Boxes (Centered) */}
-        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 xl:gap-24 mac-14:gap-32 mac-16:gap-24 2xl:col-span-3 2xl:gap-44">
+        <div className="flex flex-wrap justify-center gap-14 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 xl:gap-24 mac-14:gap-32 mac-16:gap-24 2xl:col-span-3 2xl:gap-44 2k:mt-24">
           {features.slice(3).map((feature, index) => (
             <div
               key={index}

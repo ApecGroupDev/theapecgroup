@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-black font-inter md:px-8 md:pt-4 lg:pt-6 xl:pt-14 mac-14:pt-28 mac-16:pt-52 mac-16:px-20 2xl:px-24 2xl:pt-52">
+    <footer className="text-black font-inter md:px-8 md:pt-4 lg:pt-6 xl:pt-14 mac-14:pt-28 mac-16:pt-52 mac-16:px-20 2xl:px-24 2xl:pt-52 2k:px-32">
       <div className="grid md:grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
         <div className="flex flex-col items-center md:items-start md:space-y-1 lg:space-y-2">
@@ -44,17 +44,17 @@ const Footer: React.FC = () => {
 
         {/* Column 2: Addresses and Contact Information */}
         <div className="flex flex-col space-y-4 pb-4 items-center md:pt-2">
-          <p className="md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg leading-relaxed">
+          <p className="md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed">
             Main Office: Atlanta, Georgia<br />
             4732-E North Royal Atlanta<br />
             Drive Tucker, GA 30084
           </p>
-          <p className="md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg leading-relaxed">
+          <p className="md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed">
             Branch Office: Houston, Texas<br />
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <p className="md:max-lg:hidden md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg leading-relaxed">
+          <p className="md:max-lg:hidden md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed">
             For More Info: 855-444-APEC<br />
             <a
               href="mailto:Service@TheAPECgroup.com"
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
             <img
               src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
               alt="APEC Logo"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 2k:h-80"
             />
           </Link>
         </div>
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright*/}
       <div className="w-full py-4">
-        <p className="md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg text-center text-gray-300 font-light">
+        <p className="md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl text-center text-gray-300 font-light">
           Copyright 2024–2025 © The APEC Group. All rights reserved.
         </p>
       </div>
