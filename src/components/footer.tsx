@@ -4,7 +4,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-black font-inter md:px-8 md:pt-4 lg:pt-6 xl:pt-14 mac-14:pt-28 mac-16:pt-52 mac-16:px-20 2xl:px-24 2xl:pt-52 2k:px-32">
+    <footer className="text-black font-inter md:px-8 md:pt-4 lg:pt-6 xl:pt-24 mac-14:pt-28 mac-16:pt-52 mac-16:px-20 2xl:px-24 2xl:pt-52 2k:px-32">
       <div className="grid md:grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
         <div className="flex flex-col items-center md:items-start md:space-y-1 lg:space-y-2">
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <p className="md:max-lg:hidden md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed">
+          <p className="md:hidden lg:block md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed">
             For More Info: 855-444-APEC<br />
             <a
               href="mailto:Service@TheAPECgroup.com"

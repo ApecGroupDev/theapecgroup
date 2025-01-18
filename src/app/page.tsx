@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <About />
       </div>
 
-      <div className='md:mt-8 xl:mt-12 mac-16:mt-20 2xl:mt-24 2k:mt-32'>
+      <div className='md:mt-12 xl:mt-12 mac-16:mt-20 2xl:mt-24 2k:mt-32'>
         <FeatureBoxes />
       </div>
 
