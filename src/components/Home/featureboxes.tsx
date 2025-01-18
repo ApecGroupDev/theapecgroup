@@ -60,7 +60,7 @@ const FeatureBoxes: React.FC = () => {
 
             {/* Description (Hidden by default, revealed on hover) */}
             <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-              <p className="text-lg lg:text-md text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+              <p className="md:text-xs w-800:text-xs w-900:text-xs lg:text-sm xl:text-base text-gray-700 text-center overflow-y-auto max-h-48 px-4">
                 {feature.description}
               </p>
             </div>
@@ -81,7 +81,7 @@ const FeatureBoxes: React.FC = () => {
 
               {/* Description (Hidden by default, revealed on hover) */}
               <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-                <p className="md:text-sm lg:text-lg text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+                <p className="md:text-xs w-800:text-xs w-900:text-xs lg:text-sm xl:text-base text-gray-700 text-center overflow-y-auto max-h-48 px-4">
                   {feature.description}
                 </p>
               </div>
