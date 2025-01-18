@@ -3,13 +3,20 @@
 @import '@fontsource/metropolis/index.css';
 
 /* Importing various weights of the Metropolis font */
-@import "@fontsource/metropolis/300.css";  /* Light */
-@import "@fontsource/metropolis/400.css";  /* Regular */
-@import "@fontsource/metropolis/500.css";  /* Medium */
-@import "@fontsource/metropolis/600.css";  /* Semibold */
-@import "@fontsource/metropolis/700.css";  /* Bold */
-@import "@fontsource/metropolis/800.css";  /* Extrabold */
-@import "@fontsource/metropolis/900.css";  /* Black */
+@import "@fontsource/metropolis/300.css";
+/* Light */
+@import "@fontsource/metropolis/400.css";
+/* Regular */
+@import "@fontsource/metropolis/500.css";
+/* Medium */
+@import "@fontsource/metropolis/600.css";
+/* Semibold */
+@import "@fontsource/metropolis/700.css";
+/* Bold */
+@import "@fontsource/metropolis/800.css";
+/* Extrabold */
+@import "@fontsource/metropolis/900.css";
+/* Black */
 
 /* Import Tailwind's base styles */
 @tailwind base;

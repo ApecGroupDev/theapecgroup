@@ -10,9 +10,7 @@ const Header: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMenu = () => setIsOpen((prev) => !prev);
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
@@ -34,22 +32,49 @@ const Header: React.FC = () => {
       className={`bg-transparent fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
     >
-      <div className="container mx-auto relative flex items-center md:py-4">
-        {/* Logo Section */}
-        <div className={`absolute md:left-4 md:top-8 xl:left-6 xl:top-10 mac-16:top-14 2xl:-left-14 2xl:top-16 2k:left-8 2k:top-20 transform -translate-y-1/2 transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+      <div className="container min-w-full relative flex items-center py-4">
+        {/* Logo Section (hidden on mobile) */}
+        <div
+          className={`absolute md:left-4 md:top-8 xl:left-6 xl:top-10 mac-16:top-14 mac-16:left-6 2xl:left-14 2xl:top-16 2k:left-8 2k:top-20 transform -translate-y-1/2 transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"
+            } hidden md:block`}
+        >
           <Link href="/">
-            <img
-              src="/logos/APEC.png"
-              alt="Logo"
-              className="md:h-16 xl:h-20 mac-16:h-24 2xl:h-28 2k:h-32"
-            />
+            <img src="/logos/APEC.png" alt="Logo" className="md:h-16 xl:h-20 mac-16:h-24 2xl:h-28 2k:h-32" />
           </Link>
         </div>
 
+        {/* Menu Button */}
+        <button
+          className="absolute right-4 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none md:hidden z-20"
+          onClick={toggleMenu}
+        >
+          {isOpen ? (
+            <span className="text-5xl">×</span> // Close Icon
+          ) : (
+            <svg // Hamburger Icon
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
+
         {/* Navigation Links */}
         <nav
-          className={`flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 2xl:space-x-8 mx-auto`}
+          className={`flex flex-col items-start space-y-4 md:flex-row md:space-y-0 md:space-x-6 mx-auto transition-all duration-300 ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+            } md:max-h-none md:opacity-100`}
         >
+          {/* Frosted Background */}
+          <div
+            className={`absolute inset-0 bg-white bg-opacity-90 p-4 rounded-md z-10 transform transition-all duration-200 ease-out ${isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"} md:hidden`}
+            onClick={toggleMenu}
+          ></div>
+
           {[
             "/",
             "/about",
@@ -62,24 +87,17 @@ const Header: React.FC = () => {
             <Link
               key={path}
               href={path}
-              className={`md:text-sm mac-14:text-lg mac-16:text-lg 2xl:text-xl text-gray-900 hover:text-red-600 transition-colors duration-200 relative ${pathname === path ? "text-red-600" : ""
-                }`}
+              className={`md:text-xs lg:text-base mac-14:text-lg mac-16:text-lg xl:text-base 2xl:text-xl text-gray-900 hover:text-red-600 transition-colors duration-200 relative ${pathname === path ? "text-red-600" : ""
+                } z-20`}
+              onClick={() => setIsOpen(false)}
             >
               {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
               {pathname === path && (
-                <span className="absolute left-0 right-0 md:top-5 mac-14:top-6 mac-16:top-6 2xl:top-7 bottom-0 h-0.5 bg-red-600" />
+                <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-red-600" />
               )}
             </Link>
           ))}
         </nav>
-
-        {/* Menu Button */}
-        <button
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white focus:outline-none md:hidden"
-          onClick={toggleMenu}
-        >
-          {isOpen ? "Close" : "Menu"}
-        </button>
       </div>
     </header>
   );
