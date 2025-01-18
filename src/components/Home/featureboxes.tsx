@@ -40,7 +40,7 @@ const FeatureBoxes: React.FC = () => {
     <div className="bg-transparent md:px-24">
       {/* Section Title */}
       <div className="text-center">
-        <p className="md:text-3xl w-900:text-5xl lg:text-5xl xl:text-6xl 2k:text-8xl font-extrabold text-gray-800 mb-4">
+        <p className="md:text-3xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl 2k:text-8xl font-extrabold text-gray-800 mb-4">
           WHY <span className="text-red-600">APEC?</span>
         </p>
       </div>
