@@ -16,11 +16,11 @@ const Home: React.FC = () => {
         <About />
       </div>
 
-      <div className='md:mt-8 xl:mt-12'>
+      <div className='md:mt-8 xl:mt-12 mac-16:mt-20'>
         <FeatureBoxes />
       </div>
 
-      <div className='md:mt-40 md:mb-28 w-800:mt-48 w-900:mb-48 lg:mt-60 lg:mb-40 xl:mb-52 mac-14:mt-72'>
+      <div className='md:mt-40 md:mb-28 w-800:mt-48 w-900:mb-48 lg:mt-60 lg:mb-40 xl:mb-52 mac-14:mt-72 mac-16:mt-80' >
         <MembershipLogosCarousel />
       </div>
     </div>
