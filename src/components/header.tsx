@@ -36,7 +36,7 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto relative flex items-center md:py-4">
         {/* Logo Section */}
-        <div className="absolute md:left-4 md:top-8 xl:left-6 xl:top-10 mac-16:top-14 2xl:-left-14 2xl:top-16 2k:left-8 2k:top-20 transform -translate-y-1/2">
+        <div className={`absolute md:left-4 md:top-8 xl:left-6 xl:top-10 mac-16:top-14 2xl:-left-14 2xl:top-16 2k:left-8 2k:top-20 transform -translate-y-1/2 transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"}`}>
           <Link href="/">
             <img
               src="/logos/APEC.png"
