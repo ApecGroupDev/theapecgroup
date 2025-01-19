@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  mode: 'jit', // Enables Just-In-Time mode
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,15 +16,13 @@ export default {
         '128': '32rem',  // Adds a value for mt-128 (512px)
         '144': '36rem',  // Adds a value for mt-144 (576px)
         '160': '40rem',  // Adds a value for mt-160 (640px)
-        // Add any other values you need
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
       screens: {
-        'xs': '300px',
-        'sm': '540px',
+        'w-640': '640px',
         'w-800': { 'min': '800px', 'max': '870px' },
         'w-900': { 'min': '900px', 'max': '970px' },
         'mac-14': { 'min': '1500px', 'max': '1600px' },

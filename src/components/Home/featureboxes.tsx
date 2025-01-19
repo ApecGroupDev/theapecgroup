@@ -68,7 +68,7 @@ const FeatureBoxes: React.FC = () => {
         ))}
 
         {/* Second Row: 2 Boxes (Centered) */}
-        <div className="flex flex-wrap justify-center col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 gap-8 md:gap-14 xl:gap-24 mac-14:gap-32 mac-16:gap-24 2xl:col-span-3 2xl:gap-44 2k:mt-24">
+        <div className="flex flex-wrap justify-center col-span-1 md:col-span-3 gap-8 md:gap-14 xl:gap-24 mac-14:gap-32 mac-16:gap-24 2xl:col-span-3 2xl:gap-44 2k:mt-24">
           {features.slice(3).map((feature, index) => (
             <div
               key={index}
