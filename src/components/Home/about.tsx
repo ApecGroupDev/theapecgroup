@@ -26,9 +26,9 @@ const About: React.FC = () => {
         <motion.p
           ref={ref} // Set the ref to the element
           className="text-4xl md:text-4xl xl:text-5xl mac-14:text-6xl mac-16:text-6xl 2xl:text-7xl 2k:text-8xl font-semibold italic"
-          initial={{ y: 50, opacity: 0 }}
+          initial={{ y: 70, opacity: 0 }}
           animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           Welcome to
         </motion.p>
