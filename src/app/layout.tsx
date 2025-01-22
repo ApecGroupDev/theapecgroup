@@ -1,6 +1,4 @@
 import '../styles/globals.css';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
 
 export const metadata = {
   title: 'APEC Main Website',
@@ -21,22 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href={metadata.icons.icon} />
         <meta name="description" content={metadata.description} />
       </head>
-      <body
-        style={{
-          backgroundImage: "url('/backgrounds/WebBg2.jpg')",
-          backgroundSize: 'cover', // Cover the entire container
-          backgroundPosition: 'center top', // Center horizontally, align top
-          backgroundRepeat: 'no-repeat',
-          minHeight: '100vh',
-        }}>
-        {/* Header */}
-        <Header />
-
-        {/* Main content */}
-        <div className="w-full">{children}</div>
-
-        <Footer />
-        {/* Footer */}
+      <body className="min-h-screen">
+        {/* Render children */}
+        {children}
       </body>
     </html>
   );
