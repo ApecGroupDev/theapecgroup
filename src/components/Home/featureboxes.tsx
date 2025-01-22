@@ -1,5 +1,9 @@
+"use client";
+
 import React from "react";
 import { FaUsers, FaTasks, FaHandshake, FaCogs, FaChartLine } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 interface FeatureBox {
   title: string;
@@ -11,27 +15,27 @@ const features: FeatureBox[] = [
   {
     title: "TEAM",
     description: "“The truth is that teamwork is at the heart of great achievement” – John C. Maxwell.",
-    icon: <FaUsers className="md:text-2xl lg:text-4xl text-red-600" />,
+    icon: <FaUsers className="text-4xl md:text-2xl lg:text-4xl text-red-600" />,
   },
   {
     title: "EXECUTION",
     description: "“You can’t build a reputation on what you are going to do” – Henry Ford.",
-    icon: <FaTasks className="md:text-2xl lg:text-4xl text-red-600" />,
+    icon: <FaTasks className="text-4xl md:text-2xl lg:text-4xl text-red-600" />,
   },
   {
     title: "CUSTOMER",
     description: "“Get closer than ever to your customers.” – Steve Jobs.",
-    icon: <FaHandshake className="md:text-2xl lg:text-4xl text-red-600" />,
+    icon: <FaHandshake className="text-4xl md:text-2xl lg:text-4xl text-red-600" />,
   },
   {
     title: "EXPERIENCE",
     description: "“Experience is the teacher of all things” – Julius Caesar.",
-    icon: <FaChartLine className="md:text-2xl lg:text-4xl text-red-600" />,
+    icon: <FaChartLine className="text-4xl md:text-2xl lg:text-4xl text-red-600" />,
   },
   {
     title: "SERVICE",
     description: "“Great customer service means honoring the customer” – Chris LoCurto.",
-    icon: <FaCogs className="md:text-2xl lg:text-4xl text-red-600" />,
+    icon: <FaCogs className="text-4xl md:text-2xl lg:text-4xl text-red-600" />,
   },
 ];
 
