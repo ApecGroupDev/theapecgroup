@@ -2,8 +2,6 @@
 
 import React from "react";
 import { FaUsers, FaTasks, FaHandshake, FaCogs, FaChartLine } from "react-icons/fa";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 interface FeatureBox {
   title: string;
