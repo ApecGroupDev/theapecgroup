@@ -1,4 +1,14 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer"; // Import from react-intersection-observer
+
 const About: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once when in view
+    threshold: 0.2, // Trigger when 20% of the element is in view
+  });
+
   return (
     <div className="w-full bg-transparent flex flex-col md:flex-row px-12">
       {/* Left Image Section */}
@@ -12,9 +22,16 @@ const About: React.FC = () => {
 
       {/* Right Text Section */}
       <div className="text-center md:text-left md:w-3/5 lg:w-1/2 xl:mt-16 flex flex-col lg:mx-auto mac-14:px-10 mac-14:mt-20 mac-16:pe-20 mac-16:mt-20 2xl:pe-20 2xl:mt-24 2k:pe-32 2k:mt-36">
-        <p className="text-4xl md:text-4xl xl:text-5xl mac-14:text-6xl mac-16:text-6xl 2xl:text-7xl 2k:text-8xl font-semibold italic">
+        {/* Animated Welcome Text */}
+        <motion.p
+          ref={ref} // Set the ref to the element
+          className="text-4xl md:text-4xl xl:text-5xl mac-14:text-6xl mac-16:text-6xl 2xl:text-7xl 2k:text-8xl font-semibold italic"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           Welcome to
-        </p>
+        </motion.p>
         <p className="text-5xl md:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-red-600">
           APEC
         </p>
