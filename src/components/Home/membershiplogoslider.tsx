@@ -2,6 +2,8 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '../../styles/membershiplogoslider.css';
@@ -17,11 +19,24 @@ const associations = [
 ];
 
 const MembershipLogosCarousel: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once when in view
+    threshold: 0.2, // Trigger when 20% of the element is in view
+  });
+
   return (
     <div className="bg-transparent px-12 md:px-36 2k:px-40">
       <div className="text-center">
         <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
-          <span className="text-red-600">Proud</span> Member Of
+          <motion.p
+            ref={ref} // Set the ref to the element
+            initial={{ y: 70, opacity: 0 }}
+            animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            <span className="text-red-600">Proud</span>
+          </motion.p>
+          Member Of
         </h2>
         <p className="md:text-sm w-900:text-base xl:text-lg mac-14:text-xl mac-16:text-2xl 2xl:text-2xl 2k:text-4xl text-gray-500 mt-2 max-w-2xl mac-14:max-w-full mac-16:max-w-full 2xl:max-w-full mx-auto">
           Our associations reflect our dedication to quality, collaboration, and industry leadership.
