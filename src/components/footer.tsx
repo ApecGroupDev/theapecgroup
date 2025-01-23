@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="text-black font-inter md:px-8 pt-40 md:pt-4 lg:pt-6 xl:pt-24 mac-14:pt-40 mac-16:pt-52 mac-16:px-20 2xl:px-24 2xl:pt-52 2k:px-32">
       <div className="grid md:grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
-        <div className="flex flex-col items-center md:items-start md:space-y-1 lg:space-y-2">
+        <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-1 lg:space-y-2">
           <span className="md:text-xs md:pt-6 xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg footer-text-dark">For More Information</span>
           <span className='md:ps-0 lg:ps-6 md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
           <div className="flex  space-x-4 md:ps-0 lg:ps-12">
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
             <img
               src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
               alt="APEC Logo"
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-40 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 2k:h-80"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-28 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 2k:h-80"
             />
           </Link>
         </div>
