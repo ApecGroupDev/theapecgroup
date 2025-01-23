@@ -2,6 +2,8 @@
 
 import React from "react";
 import { FaUsers, FaTasks, FaHandshake, FaCogs, FaChartLine } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 interface FeatureBox {
   title: string;
@@ -38,12 +40,26 @@ const features: FeatureBox[] = [
 ];
 
 const FeatureBoxes: React.FC = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once when in view
+    threshold: 0.2, // Trigger when 20% of the element is in view
+  });
+
   return (
     <div className="bg-transparent md:px-12 w-900:px-20">
       {/* Section Title */}
       <div className="text-center">
+        <motion.p
+          ref={ref} // Set the ref to the element
+          className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 mb-4"
+          initial={{ y: 70, opacity: 0 }}
+          animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          WHY CHOOSE
+        </motion.p>
         <p className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 mb-4">
-          WHY CHOOSE<span className="text-red-600"> APEC?</span>
+          <span className="text-red-600"> APEC?</span>
         </p>
       </div>
 
