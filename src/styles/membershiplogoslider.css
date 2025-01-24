@@ -13,11 +13,20 @@
   /* Darker red on hover */
 }
 
-/* Hide arrows on smaller screens */
-/* @media (max-width: 768px) {
+/* Scrollbar draggable handle */
+.swiper-scrollbar-drag {
+  background: #ff0000;
+  /* Red color for draggable part */
+  border-radius: 10px;
+  height: 100%;
+  /* Full height of scrollbar */
+  transition: transform 0.2s ease-in-out, background 0.3s ease;
+}
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-} */
+/* Change color and size on hover */
+.swiper-scrollbar-drag:hover {
+  background: #cc0000;
+  /* Darker red on hover */
+  transform: scaleY(1.2);
+  /* Slightly enlarge for smooth interaction */
+}

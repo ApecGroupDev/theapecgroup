@@ -5,6 +5,8 @@ import { Navigation } from 'swiper/modules';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import 'swiper/css';
+import 'swiper/css/scrollbar';
+import { Scrollbar } from 'swiper/modules';
 import 'swiper/css/navigation';
 import '../../styles/membershiplogoslider.css';
 
@@ -20,8 +22,8 @@ const associations = [
 
 const MembershipLogosCarousel: React.FC = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once when in view
-    threshold: 0.2, // Trigger when 20% of the element is in view
+    triggerOnce: true,
+    threshold: 0.2,
   });
 
   return (
@@ -29,7 +31,7 @@ const MembershipLogosCarousel: React.FC = () => {
       <div className="text-center">
         <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <motion.p
-            ref={ref} // Set the ref to the element
+            ref={ref}
             initial={{ y: 70, opacity: 0 }}
             animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -43,8 +45,11 @@ const MembershipLogosCarousel: React.FC = () => {
         </p>
       </div>
       <Swiper
-        modules={[Navigation]}
+        modules={[Scrollbar, Navigation]}
         navigation
+        scrollbar={{
+          hide: false,
+        }}
         slidesPerView={3}
         spaceBetween={20}
         breakpoints={{
