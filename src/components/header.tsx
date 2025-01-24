@@ -42,6 +42,18 @@ const Header: React.FC = () => {
           <FiSearch className="text-2xl" />
         </button>
 
+        {/* Centered Logo (mobile view) */}
+        <div className="absolute inset-0 flex justify-center items-center md:hidden">
+          <Link href="/">
+            <img
+              src="/logos/APEC.png"
+              alt="Logo"
+              className="h-20" // Adjust size as needed
+            />
+          </Link>
+        </div>
+
+
         {/* Logo Section (hidden on mobile) */}
         <div
           className={`absolute md:left-4 md:top-8 xl:left-6 xl:top-10 mac-16:top-14 mac-16:left-6 2xl:left-14 2xl:top-16 2k:left-8 2k:top-20 transform -translate-y-1/2 transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"
