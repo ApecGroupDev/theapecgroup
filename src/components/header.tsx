@@ -34,6 +34,14 @@ const Header: React.FC = () => {
         }`}
     >
       <div className="container min-w-full relative flex items-center py-4">
+        {/* Search Icon (left side on mobile) */}
+        <button
+          className="md:hidden ms-2 md:ml-4 xl:ml-6 mac-16:ml-8 2xl:ml-10 p-3 me-2 rounded-full bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-200 text-red-600"
+          aria-label="Search"
+        >
+          <FiSearch className="text-2xl" />
+        </button>
+
         {/* Logo Section (hidden on mobile) */}
         <div
           className={`absolute md:left-4 md:top-8 xl:left-6 xl:top-10 mac-16:top-14 mac-16:left-6 2xl:left-14 2xl:top-16 2k:left-8 2k:top-20 transform -translate-y-1/2 transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"
@@ -67,12 +75,12 @@ const Header: React.FC = () => {
 
         {/* Navigation Links */}
         <nav
-          className={`flex flex-col sm: items-start space-y-4 md:flex-row md:space-y-0 md:space-x-6 mx-auto transition-all duration-300 ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+          className={`flex flex-col sm: items-start space-y-4 md:flex-row md:space-y-0 md:space-x-6 md:mx-auto transition-all duration-300 ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
             } md:max-h-none md:opacity-100`}
         >
           {/* Frosted Background */}
           <div
-            className={`absolute inset-0 bg-gray-100 bg-opacity-90 p-4 rounded-3xl z-10 transform transition-all duration-200 ease-out ${isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"} md:hidden`}
+            className={`absolute inset-0 bg-gray-100 bg-opacity-100 p-4 rounded-3xl z-10 transform transition-all duration-200 ease-out ${isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"} md:hidden`}
             onClick={toggleMenu}
           ></div>
 
