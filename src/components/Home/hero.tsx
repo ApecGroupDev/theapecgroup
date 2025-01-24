@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       {/* Right Image Section */}
       <div className="w-full md:w-1/2 flex justify-center">
         <img
-          src="/products/Pump.png"
+          src="/products/Fuel_Dispenser_Face_Left.png"
           alt="Hero"
           className="rounded-lg object-cover w-10/12"
         />
