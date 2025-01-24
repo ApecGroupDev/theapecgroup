@@ -49,6 +49,8 @@ const MembershipLogosCarousel: React.FC = () => {
         navigation
         scrollbar={{
           hide: false,
+          draggable: true, // Makes the scrollbar interactive and draggable
+          snapOnRelease: true, // Ensures the scrollbar snaps to the nearest slide after dragging
         }}
         slidesPerView={3}
         spaceBetween={20}
