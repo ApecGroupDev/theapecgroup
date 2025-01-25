@@ -1,7 +1,5 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { div } from "framer-motion/client";
-import { TbBackground } from "react-icons/tb";
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {
   return (
