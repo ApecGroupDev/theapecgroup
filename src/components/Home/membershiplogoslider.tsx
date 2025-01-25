@@ -67,7 +67,7 @@ const MembershipLogosCarousel: React.FC = () => {
               <img
                 src={association.src}
                 alt={association.alt}
-                className="h-44 md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-128 max-w-full object-contain mb-4"
+                className="h-44 md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-96 max-w-full object-contain mb-4"
               />
             </div>
           </SwiperSlide>
