@@ -3,10 +3,12 @@ import FeatureBoxes from '@/components/Home/featureboxes';
 import MembershipLogosCarousel from '@/components/Home/membershiplogoslider';
 import Hero from '@/components/Home/hero';
 import About from '@/components/Home/about';
+import ScrollToTopButton from '@/components/scrollToTop';
 
 const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <ScrollToTopButton />
       {/* Sections */}
       <div className='mt-40 md:mt-12 w-800:mt-14'>
         <Hero />
