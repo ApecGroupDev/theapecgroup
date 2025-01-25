@@ -1,16 +1,6 @@
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
-export const metadata = {
-  title: 'APEC Main Website',
-  description: 'APEC Main Website',
-  icons: {
-    icon: '/logos/One-Stop-Shop-Logo.png',
-  },
-};
-
-console.log('Home layout is being used!');
-
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
