@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import ScrollToTopButton from '@/components/scrollToTop';
 
 export const metadata = {
   title: 'APEC Main Website',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen">
         {/* Render children */}
         {children}
+        <ScrollToTopButton />
       </body>
     </html>
   );
