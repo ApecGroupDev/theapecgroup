@@ -19,14 +19,6 @@ const About: React.FC = () => {
               Over the years, APEC has consistently delivered high-quality products and services, staying at the forefront of industry advancements. Our commitment to innovation and excellence ensures we meet the evolving needs of our clients while maintaining our reputation as trusted experts in the field.
             </p>
           </div>
-          {/* <div className="relative">
-            <img
-              src="https://via.placeholder.com/600x400"
-              alt="APEC Group"
-              className="rounded-lg shadow-lg w-full object-cover h-80 md:h-full"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg"></div>
-          </div> */}
         </div>
 
         {/* Mission, Vision, and Values Section */}
