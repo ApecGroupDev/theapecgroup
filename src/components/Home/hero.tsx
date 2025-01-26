@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
@@ -18,9 +19,11 @@ const Hero: React.FC = () => {
 
       {/* Right Image Section */}
       <div className="w-full md:w-1/2 flex justify-center">
-        <img
+        <Image
           src="/products/Fuel_Dispenser_Face_Left.png"
           alt="Hero"
+          width={1011}
+          height={1211}
           className="rounded-lg object-cover w-10/12"
         />
       </div>
