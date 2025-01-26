@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
@@ -64,9 +65,11 @@ const MembershipLogosCarousel: React.FC = () => {
         {associations.map((association, index) => (
           <SwiperSlide key={index}>
             <div className="mt-12 md:mt-0 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110">
-              <img
+              <Image
                 src={association.src}
                 alt={association.alt}
+                width={800}
+                height={800}
                 className="h-44 md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-96 max-w-full object-contain mb-4"
               />
             </div>
