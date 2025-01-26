@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Import from react-intersection-observer
@@ -13,9 +14,11 @@ const About: React.FC = () => {
     <div className="w-full bg-transparent flex flex-col md:flex-row px-12">
       {/* Left Image Section */}
       <div className="w-full hidden md:block md:w-2/5 xl:w-1/2">
-        <img
+        <Image
           src="/products/station.png"
           alt="Hero"
+          width={3264}
+          height={4601}
           className="rounded-lg object-cover w-7/12 md:w-full lg:w-11/12 xl:w-9/12 mac-14:w-10/12 mx-auto"
         />
       </div>
