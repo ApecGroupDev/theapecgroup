@@ -1,6 +1,7 @@
 import { SocialIcon } from 'react-social-icons';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
@@ -75,7 +76,7 @@ const Footer: React.FC = () => {
         {/* Column 3: Logo */}
         <div className="flex justify-center md:justify-end">
           <Link href="/">
-            <img
+            <Image
               src="https://theapecgroup.com/wp-content/uploads/2022/12/APEC-Since1989.png"
               alt="APEC Logo"
               className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-28 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 2k:h-80"
