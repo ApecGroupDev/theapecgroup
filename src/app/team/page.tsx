@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 
 const teamMembers = [
   { name: 'Mehboob “Ali” Husain', role: 'President', image: 'https://via.placeholder.com/150' },
@@ -34,7 +35,7 @@ const Team: React.FC = () => {
               key={index}
               className="relative bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
-              <img
+              <Image
                 src={member.image}
                 alt={member.name}
                 className="w-28 h-28 rounded-full mx-auto border-4 border-red-600 shadow-md object-cover"
