@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiSearch } from "react-icons/fi"; // Importing a search icon
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const pathname = usePathname();
@@ -45,10 +46,12 @@ const Header: React.FC = () => {
         {/* Centered Logo (mobile view) */}
         <div className="absolute inset-0 flex justify-center items-center md:hidden">
           <Link href="/">
-            <img
+            <Image
               src="/logos/APEC.png"
               alt="Logo"
-              className="h-20" // Adjust size as needed
+              width={1315}
+              height={1206}
+              className="h-20 w-auto" // Adjust size as needed
             />
           </Link>
         </div>
