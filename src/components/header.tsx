@@ -63,7 +63,12 @@ const Header: React.FC = () => {
             } hidden md:block`}
         >
           <Link href="/">
-            <img src="/logos/APEC.png" alt="Logo" className="md:h-16 xl:h-20 mac-16:h-24 2xl:h-28 2k:h-32" />
+            <Image
+              src="/logos/APEC.png"
+              alt="Logo"
+              width={1315}
+              height={1206}
+              className="w-auto md:h-16 xl:h-20 mac-16:h-24 2xl:h-28 2k:h-32" />
           </Link>
         </div>
 
