@@ -1,7 +1,6 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from 'next/image';
@@ -46,8 +45,7 @@ const MembershipLogosCarousel: React.FC = () => {
         </p>
       </div>
       <Swiper
-        modules={[Scrollbar, Navigation]}
-        navigation
+        modules={[Scrollbar]}
         scrollbar={{
           hide: false,
           draggable: true, // Makes the scrollbar interactive and draggable
