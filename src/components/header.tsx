@@ -130,7 +130,7 @@ const Header: React.FC = () => {
 
         {/* Search Icon */}
         <button
-          className="hidden md:block ml-auto md:ml-4 xl:ml-6 mac-16:ml-8 2xl:ml-10 p-3 px-6 me-2 rounded-full bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-200 text-red-600"
+          className="hidden md:block ml-auto md:ml-4 xl:ml-6 mac-16:ml-8 2xl:ml-10 p-3 me-2 rounded-full bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-200 text-red-600"
           aria-label="Search"
         >
           <FiSearch className="text-xl mac-16:text-2xl 2xl:text-3xl" />
