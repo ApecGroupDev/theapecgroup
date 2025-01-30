@@ -2,21 +2,21 @@ import React from 'react';
 import Image from 'next/image'
 
 const teamMembers = [
-  { name: 'Mehboob “Ali” Husain', role: 'President', image: '/placeholders/150x150' },
-  { name: 'Mavis Brown', role: 'Controller', image: '/placeholders/150x150' },
-  { name: 'Earl Sego', role: 'VP of Construction', image: '/placeholders/150x150' },
-  { name: 'Ron Brown', role: 'Service Manager', image: '/placeholders/150x150' },
-  { name: 'Wade LeComte', role: 'Commercial Sales Executive', image: '/placeholders/150x150' },
-  { name: 'Jorge Salazar', role: 'COO Imaging & Canopies', image: '/placeholders/150x150' },
-  { name: 'Dami Ajasa', role: 'Operations Manager', image: '/placeholders/150x150' },
-  { name: 'Salman Mehdi', role: 'IT Director', image: '/placeholders/150x150' },
-  { name: 'Sam Hakani', role: 'Customer Relations Manager', image: '/placeholders/150x150' },
-  { name: 'Billy Boulware', role: 'Asst. Service Manager', image: '/placeholders/150x150' },
-  { name: 'Peggy Hulka', role: 'POS Manager', image: '/placeholders/150x150' },
-  { name: 'Tyler Beck', role: 'Sales Executive', image: '/placeholders/150x150' },
-  { name: 'Walid Bayoumi', role: 'Sales Executive', image: '/placeholders/150x150' },
-  { name: 'Michael Henning', role: 'Parts Specialist', image: '/placeholders/150x150' },
-  { name: 'Arash Husain', role: 'Project Manager, APEC Compliance', image: '/placeholders/150x150' },
+  { name: 'Mehboob “Ali” Husain', role: 'President', image: '/placeholders/150x150.png' },
+  { name: 'Mavis Brown', role: 'Controller', image: '/placeholders/150x150.png' },
+  { name: 'Earl Sego', role: 'VP of Construction', image: '/placeholders/150x150.png' },
+  { name: 'Ron Brown', role: 'Service Manager', image: '/placeholders/150x150.png' },
+  { name: 'Wade LeComte', role: 'Commercial Sales Executive', image: '/placeholders/150x150.png' },
+  { name: 'Jorge Salazar', role: 'COO Imaging & Canopies', image: '/placeholders/150x150.png' },
+  { name: 'Dami Ajasa', role: 'Operations Manager', image: '/placeholders/150x150.png' },
+  { name: 'Salman Mehdi', role: 'IT Director', image: '/placeholders/150x150.png' },
+  { name: 'Sam Hakani', role: 'Customer Relations Manager', image: '/placeholders/150x150.png' },
+  { name: 'Billy Boulware', role: 'Asst. Service Manager', image: '/placeholders/150x150.png' },
+  { name: 'Peggy Hulka', role: 'POS Manager', image: '/placeholders/150x150.png' },
+  { name: 'Tyler Beck', role: 'Sales Executive', image: '/placeholders/150x150.png' },
+  { name: 'Walid Bayoumi', role: 'Sales Executive', image: '/placeholders/150x150.png' },
+  { name: 'Michael Henning', role: 'Parts Specialist', image: '/placeholders/150x150.png' },
+  { name: 'Arash Husain', role: 'Project Manager, APEC Compliance', image: '/placeholders/150x150.png' },
 ];
 
 const Team: React.FC = () => {
@@ -37,7 +37,7 @@ const Team: React.FC = () => {
             >
               <Image
                 src={member.image}
-                alt={member.name}
+                alt="photo"
                 width={150}
                 height={150}
                 className="w-28 h-28 rounded-full mx-auto border-4 border-red-600 shadow-md object-cover"
