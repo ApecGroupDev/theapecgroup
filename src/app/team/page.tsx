@@ -2,21 +2,21 @@ import React from 'react';
 import Image from 'next/image'
 
 const teamMembers = [
-  { name: 'Mehboob “Ali” Husain', role: 'President', image: 'https://via.placeholder.com/150' },
-  { name: 'Mavis Brown', role: 'Controller', image: 'https://via.placeholder.com/150' },
-  { name: 'Earl Sego', role: 'VP of Construction', image: 'https://via.placeholder.com/150' },
-  { name: 'Ron Brown', role: 'Service Manager', image: 'https://via.placeholder.com/150' },
-  { name: 'Wade LeComte', role: 'Commercial Sales Executive', image: 'https://via.placeholder.com/150' },
-  { name: 'Jorge Salazar', role: 'COO Imaging & Canopies', image: 'https://via.placeholder.com/150' },
-  { name: 'Dami Ajasa', role: 'Operations Manager', image: 'https://via.placeholder.com/150' },
-  { name: 'Salman Mehdi', role: 'IT Director', image: 'https://via.placeholder.com/150' },
-  { name: 'Sam Hakani', role: 'Customer Relations Manager', image: 'https://via.placeholder.com/150' },
-  { name: 'Billy Boulware', role: 'Asst. Service Manager', image: 'https://via.placeholder.com/150' },
-  { name: 'Peggy Hulka', role: 'POS Manager', image: 'https://via.placeholder.com/150' },
-  { name: 'Tyler Beck', role: 'Sales Executive', image: 'https://via.placeholder.com/150' },
-  { name: 'Walid Bayoumi', role: 'Sales Executive', image: 'https://via.placeholder.com/150' },
-  { name: 'Michael Henning', role: 'Parts Specialist', image: 'https://via.placeholder.com/150' },
-  { name: 'Arash Husain', role: 'Project Manager, APEC Compliance', image: 'https://via.placeholder.com/150' },
+  { name: 'Mehboob “Ali” Husain', role: 'President', image: '/placeholders/150x150' },
+  { name: 'Mavis Brown', role: 'Controller', image: '/placeholders/150x150' },
+  { name: 'Earl Sego', role: 'VP of Construction', image: '/placeholders/150x150' },
+  { name: 'Ron Brown', role: 'Service Manager', image: '/placeholders/150x150' },
+  { name: 'Wade LeComte', role: 'Commercial Sales Executive', image: '/placeholders/150x150' },
+  { name: 'Jorge Salazar', role: 'COO Imaging & Canopies', image: '/placeholders/150x150' },
+  { name: 'Dami Ajasa', role: 'Operations Manager', image: '/placeholders/150x150' },
+  { name: 'Salman Mehdi', role: 'IT Director', image: '/placeholders/150x150' },
+  { name: 'Sam Hakani', role: 'Customer Relations Manager', image: '/placeholders/150x150' },
+  { name: 'Billy Boulware', role: 'Asst. Service Manager', image: '/placeholders/150x150' },
+  { name: 'Peggy Hulka', role: 'POS Manager', image: '/placeholders/150x150' },
+  { name: 'Tyler Beck', role: 'Sales Executive', image: '/placeholders/150x150' },
+  { name: 'Walid Bayoumi', role: 'Sales Executive', image: '/placeholders/150x150' },
+  { name: 'Michael Henning', role: 'Parts Specialist', image: '/placeholders/150x150' },
+  { name: 'Arash Husain', role: 'Project Manager, APEC Compliance', image: '/placeholders/150x150' },
 ];
 
 const Team: React.FC = () => {
@@ -38,6 +38,8 @@ const Team: React.FC = () => {
               <Image
                 src={member.image}
                 alt={member.name}
+                width={150}
+                height={150}
                 className="w-28 h-28 rounded-full mx-auto border-4 border-red-600 shadow-md object-cover"
               />
               <h3 className="mt-6 text-xl font-bold text-gray-800 text-center">{member.name}</h3>
