@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiSearch } from "react-icons/fi"; // Importing a search icon
@@ -11,6 +11,8 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [showSearch, setShowSearch] = useState(false);
+  const searchRef = useRef<HTMLInputElement | null>(null); // typed ref for input
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -28,6 +30,27 @@ const Header: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [lastScrollY]);
+
+  // Close search input when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        searchRef.current &&
+        event.target instanceof Node &&
+        !searchRef.current.contains(event.target)
+      ) {
+        setShowSearch(false);
+      }
+    };
+
+    if (showSearch) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showSearch]);
 
   return (
     <header
@@ -138,13 +161,24 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Right: Search Icon */}
-        <div className="flex justify-end">
-          <button
-            className="p-3 me-2 rounded-full bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-200 text-red-600"
-            aria-label="Search"
-          >
-            <FiSearch className="text-xl" />
-          </button>
+        <div className="relative flex justify-end">
+          {showSearch ? (
+            <input
+              ref={searchRef}
+              type="text"
+              placeholder="Search..."
+              className="p-2 rounded-full border border-gray-300 focus:border-red-600 focus:outline-none w-48 md:w-64 transition-all duration-200"
+              autoFocus
+            />
+          ) : (
+            <button
+              onClick={() => setShowSearch(true)}
+              className="p-3 me-2 rounded-full bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-200 text-red-600"
+              aria-label="Search"
+            >
+              <FiSearch className="text-xl" />
+            </button>
+          )}
         </div>
       </div>
     </header>
