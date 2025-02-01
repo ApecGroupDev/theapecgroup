@@ -12,7 +12,9 @@ const Header: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showSearch, setShowSearch] = useState(false);
-  const searchRef = useRef<HTMLInputElement | null>(null); // typed ref for input
+  const searchRef = useRef<HTMLInputElement | null>(null);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
@@ -61,14 +63,30 @@ const Header: React.FC = () => {
       <div className="md:hidden container min-w-full relative flex items-center py-4">
         {/* Search Icon (Left) */}
         <button
-          className="ms-2 p-3 me-2 rounded-full bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-200 text-red-600"
-          aria-label="Search"
+          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none z-20"
+          onClick={() => setSearchOpen(!searchOpen)}
         >
-          <FiSearch className="text-2xl" />
+          {searchOpen ? (
+            <span className="text-2xl">✖</span> // Close Search Icon
+          ) : (
+            <FiSearch className="text-2xl" />
+          )}
         </button>
+        {/* Search Input */}
+        {searchOpen && (
+          <div className="absolute top-16 w-full px-6 py-2 bg-white shadow-md rounded-lg z-10">
+            <input
+              type="text"
+              placeholder="Search APEC"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full p-2 border rounded-md focus:outline-none"
+            />
+          </div>
+        )}
 
         {/* Centered Logo */}
-        <div className="absolute inset-0 flex justify-center items-center">
+        <div className="absolute pt-10 inset-0 flex justify-center items-center">
           <Link href="/">
             <Image
               src="/logos/APEC.png"
@@ -166,7 +184,7 @@ const Header: React.FC = () => {
             <input
               ref={searchRef}
               type="text"
-              placeholder="Search..."
+              placeholder="Search APEC"
               className="p-2 rounded-full border border-gray-300 focus:border-red-600 focus:outline-none w-48 md:w-64 transition-all duration-200"
               autoFocus
             />
