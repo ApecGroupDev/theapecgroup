@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import { Scrollbar } from 'swiper/modules';
 import 'swiper/css/navigation';
-import '../../styles/membershiplogoslider.css';
+import '../../../styles/membershiplogoslider.css';
 
 const associations = [
   { src: "/associations/ARA.png", alt: "ARA - Atlanta Retailers Association", name: "Atlanta Retailers Association" },
