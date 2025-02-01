@@ -1,0 +1,47 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+const Hero: React.FC = () => {
+  return (
+    <div className="relative items-center justify-between bg-transparent overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-10">
+        <Image
+          src="/backgrounds/Building.png"
+          alt="Background"
+          objectFit="cover"
+          className=""
+          width={2786}
+          height={1438}
+        />
+      </div>
+
+      {/* Left Text Section */}
+      <div className="relative z-0 -space-y-8 text-center md:text-left p-12 my-40">
+        {/* Breadcrumb */}
+        <nav className="pt-14">
+          <ul className="flex items-center space-x-2 text-xl font-semibold text-gray-600 tracking-widest">
+            <li>
+              <Link href="/home" className="hover:text-red-600">
+                Home
+              </Link>
+            </li>
+            <li>/</li>
+            <li className="text-red-600">About Us</li>
+          </ul>
+        </nav>
+        <div className='-space-y-36'>
+          <p className="text-14xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
+            ABOUT
+          </p>
+          <p className="text-10xl font-regular italic whitespace-nowrap">
+            US
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

@@ -9,6 +9,15 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '10xl': '10rem', // 160px
+        '11xl': '12rem', // 192px
+        '12xl': '14rem',
+        '13xl': '16rem',
+        '14xl': '18rem',
+        '15xl': '20rem',
+        '16xl': '22rem',
+      },
       fontFamily: {
         sans: ['Metropolis', 'Arial', 'sans-serif'], // Add Metropolis to the sans family
       },
