@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 py-16 pt-32">
+    <div className="from-blue-50 to-blue-100 py-16 pt-32">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         {/* Header Section */}
         <h1 className="text-5xl font-extrabold text-center text-gray-800 mb-12 drop-shadow-md">
