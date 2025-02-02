@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative items-center justify-between bg-transparent overflow-hidden">
+    <div id="hero-section" className="relative items-center justify-between bg-transparent overflow-hidden 2k:min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0 z-10">
         <Image
