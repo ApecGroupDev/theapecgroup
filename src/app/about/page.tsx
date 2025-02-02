@@ -1,4 +1,5 @@
 import ThirdSection from "./sections/3rdsection";
+import ChooseUs from "./sections/chooseus";
 import Hero from "./sections/hero";
 import HorizontalScrollSection from "./sections/principles";
 
@@ -11,11 +12,15 @@ const About: React.FC = () => {
       </div>
 
       <div>
-        <HorizontalScrollSection/>
+        <HorizontalScrollSection />
       </div>
 
-      <div>
+      <div className="mt-20">
         <ThirdSection />
+      </div>
+
+      <div className="mt-40">
+        <ChooseUs />
       </div>
     </div>
   );
