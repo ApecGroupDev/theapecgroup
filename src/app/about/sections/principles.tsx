@@ -1,39 +1,75 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { CheckCircle, Lightbulb, ShieldCheck, Award } from "lucide-react";
 
 const sections = [
   {
     content: (
-      <div className="flex flex-col items-start ml-10 mt-10">
-        <h1 className="text-5xl font-bold">Welcome to Section 1</h1>
-        <p className="mt-4 text-lg">This is the first section with some cool content.</p>
-        <button className="mt-4 px-6 py-2 bg-white text-blue-700 rounded-full">
-          Learn More
-        </button>
+      <div className="flex flex-col ml-auto items-end 2xl:mt-28 2xl:me-32">
+        <span className="2xl:text-7xl italic">Our</span>
+        <span className="2xl:text-8xl font-bold text-red-600">Mission</span>
+        <p className="2xl:mt-20 text-2xl tracking-widest text-end">
+          To empower businesses with reliable, innovative, and efficient<br />
+          petroleum equipment solutions that drive success<br />
+          and ensure operational excellence.
+        </p>
       </div>
     ),
     background: "url('/backgrounds/Vision_2.png') no-repeat left center/contain",
   },
   {
     content: (
-      <div className="flex flex-col items-center">
-        <h1 className="text-5xl font-bold">Explore Section 2</h1>
-        <p className="mt-4 text-lg">This section has a different background.</p>
-        <img
-          src="https://via.placeholder.com/800x600.png"
-          alt="Placeholder"
-          className="mt-4 rounded-lg opacity-50"
-        />
+      <div className="flex flex-col mx-auto items-center 2xl:mt-20 text-center">
+        <span className="2xl:text-7xl italic">Our</span>
+        <span className="2xl:text-8xl font-bold text-red-600">VALUES</span>
+
+        <div className="2xl:mt-20 text-2xl tracking-widest flex flex-col gap-8 max-w-4xl">
+          {/* Customer Commitment */}
+          <div className="flex items-center gap-4">
+            <CheckCircle size={48} className="text-red-600" />
+            <span className="text-4xl font-bold text-gray-800">Customer Commitment</span>
+          </div>
+          <p className="text-xl text-gray-600">
+            Delivering value, quality, and reliability with every project.
+          </p>
+
+          {/* Innovation */}
+          <div className="flex items-center gap-4">
+            <Lightbulb size={48} className="text-red-600" />
+            <span className="text-4xl font-bold text-gray-800">Innovation</span>
+          </div>
+          <p className="text-xl text-gray-600">
+            Embracing advancements to offer the best solutions.
+          </p>
+
+          {/* Integrity */}
+          <div className="flex items-center gap-4">
+            <ShieldCheck size={48} className="text-red-600" />
+            <span className="text-4xl font-bold text-gray-800">Integrity</span>
+          </div>
+          <p className="text-xl text-gray-600">
+            Building trust through transparency and professionalism.
+          </p>
+
+          {/* Excellence */}
+          <div className="flex items-center gap-4">
+            <Award size={48} className="text-red-600" />
+            <span className="text-4xl font-bold text-gray-800">Excellence</span>
+          </div>
+          <p className="text-xl text-gray-600">
+            Striving for perfection in everything we do.
+          </p>
+        </div>
       </div>
     ),
   },
   {
     content: (
-      <div className="flex flex-col items-start ml-10 mt-10">
-        <h1 className="text-5xl">Our</h1>
-        <h1 className="text-8xl font-bold text-red-600">VISION</h1>
-        <p className="mt-4 text-lg max-w-md">
+      <div className="flex flex-col items-start 2xl:ml-32 2xl:mt-28">
+        <span className="2xl:text-7xl italic">Our</span>
+        <span className="2xl:text-8xl font-bold text-red-600">VISION</span>
+        <p className="2xl:mt-20 text-2xl tracking-widest">
           To be the most trusted and innovative partner in the petroleum<br />
           equipment industry, leading with cutting-edge technology,<br />
           exceptional service, and sustainable practices.
