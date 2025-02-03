@@ -8,7 +8,7 @@ const sections = [
     content: (
       <div className="flex flex-col ml-auto items-end 2xl:mt-28 2xl:me-32">
         <span className="2xl:text-7xl italic">Our</span>
-        <span className="2xl:text-8xl font-bold text-red-600">Mission</span>
+        <span className="2xl:text-8xl font-bold text-red-600">MISSION</span>
         <p className="2xl:mt-20 text-2xl tracking-widest text-end">
           To empower businesses with reliable, innovative, and efficient<br />
           petroleum equipment solutions that drive success<br />
