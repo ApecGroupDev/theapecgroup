@@ -15,11 +15,11 @@ const About: React.FC = () => {
         <HorizontalScrollSection />
       </div>
 
-      <div className="mt-40">
+      <div className="2xl:mt-80">
         <ThirdSection />
       </div>
 
-      <div className="mt-40">
+      <div className="2xl:mt-128">
         <ChooseUs />
       </div>
     </div>
