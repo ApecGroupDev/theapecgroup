@@ -1,35 +1,38 @@
 const ThirdSection: React.FC = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center text-white p-8 mt-24">
-      <div className="w-4/5 flex flex-col gap-6">
+    <div className="h-auto 2xl:min-h-screen flex flex-col items-center justify-center text-white">
+      <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
-        <div className="flex gap-8">
+        <div className="flex gap-16">
           {/* Left Side (APEC + OUT) */}
-          <div className="w-2/5 flex flex-col flex-1">
+          <div className="w-1/5 flex flex-col flex-1">
             {/* Ensuring height matches WORK */}
-            <div className="flex-1 flex flex-col">
-              {/* First Row (APEC will always) */}
-              <div className="flex-1 bg-blue-400 rounded-lg flex items-center justify-end whitespace-nowrap p-4">
-                <span className="text-5xl font-semibold">
-                  APEC <span className="text-2xl font-extralight">will always</span>
-                </span>
+            <div className="2xl:mt-24">
+              {/* APEC + will always (Same Line, Bottom Alignment) */}
+              <div className="outline-dotted rounded-lg flex items-center justify-end">
+                <span className="text-5xl font-semibold">APEC</span>
+                <span className="text-2xl font-extralight tracking-widest ml-2">will always</span>
               </div>
-              {/* Second Row (OUT) */}
-              <div className="flex-1 bg-blue-700 rounded-lg flex items-center justify-end p-4">
-                <span className="text-10xl font-semibold">OUT</span>
+
+              {/* OUT (Aligned at the Top) */}
+              <div className="outline-dotted rounded-lg flex justify-end items-start">
+                <span className="text-10xl font-semibold italic 2xl:-mt-12 2xl:me-6">OUT</span>
               </div>
             </div>
           </div>
 
-          {/* Right Side (WORK) */}
-          <div className="w-3/5 flex-1 bg-green-500 rounded-lg flex items-center justify-center p-6">
-            <span className="text-12xl font-black scale-y-150">WORK</span>
-          </div>
-        </div>
+          {/* Right Side (WORK + the competition) */}
+          <div className="w-3/5 flex flex-col items-center">
+            {/* WORK */}
+            <div className="w-full outline-dashed rounded-lg flex items-center justify-center">
+              <span className="text-13xl font-bold text-black">WORK</span>
+            </div>
 
-        {/* Bottom Row (the competition) */}
-        <div className="w-full bg-gray-800 rounded-lg flex items-center justify-end p-6">
-          <span className="text-2xl">the competition</span>
+            {/* the competition (Directly Below WORK) */}
+            <div className="w-full outline-dotted rounded-lg flex items-center justify-end 2xl:-mt-24 2xl:ms-32">
+              <span className="text-2xl">the competition</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

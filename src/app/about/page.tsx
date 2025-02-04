@@ -15,7 +15,7 @@ const About: React.FC = () => {
         <HorizontalScrollSection />
       </div>
 
-      <div className="mt-20">
+      <div className="mt-40">
         <ThirdSection />
       </div>
 
