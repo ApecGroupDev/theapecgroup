@@ -1,4 +1,20 @@
+'use client';
+
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const words = ["WORK", "SMART"];
+
 const ThirdSection: React.FC = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 2000); // Change every 2 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center text-white">
       <div className="w-auto flex flex-col">
@@ -6,26 +22,47 @@ const ThirdSection: React.FC = () => {
         <div className="flex">
           {/* Left Side (APEC + OUT) */}
           <div className="w-1/5 flex flex-col flex-1">
-            {/* Ensuring height matches WORK */}
             <div className="2xl:mt-24">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
                 <span className="2xl:text-8xl font-semibold">APEC</span>
-                <span className="2xl:text-5xl font-extralight tracking-widest">will always</span>
+                <span className="2xl:text-5xl font-extralight tracking-widest">
+                  will always
+                </span>
               </div>
 
               {/* OUT (Aligned at the Top) */}
               <div className="flex justify-end items-start">
-                <span className="2xl:text-12xl font-semibold italic 2xl:-mt-16 2xl:me-6">OUT</span>
+                <span className="2xl:text-12xl font-semibold italic 2xl:-mt-16 2xl:me-6">
+                  OUT
+                </span>
               </div>
             </div>
           </div>
 
           {/* Right Side (WORK + the competition) */}
-          <div className="w-auto flex flex-col items-center">
+          <div className="w-auto flex flex-col items-center relative">
             {/* WORK */}
             <div className="w-full flex items-center justify-center">
-              <span className="2xl:text-14xl 2xl:scale-y-110 font-bold text-black 2xl:mt-6">WORK</span>
+              <span className="2xl:text-14xl 2xl:scale-y-110 font-bold 2xl:mt-6 text-transparent">
+                WORK
+              </span>
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={words[index]}
+                  initial={{ y: "100%", opacity: 0 }}
+                  animate={{ y: "0%", opacity: 1 }}
+                  exit={{ y: "-100%", opacity: 0 }}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  className={`absolute 2xl:text-14xl 2xl:scale-y-110 font-bold 2xl:mt-6
+                    ${index === 0 
+                      ? "text-black text-14xl" 
+                      : "text-transparent text-smart-animation"}
+                    `}
+                >
+                  {words[index]}
+                </motion.div>
+              </AnimatePresence>
             </div>
 
             {/* the competition (Directly Below WORK) */}

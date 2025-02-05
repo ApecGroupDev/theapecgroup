@@ -43,6 +43,11 @@ body {
   /* Ensures text wraps rather than staying on one line */
 }
 
+.text-smart-animation {
+  -webkit-text-stroke: 3px black;
+  font-size: 16rem !important;
+}
+
 @media (max-width: 767px) {
   .outlined-text-white {
     text-shadow:
