@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        '10xl': '10rem', // 160px
-        '11xl': '12rem', // 192px
+        '10xl': '10rem',
+        '11xl': '12rem',
         '12xl': '14rem',
         '13xl': '16rem',
         '14xl': '18rem',
@@ -19,12 +19,12 @@ export default {
         '16xl': '22rem',
       },
       fontFamily: {
-        sans: ['Metropolis', 'Arial', 'sans-serif'], // Add Metropolis to the sans family
+        sans: ['Metropolis', 'Arial', 'sans-serif'],
       },
       spacing: {
-        '128': '32rem',  // Adds a value for mt-128 (512px)
-        '144': '36rem',  // Adds a value for mt-144 (576px)
-        '160': '40rem',  // Adds a value for mt-160 (640px)
+        '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
       },
       colors: {
         background: "var(--background)",

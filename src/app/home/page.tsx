@@ -3,6 +3,7 @@ import Hero from '@/app/home/sections/hero';
 import About from '@/app/home/sections/about';
 import FeatureBoxes from './sections/featureboxes';
 import MembershipLogosCarousel from './sections/membershiplogoslider';
+import Footer from './sections/footerHome';
 
 const Home: React.FC = () => {
   return (
@@ -22,6 +23,10 @@ const Home: React.FC = () => {
 
       <div className='mt-40 md:mt-40 md:mb-28 lg:mt-60 lg:mb-40 xl:mt-72 xl:mb-40 mac-14:mt-72 mac-16:mt-96 2xl:mt-96 2xl:mb-56 2k:mt-96 2k:mb-80' >
         <MembershipLogosCarousel />
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   );

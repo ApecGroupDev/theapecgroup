@@ -115,7 +115,7 @@ const HorizontalScrollSection: React.FC = () => {
       }
 
       event.preventDefault();
-      section.scrollLeft += event.deltaY;
+      section.scrollLeft += event.deltaY * 6;
       updateProgress();
     };
 
