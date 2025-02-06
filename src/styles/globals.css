@@ -44,8 +44,12 @@ body {
 }
 
 .text-smart-animation {
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 5px black;
   font-size: 16rem !important;
+}
+
+.text-maneuver-animation {
+  -webkit-text-stroke: 5px black;
 }
 
 @media (max-width: 767px) {

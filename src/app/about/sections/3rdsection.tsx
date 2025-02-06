@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const words = ["WORK", "SMART"];
+const words = ["WORK", "SMART", "MANEUVER"];
 
 const ThirdSection: React.FC = () => {
   const [index, setIndex] = useState(0);
@@ -11,7 +11,7 @@ const ThirdSection: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % words.length);
-    }, 2000); // Change every 2 seconds
+    }, 2500); // Change every 2 seconds
     return () => clearInterval(interval);
   }, []);
 
@@ -54,11 +54,15 @@ const ThirdSection: React.FC = () => {
                   animate={{ y: "0%", opacity: 1 }}
                   exit={{ y: "-100%", opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
-                  className={`absolute 2xl:text-14xl 2xl:scale-y-110 font-bold 2xl:mt-6
-                    ${index === 0 
-                      ? "text-black text-14xl" 
-                      : "text-transparent text-smart-animation"}
-                    `}
+                  className={`
+                    absolute 2xl:scale-y-110 font-bold 2xl:mt-6
+                    ${index === 0
+                      ? "text-black text-14xl"
+                      : index === 1
+                        ? "text-transparent text-smart-animation" 
+                        : "text-white text-[10rem] tracking-tight text-maneuver-animation" 
+                    }
+                  `}
                 >
                   {words[index]}
                 </motion.div>
