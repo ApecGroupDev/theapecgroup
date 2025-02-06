@@ -24,7 +24,7 @@ const About: React.FC = () => {
         <ChooseUs />
       </div>
 
-      <div className="2xl:mt-8 2k:mt-60">
+      <div className="2xl:mt-20 2k:mt-60">
         <Footer />
       </div>
 
