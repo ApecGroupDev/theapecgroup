@@ -7,9 +7,9 @@ const sections = [
   {
     content: (
       <div className="flex flex-col ml-auto items-end 2xl:mt-28 2xl:me-32">
-        <span className="2xl:text-7xl italic">Our</span>
-        <span className="2xl:text-8xl font-bold text-red-600">MISSION</span>
-        <p className="2xl:mt-20 text-2xl tracking-widest text-end">
+        <span className="2xl:text-7xl 2k:text-9xl italic">Our</span>
+        <span className="2xl:text-8xl 2k:text-10xl font-bold text-red-600">MISSION</span>
+        <p className="2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest text-end">
           To empower businesses with reliable, innovative, and efficient<br />
           petroleum equipment solutions that drive success<br />
           and ensure operational excellence.
@@ -21,43 +21,43 @@ const sections = [
   {
     content: (
       <div className="flex flex-col mx-auto items-center 2xl:mt-20 text-center">
-        <span className="2xl:text-7xl italic">Our</span>
-        <span className="2xl:text-8xl font-bold text-red-600">VALUES</span>
+        <span className="2xl:text-7xl 2k:text-9xl italic">Our</span>
+        <span className="2xl:text-8xl 2k:text-10xl font-bold text-red-600">VALUES</span>
 
-        <div className="2xl:mt-20 text-2xl tracking-widest flex flex-col gap-8 max-w-4xl">
+        <div className="2xl:mt-20 tracking-widest flex flex-col gap-8 max-w-4xl">
           {/* Customer Commitment */}
           <div className="flex items-center gap-4">
             <CheckCircle size={48} className="text-red-600" />
-            <span className="text-4xl font-bold text-gray-800">Customer Commitment</span>
+            <span className="2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Customer Commitment</span>
           </div>
-          <p className="text-xl text-gray-600">
+          <p className="2xl:text-xl 2k:text-2xl text-gray-600">
             Delivering value, quality, and reliability with every project.
           </p>
 
           {/* Innovation */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 2k:mt-10">
             <Lightbulb size={48} className="text-red-600" />
-            <span className="text-4xl font-bold text-gray-800">Innovation</span>
+            <span className="2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Innovation</span>
           </div>
-          <p className="text-xl text-gray-600">
+          <p className="2xl:text-xl 2k:text-2xl text-gray-600">
             Embracing advancements to offer the best solutions.
           </p>
 
           {/* Integrity */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 2k:mt-10">
             <ShieldCheck size={48} className="text-red-600" />
-            <span className="text-4xl font-bold text-gray-800">Integrity</span>
+            <span className="2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Integrity</span>
           </div>
-          <p className="text-xl text-gray-600">
+          <p className="2xl:text-xl 2k:text-2xl text-gray-600">
             Building trust through transparency and professionalism.
           </p>
 
           {/* Excellence */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 2k:mt-10">
             <Award size={48} className="text-red-600" />
-            <span className="text-4xl font-bold text-gray-800">Excellence</span>
+            <span className="2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Excellence</span>
           </div>
-          <p className="text-xl text-gray-600">
+          <p className="2xl:text-xl 2k:text-2xl text-gray-600">
             Striving for perfection in everything we do.
           </p>
         </div>
@@ -67,9 +67,9 @@ const sections = [
   {
     content: (
       <div className="flex flex-col items-start 2xl:ml-32 2xl:mt-28">
-        <span className="2xl:text-7xl italic">Our</span>
-        <span className="2xl:text-8xl font-bold text-red-600">VISION</span>
-        <p className="2xl:mt-20 text-2xl tracking-widest">
+        <span className="2xl:text-7xl 2k:text-9xl italic">Our</span>
+        <span className="2xl:text-8xl 2k:text-10xl font-bold text-red-600">VISION</span>
+        <p className="2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest">
           To be the most trusted and innovative partner in the petroleum<br />
           equipment industry, leading with cutting-edge technology,<br />
           exceptional service, and sustainable practices.

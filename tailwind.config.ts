@@ -17,6 +17,8 @@ export default {
         '14xl': '18rem',
         '15xl': '20rem',
         '16xl': '22rem',
+        '17xl': '24rem',
+        '18xl': '26rem',
       },
       fontFamily: {
         sans: ['Metropolis', 'Arial', 'sans-serif'],
