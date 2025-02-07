@@ -98,10 +98,10 @@ const HorizontalScrollSection: React.FC = () => {
     };
   }, [canScrollVertically]);
 
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once when in view
-    threshold: 0.2, // Trigger when 20% of the element is in view
-  });
+  const { ref: missionRef, inView: missionInView } = useInView({ triggerOnce: true });
+  const { ref: valuesRef, inView: valuesInView } = useInView({ triggerOnce: true });
+  const { ref: visionRef, inView: visionInView } = useInView({ triggerOnce: true });
+
 
   const sections = [
     {
@@ -109,10 +109,10 @@ const HorizontalScrollSection: React.FC = () => {
         <div className="flex flex-col ml-auto items-end 2xl:mt-28 2xl:me-32">
           <span className="2xl:text-7xl 2k:text-9xl italic">Our</span>
           <motion.span
-            ref={ref}
+            ref={missionRef}
             className="2xl:text-8xl 2k:text-10xl font-bold text-red-600"
             initial={{ y: 70, opacity: 0 }}
-            animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
+            animate={{ y: missionInView ? 0 : 50, opacity: missionInView ? 1 : 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             MISSION
@@ -130,7 +130,15 @@ const HorizontalScrollSection: React.FC = () => {
       content: (
         <div className="flex flex-col mx-auto items-center 2xl:mt-20 text-center">
           <span className="2xl:text-7xl 2k:text-9xl italic">Our</span>
-          <span className="2xl:text-8xl 2k:text-10xl font-bold text-red-600">VALUES</span>
+          <motion.span
+            ref={valuesRef}
+            className="2xl:text-8xl 2k:text-10xl font-bold text-red-600"
+            initial={{ y: 70, opacity: 0 }}
+            animate={{ y: valuesInView ? 0 : 50, opacity: valuesInView ? 1 : 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            VALUES
+          </motion.span>
 
           <div className="2xl:mt-20 tracking-widest flex flex-col gap-8 max-w-4xl">
             {/* Customer Commitment */}
@@ -176,7 +184,15 @@ const HorizontalScrollSection: React.FC = () => {
       content: (
         <div className="flex flex-col items-start 2xl:ml-32 2xl:mt-28">
           <span className="2xl:text-7xl 2k:text-9xl italic">Our</span>
-          <span className="2xl:text-8xl 2k:text-10xl font-bold text-red-600">VISION</span>
+          <motion.span
+            ref={visionRef}
+            className="2xl:text-8xl 2k:text-10xl font-bold text-red-600"
+            initial={{ y: 70, opacity: 0 }}
+            animate={{ y: visionInView ? 0 : 50, opacity: visionInView ? 1 : 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            VISION
+          </motion.span>
           <p className="2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest">
             To be the most trusted and innovative partner in the petroleum<br />
             equipment industry, leading with cutting-edge technology,<br />
