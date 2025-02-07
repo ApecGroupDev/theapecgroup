@@ -102,7 +102,6 @@ const HorizontalScrollSection: React.FC = () => {
   const { ref: valuesRef, inView: valuesInView } = useInView({ triggerOnce: true });
   const { ref: visionRef, inView: visionInView } = useInView({ triggerOnce: true });
 
-
   const sections = [
     {
       content: (
