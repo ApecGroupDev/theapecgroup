@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
           </ul>
         </nav>
         <div className='2xl:-space-y-36 2k:-space-y-48'>
-          <p className="2xl:text-14xl 2k:text-18xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
+          <p className="mac-16:text-13xl 2xl:text-14xl 2k:text-18xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
             ABOUT
           </p>
           <p className="2xl:text-10xl 2k:text-12xl font-regular italic whitespace-nowrap">
