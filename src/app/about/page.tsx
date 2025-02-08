@@ -16,7 +16,7 @@ const About: React.FC = () => {
         <HorizontalScrollSection />
       </div>
 
-      <div className="mac-14:mt-44 2xl:mt-80 2k:mt-96">
+      <div className="xl:mt-24 mac-14:mt-44 2xl:mt-80 2k:mt-96">
         <ThirdSection />
       </div>
 

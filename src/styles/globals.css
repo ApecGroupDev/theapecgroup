@@ -66,6 +66,16 @@ body {
   }
 }
 
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .text-smart-animation {
+    font-size: 11rem !important;
+  }
+
+  .text-maneuver-animation {
+    font-size: 7rem !important;
+  }
+}
+
 @media (min-width: 1500px) and (max-width: 1600px) {
   .text-smart-animation {
     font-size: 13rem !important;
