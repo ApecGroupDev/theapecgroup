@@ -20,7 +20,7 @@ const About: React.FC = () => {
         <ThirdSection />
       </div>
 
-      <div className="2xl:mt-128 2k:mt-160">
+      <div className="mac-14:mt-72 2xl:mt-128 2k:mt-160">
         <ChooseUs />
       </div>
 

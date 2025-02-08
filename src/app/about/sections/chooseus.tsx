@@ -12,11 +12,11 @@ const ChooseUs: React.FC = () => {
   return (
     <section className="py-20 px-10 flex flex-col items-center text-center">
       {/* Heading */}
-      <span className="text-6xl 2xl:text-8xl 2k:text-9xl font-bold">
+      <span className="mac-14:text-8xl 2xl:text-8xl 2k:text-9xl font-bold">
         Why
         <motion.p
           ref={ref} // Set the ref to the element
-          className="text-6xl 2xl:text-8xl 2k:text-9xl font-bold text-red-600"
+          className="mac-14:text-8xl 2xl:text-8xl 2k:text-9xl font-bold text-red-600"
           initial={{ y: 70, opacity: 0 }}
           animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -26,19 +26,19 @@ const ChooseUs: React.FC = () => {
       </span>
 
       {/* Content */}
-      <p className="max-w-6xl 2xl:text-3xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider 2xl:mt-12">
+      <p className="max-w-6xl mac-14:text-2xl 2xl:text-3xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider mac-14:mt-12 2xl:mt-12">
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
         environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
         and digital marketing for dispensaries. We also provide tailored financing options to help you grow your business.
       </p>
 
-      <p className="max-w-4xl text-3xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider 2xl:mt-8">
+      <p className="max-w-4xl mac-14:text-2xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider mac-14:mt-8 2xl:mt-8">
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
         with unparalleled expertise and commitment.
       </p>
 
-      <p className="text-3xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed 2xl:mt-8">Let us partner with you to build success for your business.</p>
-      <p className="text-3xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed 2xl:mt-8">What can we do for you today?</p>
+      <p className="mac-14:text-2xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed mac-14:mt-8 2xl:mt-8">Let us partner with you to build success for your business.</p>
+      <p className="mac-14:text-2xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed mac-14:mt-8 2xl:mt-8">What can we do for you today?</p>
 
       {/* Contact Button */}
       <a
