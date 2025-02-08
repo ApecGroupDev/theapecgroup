@@ -19,21 +19,21 @@ const ThirdSection: React.FC = () => {
     <div className="flex flex-col items-center justify-center text-white">
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
-        <div className="flex">
+        <div className="flex mac-14:gap-12">
           {/* Left Side (APEC + OUT) */}
-          <div className="w-1/5 flex flex-col flex-1">
+          <div className="w-auto flex flex-col flex-1">
             <div className="2xl:mt-24">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
-                <span className="2xl:text-8xl 2k:text-10xl font-semibold">APEC</span>
-                <span className="2xl:text-5xl 2k:text-7xl font-extralight tracking-widest">
+                <span className="mac-14:text-6xl 2xl:text-8xl 2k:text-10xl font-semibold">APEC</span>
+                <span className="mac-14:text-3xl 2xl:text-5xl 2k:text-7xl font-extralight tracking-widest">
                   will always
                 </span>
               </div>
 
               {/* OUT (Aligned at the Top) */}
               <div className="flex justify-end items-start">
-                <span className="2xl:text-12xl 2k:text-13xl font-semibold italic 2xl:-mt-16 2xl:me-6 2k:me-10">
+                <span className="mac-14:text-10xl 2xl:text-12xl 2k:text-13xl font-semibold italic mac-14:-mt-10 2xl:-mt-16 2xl:me-6 2k:me-10">
                   OUT
                 </span>
               </div>
@@ -44,7 +44,7 @@ const ThirdSection: React.FC = () => {
           <div className="w-auto flex flex-col items-center relative">
             {/* WORK */}
             <div className="w-full flex items-center justify-center">
-              <span className="2xl:text-14xl 2xl:scale-y-110 font-bold 2xl:mt-6 2k:mt-80 text-transparent">
+              <span className="mac-14:text-12xl 2xl:text-14xl 2xl:scale-y-110 font-bold mac-14:-mt-12 2xl:mt-6 2k:mt-80 text-transparent">
                 WORK
               </span>
               <AnimatePresence mode="wait">
@@ -55,9 +55,9 @@ const ThirdSection: React.FC = () => {
                   exit={{ y: "-100%", opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   className={`
-                    absolute 2xl:scale-y-110 font-bold 2xl:mt-6
+                    absolute 2xl:scale-y-110 font-bold mac-14:-mt-12 2xl:mt-6
                     ${index === 0
-                      ? "text-black 2xl:text-14xl"
+                      ? "text-black mac-14:text-12xl 2xl:text-14xl"
                       : index === 1
                         ? "text-transparent text-smart-animation" 
                         : "text-white text-[10rem] tracking-tight text-maneuver-animation" 
@@ -70,8 +70,8 @@ const ThirdSection: React.FC = () => {
             </div>
 
             {/* the competition (Directly Below WORK) */}
-            <div className="w-full flex items-center justify-end 2xl:-mt-24 2xl:ms-32 2k:-mt-60">
-              <span className="2xl:text-5xl 2k:text-7xl tracking-widest">the competition</span>
+            <div className="w-full flex items-center justify-end mac-14:-mt-16 2xl:-mt-24 2xl:ms-32 2k:-mt-60">
+              <span className="mac-14:text-4xl 2xl:text-5xl 2k:text-7xl tracking-widest">the competition</span>
             </div>
           </div>
         </div>
