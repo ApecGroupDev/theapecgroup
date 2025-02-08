@@ -65,3 +65,14 @@ body {
     color: gray;
   }
 }
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+  .text-smart-animation {
+    font-size: 13rem !important;
+  }
+
+  .text-maneuver-animation {
+    font-size: 9rem !important;
+    margin-left: 4rem;
+  }
+}
