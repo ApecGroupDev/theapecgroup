@@ -106,17 +106,17 @@ const HorizontalScrollSection: React.FC = () => {
     {
       content: (
         <div className="flex flex-col ml-auto items-end xl:mt-24 xl:me-20 mac-14:mt-20 mac-14:me-24 2xl:mt-28 2xl:me-32">
-          <span className="xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
+          <span className="lg:text-6xl xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
           <motion.span
             ref={missionRef}
-            className="xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
+            className="lg:text-7xl xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
             initial={{ y: 70, opacity: 0 }}
             animate={{ y: missionInView ? 0 : 50, opacity: missionInView ? 1 : 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             MISSION
           </motion.span>
-          <p className="xl:text-xl xl:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest text-end">
+          <p className="lg:text-xl xl:text-xl xl:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest text-end">
             To empower businesses with reliable, innovative, and efficient<br />
             petroleum equipment solutions that drive success<br />
             and ensure operational excellence.

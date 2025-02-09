@@ -12,7 +12,7 @@ const About: React.FC = () => {
         <Hero />
       </div>
 
-      <div>
+      <div className="mac-16:-mt-48">
         <HorizontalScrollSection />
       </div>
 
