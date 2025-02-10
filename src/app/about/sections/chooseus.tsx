@@ -12,7 +12,7 @@ const ChooseUs: React.FC = () => {
   return (
     <section className="py-20 px-10 flex flex-col items-center text-center">
       {/* Heading */}
-      <span className="xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-9xl font-bold">
+      <span className="lg:text-6xl xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-9xl font-bold">
         Why
         <motion.p
           ref={ref} // Set the ref to the element
@@ -26,19 +26,19 @@ const ChooseUs: React.FC = () => {
       </span>
 
       {/* Content */}
-      <p className="xl:max-w-4xl mac-14:max-w-6xl mac-16:max-w-6xl 2xl:max-w-6xl xl:text-2xl mac-14:text-2xl 2xl:text-3xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider xl:mt-12 mac-14:mt-12 2xl:mt-12">
+      <p className="lg:text-xl lg:max-w-2xl xl:max-w-4xl mac-14:max-w-6xl mac-16:max-w-6xl 2xl:max-w-6xl xl:text-2xl mac-14:text-2xl 2xl:text-3xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider lg:mt-10 xl:mt-12 mac-14:mt-12 2xl:mt-12">
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
         environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
         and digital marketing for dispensaries. We also provide tailored financing options to help you grow your business.
       </p>
 
-      <p className="xl:max-w-3xl mac-14:max-w-4xl mac-16:max-w-4xl 2xl:max-w-4xl xl:text-2xl mac-14:text-2xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider xl:mt-6 mac-14:mt-8 2xl:mt-8">
+      <p className="lg:text-xl lg:max-w-xl xl:max-w-3xl mac-14:max-w-4xl mac-16:max-w-4xl 2xl:max-w-4xl xl:text-2xl mac-14:text-2xl 2k:text-4xl leading-normal 2xl:font-semibold 2k:font-normal 2k:leading-relaxed tracking-wider lg:mt-8 xl:mt-6 mac-14:mt-8 2xl:mt-8">
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
         with unparalleled expertise and commitment.
       </p>
 
-      <p className="xl:text-2xl mac-14:text-2xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed xl:mt-6 mac-14:mt-8 2xl:mt-8">Let us partner with you to build success for your business.</p>
-      <p className="xl:text-2xl mac-14:text-2xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed xl:mt-6 mac-14:mt-8 2xl:mt-8">What can we do for you today?</p>
+      <p className="lg:text-xl xl:text-2xl mac-14:text-2xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed lg:mt-6 xl:mt-6 mac-14:mt-8 2xl:mt-8">Let us partner with you to build success for your business.</p>
+      <p className="lg:text-xl xl:text-2xl mac-14:text-2xl 2k:text-4xl 2xl:font-semibold 2k:font-normal 2k:leading-relaxed lg:mt-6 xl:mt-6 mac-14:mt-8 2xl:mt-8">What can we do for you today?</p>
 
       {/* Contact Button */}
       <a
