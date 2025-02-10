@@ -213,7 +213,7 @@ const HorizontalScrollSection: React.FC = () => {
     <div className="relative w-full">
       <div
         ref={sectionRef}
-        className="w-full xl:h-screen overflow-x-auto overflow-y-hidden flex whitespace-nowrap scroll-smooth"
+        className="w-full lg:h-144 xl:h-screen overflow-x-auto overflow-y-hidden flex whitespace-nowrap scroll-smooth"
       >
         <div className="flex flex-nowrap">
           {sections.map((section, index) => (
