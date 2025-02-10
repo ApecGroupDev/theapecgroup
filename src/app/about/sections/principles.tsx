@@ -106,16 +106,7 @@ const HorizontalScrollSection: React.FC = () => {
   const sections = [
     {
       content: (
-        <div
-          className="
-            bg-[url('/backgrounds/Mission_bg.png')] 
-            bg-no-repeat 
-            lg:bg-left 
-            bg-center 
-            bg-contain
-            w-full
-          "
-        >
+        <div className="bg-[url('/backgrounds/Mission_bg.png')] bg-no-repeat lg:bg-left bg-center bg-contain w-full">
           <div className="flex flex-col ml-auto items-end lg:mt-12 lg:me-12 xl:mt-24 xl:me-20 mac-14:mt-20 mac-14:me-24 2xl:mt-28 2xl:me-32">
             <span className="lg:text-5xl xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
             <motion.span
@@ -192,16 +183,7 @@ const HorizontalScrollSection: React.FC = () => {
     },
     {
       content: (
-        <div
-          className="
-            xl:bg-[url('/backgrounds/Vision_bg.png')] 
-            lg:bg-[url('/backgrounds/Vision_bg_lg.png')]
-            bg-no-repeat 
-            lg:bg-left 
-            xl:bg-right 
-            bg-contain
-            w-full
-        ">
+        <div className="bg-[url('/backgrounds/Vision_bg.png')] bg-no-repeat lg:bg-left xl:bg-right bg-contain w-full">
           <div className="flex flex-col items-start xl:mt-24 xl:ml-20 mac-14:ml-24 mac-14:mt-20 2xl:ml-32 2xl:mt-28">
             <span className="xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
             <motion.span
