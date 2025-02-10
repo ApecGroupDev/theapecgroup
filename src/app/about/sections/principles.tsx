@@ -182,19 +182,19 @@ const HorizontalScrollSection: React.FC = () => {
     },
     {
       content: (
-        <div className="bg-[url('/backgrounds/Vision_bg.png')] bg-no-repeat lg:bg-left xl:bg-right bg-contain w-full">
-          <div className="flex flex-col items-start xl:mt-24 xl:ml-20 mac-14:ml-24 mac-14:mt-20 2xl:ml-32 2xl:mt-28">
-            <span className="xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
+        <div className="bg-[url('/backgrounds/Vision_bg.png')] bg-no-repeat bg-right bg-contain w-full">
+          <div className="flex flex-col items-start lg:mt-12 lg:ms-12 xl:mt-24 xl:ml-20 mac-14:ml-24 mac-14:mt-20 2xl:ml-32 2xl:mt-28">
+            <span className="lg:text-5xl xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
             <motion.span
               ref={visionRef}
-              className="xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
+              className="lg:text-6xl xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
               initial={{ y: 70, opacity: 0 }}
               animate={{ y: visionInView ? 0 : 50, opacity: visionInView ? 1 : 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               VISION
             </motion.span>
-            <p className="xl:text-xl xl:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest">
+            <p className="lg:text-lg xl:text-xl lg:mt-10 xl:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest">
               To be the most trusted and innovative partner in the petroleum<br />
               equipment industry, leading with cutting-edge technology,<br />
               exceptional service, and sustainable practices.
