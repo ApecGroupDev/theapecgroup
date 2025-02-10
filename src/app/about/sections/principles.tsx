@@ -128,11 +128,11 @@ const HorizontalScrollSection: React.FC = () => {
     },
     {
       content: (
-        <div className="flex flex-col mx-auto items-center xl:mt-12 mac-14:mt-16 2xl:mt-20 text-center w-full">
-          <span className="xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
+        <div className="flex flex-col mx-auto items-center lg:mt-10 xl:mt-12 mac-14:mt-16 2xl:mt-20 text-center w-full">
+          <span className="lg:text-5xl xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
           <motion.span
             ref={valuesRef}
-            className="xl:text-7xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
+            className="lg:text-5xl xl:text-7xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
             initial={{ y: 70, opacity: 0 }}
             animate={{ y: valuesInView ? 0 : 50, opacity: valuesInView ? 1 : 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -140,10 +140,11 @@ const HorizontalScrollSection: React.FC = () => {
             VALUES
           </motion.span>
 
-          <div className="xl:mt-8 mac-14:mt-12 2xl:mt-20 tracking-widest flex flex-col gap-8 max-w-4xl">
+          <div className="lg:mt-4 xl:mt-8 mac-14:mt-12 2xl:mt-20 tracking-widest flex flex-col lg:gap-5 xl:gap-8 max-w-4xl">
             {/* Customer Commitment */}
             <div className="flex items-center gap-4">
-              <CheckCircle size={48} className="text-red-600" />
+              <CheckCircle size={48} className="text-red-600 lg:hidden xl:block" />
+              <CheckCircle size={20} className="text-red-600 lg:block xl:hidden" />
               <span className="xl:text-xl mac-14:text-3xl 2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Customer Commitment</span>
             </div>
             <p className="xl:text-lg mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600">
@@ -152,7 +153,8 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Innovation */}
             <div className="flex items-center gap-4 2k:mt-10">
-              <Lightbulb size={48} className="text-red-600" />
+              <Lightbulb size={48} className="text-red-600 lg:hidden xl:block" />
+              <Lightbulb size={24} className="text-red-600 lg:block xl:hidden" />
               <span className="xl:text-xl mac-14:text-3xl 2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Innovation</span>
             </div>
             <p className="xl:text-lg mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600">
@@ -161,7 +163,8 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Integrity */}
             <div className="flex items-center gap-4 2k:mt-10">
-              <ShieldCheck size={48} className="text-red-600" />
+              <ShieldCheck size={48} className="text-red-600 lg:hidden xl:block" />
+              <ShieldCheck size={24} className="text-red-600 lg:block xl:hidden" />
               <span className="xl:text-xl mac-14:text-3xl 2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Integrity</span>
             </div>
             <p className="xl:text-lg mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600">
@@ -169,8 +172,9 @@ const HorizontalScrollSection: React.FC = () => {
             </p>
 
             {/* Excellence */}
-            <div className="flex items-center gap-4 2k:mt-10">
-              <Award size={48} className="text-red-600" />
+            <div className="flex items-center gap-4 lg:mt-0 2k:mt-10">
+              <Award size={48} className="text-red-600 lg:hidden xl:block" />
+              <Award size={24} className="text-red-600 lg:block xl:hidden" />
               <span className="xl:text-xl mac-14:text-3xl 2xl:text-4xl 2k:text-5xl font-bold text-gray-800">Excellence</span>
             </div>
             <p className="xl:text-lg mac-14:text-xl 2xl:text-xl 2k:text-2xl text-gray-600">
