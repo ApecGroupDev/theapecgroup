@@ -86,3 +86,9 @@ body {
     margin-left: 4rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .bg-smaller {
+    background-size: 50%; /* Adjust the size as needed */
+  }
+}

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { CheckCircle, Lightbulb, ShieldCheck, Award } from "lucide-react";
+import { div } from "framer-motion/client";
 
 const HorizontalScrollSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -105,29 +106,39 @@ const HorizontalScrollSection: React.FC = () => {
   const sections = [
     {
       content: (
-        <div className="flex flex-col ml-auto items-end xl:mt-24 xl:me-20 mac-14:mt-20 mac-14:me-24 2xl:mt-28 2xl:me-32">
-          <span className="lg:text-6xl xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
-          <motion.span
-            ref={missionRef}
-            className="lg:text-7xl xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
-            initial={{ y: 70, opacity: 0 }}
-            animate={{ y: missionInView ? 0 : 50, opacity: missionInView ? 1 : 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            MISSION
-          </motion.span>
-          <p className="lg:text-xl xl:text-xl xl:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest text-end">
-            To empower businesses with reliable, innovative, and efficient<br />
-            petroleum equipment solutions that drive success<br />
-            and ensure operational excellence.
-          </p>
+        <div
+          className="
+            bg-[url('/backgrounds/Mission_bg.png')] 
+            bg-no-repeat 
+            lg:bg-left 
+            bg-center 
+            bg-contain
+            w-full
+          "
+        >
+          <div className="flex flex-col ml-auto items-end lg:mt-12 lg:me-12 xl:mt-24 xl:me-20 mac-14:mt-20 mac-14:me-24 2xl:mt-28 2xl:me-32">
+            <span className="lg:text-5xl xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
+            <motion.span
+              ref={missionRef}
+              className="lg:text-6xl xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
+              initial={{ y: 70, opacity: 0 }}
+              animate={{ y: missionInView ? 0 : 50, opacity: missionInView ? 1 : 0 }}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+            >
+              MISSION
+            </motion.span>
+            <p className="lg:text-lg xl:text-xl lg:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest text-end">
+              To empower businesses with reliable, innovative, and efficient<br />
+              petroleum equipment solutions that drive success<br />
+              and ensure operational excellence.
+            </p>
+          </div>
         </div>
       ),
-      background: "url('/backgrounds/Vision_2.png') no-repeat left center/contain",
     },
     {
       content: (
-        <div className="flex flex-col mx-auto items-center xl:mt-12 mac-14:mt-16 2xl:mt-20 text-center">
+        <div className="flex flex-col mx-auto items-center xl:mt-12 mac-14:mt-16 2xl:mt-20 text-center w-full">
           <span className="xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
           <motion.span
             ref={valuesRef}
@@ -181,52 +192,61 @@ const HorizontalScrollSection: React.FC = () => {
     },
     {
       content: (
-        <div className="flex flex-col items-start xl:mt-24 xl:ml-20 mac-14:ml-24 mac-14:mt-20 2xl:ml-32 2xl:mt-28">
-          <span className="xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
-          <motion.span
-            ref={visionRef}
-            className="xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
-            initial={{ y: 70, opacity: 0 }}
-            animate={{ y: visionInView ? 0 : 50, opacity: visionInView ? 1 : 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
-            VISION
-          </motion.span>
-          <p className="xl:text-xl xl:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest">
-            To be the most trusted and innovative partner in the petroleum<br />
-            equipment industry, leading with cutting-edge technology,<br />
-            exceptional service, and sustainable practices.
-          </p>
+        <div
+          className="
+            xl:bg-[url('/backgrounds/Vision_bg.png')] 
+            lg:bg-[url('/backgrounds/Vision_bg_lg.png')]
+            bg-no-repeat 
+            lg:bg-left 
+            xl:bg-right 
+            bg-contain
+            w-full
+        ">
+          <div className="flex flex-col items-start xl:mt-24 xl:ml-20 mac-14:ml-24 mac-14:mt-20 2xl:ml-32 2xl:mt-28">
+            <span className="xl:text-7xl mac-14:text-7xl 2xl:text-7xl 2k:text-9xl italic">Our</span>
+            <motion.span
+              ref={visionRef}
+              className="xl:text-8xl mac-14:text-8xl 2xl:text-8xl 2k:text-10xl font-bold text-red-600"
+              initial={{ y: 70, opacity: 0 }}
+              animate={{ y: visionInView ? 0 : 50, opacity: visionInView ? 1 : 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              VISION
+            </motion.span>
+            <p className="xl:text-xl xl:mt-10 mac-14:mt-16 mac-14:text-2xl 2xl:mt-20 2xl:text-2xl 2k:text-4xl tracking-widest">
+              To be the most trusted and innovative partner in the petroleum<br />
+              equipment industry, leading with cutting-edge technology,<br />
+              exceptional service, and sustainable practices.
+            </p>
+          </div>
         </div>
       ),
-      background: "url('/backgrounds/Vision_1.png') no-repeat right center/contain",
     },
   ];
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full">
       <div
         ref={sectionRef}
-        className="w-full h-full overflow-x-auto overflow-y-hidden flex whitespace-nowrap scroll-smooth"
+        className="w-full xl:h-screen overflow-x-auto overflow-y-hidden flex whitespace-nowrap scroll-smooth"
       >
         <div className="flex flex-nowrap">
           {sections.map((section, index) => (
             <motion.div
               key={index}
-              className="w-screen h-screen flex relative"
+              className="w-screen flex relative"
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              style={{ background: section.background }}
             >
               {section.content}
             </motion.div>
           ))}
         </div>
       </div>
-      <div className="fixed bottom-0 left-0 w-full h-2 bg-gray-200">
+      <div className="fixed bottom-0 left-0 w-full bg-gray-200">
         <div
-          className="h-full bg-blue-500 transition-all"
+          className=" bg-blue-500 transition-all"
           style={{ width: `${scrollProgress}%` }}
         ></div>
       </div>
