@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { CheckCircle, Lightbulb, ShieldCheck, Award } from "lucide-react";
-import { div } from "framer-motion/client";
 
 const HorizontalScrollSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
