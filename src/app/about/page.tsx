@@ -16,11 +16,11 @@ const About: React.FC = () => {
         <HorizontalScrollSection />
       </div>
 
-      <div className="lg:mt-52 xl:mt-24 mac-14:mt-44 2xl:mt-80 2k:mt-96">
+      <div className="lg:mt-52 xl:mt-24 mac-14:mt-44 2xl:mt-60 2k:mt-60">
         <ThirdSection />
       </div>
 
-      <div className="lg:mt-24 xl:mt-44 mac-14:mt-72 2xl:mt-128 2k:mt-160">
+      <div className="lg:mt-24 xl:mt-44 mac-14:mt-72 2xl:mt-96 2k:mt-128">
         <ChooseUs />
       </div>
 

@@ -22,7 +22,7 @@ const ThirdSection: React.FC = () => {
         <div className="flex lg:gap-6 xl:gap-8 mac-14:gap-12 2xl:gap-0">
           {/* Left Side (APEC + OUT) */}
           <div className="w-auto flex flex-col flex-1">
-            <div className="xl:-space-y-8 xl:mt-14 2xl:-space-y-0 2xl:mt-24">
+            <div className="xl:-space-y-8 xl:mt-14 mac-14:space-y-8 mac-14:-mt-0 mac-16:space-y-12 2xl:space-y-12 2k:mt-32">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
                 <span className="lg:text-5xl xl:text-5xl mac-14:text-6xl 2xl:text-8xl 2k:text-10xl font-semibold">APEC</span>
@@ -33,7 +33,7 @@ const ThirdSection: React.FC = () => {
 
               {/* OUT (Aligned at the Top) */}
               <div className="flex justify-end items-start">
-                <span className="lg:text-9xl xl:text-10xl mac-14:text-10xl 2xl:text-12xl 2k:text-13xl font-semibold italic mac-14:-mt-10 2xl:-mt-16 2xl:me-6 2k:me-10">
+                <span className="lg:text-9xl xl:text-10xl mac-14:text-10xl 2xl:text-12xl 2k:text-13xl font-semibold italic xl:mt-12 mac-14:-mt-10 2xl:-mt-16 2xl:me-6 2k:me-10">
                   OUT
                 </span>
               </div>
