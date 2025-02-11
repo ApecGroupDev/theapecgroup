@@ -16,7 +16,7 @@ const ThirdSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center text-white">
+    <div className="flex flex-col items-center justify-center text-white 2k:h-352 overflow-hidden 2k:pb-96">
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
         <div className="flex lg:gap-6 xl:gap-8 mac-14:gap-12 2xl:gap-0">
