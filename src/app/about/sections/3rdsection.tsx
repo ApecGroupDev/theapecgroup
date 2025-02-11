@@ -25,15 +25,15 @@ const ThirdSection: React.FC = () => {
             <div className="xl:-space-y-8 xl:mt-14 mac-14:space-y-8 mac-14:-mt-0 scrn-1700:-space-y-10 scrn-1900:space-y-12 scrn-2k:mt-32">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
-                <span className="lg:text-5xl xl:text-5xl mac-14:text-6xl scrn-1900:text-8xl scrn-2k:text-10xl font-semibold">APEC</span>
-                <span className="lg:text-3xl xl:text-3xl mac-14:text-3xl scrn-1900:text-5xl scrn-2k:text-7xl font-extralight tracking-widest">
+                <span className="lg:text-5xl xl:text-5xl mac-14:text-6xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-10xl font-semibold">APEC</span>
+                <span className="lg:text-3xl xl:text-3xl mac-14:text-3xl scrn-1700:text-5xl scrn-1900:text-5xl scrn-2k:text-7xl font-extralight tracking-widest">
                   will always
                 </span>
               </div>
 
               {/* OUT (Aligned at the Top) */}
               <div className="flex justify-end items-start">
-                <span className="lg:text-9xl xl:text-10xl mac-14:text-10xl scrn-1900:text-12xl scrn-2k:text-13xl font-semibold italic xl:mt-12 mac-14:-mt-10 scrn-1900:-mt-16 scrn-1900:me-6 scrn-2k:me-10">
+                <span className="lg:text-9xl xl:text-10xl mac-14:text-10xl scrn-1700:text-12xl scrn-1900:text-12xl scrn-2k:text-13xl font-semibold italic xl:mt-12 mac-14:-mt-10 scrn-1900:-mt-16 scrn-1900:me-6 scrn-2k:me-10">
                   OUT
                 </span>
               </div>
@@ -44,7 +44,7 @@ const ThirdSection: React.FC = () => {
           <div className="w-auto flex flex-col items-center relative">
             {/* WORK */}
             <div className="w-full flex items-center justify-center">
-              <span className="lg:text-10xl xl:text-11xl mac-14:text-12xl scrn-1900:text-14xl scrn-1900:scale-y-110 font-bold lg:-mt-6 xl:mt-6 mac-14:-mt-12 scrn-1900:mt-6 scrn-2k:mt-80 text-transparent">
+              <span className="lg:text-10xl xl:text-11xl mac-14:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-1900:scale-y-110 font-bold lg:-mt-6 xl:mt-6 mac-14:-mt-12 scrn-1900:mt-6 scrn-2k:mt-80 text-transparent">
                 WORK
               </span>
               <AnimatePresence mode="wait">
@@ -57,7 +57,7 @@ const ThirdSection: React.FC = () => {
                   className={`
                     absolute scrn-1900:scale-y-110 font-bold lg:-mt-6 xl:mt-6 mac-14:-mt-12 scrn-1900:mt-6
                     ${index === 0
-                      ? "text-black lg:text-10xl xl:text-11xl mac-14:text-12xl scrn-1900:text-14xl"
+                      ? "text-black lg:text-10xl xl:text-11xl mac-14:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
                       : index === 1
                         ? "text-transparent text-smart-animation" 
                         : "text-white text-[10rem] tracking-tight text-maneuver-animation" 
@@ -71,7 +71,7 @@ const ThirdSection: React.FC = () => {
 
             {/* the competition (Directly Below WORK) */}
             <div className="w-full flex items-center justify-end lg:-mt-12 xl:-mt-16 mac-14:-mt-16 scrn-1900:-mt-24 scrn-1900:ms-32 scrn-2k:-mt-60">
-              <span className="lg:text-3xl xl:text-4xl mac-14:text-4xl scrn-1900:text-5xl scrn-2k:text-7xl tracking-widest">the competition</span>
+              <span className="lg:text-3xl xl:text-4xl mac-14:text-4xl scrn-1700:text-5xl scrn-1900:text-5xl scrn-2k:text-7xl tracking-widest">the competition</span>
             </div>
           </div>
         </div>
