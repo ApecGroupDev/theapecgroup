@@ -16,13 +16,13 @@ const ThirdSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center text-white scrn-1900:h-240 scrn-2k:h-352 overflow-hidden scrn-1900:pt-40 scrn-2k:pb-96">
+    <div className="flex flex-col items-center justify-center text-white scrn-1700:h-160 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden scrn-1900:pt-40 scrn-2k:pb-96">
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
         <div className="flex lg:gap-6 xl:gap-8 mac-14:gap-12 scrn-1900:gap-0">
           {/* Left Side (APEC + OUT) */}
           <div className="w-auto flex flex-col flex-1">
-            <div className="xl:-space-y-8 xl:mt-14 mac-14:space-y-8 mac-14:-mt-0 mac-16:space-y-12 scrn-1900:space-y-12 scrn-2k:mt-32">
+            <div className="xl:-space-y-8 xl:mt-14 mac-14:space-y-8 mac-14:-mt-0 scrn-1700:-space-y-10 scrn-1900:space-y-12 scrn-2k:mt-32">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
                 <span className="lg:text-5xl xl:text-5xl mac-14:text-6xl scrn-1900:text-8xl scrn-2k:text-10xl font-semibold">APEC</span>

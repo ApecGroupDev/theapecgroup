@@ -98,6 +98,17 @@ body {
   }
 }
 
+@media (min-width: 1700px) and (max-width: 1899px) {
+  .text-smart-animation {
+    font-size: 11rem !important;
+  }
+
+  .text-maneuver-animation {
+    font-size: 8rem !important;
+    margin-left: 5rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .bg-smaller {
     background-size: 50%; /* Adjust the size as needed */
