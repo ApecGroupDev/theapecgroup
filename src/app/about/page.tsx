@@ -12,19 +12,19 @@ const About: React.FC = () => {
         <Hero />
       </div>
 
-      <div className="mac-16:-mt-48">
+      <div>
         <HorizontalScrollSection />
       </div>
 
-      <div className="lg:mt-52 xl:mt-24 mac-14:mt-44 scrn-1900:mt-0 scrn-2k:mt-0">
+      <div>
         <ThirdSection />
       </div>
 
-      <div className="lg:mt-24 xl:mt-44 mac-14:mt-72 scrn-1900:mt-60 scrn-2k:mt-0">
+      <div>
         <ChooseUs />
       </div>
 
-      <div className="scrn-1900:mt-16 scrn-2k:mt-0">
+      <div>
         <Footer />
       </div>
 
