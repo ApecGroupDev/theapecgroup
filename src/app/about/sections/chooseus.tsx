@@ -10,9 +10,9 @@ const ChooseUs: React.FC = () => {
   });
 
   return (
-    <section className="py-20 px-10 flex flex-col items-center justify-center text-center outline-dashed scrn-1500:h-256 scrn-1700:h-288 scrn-1900:h-320 scrn-2k:h-384 overflow-hidden">
+    <section className="py-20 px-10 flex flex-col items-center justify-center text-center outline-dashed scrn-1500:h-256 scrn-1700:h-304 scrn-1900:h-320 scrn-2k:h-384 overflow-hidden">
       {/* Heading */}
-      <span className="lg:text-6xl xl:text-8xl scrn-1500:text-8xl scrn-1700:mt-14 scrn-1900:text-8xl scrn-2k:text-9xl font-bold">
+      <span className="lg:text-6xl xl:text-8xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl font-bold">
         Why
         <motion.p
           ref={ref} // Set the ref to the element
