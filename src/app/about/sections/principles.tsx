@@ -105,7 +105,7 @@ const HorizontalScrollSection: React.FC = () => {
   const sections = [
     {
       content: (
-        <div className="bg-[url('/backgrounds/Mission_bg.png')] bg-no-repeat lg:bg-left bg-center bg-contain w-full scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
+        <div className="bg-[url('/backgrounds/Mission_bg.png')] bg-no-repeat lg:bg-left bg-center bg-contain w-full scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
           <div className="flex flex-col ml-auto items-end lg:mt-12 lg:me-12 xl:mt-24 xl:me-20 mac-14:mt-20 mac-14:me-24 scrn-1900:mt-28 scrn-1900:me-32">
             <span className="lg:text-5xl xl:text-7xl mac-14:text-7xl scrn-1900:text-7xl scrn-2k:text-9xl italic">Our</span>
             <motion.span
@@ -128,7 +128,7 @@ const HorizontalScrollSection: React.FC = () => {
     },
     {
       content: (
-        <div className="flex flex-col mx-auto items-center lg:mt-10 xl:mt-12 mac-14:mt-16 scrn-1900:mt-20 text-center w-full scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
+        <div className="flex flex-col mx-auto items-center lg:mt-10 xl:mt-12 mac-14:mt-16 scrn-1900:mt-20 text-center w-full scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
           <span className="lg:text-5xl xl:text-7xl mac-14:text-7xl scrn-1900:text-7xl scrn-2k:text-9xl italic">Our</span>
           <motion.span
             ref={valuesRef}
@@ -186,7 +186,7 @@ const HorizontalScrollSection: React.FC = () => {
     },
     {
       content: (
-        <div className="bg-[url('/backgrounds/Vision_bg.png')] bg-no-repeat bg-right bg-contain w-full scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
+        <div className="bg-[url('/backgrounds/Vision_bg.png')] bg-no-repeat bg-right bg-contain w-full scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
           <div className="flex flex-col items-start lg:mt-12 lg:ms-12 xl:mt-24 xl:ml-20 mac-14:ml-24 mac-14:mt-20 scrn-1900:ml-32 scrn-1900:mt-28">
             <span className="lg:text-5xl xl:text-7xl mac-14:text-7xl scrn-1900:text-7xl scrn-2k:text-9xl italic">Our</span>
             <motion.span
@@ -210,7 +210,7 @@ const HorizontalScrollSection: React.FC = () => {
   ];
 
   return (
-    <div className="relative w-full scrn-1700:h-256 overflow-hidden">
+    <div className="relative w-full scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
       <div
         ref={sectionRef}
         className="w-full overflow-x-auto overflow-y-hidden flex whitespace-nowrap scroll-smooth"
