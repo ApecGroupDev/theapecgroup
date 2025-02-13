@@ -25,6 +25,9 @@ export default {
       },
       spacing: {
         '128': '32rem',
+        '132': '33rem',
+        '136': '34rem',
+        '140': '35rem',
         '144': '36rem',
         '160': '40rem',
         '176': '44rem',
@@ -57,6 +60,7 @@ export default {
         'scrn-640': '640px',
         'scrn-800': { 'min': '800px', 'max': '870px' },
         'scrn-900': { 'min': '900px', 'max': '970px' },
+        'scrn-1100': { 'min': '1100px', 'max': '1279px' },
         'scrn-1500': { 'min': '1500px', 'max': '1699px' },
         'scrn-1700': { 'min': '1700px', 'max': '1899px' },
         'scrn-1900': '1900px',
