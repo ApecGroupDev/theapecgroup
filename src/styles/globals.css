@@ -77,7 +77,7 @@ body {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1400px) {
+@media (min-width: 1280px) and (max-width: 1499px) {
   .text-smart-animation {
     font-size: 11rem !important;
   }
