@@ -24,6 +24,8 @@ export default {
         sans: ['Metropolis', 'Arial', 'sans-serif'],
       },
       spacing: {
+        '116': '26rem',
+        '120': '28rem',
         '124': '30rem',
         '128': '32rem',
         '132': '33rem',
@@ -60,7 +62,7 @@ export default {
       },
       screens: {
         'scrn-640': '640px',
-        'scrn-800': { 'min': '800px', 'max': '870px' },
+        'scrn-800': { 'min': '800px', 'max': '899px' },
         'scrn-900': { 'min': '900px', 'max': '970px' },
         'scrn-1100': { 'min': '1100px', 'max': '1279px' },
         'scrn-1500': { 'min': '1500px', 'max': '1699px' },
