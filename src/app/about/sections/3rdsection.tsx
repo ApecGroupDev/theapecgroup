@@ -44,7 +44,7 @@ const ThirdSection: React.FC = () => {
           <div className="w-auto flex flex-col items-center relative">
             {/* WORK */}
             <div className="w-full flex items-center justify-center scrn-900:ms-8">
-              <span className="scrn-900:text-9xl text-white lg:text-9xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-1900:scale-y-110 font-bold scrn-900:mt-6 lg:-mt-6 xl:mt-6 scrn-1500:-mt-12 scrn-1900:mt-6 scrn-2k:mt-80 text-transparent">
+              <span className="scrn-900:text-9xl lg:text-9xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-1900:scale-y-110 font-bold scrn-900:mt-6 lg:-mt-6 xl:mt-6 scrn-1500:-mt-12 scrn-1900:mt-6 scrn-2k:mt-80 text-transparent">
                 WORK
               </span>
               <AnimatePresence mode="wait">
@@ -54,7 +54,7 @@ const ThirdSection: React.FC = () => {
                   animate={{ y: "0%", opacity: 1 }}
                   exit={{ y: "-100%", opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
-                  className={`
+                  className={` 
                     absolute scrn-1900:scale-y-110 font-bold scrn-900:mt-6 lg:-mt-6 xl:mt-6 scrn-1500:-mt-12 scrn-1900:mt-6
                     ${index === 0
                       ? "text-black scrn-900:text-9xl lg:text-10xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
