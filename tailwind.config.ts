@@ -24,6 +24,7 @@ export default {
         sans: ['Metropolis', 'Arial', 'sans-serif'],
       },
       spacing: {
+        '124': '30rem',
         '128': '32rem',
         '132': '33rem',
         '136': '34rem',
