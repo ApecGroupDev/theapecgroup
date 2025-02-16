@@ -166,7 +166,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize text-base text-gray-900 hover:text-red-600 transition-colors duration-200 relative ${pathname === path ? "text-red-600" : ""
+                className={`capitalize md:text-xs lg:text-base text-gray-900 hover:text-red-600 transition-colors duration-200 relative ${pathname === path ? "text-red-600" : ""
                   }`}
               >
                 {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
