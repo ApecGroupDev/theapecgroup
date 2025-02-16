@@ -16,24 +16,27 @@ const ThirdSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center text-white scrn-900:h-128 lg:h-160 xl:h-192 scrn-1500:h-192 scrn-1700:h-208 scrn-1900:h-288 scrn-2k:h-352 overflow-hidden scrn-1900:pt-48 scrn-2k:pb-96">
+    <div className="flex flex-col items-center justify-center text-white scrn-800:h-116 scrn-900:h-128 lg:h-160 xl:h-192 scrn-1500:h-192 scrn-1700:h-208 scrn-1900:h-288 scrn-2k:h-352 overflow-hidden scrn-1900:pt-48 scrn-2k:pb-96">
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
-        <div className="flex lg:gap-6 xl:gap-8 scrn-1500:gap-12 scrn-1900:gap-0">
+        <div className="flex scrn-800:gap-4 lg:gap-6 xl:gap-8 scrn-1500:gap-12 scrn-1900:gap-0">
           {/* Left Side (APEC + OUT) */}
           <div className="w-auto flex flex-col flex-1">
+
             <div className="xl:-space-y-8 xl:mt-14 scrn-1500:space-y-8 scrn-1500:-mt-0 scrn-1700:-space-y-10 scrn-1900:space-y-12 scrn-2k:mt-32">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
-                <span className="scrn-900:text-5xl lg:text-5xl xl:text-5xl scrn-1500:text-6xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-10xl font-semibold">APEC</span>
-                <span className="scrn-900:text-3xl lg:text-3xl xl:text-3xl scrn-1500:text-3xl scrn-1700:text-5xl scrn-1900:text-5xl scrn-2k:text-7xl font-extralight tracking-widest">
+                <span className="scrn-800:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-5xl scrn-1500:text-6xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-10xl font-semibold">
+                  APEC
+                </span>
+                <span className="scrn-800:text-3xl scrn-900:text-3xl lg:text-3xl xl:text-3xl scrn-1500:text-3xl scrn-1700:text-5xl scrn-1900:text-5xl scrn-2k:text-7xl font-extralight tracking-widest">
                   will always
                 </span>
               </div>
 
               {/* OUT (Aligned at the Top) */}
               <div className="flex justify-end items-start">
-                <span className="scrn-900:text-9xl lg:text-9xl xl:text-10xl scrn-1500:text-10xl scrn-1700:text-12xl scrn-1900:text-12xl scrn-2k:text-13xl font-semibold italic xl:mt-12 scrn-1500:-mt-10 scrn-1900:-mt-16 scrn-1900:me-6 scrn-2k:me-10">
+                <span className="scrn-800:text-9xl scrn-900:text-9xl lg:text-9xl xl:text-10xl scrn-1500:text-10xl scrn-1700:text-12xl scrn-1900:text-12xl scrn-2k:text-13xl font-semibold italic xl:mt-12 scrn-1500:-mt-10 scrn-1900:-mt-16 scrn-1900:me-6 scrn-2k:me-10">
                   OUT
                 </span>
               </div>
@@ -44,7 +47,7 @@ const ThirdSection: React.FC = () => {
           <div className="w-auto flex flex-col items-center relative">
             {/* WORK */}
             <div className="w-full flex items-center justify-center scrn-900:ms-8">
-              <span className="scrn-900:text-9xl lg:text-9xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-1900:scale-y-110 font-bold scrn-900:mt-6 lg:-mt-6 xl:mt-6 scrn-1500:-mt-12 scrn-1900:mt-6 scrn-2k:mt-80 text-transparent">
+              <span className="scrn-800:text-9xl scrn-900:text-9xl lg:text-9xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-1900:scale-y-110 font-bold scrn-900:mt-6 lg:-mt-6 xl:mt-6 scrn-1500:-mt-12 scrn-1900:mt-6 scrn-2k:mt-80 text-transparent">
                 WORK
               </span>
               <AnimatePresence mode="wait">
@@ -57,10 +60,10 @@ const ThirdSection: React.FC = () => {
                   className={` 
                     absolute scrn-1900:scale-y-110 font-bold scrn-900:mt-6 lg:-mt-6 xl:mt-6 scrn-1500:-mt-12 scrn-1900:mt-6
                     ${index === 0
-                      ? "text-black scrn-900:text-9xl lg:text-10xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
+                      ? "text-black scrn-800:text-9xl scrn-900:text-9xl lg:text-10xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
                       : index === 1
-                        ? "text-transparent text-smart-animation" 
-                        : "text-white text-[10rem] tracking-tight text-maneuver-animation" 
+                        ? "text-transparent text-smart-animation"
+                        : "text-white text-[10rem] tracking-tight text-maneuver-animation"
                     }
                   `}
                 >
@@ -71,7 +74,7 @@ const ThirdSection: React.FC = () => {
 
             {/* the competition (Directly Below WORK) */}
             <div className="w-full flex items-center justify-end lg:-mt-12 xl:-mt-16 scrn-1500:-mt-16 scrn-1900:-mt-24 scrn-1900:ms-32 scrn-2k:-mt-60">
-              <span className="scrn-900:text-3xl lg:text-3xl xl:text-4xl scrn-1500:text-4xl scrn-1700:text-5xl scrn-1900:text-5xl scrn-2k:text-7xl tracking-widest">the competition</span>
+              <span className="scrn-800:text-3xl scrn-900:text-3xl lg:text-3xl xl:text-4xl scrn-1500:text-4xl scrn-1700:text-5xl scrn-1900:text-5xl scrn-2k:text-7xl tracking-widest">the competition</span>
             </div>
           </div>
         </div>
