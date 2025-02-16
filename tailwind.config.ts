@@ -65,7 +65,7 @@ export default {
       screens: {
         'scrn-640': '640px',
         'scrn-800': { 'min': '800px', 'max': '899px' },
-        'scrn-900': { 'min': '900px', 'max': '970px' },
+        'scrn-900': { 'min': '900px', 'max': '1023px' },
         'scrn-1100': { 'min': '1100px', 'max': '1279px' },
         'scrn-1500': { 'min': '1500px', 'max': '1699px' },
         'scrn-1700': { 'min': '1700px', 'max': '1899px' },

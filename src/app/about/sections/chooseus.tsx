@@ -10,7 +10,7 @@ const ChooseUs: React.FC = () => {
   });
 
   return (
-    <section className="py-20 px-10 flex flex-col items-center justify-center text-center outline-green-500 outline-dashed md:h-128 scrn-800:h-128 scrn-900:h-152 xl:h-256 scrn-1500:h-256 scrn-1700:h-304 scrn-1900:h-320 scrn-2k:h-384 overflow-hidden">
+    <section className="py-20 px-10 flex flex-col items-center justify-center text-center outline-green-500 outline-dashed md:h-128 scrn-800:h-128 scrn-900:h-152 lg:h-176 xl:h-256 scrn-1500:h-256 scrn-1700:h-304 scrn-1900:h-320 scrn-2k:h-384 overflow-hidden">
       {/* Heading */}
       <span className="md:text-3xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl xl:text-8xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl font-bold">
         Why

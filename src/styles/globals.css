@@ -101,12 +101,13 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1200px) {
   .text-smart-animation {
-    font-size: 9rem !important;
+    font-size: 8rem !important;
+    margin-left: 3rem;
   }
 
   .text-maneuver-animation {
-    font-size: 6rem !important;
-    margin-left: 2rem;
+    font-size: 5rem !important;
+    margin-left: 3rem;
   }
 }
 
