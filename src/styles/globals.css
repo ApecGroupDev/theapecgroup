@@ -78,6 +78,18 @@ body {
   }
 }
 
+@media (min-width: 640px) and (max-width: 767px) {
+  .text-smart-animation {
+    font-size: 5rem !important;
+    -webkit-text-stroke: 2px black;
+  }
+
+  .text-maneuver-animation {
+    font-size: 3rem !important;
+    -webkit-text-stroke: 2px black;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 799px) {
   .text-smart-animation {
     font-size: 7rem !important;
