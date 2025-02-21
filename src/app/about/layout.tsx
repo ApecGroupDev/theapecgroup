@@ -5,7 +5,7 @@ export default function AboutLayout({ children }: { children: React.ReactNode })
     <div
       style={{
         backgroundImage: "url('/backgrounds/AboutUsBG.jpg')",
-        backgroundSize: "cover",
+        backgroundSize: "100% auto",
         backgroundPosition: "center top",
         backgroundRepeat: "no-repeat",
         minHeight: "100vh"
