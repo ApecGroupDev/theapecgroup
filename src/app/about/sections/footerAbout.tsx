@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
       <div className="grid md:grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
         <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-1 lg:space-y-2">
-          <span className="md:text-xs md:pt-6 xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg footer-text-dark">For More Information</span>
-          <span className='md:ps-0 lg:ps-6 md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
+          <span className="scrn-mobile:text-xs md:text-xs md:pt-6 xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg footer-text-dark">For More Information</span>
+          <span className='md:ps-0 lg:ps-6 scrn-mobile:text-xs md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
           <div className="flex  space-x-4 md:ps-0 lg:ps-12">
             <SocialIcon
               url="https://twitter.com"
@@ -74,14 +74,14 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 3: Logo */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center md:justify-end scrn-mobile:-mt-16">
           <Link href="/">
             <Image
               src="/logos/APEC.png"
               alt="APEC Since 1989"
               height={1206}
               width={1315}
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-28 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 2k:h-80 w-auto"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-20 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 2k:h-80 w-auto"
             />
           </Link>
         </div>

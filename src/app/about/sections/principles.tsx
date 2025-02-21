@@ -117,7 +117,7 @@ const HorizontalScrollSection: React.FC = () => {
             >
               MISSION
             </motion.span>
-            <p className="scrn-mobile:text-xl scrn-mobile:mt-6 md:text-base scrn-800:text-base scrn-900:text-lg lg:text-lg xl:text-xl lg:mt-10 scrn-1500:mt-16 scrn-1500:text-2xl scrn-900:mt-6 scrn-1900:mt-20 scrn-1900:text-2xl scrn-2k:text-4xl tracking-widest md:text-end">
+            <p className="scrn-mobile:text-2xl scrn-mobile:mt-6 md:text-base scrn-800:text-base scrn-900:text-lg lg:text-lg xl:text-xl lg:mt-10 scrn-1500:mt-16 scrn-1500:text-2xl scrn-900:mt-6 scrn-1900:mt-20 scrn-1900:text-2xl scrn-2k:text-4xl tracking-widest md:text-end">
               To empower businesses with reliable, innovative, and efficient<br className="scrn-mobile:hidden" />
               petroleum equipment solutions that drive success<br className="scrn-mobile:hidden" />
               and ensure operational excellence.
@@ -186,7 +186,7 @@ const HorizontalScrollSection: React.FC = () => {
     },
     {
       content: (
-        <div className="bg-[url('/backgrounds/Vision_bg.png')] scrn-mobile:bg-none bg-no-repeat bg-right bg-contain w-full md:h-116 scrn-mobile:h-96 scrn-800:h-124 scrn-900:h-136 lg:h-152 xl:h-192 scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
+        <div className="bg-[url('/backgrounds/Vision_bg.png')] scrn-mobile:bg-none bg-no-repeat bg-right bg-contain w-full md:h-116 scrn-800:h-124 scrn-900:h-136 lg:h-152 xl:h-192 scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
           <div className="flex flex-col scrn-mobile:p-4 scrn-mobile:text-center md:mt-6 md:ms-6 scrn-800:mt-8 scrn-800:ms-8 scrn-900:mt-8 scrn-900:ml-10 lg:mt-12 lg:ms-12 xl:mt-24 xl:ml-20 scrn-1500:ml-24 scrn-1500:mt-20 scrn-1900:ml-32 scrn-1900:mt-28">
             <span className="text-6xl scrn-mobile:mt-6 md:text-4xl scrn-800:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-7xl scrn-1500:text-7xl scrn-1900:text-7xl scrn-2k:text-9xl italic">Our</span>
             <motion.span
@@ -198,7 +198,7 @@ const HorizontalScrollSection: React.FC = () => {
             >
               VISION
             </motion.span>
-            <p className="scrn-mobile:text-xl scrn-mobile:mt-6 md:text-base scrn-800:text-base scrn-900:text-lg lg:text-lg xl:text-xl lg:mt-10 xl:mt-10 scrn-1500:mt-16 scrn-1500:text-2xl scrn-1900:mt-20 scrn-1900:text-2xl scrn-2k:text-4xl tracking-widest">
+            <p className="scrn-mobile:text-2xl scrn-mobile:mt-6 md:text-base scrn-800:text-base scrn-900:text-lg lg:text-lg xl:text-xl lg:mt-10 xl:mt-10 scrn-1500:mt-16 scrn-1500:text-2xl scrn-1900:mt-20 scrn-1900:text-2xl scrn-2k:text-4xl tracking-widest">
               To be the most trusted and innovative partner in the petroleum<br />
               equipment industry, leading with cutting-edge technology,<br />
               exceptional service, and sustainable practices.
@@ -210,7 +210,7 @@ const HorizontalScrollSection: React.FC = () => {
   ];
 
   return (
-    <div className="relative w-full outline-dashed scrn-mobile:h-132 md:h-116 scrn-800:h-124 scrn-900:h-136 lg:h-152 xl:h-192 scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
+    <div className="relative w-full outline-dashed scrn-mobile:h-140 md:h-116 scrn-800:h-124 scrn-900:h-136 lg:h-152 xl:h-192 scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
       <div
         ref={sectionRef}
         className="w-full overflow-x-auto overflow-y-hidden flex md:whitespace-nowrap scroll-smooth"
