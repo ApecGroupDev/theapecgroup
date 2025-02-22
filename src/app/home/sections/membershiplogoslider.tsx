@@ -27,7 +27,7 @@ const MembershipLogosCarousel: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent px-12 md:px-36 2k:px-40">
+    <div className="bg-transparent px-12 md:px-36 2k:px-40 outline-dashed">
       <div className="text-center">
         <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <motion.p
