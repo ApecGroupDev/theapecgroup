@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-transparent md:px-12">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-transparent md:px-12 scrn-2k:h-320">
       {/* Left Text Section */}
       <div className="-space-y-1.5 text-center md:text-left md:pb-0 w-800:pb-10 w-900:pb-8 lg:pb-5">
         <p className="text-3xl md:text-xl w-900:text-2xl lg:text-3xl mac-14:text-4xl mac-16:text-5xl 2xl:text-5xl 2k:text-6xl font-bold whitespace-nowrap">
