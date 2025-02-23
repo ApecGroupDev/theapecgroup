@@ -103,6 +103,9 @@ const FeatureBoxes: React.FC = () => {
                   {feature.description}
                 </p>
               </div>
+
+            {/* Test push for correcting git push */}
+
             </div>
           ))}
         </div>
