@@ -41,7 +41,7 @@ const MembershipLogosCarousel: React.FC = () => {
             </motion.p>
             Member Of
           </h2>
-          <p className="md:text-sm w-900:text-base xl:text-lg mac-14:text-xl mac-16:text-2xl 2xl:text-2xl 2k:text-4xl text-gray-500 mt-2 max-w-2xl mac-14:max-w-full mac-16:max-w-full 2xl:max-w-full mx-auto">
+          <p className="md:text-sm w-900:text-base xl:text-lg mac-14:text-xl mac-16:text-2xl 2xl:text-2xl scrn-2k:text-4xl text-gray-500 mt-2 max-w-2xl mac-14:max-w-full mac-16:max-w-full 2xl:max-w-full mx-auto">
             Our associations reflect our dedication to quality, collaboration, and industry leadership.
           </p>
         </div>
