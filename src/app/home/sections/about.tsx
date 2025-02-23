@@ -11,7 +11,7 @@ const About: React.FC = () => {
   });
 
   return (
-    <div className="w-full bg-transparent flex flex-col md:flex-row px-12 outline-dashed scrn-2k:h-320">
+    <div className="w-full bg-transparent flex flex-col md:flex-row px-12 outline-dashed scrn-2k:h-352">
       {/* Left Image Section */}
       <div className="w-full hidden md:block md:w-2/5 xl:w-1/2">
         <Image

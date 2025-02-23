@@ -46,7 +46,7 @@ const FeatureBoxes: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent md:px-12 w-900:px-20">
+    <div className="bg-transparent md:px-12 w-900:px-20 scrn-2k:h-384">
       {/* Section Title */}
       <div className="text-center">
         <motion.p

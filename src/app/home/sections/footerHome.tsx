@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-black font-inter md:px-8 pt-32 md:pt-4 lg:pt-6 xl:pt-24 mac-14:pt-40 mac-16:pt-52 mac-16:px-20 2xl:px-24 2xl:pt-52 2k:px-32">
+    <footer className="text-black font-inter md:px-8 pt-32 md:pt-4 lg:pt-6 xl:pt-24 mac-14:pt-40 mac-16:pt-52 mac-16:px-20 2xl:px-24 2xl:pt-52 scrn-2k:px-32">
       <div className="grid md:grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
         <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-1 lg:space-y-2">

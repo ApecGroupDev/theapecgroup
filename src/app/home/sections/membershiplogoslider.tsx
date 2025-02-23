@@ -27,7 +27,7 @@ const MembershipLogosCarousel: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent px-12 md:px-36 2k:px-40 outline-dashed">
+    <div className="bg-transparent px-12 md:px-36 2k:px-40 outline-dashed scrn-2k:h-352">
       <div className="text-center">
         <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl mac-16:text-7xl 2xl:text-8xl 2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
           <motion.p
@@ -68,7 +68,7 @@ const MembershipLogosCarousel: React.FC = () => {
                 alt={association.alt}
                 width={800}
                 height={800}
-                className="h-44 md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 2k:h-96 max-w-full object-contain mb-4"
+                className="h-44 md:h-40 xl:h-60 lg:h-48 mac-14:h-64 mac-16:h-80 2xl:h-80 scrn-2k:h-96 max-w-full object-contain mb-4"
               />
             </div>
           </SwiperSlide>

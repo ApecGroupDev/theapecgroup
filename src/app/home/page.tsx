@@ -21,7 +21,7 @@ const Home: React.FC = () => {
         <FeatureBoxes />
       </div>
 
-      <div className='mt-40 md:mt-40 md:mb-28 lg:mt-60 lg:mb-40 xl:mt-72 xl:mb-40 mac-14:mt-72 mac-16:mt-96 2xl:mt-96 2xl:mb-56 2k:mt-96 2k:mb-80' >
+      <div className='mt-40 md:mt-40 md:mb-28 lg:mt-60 lg:mb-40 xl:mt-72 xl:mb-40 mac-14:mt-72 mac-16:mt-96 2xl:mt-96 2xl:mb-56 2k:mt-96 scrn-2k:m-0' >
         <MembershipLogosCarousel />
       </div>
 
