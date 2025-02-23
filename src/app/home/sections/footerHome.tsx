@@ -45,17 +45,17 @@ const Footer: React.FC = () => {
 
         {/* Column 2: Addresses and Contact Information */}
         <div className="flex flex-col space-y-4 pb-4 items-center md:pt-2">
-          <p className="hidden md:block md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed footer-text-dark">
+          <p className="hidden md:block md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
             Main Office: Atlanta, Georgia<br />
             4732-E North Royal Atlanta<br />
             Drive Tucker, GA 30084
           </p>
-          <p className="hidden md:block md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed footer-text-dark">
+          <p className="hidden md:block md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
             Branch Office: Houston, Texas<br />
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <p className="hidden md:hidden lg:block md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl leading-relaxed footer-text-dark">
+          <p className="hidden md:hidden lg:block md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
             For More Info: 855-444-APEC<br />
             <a
               href="mailto:Service@TheAPECgroup.com"
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
               alt="APEC Since 1989"
               height={1206}
               width={1315}
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-28 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 2k:h-80 w-auto"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-28 md:h-28 lg:h-40 xl:h-52 mac-14:h-60 mac-16:h-72 2xl:h-72 scrn-2k:h-80 w-auto"
             />
           </Link>
         </div>
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright*/}
       <div className="w-full py-4">
-        <p className="text-xs md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg 2k:text-xl text-center text-gray-300 font-light">
+        <p className="text-xs md:text-xs xl:text-sm mac-14:text-base mac-16:text-lg 2xl:text-lg scrn-2k:text-xl text-center text-gray-300 font-light">
           Copyright 2024–2025 © The APEC Group. All rights reserved.
         </p>
       </div>
