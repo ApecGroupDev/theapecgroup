@@ -27,10 +27,10 @@ const MembershipLogosCarousel: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent px-12 md:px-36 scrn-2k:px-40 outline-dashed scrn-1700:h-224 scrn-1900:h-288 scrn-2k:h-384">
+    <div className="bg-transparent px-12 md:px-36 scrn-2k:px-40 outline-dashed scrn-1500:h-208 scrn-1700:h-224 scrn-1900:h-288 scrn-2k:h-384">
       <div className="flex flex-col justify-center items-center h-full w-full scrn-2k:gap-y-16">
         <div className="text-center">
-          <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl mac-14:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
+          <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
             <motion.p
               ref={ref}
               initial={{ y: 70, opacity: 0 }}
@@ -41,7 +41,7 @@ const MembershipLogosCarousel: React.FC = () => {
             </motion.p>
             Member Of
           </h2>
-          <p className="md:text-sm w-900:text-base xl:text-lg mac-14:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-4xl text-gray-500 mt-2 max-w-2xl mac-14:max-w-full mac-16:max-w-full scrn-1900:max-w-full mx-auto">
+          <p className="md:text-sm w-900:text-base xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-4xl text-gray-500 mt-2 max-w-2xl scrn-1500:max-w-full mac-16:max-w-full scrn-1900:max-w-full mx-auto">
             Our associations reflect our dedication to quality, collaboration, and industry leadership.
           </p>
         </div>
@@ -59,7 +59,7 @@ const MembershipLogosCarousel: React.FC = () => {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
-          className="mySwiper mac-14:mt-24 scrn-1700:mt-20 scrn-1900:mt-20 scrn-2k:mt-12 w-full"
+          className="mySwiper scrn-1500:mt-24 scrn-1700:mt-20 scrn-1900:mt-20 scrn-2k:mt-12 w-full"
         >
           {associations.map((association, index) => (
             <SwiperSlide key={index}>
@@ -69,7 +69,7 @@ const MembershipLogosCarousel: React.FC = () => {
                   alt={association.alt}
                   width={800}
                   height={800}
-                  className="h-44 md:h-40 xl:h-60 lg:h-48 mac-14:h-64 scrn-1700:h-80 scrn-1900:h-80 scrn-2k:h-96 max-w-full object-contain mb-4"
+                  className="h-44 md:h-40 xl:h-60 lg:h-48 scrn-1500:h-64 scrn-1700:h-80 scrn-1900:h-80 scrn-2k:h-96 max-w-full object-contain mb-4"
                 />
               </div>
             </SwiperSlide>
