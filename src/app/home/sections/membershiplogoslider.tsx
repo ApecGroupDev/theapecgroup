@@ -27,10 +27,10 @@ const MembershipLogosCarousel: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent px-12 md:px-36 scrn-2k:px-40 outline-dashed lg:h-152 xl:h-184 scrn-1500:h-208 scrn-1700:h-224 scrn-1900:h-288 scrn-2k:h-384">
-      <div className="flex flex-col justify-center items-center lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
+    <div className="bg-transparent px-12 md:px-36 scrn-2k:px-40 outline-dashed scrn-900:h-132 lg:h-152 xl:h-184 scrn-1500:h-208 scrn-1700:h-224 scrn-1900:h-288 scrn-2k:h-384">
+      <div className="flex flex-col justify-center items-center scrn-900:pb-14 lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
         <div className="text-center">
-          <h2 className="text-5xl md:text-5xl w-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
+          <h2 className="text-5xl md:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
             <motion.p
               ref={ref}
               initial={{ y: 70, opacity: 0 }}
@@ -41,7 +41,7 @@ const MembershipLogosCarousel: React.FC = () => {
             </motion.p>
             Member Of
           </h2>
-          <p className="md:text-sm w-900:text-base xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-4xl text-gray-500 mt-2 max-w-2xl scrn-1500:max-w-full mac-16:max-w-full scrn-1900:max-w-full mx-auto">
+          <p className="md:text-sm scrn-900:text-base xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-4xl text-gray-500 mt-2 max-w-2xl scrn-1500:max-w-full mac-16:max-w-full scrn-1900:max-w-full mx-auto">
             Our associations reflect our dedication to quality, collaboration, and industry leadership.
           </p>
         </div>
