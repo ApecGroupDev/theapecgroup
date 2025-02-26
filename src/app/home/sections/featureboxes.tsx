@@ -46,7 +46,7 @@ const FeatureBoxes: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent md:px-12 w-900:px-20 xl:px-40 xl:h-198 scrn-1500:px-52 scrn-1500:h-256 scrn-1700:px-48 scrn-1700:h-288 scrn-1900:px-40 scrn-1900:h-304 scrn-2k:px-72 scrn-2k:h-416">
+    <div className="bg-transparent md:px-12 w-900:px-20 lg:-top-4 lg:px-28 lg:h-176 xl:px-40 xl:h-198 scrn-1500:px-52 scrn-1500:h-256 scrn-1700:px-48 scrn-1700:h-288 scrn-1900:px-40 scrn-1900:h-304 scrn-2k:px-72 scrn-2k:h-416">
       {/* Section Title */}
       <div className="text-center">
         <motion.p
@@ -64,14 +64,14 @@ const FeatureBoxes: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:gap-y-12 scrn-1500:gap-y-14 scrn-1700:mt-12 scrn-1700:gap-y-20 scrn-1900:mt-12 scrn-1900:gap-y-24 scrn-2k:gap-y-28">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 lg:gap-y-10 xl:gap-y-12 scrn-1500:gap-y-14 scrn-1700:mt-12 scrn-1700:gap-y-20 scrn-1900:mt-12 scrn-1900:gap-y-24 scrn-2k:gap-y-28">
         {/* First Row: 3 Boxes */}
         {features.slice(0, 3).map((feature, index) => (
           <div
             key={index}
-            className="relative mx-auto group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all md:w-10/12 lg:w-11/12 xl:w-64 scrn-1500:w-72 scrn-1700:w-108 scrn-1900:w-116 scrn-2k:w-128 duration-500"
+            className="relative mx-auto group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all md:w-10/12 lg:w-52 xl:w-64 scrn-1500:w-72 scrn-1700:w-108 scrn-1900:w-116 scrn-2k:w-128 duration-500"
           >
-            <div className="flex flex-col items-center justify-center h-40 md:h-24 w-900:h-28 lg:h-40 xl:h-44 scrn-1500:h-56 scrn-1700:h-64 scrn-1900:h-72 scrn-2k:h-96">
+            <div className="flex flex-col items-center justify-center h-40 md:h-24 w-900:h-28 lg:h-32 xl:h-44 scrn-1500:h-56 scrn-1700:h-64 scrn-1900:h-72 scrn-2k:h-96">
               {feature.icon}
               <h3 className="md:text-sm lg:text-xl scrn-1900:text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
             </div>
@@ -90,9 +90,9 @@ const FeatureBoxes: React.FC = () => {
           {features.slice(3).map((feature, index) => (
             <div
               key={index}
-              className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-3/5 md:w-1/4 lg:w-3/12 xl:w-64 scrn-1500:w-72 scrn-1700:w-108 scrn-1900:w-116 scrn-2k:w-128"
+              className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-3/5 md:w-1/4 lg:w-52 xl:w-64 scrn-1500:w-72 scrn-1700:w-108 scrn-1900:w-116 scrn-2k:w-128"
             >
-              <div className="flex flex-col items-center justify-center h-40 md:h-24 w-900:h-32 lg:h-40 xl:h-44 scrn-1500:h-56 scrn-1700:h-64 scrn-1900:h-72 scrn-2k:h-96">
+              <div className="flex flex-col items-center justify-center h-40 md:h-24 w-900:h-32 lg:h-32 xl:h-44 scrn-1500:h-56 scrn-1700:h-64 scrn-1900:h-72 scrn-2k:h-96">
                 {feature.icon}
                 <h3 className="md:text-sm lg:text-xl xl:text-2xl font-bold text-center mt-4 text-gray-800">{feature.title}</h3>
               </div>
