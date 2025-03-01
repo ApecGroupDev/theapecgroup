@@ -61,7 +61,7 @@ const FeatureBoxes: React.FC = () => {
         <p className="hidden sm:block text-5xl md:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 mb-4">
           <span className="text-red-600"> APEC?</span>
         </p>
-        <p className="text-5xl md:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 mb-4">
+        <p className="hidden scrn-mobile:block text-5xl md:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 mb-4">
           <span className="text-white"> APEC?</span>
         </p>
       </div>
