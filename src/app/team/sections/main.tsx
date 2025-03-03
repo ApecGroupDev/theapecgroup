@@ -21,7 +21,7 @@ const teamMembers = [
 
 const Main: React.FC = () => {
   return (
-    <section className="from-gray-50 to-gray-100 py-16 mt-24">
+    <section className="from-gray-50 outline-dashed outline-green-500 to-gray-100 py-16 mt-24">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-6">
           Meet Our <span className='text-red-600'>Team</span>
