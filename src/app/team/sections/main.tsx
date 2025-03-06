@@ -7,13 +7,21 @@ type TeamMember = {
 };
 
 const teamMembers: TeamMember[] = [
-  { name: 'Mehboob "Ali" Husain', title: 'President' },
-  { name: 'Mavis Brown', title: 'Controller' },
-  { name: 'Earl Sego', title: 'VP of Construction' },
-  { name: 'Ron Brown', title: 'Service Manager' },
-  { name: 'Wade LeComte', title: 'Commercial Sales Executive' },
-  { name: 'Jorge Salazar', title: 'COO Imaging & Canopies' },
-  { name: 'Dami Ajasa', title: 'Operations Manager' },
+  { name: 'Mehboob "Ali" Husain', title: 'PRESIDENT' },
+  { name: 'Mavis Brown', title: 'CONTROLLER' },
+  { name: 'Earl Sego', title: 'VP OF CONSTRUCTION' },
+  { name: 'Ron Brown', title: 'SERVICE MANAGER' },
+  { name: 'Wade LeComte', title: 'COMMERCIAL SALES EXECUTIVE' },
+  { name: 'Jorge Salazar', title: 'COO IMAGING AND CANOPIES' },
+  { name: 'Dami Ajasa', title: 'OPERATIONS MANAGER' },
+  { name: 'Salman Mehdi', title: 'IT DIRECTOR' },
+  { name: 'Sam Hakani', title: 'CUSTOMER RELATIONS MANAGER' },
+  { name: 'Billy Boulware', title: 'ASST. SERVICE MANAGER' },
+  { name: 'Peggy Hulka', title: 'POS MANAGER' },
+  { name: 'Tyler Beck', title: 'SALES EXECUTIVE' },
+  { name: 'Walid Bayoumi', title: 'SALES EXECUTIVE' },
+  { name: 'Michael Henning', title: 'PARTS SPECIALIST' },
+  { name: 'Arash Husain', title: 'PROJECT MANAGER, APEC COMPLIANCE' },
 ];
 
 const TeamPage: React.FC = () => {
@@ -27,16 +35,16 @@ const TeamPage: React.FC = () => {
   }
 
   return (
-    <section className="from-white to-gray-100 py-20 scrn-1900:mx-4 scrn-1900:h-480">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-16">Our Team</h1>
+    <section className="from-white to-gray-100 text-center pt-12 scrn-1900:mx-4 scrn-1900:h-480">
+      <span className="text-4xl font-bold text-gray-800">Dedicated professionals delivering exceptional service</span><br />
+      <span className="text-4xl font-bold text-red-600">100% privately owned and operated</span>
 
-      <div className="scrn-1900:space-y-12">
+      <div className="scrn-1900:space-y-12 mt-14">
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className={`grid gap-8 justify-items-center ${
-              row.length === 2 ? 'grid-cols-2 scrn-1900:mx-80' : 'grid-cols-3'
-            }`}
+            className={`grid gap-8 justify-items-center ${row.length === 2 ? 'grid-cols-2 scrn-1900:mx-80' : 'grid-cols-3'
+              }`}
           >
             {row.map((member) => (
               <TeamCard key={member.name} name={member.name} title={member.title} />
