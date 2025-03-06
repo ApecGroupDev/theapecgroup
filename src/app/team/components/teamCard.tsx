@@ -1,0 +1,35 @@
+import React from 'react';
+import Image from 'next/image';
+
+type TeamCardProps = {
+  name: string;
+  title: string;
+};
+
+const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
+  return (
+    <div className="relative flex items-center rounded-lg overflow-visible outline-dashed outline-green-600 w-112 h-48">
+
+      {/* Text content */}
+      <div className="z-10 flex-1 text-end">
+        <h2 className="text-red-600 font-bold text-xl">{name}</h2>
+        <p className="text-gray-600 text-lg">{title}</p>
+      </div>
+
+      <div className="relative w-56 h-48 ps-1 bg-gradient-to-r from-red-600 to-transparent clip-parallelogram overflow-visible">
+        <div className="absolute w-56 h-48 bg-white clip-parallelogram flex items-center justify-center">
+          <Image
+            src="/placeholders/profile.png" 
+            alt={`${name}'s profile`} 
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default TeamCard;
