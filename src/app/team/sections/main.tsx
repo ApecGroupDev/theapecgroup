@@ -17,13 +17,31 @@ const teamMembers: TeamMember[] = [
 ];
 
 const TeamPage: React.FC = () => {
+  const rows: TeamMember[][] = [];
+  let i = 0;
+
+  while (i < teamMembers.length) {
+    const count: number = rows.length % 2 === 0 ? 2 : 3; // Alternate rows
+    rows.push(teamMembers.slice(i, i + count));
+    i += count;
+  }
+
   return (
-    <section className="items-center outline-dashed outline-green-500 from-white to-gray-100 py-20 scrn-1900:h-480">
+    <section className="from-white to-gray-100 py-20 scrn-1900:mx-4 scrn-1900:h-480">
       <h1 className="text-4xl font-bold text-center text-gray-800 mb-16">Our Team</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-24">
-        {teamMembers.map((member, index) => (
-          <TeamCard key={index} name={member.name} title={member.title} />
+      <div className="scrn-1900:space-y-12">
+        {rows.map((row, rowIndex) => (
+          <div
+            key={rowIndex}
+            className={`grid gap-8 justify-items-center ${
+              row.length === 2 ? 'grid-cols-2 scrn-1900:mx-80' : 'grid-cols-3'
+            }`}
+          >
+            {row.map((member) => (
+              <TeamCard key={member.name} name={member.name} title={member.title} />
+            ))}
+          </div>
         ))}
       </div>
     </section>
