@@ -1,5 +1,5 @@
 import Hero from "./sections/hero";
-import Main from "./sections/main";
+import TeamPage from "./sections/main";
 import Footer from "./sections/footerTeam";
 
 const About: React.FC = () => {
@@ -11,7 +11,7 @@ const About: React.FC = () => {
       </div>
 
       <div>
-        <Main />
+        <TeamPage />
       </div>
 
       <div>
