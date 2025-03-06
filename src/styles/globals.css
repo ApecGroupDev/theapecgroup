@@ -52,6 +52,14 @@ body {
   -webkit-text-stroke: 5px black;
 }
 
+.clip-parallelogram {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.clip-parallelogram-border {
+  clip-path: polygon(24% 0%, 100% 0%, 76% 100%, 0% 100%);
+}
+
 @media (max-width: 767px) {
   .outlined-text-white {
     text-shadow:
@@ -169,6 +177,7 @@ body {
 
 @media (min-width: 1024px) {
   .bg-smaller {
-    background-size: 50%; /* Adjust the size as needed */
+    background-size: 50%;
+    /* Adjust the size as needed */
   }
 }
