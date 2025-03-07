@@ -35,15 +35,15 @@ const TeamPage: React.FC = () => {
   }
 
   return (
-    <section className="from-white to-gray-100 text-center pt-12 scrn-1900:mx-4 scrn-1900:h-480">
+    <section className="outline-dashed outline-green-500 text-center pt-24 scrn-1900:h-480">
       <span className="text-4xl font-bold text-gray-800">Dedicated professionals delivering exceptional service</span><br />
       <span className="text-4xl font-bold text-red-600">100% privately owned and operated</span>
 
-      <div className="scrn-1900:space-y-12 mt-14">
+      <div className="scrn-1900:space-y-16 mt-16">
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className={`grid gap-8 justify-items-center ${row.length === 2 ? 'grid-cols-2 scrn-1900:mx-80' : 'grid-cols-3'
+            className={`grid ${row.length === 2 ? 'grid-cols-2 scrn-1900:mx-80' : 'grid-cols-3'
               }`}
           >
             {row.map((member) => (
