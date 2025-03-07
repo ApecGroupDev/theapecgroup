@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
 
       {/* Left Text Section */}
       <div
-        className={`fixed scrn-mobile:p-4 sm:p-8 md:ms-0 sm:space-y-8 md:space-y-0 xl:space-y-4 scrn-1500:space-y-4 scrn-1700:space-y-12 scrn-2k:space-y-24 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-40 scrn-2k:my-40 transition-opacity duration-250 ${
+        className={`fixed scrn-mobile:p-4 sm:p-8 md:ms-0 sm:space-y-8 md:space-y-0 xl:space-y-4 scrn-1500:space-y-4 scrn-1700:space-y-12 scrn-2k:space-y-24 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-40 scrn-2k:my-36 transition-opacity duration-250 ${
           fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
@@ -68,11 +68,10 @@ const Hero: React.FC = () => {
 
         {/* Headline */}
         <div className="">
-          <span className="text-5xl sm:text-7xl md:text-7xl scrn-800:text-7xl scrn-900:text-8xl lg:text-8xl xl:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-10xl scrn-2k:text-13xl font-regular italic whitespace-nowrap">
+          <span className="text-5xl sm:text-7xl md:text-7xl scrn-800:text-7xl scrn-900:text-8xl lg:text-8xl xl:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-10xl scrn-2k:text-12xl font-regular italic whitespace-nowrap">
             OUR
           </span>
-          <span className="text-7xl sm:text-8xl md:text-8xl scrn-800:text-9xl scrn-900:text-9xl lg:text-9xl xl:text-10xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2k:text-18
-          xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
+          <span className="text-7xl sm:text-8xl md:text-8xl scrn-800:text-9xl scrn-900:text-9xl lg:text-9xl xl:text-10xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2k:text-18xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
             TEAM
           </span>
         </div>
