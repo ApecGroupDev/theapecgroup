@@ -8,7 +8,7 @@ type TeamCardProps = {
 
 const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
   return (
-    <div className="relative flex items-center rounded-lg overflow-visible outline-dashed outline-green-600 w-128 h-48">
+    <div className="relative flex items-center rounded-lg overflow-visible outline-dashed outline-green-600 scrn-1700:w-116 w-128 h-48">
 
       {/* Text content */}
       <div className="z-10 flex-1 text-end">
