@@ -74,14 +74,14 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 3: Logo */}
-        <div className="flex justify-center md:justify-end scrn-mobile:-mt-16 sm:-mt-16">
+        <div className="flex justify-center md:justify-end scrn-900:mt-auto scrn-mobile:-mt-16 sm:-mt-16">
           <Link href="/">
             <Image
               src="/logos/APEC.png"
               alt="APEC Since 1989"
               height={1206}
               width={1315}
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-20 sm:h-16 md:h-28 lg:h-40 xl:h-52 scrn-1500:h-60 scrn-1700:h-72 scrn-1900:h-72 scrn-2k:h-80 w-auto"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 h-20 sm:h-16 md:h-28 scrn-900:h-32 lg:h-40 xl:h-52 scrn-1500:h-60 scrn-1700:h-72 scrn-1900:h-72 scrn-2k:h-80 w-auto"
             />
           </Link>
         </div>
