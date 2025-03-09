@@ -35,16 +35,16 @@ const TeamPage: React.FC = () => {
   }
 
   return (
-    <section className="outline-dashed outline-green-500 text-center pt-24 scrn-1500:h-384 scrn-1700:h-448 scrn-1900:h-480 scrn-2k:h-640">
-      <span className="text-4xl font-bold text-gray-800">Dedicated professionals delivering exceptional service</span><br />
-      <span className="text-4xl font-bold text-red-600">100% privately owned and operated</span>
+    <section className="outline-dashed outline-green-500 text-center xl:pt-16 scrn-1500:pt-24 2xl:pt-24 xl:h-352 scrn-1500:h-384 scrn-1700:h-448 scrn-1900:h-480 scrn-2k:h-640">
+      <span className="xl:text-2xl scrn-1500:text-4xl 2xl:text-4xl font-bold text-gray-800">Dedicated professionals delivering exceptional service</span><br />
+      <span className="xl:text-2xl scrn-1500:text-4xl 2xl:text-4xl font-bold text-red-600">100% privately owned and operated</span>
 
-      <div className="scrn-1500:space-y-10 scrn-1700:space-y-8 scrn-1900:space-y-16 scrn-2k:space-y-32 mt-16">
+      <div className="xl:space-y-10 scrn-1500:space-y-10 scrn-1700:space-y-8 scrn-1900:space-y-16 scrn-2k:space-y-32 xl:mt-8 scrn-1500:mt-16 2xl:mt-16">
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className={`grid scrn-1500:justify-items-center scrn-1700:justify-items-center scrn-1500:mx-20 scrn-1700:mx-24 scrn-2k:justify-items-center scrn-2k:mx-24 
-              ${row.length === 2 ? 'grid-cols-2 scrn-1500:mx-72 scrn-1700:mx-80 scrn-1900:mx-80 scrn-2k:mx-128' : 'grid-cols-3'
+            className={`grid xl:justify-items-center scrn-1900:justify-items-start xl:mx-20 scrn-1500:mx-20 scrn-1700:mx-24 scrn-1900:mx-0 scrn-2k:mx-24 
+              ${row.length === 2 ? 'grid-cols-2 xl:mx-64 scrn-1500:mx-72 scrn-1700:mx-80 scrn-1900:mx-80 scrn-2k:mx-128' : 'grid-cols-3'
               }`}
           >
             {row.map((member) => (
