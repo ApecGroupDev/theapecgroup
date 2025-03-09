@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
   return (
     <div
       id="hero-section"
-      className=" relative pointer-events-none scrn-mobile:h-136 sm:h-120 md:h-116 scrn-800:h-116 scrn-900:h-124 lg:h-132 scrn-1100:h-160 xl:h-176 scrn-1500:h-208 scrn-1700:h-240 scrn-1900:h-256 z-50 scrn-2k:h-352 sm:justify-center justify-between overflow-hidden"
+      className=" relative pointer-events-none scrn-mobile:h-136 sm:h-120 md:h-116 scrn-800:h-116 scrn-900:h-124 lg:h-136 scrn-1100:h-160 xl:h-176 scrn-1500:h-208 scrn-1700:h-240 scrn-1900:h-256 z-50 scrn-2k:h-352 sm:justify-center justify-between overflow-hidden"
     >
       {/* Background Image */}
-      <div className="absolute inset-0 z-10 xl:mt-9 scrn-1500:mt-0 2xl:mt-0 scrn-mobile:hidden">
+      <div className="absolute inset-0 z-10 lg:mt-9 xl:mt-9 scrn-1500:mt-0 2xl:mt-0 scrn-mobile:hidden">
         <Image
           src="/backgrounds/Team_Hero.png"
           alt="Background"
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
           <span className="text-5xl sm:text-7xl md:text-7xl scrn-800:text-7xl scrn-900:text-8xl lg:text-8xl xl:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-10xl scrn-2k:text-12xl font-regular italic whitespace-nowrap">
             OUR
           </span>
-          <span className="text-7xl sm:text-8xl md:text-8xl scrn-800:text-9xl scrn-900:text-9xl lg:text-9xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2k:text-18xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
+          <span className="text-7xl sm:text-8xl md:text-8xl scrn-800:text-9xl scrn-900:text-9xl lg:text-10xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2k:text-18xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
             TEAM
           </span>
         </div>
