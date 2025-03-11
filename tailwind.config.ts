@@ -10,13 +10,13 @@ export default {
   theme: {
     extend: {
       padding: {
-        '0.5': '0.125rem', // 2px
-        '0.75': '0.1875rem', // 3px
-        '-0.5': '-0.125rem', // negative padding (if needed)
+        '0.5': '0.125rem',
+        '0.75': '0.1875rem',
+        '-0.5': '-0.125rem',
       },
       fontSize: {
-        '2xs': '0.625rem', // 10px
-        '3xs': '0.5rem',   // 8px
+        '2xs': '0.625rem',
+        '3xs': '0.5rem',
         '10xl': '10rem',
         '11xl': '12rem',
         '12xl': '14rem',
