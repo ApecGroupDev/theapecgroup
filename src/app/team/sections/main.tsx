@@ -35,11 +35,11 @@ const TeamPage: React.FC = () => {
   }
 
   return (
-    <section className="outline-dashed outline-green-500 text-center sm:pt-6 md:pt-4 scrn-800:pt-4 scrn-900:pt-4 lg:pt-12 xl:pt-16 scrn-1500:pt-24 2xl:pt-24 sm:h-160 md:h-198 scrn-800:h-208 scrn-900:h-240 lg:h-288 xl:h-352 scrn-1500:h-384 scrn-1700:h-448 scrn-1900:h-480 scrn-2k:h-640">
-      <span className="scrn-900:text-xl lg:text-2xl xl:text-2xl scrn-1500:text-4xl 2xl:text-4xl font-bold text-gray-800">Dedicated professionals delivering exceptional service</span><br />
+    <section className="outline-dashed outline-green-500 text-center scrn-mobile:pt-6 sm:pt-6 md:pt-4 scrn-800:pt-4 scrn-900:pt-4 lg:pt-12 xl:pt-16 scrn-1500:pt-24 2xl:pt-24 scrn-mobile:h-182 sm:h-160 md:h-198 scrn-800:h-208 scrn-900:h-240 lg:h-288 xl:h-352 scrn-1500:h-384 scrn-1700:h-448 scrn-1900:h-480 scrn-2k:h-640">
+      <span className="scrn-mobile:text-sm sm:text-base scrn-900:text-xl lg:text-2xl xl:text-2xl scrn-1500:text-4xl 2xl:text-4xl font-bold text-gray-800">Dedicated professionals delivering exceptional service</span><br />
       <span className="scrn-900:text-xl lg:text-2xl xl:text-2xl scrn-1500:text-4xl 2xl:text-4xl font-bold text-red-600">100% privately owned and operated</span>
 
-      <div className="sm:space-y-5 md:space-y-6 scrn-800:space-y-7 scrn-900:space-y-7 lg:space-y-8 xl:space-y-10 scrn-1500:space-y-10 scrn-1700:space-y-8 scrn-1900:space-y-16 scrn-2k:space-y-32 sm:mt-6 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-6 xl:mt-8 scrn-1500:mt-16 2xl:mt-16">
+      <div className="scrn-mobile:hidden sm:space-y-5 md:space-y-6 scrn-800:space-y-7 scrn-900:space-y-7 lg:space-y-8 xl:space-y-10 scrn-1500:space-y-10 scrn-1700:space-y-8 scrn-1900:space-y-16 scrn-2k:space-y-32 sm:mt-6 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-6 xl:mt-8 scrn-1500:mt-16 2xl:mt-16">
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}
@@ -53,6 +53,28 @@ const TeamPage: React.FC = () => {
           </div>
         ))}
       </div>
+
+      <div className="space-y-4 mx-4 sm:hidden pt-6">
+        {Array.from({ length: Math.ceil(teamMembers.length / 2) }).map((_, rowIndex) => {
+          const start = rowIndex * 2;
+          const row = teamMembers.slice(start, start + 2); // Get 2 members per row
+
+          return (
+            <div
+              key={rowIndex}
+              className={`grid ${row.length === 1 && start + 1 === teamMembers.length
+                  ? 'grid-cols-1 justify-items-center'
+                  : 'grid-cols-2 justify-items-center'
+                } gap-4`}
+            >
+              {row.map((member, index) => (
+                <TeamCard key={index} name={member.name} title={member.title} />
+              ))}
+            </div>
+          );
+        })}
+      </div>
+
     </section>
   );
 };
