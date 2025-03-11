@@ -71,7 +71,8 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        'scrn-mobile': { 'min': '200px', 'max': '639px' },
+        'scrn-300': '300px',
+        'scrn-mobile': { 'min': '416px', 'max': '639px' },
         'scrn-800': { 'min': '800px', 'max': '899px' },
         'scrn-900': { 'min': '900px', 'max': '1023px' },
         'scrn-1100': { 'min': '1100px', 'max': '1279px' },
