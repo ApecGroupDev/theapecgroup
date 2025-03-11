@@ -5,11 +5,11 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-black font-inter md:px-8 pt-28 sm:pt-20 md:pt-4 scrn-900:pt-12 xl:pt-24 scrn-1500:pt-40 scrn-1700:pt-52 scrn-1700:px-20 scrn-1900:pt-32 scrn-1900:px-24 scrn-2k:px-32">
+    <footer className="text-black font-inter md:px-8 scrn-mobile:pt-24 sm:pt-20 md:pt-4 scrn-900:pt-12 xl:pt-24 scrn-1500:pt-40 scrn-1700:pt-52 scrn-1700:px-20 scrn-1900:pt-32 scrn-1900:px-24 scrn-2k:px-32">
       <div className="grid grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
-        <div className="flex flex-col scrn-mobile:ms-2 scrn-mobile:mb-4 sm:ms-4 sm:mt-8 md:mt-0 md:ms-0 items-start space-y-2 md:space-y-1 lg:space-y-2">
-          <span className="scrn-mobile:text-xs sm:text-xs md:text-xs md:pt-6 xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg footer-text-dark">For More Information</span>
+        <div className="flex flex-col scrn-mobile:ms-2 sm:ms-4 sm:mt-8 md:mt-0 md:ms-0 items-start space-y-2 md:space-y-1 lg:space-y-2">
+          <span className="scrn-mobile:text-xs sm:text-xs md:text-xs md:pt-6 xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg footer-text-dark whitespace-nowrap">For More Information</span>
           <span className='scrn-mobile:text-xs sm:text-xs md:ps-0 lg:ps-6 md:text-xs xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
           <div className="scrn-mobile:hidden sm:hidden md:flex space-x-4 md:ps-0 lg:ps-12">
             <SocialIcon
