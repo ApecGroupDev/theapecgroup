@@ -1,5 +1,4 @@
 import Header from "@/components/header";
-import Footer from "@/components/footer";
 
 export default function CareersLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -15,8 +14,6 @@ export default function CareersLayout({ children }: { children: React.ReactNode 
       <Header />
 
       <div className="w-full">{children}</div>
-
-      <Footer />
 
     </div>
   );
