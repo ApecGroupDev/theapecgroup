@@ -26,19 +26,19 @@ const ChooseUs: React.FC = () => {
       </span>
 
       {/* Content */}
-      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl lg:max-w-2xl xl:max-w-4xl scrn-1500:max-w-6xl scrn-1700:max-w-6xl scrn-1900:max-w-6xl scrn-2k:max-w-7xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl leading-normal font-normal scrn-2k:leading-relaxed tracking-wider scrn-mobile:mt-6 sm:mt-4 md:mt-4 scrn-800:mt-6 scrn-900:mt-8 lg:mt-10 xl:mt-12 scrn-1500:mt-12 scrn-1900:mt-12">
+      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl lg:max-w-2xl xl:max-w-4xl scrn-1500:max-w-6xl scrn-1700:max-w-6xl scrn-1900:max-w-6xl scrn-2k:max-w-7xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl leading-normal font-normal scrn-2k:leading-relaxed tracking-wider scrn-300:mt-3 scrn-mobile:mt-6 sm:mt-4 md:mt-4 scrn-800:mt-6 scrn-900:mt-8 lg:mt-10 xl:mt-12 scrn-1500:mt-12 scrn-1900:mt-12">
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
         environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
         and digital marketing for dispensaries. We also provide tailored financing options to help you grow your business.
       </p>
 
-      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl lg:max-w-xl xl:max-w-3xl scrn-1500:max-w-4xl scrn-1700:max-w-4xl scrn-1900:max-w-4xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl leading-normal font-normal scrn-2k:leading-relaxed tracking-wider scrn-mobile:mt-4 sm:mt-4 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-8 xl:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">
+      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl lg:max-w-xl xl:max-w-3xl scrn-1500:max-w-4xl scrn-1700:max-w-4xl scrn-1900:max-w-4xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl leading-normal font-normal scrn-2k:leading-relaxed tracking-wider scrn-300:mt-2 scrn-mobile:mt-4 sm:mt-4 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-8 xl:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
         with unparalleled expertise and commitment.
       </p>
 
-      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl font-normal scrn-2k:leading-relaxed scrn-mobile:mt-4 sm:mt-4 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-6 xl:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">Let us partner with you to build success for your business.</p>
-      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl font-normal scrn-2k:leading-relaxed scrn-mobile:mt-4 sm:mt-4 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-6 xl:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">What can we do for you today?</p>
+      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl font-normal scrn-2k:leading-relaxed scrn-300:mt-2 scrn-mobile:mt-4 sm:mt-4 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-6 xl:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">Let us partner with you to build success for your business.</p>
+      <p className="scrn-300:text-sm scrn-mobile:text-sm scrn-900:text-lg lg:text-xl xl:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2k:text-4xl font-normal scrn-2k:leading-relaxed scrn-300:mt-2 scrn-mobile:mt-4 sm:mt-4 md:mt-4 scrn-800:mt-4 scrn-900:mt-4 lg:mt-6 xl:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">What can we do for you today?</p>
 
       {/* Contact Button */}
       <a
