@@ -21,9 +21,9 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div id="hero-section" className="scrn-mobile:h-136 sm:h-120 md:h-116 scrn-800:h-116 scrn-900:h-124 lg:h-132 scrn-1100:h-160 xl:h-176 scrn-1500:h-198 scrn-1700:h-224 scrn-1900:h-240 scrn-2k:h-320 sm:justify-center justify-between overflow-hidden">
+    <div id="hero-section" className="scrn-300:h-124 scrn-mobile:h-136 sm:h-120 md:h-116 scrn-800:h-116 scrn-900:h-124 lg:h-132 scrn-1100:h-160 xl:h-176 scrn-1500:h-198 scrn-1700:h-224 scrn-1900:h-240 scrn-2k:h-320 sm:justify-center justify-between overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-10 sm:mt-24 md:mt-0 scrn-mobile:hidden">
+      <div className="absolute inset-0 z-10 sm:mt-24 md:mt-0 scrn-300:hidden scrn-mobile:hidden">
         <Image
           src="/backgrounds/Building.png"
           alt="Background"
@@ -45,11 +45,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Left Text Section */}
-      <div className={`fixed scrn-mobile:p-4 sm:p-8 md:ms-0 sm:space-y-8 md:space-y-0 xl:space-y-4 scrn-1500:space-y-4 scrn-1700:space-y-12 scrn-1900:space-y-4 scrn-2k:space-y-24 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-44 scrn-2k:my-40 transition-opacity duration-250 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      <div className={`fixed scrn-300:p-2 scrn-mobile:p-4 sm:p-8 md:ms-0 scrn-300:space-y-4 sm:space-y-8 md:space-y-0 xl:space-y-4 scrn-1500:space-y-4 scrn-1700:space-y-12 scrn-1900:space-y-4 scrn-2k:space-y-24 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-44 scrn-2k:my-40 transition-opacity duration-250 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         {/* Breadcrumb */}
-        <nav className="pt-14 scrn-mobile:mt-28">
+        <nav className="pt-14 scrn-300:mt-20 scrn-mobile:mt-28">
           <ul className="flex items-center space-x-2 scrn-1500:text-2xl scrn-1700:text-2xl scrn-1900:text-xl scrn-2k:text-3xl font-semibold text-gray-600 tracking-widest">
             <li>
               <Link href="/home" className="hover:text-red-600">
