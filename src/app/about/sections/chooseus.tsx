@@ -43,7 +43,7 @@ const ChooseUs: React.FC = () => {
       {/* Contact Button */}
       <a
         href="mailto:Sales@TheAPECgroup.com"
-        className="px-16 scrn-900:mt-4 mt-12 md:px-12 md:text-sm lg:px-20 scrn-2k:px-28 py-1 border-2 border-red-600 text-gray-800 lg:text-lg scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl font-regular rounded-lg hover:bg-red-600 hover:text-white transition duration-200"
+        className="px-16 scrn-900:mt-4 mt-12 sm:mt-4 md:px-12 md:text-sm lg:px-20 scrn-2k:px-28 py-1 border-2 border-red-600 text-gray-800 lg:text-lg scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl font-regular rounded-lg hover:bg-red-600 hover:text-white transition duration-200"
       >
         Sales@TheAPECgroup.com
       </a>
