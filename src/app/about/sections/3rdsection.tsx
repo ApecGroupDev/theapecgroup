@@ -16,7 +16,7 @@ const ThirdSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col scrn-mobile:justify-end items-center justify-center text-white scrn-mobile:h-112 sm:h-132 md:h-120 scrn-800:h-116 scrn-900:h-128 lg:h-152 xl:h-192 scrn-1500:h-192 scrn-1700:h-208 scrn-1900:h-288 scrn-2k:h-352 overflow-hidden scrn-1900:pt-48 scrn-2k:pb-96">
+    <div className="flex flex-col scrn-mobile:justify-end items-center justify-center text-white scrn-mobile:h-112 sm:h-112 md:h-120 scrn-800:h-116 scrn-900:h-128 lg:h-152 xl:h-192 scrn-1500:h-192 scrn-1700:h-208 scrn-1900:h-288 scrn-2k:h-352 overflow-hidden scrn-1900:pt-48 scrn-2k:pb-96">
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
         <div className="flex scrn-mobile:gap-2 sm:gap-2 md:gap-4 scrn-800:gap-4 lg:gap-6 xl:gap-8 scrn-1500:gap-12 scrn-1900:gap-0">
