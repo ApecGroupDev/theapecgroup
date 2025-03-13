@@ -44,7 +44,7 @@ const TeamPage: React.FC = () => {
           <div
             key={rowIndex}
             className={`grid justify-items-center sm:mx-6 md:mx-4 scrn-800:mx-4 scrn-900:mx-12 lg:mx-8 xl:mx-20 scrn-1500:mx-20 scrn-1700:mx-24 scrn-1900:mx-0 scrn-2k:mx-24 
-              ${row.length === 2 ? 'grid-cols-2 sm:mx-28 md:mx-32 scrn-800:mx-40 scrn-900:mx-48 lg:mx-44 xl:mx-64 scrn-1500:mx-72 scrn-1700:mx-96 scrn-1900:mx-80 scrn-2k:mx-132' : 'grid-cols-3'
+              ${row.length === 2 ? 'grid-cols-2 sm:mx-28 md:mx-36 scrn-800:mx-40 scrn-900:mx-48 lg:mx-48 xl:mx-64 scrn-1500:mx-72 scrn-1700:mx-80 scrn-1900:mx-80 scrn-2k:mx-128' : 'grid-cols-3'
               }`}
           >
             {row.map((member) => (
