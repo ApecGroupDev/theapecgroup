@@ -4,7 +4,7 @@ export default function TeamLayout({ children }: { children: React.ReactNode }) 
   return (
     <div
       style={{
-        backgroundImage: "url('/backgrounds/ourTeam/ourTeam-Bg.png')",
+        backgroundImage: "url('/backgrounds/ourTeam/Background.png')",
         backgroundSize: 'cover', // Cover the entire container
         backgroundPosition: 'center top', // Center horizontally, align top
         backgroundRepeat: 'no-repeat',
