@@ -124,10 +124,12 @@ body {
   .text-smart-animation {
     font-size: 7rem !important;
     margin-left: 1rem;
+    -webkit-text-stroke: 4px black;
   }
 
   .text-maneuver-animation {
     font-size: 4rem !important;
+    -webkit-text-stroke: 3px black;
   }
 }
 
