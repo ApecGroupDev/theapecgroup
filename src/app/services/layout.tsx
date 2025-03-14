@@ -4,7 +4,7 @@ export default function ServicesLayout({ children }: { children: React.ReactNode
   return (
     <div
       style={{
-        backgroundImage: "",
+        backgroundImage: "url('/backgrounds/services/Background.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center top",
         backgroundRepeat: "no-repeat",

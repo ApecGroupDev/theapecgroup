@@ -1,9 +1,25 @@
+import Footer from "./sections/footerServices";
+import Hero from "./sections/hero";
+import MainServices from "./sections/main";
+
 const Services: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <p className="text-9xl text-wrap">TEMPORARY CONTENT</p>
+    <div className='flex flex-col'>
+      {/* Sections */}
+      <div>
+        <Hero />
+      </div>
+
+      <div>
+        <MainServices />
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+
     </div>
-  )
-}
+  );
+};
 
 export default Services;
