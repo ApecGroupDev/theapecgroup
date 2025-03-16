@@ -43,23 +43,23 @@ const features: Services[] = [
 
 const MainServices: React.FC = () => {
   return (
-    <div className="bg-transparent outline-dashed outline-green-500 scrn-800:px-14 scrn-900:px-14 lg:px-16 xl:px-12 scrn-1500:px-20 scrn-1700:px-20 scrn-1900:px-28 scrn-800:h-160 scrn-900:h-192 lg:h-208 xl:h-240 scrn-1500:h-288 scrn-1700:h-320 scrn-1900:h-352 scrn-2k:h-448">
+    <div className="bg-transparent outline-dashed outline-green-500 md:px-12 scrn-800:px-14 scrn-900:px-14 lg:px-16 xl:px-12 scrn-1500:px-20 scrn-1700:px-20 scrn-1900:px-28 md:h-152 scrn-800:h-160 scrn-900:h-192 lg:h-208 xl:h-240 scrn-1500:h-288 scrn-1700:h-320 scrn-1900:h-352 scrn-2k:h-448">
       {/* Section Title */}
-      <div className="text-center scrn-800:py-8 scrn-900:py-8 lg:py-8 xl:py-12 scrn-1500:py-16 scrn-1700:py-16 scrn-1900:py-28 scrn-2k:py-32">
+      <div className="text-center md:py-6 scrn-800:py-8 scrn-900:py-8 lg:py-8 xl:py-12 scrn-1500:py-16 scrn-1700:py-16 scrn-1900:py-28 scrn-2k:py-32">
         <div className="scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl font-semibold text-gray-800">
           Check out some of our services here!
         </div>
       </div>
 
       {/* Feature Boxes */}
-      <div className="grid grid-cols-3 scrn-800:gap-6 scrn-900:gap-y-10 lg:gap-y-10 xl:gap-y-16 scrn-1500:gap-y-16 scrn-1700:gap-y-24 scrn-1900:gap-y-32 scrn-2k:gap-y-44">
+      <div className="grid grid-cols-3 md:gap-y-10 scrn-800:gap-y-6 scrn-900:gap-y-10 lg:gap-y-10 xl:gap-y-16 scrn-1500:gap-y-16 scrn-1700:gap-y-24 scrn-1900:gap-y-32 scrn-2k:gap-y-44">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="relative mx-auto group bg-gray-100 bg-opacity-60 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all scrn-800:w-52 scrn-900:w-56 lg:w-64 xl:w-80 scrn-1500:w-112 scrn-1700:w-116 scrn-1900:w-116 scrn-2k:w-140 duration-500"
+            className="relative mx-auto group bg-gray-100 bg-opacity-60 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all md:w-44 scrn-800:w-52 scrn-900:w-56 lg:w-64 xl:w-80 scrn-1500:w-112 scrn-1700:w-116 scrn-1900:w-116 scrn-2k:w-140 duration-500"
           >
             {/* Image Display */}
-            <div className="flex flex-col items-center justify-center scrn-800:h-36 scrn-900:h-40 lg:h-48 xl:h-64 scrn-1500:h-72 scrn-1700:h-80 scrn-1900:h-80 scrn-2k:h-116">
+            <div className="flex flex-col items-center justify-center md:h-28 scrn-800:h-36 scrn-900:h-40 lg:h-48 xl:h-64 scrn-1500:h-72 scrn-1700:h-80 scrn-1900:h-80 scrn-2k:h-116">
               <img
                 src={feature.imageSrc}
                 alt={feature.title}
@@ -68,8 +68,8 @@ const MainServices: React.FC = () => {
             </div>
 
             {/* Description (Hidden by default, revealed on hover) */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-              <p className="xl:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center p-0 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
+              <p className="md:text-sm scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-4xl text-gray-700 text-center overflow-y-auto max-h-48 px-4">
                 {feature.description}
               </p>
             </div>
