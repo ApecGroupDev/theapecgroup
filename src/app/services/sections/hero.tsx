@@ -23,10 +23,10 @@ const Hero: React.FC = () => {
   return (
     <div
       id="hero-section"
-      className=" relative pointer-events-none scrn-300:h-116 scrn-mobile:h-112 sm:h-112 md:h-116 scrn-800:h-120 scrn-900:h-128 lg:h-136 scrn-1100:h-160 xl:h-176 scrn-1500:h-208 scrn-1700:h-240 scrn-1900:h-256 scrn-2k:h-352 sm:justify-center justify-between overflow-hidden"
+      className=" relative pointer-events-none scrn-300:h-112 scrn-mobile:h-112 sm:h-112 md:h-116 scrn-800:h-120 scrn-900:h-128 lg:h-136 scrn-1100:h-160 xl:h-176 scrn-1500:h-208 scrn-1700:h-240 scrn-1900:h-256 scrn-2k:h-352 sm:justify-center justify-between overflow-hidden"
     >
       {/* Background Image */}
-      <div className="absolute sm:inset-0 z-10 scrn-mobile:bottom-16 scrn-mobile:scale-150">
+      <div className="absolute sm:inset-0 z-10 scrn-300:bottom-20 scrn-300:scale-150 scrn-mobile:bottom-16 scrn-mobile:scale-150">
         <Image
           src="/backgrounds/services/Hero.png"
           alt="Background"
