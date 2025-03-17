@@ -30,9 +30,10 @@ const Hero: React.FC = () => {
         <Image
           src="/backgrounds/services/Hero.png"
           alt="Background"
-          objectFit='cover'
+          style={{ objectFit: 'cover' }}
           width={2786}
           height={1438}
+          priority
         />
       </div>
 
