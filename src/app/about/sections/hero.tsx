@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
         <Image
           src="/backgrounds/aboutUs/Hero.png"
           alt="Background"
-          objectFit="cover"
+          style={{objectFit: 'cover'}}
           width={2786}
           height={1438}
         />
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
         <Image
           src="/backgrounds/aboutUs/Hero-Mobile.png"
           alt="Background"
-          objectFit="cover"
+          style={{objectFit: 'cover'}}
           width={2786}
           height={1438}
         />
