@@ -56,7 +56,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-transparent fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
+      className={`bg-transparent fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? "top-0" : "-top-full"
         }`}
     >
       {/* Mobile Header */}
@@ -125,7 +125,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         <nav
-          className={`absolute left-0 right-0 top-16 bg-gray-100 p-6 rounded-xl z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+          className={`absolute left-0 right-0 top-20 bg-gray-100 p-6 rounded-xl z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
           {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map(
