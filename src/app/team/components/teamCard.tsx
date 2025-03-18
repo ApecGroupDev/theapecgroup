@@ -19,11 +19,10 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
       <div className="relative scrn-300:w-24 scrn-300:h-16 scrn-mobile:w-24 scrn-mobile:h-16 sm:w-24 sm:h-16 md:w-28 md:h-20 scrn-800:w-28 scrn-800:h-20 scrn-900:w-32 scrn-900:h-24 lg:w-36 lg:h-28 xl:w-40 xl:h-32 scrn-1500:w-44 scrn-1500:h-36 scrn-1900:w-56 scrn-1900:h-48 scrn-2k:w-56 scrn-2k:h-48 scrn-300:ps-0.5 scrn-mobile:ps-0.5 sm:ps-0.5 lg:ps-1 bg-gradient-to-r from-red-600 to-transparent clip-parallelogram overflow-visible">
         <div className="scrn-300:w-24 scrn-300:h-16 scrn-mobile:w-24 scrn-mobile:h-16 sm:w-24 sm:h-16 md:w-28 md:h-20 scrn-800:w-28 scrn-800:h-20 scrn-900:w-32 scrn-900:h-24 lg:w-36 lg:h-28 xl:w-40 xl:h-32 scrn-1500:w-44 scrn-1500:h-36 scrn-1900:w-56 scrn-1900:h-48 scrn-2k:w-56 scrn-2k:h-48 bg-white clip-parallelogram flex items-center justify-center">
           <Image
-            src="/placeholders/profile.png" 
-            alt={`${name}'s profile`} 
+            src="/placeholders/profile.png"
+            alt={`${name}'s profile`}
             fill
             className="object-contain"
-            priority
           />
         </div>
       </div>
