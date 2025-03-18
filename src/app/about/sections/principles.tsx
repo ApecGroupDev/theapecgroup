@@ -210,12 +210,12 @@ const HorizontalScrollSection: React.FC = () => {
   ];
 
   return (
-    <div className="relative w-full outline-dashed outline-lime-600 sm:justify-end scrn-300:h-120 scrn-mobile:h-140 sm:h-124 sm:mt-8 md:h-116 scrn-800:h-124 scrn-900:h-136 lg:h-152 xl:h-192 scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352 overflow-hidden">
+    <div className="relative w-full outline-dashed outline-lime-600 sm:justify-end scrn-300:h-120 scrn-mobile:h-140 sm:h-124 sm:mt-8 md:h-116 scrn-800:h-124 scrn-900:h-136 lg:h-152 xl:h-192 scrn-1500:h-208 scrn-1700:h-256 scrn-1900:h-240 scrn-2k:h-352">
       <div
         ref={sectionRef}
-        className="w-full overflow-x-auto overflow-y-hidden flex md:whitespace-nowrap scroll-smooth"
+        className="w-full overflow-x-scroll overflow-y-hidden flex md:whitespace-nowrap scrollbar-custom scrollbar scroll-smooth"
       >
-        <div className="flex flex-nowrap">
+        <div className="flex flex-nowrap min-w-max">
           {sections.map((section, index) => (
             <motion.div
               key={index}

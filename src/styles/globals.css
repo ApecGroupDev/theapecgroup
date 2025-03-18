@@ -198,3 +198,17 @@ body {
     /* Adjust the size as needed */
   }
 }
+
+/* Custom scrollbar for horizontal scrolling */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 12px; /* Adjust scrollbar height */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #dc2626; /* Tailwind red-600 */
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background-color: #374151; /* Tailwind gray-700 */
+}
