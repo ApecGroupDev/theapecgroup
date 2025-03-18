@@ -30,6 +30,7 @@ const Hero: React.FC = () => {
           style={{objectFit: 'cover'}}
           width={2786}
           height={1438}
+          priority
         />
       </div>
 
@@ -41,6 +42,7 @@ const Hero: React.FC = () => {
           style={{objectFit: 'cover'}}
           width={2786}
           height={1438}
+          priority
         />
       </div>
 
