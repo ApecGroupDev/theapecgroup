@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Left Text Section */}
-      <div className={`fixed scrn-300:p-2 scrn-mobile:p-4 sm:p-8 md:ms-0 scrn-300:space-y-4 sm:space-y-8 md:space-y-0 xl:space-y-4 scrn-1500:space-y-4 scrn-1700:space-y-12 scrn-1900:space-y-4 scrn-2k:space-y-24 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-44 scrn-2k:my-40 transition-opacity duration-250 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      <div className={`fixed scrn-300:p-2 scrn-mobile:p-4 sm:p-8 md:ms-0 scrn-300:space-y-4 sm:space-y-8 md:space-y-0 xl:space-y-4 scrn-1500:space-y-4 scrn-1700:space-y-12 scrn-1900:space-y-4 scrn-2k:space-y-24 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-44 scrn-2k:my-40 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         {/* Breadcrumb */}
