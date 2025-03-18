@@ -113,10 +113,12 @@ body {
 @media (min-width: 768px) and (max-width: 799px) {
   .text-smart-animation {
     font-size: 7rem !important;
+    -webkit-text-stroke: 3px black;
   }
 
   .text-maneuver-animation {
     font-size: 4rem !important;
+    -webkit-text-stroke: 3px black;
   }
 }
 
@@ -142,6 +144,7 @@ body {
   .text-maneuver-animation {
     font-size: 5rem !important;
     margin-left: 2rem;
+    -webkit-text-stroke: 4px black;
   }
 }
 
