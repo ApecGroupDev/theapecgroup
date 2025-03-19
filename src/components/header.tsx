@@ -56,7 +56,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-transparent fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? "top-0" : "-top-full"
+      className={`bg-transparent fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
         }`}
     >
       {/* Mobile Header */}
