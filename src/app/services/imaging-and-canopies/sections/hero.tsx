@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div
-        className={`fixed scrn-300:p-2 scrn-mobile:p-4 scrn-300:space-y-8 scrn-mobile:space-y-10 sm:p-8 md:ms-0 sm:space-y-5 md:space-y-0 scrn-800:space-y-4 scrn-900:space-y-4 lg:space- xl:space-y-6 scrn-1500:space-y-6 scrn-1700:space-y-20 scrn-1900:space-y-20 scrn-2k:space-y-40 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-48 scrn-2k:my-64 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        className={`fixed scrn-300:p-2 scrn-mobile:p-4 scrn-300:space-y-8 scrn-mobile:space-y-10 sm:p-8 md:ms-0 sm:space-y-5 md:space-y-0 scrn-800:space-y-4 scrn-900:space-y-4 lg:space- xl:space-y-6 scrn-1500:space-y-6 scrn-1700:space-y-36 scrn-1900:space-y-20 scrn-2k:space-y-40 text-left md:p-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-48 scrn-2k:my-64 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
       >
         <nav className="pt-14 scrn-300:mt-6 scrn-mobile:mt-6">
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
         </nav>
 
         <div>
-          <span className="scrn-300:text-6xl scrn-mobile:text-7xl sm:text-8xl md:text-9xl scrn-800:text-9xl scrn-900:text-9xl lg:text-10xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-11xl scrn-1900:tracking-tighter scrn-2k:text-13xl scale-y-110 text-white p-0 m-0 font-semibold whitespace-nowrap">
+          <span className="scrn-300:text-6xl scrn-mobile:text-7xl sm:text-8xl md:text-9xl scrn-800:text-9xl scrn-900:text-9xl lg:text-10xl xl:text-11xl scrn-1500:text-12xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-1900:tracking-tighter scrn-2k:text-13xl scale-y-110 text-white p-0 m-0 font-semibold whitespace-nowrap">
             IMAGING & <br />
             CANOPIES
           </span>
