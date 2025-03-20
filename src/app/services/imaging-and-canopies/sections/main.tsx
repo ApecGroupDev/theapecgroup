@@ -12,11 +12,11 @@ const MainImaging: React.FC = () => {
             Gas Station Canopy <br />
             Panels Installation
           </span>
-          <p className="text-4xl font-medium w-10/12 tracking-widest">
+          <p className="scrn-1900:text-4xl font-medium w-10/12 tracking-widest">
             We specialize in making your convenience store look beautiful with your
             amazing oil company brand, canoply panels & imaging.
           </p>
-          <p className="text-4xl font-medium w-10/12 tracking-widest">
+          <p className="scrn-1900:text-4xl font-medium w-10/12 tracking-widest">
             We are equipped to create your custom brand image. <br /> Let us provide
             attractive inside and outside graphics to make your site stand out.
           </p>
@@ -24,7 +24,7 @@ const MainImaging: React.FC = () => {
         <div className="relative rounded-3xl shadow-2xl">
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
           <div className="relative z-10 p-24">
-            <span className="text-6xl font-medium">SERVICE REQUEST</span>
+            <span className="scrn-1900:text-6xl font-medium">SERVICE REQUEST</span>
             <form className="space-y-12 mt-12 text-2xl">
               <input type="text" placeholder="Name" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="text" placeholder="Phone No" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
