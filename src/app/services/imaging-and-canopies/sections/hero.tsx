@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       const heroSection = document.getElementById('hero-section');
       if (heroSection) {
         const { top } = heroSection.getBoundingClientRect();
-        setFadeOut(top < -80); // Adjust to control when the fade starts
+        setFadeOut(top < -80);
       }
     };
 
