@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
         </nav>
 
         <div>
-          <span className="scrn-300:text-6xl scrn-mobile:text-7xl sm:text-8xl md:text-9xl scrn-800:text-9xl scrn-900:text-9xl lg:text-10xl xl:text-11xl scrn-1500:text-9xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-1900:tracking-tighter scrn-2k:text-13xl scale-y-110 text-white p-0 m-0 font-semibold whitespace-nowrap">
+          <span className="scrn-300:text-6xl scrn-mobile:text-7xl sm:text-8xl md:text-9xl scrn-800:text-9xl scrn-900:text-9xl lg:text-10xl xl:text-9xl scrn-1500:text-9xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-1900:tracking-tighter scrn-2k:text-13xl scale-y-110 text-white p-0 m-0 font-semibold whitespace-nowrap">
             IMAGING & <br />
             CANOPIES
           </span>
