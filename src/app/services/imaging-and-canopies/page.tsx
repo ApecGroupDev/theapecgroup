@@ -5,7 +5,6 @@ import MainImaging from "./sections/main";
 const Services: React.FC = () => {
   return (
     <div className='flex flex-col'>
-      {/* Sections */}
       <div>
         <Hero />
       </div>

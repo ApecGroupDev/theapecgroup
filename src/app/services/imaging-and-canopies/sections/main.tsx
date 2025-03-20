@@ -6,7 +6,6 @@ const MainImaging: React.FC = () => {
   return (
     <div className="bg-transparent outline-dashed outline-green-500 scrn-300:px-3 scrn-mobile:px-4 sm:px-8 md:px-12 scrn-800:px-14 scrn-900:px-14 lg:px-16 xl:px-12 scrn-1500:px-20 scrn-1700:px-20 scrn-1900:px-28 scrn-300:h-152 scrn-mobile:h-140 sm:h-128 md:h-152 scrn-800:h-160 scrn-900:h-192 lg:h-208 xl:h-240 scrn-1500:h-288 scrn-1700:h-320 scrn-1900:h-352 scrn-2k:h-448">
 
-      {/* Main */}
       <div className="grid grid-cols-2 gap-12 pt-32">
         <div className="h-auto pt-24 outline-dashed outline-red-600 space-y-12">
           <span className="text-red-600 font-semibold scrn-1900:text-7xl">
@@ -23,10 +22,7 @@ const MainImaging: React.FC = () => {
           </p>
         </div>
         <div className="relative rounded-3xl shadow-2xl">
-          {/* Blurred Background */}
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
-
-          {/* Content (Not Blurred) */}
           <div className="relative z-10 p-24">
             <span className="text-6xl font-medium">SERVICE REQUEST</span>
             <form className="space-y-12 mt-12 text-2xl">
