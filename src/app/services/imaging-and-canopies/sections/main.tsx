@@ -8,15 +8,15 @@ const MainImaging: React.FC = () => {
 
       <div className="grid grid-cols-2 gap-12 pt-32">
         <div className="h-auto pt-24 outline-dashed outline-red-600 space-y-12">
-          <span className="text-red-600 font-semibold scrn-1700:text-6xl scrn-1900:text-7xl scrn-2k:text-8xl">
+          <span className="text-red-600 font-semibold scrn-1500:text-5xl scrn-1700:text-6xl scrn-1900:text-7xl scrn-2k:text-8xl">
             Gas Station Canopy <br />
             Panels Installation
           </span>
-          <p className="scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium w-10/12 tracking-widest">
+          <p className="scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium w-10/12 tracking-widest">
             We specialize in making your convenience store look beautiful with your
             amazing oil company brand, canoply panels & imaging.
           </p>
-          <p className="scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium w-10/12 tracking-widest">
+          <p className="scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium w-10/12 tracking-widest">
             We are equipped to create your custom brand image. <br /> Let us provide
             attractive inside and outside graphics to make your site stand out.
           </p>
@@ -24,8 +24,8 @@ const MainImaging: React.FC = () => {
         <div className="relative rounded-3xl shadow-2xl">
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
           <div className="relative z-10 p-24">
-            <span className="scrn-1700:text-5xl scrn-1900:text-6xl scrn-2k:text-7xl font-medium">SERVICE REQUEST</span>
-            <form className="scrn-1700:space-y-12 scrn-1900:space-y-12 scrn-2k:space-y-16 mt-12 scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl">
+            <span className="scrn-1500:text-4xl scrn-1700:text-5xl scrn-1900:text-6xl scrn-2k:text-7xl font-medium">SERVICE REQUEST</span>
+            <form className="scrn-1500:space-y-8 scrn-1700:space-y-12 scrn-1900:space-y-12 scrn-2k:space-y-16 mt-12 scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl">
               <input type="text" placeholder="Name" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="text" placeholder="Phone No" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="email" placeholder="Email" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
