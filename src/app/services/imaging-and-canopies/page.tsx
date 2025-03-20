@@ -1,9 +1,25 @@
-const ImagingAndCanopies: React.FC = () => {
-  return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <p className="text-9xl text-wrap">TEMPORARY CONTENT</p>
-    </div>
-  )
-}
+import Footer from "./sections/footerImaging";
+import Hero from "./sections/hero";
+import MainImaging from "./sections/main";
 
-export default ImagingAndCanopies;
+const Services: React.FC = () => {
+  return (
+    <div className='flex flex-col'>
+      {/* Sections */}
+      <div>
+        <Hero />
+      </div>
+
+      <div>
+        <MainImaging />
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+
+    </div>
+  );
+};
+
+export default Services;
