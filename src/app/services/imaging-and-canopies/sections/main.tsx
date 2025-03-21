@@ -14,7 +14,7 @@ const MainImaging: React.FC = () => {
           </span>
           <p className="scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium w-10/12 tracking-widest">
             We specialize in making your convenience store look beautiful with your
-            amazing oil company brand, canoply panels & imaging.
+            amazing oil company brand, canopy panels & imaging.
           </p>
           <p className="scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium w-10/12 tracking-widest">
             We are equipped to create your custom brand image. <br /> Let us provide
