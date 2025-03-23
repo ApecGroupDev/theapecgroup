@@ -1,9 +1,24 @@
-const Financing: React.FC = () => {
+import Footer from "./sections/footerFinancing";
+import MainFinancing from "./sections/main";
+import Hero from "./sections/hero";
+const Services: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <p className="text-9xl text-wrap">TEMPORARY CONTENT</p>
-    </div>
-  )
-}
+    <div className='flex flex-col'>
 
-export default Financing;
+      <div>
+        <Hero />
+      </div>
+
+      <div>
+        <MainFinancing />
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+
+    </div>
+  );
+};
+
+export default Services;
