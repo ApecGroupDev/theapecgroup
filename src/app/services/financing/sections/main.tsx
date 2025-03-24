@@ -8,8 +8,8 @@ const MainFinancing: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-2 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32">
         
-        <div className="h-auto pt-12 outline-dashed outline-red-600 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-12 lg:space-y-8">
-          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-3xl xl:text-4xl scrn-1500:text-5xl scrn-1700:text-6xl scrn-1900:text-6xl scrn-2k:text-8xl">
+        <div className="h-auto pt-12 outline-dashed outline-red-600 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-12 lg:space-y-8 scrn-2k:space-y-12">
+          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-3xl xl:text-4xl scrn-1500:text-5xl scrn-1700:text-6xl scrn-1900:text-6xl scrn-2k:text-7xl">
             Gas Station Financing and <br />
             Loans
           </span>
@@ -19,11 +19,11 @@ const MainFinancing: React.FC = () => {
           </p>
           <p className="md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-3xl scrn-2k:text-5xl scrn-800:font-medium scrn-900:font-medium lg:font-normal tracking-widest">
             <span className="text-red-600">APEC Group</span> provides extensive financing options
-            through our affiliated network od lenders and leadsing companies, which offers traditional
+            through our affiliated network of lenders and leadsing companies, which offers traditional
             loan and lease solutions tailored to your project needs.
           </p>
           <p>
-          <span className="font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-3xl xl:text-4xl scrn-1500:text-5xl scrn-1700:text-6xl scrn-1900:text-6xl scrn-2k:text-8xl">
+          <span className="font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-3xl xl:text-xl scrn-1500:text-5xl scrn-1700:text-6xl scrn-1900:text-6xl scrn-2k:text-7xl">
             Having Difficulty Obtaining<br />
             Credit For Your Gas Station?
           </span>
