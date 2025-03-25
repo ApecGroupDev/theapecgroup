@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
         </nav>
 
         <div>
-          <span className="scrn-300:text-6xl scrn-mobile:text-6xl sm:text-6xl md:text-6xl scrn-800:text-7xl scrn-900:text-7xl scrn-900:tracking-wide lg:text-8xl lg:tracking-tighter xl:text-9xl xl:tracking-tighter scrn-1500:text-7xl scrn-1500:tracking-wide scrn-1700:text-8xl scrn-1700:tracking-normal scrn-1900:text-8xl scrn-1900:tracking-tighter scrn-2k:text-9xl scrn-2k:tracking-tight scale-y-110 p-0 m-0 font-semibold whitespace-nowrap">
+          <span className="scrn-300:text-6xl scrn-mobile:text-6xl sm:text-6xl md:text-6xl scrn-800:text-7xl scrn-900:text-7xl scrn-900:tracking-wide lg:text-8xl lg:tracking-tighter xl:text-6xl xl:tracking-wide scrn-1500:text-7xl scrn-1500:tracking-wide scrn-1700:text-8xl scrn-1700:tracking-normal scrn-1900:text-8xl scrn-1900:tracking-tighter scrn-2k:text-9xl scrn-2k:tracking-tight scale-y-110 p-0 m-0 font-semibold whitespace-nowrap">
             GAS STATION FINANCING <br />
             COMPANY
           </span>
