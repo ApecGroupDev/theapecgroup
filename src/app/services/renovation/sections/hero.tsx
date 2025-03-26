@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div
-        className={`fixed scrn-300:p-2 scrn-mobile:p-4 scrn-300:space-y-8 scrn-mobile:space-y-16 sm:p-8 md:ms-0 sm:space-y-5 md:space-y-12 scrn-800:space-y-12 scrn-800:tracking-tighter scrn-900:space-y-12 lg:space-y-6 xl:space-y-6 scrn-1500:space-y-4 scrn-1700:space-y-6 scrn-1900:space-y-20 scrn-2k:space-y-24 text-left md:p-12 scrn-1900:ps-16 scrn-300:my-12 scrn-mobile:my-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-52 scrn-2k:my-80 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        className={`fixed scrn-300:p-2 scrn-mobile:p-4 scrn-300:space-y-8 scrn-mobile:space-y-16 sm:p-8 md:ms-0 sm:space-y-5 md:space-y-12 scrn-800:space-y-12 scrn-800:tracking-tighter scrn-900:space-y-12 lg:space-y-6 xl:space-y-6 scrn-1500:space-y-4 scrn-1700:space-y-6 scrn-1900:space-y-20 scrn-2k:space-y-32 text-left md:p-12 scrn-1900:ps-16 scrn-300:my-12 scrn-mobile:my-12 scrn-900:my-8 lg:my-16 xl:my-24 scrn-1900:my-52 scrn-2k:my-80 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
       >
         <nav className="pt-14 scrn-300:mt-6 scrn-mobile:mt-6">
