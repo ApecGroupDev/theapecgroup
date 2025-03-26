@@ -15,7 +15,7 @@ const MainFinancing: React.FC = () => {
           </span>
           <p className="md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-2xl scrn-1700:text-3xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-medium scrn-900:font-medium lg:font-normal tracking-widest">
             We provide various C-store renovation services to revamp your gas station
-            and make it relevant to today's industry.
+            and make it relevant to today’s industry.
           </p>
           <div className="space-y-6 md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-2xl scrn-1700:text-3xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-medium scrn-900:font-medium lg:font-normal tracking-widest">
             <CheckmarkBadge text="Canopy under deck and columns paint" />
