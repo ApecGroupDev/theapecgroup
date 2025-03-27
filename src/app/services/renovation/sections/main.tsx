@@ -10,11 +10,11 @@ const MainFinancing: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-2 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 xl:gap-24 scrn-1500:gap-32 scrn-1700:gap-36 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32 scrn-1900:pt-48 scrn-2k:pt-60">
 
         <div className="h-auto pt-12 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-8 scrn-2k:space-y-12">
-          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
             Our Gas Station Renovation and <br /> Remodelling
             Services Include:
           </span>
-          <p className="md:text-sm scrn-800:text-base scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
+          <p className="sm:text-sm md:text-sm scrn-800:text-base scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             We provide various C-store renovation services to revamp your gas station
             and make it relevant to today’s industry.
           </p>
@@ -26,7 +26,7 @@ const MainFinancing: React.FC = () => {
             <CheckmarkBadge text="Graphics and Signage" />
             <CheckmarkBadge text="Lighting" />
           </div>
-          <div className="lg:hidden md:text-sm scrn-800:text-base scrn-900:text-base md:space-y-3 scrn-800:space-y-2 scrn-900:space-y-2 tracking-widest">
+          <div className="lg:hidden sm:text-sm md:text-sm scrn-800:text-base scrn-900:text-base sm:space-y-2 md:space-y-3 scrn-800:space-y-2 scrn-900:space-y-2 tracking-widest">
             <CheckmarkBadgeSmall text="Canopy under deck and columns paint" />
             <CheckmarkBadgeSmall text="Pressure washing" />
             <CheckmarkBadgeSmall text="Outside building paint" />
@@ -54,12 +54,12 @@ const MainFinancing: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14">
+      <div className="sm:mt-12 md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14">
         <p className="space-x-2 font-semibold">
-          <span className="md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl text-red-600">
+          <span className="sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl text-red-600">
             BE CLEAN
           </span>
-          <span className="md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-4xl">
+          <span className="sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-4xl">
             HAVE A FRESH LOOK
           </span>
         </p>
