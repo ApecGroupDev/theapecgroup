@@ -54,9 +54,9 @@ const MainFinancing: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="scrn-300:mt-6 scrn-mobile:mt-8 sm:mt-12 md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14 scrn-1500:mt-36 scrn-1700:mt-52 scrn-1900:mt-52 scrn-2k:mt-96">
+      <div className="scrn-300:mt-6 scrn-mobile:mt-8 sm:mt-12 md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14 xl:mt-32 scrn-1500:mt-36 scrn-1700:mt-52 scrn-1900:mt-52 scrn-2k:mt-96">
         <p className="space-x-2 font-semibold">
-          <span className="scrn-300:text-2xl scrn-mobile:text-3xl sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl text-red-600">
+          <span className="scrn-300:text-2xl scrn-mobile:text-3xl sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl xl:text-7xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl text-red-600">
             BE CLEAN
           </span>
           <span className="scrn-300:text-base scrn-mobile:text-lg sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-4xl scrn-1500:text-5xl scrn-1700:text-5xl scrn-1900:text-6xl scrn-2k:text-7xl">
