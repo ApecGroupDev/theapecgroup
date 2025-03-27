@@ -7,8 +7,8 @@ const MainFinancing: React.FC = () => {
     <div className="bg-transparent outline-dashed outline-green-500 scrn-300:px-3 scrn-mobile:px-4 sm:px-8 md:px-12 scrn-800:px-14 scrn-900:px-14 lg:px-16 xl:px-12 scrn-1500:px-20 scrn-1700:px-20 scrn-1900:px-64 scrn-2k:px-120 scrn-300:h-224 scrn-mobile:h-224 sm:h-128 md:h-152 scrn-800:h-160 scrn-900:h-192 lg:h-208 xl:h-240 scrn-1500:h-288 scrn-1700:h-320 scrn-1900:h-352 scrn-2k:h-448">
 
       <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-2 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32">
-        
-        <div className="h-auto pt-12 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-12 lg:space-y-8 scrn-2k:space-y-12">
+
+        <div className="h-auto pt-12 xl:pt-24 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-12 lg:space-y-8 scrn-2k:space-y-12">
           <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-3xl xl:text-4xl scrn-1500:text-4xl scrn-1700:text-5xl scrn-1900:text-4xl scrn-2k:text-5xl">
             Gas Station Financing and <br />
             Loans
@@ -23,10 +23,10 @@ const MainFinancing: React.FC = () => {
             loan and lease solutions tailored to your project needs.
           </p>
           <p>
-          <span className="font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-3xl xl:text-xl scrn-1500:text-4xl scrn-1700:text-5xl scrn-1900:text-4xl scrn-2k:text-5xl">
-            Having Difficulty Obtaining<br />
-            Credit For Your Gas Station?
-          </span>
+            <span className="font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-3xl xl:text-xl scrn-1500:text-4xl scrn-1700:text-5xl scrn-1900:text-4xl scrn-2k:text-5xl">
+              Having Difficulty Obtaining<br />
+              Credit For Your Gas Station?
+            </span>
           </p>
           <p className="md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-2xl scrn-1700:text-3xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-medium scrn-900:font-medium lg:font-normal tracking-widest">
             <span className="text-red-600">APEC </span> Financing is the in-house backstop financing
@@ -52,6 +52,16 @@ const MainFinancing: React.FC = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div className="scrn-300:mt-6 scrn-mobile:mt-8 sm:mt-12 md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14 xl:mt-32 scrn-1500:mt-36 scrn-1700:mt-52 scrn-1900:mt-72 scrn-2k:mt-96">
+        <p className="space-x-2 font-semibold">
+          <span className="scrn-300:text-2xl scrn-mobile:text-3xl sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl xl:text-7xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl text-red-600">
+            BE CLEAN
+          </span>
+          <span className="scrn-300:text-base scrn-mobile:text-lg sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-4xl scrn-1500:text-5xl scrn-1700:text-5xl scrn-1900:text-6xl scrn-2k:text-7xl">
+            HAVE A FRESH LOOK
+          </span>
+        </p>
       </div>
     </div >
   );
