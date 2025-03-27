@@ -9,7 +9,7 @@ const MainFinancing: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-2 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 xl:gap-24 scrn-1500:gap-32 scrn-1700:gap-36 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32 scrn-1900:pt-48 scrn-2k:pt-60">
 
-        <div className="h-auto pt-12 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-8 scrn-2k:space-y-12">
+        <div className="h-auto pt-12 xl:pt-24 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-8 scrn-2k:space-y-12">
           <span className="text-red-600 font-semibold scrn-300:text-lg scrn-mobile:text-xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
             Our Gas Station Renovation and <br /> Remodelling
             Services Include:
