@@ -37,11 +37,11 @@ const Hero: React.FC = () => {
       </div>
 
       <div
-        className={`fixed scrn-300:p-2 scrn-mobile:p-4 scrn-300:space-y-8 scrn-mobile:space-y-16 sm:p-8 md:ms-0 sm:space-y-5 md:space-y-8 scrn-800:space-y-7 scrn-800:tracking-tighter scrn-900:space-y-12 lg:space-y-9 xl:space-y-14 scrn-1500:space-y-12 scrn-1700:space-y-20 scrn-1900:space-y-20 scrn-2k:space-y-32 text-left md:p-12 scrn-1900:ps-16 scrn-300:my-12 scrn-mobile:my-12 md:my-6 scrn-800:my-6 scrn-900:my-8 lg:my-16 xl:my-28 scrn-1500:my-40 scrn-1700:my-48 scrn-1900:my-52 scrn-2k:my-80 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        className={`fixed scrn-300:p-2 scrn-mobile:p-4 scrn-300:space-y-8 scrn-mobile:space-y-16 sm:p-8 md:ms-0 sm:space-y-10 md:space-y-8 scrn-800:space-y-7 scrn-800:tracking-tighter scrn-900:space-y-12 lg:space-y-9 xl:space-y-14 scrn-1500:space-y-12 scrn-1700:space-y-20 scrn-1900:space-y-20 scrn-2k:space-y-32 text-left md:p-12 scrn-1900:ps-16 scrn-300:my-12 scrn-mobile:my-12 sm:my-12 md:my-6 scrn-800:my-6 scrn-900:my-8 lg:my-16 xl:my-28 scrn-1500:my-40 scrn-1700:my-48 scrn-1900:my-52 scrn-2k:my-80 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
       >
         <nav className="pt-14 scrn-300:mt-6 scrn-mobile:mt-6">
-          <ul className="flex sm:items-center space-x-2 scrn-300:text-2xs scrn-mobile:text-2xs sm:text-2xs md:text-3xs scrn-800:text-2xs scrn-900:text-2xs lg:text-2xs xl:text-xs scrn-1500:text-md scrn-1700:text-md scrn-1900:text-xl scrn-2k:text-xl font-semibold text-gray-600 tracking-widest">
+          <ul className="flex sm:items-center space-x-2 scrn-300:text-2xs scrn-mobile:text-2xs sm:text-3xs md:text-3xs scrn-800:text-2xs scrn-900:text-2xs lg:text-2xs xl:text-xs scrn-1500:text-md scrn-1700:text-md scrn-1900:text-xl scrn-2k:text-xl font-semibold text-gray-600 tracking-widest">
             <li>
               <Link href="/home">
                 Home
@@ -56,10 +56,10 @@ const Hero: React.FC = () => {
 
         <div>
           <span className="font-semibold whitespace-nowrap text-red-600">
-            <span className='md:text-5xl md:tracking-tighter scrn-800:text-5xl scrn-800:tracking-tight scrn-900:text-5xl scrn-900:tracking-wider lg:text-6xl lg:tracking-normal xl:text-7xl xl:tracking-wider scrn-1500:text-8xl scrn-1500:tracking-normal scrn-1700:text-8xl scrn-1700:tracking-wider scrn-1900:text-9xl scrn-1900:tracking-tighter scrn-2k:text-10xl scrn-2k:tracking-normal'>
+            <span className='sm:text-4xl sm:tracking-wider md:text-5xl md:tracking-tighter scrn-800:text-5xl scrn-800:tracking-tight scrn-900:text-5xl scrn-900:tracking-wider lg:text-6xl lg:tracking-normal xl:text-7xl xl:tracking-wider scrn-1500:text-8xl scrn-1500:tracking-normal scrn-1700:text-8xl scrn-1700:tracking-wider scrn-1900:text-9xl scrn-1900:tracking-tighter scrn-2k:text-10xl scrn-2k:tracking-normal'>
               GAS STATION
             </span><br />
-            <span className='md:text-2xl scrn-800:text-2xl scrn-800:tracking-wider scrn-900:text-3xl scrn-900:tracking-normal lg:text-4xl lg:tracking-tight xl:text-5xl xl:tracking-tight scrn-1500:text-6xl scrn-1500:tracking-tighter scrn-1700:text-6xl scrn-1900:text-6xl scrn-1900:tracking-wider scrn-2k:text-7xl scrn-2k:tracking-widest'>
+            <span className='sm:text-2xl sm:tracking-tighter md:text-2xl md:tracking-normal scrn-800:text-2xl scrn-800:tracking-wider scrn-900:text-3xl scrn-900:tracking-normal lg:text-4xl lg:tracking-tight xl:text-5xl xl:tracking-tight scrn-1500:text-6xl scrn-1500:tracking-tighter scrn-1700:text-6xl scrn-1900:text-6xl scrn-1900:tracking-wider scrn-2k:text-7xl scrn-2k:tracking-widest'>
               RENOVATION COMPANY
             </span>
           </span>
