@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
           }`}
       >
         <nav className="pt-14 scrn-300:mt-6 scrn-mobile:mt-6">
-          <ul className="flex sm:items-center space-x-2 scrn-300:text-2xs scrn-mobile:text-2xs sm:text-2xs md:text-base scrn-800:text-sm scrn-900:text-sm lg:text-2xs xl:text-xs scrn-1500:text-md scrn-1700:text-md scrn-1900:text-xl scrn-2k:text-xl font-semibold text-gray-600 tracking-widest">
+          <ul className="flex sm:items-center space-x-2 scrn-300:text-2xs scrn-mobile:text-2xs sm:text-2xs md:text-base scrn-800:text-sm scrn-900:text-2xs lg:text-2xs xl:text-xs scrn-1500:text-md scrn-1700:text-md scrn-1900:text-xl scrn-2k:text-xl font-semibold text-gray-600 tracking-widest">
             <li>
               <Link href="/home">
                 Home
@@ -56,10 +56,10 @@ const Hero: React.FC = () => {
 
         <div>
           <span className="font-semibold whitespace-nowrap text-red-600">
-            <span className='lg:text-6xl lg:tracking-normal xl:text-7xl xl:tracking-wider scrn-1500:text-8xl scrn-1500:tracking-normal scrn-1700:text-8xl scrn-1700:tracking-wider scrn-1900:text-9xl scrn-1900:tracking-tighter scrn-2k:text-10xl scrn-2k:tracking-normal'>
+            <span className='scrn-900:text-5xl scrn-900:tracking-wider lg:text-6xl lg:tracking-normal xl:text-7xl xl:tracking-wider scrn-1500:text-8xl scrn-1500:tracking-normal scrn-1700:text-8xl scrn-1700:tracking-wider scrn-1900:text-9xl scrn-1900:tracking-tighter scrn-2k:text-10xl scrn-2k:tracking-normal'>
               GAS STATION
             </span><br />
-            <span className='lg:text-4xl lg:tracking-tight xl:text-5xl xl:tracking-tight scrn-1500:text-6xl scrn-1500:tracking-tighter scrn-1700:text-6xl scrn-1900:text-6xl scrn-1900:tracking-wider scrn-2k:text-7xl scrn-2k:tracking-widest'>
+            <span className='scrn-900:text-3xl scrn-900:tracking-normal lg:text-4xl lg:tracking-tight xl:text-5xl xl:tracking-tight scrn-1500:text-6xl scrn-1500:tracking-tighter scrn-1700:text-6xl scrn-1900:text-6xl scrn-1900:tracking-wider scrn-2k:text-7xl scrn-2k:tracking-widest'>
               RENOVATION COMPANY
             </span>
           </span>
