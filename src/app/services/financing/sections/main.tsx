@@ -8,27 +8,27 @@ const MainFinancing: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-4 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 xl:gap-24 scrn-1500:gap-32 scrn-1700:gap-36 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32 scrn-1900:pt-48 scrn-2k:pt-60">
 
-        <div className="h-auto pt-12 md:pt-0 lg:pt-12 scrn-800:pt-0 scrn-900:pt-0 xl:pt-0 scrn-1500:pt-24 2xl:pt-24 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-2 scrn-2k:space-y-12">
-          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+        <div className="h-auto pt-12 sm:pt-0 md:pt-0 lg:pt-12 scrn-800:pt-0 scrn-900:pt-0 xl:pt-0 scrn-1500:pt-24 2xl:pt-24 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-2 scrn-2k:space-y-12">
+          <span className="text-red-600 font-semibold scrn-300:text-lg scrn-mobile:text-xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
             Gas Station Financing and <br />
             Loans
           </span>
-          <p className="md:text-sm scrn-800:text-sm scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
+          <p className="scrn-300:text-xs scrn-mobile:text-xs sm:text-xs md:text-sm scrn-800:text-sm scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             APEC offers many financial lenders to help our customers; APEC financing is the backstop
             for customers with difficulty getting credit.
           </p>
-          <p className="md:text-sm scrn-800:text-sm scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
+          <p className="scrn-300:text-xs scrn-mobile:text-xs sm:text-xs md:text-sm scrn-800:text-sm scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             <span className="text-red-600">APEC Group</span> provides extensive financing options
             through our affiliated network of lenders and leadsing companies, which offers traditional
             loan and lease solutions tailored to your project needs.
           </p>
           <p>
-            <span className="font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+            <span className="font-semibold scrn-300:text-lg scrn-mobile:text-xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
               Having Difficulty Obtaining<br />
               Credit For Your Gas Station?
             </span>
           </p>
-          <p className="md:text-sm scrn-800:text-sm scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
+          <p className="scrn-300:text-xs scrn-mobile:text-xs sm:text-xs md:text-sm scrn-800:text-sm scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             <span className="text-red-600">APEC </span> Financing is the in-house backstop financing
             solution for our customers who have difficulty obtaining credit through no fault of their
             own. See what we can do for you today.
@@ -53,7 +53,7 @@ const MainFinancing: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="scrn-300:mt-6 scrn-mobile:mt-8 sm:mt-12 md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14 xl:mt-32 scrn-1500:mt-36 scrn-1700:mt-52 scrn-1900:mt-52 scrn-2k:mt-96">
+      <div className="scrn-300:hidden scrn-mobile:hidden sm:mt-12 md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14 xl:mt-32 scrn-1500:mt-36 scrn-1700:mt-52 scrn-1900:mt-52 scrn-2k:mt-96">
         <p className="space-x-2 font-semibold">
           <span className="scrn-300:text-2xl scrn-mobile:text-3xl sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl xl:text-7xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl text-red-600">
             BE CLEAN
