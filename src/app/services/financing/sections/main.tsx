@@ -8,27 +8,27 @@ const MainFinancing: React.FC = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-2 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 xl:gap-24 scrn-1500:gap-32 scrn-1700:gap-36 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32 scrn-1900:pt-48 scrn-2k:pt-60">
 
-        <div className="h-auto pt-12 xl:pt-0 scrn-1500:pt-24 2xl:pt-24 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-2 scrn-2k:space-y-12">
-          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+        <div className="h-auto pt-12 scrn-900:pt-0 xl:pt-0 scrn-1500:pt-24 2xl:pt-24 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-2 scrn-2k:space-y-12">
+          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
             Gas Station Financing and <br />
             Loans
           </span>
-          <p className="md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-medium scrn-900:font-medium lg:font-normal tracking-widest">
+          <p className="md:text-lg scrn-800:text-lg scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             APEC offers many financial lenders to help our customers; APEC financing is the backstop
             for customers with difficulty getting credit.
           </p>
-          <p className="md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-medium scrn-900:font-medium lg:font-normal tracking-widest">
+          <p className="md:text-lg scrn-800:text-lg scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             <span className="text-red-600">APEC Group</span> provides extensive financing options
             through our affiliated network of lenders and leadsing companies, which offers traditional
             loan and lease solutions tailored to your project needs.
           </p>
           <p>
-            <span className="font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+            <span className="font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
               Having Difficulty Obtaining<br />
               Credit For Your Gas Station?
             </span>
           </p>
-          <p className="md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-medium scrn-900:font-medium lg:font-normal tracking-widest">
+          <p className="md:text-lg scrn-800:text-lg scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             <span className="text-red-600">APEC </span> Financing is the in-house backstop financing
             solution for our customers who have difficulty obtaining credit through no fault of their
             own. See what we can do for you today.
@@ -37,10 +37,10 @@ const MainFinancing: React.FC = () => {
         <div className="relative rounded-3xl shadow-2xl">
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
           <div className="relative z-10 scrn-300:p-4 scrn-mobile:p-4 sm:p-4 md:p-4 scrn-800:p-8 scrn-900:p-12 lg:p-12 xl:p-16 scrn-1500:p-24 2xl:p-24">
-            <span className="scrn-mobile:text-2xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-2xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-4xl font-medium">
+            <span className="scrn-mobile:text-2xl sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-4xl font-medium">
               SERVICE REQUEST
             </span>
-            <form className="scrn-300:space-y-2 scrn-mobile:space-y-2 sm:space-y-3 md:space-y-4 scrn-800:space-y-4 scrn-900:space-y-2 lg:space-y-4 xl:space-y-2 scrn-1500:space-y-8 scrn-1700:space-y-8 scrn-1900:space-y-12 scrn-2k:space-y-12 scrn-mobile:mt-6 sm:mt-6 md:mt-8 scrn-800:mt-6 scrn-900:mt-12 lg:mt-12 sm:text-base md:text-lg scrn-800:text-lg scrn-900:text-lg lg:text-lg xl:text-lg scrn-1500:text-lg scrn-1700:text-xl scrn-1900:text-xl scrn-2k:text-xl">
+            <form className="scrn-300:space-y-2 scrn-mobile:space-y-2 sm:space-y-3 md:space-y-4 scrn-800:space-y-4 scrn-900:space-y-2 lg:space-y-4 xl:space-y-2 scrn-1500:space-y-8 scrn-1700:space-y-8 scrn-1900:space-y-12 scrn-2k:space-y-12 scrn-mobile:mt-6 sm:mt-6 md:mt-8 scrn-800:mt-6 scrn-900:mt-12 lg:mt-12 sm:text-base md:text-lg scrn-800:text-lg scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-lg scrn-1700:text-xl scrn-1900:text-xl scrn-2k:text-xl">
               <input type="text" placeholder="Name" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="text" placeholder="Phone No." className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="email" placeholder="Email" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
