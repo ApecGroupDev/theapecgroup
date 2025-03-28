@@ -6,17 +6,17 @@ const MainImaging: React.FC = () => {
   return (
     <div className="bg-transparent outline-dashed outline-green-500 scrn-300:px-3 scrn-mobile:px-4 sm:px-8 md:px-12 scrn-800:px-14 scrn-900:px-14 lg:px-16 xl:px-32 scrn-1500:px-40 scrn-1700:px-52 scrn-1900:px-64 scrn-2k:px-120 scrn-300:h-224 scrn-mobile:h-224 sm:h-128 md:h-152 scrn-800:h-160 scrn-900:h-192 lg:h-208 xl:h-240 scrn-1500:h-288 scrn-1700:h-320 scrn-1900:h-352 scrn-2k:h-448">
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-2 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 xl:gap-24 scrn-1500:gap-32 scrn-1700:gap-36 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32 scrn-1900:pt-48 scrn-2k:pt-60">
+      <div className="grid grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-4 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 xl:gap-24 scrn-1500:gap-32 scrn-1700:gap-36 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32 scrn-1900:pt-48 scrn-2k:pt-60">
         <div className="h-auto pt-12 xl:pt-24 scrn-300:space-y-4 scrn-mobile:space-y-4 sm:space-y-3 md:space-y-4 scrn-800:space-y-6 scrn-900:space-y-4 lg:space-y-8 scrn-2k:space-y-12">
-          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-2xl scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+          <span className="text-red-600 font-semibold scrn-300:text-2xl scrn-mobile:text-3xl sm:text-xl md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
             Gas Station Canopy <br />
             Panels Installation
           </span>
-          <p className="md:text-lg scrn-800:text-base scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
+          <p className="md:text-sm scrn-800:text-base scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             We specialize in making your convenience store look beautiful with your
             amazing oil company brand, canopy panels & imaging.
           </p>
-          <p className="md:text-lg scrn-800:text-base scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
+          <p className="md:text-sm scrn-800:text-base scrn-900:text-base lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl lg:font-normal tracking-widest">
             We are equipped to create your custom brand image. <br /> Let us provide
             attractive inside and outside graphics to make your site stand out.
           </p>
