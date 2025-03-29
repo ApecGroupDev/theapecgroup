@@ -56,10 +56,10 @@ const Hero: React.FC = () => {
 
         <div>
           <span className="font-semibold whitespace-nowrap text-red-600">
-            <span className='scrn-300:text-4xl scrn-mobile:text-5xl sm:text-4xl sm:tracking-wider md:text-5xl md:tracking-tighter scrn-800:text-5xl scrn-800:tracking-tight scrn-900:text-5xl scrn-900:tracking-wider lg:text-6xl lg:tracking-normal xl:text-7xl xl:tracking-wider scrn-1500:text-8xl scrn-1500:tracking-normal scrn-1700:text-8xl scrn-1700:tracking-wider scrn-1900:text-11xl scrn-1900:tracking-tighter scrn-2k:text-10xl scrn-2k:tracking-normal'>
+            <span className='scrn-300:text-4xl scrn-mobile:text-5xl sm:text-4xl sm:tracking-wider md:text-5xl md:tracking-tighter scrn-800:text-5xl scrn-800:tracking-tight scrn-900:text-5xl scrn-900:tracking-wider lg:text-6xl lg:tracking-normal xl:text-7xl xl:tracking-wider scrn-1500:text-8xl scrn-1500:tracking-normal scrn-1700:text-8xl scrn-1700:tracking-wider scrn-1900:text-11xl scrn-1900:tracking-tighter scrn-2k:text-12xl scrn-2k:tracking-normal'>
               APEC
             </span><br />
-            <span className='scrn-300:text-2xl scrn-mobile:text-3xl scrn-mobile:tracking-tighter sm:text-2xl sm:tracking-tighter md:text-2xl md:tracking-normal scrn-800:text-2xl scrn-800:tracking-wider scrn-900:text-3xl scrn-900:tracking-normal lg:text-4xl lg:tracking-tight xl:text-5xl xl:tracking-tight scrn-1500:text-6xl scrn-1500:tracking-tighter scrn-1700:text-6xl scrn-1900:text-8xl scrn-1900:tracking-widest scrn-2k:text-7xl scrn-2k:tracking-widest'>
+            <span className='scrn-300:text-2xl scrn-mobile:text-3xl scrn-mobile:tracking-tighter sm:text-2xl sm:tracking-tighter md:text-2xl md:tracking-normal scrn-800:text-2xl scrn-800:tracking-wider scrn-900:text-3xl scrn-900:tracking-normal lg:text-4xl lg:tracking-tight xl:text-5xl xl:tracking-tight scrn-1500:text-6xl scrn-1500:tracking-tighter scrn-1700:text-6xl scrn-1900:text-8xl scrn-1900:tracking-widest scrn-2k:text-9xl scrn-2k:tracking-widest'>
               CONSTRUCTION
             </span>
           </span>
