@@ -8,6 +8,13 @@ const Hero: React.FC = () => {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
+    const handleBeforeUnload = () => window.scrollTo(0, 0);
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById('hero-section');
       if (heroSection) {
