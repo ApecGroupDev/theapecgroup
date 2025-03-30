@@ -56,10 +56,10 @@ const Hero: React.FC = () => {
 
         <div>
           <span className="font-semibold whitespace-nowrap text-red-600">
-            <span className='scrn-300:text-4xl scrn-mobile:text-5xl sm:text-4xl md:text-5xl scrn-800:text-5xl scrn-900:text-5xl lg:text-6xl xl:text-9xl scrn-1500:text-9xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-2k:text-12xl'>
+            <span className='scrn-300:text-6xl scrn-mobile:text-7xl sm:text-5xl md:text-6xl scrn-800:text-7xl scrn-900:text-8xl lg:text-8xl xl:text-9xl scrn-1500:text-9xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-2k:text-12xl'>
               APEC
             </span><br />
-            <span className='scrn-300:text-2xl scrn-mobile:text-3xl scrn-mobile:tracking-tighter sm:text-2xl sm:tracking-tighter md:text-2xl md:tracking-normal scrn-800:text-2xl scrn-800:tracking-wider scrn-900:text-3xl scrn-900:tracking-normal lg:text-4xl lg:tracking-tight xl:text-7xl xl:tracking-normal scrn-1500:text-8xl scrn-1500:tracking-tighter scrn-1700:text-8xl scrn-1700:tracking-wide scrn-1900:text-8xl scrn-1900:tracking-widest scrn-2k:text-9xl scrn-2k:tracking-widest'>
+            <span className='scrn-300:text-4xl scrn-mobile:text-5xl scrn-mobile:tracking-tighter sm:text-4xl sm:tracking-normal md:text-4xl md:tracking-widest scrn-800:text-5xl scrn-800:tracking-tighter scrn-900:text-5xl scrn-900:tracking-wide lg:text-6xl lg:tracking-tighter xl:text-7xl xl:tracking-normal scrn-1500:text-8xl scrn-1500:tracking-tighter scrn-1700:text-8xl scrn-1700:tracking-wide scrn-1900:text-8xl scrn-1900:tracking-widest scrn-2k:text-9xl scrn-2k:tracking-widest'>
               CONSTRUCTION
             </span>
           </span>
