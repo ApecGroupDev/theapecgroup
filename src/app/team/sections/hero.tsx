@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
       >
         {/* Breadcrumb */}
         <nav className="pt-14 scrn-300:mt-6 scrn-mobile:mt-6">
-          <ul className="flex sm:items-center space-x-2 scrn-1500:text-2xl scrn-1700:text-2xl scrn-1900:text-xl scrn-2k:text-3xl font-semibold text-gray-600 tracking-widest">
+          <ul className="flex sm:items-center space-x-2 scrn-300:text-2xs scrn-mobile:text-2xs sm:text-3xs md:text-3xs scrn-800:text-2xs scrn-900:text-2xs lg:text-2xs xl:text-xs scrn-1500:text-md scrn-1700:text-md scrn-1900:text-xl scrn-2k:text-xl font-semibold text-gray-600 tracking-widest">
             <li>
               <Link href="/home" className="hover:text-red-600">
                 Home
