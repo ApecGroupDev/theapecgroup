@@ -8,6 +8,13 @@ const Hero: React.FC = () => {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
+    const handleBeforeUnload = () => window.scrollTo(0, 0);
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById('hero-section');
       if (heroSection) {
@@ -30,7 +37,7 @@ const Hero: React.FC = () => {
         <Image
           src="/backgrounds/ourTeam/Hero.png"
           alt="Background"
-          style={{objectFit: 'cover'}}
+          style={{ objectFit: 'cover' }}
           width={2786}
           height={1438}
           priority
@@ -42,7 +49,7 @@ const Hero: React.FC = () => {
         <Image
           src="/backgrounds/ourTeam/Hero-Mobile.png"
           alt="Background"
-          style={{objectFit: 'cover'}}
+          style={{ objectFit: 'cover' }}
           width={2786}
           height={1438}
           priority
