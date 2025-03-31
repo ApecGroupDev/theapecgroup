@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
 
         <div>
           <span className="font-semibold whitespace-nowrap text-red-600">
-            <span className='scrn-300:text-6xl scrn-mobile:text-7xl sm:text-5xl md:text-6xl scrn-800:text-7xl scrn-900:text-8xl lg:text-8xl xl:text-9xl scrn-1500:text-9xl scrn-1700:text-10xl scrn-1900:text-9xl scrn-1900:tracking-tighter scrn-2k:text-12xl'>
+            <span className='scrn-300:text-6xl scrn-mobile:text-7xl sm:text-5xl md:text-6xl scrn-800:text-7xl scrn-900:text-8xl lg:text-8xl xl:text-9xl scrn-1500:text-9xl scrn-1700:text-10xl scrn-1900:text-9xl scrn-1900:tracking-tighter scrn-2k:text-10xl scrn-2k:tracking-normal'>
               INSPECTION AND <br />
               COMPLIANCE
             </span>
