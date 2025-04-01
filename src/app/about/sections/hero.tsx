@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
 
       <div className="absolute inset-0 z-10 sm:mt-24 md:mt-0 scrn-300:hidden scrn-mobile:hidden">
         <Image
-          src="/backgrounds/aboutUs/Hero.png"
+          src="/backgrounds/aboutUs/Hero_About.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
 
       <div className="absolute inset-0 z-10 sm:hidden">
         <Image
-          src="/backgrounds/aboutUs/Hero-Mobile.png"
+          src="/backgrounds/aboutUs/Hero_About_Mobile.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}
