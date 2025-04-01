@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute sm:inset-0 z-10 scrn-300:bottom-20 scrn-300:scale-150 scrn-mobile:bottom-16 scrn-mobile:scale-150">
         <Image
-          src="/backgrounds/services/Hero.png"
+          src="/backgrounds/services/Hero_Services.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}
