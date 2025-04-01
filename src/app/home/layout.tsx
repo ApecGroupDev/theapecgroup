@@ -4,7 +4,7 @@ export default function HomeLayout({ children }: { children: React.ReactNode }) 
   return (
     <div
       style={{
-        backgroundImage: "url('/backgrounds/homepage/Background.jpg')",
+        backgroundImage: "url('/backgrounds/homepage/Background_Homepage.jpg')",
         backgroundSize: 'cover', // Cover the entire container
         backgroundPosition: 'center top', // Center horizontally, align top
         backgroundRepeat: 'no-repeat',
