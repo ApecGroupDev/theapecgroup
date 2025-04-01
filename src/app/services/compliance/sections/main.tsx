@@ -36,7 +36,7 @@ const MainFinancing: React.FC = () => {
           </div>
         </div>
         <div className="relative rounded-3xl shadow-2xl">
-          <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
+          <div className="absolute inset-0 bg-white/30 backdrop-blur-sm rounded-3xl z-0"></div>
           <div className="relative z-10 scrn-300:p-4 scrn-mobile:p-4 sm:p-4 md:p-4 scrn-800:p-8 scrn-900:p-12 lg:p-12 xl:p-16 scrn-1500:p-24 2xl:p-24">
             <span className="scrn-300:text-base scrn-mobile:text-xl sm:text-xl md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-4xl font-medium">
               SERVICE REQUEST
@@ -56,10 +56,10 @@ const MainFinancing: React.FC = () => {
       </div>
       <div className="scrn-300:mt-6 scrn-mobile:mt-8 sm:mt-12 md:mt-16 scrn-800:mt-12 scrn-900:mt-16 lg:mt-14 xl:mt-32 scrn-1500:mt-36 scrn-1700:mt-52 scrn-1900:mt-52 scrn-2k:mt-96">
         <p className="space-x-2 font-semibold">
-          <span className="scrn-300:text-2xl scrn-mobile:text-3xl sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl xl:text-7xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-1900:text-7xl scrn-2k:text-8xl text-red-600">
+          <span className="scrn-300:text-base scrn-mobile:text-lg sm:text-2xl md:text-3xl scrn-800:text-3xl scrn-900:text-4xl lg:text-4xl xl:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1900:text-7xl scrn-2k:text-8xl text-red-600">
             GET IN COMPLIANCE
           </span>
-          <span className="scrn-300:text-base scrn-mobile:text-lg sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-4xl scrn-1500:text-5xl scrn-1700:text-5xl scrn-1900:text-5xl scrn-2k:text-6xl">
+          <span className="scrn-300:text-sm scrn-mobile:text-base sm:text-lg md:text-xl scrn-800:text-xl scrn-900:text-2xl lg:text-2xl xl:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2k:text-6xl">
             STAY IN COMPLIANCE
           </span>
         </p>
