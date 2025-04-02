@@ -160,7 +160,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex justify-center space-x-8">
+        <nav className="flex z-10 justify-center space-x-8">
           {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map(
             (path) => (
               <Link
