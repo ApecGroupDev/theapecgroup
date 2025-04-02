@@ -11,7 +11,7 @@ const About: React.FC = () => {
   });
 
   return (
-    <div className="w-full bg-transparent flex flex-col md:flex-row px-12 scrn-300:px-8 outline-dashed scrn-300:h-128 scrn-mobile:h-132 sm:h-124 md:h-120 scrn-800:h-120 scrn-900:h-128 lg:h-140 xl:h-184 scrn-1500:-mt-8 scrn-1500:h-224 scrn-1700:h-240 scrn-1900:h-256 scrn-2k:h-352">
+    <div className="w-full bg-transparent flex flex-col md:flex-row px-12 scrn-300:px-8 outline-dashed scrn-300:h-128 scrn-mobile:h-132 sm:h-124 md:h-120 scrn-800:h-120 scrn-900:h-128 lg:h-140 scrn-1100:h-160 scrn-1150:h-184 scrn-1200:h-184 xl:h-184 scrn-1500:-mt-8 scrn-1500:h-224 scrn-1700:h-240 scrn-1900:h-256 scrn-2k:h-352">
       {/* Left Image Section */}
       <div className="w-full hidden md:block md:w-2/5 xl:w-1/2">
         <Image
@@ -33,7 +33,7 @@ const About: React.FC = () => {
           animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          Welcome to
+          Welcome to                               
         </motion.p>
         <p className="scrn-300:text-4xl text-4xl md:text-4xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-red-600">
           APEC
