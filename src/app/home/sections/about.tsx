@@ -34,6 +34,7 @@ const About: React.FC = () => {
       scrn-1800:h-256
       scrn-1850:h-272
       scrn-1900:h-256 
+      scrn-1950:h-272
       scrn-2k:h-352"
     >
       {/* Left Image Section */}
