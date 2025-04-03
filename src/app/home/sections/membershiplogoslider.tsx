@@ -47,7 +47,8 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-1700:h-224 
       scrn-1800:h-232 
       scrn-1850:h-240
-      scrn-1900:h-288 
+      scrn-1900:h-288
+      scrn-1901:h-272 
       scrn-2k:h-384"
     >
       <div className="flex flex-col scrn-mobile:justify-center md:justify-center items-center scrn-900:pb-14 lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
