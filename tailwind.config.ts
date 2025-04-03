@@ -119,6 +119,7 @@ export default {
         'scrn-2300': { 'min': '2300px', 'max': '2349px' },
         'scrn-2350': { 'min': '2350px', 'max': '2399px' },
         'scrn-2400': { 'min': '2400px', 'max': '2449px' },
+        'scrn-2450': { 'min': '2450px', 'max': '2499px' },
         'scrn-2k': { 'min': '2560px' },
       }
     },
