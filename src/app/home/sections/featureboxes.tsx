@@ -71,7 +71,8 @@ const FeatureBoxes: React.FC = () => {
       scrn-1901:h-320
       scrn-1950:h-326
       scrn-2k:px-72 scrn-2k:h-416
-      scrn-2000:h-352"
+      scrn-2000:h-326
+      scrn-2050:h-326"
     >
       {/* Section Title */}
       <div className="text-center">
