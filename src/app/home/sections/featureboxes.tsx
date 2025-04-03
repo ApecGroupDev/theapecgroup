@@ -50,27 +50,37 @@ const FeatureBoxes: React.FC = () => {
       scrn-300:h-120 
       scrn-mobile:h-128 
       sm:h-140 
-      md:px-24 md:h-128 
-      scrn-800:px-28 scrn-800:h-132 
-      scrn-900:px-36 scrn-900:h-144 
-      lg:-top-4 lg:px-28 lg:h-176 
+      md:px-24 
+      md:h-128 
+      scrn-800:px-28 
+      scrn-800:h-132 
+      scrn-900:px-36 
+      scrn-900:h-144 
+      lg:-top-4 
+      lg:px-28 
+      lg:h-176 
       scrn-1150:h-184 
       scrn-1200:h-192 
-      xl:px-40 xl:h-198 
+      xl:px-40 
+      xl:h-198 
       scrn-1300:h-224
       scrn-1350:h-240
       scrn-1400:h-244
       scrn-1450:h-248
-      scrn-1500:px-52 scrn-1500:h-256 
+      scrn-1500:px-52 
+      scrn-1500:h-256 
       scrn-1650:h-272
-      scrn-1700:px-48 scrn-1700:h-288 
+      scrn-1700:px-48 
+      scrn-1700:h-288 
       scrn-1750:h-304
       scrn-1800:h-308
       scrn-1850:h-308
-      scrn-1900:px-40 scrn-1900:h-304 
+      scrn-1900:px-40 
+      scrn-1900:h-304 
       scrn-1901:h-320
       scrn-1950:h-326
-      scrn-2k:px-72 scrn-2k:h-416
+      scrn-2k:px-72 
+      scrn-2k:h-416
       scrn-2000:h-326
       scrn-2050:h-326
       scrn-2100:h-326
@@ -78,7 +88,8 @@ const FeatureBoxes: React.FC = () => {
       scrn-2200:h-326
       scrn-2250:h-352
       scrn-2300:h-352
-      scrn-2350:h-352"
+      scrn-2350:h-352
+      scrn-2400:h-360"
     >
       {/* Section Title */}
       <div className="text-center">
