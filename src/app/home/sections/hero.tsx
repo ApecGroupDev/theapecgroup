@@ -36,7 +36,8 @@ const Hero: React.FC = () => {
       scrn-2150:h-296
       scrn-2200:h-304
       scrn-2250:h-308
-      scrn-2300:h-312"
+      scrn-2300:h-312
+      scrn-2350:h-316"
     >
       {/* Left Text Section */}
       <div className="-space-y-1.5 text-center scrn-300:mt-6 sm:text-left lg:pb-5">
