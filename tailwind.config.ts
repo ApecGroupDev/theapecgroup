@@ -65,7 +65,9 @@ export default {
         '304': '76rem',
         '308': '77rem',
         '312': '78rem',
+        '316': '79rem',
         '320': '80rem',
+        '324': '82rem',
         '326': '84rem',
         '352': '88rem',
         '360': '90rem',
@@ -115,6 +117,7 @@ export default {
         'scrn-2200': { 'min': '2200px', 'max': '2249px' },
         'scrn-2250': { 'min': '2250px', 'max': '2299px' },
         'scrn-2300': { 'min': '2300px', 'max': '2349px' },
+        'scrn-2350': { 'min': '2350px', 'max': '2399px' },
         'scrn-2k': { 'min': '2560px' },
       }
     },
