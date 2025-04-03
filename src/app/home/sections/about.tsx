@@ -43,7 +43,8 @@ const About: React.FC = () => {
       scrn-2200:h-320
       scrn-2250:h-326
       scrn-2300:h-326
-      scrn-2350:h-352"
+      scrn-2350:h-352
+      scrn-2400:h-360"
     >
       {/* Left Image Section */}
       <div className="w-full hidden md:block md:w-2/5 xl:w-1/2">
