@@ -41,10 +41,27 @@ const Hero: React.FC = () => {
         scrn-1100:h-160 
         xl:h-176 
         scrn-1500:h-208 
-        scrn-1550:h-208
-        scrn-1700:h-228 
-        scrn-1900:h-256 
-        scrn-2k:h-352
+        scrn-1550:h-216
+        scrn-1600:h-224
+        scrn-1650:h-228
+        scrn-1700:h-232
+        scrn-1750:h-240
+        scrn-1800:h-248
+        scrn-1850:h-256
+        scrn-1900:h-264
+        scrn-1950:h-268
+        scrn-2000:h-272
+        scrn-2050:h-280
+        scrn-2100:h-288
+        scrn-2150:h-296
+        scrn-2200:h-304
+        scrn-2250:h-308
+        scrn-2300:h-316
+        scrn-2350:h-320
+        scrn-2400:h-324
+        scrn-2450:h-326
+        scrn-2500:h-339
+        scrn-2550:h-352
       ">
       <div className="absolute sm:inset-0 z-10 scrn-300:bottom-20 scrn-300:scale-150 scrn-mobile:bottom-16 scrn-mobile:scale-150 sm:mt-12 md:mt-0">
         <Image
@@ -69,10 +86,7 @@ const Hero: React.FC = () => {
             md:text-3xs 
             lg:text-3xs 
             xl:text-xs 
-            scrn-1500:text-md 
-            scrn-1700:text-md 
-            scrn-1900:text-xl 
-            scrn-2k:text-xl
+            2xl:text-xl
           ">
               <li>
                 <Link href="/home">
@@ -95,7 +109,11 @@ const Hero: React.FC = () => {
             lg:text-5xl
             xl:text-5xl
             2xl:text-11xl
+            scrn-1700:text-12xl
             scrn-1900:text-12xl
+            scrn-2100:text-13xl
+            scrn-2200:text-14xl
+            scrn-2500:text-15xl
           ">
               APEC LINK
             </span>
