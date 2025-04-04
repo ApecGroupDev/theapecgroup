@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
       scrn-2550:h-326"
     >
       {/* Left Text Section */}
-      <div className="-space-y-1.5 text-center scrn-300:mt-6 sm:text-left lg:pb-5">
+      <div className="-space-y-1.5 text-center scrn-300:mt-6 scrn-450:mt-0 sm:text-left lg:pb-5">
         <p className="text-2xl md:text-xl scrn-900:text-2xl lg:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2k:text-6xl font-bold whitespace-nowrap">
           YOUR TOP CHOICE
         </p>
@@ -55,13 +55,13 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Right Image Section */}
-      <div className="w-full md:w-1/2 flex justify-center scrn-300:mt-auto scrn-mobile:mt-auto">
+      <div className="w-full md:w-1/2 flex justify-center scrn-mobile:mt-auto">
         <Image
           src="/products/Fuel_Dispenser_Face_Left.png"
           alt="Hero"
           width={1011}
           height={1211}
-          className="rounded-lg object-cover scrn-300:w-64 scrn-mobile:w-72 scrn-mobile:mb-6 w-10/12"
+          className="rounded-lg object-cover scrn-300:w-64 scrn-mobile:w-72 scrn-mobile:mb-6 lg:mb-0 scrn-450:w-10/12"
         />
       </div>
     </div>
