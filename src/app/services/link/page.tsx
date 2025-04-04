@@ -1,9 +1,24 @@
-const Link: React.FC = () => {
+import Footer from "./sections/footerLink";
+import MainFinancing from "./sections/main";
+import Hero from "./sections/hero";
+const Services: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <p className="text-9xl text-wrap">LINK CONTENT</p>
-    </div>
-  )
-}
+    <div className='flex flex-col'>
 
-export default Link;
+      <div>
+        <Hero />
+      </div>
+
+      <div>
+        <MainFinancing />
+      </div>
+
+      <div>
+        <Footer />
+      </div>
+
+    </div>
+  );
+};
+
+export default Services;
