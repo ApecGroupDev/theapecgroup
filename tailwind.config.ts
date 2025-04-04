@@ -99,7 +99,7 @@ export default {
         'scrn-1350': { 'min': '1350px', 'max': '1399px' },
         'scrn-1400': { 'min': '1400px', 'max': '1449px' },
         'scrn-1450': { 'min': '1450px', 'max': '1499px' },
-        'scrn-1500': { 'min': '1500px', 'max': '1699px' },
+        'scrn-1500': '1500px',
         'scrn-1550': { 'min': '1550px', 'max': '1599px' },
         'scrn-1600': { 'min': '1600px', 'max': '1649px' },
         'scrn-1650': { 'min': '1650px', 'max': '1699px' },
