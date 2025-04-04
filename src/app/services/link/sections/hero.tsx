@@ -31,15 +31,22 @@ const Hero: React.FC = () => {
     <div
       id="hero-section"
       className=" relative flex items-center pointer-events-none overflow-hidden
-        scrn-300:h-128 
-        scrn-mobile:h-136 
-        sm:h-112 
-        md:h-116 
-        scrn-800:h-120 
+        h-110
+        scrn-400:h-110
+        scrn-450:h-110
+        scrn-500:h-112
+        scrn-550:h-112
+        scrn-600:h-112
+        scrn-650:h-112
+        scrn-700:h-114
+        scrn-750:h-118
+        scrn-800:h-120
+        scrn-850:h-124
         scrn-900:h-128 
-        lg:h-136 
-        scrn-1100:h-156 
-        xl:h-176 
+        scrn-950:h-136
+        scrn-1000:h-140
+        scrn-1050:h-148
+        scrn-1100:h-156
         scrn-1150:h-164
         scrn-1200:h-168
         scrn-1250:h-176
@@ -70,7 +77,13 @@ const Hero: React.FC = () => {
         scrn-2500:h-339
         scrn-2550:h-352
       ">
-      <div className="absolute sm:inset-0 z-10 scrn-300:bottom-20 scrn-300:scale-150 scrn-mobile:bottom-16 scrn-mobile:scale-150 sm:mt-12 md:mt-0">
+      <div className="absolute sm:inset-0 z-10 scrn-300:bottom-20 scrn-400:bottom-0 scrn-mobile:bottom-16
+        scale-200
+        scrn-500:scale-175
+        scrn-600:scale-150
+        scrn-650:scale-125
+        scrn-700:scale-100
+      ">
         <Image
           src="/backgrounds/services/link/Hero_Link.png"
           alt="Background"
@@ -85,7 +98,7 @@ const Hero: React.FC = () => {
         className={`fixed scrn-300:p-2 space-y-8 text-left flex items-center transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
       >
-        <div className='ps-12'>
+        <div className='sm:ps-4 xl:ps-12'>
           <nav className='gap-y-12'>
             <ul className="flex sm:items-center space-x-2 font-semibold text-gray-600 tracking-widest
             text-2xs 
@@ -93,7 +106,7 @@ const Hero: React.FC = () => {
             md:text-3xs 
             lg:text-3xs 
             xl:text-lg
-            2xl:text-xl
+            scrn-1500:text-xl
           ">
               <li>
                 <Link href="/home">
@@ -109,15 +122,16 @@ const Hero: React.FC = () => {
 
           <div>
             <span className="font-semibold whitespace-nowrap text-red-600
-            scrn-300:text-5xl 
-            scrn-mobile:text-5xl 
-            sm:text-3xl 
-            md:text-4xl 
-            lg:text-5xl
+            text-5xl
+            scrn-400:text-6xl
+            scrn-450:text-7xl
+            sm:text-7xl
+            md:text-8xl
+            lg:text-9xl
             xl:text-10xl
-            2xl:text-11xl
+            scrn-1500:text-11xl
             scrn-1700:text-12xl
-            scrn-1900:text-12xl
+            scrn-2000:text-13xl
           ">
               APEC LINK
             </span>
