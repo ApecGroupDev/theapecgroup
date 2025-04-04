@@ -38,9 +38,16 @@ const Hero: React.FC = () => {
         scrn-800:h-120 
         scrn-900:h-128 
         lg:h-136 
-        scrn-1100:h-160 
+        scrn-1100:h-156 
         xl:h-176 
-        scrn-1500:h-208 
+        scrn-1150:h-164
+        scrn-1200:h-168
+        scrn-1250:h-176
+        scrn-1300:h-184
+        scrn-1350:h-188
+        scrn-1400:h-192
+        scrn-1450:h-198
+        scrn-1500:h-208
         scrn-1550:h-216
         scrn-1600:h-224
         scrn-1650:h-228
@@ -85,7 +92,7 @@ const Hero: React.FC = () => {
             sm:text-3xs 
             md:text-3xs 
             lg:text-3xs 
-            xl:text-xs 
+            xl:text-lg
             2xl:text-xl
           ">
               <li>
@@ -107,13 +114,10 @@ const Hero: React.FC = () => {
             sm:text-3xl 
             md:text-4xl 
             lg:text-5xl
-            xl:text-5xl
+            xl:text-10xl
             2xl:text-11xl
             scrn-1700:text-12xl
             scrn-1900:text-12xl
-            scrn-2100:text-13xl
-            scrn-2200:text-14xl
-            scrn-2500:text-15xl
           ">
               APEC LINK
             </span>
