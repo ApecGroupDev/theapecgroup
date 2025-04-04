@@ -46,8 +46,7 @@ const About: React.FC = () => {
       scrn-2400:h-360
       scrn-2450:h-368
       scrn-2500:h-384
-      scrn-2550:h-368"
-    // test push      
+      scrn-2550:h-368"     
     >
       {/* Left Image Section */}
       <div className="w-full hidden md:block md:w-2/5 xl:w-1/2">
