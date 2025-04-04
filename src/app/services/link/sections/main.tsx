@@ -11,7 +11,7 @@ const MainFinancing: React.FC = () => {
         <div className="h-auto pt-12 sm:pt-0 md:pt-0 lg:pt-12 scrn-800:pt-0 scrn-900:pt-0 xl:pt-0 scrn-1500:pt-24 2xl:pt-24 space-y-16">
           <span className="text-red-600 font-semibold scrn-300:text-lg scrn-mobile:text-xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
             We provide digital marketing content and remote monitoring 
-            of your dispensers to maximize your site's profitability.
+            of your dispensers to maximize your site&apos;s profitability.
           </span>
           <p>
             <span className="font-semibold scrn-300:text-lg scrn-mobile:text-xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
