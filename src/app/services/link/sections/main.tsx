@@ -24,6 +24,10 @@ const MainLink: React.FC = () => {
       scrn-1100:h-224
       scrn-1150:h-228
       scrn-1200:h-244
+      scrn-1300:h-248
+      scrn-1350:h-264
+      scrn-1400:h-272
+      scrn-1450:h-280
       scrn-1500:h-288 
       scrn-1700:h-320 
       scrn-1900:h-352 
@@ -134,6 +138,7 @@ const MainLink: React.FC = () => {
               scrn-900:space-y-2 
               scrn-1000:space-y-4 
               scrn-1250:space-y-2 
+              scrn-1400:space-y-4
               scrn-1500:space-y-8 
               scrn-1700:space-y-8 
               scrn-1900:space-y-12 
@@ -185,6 +190,10 @@ const MainLink: React.FC = () => {
           scrn-950:pt-16
           scrn-1000:pt-12
           scrn-1200:pt-28
+          scrn-1300:pt-40
+          scrn-1350:pt-48
+          scrn-1400:pt-56
+          scrn-1450:pt-64
         ">
           <span className="text-red-600
           scrn-300:text-2xl 
