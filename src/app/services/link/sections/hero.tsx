@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
     <div
       id="hero-section"
       className=" relative flex items-center pointer-events-none overflow-hidden
-        h-110
+        h-116
         scrn-400:h-112
         scrn-450:h-116
         scrn-500:h-118
@@ -39,43 +39,42 @@ const Hero: React.FC = () => {
         scrn-600:h-120
         scrn-650:h-120
         scrn-700:h-120
-        scrn-750:h-118
+        scrn-750:h-116
         scrn-800:h-120
         scrn-850:h-124
         scrn-900:h-128
-        scrn-950:h-136
+        scrn-950:h-132
         scrn-1000:h-140
-        scrn-1050:h-148
-        scrn-1100:h-156
-        scrn-1150:h-164
-        scrn-1200:h-168
-        scrn-1250:h-176
-        scrn-1300:h-184
-        scrn-1350:h-188
-        scrn-1400:h-192
-        scrn-1450:h-198
-        scrn-1500:h-208
-        scrn-1550:h-216
-        scrn-1600:h-224
-        scrn-1650:h-228
-        scrn-1700:h-232
-        scrn-1750:h-240
-        scrn-1800:h-248
-        scrn-1850:h-256
-        scrn-1900:h-264
-        scrn-1950:h-268
-        scrn-2000:h-272
-        scrn-2050:h-280
-        scrn-2100:h-288
-        scrn-2150:h-296
-        scrn-2200:h-304
-        scrn-2250:h-308
-        scrn-2300:h-316
-        scrn-2350:h-320
-        scrn-2400:h-324
-        scrn-2450:h-326
-        scrn-2500:h-339
-        scrn-2550:h-352
+        scrn-1050:h-144
+        scrn-1100:h-148
+        scrn-1150:h-156
+        scrn-1200:h-164
+        scrn-1250:h-168
+        scrn-1300:h-176
+        scrn-1350:h-180
+        scrn-1400:h-188
+        scrn-1450:h-195
+        scrn-1500:h-198
+        scrn-1550:h-208
+        scrn-1600:h-216
+        scrn-1650:h-224
+        scrn-1700:h-228
+        scrn-1750:h-232
+        scrn-1800:h-240
+        scrn-1850:h-248
+        scrn-1900:h-256
+        scrn-1950:h-260
+        scrn-2000:h-268
+        scrn-2050:h-276
+        scrn-2100:h-280
+        scrn-2150:h-288
+        scrn-2200:h-296
+        scrn-2250:h-304
+        scrn-2300:h-308
+        scrn-2350:h-312
+        scrn-2400:h-316
+        scrn-2450:h-324
+        scrn-2500:h-326
       ">
       <div className="absolute z-10 hidden scrn-300:block
         scale-200
@@ -128,11 +127,14 @@ const Hero: React.FC = () => {
             scrn-450:text-7xl
             scrn-600:text-7xl
             scrn-750:text-8xl
+            scrn-950:text-9xl
             scrn-1000:text-9xl
-            scrn-1250:text-10xl
+            scrn-1150:text-10xl
             scrn-1500:text-11xl
             scrn-1700:text-12xl
-            scrn-2000:text-13xl
+            scrn-1900:text-13xl
+            scrn-2100:text-14xl
+            scrn-2350:text-15xl
           ">
               APEC LINK
             </span>
