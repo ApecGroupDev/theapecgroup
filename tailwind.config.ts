@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '8xl': '90rem',
+        '9xl': '100rem',
+      },
       scale: {
         '175': '1.75',
         '200': '2',
@@ -154,7 +158,7 @@ export default {
         'scrn-2450': '2450px',
         'scrn-2500': '2500px',
         'scrn-2550': '2550px',
-        'scrn-2k'  : '2560px',
+        'scrn-2k': '2560px',
       }
     },
   },
