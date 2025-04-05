@@ -5,33 +5,82 @@ import React from "react";
 const MainLink: React.FC = () => {
   return (
     <div className="bg-transparent outline-dashed outline-green-500 flex flex-col items-center
-      scrn-300:h-224 
-      scrn-mobile:h-224 
-      sm:h-128 
-      md:h-152 
+      h-160
+      scrn-300:h-152
+      scrn-350:h-152
+      scrn-400:h-152
+      scrn-450:h-152
+      scrn-500:h-152
+      scrn-550:h-152
+      scrn-600:h-160
       scrn-800:h-160 
       scrn-900:h-192 
-      lg:h-208 xl:h-240 
       scrn-1500:h-288 
       scrn-1700:h-320 
       scrn-1900:h-352 
       scrn-2k:h-448
     ">
+      <div className="outline-dashed outline-green-400 grid mx-4 scrn-350:max-w-xs scrn-400:max-w-sm 2xl:max-w-8xl scrn-600:grid-cols-2
+        sm:pt-8 
+        md:pt-8 
+        scrn-800:pt-8 
+        scrn-900:pt-12 
+        lg:pt-20 
+        xl:pt-32 
+        scrn-1900:pt-48 
+        scrn-2000:pt-60">
+        <div className="h-auto 
+        space-y-3
+        scrn-400:space-y-3
+        scrn-450:space-y-3
+        scrn-500:space-y-4
+        scrn-550:space-y-4
+        scrn-600:space-y-4
 
-      <div className="outline-dashed outline-green-400 grid max-w-8xl grid-cols-1 sm:grid-cols-2 scrn-300:gap-8 scrn-mobile:gap-8 sm:gap-1 md:gap-4 scrn-800:gap-4 scrn-900:gap-12 lg:gap-12 xl:gap-24 scrn-1500:gap-32 scrn-1700:gap-36 scrn-1900:gap-40 sm:pt-8 md:pt-8 scrn-800:pt-8 scrn-900:pt-12 lg:pt-20 xl:pt-32 scrn-1900:pt-48 scrn-2k:pt-60">
-        <div className="h-auto pt-12 sm:pt-0 md:pt-0 lg:pt-12 scrn-800:pt-0 scrn-900:pt-0 xl:pt-0 scrn-1500:pt-24 2xl:pt-24 space-y-16">
-          <span className="text-red-600 font-semibold scrn-300:text-lg scrn-mobile:text-xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+        pt-6
+        scrn-400:pt-8
+        scrn-450:pt-8
+        scrn-500:pt-8
+        scrn-550:pt-8">
+          <span className="text-red-600 font-semibold
+          text-sm
+          scrn-500:text-base 
+          scrn-550:text-base
+          scrn-600:text-base 
+          scrn-800:text-xl 
+          scrn-900:text-xl 
+          scrn-1500:text-3xl 
+          scrn-1700:text-4xl 
+          scrn-1900:text-4xl
+          scrn-2000:text-5xl">
             We provide digital marketing content and remote monitoring
             of your dispensers to maximize your site&apos;s profitability.
           </span>
           <p>
-            <span className="font-semibold scrn-300:text-lg scrn-mobile:text-xl sm:text-base md:text-lg scrn-800:text-xl scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2k:text-5xl">
+            <span className="font-semibold 
+            text-sm
+            scrn-500:text-base 
+            scrn-550:text-base
+            scrn-600:text-base 
+            scrn-800:text-xl 
+            scrn-900:text-xl 
+            lg:text-xl 
+            xl:text-2xl 
+            scrn-1500:text-3xl 
+            scrn-1700:text-4xl 
+            scrn-1900:text-4xl 
+            scrn-2k:text-5xl">
               CALL OR EMAIL FOR<br />
               A QUOTE AND CONSULTATION
             </span>
           </p>
         </div>
-        <div className="relative rounded-3xl shadow-2xl">
+        <div className="relative rounded-3xl shadow-2xl 
+        mt-6
+        scrn-400:mt-6
+        scrn-450:mt-6
+        scrn-500:mt-8
+        scrn-550:mt-8">
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
           <div className="relative z-10 scrn-300:p-4 scrn-mobile:p-4 sm:p-4 md:p-4 scrn-800:p-8 scrn-900:p-12 lg:p-12 xl:p-16 scrn-1500:p-24 2xl:p-24">
             <span className="scrn-300:text-base scrn-mobile:text-xl sm:text-xl md:text-lg scrn-800:text-lg scrn-900:text-xl lg:text-xl xl:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-4xl font-medium">
@@ -49,14 +98,18 @@ const MainLink: React.FC = () => {
             </form>
           </div>
         </div>
-        <p className="space-x-2 font-semibold me-auto text-nowrap">
-        <span className="scrn-300:text-2xl scrn-mobile:text-3xl sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl xl:text-7xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl text-red-600">
-          BE SEEN
-        </span>
-        <span className="scrn-300:text-base scrn-mobile:text-lg sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-4xl scrn-1500:text-5xl scrn-1700:text-5xl scrn-1900:text-6xl scrn-2k:text-7xl">
-          EXPAND YOUR REACH
-        </span>
-      </p>
+        <p className="space-x-2 font-semibold text-nowrap
+        pt-4
+        scrn-400:mt-4
+        scrn-500:mt-4
+        scrn-550:mt-4">
+          <span className="scrn-300:text-2xl scrn-mobile:text-3xl sm:text-3xl md:text-4xl scrn-800:text-4xl scrn-900:text-5xl lg:text-6xl xl:text-7xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-1900:text-8xl scrn-2k:text-9xl text-red-600">
+            BE SEEN
+          </span>
+          <span className="scrn-300:text-base scrn-mobile:text-lg sm:text-xl md:text-2xl scrn-800:text-2xl scrn-900:text-3xl lg:text-4xl scrn-1500:text-5xl scrn-1700:text-5xl scrn-1900:text-6xl scrn-2k:text-7xl">
+            EXPAND YOUR REACH
+          </span>
+        </p>
       </div>
     </div >
   );
