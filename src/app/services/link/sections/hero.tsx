@@ -35,8 +35,8 @@ const Hero: React.FC = () => {
         scrn-400:h-110
         scrn-450:h-110
         scrn-500:h-112
-        scrn-550:h-112
-        scrn-600:h-112
+        scrn-550:h-114
+        scrn-600:h-118
         scrn-650:h-112
         scrn-700:h-114
         scrn-750:h-118
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
         scrn-2500:h-339
         scrn-2550:h-352
       ">
-      <div className="absolute sm:inset-0 z-10 scrn-300:bottom-20 scrn-400:bottom-0 scrn-mobile:bottom-16
+      <div className="absolute sm:inset-0 z-10 hidden scrn-300:block
         scale-200
         scrn-500:scale-175
         scrn-600:scale-150
