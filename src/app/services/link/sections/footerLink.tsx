@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col ms-2 sm:ms-4 sm:mt-8 md:mt-0 md:ms-0 items-start space-y-2 md:space-y-1 lg:space-y-2">
           <span className="text-xs md:pt-6 xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg footer-text-dark whitespace-nowrap">For More Information</span>
           <span className='text-xs md:ps-0 lg:ps-6 xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
-          <div className="scrn-300:hidden scrn-mobile:hidden sm:hidden md:flex space-x-4 md:ps-0 lg:ps-12">
+          <div className="hidden md:flex space-x-4 md:ps-0 lg:ps-12">
             <SocialIcon
               url="https://twitter.com"
               target="_blank"
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
             />
           </div>
-          <div className="scrn-300:flex scrn-mobile:flex sm:flex md:hidden space-x-4">
+          <div className="flex md:hidden space-x-4">
             <SocialIcon
               url="https://twitter.com"
               target="_blank"
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
 
         {/* Column 2: Addresses and Contact Information */}
         <div className="flex flex-col space-y-4 pb-4 items-center md:pt-2">
-          <p className="hidden md:block md:text-xs xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
+          <p className="hidden scrn-750:block md:text-xs xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
             Main Office: Atlanta, Georgia<br />
             4732-E North Royal Atlanta<br />
             Drive Tucker, GA 30084
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 3: Logo */}
-        <div className="flex justify-center md:justify-end">
+        <div className="hidden scrn-300:flex justify-center md:justify-end">
           <Link href="/">
             <Image
               src="/logos/APEC.png"
