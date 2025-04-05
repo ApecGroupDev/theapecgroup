@@ -1,5 +1,5 @@
 import Footer from "./sections/footerLink";
-import MainFinancing from "./sections/main";
+import MainLink from "./sections/main";
 import Hero from "./sections/hero";
 const Services: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Services: React.FC = () => {
       </div>
 
       <div>
-        <MainFinancing />
+        <MainLink />
       </div>
 
       <div>
