@@ -32,12 +32,12 @@ const Hero: React.FC = () => {
       id="hero-section"
       className=" relative flex items-center pointer-events-none overflow-hidden
         h-110
-        scrn-400:h-110
-        scrn-450:h-110
-        scrn-500:h-112
-        scrn-550:h-114
-        scrn-600:h-118
-        scrn-650:h-118
+        scrn-400:h-112
+        scrn-450:h-116
+        scrn-500:h-118
+        scrn-550:h-118
+        scrn-600:h-120
+        scrn-650:h-120
         scrn-700:h-120
         scrn-750:h-118
         scrn-800:h-120
@@ -86,6 +86,7 @@ const Hero: React.FC = () => {
         scrn-800:scale-125
       ">
         <Image
+          className='mt-6 scrn-350:mt-0'
           src="/backgrounds/services/link/Hero_Link.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
@@ -103,10 +104,9 @@ const Hero: React.FC = () => {
           <nav className='gap-y-12'>
             <ul className="flex items-center space-x-2 font-semibold text-gray-600 tracking-widest
             text-2xs 
-            scrn-600:text-3xs 
-            scrn-750:text-3xs 
-            scrn-1000:text-3xs 
-            scrn-1250:text-lg
+            scrn-600:text-xs
+            scrn-750:text-sm
+            scrn-1000:text-lg 
             scrn-1500:text-xl
           ">
               <li>

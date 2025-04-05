@@ -19,6 +19,11 @@ const MainLink: React.FC = () => {
       scrn-850:h-172
       scrn-900:h-184
       scrn-950:h-188
+      scrn-1000:h-208
+      scrn-1050:h-216
+      scrn-1100:h-224
+      scrn-1150:h-228
+      scrn-1200:h-244
       scrn-1500:h-288 
       scrn-1700:h-320 
       scrn-1900:h-352 
@@ -29,18 +34,19 @@ const MainLink: React.FC = () => {
         scrn-600:max-w-xl 
         scrn-700:max-w-2xl
         scrn-850:max-w-3xl
+        scrn-1000:max-w-4xl
+        scrn-1200:max-w-5xl
         scrn-1500:max-w-8xl
 
         scrn-600:gap-x-6
         scrn-750:gap-x-10
+        scrn-1200:gap-x-24
 
         scrn-750:pt-8 
         scrn-800:pt-8 
         scrn-900:pt-12 
-        scrn-1000:pt-20 
-        scrn-1250:pt-32 
-        scrn-1900:pt-48 
-        scrn-2000:pt-60">
+        scrn-1000:pt-0 
+      ">
         <div className="h-auto 
         space-y-3
         scrn-400:space-y-3
@@ -48,13 +54,15 @@ const MainLink: React.FC = () => {
         scrn-500:space-y-4
         scrn-550:space-y-4
         scrn-600:space-y-4
+        scrn-1200:space-y-12
 
         pt-6
         scrn-400:pt-8
         scrn-450:pt-8
         scrn-500:pt-8
         scrn-550:pt-8
-        scrn-600:pt-16">
+        scrn-600:pt-16
+        scrn-1000:pt-20">
           <span className="text-red-600 font-semibold
           text-sm
           scrn-500:text-base 
@@ -103,7 +111,7 @@ const MainLink: React.FC = () => {
           ">
             <span className="font-medium
               scrn-300:text-base 
-              scrn-450:text-xl 
+              scrn-500:text-xl 
               scrn-600:text-xl 
               scrn-750:text-lg 
               scrn-800:text-lg 
@@ -163,17 +171,21 @@ const MainLink: React.FC = () => {
           </div>
         </div>
         <p className="space-x-2 font-semibold text-nowrap
-        pt-4
-        scrn-400:mt-4
-        scrn-500:mt-4
-        scrn-550:mt-4
-        scrn-600:mt-24
-        scrn-700:mt-20
-        scrn-750:mt-16
-        scrn-800:mt-14
-        scrn-850:mt-16
-        scrn-900:mt-12
-        scrn-950:mt-16">
+          pt-6
+          scrn-400:pt-6
+          scrn-450:pt-12
+          scrn-500:pt-8
+          scrn-550:pt-8
+          scrn-600:pt-24
+          scrn-700:pt-20
+          scrn-750:pt-16
+          scrn-800:pt-14
+          scrn-850:pt-16
+          scrn-900:pt-12
+          scrn-950:pt-16
+          scrn-1000:pt-12
+          scrn-1200:pt-28
+        ">
           <span className="text-red-600
           scrn-300:text-2xl 
           scrn-450:text-3xl 
@@ -193,12 +205,13 @@ const MainLink: React.FC = () => {
           </span>
           <span className="
           scrn-300:text-base 
-          scrn-450:text-lg 
+          scrn-450:text-xl 
           scrn-600:text-2xl 
           scrn-750:text-3xl 
           scrn-800:text-3xl 
           scrn-900:text-3xl 
-          scrn-1000:text-4xl 
+          scrn-1000:text-4xl
+          scrn-1200:text-5xl 
           scrn-1500:text-5xl 
           scrn-1700:text-5xl 
           scrn-1900:text-6xl 
