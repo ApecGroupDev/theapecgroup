@@ -37,12 +37,12 @@ const Hero: React.FC = () => {
         scrn-500:h-112
         scrn-550:h-114
         scrn-600:h-118
-        scrn-650:h-112
-        scrn-700:h-114
+        scrn-650:h-118
+        scrn-700:h-120
         scrn-750:h-118
         scrn-800:h-120
         scrn-850:h-124
-        scrn-900:h-128 
+        scrn-900:h-128
         scrn-950:h-136
         scrn-1000:h-140
         scrn-1050:h-148
@@ -77,12 +77,13 @@ const Hero: React.FC = () => {
         scrn-2500:h-339
         scrn-2550:h-352
       ">
-      <div className="absolute sm:inset-0 z-10 hidden scrn-300:block
+      <div className="absolute z-10 hidden scrn-300:block
         scale-200
         scrn-500:scale-175
         scrn-600:scale-150
-        scrn-650:scale-125
-        scrn-700:scale-100
+        scrn-650:scale-150
+        scrn-700:scale-125
+        scrn-800:scale-125
       ">
         <Image
           src="/backgrounds/services/link/Hero_Link.png"
@@ -98,14 +99,14 @@ const Hero: React.FC = () => {
         className={`fixed scrn-300:p-2 space-y-8 text-left flex items-center transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
           }`}
       >
-        <div className='sm:ps-4 xl:ps-12'>
+        <div className='scrn-600:ps-4 scrn-1250:ps-12'>
           <nav className='gap-y-12'>
-            <ul className="flex sm:items-center space-x-2 font-semibold text-gray-600 tracking-widest
+            <ul className="flex items-center space-x-2 font-semibold text-gray-600 tracking-widest
             text-2xs 
-            sm:text-3xs 
-            md:text-3xs 
-            lg:text-3xs 
-            xl:text-lg
+            scrn-600:text-3xs 
+            scrn-750:text-3xs 
+            scrn-1000:text-3xs 
+            scrn-1250:text-lg
             scrn-1500:text-xl
           ">
               <li>
@@ -125,10 +126,10 @@ const Hero: React.FC = () => {
             text-5xl
             scrn-400:text-6xl
             scrn-450:text-7xl
-            sm:text-7xl
-            md:text-8xl
-            lg:text-9xl
-            xl:text-10xl
+            scrn-600:text-7xl
+            scrn-750:text-8xl
+            scrn-1000:text-9xl
+            scrn-1250:text-10xl
             scrn-1500:text-11xl
             scrn-1700:text-12xl
             scrn-2000:text-13xl
