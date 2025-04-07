@@ -1,24 +1,14 @@
 import Footer from "./sections/footerFinancing";
 import MainFinancing from "./sections/main";
 import Hero from "./sections/hero";
-const Services: React.FC = () => {
+const ServicesFinancing: React.FC = () => {
   return (
     <div className='flex flex-col'>
-
-      <div>
-        <Hero />
-      </div>
-
-      <div>
-        <MainFinancing />
-      </div>
-
-      <div>
-        <Footer />
-      </div>
-
+      <Hero />
+      <MainFinancing />
+      <Footer />
     </div>
   );
 };
 
-export default Services;
+export default ServicesFinancing;
