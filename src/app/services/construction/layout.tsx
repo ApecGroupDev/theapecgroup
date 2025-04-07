@@ -1,20 +1,7 @@
-import Header from "@/components/header";
-
-export default function ServicesLayout({ children }: { children: React.ReactNode }) {
+export default function ServicesConstructionLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      style={{
-        backgroundImage: "url('/backgrounds/services/construction/Background_Construction.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center top",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-      }}>
-
-      <Header />
-
+    <div className="bg-[url('/backgrounds/services/construction/Background_Construction.jpg')] bg-cover bg-top bg-no-repeat min-h-screen">
       <div className="w-full">{children}</div>
-
     </div>
   );
 }
