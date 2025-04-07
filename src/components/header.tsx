@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FiSearch } from "react-icons/fi"; // Importing a search icon
+import { FiSearch, FiX } from "react-icons/fi";
 import Image from "next/image";
 
 const Header: React.FC = () => {
@@ -16,7 +16,19 @@ const Header: React.FC = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
-  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const toggleMenu = () => {
+    setIsOpen((prev) => {
+      if (!prev) setSearchOpen(false); // Close search if opening menu
+      return !prev;
+    });
+  };
+
+  const toggleSearch = () => {
+    setSearchOpen((prev) => {
+      if (!prev) setIsOpen(false); // Close menu if opening search
+      return !prev;
+    });
+  };
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
@@ -63,27 +75,29 @@ const Header: React.FC = () => {
       <div className="scrn-750:hidden container min-w-full relative flex items-center py-4">
         {/* Search Icon (Left) */}
         <button
-          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none z-30"
-          onClick={() => setSearchOpen(!searchOpen)}
+          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none z-20"
+          onClick={toggleSearch}
+          aria-label="Toggle Search"
         >
           {searchOpen ? (
-            <span></span> // Close Search Icon
+            <FiX className="text-2xl" />
           ) : (
             <FiSearch className="text-2xl" />
           )}
         </button>
         {/* Search Input */}
-        {searchOpen && (
-          <div className="absolute top-16 w-full p-2 m-2 bg-white shadow-md rounded-lg z-10">
-            <input
-              type="text"
-              placeholder="Search APEC"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full p-2 border rounded-md focus:outline-none"
-            />
-          </div>
-        )}
+        <div
+          className={`absolute top-16 left-0 w-3/4 p-2 m-2 bg-white shadow-md rounded-lg z-10 overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+            }`}
+        >
+          <input
+            type="text"
+            placeholder="Search APEC"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full p-2 border rounded-md focus:outline-none"
+          />
+        </div>
 
         {/* Centered Logo */}
         <div className="absolute pt-10 inset-0 flex justify-center items-center">
@@ -104,7 +118,7 @@ const Header: React.FC = () => {
           onClick={toggleMenu}
         >
           {isOpen ? (
-            <span className="text-5xl">×</span> // Close Icon
+            <span className="text-5xl">×</span>
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
