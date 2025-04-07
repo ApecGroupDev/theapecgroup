@@ -193,7 +193,7 @@ const MainLink: React.FC = () => {
             </form>
           </div>
         </div>
-        <p className="space-x-2 font-semibold text-nowrap
+        <p className="space-x-2 font-semibold text-nowrap hidden scrn-500:block
           pt-6
           scrn-400:pt-6
           scrn-450:pt-12
