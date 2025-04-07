@@ -60,21 +60,21 @@ const Header: React.FC = () => {
         }`}
     >
       {/* Mobile Header */}
-      <div className="md:hidden container min-w-full relative flex items-center py-4">
+      <div className="scrn-750:hidden container min-w-full relative flex items-center py-4">
         {/* Search Icon (Left) */}
         <button
-          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none z-20"
+          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none z-30"
           onClick={() => setSearchOpen(!searchOpen)}
         >
           {searchOpen ? (
-            <span className="text-2xl">✖</span> // Close Search Icon
+            <span></span> // Close Search Icon
           ) : (
             <FiSearch className="text-2xl" />
           )}
         </button>
         {/* Search Input */}
         {searchOpen && (
-          <div className="absolute top-16 w-full px-6 py-2 bg-white shadow-md rounded-lg z-10">
+          <div className="absolute top-16 w-full p-2 m-2 bg-white shadow-md rounded-lg z-10">
             <input
               type="text"
               placeholder="Search APEC"
@@ -125,7 +125,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         <nav
-          className={`absolute left-0 right-0 top-20 bg-gray-100 p-6 rounded-xl z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+          className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
           {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map(
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`block text-lg text-gray-900 hover:text-red-600 py-2 ${pathname === path ? "text-red-600" : ""
+                className={`block text-lg font-semibold text-gray-800 hover:text-red-600 py-2 ${pathname === path ? "text-red-600" : ""
                   }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -145,7 +145,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className="hidden md:grid grid-cols-3 items-center px-6 py-1">
+      <div className="hidden scrn-750:grid grid-cols-3 items-center px-6 py-1">
         {/* Left: Logo */}
         <div className="flex items-center">
           <Link href="/">
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
               alt="Logo"
               width={1315}
               height={1206}
-              className="w-auto md:h-16 xl:h-20"
+              className="w-auto scrn-750:h-16 scrn-1250:h-20"
             />
           </Link>
         </div>
@@ -166,7 +166,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize md:text-xs lg:text-base text-gray-900 hover:text-red-600 transition-colors duration-200 relative ${pathname === path ? "text-red-600" : ""
+                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-red-600 transition-colors duration-200 relative ${pathname === path ? "text-red-600" : ""
                   }`}
               >
                 {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
@@ -185,7 +185,7 @@ const Header: React.FC = () => {
               ref={searchRef}
               type="text"
               placeholder="Search APEC"
-              className="p-2 rounded-full border border-gray-300 focus:border-red-600 focus:outline-none w-48 md:w-64 transition-all duration-200"
+              className="p-2 rounded-full border border-gray-300 focus:border-red-600 focus:outline-none w-48 scrn-750:w-64 transition-all duration-200"
               autoFocus
             />
           ) : (
