@@ -11,8 +11,6 @@ export default function ServicesLayout({ children }: { children: React.ReactNode
         minHeight: "100vh",
       }}>
 
-      <Header />
-
       <div className="w-full">{children}</div>
 
     </div>
