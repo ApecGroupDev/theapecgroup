@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`block text-lg font-semibold text-gray-800 hover:text-red-600 py-2 ${pathname === path ? "text-red-600" : ""
+                className={`block text-lg font-medium tracking-widest text-gray-800 hover:text-red-600 py-2 ${pathname === path ? "text-red-600" : ""
                   }`}
                 onClick={() => setIsOpen(false)}
               >
