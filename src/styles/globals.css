@@ -68,10 +68,6 @@ body {
       -1px -1px 0 #fff,
       1px -1px 0 #fff;
   }
-
-  .footer-text-dark {
-    color: gray;
-  }
 }
 
 @media (min-width: 300px) and (max-width: 415px) {
