@@ -6,6 +6,7 @@ const MailRed = ({ text = "", size = 24 }) => {
       <TfiEmail className="text-red-600" size={size} />
       {text && <span className="ml-2">{text}</span>}
     </div>
+    // update push on deployment
   );
 };
 
