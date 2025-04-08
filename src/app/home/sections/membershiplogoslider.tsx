@@ -29,17 +29,17 @@ const MembershipLogosCarousel: React.FC = () => {
   return (
     <div className="bg-transparent px-12 md:px-36 scrn-2k:px-40 outline-dashed 
       scrn-300:h-120 
-      scrn-mobile:h-120 
-      sm:h-128 
-      md:h-124 
+      scrn-400:h-120 
+      scrn-600:h-128 
+      scrn-750:h-124 
       scrn-800:h-132 
       scrn-900:h-132 
-      lg:h-152 
+      scrn-1000:h-152 
       scrn-1050:h-176 
       scrn-1100:h-208 
       scrn-1150:h-184 
       scrn-1200:h-192 
-      xl:h-184 
+      scrn-1250:h-184 
       scrn-1450:h-198
       scrn-1500:h-208 
       scrn-1600:h-224 
@@ -61,9 +61,9 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-2500:h-360
       scrn-2550:h-368"
     >
-      <div className="flex flex-col scrn-mobile:justify-center md:justify-center items-center scrn-900:pb-14 lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
+      <div className="flex flex-col scrn-400:justify-center md:justify-center items-center scrn-900:pb-14 lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
         <div className="text-center">
-          <h2 className="text-5xl scrn-300:text-4xl scrn-mobile:text-5xl md:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
+          <h2 className="text-5xl scrn-300:text-4xl scrn-400:text-5xl md:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
             <motion.p
               ref={ref}
               initial={{ y: 70, opacity: 0 }}
@@ -97,13 +97,13 @@ const MembershipLogosCarousel: React.FC = () => {
         >
           {associations.map((association, index) => (
             <SwiperSlide key={index}>
-              <div className="mt-12 scrn-300:mt-0 scrn-mobile:mt-0 sm:mt-0 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110">
+              <div className="mt-12 scrn-300:mt-0 scrn-400:mt-0 scrn-600:mt-0 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110">
                 <Image
                   src={association.src}
                   alt={association.alt}
                   width={800}
                   height={800}
-                  className="scrn-mobile:h-28 h-44 md:h-40 xl:h-60 lg:h-48 scrn-1500:h-64 scrn-1700:h-80 scrn-1900:h-80 scrn-2k:h-96 max-w-full object-contain mb-4"
+                  className="scrn-400:h-28 h-44 md:h-40 xl:h-60 lg:h-48 scrn-1500:h-64 scrn-1700:h-80 scrn-1900:h-80 scrn-2k:h-96 max-w-full object-contain mb-4"
                 />
               </div>
             </SwiperSlide>
