@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-transparent fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
+      className={`bg-transparent fixed top-0 w-full z-30 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
         }`}
     >
       {/* Mobile Header */}
@@ -199,7 +199,7 @@ const Header: React.FC = () => {
               ref={searchRef}
               type="text"
               placeholder="Search APEC"
-              className="p-2 rounded-full border border-gray-300 focus:border-red-600 focus:outline-none w-48 scrn-750:w-64 transition-all duration-200"
+              className="p-2 rounded-full border z-50 border-gray-300 focus:border-red-600 focus:outline-none w-48 scrn-750:w-64 transition-all duration-200"
               autoFocus
             />
           ) : (
