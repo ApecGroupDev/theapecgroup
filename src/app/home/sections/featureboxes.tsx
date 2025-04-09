@@ -52,7 +52,7 @@ const FeatureBoxes: React.FC = () => {
       scrn-500:h-160
       scrn-600:h-140 
       scrn-750:h-152 
-      scrn-800:h-132 
+      scrn-800:h-152 
       scrn-900:h-144
       scrn-1000:h-176 
       scrn-1150:h-184 
@@ -134,7 +134,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-500:w-48 
             scrn-600:w-40 
             scrn-750:w-44
-            scrn-800:w-40 
+            scrn-800:w-48 
             scrn-900:w-44 
             scrn-1000:w-52 
             scrn-1250:w-64 
@@ -149,7 +149,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-500:h-28
               scrn-600:h-24 
               scrn-750:h-28 
-              scrn-800:h-24 
+              scrn-800:h-28 
               scrn-900:h-28 
               scrn-1000:h-32 
               scrn-1250:h-44 
@@ -200,7 +200,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-500:w-48
             scrn-600:w-40 
             scrn-750:w-44 
-            scrn-800:w-40 
+             scrn-800:w-48 
             scrn-900:w-44 
             scrn-1000:w-52 
             scrn-1250:w-64 
@@ -215,7 +215,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-500:h-28
               scrn-600:h-24 
               scrn-750:h-28 
-              scrn-800:h-24 
+              scrn-800:h-28 
               scrn-900:h-28 
               scrn-1000:h-32 
               scrn-1250:h-44 
