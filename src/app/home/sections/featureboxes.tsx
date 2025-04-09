@@ -49,6 +49,7 @@ const FeatureBoxes: React.FC = () => {
     <div className="bg-transparent scrn-1000:-top-4
       h-140
       scrn-450:h-140
+      scrn-500:h-160
       scrn-600:h-140 
       scrn-750:h-128  
       scrn-800:h-132 
@@ -102,10 +103,10 @@ const FeatureBoxes: React.FC = () => {
         >
           WHY CHOOSE
         </motion.p>
-        <p className="hidden scrn-500:block mb-4">
+        <p className="hidden scrn-600:block mb-4">
           <span className="text-red-600"> APEC?</span>
         </p>
-        <p className=" scrn-500:hidden mb-4">
+        <p className=" scrn-600:hidden mb-4">
           <span className="text-white"> APEC?</span>
         </p>
       </div>
@@ -129,7 +130,8 @@ const FeatureBoxes: React.FC = () => {
             w-32
             scrn-350:w-36
             scrn-400:w-36
-            scrn-450:w-40 
+            scrn-450:w-40
+            scrn-500:w-48 
             scrn-600:w-36 
             scrn-750:w-36 
             scrn-800:w-40 
@@ -144,6 +146,7 @@ const FeatureBoxes: React.FC = () => {
             <div className="flex flex-col items-center justify-center 
               h-18 
               scrn-350:h-20
+              scrn-500:h-28
               scrn-600:h-24 
               scrn-750:h-20 
               scrn-800:h-24 
@@ -194,6 +197,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-350:w-36
             scrn-400:w-36
             scrn-450:w-40 
+            scrn-500:w-48
             scrn-600:w-36 
             scrn-750:w-36 
             scrn-800:w-40 
@@ -208,6 +212,7 @@ const FeatureBoxes: React.FC = () => {
             <div className="flex flex-col items-center justify-center 
               h-18
               scrn-400:h-20 
+              scrn-500:h-28
               scrn-600:h-24 
               scrn-750:h-20 
               scrn-800:h-24 

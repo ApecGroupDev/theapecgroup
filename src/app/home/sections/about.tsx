@@ -86,12 +86,12 @@ const About: React.FC = () => {
         <p className="scrn-300:text-lg text-xl scrn-750:text-lg scrn-1000:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium text-gray-800">
           Petroleum Equipment Services
         </p>
-        <p className="mt-4 scrn-1900:mt-12 text-justify text-xs scrn-450:text-sm scrn-600:text-base scrn-750:text-xs scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
+        <p className="mt-4 scrn-1900:mt-12 text-justify text-xs scrn-450:text-sm scrn-550:text-base scrn-600:text-base scrn-750:text-xs scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
           The APEC group you know today started out originally as Atlanta Petroleum Equipment Company in September of 1989.
           From our modest beginning as a small service company, we have grown to a leader in our industry offering a full
           line of petroleum equipment, installation, repair and support services.
         </p>
-        <p className="mt-4 text-xs scrn-450:text-sm scrn-600:text-base scrn-750:text-xs text-justify scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
+        <p className="mt-4 text-xs scrn-450:text-sm scrn-550:text-base scrn-600:text-base scrn-750:text-xs text-justify scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
           APEC is committed to providing only the highest quality products and services available. Our industry continues
           to evolve technically year after year. APEC is committed to staying on the leading edge of all the latest innovations
           and technologies to not only support our customer’s needs but so we can also be the industry experts you can rely on.
