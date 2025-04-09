@@ -16,7 +16,7 @@ const About: React.FC = () => {
       
       h-140
       scrn-400:h-148
-      scrn-600:h-124
+      scrn-600:h-148
       scrn-750:h-120
       scrn-800:h-120
       scrn-900:h-128

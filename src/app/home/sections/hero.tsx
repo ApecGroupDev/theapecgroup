@@ -69,7 +69,8 @@ const Hero: React.FC = () => {
 
           scrn-300:w-64 
           scrn-350:w-72 
-          scrn-400:w-72"
+          scrn-400:w-72
+          scrn-600:w-80"
         />
       </div>
     </div>

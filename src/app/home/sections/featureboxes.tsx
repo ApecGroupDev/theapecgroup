@@ -103,10 +103,10 @@ const FeatureBoxes: React.FC = () => {
         >
           WHY CHOOSE
         </motion.p>
-        <p className="hidden scrn-600:block mb-4">
+        <p className="hidden scrn-700:block mb-4">
           <span className="text-red-600"> APEC?</span>
         </p>
-        <p className=" scrn-600:hidden mb-4">
+        <p className=" scrn-700:hidden mb-4">
           <span className="text-white"> APEC?</span>
         </p>
       </div>
@@ -132,7 +132,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-400:w-36
             scrn-450:w-40
             scrn-500:w-48 
-            scrn-600:w-36 
+            scrn-600:w-40 
             scrn-750:w-36 
             scrn-800:w-40 
             scrn-900:w-44 
@@ -198,7 +198,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-400:w-36
             scrn-450:w-40 
             scrn-500:w-48
-            scrn-600:w-36 
+            scrn-600:w-40 
             scrn-750:w-36 
             scrn-800:w-40 
             scrn-900:w-44 
