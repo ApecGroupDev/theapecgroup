@@ -113,6 +113,7 @@ const FeatureBoxes: React.FC = () => {
       {/* First row: 3 boxes */}
       <div className="flex justify-center flex-wrap 
         gap-4 
+        scrn-350:gap-6
         scrn-750:gap-12 
         scrn-800:gap-8 
         scrn-900:gap-8 
@@ -125,6 +126,7 @@ const FeatureBoxes: React.FC = () => {
           <div
             key={index} className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
             w-32
+            scrn-350:w-36
             scrn-400:w-32 
             scrn-600:w-36 
             scrn-750:w-36 
@@ -170,7 +172,9 @@ const FeatureBoxes: React.FC = () => {
       {/* Second row: 2 centered boxes */}
       <div className="flex justify-center gap-6 flex-wrap 
         mt-4
+        scrn-350:mt-6
 
+        scrn-350:gap-6
         scrn-300:gap-4
         scrn-400:gap-2 
         scrn-750:gap-12 
@@ -185,6 +189,7 @@ const FeatureBoxes: React.FC = () => {
           <div
             key={index} className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
             w-32
+            scrn-350:w-36
             scrn-400:w-32 
             scrn-600:w-36 
             scrn-750:w-36 
