@@ -31,7 +31,7 @@ const MembershipLogosCarousel: React.FC = () => {
       h-124
       scrn-400:h-128
       scrn-600:h-128 
-      scrn-750:h-124 
+      scrn-750:h-128 
       scrn-800:h-132 
       scrn-900:h-132 
       scrn-1000:h-152 
@@ -90,7 +90,7 @@ const MembershipLogosCarousel: React.FC = () => {
           breakpoints={{
             300: { slidesPerView: 2 },
             640: { slidesPerView: 2 },
-            768: { slidesPerView: 2 },
+            750: { slidesPerView: 3 },
             1024: { slidesPerView: 3 },
           }}
           className="mySwiper scrn-1500:mt-24 scrn-1700:mt-20 scrn-1900:mt-20 scrn-2k:mt-12 w-full"

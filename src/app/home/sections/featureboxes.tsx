@@ -51,7 +51,7 @@ const FeatureBoxes: React.FC = () => {
       scrn-450:h-140
       scrn-500:h-160
       scrn-600:h-140 
-      scrn-750:h-128  
+      scrn-750:h-152 
       scrn-800:h-132 
       scrn-900:h-144
       scrn-1000:h-176 
@@ -103,10 +103,10 @@ const FeatureBoxes: React.FC = () => {
         >
           WHY CHOOSE
         </motion.p>
-        <p className="hidden scrn-700:block mb-4">
+        <p className="hidden scrn-750:block mb-4">
           <span className="text-red-600"> APEC?</span>
         </p>
-        <p className=" scrn-700:hidden mb-4">
+        <p className=" scrn-750:hidden mb-4">
           <span className="text-white"> APEC?</span>
         </p>
       </div>
@@ -116,7 +116,7 @@ const FeatureBoxes: React.FC = () => {
         gap-4 
         scrn-350:gap-6
         scrn-400:gap-6
-        scrn-750:gap-12 
+        scrn-750:gap-6
         scrn-800:gap-8 
         scrn-900:gap-8 
         scrn-1500:gap-20 
@@ -133,7 +133,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-450:w-40
             scrn-500:w-48 
             scrn-600:w-40 
-            scrn-750:w-36 
+            scrn-750:w-44
             scrn-800:w-40 
             scrn-900:w-44 
             scrn-1000:w-52 
@@ -148,7 +148,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-350:h-20
               scrn-500:h-28
               scrn-600:h-24 
-              scrn-750:h-20 
+              scrn-750:h-28 
               scrn-800:h-24 
               scrn-900:h-28 
               scrn-1000:h-32 
@@ -182,7 +182,7 @@ const FeatureBoxes: React.FC = () => {
         gap-4
         scrn-350:gap-6
         scrn-400:gap-6
-        scrn-750:gap-12 
+        scrn-750:gap-6 
         scrn-800:gap-8 
         scrn-900:gap-8 
         scrn-1500:gap-20 
@@ -199,7 +199,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-450:w-40 
             scrn-500:w-48
             scrn-600:w-40 
-            scrn-750:w-36 
+            scrn-750:w-44 
             scrn-800:w-40 
             scrn-900:w-44 
             scrn-1000:w-52 
@@ -214,7 +214,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-400:h-20 
               scrn-500:h-28
               scrn-600:h-24 
-              scrn-750:h-20 
+              scrn-750:h-28 
               scrn-800:h-24 
               scrn-900:h-28 
               scrn-1000:h-32 

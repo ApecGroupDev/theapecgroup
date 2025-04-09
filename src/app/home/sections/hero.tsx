@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col-reverse scrn-600:flex-row scrn-600:ms-2 scrn-750:ms-0 items-center justify-between bg-transparent 
-      scrn-750:px-12
+    <div className="flex flex-col-reverse scrn-600:flex-row scrn-600:ms-2 items-center justify-between bg-transparent 
+      
     
       h-140
       scrn-400:h-140
       scrn-600:h-124
-      scrn-750:h-116
+      scrn-750:h-120
       scrn-800:h-120
       scrn-900:h-124
       scrn-1000:h-144
@@ -70,7 +70,8 @@ const Hero: React.FC = () => {
           scrn-300:w-64 
           scrn-350:w-72 
           scrn-400:w-72
-          scrn-600:w-80"
+          scrn-600:w-80
+          scrn-750:w-72"
         />
       </div>
     </div>

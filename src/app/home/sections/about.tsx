@@ -17,7 +17,7 @@ const About: React.FC = () => {
       h-140
       scrn-400:h-148
       scrn-600:h-148
-      scrn-750:h-120
+      scrn-750:h-128
       scrn-800:h-120
       scrn-900:h-128
       scrn-1000:h-140
@@ -67,8 +67,7 @@ const About: React.FC = () => {
       scrn-450:px-8
 
       scrn-750:w-3/5 
-      scrn-1000:w-1/2 
-      scrn-750:mt-10 
+      scrn-1000:w-1/2  
       scrn-1250:mt-16 flex flex-col scrn-1000:mx-auto scrn-1500:px-10 scrn-1500:mt-20 scrn-1700:pe-20 scrn-1700:mt-20 scrn-1900:pe-20 scrn-1900:mt-24 scrn-2k:pe-32 scrn-2k:mt-36">
         {/* Animated Welcome Text */}
         <motion.p
