@@ -48,7 +48,7 @@ const FeatureBoxes: React.FC = () => {
   return (
     <div className="bg-transparent scrn-1000:-top-4
       h-140
-      scrn-400:h-140
+      scrn-450:h-140
       scrn-600:h-140 
       scrn-750:h-128  
       scrn-800:h-132 
@@ -128,7 +128,8 @@ const FeatureBoxes: React.FC = () => {
             key={index} className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
             w-32
             scrn-350:w-36
-            scrn-400:w-36 
+            scrn-400:w-36
+            scrn-450:w-40 
             scrn-600:w-36 
             scrn-750:w-36 
             scrn-800:w-40 
@@ -192,6 +193,7 @@ const FeatureBoxes: React.FC = () => {
             w-32
             scrn-350:w-36
             scrn-400:w-36
+            scrn-450:w-40 
             scrn-600:w-36 
             scrn-750:w-36 
             scrn-800:w-40 
