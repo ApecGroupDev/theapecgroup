@@ -14,8 +14,7 @@ const About: React.FC = () => {
     <div className="w-full bg-transparent flex flex-col scrn-750:flex-row px-12 scrn-300:px-8 outline-dashed 
       scrn-1500:-mt-8
       
-      scrn-300:h-128
-      scrn-400:h-132
+      h-140
       scrn-600:h-124
       scrn-750:h-120
       scrn-800:h-120

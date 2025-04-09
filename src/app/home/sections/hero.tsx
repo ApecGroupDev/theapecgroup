@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <div className="flex flex-col-reverse scrn-600:flex-row scrn-600:ms-2 scrn-750:ms-0 items-center justify-between bg-transparent 
       scrn-750:px-12
     
-      scrn-300:h-128
+      h-140
       scrn-400:h-136
       scrn-600:h-124
       scrn-750:h-116
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
       scrn-2550:h-326"
     >
       {/* Left Text Section */}
-      <div className="-space-y-1.5 text-center scrn-300:mt-6 scrn-400:mt-0 scrn-600:text-left scrn-1000:pb-5">
+      <div className="-space-y-1.5 text-center mb-6 scrn-600:text-left scrn-1000:pb-5">
         <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2000:text-6xl font-bold whitespace-nowrap">
           YOUR TOP CHOICE
         </p>
