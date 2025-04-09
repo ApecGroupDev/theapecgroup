@@ -15,6 +15,7 @@ const About: React.FC = () => {
       scrn-1500:-mt-8
       
       h-140
+      scrn-400:h-148
       scrn-600:h-124
       scrn-750:h-120
       scrn-800:h-120
@@ -61,7 +62,13 @@ const About: React.FC = () => {
       </div>
 
       {/* Right Text Section */}
-      <div className="text-center scrn-300:mt-8 scrn-750:text-left scrn-750:w-3/5 scrn-1000:w-1/2 scrn-750:mt-10 scrn-1250:mt-16 flex flex-col scrn-1000:mx-auto scrn-1500:px-10 scrn-1500:mt-20 scrn-1700:pe-20 scrn-1700:mt-20 scrn-1900:pe-20 scrn-1900:mt-24 scrn-2k:pe-32 scrn-2k:mt-36">
+      <div className="text-center scrn-300:mt-8 scrn-400:mt-0 scrn-750:text-left 
+      scrn-400:px-12
+
+      scrn-750:w-3/5 
+      scrn-1000:w-1/2 
+      scrn-750:mt-10 
+      scrn-1250:mt-16 flex flex-col scrn-1000:mx-auto scrn-1500:px-10 scrn-1500:mt-20 scrn-1700:pe-20 scrn-1700:mt-20 scrn-1900:pe-20 scrn-1900:mt-24 scrn-2k:pe-32 scrn-2k:mt-36">
         {/* Animated Welcome Text */}
         <motion.p
           ref={ref} // Set the ref to the element
@@ -72,18 +79,18 @@ const About: React.FC = () => {
         >
           Welcome to
         </motion.p>
-        <p className="scrn-300:text-4xl text-4xl scrn-750:text-4xl scrn-1250:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-red-600">
+        <p className="text-4xl scrn-750:text-4xl scrn-1250:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-red-600">
           APEC
         </p>
         <p className="scrn-300:text-lg text-xl scrn-750:text-lg scrn-1000:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium text-gray-800">
           Petroleum Equipment Services
         </p>
-        <p className="mt-4 scrn-1900:mt-12 text-justify scrn-300:text-xs scrn-400:text-sm scrn-600:text-base scrn-750:text-xs scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
+        <p className="mt-4 scrn-1900:mt-12 text-justify text-xs scrn-600:text-base scrn-750:text-xs scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
           The APEC group you know today started out originally as Atlanta Petroleum Equipment Company in September of 1989.
           From our modest beginning as a small service company, we have grown to a leader in our industry offering a full
           line of petroleum equipment, installation, repair and support services.
         </p>
-        <p className="mt-4 scrn-300:text-xs scrn-400:text-sm scrn-600:text-base scrn-750:text-xs text-justify scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
+        <p className="mt-4 text-xs scrn-600:text-base scrn-750:text-xs text-justify scrn-900:text-base scrn-1000:text-base scrn-1250:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-300:tracking-widest scrn-1900:tracking-widest scrn-2k:text-3xl text-gray-800">
           APEC is committed to providing only the highest quality products and services available. Our industry continues
           to evolve technically year after year. APEC is committed to staying on the leading edge of all the latest innovations
           and technologies to not only support our customer’s needs but so we can also be the industry experts you can rely on.

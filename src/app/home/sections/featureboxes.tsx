@@ -48,7 +48,7 @@ const FeatureBoxes: React.FC = () => {
   return (
     <div className="bg-transparent scrn-1000:-top-4
       h-140
-      scrn-400:h-128 
+      scrn-400:h-140
       scrn-600:h-140 
       scrn-750:h-128  
       scrn-800:h-132 
@@ -114,6 +114,7 @@ const FeatureBoxes: React.FC = () => {
       <div className="flex justify-center flex-wrap 
         gap-4 
         scrn-350:gap-6
+        scrn-400:gap-6
         scrn-750:gap-12 
         scrn-800:gap-8 
         scrn-900:gap-8 
@@ -127,7 +128,7 @@ const FeatureBoxes: React.FC = () => {
             key={index} className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
             w-32
             scrn-350:w-36
-            scrn-400:w-32 
+            scrn-400:w-36 
             scrn-600:w-36 
             scrn-750:w-36 
             scrn-800:w-40 
@@ -141,7 +142,7 @@ const FeatureBoxes: React.FC = () => {
           >
             <div className="flex flex-col items-center justify-center 
               h-18 
-              scrn-400:h-20 
+              scrn-350:h-20
               scrn-600:h-24 
               scrn-750:h-20 
               scrn-800:h-24 
@@ -170,13 +171,13 @@ const FeatureBoxes: React.FC = () => {
       </div>
 
       {/* Second row: 2 centered boxes */}
-      <div className="flex justify-center gap-6 flex-wrap 
+      <div className="flex justify-center flex-wrap 
         mt-4
         scrn-350:mt-6
 
+        gap-4
         scrn-350:gap-6
-        scrn-300:gap-4
-        scrn-400:gap-2 
+        scrn-400:gap-6
         scrn-750:gap-12 
         scrn-800:gap-8 
         scrn-900:gap-8 
@@ -190,7 +191,7 @@ const FeatureBoxes: React.FC = () => {
             key={index} className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
             w-32
             scrn-350:w-36
-            scrn-400:w-32 
+            scrn-400:w-36
             scrn-600:w-36 
             scrn-750:w-36 
             scrn-800:w-40 
