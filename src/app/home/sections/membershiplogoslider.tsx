@@ -27,7 +27,7 @@ const MembershipLogosCarousel: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent px-12 md:px-36 scrn-2k:px-40 outline-dashed 
+    <div className="bg-transparent px-12 scrn-750:px-36 scrn-2000:px-40 outline-dashed 
       h-124
       scrn-400:h-128
       scrn-600:h-128 
@@ -61,9 +61,9 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-2500:h-360
       scrn-2550:h-368"
     >
-      <div className="flex flex-col scrn-400:justify-center md:justify-center items-center scrn-900:pb-14 lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
+      <div className="flex flex-col scrn-400:justify-center scrn-750:justify-center items-center scrn-900:pb-14 lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
         <div className="text-center">
-          <h2 className="text-5xl scrn-300:text-4xl scrn-400:text-5xl md:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
+          <h2 className="text-5xl scrn-300:text-4xl scrn-400:text-5xl scrn-750:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
             <motion.p
               ref={ref}
               initial={{ y: 70, opacity: 0 }}
@@ -74,7 +74,7 @@ const MembershipLogosCarousel: React.FC = () => {
             </motion.p>
             Member Of
           </h2>
-          <p className="scrn-300:text-sm md:text-sm scrn-900:text-base xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-4xl text-gray-500 mt-2 max-w-2xl scrn-1500:max-w-full mac-16:max-w-full scrn-1900:max-w-full mx-auto">
+          <p className="scrn-300:text-sm scrn-750:text-sm scrn-900:text-base xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-4xl text-gray-500 mt-2 max-w-2xl scrn-1500:max-w-full mac-16:max-w-full scrn-1900:max-w-full mx-auto">
             Our associations reflect our dedication to quality, collaboration, and industry leadership.
           </p>
         </div>
@@ -103,7 +103,16 @@ const MembershipLogosCarousel: React.FC = () => {
                   alt={association.alt}
                   width={800}
                   height={800}
-                  className="scrn-400:h-28 h-44 md:h-40 xl:h-60 lg:h-48 scrn-1500:h-64 scrn-1700:h-80 scrn-1900:h-80 scrn-2k:h-96 max-w-full object-contain mb-4"
+                  className="max-w-full object-contain mb-4
+                  h-44
+                  scrn-400:h-28 
+                  scrn-750:h-36 
+                  scrn-1000:h-48
+                  scrn-1250:h-60 
+                  scrn-1500:h-64 
+                  scrn-1700:h-80 
+                  scrn-1900:h-80 
+                  scrn-2k:h-96"
                 />
               </div>
             </SwiperSlide>
