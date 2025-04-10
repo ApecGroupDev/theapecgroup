@@ -50,7 +50,8 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-2200:h-304
       scrn-2300:h-316
       scrn-2350:h-339
-      scrn-2400:h-360"
+      scrn-2400:h-360
+      scrn-2500:h-384"
     >
       <div className="flex flex-col scrn-400:justify-center scrn-750:justify-center scrn-1900:justify-start items-center scrn-900:pb-14 scrn-1000:pb-24 scrn-1200:pb-0 scrn-2000:pt-24 scrn-2300:pt-36 scrn-2400:pt-56 h-full w-full scrn-2000:gap-y-16">
         <div className="text-center">
