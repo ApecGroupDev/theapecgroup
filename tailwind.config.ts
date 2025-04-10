@@ -55,7 +55,6 @@ export default {
       'scrn-2450': '2450px',
       'scrn-2500': '2500px',
       'scrn-2550': '2550px',
-      'scrn-2k': '2560px',
     },
     extend: {
       maxWidth: {
