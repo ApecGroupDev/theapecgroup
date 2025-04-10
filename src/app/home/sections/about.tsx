@@ -33,7 +33,8 @@ const About: React.FC = () => {
       scrn-1900:h-304
       scrn-2000:h-304
       scrn-2100:h-320
-      scrn-2200:h-339"     
+      scrn-2200:h-339
+      scrn-2300:h-352"     
     >
       {/* Left Image Section */}
       <div className="w-full hidden scrn-750:block scrn-750:w-2/5 scrn-1200:w-1/2">
@@ -59,7 +60,7 @@ const About: React.FC = () => {
 
       scrn-750:w-3/5 
       scrn-1000:w-1/2  
-      scrn-1200:mt-12 scrn-1300:mt-6 flex flex-col scrn-1000:mx-auto scrn-1500:px-10 scrn-1500:mt-20 scrn-1700:pe-20 scrn-1700:mt-20 scrn-1900:pe-20 scrn-1900:mt-24 scrn-2k:pe-32 scrn-2k:mt-36">
+      scrn-1200:mt-12 scrn-1300:mt-6 flex flex-col scrn-1000:mx-auto scrn-1500:px-10 scrn-1500:mt-20 scrn-1700:pe-20 scrn-1700:mt-20 scrn-1900:pe-20 scrn-1900:mt-24 scrn-2000:pe-32 scrn-2000:mt-36 scrn-2300:pe-60">
         {/* Animated Welcome Text */}
         <motion.p
           ref={ref} // Set the ref to the element

@@ -23,17 +23,19 @@ const Hero: React.FC = () => {
       scrn-1900:h-272
       scrn-2000:h-280
       scrn-2100:h-288
-      scrn-2200:h-304"
+      scrn-2200:h-304
+      scrn-2300:h-308
+      scrn-2350:h-320"
     >
       {/* Left Text Section */}
-      <div className="scrn-1500:ms-4 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5">
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl font-bold whitespace-nowrap">
+      <div className="scrn-1500:ms-4 scrn-2300:ms-8 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5">
+        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-bold whitespace-nowrap">
           YOUR TOP CHOICE
         </p>
-        <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-7xl font-regular italic text-red-500 tracking-wider whitespace-nowrap">
+        <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-7xl scrn-2300:text-8xl font-regular italic text-red-500 tracking-wider whitespace-nowrap">
           ONE-STOP SHOP
         </p>
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl font-regular">
+        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-regular">
           ATLANTA COMPANY
         </p>
       </div>
@@ -64,7 +66,8 @@ const Hero: React.FC = () => {
           scrn-1600:w-160
           scrn-1700:w-176 scrn-1700:mb-20
           scrn-1800:w-180
-          scrn-1900:w-192"
+          scrn-1900:w-192
+          scrn-2300:w-216"
         />
       </div>
     </div>
