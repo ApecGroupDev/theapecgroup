@@ -60,8 +60,7 @@ const FeatureBoxes: React.FC = () => {
       scrn-1150:h-184 
       scrn-1200:h-208
       scrn-1300:h-224
-      scrn-1400:h-244
-      scrn-1450:h-248 
+      scrn-1400:h-248 
       scrn-1500:h-256 
       scrn-1650:h-272 
       scrn-1700:h-288 
@@ -119,7 +118,7 @@ const FeatureBoxes: React.FC = () => {
         scrn-750:gap-6
         scrn-800:gap-8 
         scrn-900:gap-8 
-        scrn-1500:gap-20 
+        scrn-1400:gap-10 
         scrn-1700:gap-24 
         scrn-1900:gap-28 
         scrn-2k:gap-36"
@@ -161,7 +160,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-1150:h-48
               scrn-1250:h-48
               scrn-1300:h-52 
-              scrn-1500:h-56 
+              scrn-1400:h-56 
               scrn-1700:h-64 
               scrn-1900:h-72 
               scrn-2000:h-96
@@ -186,6 +185,7 @@ const FeatureBoxes: React.FC = () => {
       <div className="flex justify-center flex-wrap 
         mt-4
         scrn-350:mt-6
+        scrn-1400:mt-10
 
         gap-4
         scrn-350:gap-6
@@ -193,7 +193,7 @@ const FeatureBoxes: React.FC = () => {
         scrn-750:gap-6 
         scrn-800:gap-8 
         scrn-900:gap-8 
-        scrn-1500:gap-20 
+        scrn-1400:gap-10 
         scrn-1700:gap-24 
         scrn-1900:gap-28 
         scrn-2000:gap-36"
@@ -235,7 +235,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-1150:h-48
               scrn-1250:h-48 
               scrn-1300:h-52
-              scrn-1500:h-56 
+              scrn-1400:h-56 
               scrn-1700:h-64 
               scrn-1900:h-72 
               scrn-2000:h-96"
