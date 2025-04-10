@@ -8,26 +8,11 @@ const About: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
-      <div>
-        <Hero />
-      </div>
-
-      <div>
-        <HorizontalScrollSection />
-      </div>
-
-      <div>
-        <ThirdSection />
-      </div>
-
-      <div>
-        <ChooseUs />
-      </div>
-
-      <div>
-        <Footer />
-      </div>
-
+      <Hero />
+      <HorizontalScrollSection />
+      <ThirdSection />
+      <ChooseUs />
+      <Footer />
     </div>
   );
 };
