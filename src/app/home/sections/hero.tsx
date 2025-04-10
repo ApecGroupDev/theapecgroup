@@ -21,28 +21,17 @@ const Hero: React.FC = () => {
       scrn-1700:h-248
       scrn-1800:h-260
       scrn-1900:h-272
-      scrn-2000:h-272
-      scrn-2050:h-280
-      scrn-2100:h-288
-      scrn-2150:h-296
-      scrn-2200:h-304
-      scrn-2250:h-308
-      scrn-2300:h-312
-      scrn-2350:h-316
-      scrn-2400:h-320
-      scrn-2450:h-324
-      scrn-2500:h-326
-      scrn-2550:h-326"
+      scrn-2000:h-280"
     >
       {/* Left Text Section */}
       <div className="scrn-1500:ms-4 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5">
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2000:text-6xl font-bold whitespace-nowrap">
+        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl font-bold whitespace-nowrap">
           YOUR TOP CHOICE
         </p>
-        <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-7xl scrn-2000:text-8xl font-regular italic text-red-500 tracking-wider whitespace-nowrap">
+        <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-7xl font-regular italic text-red-500 tracking-wider whitespace-nowrap">
           ONE-STOP SHOP
         </p>
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2000:text-6xl font-regular">
+        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl font-regular">
           ATLANTA COMPANY
         </p>
       </div>
