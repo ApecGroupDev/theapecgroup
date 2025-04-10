@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       scrn-1100:h-168
       scrn-1150:h-168
       scrn-1200:h-176
-      scrn-1300:h-176
+      scrn-1300:h-184
       scrn-1350:h-184
       scrn-1400:h-192
       scrn-1450:h-198
