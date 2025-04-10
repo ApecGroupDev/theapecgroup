@@ -13,8 +13,7 @@ const Hero: React.FC = () => {
       scrn-1000:h-160
       scrn-1100:h-168
       scrn-1150:h-168
-      scrn-1200:h-160
-      scrn-1250:h-160
+      scrn-1200:h-176
       scrn-1300:h-176
       scrn-1350:h-184
       scrn-1400:h-192
@@ -44,13 +43,13 @@ const Hero: React.FC = () => {
     >
       {/* Left Text Section */}
       <div className="-space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5">
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2000:text-6xl font-bold whitespace-nowrap">
+        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2000:text-6xl font-bold whitespace-nowrap">
           YOUR TOP CHOICE
         </p>
-        <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1900:text-7xl scrn-2000:text-8xl font-regular italic text-red-500 tracking-wider whitespace-nowrap">
+        <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1900:text-7xl scrn-2000:text-8xl font-regular italic text-red-500 tracking-wider whitespace-nowrap">
           ONE-STOP SHOP
         </p>
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2000:text-6xl font-regular">
+        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2000:text-6xl font-regular">
           ATLANTA COMPANY
         </p>
       </div>
@@ -73,7 +72,8 @@ const Hero: React.FC = () => {
           scrn-750:w-80
           scrn-900:w-110 scrn-900:mb-12
           scrn-1000:w-120 scrn-1000:mb-12
-          scrn-1100:w-124"
+          scrn-1100:w-124
+          scrn-1200:w-128 scrn-1200:mb-14"
         />
       </div>
     </div>

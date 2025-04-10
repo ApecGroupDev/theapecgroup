@@ -58,7 +58,7 @@ const FeatureBoxes: React.FC = () => {
       scrn-1000:h-176
       scrn-1100:h-184 
       scrn-1150:h-184 
-      scrn-1200:h-192 
+      scrn-1200:h-208 
       scrn-1250:h-198 
       scrn-1300:h-224
       scrn-1350:h-240
