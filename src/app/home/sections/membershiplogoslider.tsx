@@ -45,7 +45,6 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-1700:h-232  
       scrn-1800:h-240
       scrn-1900:h-272 
-      scrn-1950:h-264
       scrn-2000:h-272
       scrn-2100:h-304
       scrn-2150:h-312
@@ -58,7 +57,7 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-2500:h-360
       scrn-2550:h-368"
     >
-      <div className="flex flex-col scrn-400:justify-center scrn-750:justify-center items-center scrn-900:pb-14 lg:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
+      <div className="flex flex-col scrn-400:justify-center scrn-750:justify-center scrn-1900:justify-start items-center scrn-900:pb-14 scrn-1000:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
         <div className="text-center">
           <h2 className="text-5xl scrn-300:text-4xl scrn-400:text-5xl scrn-750:text-5xl scrn-900:text-5xl lg:text-5xl xl:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-gray-800 tracking-tight leading-tight">
             <motion.p

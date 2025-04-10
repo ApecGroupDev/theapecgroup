@@ -15,27 +15,27 @@ const features: FeatureBox[] = [
   {
     title: "TEAM",
     description: "“The truth is that teamwork is at the heart of great achievement” – John C. Maxwell.",
-    icon: <FaUsers className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl text-red-600" />,
+    icon: <FaUsers className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
   },
   {
     title: "EXECUTION",
     description: "“You can’t build a reputation on what you are going to do” – Henry Ford.",
-    icon: <FaTasks className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl text-red-600" />,
+    icon: <FaTasks className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
   },
   {
     title: "CUSTOMER",
     description: "“Get closer than ever to your customers.” – Steve Jobs.",
-    icon: <FaHandshake className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl text-red-600" />,
+    icon: <FaHandshake className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
   },
   {
     title: "EXPERIENCE",
     description: "“Experience is the teacher of all things” – Julius Caesar.",
-    icon: <FaChartLine className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl text-red-600" />,
+    icon: <FaChartLine className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
   },
   {
     title: "SERVICE",
     description: "“Great customer service means honoring the customer” – Chris LoCurto.",
-    icon: <FaCogs className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl text-red-600" />,
+    icon: <FaCogs className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
   },
 ];
 
@@ -65,8 +65,7 @@ const FeatureBoxes: React.FC = () => {
       scrn-1600:h-272 
       scrn-1700:h-296
       scrn-1800:h-312 
-      scrn-1900:h-326
-      scrn-1950:h-326
+      scrn-1900:h-339
       scrn-2000:h-326
       scrn-2050:h-326
       scrn-2100:h-326
@@ -118,7 +117,7 @@ const FeatureBoxes: React.FC = () => {
         scrn-900:gap-8 
         scrn-1400:gap-10 
         scrn-1700:gap-16 
-        scrn-1900:gap-28 
+        scrn-1900:gap-20 
         scrn-2k:gap-36"
       >
         {features.slice(0, 3).map((feature, index) => (
@@ -142,7 +141,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-1500:w-80
             scrn-1600:w-96 
             scrn-1700:w-112
-            scrn-1900:w-116 
+            scrn-1900:w-118 
             scrn-2000:w-128"
           >
             <div className="flex flex-col items-center justify-center 
@@ -167,7 +166,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-2000:h-96
             ">
               {feature.icon}
-              <h3 className="scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl font-bold text-center mt-4 text-gray-800">
+              <h3 className="scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl scrn-1800:text-3xl font-bold text-center mt-4 text-gray-800">
                 {feature.title}
               </h3>
             </div>
@@ -188,6 +187,7 @@ const FeatureBoxes: React.FC = () => {
         scrn-350:mt-6
         scrn-1400:mt-10
         scrn-1700:mt-16
+        scrn-1900:mt-16
 
         gap-4
         scrn-350:gap-6
@@ -197,7 +197,7 @@ const FeatureBoxes: React.FC = () => {
         scrn-900:gap-8 
         scrn-1400:gap-10 
         scrn-1700:gap-16 
-        scrn-1900:gap-28 
+        scrn-1900:gap-20 
         scrn-2000:gap-36"
       >
         {features.slice(3).map((feature, index) => (
@@ -221,7 +221,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-1500:w-80 
             scrn-1600:w-96 
             scrn-1700:w-112
-            scrn-1900:w-116 
+            scrn-1900:w-118 
             scrn-2000:w-128"
           >
             <div className="flex flex-col items-center justify-center 
@@ -246,7 +246,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-2000:h-96"
             >
               {feature.icon}
-              <h3 className="scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl font-bold text-center mt-4 text-gray-800">
+              <h3 className="scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl scrn-1800:text-3xl font-bold text-center mt-4 text-gray-800">
                 {feature.title}
               </h3>
             </div>

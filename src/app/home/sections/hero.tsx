@@ -20,8 +20,7 @@ const Hero: React.FC = () => {
       scrn-1600:h-228
       scrn-1700:h-248
       scrn-1800:h-260
-      scrn-1900:h-256
-      scrn-1950:h-264
+      scrn-1900:h-272
       scrn-2000:h-272
       scrn-2050:h-280
       scrn-2100:h-288
@@ -73,7 +72,8 @@ const Hero: React.FC = () => {
           scrn-1500:w-148
           scrn-1600:w-160
           scrn-1700:w-176 scrn-1700:mb-20
-          scrn-1800:w-180"
+          scrn-1800:w-180
+          scrn-1900:w-192"
         />
       </div>
     </div>
