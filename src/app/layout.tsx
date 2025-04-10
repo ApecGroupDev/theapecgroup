@@ -22,7 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen">
         {/* Render children */}
-        {children}
+        <div className="max-w-[2560px] mx-auto">
+          {children}
+        </div>
         <ScrollToTopButton />
       </body>
     </html>
