@@ -66,7 +66,8 @@ const FeatureBoxes: React.FC = () => {
       scrn-1700:h-296
       scrn-1800:h-312 
       scrn-1900:h-339
-      scrn-2000:h-360"
+      scrn-2000:h-360
+      scrn-2400:h-368"
     >
       {/* Section Title */}
       <div className="text-center font-extrabold text-gray-800
@@ -97,7 +98,9 @@ const FeatureBoxes: React.FC = () => {
       </div>
 
       {/* First row: 3 boxes */}
-      <div className="flex justify-center flex-wrap 
+      <div className="flex justify-center flex-wrap
+      scrn-2400:mt-32
+      
         gap-4 
         scrn-350:gap-6
         scrn-400:gap-6
