@@ -16,8 +16,7 @@ const Hero: React.FC = () => {
       scrn-1200:h-176
       scrn-1300:h-188
       scrn-1400:h-198
-      scrn-1500:h-198
-      scrn-1550:h-208
+      scrn-1500:h-216
       scrn-1600:h-224
       scrn-1650:h-224
       scrn-1700:h-224
@@ -40,7 +39,7 @@ const Hero: React.FC = () => {
       scrn-2550:h-326"
     >
       {/* Left Text Section */}
-      <div className="-space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5">
+      <div className="scrn-1500:ms-4 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5">
         <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1900:text-5xl scrn-2000:text-6xl font-bold whitespace-nowrap">
           YOUR TOP CHOICE
         </p>
@@ -73,7 +72,8 @@ const Hero: React.FC = () => {
           scrn-1100:w-124
           scrn-1200:w-128 scrn-1200:mb-14
           scrn-1300:w-132
-          scrn-1400:w-140"
+          scrn-1400:w-140
+          scrn-1500:w-148"
         />
       </div>
     </div>

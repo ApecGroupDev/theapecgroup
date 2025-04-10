@@ -141,7 +141,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-1150:w-72 
             scrn-1250:w-72
             scrn-1300:w-80 
-            scrn-1500:w-72 
+            scrn-1500:w-80 
             scrn-1700:w-108 
             scrn-1900:w-116 
             scrn-2000:w-128"
@@ -161,6 +161,7 @@ const FeatureBoxes: React.FC = () => {
               scrn-1250:h-48
               scrn-1300:h-52 
               scrn-1400:h-56 
+              scrn-1500:h-60
               scrn-1700:h-64 
               scrn-1900:h-72 
               scrn-2000:h-96
@@ -173,7 +174,7 @@ const FeatureBoxes: React.FC = () => {
 
             {/* Description hover box */}
             <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-              <p className="scrn-300:text-xs scrn-750:text-xs scrn-800:text-xs scrn-900:text-xs scrn-1000:text-sm scrn-1200:text-base text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+              <p className="scrn-300:text-xs scrn-750:text-xs scrn-800:text-xs scrn-900:text-xs scrn-1000:text-sm scrn-1200:text-base scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4">
                 {feature.description}
               </p>
             </div>
@@ -216,7 +217,7 @@ const FeatureBoxes: React.FC = () => {
             scrn-1150:w-72
             scrn-1250:w-72 
             scrn-1300:w-80
-            scrn-1500:w-72 
+            scrn-1500:w-80 
             scrn-1700:w-108 
             scrn-1900:w-116 
             scrn-2000:w-128"
@@ -235,7 +236,8 @@ const FeatureBoxes: React.FC = () => {
               scrn-1150:h-48
               scrn-1250:h-48 
               scrn-1300:h-52
-              scrn-1400:h-56 
+              scrn-1400:h-56
+              scrn-1500:h-60 
               scrn-1700:h-64 
               scrn-1900:h-72 
               scrn-2000:h-96"
@@ -248,7 +250,7 @@ const FeatureBoxes: React.FC = () => {
 
             {/* Description hover box */}
             <div className="absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-              <p className="scrn-300:text-xs scrn-750:text-xs scrn-800:text-xs scrn-900:text-xs scrn-1000:text-sm scrn-1200:text-base text-gray-700 text-center overflow-y-auto max-h-48 px-4">
+              <p className="scrn-300:text-xs scrn-750:text-xs scrn-800:text-xs scrn-900:text-xs scrn-1000:text-sm scrn-1200:text-base scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4">
                 {feature.description}
               </p>
             </div>
