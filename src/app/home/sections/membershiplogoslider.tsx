@@ -45,7 +45,8 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-1700:h-232  
       scrn-1800:h-240
       scrn-1900:h-272 
-      scrn-2000:h-272"
+      scrn-2000:h-272
+      scrn-2100:h-288"
     >
       <div className="flex flex-col scrn-400:justify-center scrn-750:justify-center scrn-1900:justify-start items-center scrn-900:pb-14 scrn-1000:pb-24 xl:pb-0 h-full w-full scrn-2k:gap-y-16">
         <div className="text-center">
@@ -89,7 +90,7 @@ const MembershipLogosCarousel: React.FC = () => {
                   alt={association.alt}
                   width={800}
                   height={800}
-                  className="max-w-full object-contain mb-4
+                  className="max-w-full scrn-2000:max-w-7xl object-contain mb-4
                   h-44
                   scrn-400:h-28 
                   scrn-750:h-36 
