@@ -37,7 +37,7 @@ const MembershipLogosCarousel: React.FC = () => {
       scrn-1000:h-176
       scrn-1050:h-176 
       scrn-1100:h-208 
-      scrn-1150:h-184 
+      scrn-1150:h-208 
       scrn-1200:h-192 
       scrn-1250:h-184 
       scrn-1450:h-198

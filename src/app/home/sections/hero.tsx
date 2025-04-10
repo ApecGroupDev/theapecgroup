@@ -11,7 +11,8 @@ const Hero: React.FC = () => {
       scrn-800:h-124
       scrn-900:h-136
       scrn-1000:h-160
-      scrn-1150:h-152
+      scrn-1100:h-168
+      scrn-1150:h-168
       scrn-1200:h-160
       scrn-1250:h-160
       scrn-1300:h-176
@@ -56,7 +57,7 @@ const Hero: React.FC = () => {
 
       {/* Right Image Section */}
       <div className="w-full scrn-750:w-1/2 flex justify-center mt-auto">
-        <Image  
+        <Image
           src="/products/Fuel_Dispenser_Face_Left.png"
           alt="Hero"
           width={1011}
@@ -71,7 +72,8 @@ const Hero: React.FC = () => {
           scrn-600:w-80
           scrn-750:w-80
           scrn-900:w-110 scrn-900:mb-12
-          scrn-1000:w-120 scrn-1000:mb-12"
+          scrn-1000:w-120 scrn-1000:mb-12
+          scrn-1100:w-124"
         />
       </div>
     </div>

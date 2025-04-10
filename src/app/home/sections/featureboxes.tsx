@@ -55,7 +55,8 @@ const FeatureBoxes: React.FC = () => {
       scrn-800:h-152 
       scrn-900:h-176
       scrn-950:h-180
-      scrn-1000:h-176 
+      scrn-1000:h-176
+      scrn-1100:h-184 
       scrn-1150:h-184 
       scrn-1200:h-192 
       scrn-1250:h-198 
@@ -104,10 +105,10 @@ const FeatureBoxes: React.FC = () => {
         >
           WHY CHOOSE
         </motion.p>
-        <p className="hidden scrn-750:block scrn-900:hidden mb-4">
+        <p className="hidden scrn-750:block scrn-900:hidden scrn-1100:block mb-4">
           <span className="text-red-600"> APEC?</span>
         </p>
-        <p className=" scrn-750:hidden scrn-900:block mb-4">
+        <p className=" scrn-750:hidden scrn-900:block scrn-1100:hidden mb-4">
           <span className="text-white"> APEC?</span>
         </p>
       </div>
@@ -138,12 +139,14 @@ const FeatureBoxes: React.FC = () => {
             scrn-800:w-48 
             scrn-900:w-44 
             scrn-950:w-48
-            scrn-1000:w-60 
+            scrn-1000:w-60
+            scrn-1100:w-64
+            scrn-1150:w-72 
             scrn-1250:w-64 
             scrn-1500:w-72 
             scrn-1700:w-108 
             scrn-1900:w-116 
-            scrn-2k:w-128"
+            scrn-2000:w-128"
           >
             <div className="flex flex-col items-center justify-center 
               h-18 
@@ -155,11 +158,13 @@ const FeatureBoxes: React.FC = () => {
               scrn-900:h-28 
               scrn-950:h-32
               scrn-1000:h-40 
+              scrn-1100:h-44
+              scrn-1150:h-48
               scrn-1250:h-44 
               scrn-1500:h-56 
               scrn-1700:h-64 
               scrn-1900:h-72 
-              scrn-2k:h-96
+              scrn-2000:h-96
             ">
               {feature.icon}
               <h3 className="scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl scrn-1250:text-2xl font-bold text-center mt-4 text-gray-800">
@@ -191,7 +196,7 @@ const FeatureBoxes: React.FC = () => {
         scrn-1500:gap-20 
         scrn-1700:gap-24 
         scrn-1900:gap-28 
-        scrn-2k:gap-36"
+        scrn-2000:gap-36"
       >
         {features.slice(3).map((feature, index) => (
           <div
@@ -207,11 +212,13 @@ const FeatureBoxes: React.FC = () => {
             scrn-900:w-44 
             scrn-950:w-48
             scrn-1000:w-60 
+            scrn-1100:w-64
+            scrn-1150:w-72
             scrn-1250:w-64 
             scrn-1500:w-72 
             scrn-1700:w-108 
             scrn-1900:w-116 
-            scrn-2k:w-128"
+            scrn-2000:w-128"
           >
             <div className="flex flex-col items-center justify-center 
               h-18
@@ -223,11 +230,13 @@ const FeatureBoxes: React.FC = () => {
               scrn-900:h-28 
               scrn-950:h-32
               scrn-1000:h-40 
+              scrn-1100:h-44
+              scrn-1150:h-48
               scrn-1250:h-44 
               scrn-1500:h-56 
               scrn-1700:h-64 
               scrn-1900:h-72 
-              scrn-2k:h-96"
+              scrn-2000:h-96"
             >
               {feature.icon}
               <h3 className="scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl scrn-1250:text-2xl font-bold text-center mt-4 text-gray-800">
