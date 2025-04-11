@@ -31,7 +31,8 @@ const Hero: React.FC = () => {
     <div id="hero-section" className="relative flex items-center overflow-hidden
       h-116
       scrn-350:h-120
-      scrn-450:h-136 
+      scrn-400:h-132
+      scrn-450:h-140 
       scrn-600:h-120 
       scrn-750:h-116 
       scrn-800:h-116 
@@ -92,7 +93,16 @@ const Hero: React.FC = () => {
         </nav>
 
         <div>
-          <div className="scrn-450:-space-y-3 scrn-600:-space-y-3 scrn-750:space-y-0 scrn-800:-space-y-4 scrn-900:-space-y-6 scrn-1000:-space-y-4 scrn-1250:-space-y-6 scrn-1500:-space-y-8 scrn-1700:-space-y-8 scrn-1900:-space-y-12">
+          <div className=" 
+            scrn-750:space-y-0 
+            scrn-800:-space-y-4 
+            scrn-900:-space-y-6 
+            scrn-1000:-space-y-4 
+            scrn-1250:-space-y-6 
+            scrn-1500:-space-y-8 
+            scrn-1700:-space-y-8 
+            scrn-1900:-space-y-12"
+          >
             <p className="scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap
               text-7xl 
               scrn-600:text-8xl 

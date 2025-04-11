@@ -224,7 +224,7 @@ const HorizontalScrollSection: React.FC = () => {
             </motion.span>
             <p className="scrn-300:text-lg text-pretty scrn-450:text-2xl scrn-300:mt-4 scrn-450:mt-6 scrn-600:text-sm scrn-600:mt-4 scrn-750:text-base scrn-800:text-base scrn-900:text-lg scrn-1000:text-lg scrn-1250:text-xl scrn-1000:mt-10 scrn-1250:mt-10 scrn-1500:mt-16 scrn-1500:text-2xl scrn-1900:mt-20 scrn-1900:text-2xl scrn-2550:text-4xl tracking-widest">
               To be the most trusted and innovative partner in the <br className="scrn-450:block scrn-600:block scrn-750:hidden" /> petroleum <br className="scrn-450:hidden scrn-600:hidden scrn-750:block" />
-              equipment industry, leading with <br className="scrn-450:hidden scrn-600:block scrn-750:hidden" /> cutting-edge technology,<br className="scrn-450:hidden scrn-600:hidden scrn-750:block" />
+              equipment industry, leading with <br className="scrn-450:hidden scrn-600:block scrn-750:hidden" /> cutting-edge technology, <br className="scrn-450:hidden scrn-600:hidden scrn-750:block" />
               exceptional <br className="scrn-450:hidden scrn-600:block scrn-750:hidden" /> service, and sustainable practices.
             </p>
           </div>
@@ -236,7 +236,7 @@ const HorizontalScrollSection: React.FC = () => {
   return (
     <div className="relative w-full outline-dashed outline-lime-600 scrn-600:justify-end 
       h-128 
-      scrn-450:h-140 
+      scrn-400:h-132 
       scrn-600:h-124 
       scrn-600:mt-8 
       scrn-750:h-116 

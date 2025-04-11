@@ -70,7 +70,7 @@ body {
   }
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 400px) {
   .text-smart-animation {
     font-size: 2rem !important;
     -webkit-text-stroke: 1px black;
@@ -82,14 +82,14 @@ body {
   }
 }
 
-@media (min-width: 416px) and (max-width: 639px) {
+@media (min-width: 400px) and (max-width: 500px) {
   .text-smart-animation {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     -webkit-text-stroke: 1px black;
   }
 
   .text-maneuver-animation {
-    font-size: 2rem !important;
+    font-size: 1.4rem !important;
     -webkit-text-stroke: 1px black;
   }
 }

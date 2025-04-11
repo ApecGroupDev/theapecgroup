@@ -16,12 +16,12 @@ const ThirdSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col scrn-450:justify-end items-center justify-center text-white overflow-hidden 
+    <div className="flex flex-col items-center justify-center text-white overflow-hidden 
       scrn-1900:pt-48 
       scrn-2550:pb-96
 
       h-116
-      scrn-450:h-112 
+      scrn-400:h-110 
       scrn-600:h-112 
       scrn-750:h-120 
       scrn-800:h-116 
@@ -126,15 +126,14 @@ const ThirdSection: React.FC = () => {
                   exit={{ y: "-100%", opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   className={` 
-                    absolute scrn-1900:scale-y-110 font-bold 
-                    scrn-450:mt-4 
+                    absolute scrn-1900:scale-y-110 font-bold  
                     scrn-900:mt-6 
                     scrn-1000:mt-6 
                     scrn-1250:mt-6 
                     scrn-1500:-mt-12 
                     scrn-1900:mt-6
                     ${index === 0
-                      ? "text-black scrn-300:text-4xl scrn-450:text-6xl scrn-600:text-8xl scrn-750:text-9xl scrn-1000:text-9xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-10xl scrn-1250:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
+                      ? "text-black scrn-300:text-4xl scrn-450:text-4xl scrn-600:text-8xl scrn-750:text-9xl scrn-1000:text-9xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-10xl scrn-1250:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
                       : index === 1
                         ? "text-transparent text-smart-animation"
                         : "text-white text-[10rem] tracking-tight text-maneuver-animation"

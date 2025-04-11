@@ -28,7 +28,7 @@ const ChooseUs: React.FC = () => {
       scrn-2550:h-416"
     >
       {/* Heading */}
-      <span className="scrn-450:pt-40 text-3xl scrn-750:text-3xl scrn-800:text-4xl scrn-900:text-5xl scrn-1000:text-6xl scrn-1250:text-8xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold">
+      <span className="text-3xl scrn-750:text-3xl scrn-800:text-4xl scrn-900:text-5xl scrn-1000:text-6xl scrn-1250:text-8xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold">
         Why
         <motion.p
           ref={ref} // Set the ref to the element
@@ -55,7 +55,7 @@ const ChooseUs: React.FC = () => {
       scrn-1900:mt-12
 
       text-xs 
-      scrn-450:text-sm 
+      scrn-400:text-sm scrn-400:max-w-96
       scrn-900:text-lg 
       scrn-1000:text-xl 
       scrn-1000:max-w-2xl 
@@ -87,7 +87,7 @@ const ChooseUs: React.FC = () => {
       scrn-1900:mt-8
 
       text-xs
-      scrn-450:text-sm 
+      scrn-400:text-sm scrn-400:max-w-80 
       scrn-900:text-lg 
       scrn-1000:text-xl 
       scrn-1000:max-w-xl 
@@ -106,7 +106,7 @@ const ChooseUs: React.FC = () => {
 
       <p className="font-normal scrn-2550:leading-relaxed 
       text-xs
-      scrn-450:text-sm 
+      scrn-400:text-sm scrn-400:max-w-64 
       scrn-900:text-lg 
       scrn-1000:text-xl 
       scrn-1250:text-2xl 
