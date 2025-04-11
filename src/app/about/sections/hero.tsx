@@ -29,7 +29,8 @@ const Hero: React.FC = () => {
 
   return (
     <div id="hero-section" className="relative scrn-600:justify-center justify-between overflow-y-hidden
-      h-112 
+      h-116
+      scrn-350:h-120
       scrn-450:h-136 
       scrn-600:h-120 
       scrn-750:h-116 
@@ -44,7 +45,7 @@ const Hero: React.FC = () => {
       scrn-2550:h-320"
     >
 
-      <div className="absolute inset-0 z-10 scrn-600:mt-24 scrn-750:mt-0 hidden scrn-600:block overflow-hidden">
+      <div className="absolute inset-0 z-10 mt-24 scrn-750:mt-0 hidden scrn-600:block overflow-hidden">
         <Image
           src="/backgrounds/aboutUs/Hero_About.png"
           alt="Background"
@@ -55,7 +56,7 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className="absolute inset-0 z-10 scrn-600:hidden">
+      <div className="absolute inset-0 z-10 mt-12 scrn-600:hidden">
         <Image
           src="/backgrounds/aboutUs/Hero_About_Mobile.png"
           alt="Background"

@@ -10,7 +10,20 @@ const ChooseUs: React.FC = () => {
   });
 
   return (
-    <section className="py-20 px-10 flex flex-col scrn-450:justify-end items-center justify-center text-center outline-green-500 outline-dashed scrn-300:h-144 scrn-450:h-196 scrn-600:h-124 scrn-750:h-128 scrn-800:h-152 scrn-900:h-152 scrn-1000:h-176 scrn-1250:h-256 scrn-1500:h-256 scrn-1700:h-304 scrn-1900:h-320 scrn-2550:h-416 overflow-y-visible scrn-750:overflow-hidden">
+    <section className="py-20 px-10 flex flex-col scrn-450:justify-end items-center justify-center text-center outline-green-500 outline-dashed overflow-y-visible scrn-750:overflow-hidden
+      h-160
+      scrn-450:h-196 
+      scrn-600:h-124 
+      scrn-750:h-128 
+      scrn-800:h-152 
+      scrn-900:h-152 
+      scrn-1000:h-176 
+      scrn-1250:h-256 
+      scrn-1500:h-256 
+      scrn-1700:h-304 
+      scrn-1900:h-320 
+      scrn-2550:h-416"
+    >
       {/* Heading */}
       <span className="scrn-450:pt-40 text-3xl scrn-750:text-3xl scrn-800:text-4xl scrn-900:text-5xl scrn-1000:text-6xl scrn-1250:text-8xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold">
         Why
@@ -26,24 +39,108 @@ const ChooseUs: React.FC = () => {
       </span>
 
       {/* Content */}
-      <p className="scrn-300:text-sm scrn-450:text-sm scrn-900:text-lg scrn-1000:text-xl scrn-1000:max-w-2xl scrn-1250:max-w-4xl scrn-1500:max-w-6xl scrn-1700:max-w-6xl scrn-1900:max-w-6xl scrn-2550:max-w-7xl scrn-1250:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2550:text-4xl leading-normal font-normal scrn-2550:leading-relaxed tracking-wider scrn-300:mt-3 scrn-450:mt-6 scrn-600:mt-4 scrn-750:mt-4 scrn-800:mt-6 scrn-900:mt-8 scrn-1000:mt-10 scrn-1250:mt-12 scrn-1500:mt-12 scrn-1900:mt-12">
+      <p className="leading-normal font-normal scrn-2550:leading-relaxed tracking-wider 
+      mt-3 
+      scrn-450:mt-6 
+      scrn-600:mt-4 
+      scrn-750:mt-4 
+      scrn-800:mt-6 
+      scrn-900:mt-8 
+      scrn-1000:mt-10 
+      scrn-1250:mt-12 
+      scrn-1500:mt-12 
+      scrn-1900:mt-12
+
+      text-xs 
+      scrn-450:text-sm 
+      scrn-900:text-lg 
+      scrn-1000:text-xl 
+      scrn-1000:max-w-2xl 
+      scrn-1250:max-w-4xl 
+      scrn-1500:max-w-6xl 
+      scrn-1700:max-w-6xl 
+      scrn-1900:max-w-6xl 
+      scrn-2550:max-w-7xl 
+      scrn-1250:text-2xl 
+      scrn-1500:text-2xl 
+      scrn-1900:text-3xl 
+      crn-2550:text-4xl"
+      >
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
         environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
         and digital marketing for dispensaries. We also provide tailored financing options to help you grow your business.
       </p>
 
-      <p className="scrn-300:text-sm scrn-450:text-sm scrn-900:text-lg scrn-1000:text-xl scrn-1000:max-w-xl scrn-1250:max-w-3xl scrn-1500:max-w-4xl scrn-1700:max-w-4xl scrn-1900:max-w-4xl scrn-1250:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2550:text-4xl leading-normal font-normal scrn-2550:leading-relaxed tracking-wider scrn-300:mt-2 scrn-450:mt-4 scrn-600:mt-4 scrn-750:mt-4 scrn-800:mt-4 scrn-900:mt-4 scrn-1000:mt-8 scrn-1250:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">
+      <p className="leading-normal font-normal scrn-2550:leading-relaxed tracking-wider 
+      scrn-300:mt-2 
+      scrn-450:mt-4 
+      scrn-600:mt-4 
+      scrn-750:mt-4 
+      scrn-800:mt-4 
+      scrn-900:mt-4 
+      scrn-1000:mt-8 
+      scrn-1250:mt-6 
+      scrn-1500:mt-8 
+      scrn-1900:mt-8
+
+      text-xs
+      scrn-450:text-sm 
+      scrn-900:text-lg 
+      scrn-1000:text-xl 
+      scrn-1000:max-w-xl 
+      scrn-1250:max-w-3xl 
+      scrn-1500:max-w-4xl 
+      scrn-1700:max-w-4xl 
+      scrn-1900:max-w-4xl 
+      scrn-1250:text-2xl 
+      scrn-1500:text-2xl 
+      scrn-1900:text-3xl 
+      scrn-2550:text-4xl"
+      >
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
         with unparalleled expertise and commitment.
       </p>
 
-      <p className="scrn-300:text-sm scrn-450:text-sm scrn-900:text-lg scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2550:text-4xl font-normal scrn-2550:leading-relaxed scrn-300:mt-2 scrn-450:mt-4 scrn-600:mt-4 scrn-750:mt-4 scrn-800:mt-4 scrn-900:mt-4 scrn-1000:mt-6 scrn-1250:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">Let us partner with you to build success for your business.</p>
-      <p className="scrn-300:text-sm scrn-450:text-sm scrn-900:text-lg scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-2xl scrn-1900:text-3xl scrn-2550:text-4xl font-normal scrn-2550:leading-relaxed scrn-300:mt-2 scrn-450:mt-4 scrn-600:mt-4 scrn-750:mt-4 scrn-800:mt-4 scrn-900:mt-4 scrn-1000:mt-6 scrn-1250:mt-6 scrn-1500:mt-8 scrn-1900:mt-8">What can we do for you today?</p>
+      <p className="font-normal scrn-2550:leading-relaxed 
+      text-xs
+      scrn-450:text-sm 
+      scrn-900:text-lg 
+      scrn-1000:text-xl 
+      scrn-1250:text-2xl 
+      scrn-1500:text-2xl 
+      scrn-1900:text-3xl 
+      scrn-2550:text-4xl
+      
+      scrn-300:mt-2 
+      scrn-450:mt-4 
+      scrn-600:mt-4 
+      scrn-750:mt-4 
+      scrn-800:mt-4 
+      scrn-900:mt-4 
+      scrn-1000:mt-6 
+      scrn-1250:mt-6 
+      scrn-1500:mt-8 
+      scrn-1900:mt-8"><span>Let us partner with you to build success for your business.</span><br /><span>What can we do for you today?</span></p>
 
       {/* Contact Button */}
       <a
         href="mailto:Sales@TheAPECgroup.com"
-        className="px-16 scrn-300:mt-4 scrn-300:px-8 scrn-900:mt-4 mt-12 scrn-600:mt-4 scrn-750:px-12 scrn-750:text-sm scrn-1000:px-20 scrn-2550:px-28 py-1 border-2 border-red-600 text-gray-800 scrn-1000:text-lg scrn-1700:text-2xl scrn-1900:text-2xl scrn-2550:text-3xl font-regular rounded-lg hover:bg-red-600 hover:text-white transition duration-200"
+        className="px-16 font-regular py-1 border-2 rounded-lg hover:bg-red-600 border-red-600 text-gray-800  hover:text-white transition duration-200
+        mt-4 
+        scrn-900:mt-4 
+        scrn-600:mt-4 
+
+        scrn-300:px-8 
+        scrn-750:px-12 
+        scrn-1000:px-20 
+        scrn-2550:px-28 
+        
+        text-xs
+        scrn-750:text-sm 
+        scrn-1000:text-lg 
+        scrn-1700:text-2xl 
+        scrn-1900:text-2xl 
+        scrn-2550:text-3xl"
       >
         Sales@TheAPECgroup.com
       </a>
