@@ -28,15 +28,14 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div id="hero-section" className="relative flex items-center overflow-hidden
+    <div id="hero-section" className="relative flex items-center
       h-116
       scrn-350:h-120
       scrn-400:h-132
       scrn-450:h-140
       scrn-500:h-148 
       scrn-550:h-160
-      scrn-600:h-120 
-      scrn-750:h-116 
+      scrn-600:h-114 
       scrn-800:h-116 
       scrn-900:h-124 
       scrn-1000:h-132 
@@ -48,7 +47,10 @@ const Hero: React.FC = () => {
       scrn-2550:h-320"
     >
 
-      <div className="absolute inset-0 z-10 mt-24 scrn-750:mt-0 hidden scrn-600:block overflow-hidden">
+      <div className="absolute inset-0 z-10 hidden scrn-600:block
+        scrn-600:mt-28
+        scrn-650:mt-24"
+      >
         <Image
           src="/backgrounds/aboutUs/Hero_About.png"
           alt="Background"
@@ -73,8 +75,12 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className={`fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      <div className={`
+      scrn-600:pt-24
+      scrn-700:
+      fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
+
       >
         <nav className="">
           <ul className="flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest

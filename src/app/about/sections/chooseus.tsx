@@ -16,7 +16,7 @@ const ChooseUs: React.FC = () => {
     
       h-160
       scrn-450:h-196 
-      scrn-600:h-124 
+      scrn-600:h-148 
       scrn-750:h-128 
       scrn-800:h-152 
       scrn-900:h-152 
