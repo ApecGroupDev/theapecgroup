@@ -5,13 +5,13 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="text-black font-inter md:px-8 pt-28 scrn-300:pt-12 scrn-mobile:pt-16 sm:pt-12 md:pt-12 scrn-900:pt-12 xl:pt-24 scrn-1500:pt-40 scrn-1700:pt-52 scrn-1700:px-20 scrn-1900:pt-16 scrn-1900:px-24 scrn-2k:pt-48 scrn-2k:px-32">
+    <footer className="text-black font-inter scrn-750:px-8 pt-28 scrn-300:pt-12 scrn-:pt-16 scrn-600:pt-12 scrn-750:pt-12 scrn-900:pt-12 scrn-1250:pt-24 scrn-1500:pt-40 scrn-1700:pt-52 scrn-1700:px-20 scrn-1900:pt-16 scrn-1900:px-24 scrn-2550:pt-48 scrn-2550:px-32">
       <div className="grid grid-cols-3 gap-8 items-center text-gray-300">
         {/* Column 1: Social Media Icons */}
-        <div className="flex flex-col scrn-300:ms-2 scrn-mobile:ms-2 scrn-mobile:mb-4 sm:ms-4 sm:mt-8 md:mt-0 md:ms-0 items-start space-y-2 md:space-y-1 lg:space-y-2">
-          <span className="text-xs md:pt-6 xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg footer-text-dark whitespace-nowrap">For More Information</span>
-          <span className='text-xs md:ps-0 lg:ps-6 xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
-          <div className="scrn-300:hidden scrn-mobile:hidden sm:hidden md:flex space-x-4 md:ps-0 lg:ps-12">
+        <div className="flex flex-col scrn-300:ms-2 scrn-450:ms-2 scrn-450:mb-4 scrn-600:ms-4 scrn-600:mt-8 scrn-750:mt-0 scrn-750:ms-0 items-start space-y-2 scrn-750:space-y-1 scrn-1000:space-y-2">
+          <span className="text-xs scrn-750:pt-6 scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg footer-text-dark whitespace-nowrap">For More Information</span>
+          <span className='text-xs scrn-750:ps-0 scrn-1000:ps-6 scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
+          <div className="scrn-300:hidden scrn-450:hidden scrn-600:hidden scrn-750:flex space-x-4 scrn-750:ps-0 scrn-1000:ps-12">
             <SocialIcon
               url="https://twitter.com"
               target="_blank"
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
             />
           </div>
-          <div className="scrn-300:flex scrn-mobile:flex sm:flex md:hidden space-x-4">
+          <div className="scrn-300:flex scrn-450:flex scrn-600:flex scrn-750:hidden space-x-4">
             <SocialIcon
               url="https://twitter.com"
               target="_blank"
@@ -74,18 +74,18 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 2: Addresses and Contact Information */}
-        <div className="flex flex-col space-y-4 pb-4 items-center md:pt-2">
-          <p className="hidden md:block md:text-xs xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
+        <div className="flex flex-col space-y-4 pb-4 items-center scrn-750:pt-2">
+          <p className="hidden scrn-750:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2550:text-xl leading-relaxed footer-text-dark">
             Main Office: Atlanta, Georgia<br />
             4732-E North Royal Atlanta<br />
             Drive Tucker, GA 30084
           </p>
-          <p className="hidden md:block md:text-xs xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
+          <p className="hidden scrn-750:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2550:text-xl leading-relaxed footer-text-dark">
             Branch Office: Houston, Texas<br />
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <p className="hidden md:hidden lg:block md:text-xs xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2k:text-xl leading-relaxed footer-text-dark">
+          <p className="hidden scrn-750:hidden scrn-1000:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2550:text-xl leading-relaxed footer-text-dark">
             For More Info: 855-444-APEC<br />
             <a
               href="mailto:Service@TheAPECgroup.com"
@@ -104,14 +104,14 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 3: Logo */}
-        <div className="flex justify-center md:justify-end">
+        <div className="flex justify-center scrn-750:justify-end">
           <Link href="/">
             <Image
               src="/logos/APEC.png"
               alt="APEC Since 1989"
               height={1206}
               width={1315}
-              className="transition-transform duration-300 ease-in-out transform hover:scale-105 scrn-mobile:h-24 sm:h-32 md:h-28 lg:h-40 xl:h-52 scrn-1500:h-60 scrn-1700:h-72 scrn-1900:h-72 scrn-2k:h-80 w-auto"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 scrn-450:h-24 scrn-600:h-32 scrn-750:h-28 scrn-1000:h-40 scrn-1250:h-52 scrn-1500:h-60 scrn-1700:h-72 scrn-1900:h-72 scrn-2550:h-80 w-auto"
             />
           </Link>
         </div>
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright*/}
       <div className="w-full py-4">
-        <p className="text-xs xl:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2k:text-xl text-center text-gray-300 font-light">
+        <p className="text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2550:text-xl text-center text-gray-300 font-light">
           Copyright 2024–2025 © The APEC Group. All rights reserved.
         </p>
       </div>
