@@ -10,7 +10,10 @@ const ChooseUs: React.FC = () => {
   });
 
   return (
-    <section className="py-20 px-10 flex flex-col scrn-450:justify-end items-center justify-center text-center outline-green-500 outline-dashed overflow-y-visible scrn-750:overflow-hidden
+    <section className="flex flex-col items-center text-center outline-green-500 outline-dashed overflow-y-visible scrn-750:overflow-hidden
+      py-20 
+      px-10 
+    
       h-160
       scrn-450:h-196 
       scrn-600:h-124 

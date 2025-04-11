@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div id="hero-section" className="relative scrn-600:justify-center justify-between overflow-y-hidden
+    <div id="hero-section" className="relative flex items-center overflow-hidden
       h-116
       scrn-350:h-120
       scrn-450:h-136 
@@ -56,7 +56,10 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className="absolute inset-0 z-10 mt-12 scrn-600:hidden">
+      <div className="absolute inset-0 z-10 scrn-600:hidden
+        mt-12
+        scrn-350:mt-0"
+      >
         <Image
           src="/backgrounds/aboutUs/Hero_About_Mobile.png"
           alt="Background"
@@ -67,11 +70,17 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className={`fixed scrn-300:p-2 scrn-450:p-4 scrn-600:p-8 scrn-750:ms-0 scrn-300:space-y-4 scrn-600:space-y-8 scrn-750:space-y-0 scrn-1250:space-y-4 scrn-1500:space-y-4 scrn-1700:space-y-12 scrn-1900:space-y-4 scrn-2550:space-y-24 text-left scrn-750:p-12 scrn-900:my-8 scrn-1000:my-16 scrn-1250:my-24 scrn-1900:my-44 scrn-2550:my-40 transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      <div className={`fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
-        <nav className="pt-14 scrn-300:mt-20 scrn-450:mt-28">
-          <ul className="flex scrn-600:items-center space-x-2 scrn-300:text-2xs scrn-450:text-2xs scrn-600:text-3xs scrn-750:text-3xs scrn-800:text-2xs scrn-900:text-2xs scrn-1000:text-2xs scrn-1250:text-xs scrn-1500:text-md scrn-1700:text-md scrn-1900:text-xl scrn-2550:text-xl font-semibold text-gray-600 tracking-widest">
+        <nav className="">
+          <ul className="flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest
+            text-2xs 
+            scrn-600:text-xs
+            scrn-750:text-sm
+            scrn-1000:text-lg 
+            scrn-1500:text-xl"
+          >
             <li>
               <Link href="/home" className="hover:text-red-600">
                 Home
@@ -84,10 +93,34 @@ const Hero: React.FC = () => {
 
         <div>
           <div className="scrn-450:-space-y-3 scrn-600:-space-y-3 scrn-750:space-y-0 scrn-800:-space-y-4 scrn-900:-space-y-6 scrn-1000:-space-y-4 scrn-1250:-space-y-6 scrn-1500:-space-y-8 scrn-1700:-space-y-8 scrn-1900:-space-y-12">
-            <p className="text-7xl scrn-600:text-8xl scrn-750:text-8xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-9xl scrn-1250:text-10xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2550:text-18xl scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap">
+            <p className="scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap
+              text-7xl 
+              scrn-600:text-8xl 
+              scrn-750:text-8xl 
+              scrn-800:text-9xl 
+              scrn-900:text-9xl 
+              scrn-1000:text-9xl 
+              scrn-1250:text-10xl 
+              scrn-1500:text-12xl 
+              scrn-1700:text-13xl 
+              scrn-1900:text-14xl 
+              scrn-2550:text-18xl"
+            >
               ABOUT
             </p>
-            <p className="text-5xl scrn-600:text-7xl scrn-750:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1250:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-2550:text-13xl font-regular italic whitespace-nowrap">
+            <p className="font-regular italic whitespace-nowrap
+              text-5xl 
+              scrn-600:text-7xl 
+              scrn-750:text-7xl 
+              scrn-800:text-7xl 
+              scrn-900:text-8xl 
+              scrn-1000:text-8xl 
+              scrn-1250:text-9xl 
+              scrn-1500:text-10xl 
+              scrn-1700:text-10xl 
+              scrn-1900:text-11xl 
+              scrn-2550:text-13xl"
+            >
               US
             </p>
           </div>
