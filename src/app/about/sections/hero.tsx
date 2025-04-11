@@ -28,9 +28,23 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div id="hero-section" className="scrn-300:h-124 scrn-450:h-136 scrn-600:h-120 scrn-750:h-116 scrn-800:h-116 scrn-900:h-124 scrn-1000:h-132 scrn-1100:h-160 scrn-1250:h-176 scrn-1500:h-198 scrn-1700:h-224 scrn-1900:h-240 scrn-2550:h-320 scrn-600:justify-center justify-between overflow-hidden">
+    <div id="hero-section" className="relative scrn-600:justify-center justify-between overflow-y-hidden
+      h-112 
+      scrn-450:h-136 
+      scrn-600:h-120 
+      scrn-750:h-116 
+      scrn-800:h-116 
+      scrn-900:h-124 
+      scrn-1000:h-132 
+      scrn-1100:h-160 
+      scrn-1250:h-176 
+      scrn-1500:h-198 
+      scrn-1700:h-224 
+      scrn-1900:h-240 
+      scrn-2550:h-320"
+    >
 
-      <div className="absolute inset-0 z-10 scrn-600:mt-24 scrn-750:mt-0 hidden scrn-600:block">
+      <div className="absolute inset-0 z-10 scrn-600:mt-24 scrn-750:mt-0 hidden scrn-600:block overflow-hidden">
         <Image
           src="/backgrounds/aboutUs/Hero_About.png"
           alt="Background"
