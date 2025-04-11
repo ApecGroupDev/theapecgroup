@@ -32,7 +32,9 @@ const Hero: React.FC = () => {
       h-116
       scrn-350:h-120
       scrn-400:h-132
-      scrn-450:h-140 
+      scrn-450:h-140
+      scrn-500:h-148 
+      scrn-550:h-160
       scrn-600:h-120 
       scrn-750:h-116 
       scrn-800:h-116 
@@ -105,7 +107,7 @@ const Hero: React.FC = () => {
           >
             <p className="scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap
               text-7xl 
-              scrn-600:text-8xl 
+              scrn-500:text-8xl 
               scrn-750:text-8xl 
               scrn-800:text-9xl 
               scrn-900:text-9xl 
@@ -120,7 +122,7 @@ const Hero: React.FC = () => {
             </p>
             <p className="font-regular italic whitespace-nowrap
               text-5xl 
-              scrn-600:text-7xl 
+              scrn-500:text-7xl 
               scrn-750:text-7xl 
               scrn-800:text-7xl 
               scrn-900:text-8xl 

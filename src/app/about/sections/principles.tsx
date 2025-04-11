@@ -107,9 +107,12 @@ const HorizontalScrollSection: React.FC = () => {
       // MISSION
       content: (
         <div className="scrn-700:bg-[url('/backgrounds/Mission_bg.png')] justify-items-center bg-no-repeat bg-contain w-full overflow-hidden
-        pt-12
+          pt-12
+          scrn-500:pt-8
 
-        h-128"
+          h-128 
+          scrn-400:h-132
+          scrn-500:h-132"
         >
           <div className="flex flex-col ml-auto scrn-300:p-6 scrn-450:p-4 scrn-300:text-center scrn-450:text-center scrn-600:items-end scrn-600:mt-4 scrn-600:me-4 scrn-750:mt-6 scrn-750:me-6 scrn-800:mt-8 scrn-800:me-8 scrn-900:mt-8 scrn-900:me-10 scrn-1000:mt-12 scrn-1000:me-12 scrn-1250:mt-24 scrn-1250:me-20 scrn-1500:mt-20 scrn-1500:me-24 scrn-1900:mt-28 scrn-1900:me-32">
             <span className="text-6xl scrn-300:text-4xl scrn-450:mt-6 scrn-600:text-4xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1250:text-7xl scrn-2550:text-9xl italic">Our</span>
@@ -122,9 +125,31 @@ const HorizontalScrollSection: React.FC = () => {
             >
               MISSION
             </motion.span>
-            <p className="scrn-300:text-lg text-pretty scrn-450:text-2xl scrn-300:mt-4 scrn-450:mt-6 scrn-600:mt-4 scrn-600:text-sm scrn-750:text-base scrn-800:text-base scrn-900:text-lg scrn-1000:text-lg scrn-1250:text-xl scrn-1000:mt-10 scrn-1500:mt-16 scrn-1500:text-2xl scrn-900:mt-6 scrn-1900:mt-20 scrn-1900:text-2xl scrn-2550:text-4xl tracking-widest scrn-600:text-end">
-              To empower businesses with reliable, innovative, and efficient<br className="scrn-450:hidden" />
-              petroleum equipment solutions that drive success<br className="scrn-450:hidden" />
+            <p className="text-pretty tracking-widest scrn-600:text-end
+              scrn-300:text-lg 
+              scrn-450:text-lg 
+              scrn-600:text-sm
+              scrn-750:text-base
+              scrn-800:text-base
+              scrn-900:text-lg
+              scrn-1000:text-lg
+              scrn-1250:text-xl
+              scrn-1500:text-2xl
+              scrn-1900:text-2xl
+              scrn-2550:text-4xl
+
+              scrn-500:mx-12
+            
+              scrn-300:mt-4
+              scrn-450:mt-6 
+              scrn-600:mt-4
+              scrn-1000:mt-10 
+              scrn-1500:mt-16 
+              scrn-900:mt-6 
+              scrn-1900:mt-20"
+            >
+              To empower businesses with reliable, innovative, and efficient <br className="scrn-450:hidden" />
+              petroleum equipment solutions that drive success <br className="scrn-450:hidden" />
               and ensure operational excellence.
             </p>
           </div>
@@ -135,10 +160,13 @@ const HorizontalScrollSection: React.FC = () => {
       // VALUES
       content: (
         <div className="flex flex-col scrn-300:mx-4 mx-auto items-center text-center w-full overflow-hidden
-        pt-12
+          pt-12
+          scrn-500:pt-0
 
-        h-128
-        ">
+          h-128 
+          scrn-400:h-132
+          scrn-500:h-124"
+        >
           <span className="text-6xl scrn-300:text-4xl scrn-300:mt-4 scrn-450:mt-6 scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1250:text-7xl scrn-2550:text-9xl italic">Our</span>
           <motion.span
             ref={valuesRef}
@@ -207,9 +235,12 @@ const HorizontalScrollSection: React.FC = () => {
       // VISION
       content: (
         <div className="scrn-700:bg-[url('/backgrounds/Vision_bg.png')] bg-no-repeat bg-right bg-contain w-full overflow-hidden
-        pt-12
+          pt-12
+          scrn-500:pt-8
 
-        h-128"
+          h-128 
+          scrn-400:h-132
+          scrn-500:h-124"
         >
           <div className="flex flex-col scrn-300:p-6 scrn-450:p-4 scrn-300:text-center scrn-450:text-center scrn-600:mt-4 scrn-600:ms-4 scrn-750:mt-6 scrn-750:ms-6 scrn-800:mt-8 scrn-800:ms-8 scrn-900:mt-8 scrn-900:ml-10 scrn-1000:mt-12 scrn-1000:ms-12 scrn-1250:mt-24 scrn-1250:ml-20 scrn-1500:ml-24 scrn-1500:mt-20 scrn-1900:ml-32 scrn-1900:mt-28">
             <span className="text-6xl scrn-300:text-4xl scrn-450:mt-6 scrn-600:text-4xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1250:text-7xl scrn-1500:text-7xl scrn-1900:text-7xl scrn-2550:text-9xl italic">Our</span>
@@ -222,7 +253,28 @@ const HorizontalScrollSection: React.FC = () => {
             >
               VISION
             </motion.span>
-            <p className="scrn-300:text-lg text-pretty scrn-450:text-2xl scrn-300:mt-4 scrn-450:mt-6 scrn-600:text-sm scrn-600:mt-4 scrn-750:text-base scrn-800:text-base scrn-900:text-lg scrn-1000:text-lg scrn-1250:text-xl scrn-1000:mt-10 scrn-1250:mt-10 scrn-1500:mt-16 scrn-1500:text-2xl scrn-1900:mt-20 scrn-1900:text-2xl scrn-2550:text-4xl tracking-widest">
+            <p className="text-pretty tracking-widest
+            scrn-300:text-lg 
+              scrn-450:text-lg 
+              scrn-600:text-sm
+              scrn-750:text-base
+              scrn-800:text-base
+              scrn-900:text-lg
+              scrn-1000:text-lg
+              scrn-1250:text-xl
+              scrn-1500:text-2xl
+              scrn-1900:text-2xl
+              scrn-2550:text-4xl
+
+              scrn-500:mx-12
+            
+              scrn-300:mt-4
+              scrn-450:mt-6 
+              scrn-600:mt-4
+              scrn-1000:mt-10 
+              scrn-1500:mt-16 
+              scrn-900:mt-6 
+              scrn-1900:mt-20">
               To be the most trusted and innovative partner in the <br className="scrn-450:block scrn-600:block scrn-750:hidden" /> petroleum <br className="scrn-450:hidden scrn-600:hidden scrn-750:block" />
               equipment industry, leading with <br className="scrn-450:hidden scrn-600:block scrn-750:hidden" /> cutting-edge technology, <br className="scrn-450:hidden scrn-600:hidden scrn-750:block" />
               exceptional <br className="scrn-450:hidden scrn-600:block scrn-750:hidden" /> service, and sustainable practices.
@@ -236,7 +288,8 @@ const HorizontalScrollSection: React.FC = () => {
   return (
     <div className="relative w-full outline-dashed outline-lime-600 scrn-600:justify-end 
       h-128 
-      scrn-400:h-132 
+      scrn-400:h-132
+      scrn-500:h-124
       scrn-600:h-124 
       scrn-600:mt-8 
       scrn-750:h-116 
