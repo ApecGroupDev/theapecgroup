@@ -22,18 +22,18 @@ const ChooseUs: React.FC = () => {
       scrn-900:h-164 
       scrn-1000:h-188
       scrn-1100:h-195 
-      scrn-1250:h-256 
+      scrn-1200:h-208 
       scrn-1500:h-256 
       scrn-1700:h-304 
       scrn-1900:h-320 
       scrn-2550:h-416"
     >
       {/* Heading */}
-      <span className="text-3xl scrn-750:text-3xl scrn-800:text-4xl scrn-900:text-5xl scrn-1000:text-6xl scrn-1250:text-8xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold">
+      <span className="text-3xl scrn-750:text-3xl scrn-800:text-4xl scrn-900:text-5xl scrn-1000:text-6xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold">
         Why
         <motion.p
           ref={ref} // Set the ref to the element
-          className="text-4xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-6xl scrn-1000:text-7xl scrn-1250:text-8xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold text-red-600"
+          className="text-4xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-6xl scrn-1000:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold text-red-600"
           initial={{ y: 70, opacity: 0 }}
           animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -50,8 +50,7 @@ const ChooseUs: React.FC = () => {
       scrn-750:mt-4 
       scrn-800:mt-6 
       scrn-900:mt-8 
-      scrn-1000:mt-10 
-      scrn-1250:mt-12 
+      scrn-1000:mt-10  
       scrn-1500:mt-12 
       scrn-1900:mt-12
 
@@ -77,8 +76,7 @@ const ChooseUs: React.FC = () => {
       scrn-750:mt-4 
       scrn-800:mt-4 
       scrn-900:mt-4 
-      scrn-1000:mt-8 
-      scrn-1250:mt-6 
+      scrn-1000:mt-8  
       scrn-1500:mt-8 
       scrn-1900:mt-8
 
@@ -101,7 +99,6 @@ const ChooseUs: React.FC = () => {
       scrn-400:text-sm 
       scrn-900:text-base
       scrn-1000:text-lg 
-      scrn-1250:text-2xl 
       scrn-1500:text-2xl 
       scrn-1900:text-3xl 
       scrn-2550:text-4xl
@@ -116,8 +113,7 @@ const ChooseUs: React.FC = () => {
       scrn-750:mt-4 
       scrn-800:mt-4 
       scrn-900:mt-4 
-      scrn-1000:mt-6 
-      scrn-1250:mt-6 
+      scrn-1000:mt-6  
       scrn-1500:mt-8 
       scrn-1900:mt-8"><span>Let us partner with you to build success for your business.</span><br /><span>What can we do for you today?</span></p>
 
