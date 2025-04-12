@@ -2,7 +2,6 @@ import ThirdSection from "./sections/3rdsection";
 import ChooseUs from "./sections/chooseus";
 import Hero from "./sections/hero";
 import HorizontalScrollSection from "./sections/principles";
-import Footer from "./sections/footerAbout";
 
 const About: React.FC = () => {
   return (
@@ -12,7 +11,6 @@ const About: React.FC = () => {
       <HorizontalScrollSection />
       <ThirdSection />
       <ChooseUs />
-      <Footer />
     </div>
   );
 };

@@ -17,13 +17,15 @@ const ThirdSection: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center text-white overflow-hidden 
+      scrn-600:pt-32
+      scrn-700:pt-20
       scrn-1900:pt-48 
       scrn-2550:pb-96
 
       h-116
       scrn-400:h-110 
       scrn-600:h-120 
-      scrn-750:h-120 
+      scrn-700:h-120 
       scrn-800:h-116 
       scrn-900:h-128 
       scrn-1000:h-152 
@@ -35,7 +37,7 @@ const ThirdSection: React.FC = () => {
     >
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
-        <div className="flex scrn-300:gap-4 scrn-450:gap-2 scrn-500:gap-3 scrn-600:gap-4 scrn-750:gap-4 scrn-800:gap-4 scrn-1000:gap-6 scrn-1250:gap-8 scrn-1500:gap-12 scrn-1900:gap-0">
+        <div className="flex scrn-300:gap-4 scrn-450:gap-2 scrn-500:gap-3 scrn-600:gap-4 scrn-700:gap-6 scrn-800:gap-4 scrn-1000:gap-6 scrn-1250:gap-8 scrn-1500:gap-12 scrn-1900:gap-0">
           {/* Left Side (APEC + OUT) */}
           <div className="w-auto flex flex-col flex-1">
 
@@ -47,7 +49,7 @@ const ThirdSection: React.FC = () => {
                   scrn-450:text-2xl
                   scrn-500:text-3xl 
                   scrn-600:text-4xl 
-                  scrn-750:text-5xl 
+                  scrn-700:text-5xl 
                   scrn-800:text-5xl 
                   scrn-900:text-5xl 
                   scrn-1000:text-5xl 
@@ -64,7 +66,7 @@ const ThirdSection: React.FC = () => {
                   scrn-450:text-lg
                   scrn-500:text-2xl 
                   scrn-600:text-2xl 
-                  scrn-750:text-3xl 
+                  scrn-700:text-3xl 
                   scrn-800:text-3xl 
                   scrn-900:text-3xl 
                   scrn-1000:text-3xl 
@@ -84,7 +86,7 @@ const ThirdSection: React.FC = () => {
                 text-4xl 
                 scrn-450:text-5xl 
                 scrn-600:text-7xl 
-                scrn-750:text-8xl 
+                scrn-700:text-8xl 
                 scrn-800:text-9xl 
                 scrn-900:text-9xl 
                 scrn-1000:text-9xl 
@@ -113,6 +115,7 @@ const ThirdSection: React.FC = () => {
                 mt-7
                 scrn-450:mt-4 
                 scrn-600:mt-6
+                scrn-700:mt-12
                 scrn-900:mt-6 
                 scrn-1000:mt-6 
                 scrn-1250:mt-24 
@@ -128,16 +131,20 @@ const ThirdSection: React.FC = () => {
                   animate={{ y: "0%", opacity: 1 }}
                   exit={{ y: "-100%", opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
-                  className={` 
+                  className={`
+                  mt-7
+                  scrn-450:mt-4 
+                  scrn-600:mt-6
+                  scrn-700:mt-12
+                  scrn-900:mt-6 
+                  scrn-1000:mt-6 
+                  scrn-1250:mt-24 
+                  scrn-1700:mt-32 
+                  scrn-1900:mt-6 
+                  scrn-2550:mt-80 
                     absolute scrn-1900:scale-y-110 font-bold
-                    scrn-500:mt-6  
-                    scrn-900:mt-6 
-                    scrn-1000:mt-6 
-                    scrn-1250:mt-6 
-                    scrn-1500:-mt-12 
-                    scrn-1900:mt-6
                     ${index === 0
-                      ? "text-black scrn-300:text-4xl scrn-450:text-4xl scrn-500:text-5xl scrn-600:text-6xl scrn-750:text-9xl scrn-1000:text-9xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-10xl scrn-1250:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
+                      ? "text-black scrn-300:text-4xl scrn-450:text-4xl scrn-500:text-5xl scrn-600:text-6xl scrn-700:text-7xl scrn-1000:text-9xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-10xl scrn-1250:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl"
                       : index === 1
                         ? "text-transparent text-smart-animation"
                         : "text-white text-[10rem] tracking-tight text-maneuver-animation"
@@ -164,7 +171,7 @@ const ThirdSection: React.FC = () => {
                 scrn-450:text-lg 
                 scrn-500:text-xl
                 scrn-600:text-2xl 
-                scrn-750:text-3xl 
+                scrn-700:text-3xl 
                 scrn-800:text-3xl 
                 scrn-900:text-3xl 
                 scrn-1000:text-3xl 
