@@ -19,7 +19,7 @@ const ChooseUs: React.FC = () => {
       scrn-600:h-148 
       scrn-700:h-148
       scrn-800:h-152 
-      scrn-900:h-152 
+      scrn-900:h-164 
       scrn-1000:h-176 
       scrn-1250:h-256 
       scrn-1500:h-256 
@@ -57,10 +57,11 @@ const ChooseUs: React.FC = () => {
       scrn-400:max-w-96
       scrn-600:max-w-md
       scrn-800:max-w-lg
+      scrn-900:max-w-2xl
 
       text-xs 
       scrn-400:text-sm
-      scrn-900:text-lg 
+      scrn-900:text-base 
       scrn-1000:text-xl"
       >
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
@@ -83,10 +84,11 @@ const ChooseUs: React.FC = () => {
       scrn-400:max-w-80
       scrn-600:max-w-sm
       scrn-800:max-w-md
+      scrn-900:max-w-lg
 
       text-xs
       scrn-400:text-sm 
-      scrn-900:text-lg 
+      scrn-900:text-base 
       scrn-1000:text-xl"
       >
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
@@ -96,7 +98,7 @@ const ChooseUs: React.FC = () => {
       <p className="font-normal scrn-2550:leading-relaxed 
       text-xs
       scrn-400:text-sm 
-      scrn-900:text-lg 
+      scrn-900:text-base
       scrn-1000:text-xl 
       scrn-1250:text-2xl 
       scrn-1500:text-2xl 
@@ -105,6 +107,7 @@ const ChooseUs: React.FC = () => {
 
       scrn-400:max-w-64
       scrn-800:max-w-xs
+      scrn-900:max-w-md
       
       scrn-300:mt-2 
       scrn-450:mt-4 
