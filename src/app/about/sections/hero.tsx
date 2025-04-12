@@ -44,7 +44,8 @@ const Hero: React.FC = () => {
       scrn-950:h-132
       scrn-1000:h-140
       scrn-1050:h-144
-      scrn-1100:h-160 
+      scrn-1100:h-148
+      scrn-1150:h-152
       scrn-1250:h-176 
       scrn-1500:h-198 
       scrn-1700:h-224 
@@ -55,7 +56,8 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-10 hidden scrn-600:block
         scrn-600:mt-28
         scrn-650:mt-24
-        scrn-800:mt-4"
+        scrn-800:mt-4
+        scrn-1100:mt-0"
       >
         <Image
           src="/backgrounds/aboutUs/Hero_About.png"

@@ -19,6 +19,7 @@ const ThirdSection: React.FC = () => {
     <div className="flex flex-col items-center justify-center text-white overflow-hidden 
       scrn-600:pt-32
       scrn-700:pt-20
+      scrn-1100:pt-0
       scrn-1900:pt-48 
       scrn-2550:pb-96
 
@@ -29,7 +30,8 @@ const ThirdSection: React.FC = () => {
       scrn-800:h-128 
       scrn-900:h-128
       scrn-950:h-132 
-      scrn-1000:h-152 
+      scrn-1000:h-152
+      scrn-1100:h-172 
       scrn-1250:h-192 
       scrn-1500:h-192 
       scrn-1700:h-208 
