@@ -158,15 +158,18 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1000px) and (max-width: 1099px) {
   .text-smart-animation {
-    font-size: 8rem !important;
+    font-size: 6rem !important;
     margin-left: 3rem;
+    margin-bottom: 1rem;
+    -webkit-text-stroke: 3px black;
   }
 
   .text-maneuver-animation {
-    font-size: 5rem !important;
-    margin-left: 3rem;
+    font-size: 4rem !important;
+    margin-left: 4rem;
+    -webkit-text-stroke: 3px black;
   }
 }
 

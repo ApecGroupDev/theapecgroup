@@ -38,7 +38,7 @@ const ThirdSection: React.FC = () => {
     >
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
-        <div className="flex scrn-300:gap-4 scrn-450:gap-2 scrn-500:gap-3 scrn-600:gap-4 scrn-700:gap-6 scrn-800:gap-8 scrn-900:gap-12 scrn-1000:gap-6 scrn-1250:gap-8 scrn-1500:gap-12 scrn-1900:gap-0">
+        <div className="flex scrn-300:gap-4 scrn-450:gap-2 scrn-500:gap-3 scrn-600:gap-4 scrn-700:gap-6 scrn-800:gap-8 scrn-900:gap-12 scrn-1000:gap-12 scrn-1250:gap-8 scrn-1500:gap-12 scrn-1900:gap-0">
           {/* Left Side (APEC + OUT) */}
           <div className="w-auto flex flex-col flex-1">
 
@@ -53,7 +53,7 @@ const ThirdSection: React.FC = () => {
                   scrn-700:text-5xl 
                   scrn-800:text-5xl 
                   scrn-900:text-5xl 
-                  scrn-1000:text-5xl 
+                  scrn-1000:text-6xl 
                   scrn-1250:text-5xl 
                   scrn-1500:text-6xl 
                   scrn-1700:text-8xl 
@@ -119,7 +119,7 @@ const ThirdSection: React.FC = () => {
                 scrn-700:mt-12
                 scrn-800:mt-12
                 scrn-900:mt-16 
-                scrn-1000:mt-6 
+                scrn-1000:mt-24 
                 scrn-1250:mt-24 
                 scrn-1700:mt-32 
                 scrn-1900:mt-6 
@@ -140,7 +140,7 @@ const ThirdSection: React.FC = () => {
                   scrn-700:mt-12
                   scrn-800:mt-12
                   scrn-900:mt-10 
-                  scrn-1000:mt-6 
+                  scrn-1000:mt-12 
                   scrn-1250:mt-24 
                   scrn-1700:mt-32 
                   scrn-1900:mt-6 
