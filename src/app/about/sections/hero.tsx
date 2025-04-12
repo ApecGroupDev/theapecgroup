@@ -38,7 +38,8 @@ const Hero: React.FC = () => {
       scrn-600:h-114
       scrn-700:h-124 
       scrn-750:h-128
-      scrn-800:h-116 
+      scrn-800:h-120
+      scrn-850:h-124 
       scrn-900:h-124 
       scrn-1000:h-132 
       scrn-1100:h-160 
@@ -51,7 +52,8 @@ const Hero: React.FC = () => {
 
       <div className="absolute inset-0 z-10 hidden scrn-600:block
         scrn-600:mt-28
-        scrn-650:mt-24"
+        scrn-650:mt-24
+        scrn-800:mt-4"
       >
         <Image
           src="/backgrounds/aboutUs/Hero_About.png"
@@ -79,7 +81,7 @@ const Hero: React.FC = () => {
 
       <div className={`
       scrn-600:pt-24
-      scrn-700:
+      scrn-800:pb-24
       fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
 

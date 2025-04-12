@@ -45,7 +45,7 @@ const ChooseUs: React.FC = () => {
       <p className="leading-normal font-normal scrn-2550:leading-relaxed tracking-wider 
       mt-3 
       scrn-450:mt-6 
-      scrn-600:mt-4 
+      scrn-600:mt-6 
       scrn-750:mt-4 
       scrn-800:mt-6 
       scrn-900:mt-8 
@@ -54,20 +54,14 @@ const ChooseUs: React.FC = () => {
       scrn-1500:mt-12 
       scrn-1900:mt-12
 
+      scrn-400:max-w-96
+      scrn-600:max-w-md
+      scrn-800:max-w-lg
+
       text-xs 
-      scrn-400:text-sm scrn-400:max-w-96
+      scrn-400:text-sm
       scrn-900:text-lg 
-      scrn-1000:text-xl 
-      scrn-1000:max-w-2xl 
-      scrn-1250:max-w-4xl 
-      scrn-1500:max-w-6xl 
-      scrn-1700:max-w-6xl 
-      scrn-1900:max-w-6xl 
-      scrn-2550:max-w-7xl 
-      scrn-1250:text-2xl 
-      scrn-1500:text-2xl 
-      scrn-1900:text-3xl 
-      crn-2550:text-4xl"
+      scrn-1000:text-xl"
       >
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
         environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
@@ -77,7 +71,7 @@ const ChooseUs: React.FC = () => {
       <p className="leading-normal font-normal scrn-2550:leading-relaxed tracking-wider 
       scrn-300:mt-2 
       scrn-450:mt-4 
-      scrn-600:mt-4 
+      scrn-600:mt-6 
       scrn-750:mt-4 
       scrn-800:mt-4 
       scrn-900:mt-4 
@@ -86,19 +80,14 @@ const ChooseUs: React.FC = () => {
       scrn-1500:mt-8 
       scrn-1900:mt-8
 
+      scrn-400:max-w-80
+      scrn-600:max-w-sm
+      scrn-800:max-w-md
+
       text-xs
-      scrn-400:text-sm scrn-400:max-w-80 
+      scrn-400:text-sm 
       scrn-900:text-lg 
-      scrn-1000:text-xl 
-      scrn-1000:max-w-xl 
-      scrn-1250:max-w-3xl 
-      scrn-1500:max-w-4xl 
-      scrn-1700:max-w-4xl 
-      scrn-1900:max-w-4xl 
-      scrn-1250:text-2xl 
-      scrn-1500:text-2xl 
-      scrn-1900:text-3xl 
-      scrn-2550:text-4xl"
+      scrn-1000:text-xl"
       >
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
         with unparalleled expertise and commitment.
@@ -106,17 +95,20 @@ const ChooseUs: React.FC = () => {
 
       <p className="font-normal scrn-2550:leading-relaxed 
       text-xs
-      scrn-400:text-sm scrn-400:max-w-64 
+      scrn-400:text-sm 
       scrn-900:text-lg 
       scrn-1000:text-xl 
       scrn-1250:text-2xl 
       scrn-1500:text-2xl 
       scrn-1900:text-3xl 
       scrn-2550:text-4xl
+
+      scrn-400:max-w-64
+      scrn-800:max-w-xs
       
       scrn-300:mt-2 
       scrn-450:mt-4 
-      scrn-600:mt-4 
+      scrn-600:mt-6 
       scrn-750:mt-4 
       scrn-800:mt-4 
       scrn-900:mt-4 
@@ -131,7 +123,7 @@ const ChooseUs: React.FC = () => {
         className="px-16 font-regular py-1 border-2 rounded-lg hover:bg-red-600 border-red-600 text-gray-800  hover:text-white transition duration-200
         mt-4 
         scrn-900:mt-4 
-        scrn-600:mt-4 
+        scrn-600:mt-6
 
         scrn-300:px-8 
         scrn-750:px-12 
