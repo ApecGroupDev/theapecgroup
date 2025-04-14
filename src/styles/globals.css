@@ -188,6 +188,21 @@ body {
   }
 }
 
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .text-smart-animation {
+    font-size: 9rem !important;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    -webkit-text-stroke: 3px black;
+  }
+
+  .text-maneuver-animation {
+    font-size: 5rem !important;
+    margin-left: 0%;
+    -webkit-text-stroke: 3px black;
+  }
+}
+
 @media (min-width: 1500px) and (max-width: 1600px) {
   .text-smart-animation {
     font-size: 13rem !important;

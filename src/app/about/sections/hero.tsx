@@ -47,6 +47,7 @@ const Hero: React.FC = () => {
       scrn-1100:h-148
       scrn-1150:h-152
       scrn-1200:h-160 
+      scrn-1300:h-172
       scrn-1500:h-198 
       scrn-1700:h-224 
       scrn-1900:h-240 
@@ -85,7 +86,9 @@ const Hero: React.FC = () => {
 
       <div className={`
       scrn-600:pt-24
-      scrn-800:pb-24
+      scrn-800:pb-20
+      scrn-1000:pb-12
+      scrn-1200:pb-0
       fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
 
