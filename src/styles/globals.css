@@ -203,14 +203,15 @@ body {
   }
 }
 
-@media (min-width: 1500px) and (max-width: 1600px) {
+@media (min-width: 1500px) and (max-width: 1599px) {
   .text-smart-animation {
-    font-size: 13rem !important;
+    font-size: 9rem !important;
   }
 
   .text-maneuver-animation {
-    font-size: 9rem !important;
-    margin-left: 4rem;
+    font-size: 6rem !important;
+    padding-left: 3rem;
+    -webkit-text-stroke: 3px black;
   }
 }
 

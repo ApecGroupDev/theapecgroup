@@ -25,7 +25,8 @@ const ChooseUs: React.FC = () => {
       scrn-1200:h-208 
       scrn-1300:h-224
       scrn-1400:h-232
-      scrn-1500:h-256 
+      scrn-1500:h-256
+      scrn-1550:h-260 
       scrn-1700:h-304 
       scrn-1900:h-320 
       scrn-2550:h-416"
@@ -61,6 +62,7 @@ const ChooseUs: React.FC = () => {
       scrn-800:max-w-lg
       scrn-900:max-w-2xl
       scrn-1300:max-w-3xl
+      scrn-1500:max-w-4xl
 
       text-xs 
       scrn-400:text-sm
@@ -89,6 +91,7 @@ const ChooseUs: React.FC = () => {
       scrn-800:max-w-md
       scrn-900:max-w-lg
       scrn-1300:max-w-xl
+      scrn-1500:max-w-2xl
 
       text-xs
       scrn-400:text-sm 
@@ -114,6 +117,7 @@ const ChooseUs: React.FC = () => {
       scrn-800:max-w-xs
       scrn-900:max-w-md
       scrn-1300:max-w-lg
+      scrn-1500:max-w-xl
       
       scrn-300:mt-2 
       scrn-450:mt-4 
@@ -132,6 +136,7 @@ const ChooseUs: React.FC = () => {
         mt-4 
         scrn-900:mt-4 
         scrn-600:mt-6
+        scrn-1500:mt-16
 
         scrn-300:px-8 
         scrn-750:px-12 

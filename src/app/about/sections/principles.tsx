@@ -122,7 +122,11 @@ const HorizontalScrollSection: React.FC = () => {
           scrn-1000:h-152
           scrn-1100:h-168
           scrn-1200:h-188
-          scrn-1300:h-198"
+          scrn-1300:h-198
+          scrn-1400:h-216
+          scrn-1450:h-224
+          scrn-1500:h-208 
+          scrn-1550:h-216"
         >
           <div className="flex flex-col ml-auto scrn-300:p-6 scrn-450:p-4 text-center scrn-700:text-end scrn-600:mt-4 scrn-600:me-4 scrn-750:mt-6 scrn-750:me-6 scrn-800:mt-8 scrn-800:me-8 scrn-900:mt-8 scrn-900:me-10 scrn-1000:mt-12 scrn-1000:me-12 scrn-1250:mt-24 scrn-1250:me-20 scrn-1500:mt-20 scrn-1500:me-24 scrn-1900:mt-28 scrn-1900:me-32">
             <span className="text-6xl scrn-300:text-4xl scrn-450:mt-6 scrn-600:text-5xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-2550:text-9xl italic">Our</span>
@@ -190,7 +194,11 @@ const HorizontalScrollSection: React.FC = () => {
           scrn-1000:h-152
           scrn-1100:h-168
           scrn-1200:h-188
-          scrn-1300:h-198"
+          scrn-1300:h-198
+          scrn-1400:h-216
+          scrn-1450:h-224
+          scrn-1500:h-208 
+          scrn-1550:h-216"
         >
           <span className="text-6xl scrn-300:text-4xl scrn-300:mt-4 scrn-450:mt-6 scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1250:text-7xl scrn-2550:text-9xl italic">Our</span>
           <motion.span
@@ -275,7 +283,11 @@ const HorizontalScrollSection: React.FC = () => {
           scrn-1000:h-152
           scrn-1100:h-168
           scrn-1200:h-188
-          scrn-1300:h-198"
+          scrn-1300:h-198
+          scrn-1400:h-216
+          scrn-1450:h-224
+          scrn-1500:h-208 
+          scrn-1550:h-216"
         >
           <div className="flex flex-col scrn-300:p-6 scrn-450:p-4 text-center scrn-700:text-start scrn-700:items-start scrn-600:mt-4 scrn-600:ms-4 scrn-750:mt-6 scrn-750:ms-6 scrn-800:mt-8 scrn-800:ms-8 scrn-900:mt-8 scrn-900:ml-10 scrn-1000:mt-12 scrn-1000:ms-12 scrn-1250:mt-24 scrn-1250:ml-20 scrn-1500:ml-24 scrn-1500:mt-20 scrn-1900:ml-32 scrn-1900:mt-28">
             <span className="text-6xl scrn-300:text-4xl scrn-450:mt-6 scrn-600:text-5xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1500:text-7xl scrn-1900:text-7xl scrn-2550:text-9xl italic">Our</span>
@@ -341,6 +353,7 @@ const HorizontalScrollSection: React.FC = () => {
       scrn-1400:h-216
       scrn-1450:h-224
       scrn-1500:h-208 
+      scrn-1550:h-216
       scrn-1700:h-256 
       scrn-1900:h-240 
       scrn-2550:h-352"
