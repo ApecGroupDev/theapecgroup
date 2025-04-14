@@ -142,6 +142,7 @@ const ThirdSection: React.FC = () => {
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   className={`
                   mt-7
+                  scrn-400:mt-4
                   scrn-450:mt-4 
                   scrn-600:mt-6
                   scrn-700:mt-12
@@ -168,13 +169,16 @@ const ThirdSection: React.FC = () => {
 
             {/* the competition (Directly Below WORK) */}
             <div className="w-full flex items-center justify-end
+                scrn-400:-mt-2
+                scrn-450:mt-0
                 scrn-500:mt-2 
                 scrn-1000:-mt-2 
                 scrn-1500:mt-2 
                 scrn-1700:-mt-10 
                 scrn-1900:-mt-4 
                 scrn-1900:ms-32 
-                scrn-2550:-mt-44">
+                scrn-2550:-mt-44"
+                >
               <span className="
                 text-base
                 scrn-450:text-lg 
