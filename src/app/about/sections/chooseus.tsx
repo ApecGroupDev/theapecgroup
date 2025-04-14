@@ -24,6 +24,7 @@ const ChooseUs: React.FC = () => {
       scrn-1100:h-195 
       scrn-1200:h-208 
       scrn-1300:h-224
+      scrn-1400:h-232
       scrn-1500:h-256 
       scrn-1700:h-304 
       scrn-1900:h-320 

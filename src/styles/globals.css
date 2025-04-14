@@ -188,7 +188,7 @@ body {
   }
 }
 
-@media (min-width: 1300px) and (max-width: 1399px) {
+@media (min-width: 1300px) and (max-width: 1499px) {
   .text-smart-animation {
     font-size: 9rem !important;
     margin-left: 3rem;

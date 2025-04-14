@@ -215,9 +215,9 @@ const HorizontalScrollSection: React.FC = () => {
           >
             {/* Customer Commitment */}
             <div className="flex items-center gap-4">
-              <CheckCircle size={48} className="text-red-600 hidden scrn-1300:block" />
-              <CheckCircle size={20} className="text-red-600 scrn-1000:block scrn-1300:hidden" />
-              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-3xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Customer Commitment</span>
+              <CheckCircle size={48} className="text-red-600 hidden scrn-1600:block" />
+              <CheckCircle size={20} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Customer Commitment</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2550:text-2xl text-gray-600">
               Delivering value, quality, and reliability with every project.
@@ -225,9 +225,9 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Innovation */}
             <div className="flex items-center gap-4 scrn-2550:mt-10">
-              <Lightbulb size={48} className="text-red-600 hidden scrn-1300:block" />
-              <Lightbulb size={24} className="text-red-600 scrn-1000:block scrn-1300:hidden" />
-              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-3xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Innovation</span>
+              <Lightbulb size={48} className="text-red-600 hidden scrn-1600:block" />
+              <Lightbulb size={24} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Innovation</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2550:text-2xl text-gray-600">
               Embracing advancements to offer the best solutions.
@@ -235,9 +235,9 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Integrity */}
             <div className="flex items-center gap-4 scrn-2550:mt-10">
-              <ShieldCheck size={48} className="text-red-600 hidden scrn-1300:block" />
-              <ShieldCheck size={24} className="text-red-600 scrn-1000:block scrn-1300:hidden" />
-              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-3xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Integrity</span>
+              <ShieldCheck size={48} className="text-red-600 hidden scrn-1600:block" />
+              <ShieldCheck size={24} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Integrity</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2550:text-2xl text-gray-600">
               Building trust through transparency and professionalism.
@@ -245,9 +245,9 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Excellence */}
             <div className="flex items-center gap-4 scrn-1000:mt-0 scrn-2550:mt-10">
-              <Award size={48} className="text-red-600 hidden scrn-1300:block" />
-              <Award size={24} className="text-red-600 scrn-1000:block scrn-1300:hidden" />
-              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-3xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Excellence</span>
+              <Award size={48} className="text-red-600 hidden scrn-1600:block" />
+              <Award size={24} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2550:text-5xl font-bold text-gray-800">Excellence</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2550:text-2xl text-gray-600">
               Striving for perfection in everything we do.
@@ -338,6 +338,8 @@ const HorizontalScrollSection: React.FC = () => {
       scrn-1100:h-168
       scrn-1200:h-188
       scrn-1300:h-198
+      scrn-1400:h-216
+      scrn-1450:h-224
       scrn-1500:h-208 
       scrn-1700:h-256 
       scrn-1900:h-240 
