@@ -354,6 +354,8 @@ const HorizontalScrollSection: React.FC = () => {
       scrn-1450:h-224
       scrn-1500:h-208 
       scrn-1550:h-216
+      scrn-1600:h-240
+      scrn-1650:h-248
       scrn-1700:h-256 
       scrn-1900:h-240 
       scrn-2550:h-352"

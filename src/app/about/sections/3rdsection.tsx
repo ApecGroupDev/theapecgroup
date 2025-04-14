@@ -21,6 +21,7 @@ const ThirdSection: React.FC = () => {
       scrn-700:pt-20
       scrn-1100:pt-0
       scrn-1500:pt-40
+      scrn-1600:pt-0
       scrn-1900:pt-48 
       scrn-2550:pb-96
 
@@ -38,6 +39,7 @@ const ThirdSection: React.FC = () => {
       scrn-1400:h-195
       scrn-1450:h-208
       scrn-1500:h-224
+      scrn-1600:h-232
       scrn-1700:h-208 
       scrn-1900:h-288 
       scrn-2550:h-352"
