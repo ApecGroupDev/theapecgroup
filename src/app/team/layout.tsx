@@ -1,21 +1,12 @@
-import Header from "@/components/header"
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function TeamLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div
-      style={{
-        backgroundImage: "url('/backgrounds/ourTeam/Background.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
-        backgroundRepeat: 'no-repeat',
-        minHeight: '100vh',
-      }}
-    >
-
+    <div className="bg-[url('/backgrounds/ourTeam/Background.png')] bg-cover bg-top bg-no-repeat min-h-screen">
       <Header />
-
       <div className="w-full">{children}</div>
-
+      <Footer />
     </div>
-  )
+  );
 }
