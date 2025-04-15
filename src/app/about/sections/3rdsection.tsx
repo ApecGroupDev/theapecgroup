@@ -40,7 +40,7 @@ const ThirdSection: React.FC = () => {
       scrn-1450:h-208
       scrn-1500:h-224
       scrn-1600:h-232
-      scrn-1700:h-208 
+      scrn-1700:h-248 
       scrn-1900:h-288 
       scrn-2550:h-352"
     >
@@ -50,7 +50,7 @@ const ThirdSection: React.FC = () => {
           {/* Left Side (APEC + OUT) */}
           <div className="w-auto flex flex-col flex-1">
 
-            <div className="scrn-1500:space-y-8 scrn-1500:-mt-0 scrn-1700:-space-y-10 scrn-1900:space-y-12 scrn-2550:mt-32">
+            <div className="scrn-1500:space-y-8 scrn-1500:-mt-0 scrn-1900:space-y-12 scrn-2550:mt-32">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
                 <span className="font-semibold
@@ -101,7 +101,7 @@ const ThirdSection: React.FC = () => {
                 scrn-1000:text-9xl  
                 scrn-1300:text-10xl
                 scrn-1500:text-11xl 
-                scrn-1700:text-12xl 
+                scrn-1700:text-11xl 
                 scrn-1900:text-12xl 
                 scrn-2550:text-13xl 
  
@@ -155,7 +155,7 @@ const ThirdSection: React.FC = () => {
                   scrn-2550:mt-80 
                     absolute scrn-1900:scale-y-110 font-bold
                     ${index === 0
-                      ? "text-black scrn-300:text-4xl scrn-450:text-4xl scrn-500:text-5xl scrn-600:text-6xl scrn-700:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1000:text-10xl scrn-1300:text-10xl scrn-1500:text-10xl scrn-1700:text-13xl scrn-1900:text-14xl"
+                      ? "text-black scrn-300:text-4xl scrn-450:text-4xl scrn-500:text-5xl scrn-600:text-6xl scrn-700:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1000:text-10xl scrn-1300:text-10xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-14xl"
                       : index === 1
                         ? "text-transparent text-smart-animation"
                         : "text-white text-[10rem] tracking-tight text-maneuver-animation"
@@ -174,7 +174,7 @@ const ThirdSection: React.FC = () => {
                 scrn-500:mt-2 
                 scrn-1000:-mt-2 
                 scrn-1500:mt-2 
-                scrn-1700:-mt-10 
+                scrn-1700:mt-10 
                 scrn-1900:-mt-4 
                 scrn-1900:ms-32 
                 scrn-2550:-mt-44"

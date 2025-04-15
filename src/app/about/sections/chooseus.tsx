@@ -12,7 +12,9 @@ const ChooseUs: React.FC = () => {
   return (
     <section className="flex flex-col items-center text-center outline-green-500 outline-dashed overflow-y-visible scrn-750:overflow-hidden
       py-20 
-      px-10 
+      px-10
+      
+      scrn-1700:pt-40
     
       h-160
       scrn-450:h-196 
@@ -29,7 +31,7 @@ const ChooseUs: React.FC = () => {
       scrn-1550:h-260
       scrn-1600:h-264
       scrn-1650:h-268 
-      scrn-1700:h-304 
+      scrn-1700:h-276 
       scrn-1900:h-320 
       scrn-2550:h-416"
     >
