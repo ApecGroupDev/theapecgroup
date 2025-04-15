@@ -33,7 +33,7 @@ const ChooseUs: React.FC = () => {
       scrn-1650:h-268 
       scrn-1700:h-276
       scrn-1850:h-288 
-      scrn-1900:h-320 
+      scrn-1900:h-296 
       scrn-2550:h-416"
     >
       {/* Heading */}
@@ -73,7 +73,8 @@ const ChooseUs: React.FC = () => {
       scrn-400:text-sm
       scrn-900:text-base 
       scrn-1000:text-lg
-      scrn-1300:text-2xl"
+      scrn-1300:text-2xl
+      scrn-1900:text-3xl"
       >
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
         environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
@@ -102,7 +103,8 @@ const ChooseUs: React.FC = () => {
       scrn-400:text-sm 
       scrn-900:text-base 
       scrn-1000:text-lg
-      scrn-1300:text-2xl"
+      scrn-1300:text-2xl
+      scrn-1900:text-3xl"
       >
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
         with unparalleled expertise and commitment.

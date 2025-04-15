@@ -208,9 +208,10 @@ const HorizontalScrollSection: React.FC = () => {
           scrn-1650:h-248
           scrn-1700:h-256
           scrn-1800:h-264
-          scrn-1850:h-272"
+          scrn-1850:h-272
+          scrn-1900:h-288"
         >
-          <span className="text-6xl scrn-300:text-4xl scrn-300:mt-4 scrn-450:mt-6 scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1250:text-7xl scrn-2550:text-9xl italic">Our</span>
+          <span className="text-6xl scrn-300:text-4xl scrn-300:mt-4 scrn-450:mt-6 scrn-1900:mt-24 scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1250:text-7xl scrn-2550:text-9xl italic">Our</span>
           <motion.span
             ref={valuesRef}
             className="scrn-300:text-5xl text-7xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1250:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-10xl font-bold text-red-600"
@@ -374,7 +375,7 @@ const HorizontalScrollSection: React.FC = () => {
       scrn-1700:h-256
       scrn-1800:h-264
       scrn-1850:h-272 
-      scrn-1900:h-240 
+      scrn-1900:h-272 
       scrn-2550:h-352"
     >
       <div

@@ -22,7 +22,7 @@ const ThirdSection: React.FC = () => {
       scrn-1100:pt-0
       scrn-1500:pt-40
       scrn-1600:pt-0
-      scrn-1900:pt-48 
+      scrn-1900:pt-0 
       scrn-2550:pb-96
 
       h-116
@@ -67,8 +67,7 @@ const ThirdSection: React.FC = () => {
                   scrn-1300:text-7xl 
                   scrn-1500:text-8xl 
                   scrn-1700:text-8xl 
-                  scrn-1900:text-8xl 
-                  scrn-2550:text-10xl"
+                  scrn-1900:text-8xl"
                 >
                   APEC
                 </span>
@@ -84,8 +83,7 @@ const ThirdSection: React.FC = () => {
                   scrn-1300:text-4xl  
                   scrn-1500:text-5xl 
                   scrn-1700:text-5xl 
-                  scrn-1900:text-5xl 
-                  scrn-2550:text-7xl"
+                  scrn-1900:text-5xl"
                 >
                   will always
                 </span>
@@ -105,12 +103,10 @@ const ThirdSection: React.FC = () => {
                 scrn-1500:text-11xl 
                 scrn-1700:text-11xl 
                 scrn-1900:text-12xl 
-                scrn-2550:text-13xl 
  
                 scrn-1500:-mt-10 
                 scrn-1900:-mt-16 
-                scrn-1900:me-6 
-                scrn-2550:me-10">
+                scrn-1900:me-6">
                   OUT
                 </span>
               </div>
@@ -131,8 +127,7 @@ const ThirdSection: React.FC = () => {
                 scrn-1000:mt-24
                 scrn-1300:mt-32 
                 scrn-1700:mt-32 
-                scrn-1900:mt-6 
-                scrn-2550:mt-80">
+                scrn-1900:mt-6">
                 WORK
               </span>
               <AnimatePresence mode="wait">
@@ -153,11 +148,10 @@ const ThirdSection: React.FC = () => {
                   scrn-1000:mt-12
                   scrn-1300:mt-10 scrn-1300:ms-28 
                   scrn-1700:mt-32 
-                  scrn-1900:mt-6 
-                  scrn-2550:mt-80 
+                  scrn-1900:mt-56
                     absolute scrn-1900:scale-y-110 font-bold
                     ${index === 0
-                      ? "text-black scrn-300:text-4xl scrn-450:text-4xl scrn-500:text-5xl scrn-600:text-6xl scrn-700:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1000:text-10xl scrn-1300:text-10xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-14xl"
+                      ? "text-black scrn-300:text-4xl scrn-450:text-4xl scrn-500:text-5xl scrn-600:text-6xl scrn-700:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1000:text-10xl scrn-1300:text-10xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-10xl"
                       : index === 1
                         ? "text-transparent text-smart-animation"
                         : "text-white text-[10rem] tracking-tight text-maneuver-animation"
@@ -177,9 +171,8 @@ const ThirdSection: React.FC = () => {
                 scrn-1000:-mt-2 
                 scrn-1500:mt-2 
                 scrn-1700:mt-10 
-                scrn-1900:-mt-4 
-                scrn-1900:ms-32 
-                scrn-2550:-mt-44"
+                scrn-1900:mt-36 
+                scrn-1900:ms-12"
                 >
               <span className="
                 text-base
@@ -193,8 +186,7 @@ const ThirdSection: React.FC = () => {
                 scrn-1300:text-5xl 
                 scrn-1500:text-5xl 
                 scrn-1700:text-5xl 
-                scrn-1900:text-5xl 
-                scrn-2550:text-7xl"
+                scrn-1900:text-5xl"
               >
                 the competition
               </span>
