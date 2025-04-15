@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 3: Logo */}
-        <div className="hidden scrn-300:flex justify-center scrn-750:justify-end">
+        <div className="hidden scrn-350:flex justify-center scrn-750:justify-end">
           <Link href="/">
             <Image
               src="/logos/APEC.png"
