@@ -46,6 +46,7 @@ const ThirdSection: React.FC = () => {
       scrn-1900:h-288
       scrn-2100:h-296
       scrn-2150:h-304 
+      scrn-2250:h-312
       scrn-2550:h-352"
     >
       <div className="w-auto flex flex-col">
