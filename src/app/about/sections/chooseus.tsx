@@ -39,6 +39,7 @@ const ChooseUs: React.FC = () => {
       scrn-2150:h-316 
       scrn-2200:h-324
       scrn-2250:h-339
+      scrn-2300:h-352
       scrn-2550:h-416"
     >
       {/* Heading */}
