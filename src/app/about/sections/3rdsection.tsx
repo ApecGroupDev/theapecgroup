@@ -40,7 +40,9 @@ const ThirdSection: React.FC = () => {
       scrn-1450:h-208
       scrn-1500:h-224
       scrn-1600:h-232
-      scrn-1700:h-248 
+      scrn-1700:h-248
+      scrn-1800:h-256
+      scrn-1850:h-260
       scrn-1900:h-288 
       scrn-2550:h-352"
     >

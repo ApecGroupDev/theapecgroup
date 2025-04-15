@@ -203,7 +203,7 @@ body {
   }
 }
 
-@media (min-width: 1500px) and (max-width: 1799px) {
+@media (min-width: 1500px) and (max-width: 1899px) {
   .text-smart-animation {
     font-size: 9rem !important;
   }
@@ -212,17 +212,6 @@ body {
     font-size: 6rem !important;
     padding-left: 3rem;
     -webkit-text-stroke: 3px black;
-  }
-}
-
-@media (min-width: 1800px) and (max-width: 1899px) {
-  .text-smart-animation {
-    font-size: 14rem !important;
-  }
-
-  .text-maneuver-animation {
-    font-size: 9rem !important;
-    margin-left: 1rem;
   }
 }
 
