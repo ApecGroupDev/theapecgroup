@@ -15,6 +15,7 @@ const ChooseUs: React.FC = () => {
       px-10
       
       scrn-1700:pt-40
+      scrn-2100:pt-48
     
       h-160
       scrn-450:h-196 
@@ -34,7 +35,8 @@ const ChooseUs: React.FC = () => {
       scrn-1700:h-276
       scrn-1850:h-288 
       scrn-1900:h-296
-      scrn-2050:h-308 
+      scrn-2050:h-308
+      scrn-2150:h-316 
       scrn-2550:h-416"
     >
       {/* Heading */}
