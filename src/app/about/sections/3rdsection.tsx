@@ -23,7 +23,6 @@ const ThirdSection: React.FC = () => {
       scrn-1500:pt-40
       scrn-1600:pt-0
       scrn-1900:pt-0 
-      scrn-2550:pb-96
 
       h-116
       scrn-400:h-110 
@@ -50,7 +49,7 @@ const ThirdSection: React.FC = () => {
       scrn-2300:h-320
       scrn-2350:h-326
       scrn-2450:h-339
-      scrn-2550:h-352"
+      scrn-2500:h-352"
     >
       <div className="w-auto flex flex-col">
         {/* Top Section: APEC + OUT and WORK */}
@@ -58,7 +57,7 @@ const ThirdSection: React.FC = () => {
           {/* Left Side (APEC + OUT) */}
           <div className="w-auto flex flex-col flex-1">
 
-            <div className="scrn-1500:space-y-8 scrn-1500:-mt-0 scrn-1900:space-y-12 scrn-2550:mt-32">
+            <div className="scrn-1500:space-y-8 scrn-1500:-mt-0 scrn-1900:space-y-12">
               {/* APEC + will always (Same Line, Bottom Alignment) */}
               <div className="flex items-center justify-end">
                 <span className="font-semibold

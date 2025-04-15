@@ -41,7 +41,7 @@ const ChooseUs: React.FC = () => {
       scrn-2250:h-339
       scrn-2300:h-352
       scrn-2450:h-368
-      scrn-2550:h-416"
+      scrn-2500:h-416"
     >
       {/* Heading */}
       <span className="text-3xl scrn-750:text-3xl scrn-800:text-4xl scrn-900:text-5xl scrn-1000:text-6xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold">
@@ -58,7 +58,7 @@ const ChooseUs: React.FC = () => {
       </span>
 
       {/* Content */}
-      <p className="leading-normal font-normal scrn-2550:leading-relaxed tracking-wider 
+      <p className="font-normal leading-relaxed tracking-wider 
       mt-3 
       scrn-450:mt-6 
       scrn-600:mt-6 
@@ -81,14 +81,15 @@ const ChooseUs: React.FC = () => {
       scrn-900:text-base 
       scrn-1000:text-lg
       scrn-1300:text-2xl
-      scrn-1900:text-3xl"
+      scrn-1900:text-3xl
+      scrn-2500:text-4xl"
       >
         Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
         environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
         and digital marketing for dispensaries. We also provide tailored financing options to help you grow your business.
       </p>
 
-      <p className="leading-normal font-normal scrn-2550:leading-relaxed tracking-wider 
+      <p className="font-normal leading-relaxed tracking-wider 
       scrn-300:mt-2 
       scrn-450:mt-4 
       scrn-600:mt-6 
@@ -111,13 +112,14 @@ const ChooseUs: React.FC = () => {
       scrn-900:text-base 
       scrn-1000:text-lg
       scrn-1300:text-2xl
-      scrn-1900:text-3xl"
+      scrn-1900:text-3xl
+      scrn-2500:text-4xl"
       >
         With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
         with unparalleled expertise and commitment.
       </p>
 
-      <p className="font-normal scrn-2550:leading-relaxed 
+      <p className="font-normal leading-relaxed 
       text-xs
       scrn-400:text-sm 
       scrn-900:text-base
@@ -125,7 +127,7 @@ const ChooseUs: React.FC = () => {
       scrn-1300:text-2xl 
       scrn-1500:text-2xl 
       scrn-1900:text-3xl 
-      scrn-2550:text-4xl
+      scrn-2500:text-4xl
 
       scrn-400:max-w-64
       scrn-800:max-w-xs
@@ -155,14 +157,14 @@ const ChooseUs: React.FC = () => {
         scrn-300:px-8 
         scrn-750:px-12 
         scrn-1000:px-20 
-        scrn-2550:px-28 
+        scrn-2500:px-28 
         
         text-xs
         scrn-750:text-sm 
         scrn-1000:text-lg 
         scrn-1700:text-2xl 
         scrn-1900:text-2xl 
-        scrn-2550:text-3xl"
+        scrn-2500:text-3xl"
       >
         Sales@TheAPECgroup.com
       </a>

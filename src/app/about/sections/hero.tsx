@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
       scrn-2250:h-316
       scrn-2300:h-324
       scrn-2400:h-339
-      scrn-2550:h-320"
+      scrn-2500:h-352"
     >
 
       <div className="absolute inset-0 z-10 hidden scrn-600:block
