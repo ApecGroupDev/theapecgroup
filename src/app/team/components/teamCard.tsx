@@ -54,7 +54,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
           scrn-800:text-2xs 
           scrn-900:text-xs 
           scrn-1000:text-xs 
-          scrn-1250:text-base 
+          scrn-1250:text-sm 
           scrn-1500:text-lg"
         >{title}
         </p>

@@ -43,6 +43,7 @@ const TeamPage: React.FC = () => {
       scrn-900:pt-12
       scrn-1000:pt-12
       scrn-1100:pt-16 
+      scrn-1400:pt-20
       scrn-1500:pt-24 
        
       h-160 
@@ -60,6 +61,7 @@ const TeamPage: React.FC = () => {
       scrn-1150:h-312
       scrn-1200:h-324
       scrn-1300:h-360
+      scrn-1400:h-384
       scrn-1500:h-384
       scrn-1700:h-448 
       scrn-1900:h-480 
@@ -91,6 +93,7 @@ const TeamPage: React.FC = () => {
         scrn-900:space-y-7 
         scrn-1000:space-y-8 
         scrn-1200:space-y-12
+        scrn-1400:space-y-16
         scrn-1500:space-y-10 
         scrn-1700:space-y-8 
         scrn-1900:space-y-16 
@@ -101,7 +104,8 @@ const TeamPage: React.FC = () => {
         scrn-800:mt-8
         scrn-900:mt-12
         scrn-1000:mt-6 
-        scrn-1100:mt-16"
+        scrn-1100:mt-16
+        scrn-1400:mt-16"
       >
         {rows.map((row, rowIndex) => (
           <div
@@ -110,6 +114,7 @@ const TeamPage: React.FC = () => {
             flex flex-wrap justify-center items-start
             gap-x-6
             scrn-700:gap-x-8
+            scrn-1400:gap-x-16
             ${row.length === 2 ? '' : ''}
           `}
           >
