@@ -108,7 +108,6 @@ const Hero: React.FC = () => {
       scrn-1200:pb-0
       fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
-
       >
         <nav className="">
           <ul className="flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest

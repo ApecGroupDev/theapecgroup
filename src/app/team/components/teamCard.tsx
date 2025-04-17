@@ -8,11 +8,11 @@ type TeamCardProps = {
 
 const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
   return (
-    <div className="relative flex items-center rounded-lg overflow-visible outline-dashed outline-green-600 
-      scrn-300:w-40 
-      scrn-300:h-16 
-      scrn-mobile:w-44 
-      scrn-mobile:h-16 
+    <div className="relative flex items-center rounded-lg overflow-visible
+      w-36 
+      scrn-300:h-12 
+      scrn-450:w-44 
+      scrn-450:h-16 
       scrn-600:w-44 
       scrn-600:h-16 
       scrn-750:w-56 
@@ -31,16 +31,14 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
       scrn-1900:w-128 
       scrn-1900:h-48 
       scrn-2500:w-128 
-      scrn-2500:h-48 
-      w-128 
-      h-48"
+      scrn-2500:h-48"
     >
 
       {/* Text content */}
       <div className="z-10 flex-1 text-end">
-        <h2 className="text-red-600 font-bold 
-          scrn-300:text-3xs 
-          scrn-mobile:text-3xs 
+        <h2 className="text-red-600 font-normal scrn-600:font-bold 
+          text-3xs
+          scrn-450:text-xs 
           scrn-600:text-2xs 
           scrn-750:text-xs 
           scrn-1250:text-lg 
@@ -48,11 +46,11 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
         >{name}
         </h2>
         <p className="text-gray-600 
-          scrn-300:text-3xs 
-          scrn-mobile:text-3xs 
+          text-4xs 
+          scrn-350:text-3xs 
           scrn-600:text-3xs 
-          scrn-750:text-xs 
-          scrn-800:text-xs 
+          scrn-750:text-2xs 
+          scrn-800:text-2xs 
           scrn-900:text-xs 
           scrn-1000:text-sm 
           scrn-1250:text-base 
@@ -62,10 +60,10 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
       </div>
 
       <div className="relative bg-gradient-to-r from-red-600 to-transparent clip-parallelogram overflow-visible
-        scrn-300:w-24 
-        scrn-300:h-16 
-        scrn-mobile:w-24 
-        scrn-mobile:h-16 
+        w-16
+        h-12
+        scrn-450:w-24 
+        scrn-450:h-16 
         scrn-600:w-24 
         scrn-600:h-16 
         scrn-750:w-28 
@@ -85,15 +83,15 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
         scrn-2500:w-56 
         scrn-2500:h-48 
         scrn-300:ps-0.5 
-        scrn-mobile:ps-0.5 
+        scrn-450:ps-0.5 
         scrn-600:ps-0.5 
         scrn-1000:ps-1"
       >
         <div className="bg-white clip-parallelogram flex items-center justify-center
-          scrn-300:w-24 
-          scrn-300:h-16 
-          scrn-mobile:w-24 
-          scrn-mobile:h-16 
+          w-16 
+          h-12
+          scrn-450:w-24 
+          scrn-450:h-16 
           scrn-600:w-24 
           scrn-600:h-16 
           scrn-750:w-28 
