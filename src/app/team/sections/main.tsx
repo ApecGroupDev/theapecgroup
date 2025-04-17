@@ -62,7 +62,7 @@ const TeamPage: React.FC = () => {
       scrn-1200:h-324
       scrn-1300:h-360
       scrn-1400:h-384
-      scrn-1500:h-384
+      scrn-1500:h-416
       scrn-1700:h-448 
       scrn-1900:h-480 
       scrn-2500:h-640"
@@ -94,7 +94,7 @@ const TeamPage: React.FC = () => {
         scrn-1000:space-y-8 
         scrn-1200:space-y-12
         scrn-1400:space-y-16
-        scrn-1500:space-y-10 
+        scrn-1500:space-y-16
         scrn-1700:space-y-8 
         scrn-1900:space-y-16 
         scrn-2500:space-y-32 
@@ -115,6 +115,7 @@ const TeamPage: React.FC = () => {
             gap-x-6
             scrn-700:gap-x-8
             scrn-1400:gap-x-16
+            scrn-1500:gap-x-20
             ${row.length === 2 ? '' : ''}
           `}
           >
