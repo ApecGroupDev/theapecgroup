@@ -36,23 +36,24 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
 
       {/* Text content */}
       <div className="z-10 flex-1 text-end">
-        <h2 className="text-red-600 font-normal scrn-600:font-bold 
+        <h2 className="text-red-600 font-normal scrn-600:font-semibold
           text-3xs
           scrn-450:text-xs 
           scrn-600:text-2xs 
           scrn-750:text-xs 
+          scrn-1000:text-base
           scrn-1250:text-lg 
           scrn-1500:text-xl"
         >{name}
         </h2>
-        <p className="text-gray-600 
+        <p className="text-gray-600 font-semibold
           text-4xs 
           scrn-350:text-3xs 
           scrn-600:text-3xs 
           scrn-750:text-2xs 
           scrn-800:text-2xs 
           scrn-900:text-xs 
-          scrn-1000:text-sm 
+          scrn-1000:text-xs 
           scrn-1250:text-base 
           scrn-1500:text-lg"
         >{title}

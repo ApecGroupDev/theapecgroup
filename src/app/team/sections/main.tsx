@@ -41,7 +41,8 @@ const TeamPage: React.FC = () => {
       scrn-700:pt-12 
       scrn-800:pt-12 
       scrn-900:pt-12
-      scrn-1000:pt-12 
+      scrn-1000:pt-12
+      scrn-1100:pt-16 
       scrn-1250:pt-16 
       scrn-1500:pt-24 
        
@@ -56,6 +57,8 @@ const TeamPage: React.FC = () => {
       scrn-900:h-244
       scrn-950:h-256 
       scrn-1000:h-288 
+      scrn-1100:h-296
+      scrn-1150:h-312
       scrn-1250:h-352 
       scrn-1500:h-384
       scrn-1700:h-448 
@@ -98,6 +101,7 @@ const TeamPage: React.FC = () => {
         scrn-800:mt-8
         scrn-900:mt-12
         scrn-1000:mt-6 
+        scrn-1100:mt-16
         scrn-1250:mt-8 
         scrn-1500:mt-16"
       >
