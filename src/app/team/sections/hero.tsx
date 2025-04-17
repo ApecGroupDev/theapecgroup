@@ -54,7 +54,8 @@ const Hero: React.FC = () => {
       scrn-1450:h-192
       scrn-1500:h-198
       scrn-1550:h-208
-      scrn-1600:h-208
+      scrn-1600:h-216
+      scrn-1650:h-224
       scrn-1700:h-228
       scrn-1800:h-240
       scrn-1850:h-244
@@ -81,7 +82,8 @@ const Hero: React.FC = () => {
         scrn-1250:mt-9
         scrn-1300:mt-7
         scrn-1400:mt-4 
-        scrn-1500:mt-8"
+        scrn-1500:mt-8
+        scrn-1600:mt-3"
       >
         <Image
           src="/backgrounds/ourTeam/Hero.png"

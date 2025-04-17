@@ -63,6 +63,7 @@ const TeamPage: React.FC = () => {
       scrn-1300:h-360
       scrn-1400:h-384
       scrn-1500:h-416
+      scrn-1600:h-432
       scrn-1700:h-448 
       scrn-1900:h-480 
       scrn-2500:h-640"
