@@ -46,6 +46,7 @@ const TeamPage: React.FC = () => {
       scrn-1400:pt-20
       scrn-1500:pt-24 
       scrn-1700:pt-28
+      scrn-1800:pt-32
        
       h-160 
       scrn-450:h-188 
@@ -66,7 +67,7 @@ const TeamPage: React.FC = () => {
       scrn-1500:h-416
       scrn-1600:h-432
       scrn-1700:h-464
-      scrn-1900:h-480 
+      scrn-1800:h-480 
       scrn-2500:h-640"
     >
       <span className="
@@ -108,7 +109,8 @@ const TeamPage: React.FC = () => {
         scrn-1000:mt-6 
         scrn-1100:mt-16
         scrn-1400:mt-16
-        scrn-1700:mt-20"
+        scrn-1700:mt-20
+        scrn-1800:mt-24"
       >
         {rows.map((row, rowIndex) => (
           <div
