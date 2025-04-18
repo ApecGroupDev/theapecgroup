@@ -153,8 +153,9 @@ const Hero: React.FC = () => {
             scrn-1250:text-9xl 
             scrn-1500:text-10xl 
             scrn-1700:text-10xl 
-            scrn-1900:text-10xl 
-            scrn-2500:text-12xl"
+            scrn-1900:text-10xl
+            scrn-2200:text-11xl 
+            scrn-2400:text-12xl"
           >
             OUR
           </span>
@@ -170,8 +171,9 @@ const Hero: React.FC = () => {
             scrn-1250:text-11xl 
             scrn-1500:text-12xl 
             scrn-1700:text-13xl 
-            scrn-1900:text-14xl 
-            scrn-2500:text-18xl"
+            scrn-1900:text-14xl
+            scrn-2200:text-16xl 
+            scrn-2400:text-18xl"
           >
             TEAM
           </span>
