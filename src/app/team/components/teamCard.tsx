@@ -28,8 +28,8 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
       scrn-1500:w-112 
       scrn-1500:h-36 
       scrn-1700:w-116 
-      scrn-1900:w-128 
-      scrn-1900:h-48 
+      scrn-1900:w-116 
+      scrn-1900:h-40 
       scrn-2500:w-128 
       scrn-2500:h-48"
     >
@@ -39,7 +39,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
         <h2 className="text-red-600 font-normal scrn-600:font-semibold
           text-3xs
           scrn-450:text-xs 
-          scrn-600:text-2xs 
+          scrn-600:text-2xs  
           scrn-750:text-xs 
           scrn-1000:text-base
           scrn-1250:text-lg 
@@ -79,8 +79,8 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
         scrn-1250:h-32 
         scrn-1500:w-44 
         scrn-1500:h-36 
-        scrn-1900:w-56 
-        scrn-1900:h-48 
+        scrn-1900:w-48 
+        scrn-1900:h-40 
         scrn-2500:w-56 
         scrn-2500:h-48 
         scrn-300:ps-0.5 
@@ -107,8 +107,8 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
           scrn-1250:h-32 
           scrn-1500:w-44 
           scrn-1500:h-36 
-          scrn-1900:w-56 
-          scrn-1900:h-48 
+          scrn-1900:w-48 
+          scrn-1900:h-40 
           scrn-2500:w-56 
           scrn-2500:h-48"
         >
