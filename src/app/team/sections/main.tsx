@@ -68,7 +68,8 @@ const TeamPage: React.FC = () => {
       scrn-1500:h-416
       scrn-1600:h-432
       scrn-1700:h-464
-      scrn-1800:h-480 
+      scrn-1800:h-480
+      scrn-2000:h-512
       scrn-2500:h-640"
     >
       <span className="
