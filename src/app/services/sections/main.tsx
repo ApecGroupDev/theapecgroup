@@ -54,6 +54,13 @@ const MainServices: React.FC = () => {
     <div className="bg-transparent outline-dashed outline-1 outline-green-500
     h-128
     scrn-1900:h-339
+    scrn-2000:h-360
+    scrn-2050:h-368
+    scrn-2100:h-384
+    scrn-2200:h-416
+    scrn-2350:h-432
+    scrn-2450:h-448
+    scrn-2500:h-464
     ">
       {/* Section Title */}
       <div className="text-center">
