@@ -80,6 +80,12 @@ const Hero: React.FC = () => {
           width={2786}
           height={1438}
           priority
+          className="
+          scrn-1900:pb-16
+          scrn-1950:pb-24
+          scrn-2000:pb-20
+          scrn-2150:pb-24
+          scrm-2300:pb-32"
         />
       </div>
 
