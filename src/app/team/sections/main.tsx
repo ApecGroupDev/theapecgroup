@@ -147,7 +147,7 @@ const TeamPage: React.FC = () => {
               className={`grid ${row.length === 1 && start + 1 === teamMembers.length
                 ? 'grid-cols-1 justify-items-center'
                 : 'grid-cols-2 justify-items-center'
-                } scrn-400:mx-8 scrn-550:mx-14 `}
+                } mx-4 scrn-550:mx-14 `}
             >
               {row.map((member, index) => (
                 <TeamCard key={index} name={member.name} title={member.title} />
