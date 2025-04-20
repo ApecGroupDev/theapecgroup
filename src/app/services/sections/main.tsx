@@ -98,6 +98,8 @@ const MainServices: React.FC = () => {
           scrn-1900:text-5xl
           
           scrn-600:mt-12
+          scrn-1200:mt-20
+          scrn-1650:mt-28
           scrn-1900:mt-24"
         >
           Check out some of our services here!
@@ -105,9 +107,11 @@ const MainServices: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className="flex justify-center flex-wrap mx-auto max-w-384
+      <div className="flex justify-center flex-wrap mx-auto max-w-416
       scrn-600:mt-8
-      scrn-1000:mt-16
+      scrn-1000:mt-12
+      scrn-1200:mt-14
+      scrn-1650:mt-24
       scrn-1900:mt-24
       scrn-2400:mt-32
       
@@ -115,7 +119,8 @@ const MainServices: React.FC = () => {
         scrn-350:gap-6
         scrn-800:gap-8 
         scrn-900:gap-8 
-        scrn-1400:gap-10 
+        scrn-1100:gap-10
+        scrn-1400:gap-12 
         scrn-1700:gap-16 
         scrn-1900:gap-24"
       >
@@ -134,14 +139,11 @@ const MainServices: React.FC = () => {
             scrn-800:w-52 
             scrn-900:w-60
             scrn-1000:w-64
-            scrn-1100:w-64
-            scrn-1150:w-72 
-            scrn-1250:w-72
-            scrn-1300:w-80 
-            scrn-1500:w-80
-            scrn-1600:w-96 
-            scrn-1700:w-112
-            scrn-1900:w-118"
+            scrn-1100:w-72
+            scrn-1200:w-80 
+            scrn-1400:w-96
+            scrn-1650:w-116 
+            scrn-1700:w-120"
             >
               {/* Image Display */}
               <div className="flex flex-col items-center justify-center 
@@ -153,16 +155,11 @@ const MainServices: React.FC = () => {
               scrn-800:h-36 
               scrn-900:h-44
               scrn-1000:h-44 
-              scrn-1100:h-48
-              scrn-1150:h-48
-              scrn-1250:h-48
-              scrn-1300:h-52 
-              scrn-1400:h-56 
-              scrn-1500:h-60
-              scrn-1600:h-64 
-              scrn-1700:h-72
-              scrn-1900:h-80
-              scrn-2000:h-80"
+              scrn-1100:h-56
+              scrn-1200:h-60 
+              scrn-1400:h-72
+              scrn-1650:h-80 
+              scrn-1700:h-96"
               >
                 <img
                   src={feature.imageSrc}
