@@ -53,6 +53,28 @@ const MainServices: React.FC = () => {
   return (
     <div className="bg-transparent outline-dashed outline-1 outline-green-500
     h-128
+    scrn-600:h-160
+    scrn-800:h-164 
+    scrn-850:h-172
+    scrn-900:h-184
+    scrn-950:h-192
+    scrn-1000:h-216
+    scrn-1050:h-216
+    scrn-1100:h-228
+    scrn-1150:h-240
+    scrn-1200:h-248
+    scrn-1300:h-256
+    scrn-1350:h-272
+    scrn-1400:h-276
+    scrn-1450:h-288
+    scrn-1500:h-304
+    scrn-1550:h-304
+    scrn-1600:h-316
+    scrn-1650:h-324
+    scrn-1700:h-324
+    scrn-1750:h-339
+    scrn-1800:h-352
+    scrn-1850:h-360
     scrn-1900:h-339
     scrn-2000:h-360
     scrn-2050:h-368
@@ -75,6 +97,7 @@ const MainServices: React.FC = () => {
           scrn-1500:text-4xl  
           scrn-1900:text-5xl
           
+          scrn-600:mt-12
           scrn-1900:mt-24"
         >
           Check out some of our services here!
@@ -83,13 +106,13 @@ const MainServices: React.FC = () => {
 
       {/* Feature Boxes */}
       <div className="flex justify-center flex-wrap mx-auto max-w-384
+      scrn-600:mt-8
+      scrn-1000:mt-16
       scrn-1900:mt-24
       scrn-2400:mt-32
       
         gap-4
         scrn-350:gap-6
-        scrn-400:gap-6
-        scrn-750:gap-6
         scrn-800:gap-8 
         scrn-900:gap-8 
         scrn-1400:gap-10 
@@ -107,11 +130,10 @@ const MainServices: React.FC = () => {
             scrn-450:w-40
             scrn-500:w-48 
             scrn-600:w-40 
-            scrn-750:w-44
-            scrn-800:w-48 
-            scrn-900:w-44 
-            scrn-950:w-48
-            scrn-1000:w-60
+            scrn-700:w-48
+            scrn-800:w-52 
+            scrn-900:w-60
+            scrn-1000:w-64
             scrn-1100:w-64
             scrn-1150:w-72 
             scrn-1250:w-72
@@ -127,12 +149,11 @@ const MainServices: React.FC = () => {
               scrn-350:h-20
               scrn-500:h-28
               scrn-600:h-24 
-              scrn-750:h-28 
-              scrn-800:h-28 
-              scrn-900:h-28 
-              scrn-950:h-32
-              scrn-1000:h-40 
-              scrn-1100:h-44
+              scrn-700:h-32
+              scrn-800:h-36 
+              scrn-900:h-44
+              scrn-1000:h-44 
+              scrn-1100:h-48
               scrn-1150:h-48
               scrn-1250:h-48
               scrn-1300:h-52 
