@@ -53,6 +53,8 @@ const MainServices: React.FC = () => {
   return (
     <div className="bg-transparent outline-dashed outline-1 outline-green-500
     h-128
+    scrn-400:h-132
+    scrn-500:h-148
     scrn-600:h-160
     scrn-800:h-164 
     scrn-850:h-172
@@ -97,7 +99,10 @@ const MainServices: React.FC = () => {
           scrn-1500:text-4xl  
           scrn-1900:text-5xl
           
-          scrn-600:mt-12
+          mt-4
+          scrn-600:mt-8
+          scrn-750:mt-0
+          scrn-800:mt-12
           scrn-1200:mt-20
           scrn-1650:mt-28
           scrn-1900:mt-24"
@@ -107,8 +112,9 @@ const MainServices: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className="flex justify-center flex-wrap mx-auto max-w-416
-      scrn-600:mt-8
+      <div className="flex justify-center flex-wrap mx-auto scrn-600:max-w-128 scrn-700:max-w-416
+      mt-2
+      scrn-700:mt-8
       scrn-1000:mt-12
       scrn-1200:mt-14
       scrn-1650:mt-24
@@ -130,11 +136,9 @@ const MainServices: React.FC = () => {
               key={index}
               className="relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
             w-32
-            scrn-350:w-36
-            scrn-400:w-36
-            scrn-450:w-40
-            scrn-500:w-48 
-            scrn-600:w-40 
+            scrn-400:w-40
+            scrn-500:w-48
+            scrn-600:w-48
             scrn-700:w-48
             scrn-800:w-52 
             scrn-900:w-60
@@ -148,9 +152,10 @@ const MainServices: React.FC = () => {
               {/* Image Display */}
               <div className="flex flex-col items-center justify-center 
               h-16
-              scrn-350:h-20
+              scrn-400:h-20
+              scrn-450:h-24
               scrn-500:h-28
-              scrn-600:h-24 
+              scrn-600:h-32 
               scrn-700:h-32
               scrn-800:h-36 
               scrn-900:h-44
@@ -164,7 +169,7 @@ const MainServices: React.FC = () => {
                 <img
                   src={feature.imageSrc}
                   alt={feature.title}
-                  className="w-2/3 object-contain"
+                  className="scrn-400:w-2/3 object-contain"
                 />
               </div>
 

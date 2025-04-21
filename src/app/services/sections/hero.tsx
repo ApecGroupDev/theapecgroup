@@ -31,13 +31,10 @@ const Hero: React.FC = () => {
     <div
       id="hero-section"
       className=" relative flex pointer-events-none items-center overflow-hidden
-      h-116
-      scrn-350:h-120
-      scrn-400:h-132
-      scrn-450:h-140
-      scrn-500:h-148 
-      scrn-550:h-160
-      scrn-600:h-114
+      h-80
+      scrn-450:h-96
+      scrn-500:h-114
+      scrn-600:h-118
       scrn-700:h-124 
       scrn-750:h-128
       scrn-800:h-120
@@ -81,6 +78,21 @@ const Hero: React.FC = () => {
           height={1438}
           priority
           className="
+          scrn-300:h-64
+          scrn-300:mt-12
+          scrn-400:h-72
+          scrn-400:mt-8
+          scrn-450:h-80
+          scrn-500:h-96
+          scrn-500:mt-10
+          scrn-600:h-114
+          scrn-600:mt-4
+          scrn-700:h-full
+          scrn-700:mt-8
+          scrn-750:pb-10
+          scrn-800:pb-0
+          scrn-800:mt-0
+          scrn-900:mt-0
           scrn-1900:pb-16
           scrn-1950:pb-24
           scrn-2000:pb-20
@@ -120,8 +132,7 @@ const Hero: React.FC = () => {
         <div>
           <span className="scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap
             text-5xl 
-            scrn-450:text-7xl
-            scrn-500:text-8xl 
+            scrn-400:text-7xl
             scrn-600:text-8xl 
             scrn-750:text-9xl 
             scrn-800:text-9xl 

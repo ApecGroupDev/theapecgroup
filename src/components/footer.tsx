@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
             />
           </div>
-          <div className="flex scrn-750:hidden space-x-4">
+          <div className="flex scrn-750:hidden space-x-4 pb-2 scrn-400:pb-0">
             <SocialIcon
               url="https://twitter.com"
               target="_blank"
