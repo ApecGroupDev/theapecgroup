@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
   return (
     <div
       id="hero-section"
-      className=" relative flex pointer-events-none items-center overflow-hidden
+      className="relative flex pointer-events-none items-center overflow-hidden
       h-80
       scrn-450:h-96
       scrn-500:h-114
@@ -103,10 +103,13 @@ const Hero: React.FC = () => {
 
       {/* Left Text Section */}
       <div className={`
-      scrn-800:pb-20
-      scrn-1000:pb-12
-      scrn-1200:pb-0
-      fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        scrn-800:pb-20
+        scrn-1000:pb-12
+        scrn-1200:pb-0
+        fixed scrn-750:ms-0 
+        p-2 
+        scrn-600:ps-4
+        scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         {/* Breadcrumb */}
