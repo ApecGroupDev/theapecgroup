@@ -44,8 +44,8 @@ const MainLink: React.FC = () => {
       scrn-2300:h-448
       scrn-2400:h-464
       scrn-2450:h-464
-      scrn-2500:h-480
-    ">
+      scrn-2500:h-480"
+    >
       <div className="outline-dashed outline-green-400 grid mx-4 scrn-350:max-w-xs scrn-600:grid-cols-2
         scrn-400:max-w-sm
         scrn-600:max-w-xl 
@@ -66,62 +66,65 @@ const MainLink: React.FC = () => {
         scrn-800:pt-8 
         scrn-900:pt-12 
         scrn-1000:pt-0
-        scrn-1500:pt-24 
-      ">
+        scrn-1500:pt-24"
+      >
         <div className="h-auto 
-        space-y-3
-        scrn-400:space-y-3
-        scrn-450:space-y-3
-        scrn-500:space-y-4
-        scrn-550:space-y-4
-        scrn-600:space-y-4
-        scrn-1200:space-y-12
+          space-y-3
+          scrn-400:space-y-3
+          scrn-450:space-y-3
+          scrn-500:space-y-4
+          scrn-550:space-y-4
+          scrn-600:space-y-4
+          scrn-1200:space-y-12
 
-        pt-6
-        scrn-400:pt-8
-        scrn-450:pt-8
-        scrn-500:pt-8
-        scrn-550:pt-8
-        scrn-600:pt-16
-        scrn-1000:pt-20
-        scrn-1600:pt-32">
+          pt-6
+          scrn-400:pt-8
+          scrn-450:pt-8
+          scrn-500:pt-8
+          scrn-550:pt-8
+          scrn-600:pt-16
+          scrn-1000:pt-20
+          scrn-1600:pt-32"
+        >
           <span className="text-red-600 font-semibold
-          text-sm
-          scrn-500:text-base 
-          scrn-800:text-xl  
-          scrn-1500:text-3xl 
-          scrn-1700:text-4xl 
-          scrn-1900:text-4xl
-          scrn-2000:text-5xl">
+            text-sm
+            scrn-500:text-base 
+            scrn-800:text-xl  
+            scrn-1500:text-3xl 
+            scrn-1700:text-4xl 
+            scrn-1900:text-4xl
+            scrn-2000:text-5xl"
+          >
             We provide digital marketing content and remote monitoring
             of your dispensers to maximize your site&apos;s profitability.
           </span>
           <p>
             <span className="font-semibold 
-            text-sm
-            scrn-500:text-base 
-            scrn-550:text-base
-            scrn-600:text-base 
-            scrn-800:text-xl 
-            scrn-900:text-xl 
-            scrn-1000:text-xl 
-            scrn-1250:text-2xl 
-            scrn-1500:text-3xl 
-            scrn-1700:text-4xl 
-            scrn-1900:text-4xl 
-            scrn-2000:text-5xl
-            ">
+              text-sm
+              scrn-500:text-base 
+              scrn-550:text-base
+              scrn-600:text-base 
+              scrn-800:text-xl 
+              scrn-900:text-xl 
+              scrn-1000:text-xl 
+              scrn-1250:text-2xl 
+              scrn-1500:text-3xl 
+              scrn-1700:text-4xl 
+              scrn-1900:text-4xl 
+              scrn-2000:text-5xl"
+            >
               CALL OR EMAIL FOR<br />
               A QUOTE AND CONSULTATION
             </span>
           </p>
         </div>
         <div className="relative rounded-3xl shadow-2xl 
-        mt-6
-        scrn-400:mt-6
-        scrn-450:mt-6
-        scrn-500:mt-8
-        scrn-550:mt-8">
+          mt-6
+          scrn-400:mt-6
+          scrn-450:mt-6
+          scrn-500:mt-8
+          scrn-550:mt-8"
+        >
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
           <div className="relative z-10 
             p-4 
@@ -129,8 +132,8 @@ const MainLink: React.FC = () => {
             scrn-900:p-10 
             scrn-1000:p-12 
             scrn-1250:p-16 
-            scrn-1500:p-24 
-          ">
+            scrn-1500:p-24"
+          >
             <span className="font-medium
               scrn-300:text-base 
               scrn-500:text-xl 
@@ -143,8 +146,8 @@ const MainLink: React.FC = () => {
               scrn-1500:text-3xl 
               scrn-1700:text-3xl 
               scrn-1900:text-4xl 
-              scrn-2000:text-4xl
-            ">
+              scrn-2000:text-4xl"
+            >
               SERVICE REQUEST
             </span>
             <form className="
@@ -180,8 +183,8 @@ const MainLink: React.FC = () => {
               scrn-1500:text-lg 
               scrn-1700:text-xl 
               scrn-1900:text-xl 
-              scrn-2000:text-xl
-            ">
+              scrn-2000:text-xl"
+            >
               <input type="text" placeholder="Name" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="text" placeholder="Phone No." className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="email" placeholder="Email" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
@@ -216,38 +219,40 @@ const MainLink: React.FC = () => {
           scrn-1600:pt-48
           scrn-1800:pt-64
           scrn-1900:pt-72
-          scrn-2400:pt-96
-        ">
+          scrn-2400:pt-96"
+        >
           <span className="text-red-600
-          scrn-300:text-2xl 
-          scrn-450:text-3xl 
-          scrn-600:text-4xl
-          scrn-700:text-5xl 
-          scrn-750:text-4xl 
-          scrn-800:text-4xl 
-          scrn-850:text-5xl
-          scrn-900:text-5xl 
-          scrn-1000:text-6xl 
-          scrn-1250:text-7xl 
-          scrn-1500:text-8xl 
-          scrn-1700:text-8xl 
-          scrn-1900:text-8xl
-          scrn-2000:text-9xl">
+            scrn-300:text-2xl 
+            scrn-450:text-3xl 
+            scrn-600:text-4xl
+            scrn-700:text-5xl 
+            scrn-750:text-4xl 
+            scrn-800:text-4xl 
+            scrn-850:text-5xl
+            scrn-900:text-5xl 
+            scrn-1000:text-6xl 
+            scrn-1250:text-7xl 
+            scrn-1500:text-8xl 
+            scrn-1700:text-8xl 
+            scrn-1900:text-8xl
+            scrn-2000:text-9xl"
+          >
             BE SEEN
           </span>
           <span className="
-          scrn-300:text-base 
-          scrn-450:text-xl 
-          scrn-600:text-2xl 
-          scrn-750:text-3xl 
-          scrn-800:text-3xl 
-          scrn-900:text-3xl 
-          scrn-1000:text-4xl
-          scrn-1200:text-5xl 
-          scrn-1500:text-5xl 
-          scrn-1700:text-6xl 
-          scrn-1900:text-6xl 
-          scrn-2000:text-7xl">
+            scrn-300:text-base 
+            scrn-450:text-xl 
+            scrn-600:text-2xl 
+            scrn-750:text-3xl 
+            scrn-800:text-3xl 
+            scrn-900:text-3xl 
+            scrn-1000:text-4xl
+            scrn-1200:text-5xl 
+            scrn-1500:text-5xl 
+            scrn-1700:text-6xl 
+            scrn-1900:text-6xl 
+            scrn-2000:text-7xl"
+          >
             EXPAND YOUR REACH
           </span>
         </p>
