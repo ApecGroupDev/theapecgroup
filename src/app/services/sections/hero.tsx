@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
       <div className="absolute z-10"
       >
         <Image
-          src="/backgrounds/services/Hero_ServicesP3.png"
+          src="/backgrounds/services/Hero_Services.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}

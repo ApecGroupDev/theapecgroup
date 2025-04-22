@@ -1,4 +1,4 @@
-import Footer from "./sections/footerRenovation";
+import Footer from "@/components/footer";
 import MainFinancing from "./sections/main";
 import Hero from "./sections/hero";
 const ServicesRenovation: React.FC = () => {

@@ -1,4 +1,4 @@
-import Footer from "./sections/footerImaging";
+import Footer from "@/components/footer";
 import MainImaging from "./sections/main";
 import Hero from "./sections/hero";
 
