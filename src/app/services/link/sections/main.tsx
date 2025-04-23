@@ -4,8 +4,7 @@ import React from "react";
 
 const MainLink: React.FC = () => {
   return (
-    <div className="bg-transparent outline-dashed outline-green-500 flex flex-col items-center
-      scrn-600:justify-center
+    <div className="bg-transparent outline-dashed outline-green-500 flex flex-col items-center scrn-600:justify-center
 
       h-160
       scrn-300:h-152
@@ -258,7 +257,7 @@ const MainLink: React.FC = () => {
           </span>
         </p>
       </div>
-    </div >
+    </div>
   );
 };
 

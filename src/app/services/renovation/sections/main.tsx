@@ -1,6 +1,6 @@
 "use client";
 import CheckmarkBadge from "@/components/checkmarkBadge";
-import CheckmarkBadgeSmall from "@/components/checkmarkBadge copy";
+import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import React from "react";
 
 const MainFinancing: React.FC = () => {
