@@ -102,23 +102,14 @@ const Hero: React.FC = () => {
           scrn-800:pb-0
           scrn-800:mt-0
           scrn-900:mt-0
-          scrn-1900:pb-16
-          scrn-1950:pb-24
-          scrn-2000:pb-20
-          scrn-2150:pb-24
-          scrm-2300:pb-32"
+          scrn-1000:mt-8
+          scrn-1100:mt-0"
         />
       </div>
 
       {/* Left Text Section */}
       <div className={`
-        scrn-800:pb-20
-        scrn-1000:pb-12
-        scrn-1200:pb-0
-        fixed scrn-750:ms-0 
-        p-2 
-        scrn-600:ps-4
-        scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        fixed scrn-750:ms-0 p-2 scrn-600:ps-4 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         {/* Breadcrumb */}
@@ -147,11 +138,11 @@ const Hero: React.FC = () => {
             <span className='
             text-5xl 
             scrn-450:text-6xl 
-            scrn-750:text-6xl 
-            scrn-800:text-7xl 
+            scrn-700:text-7xl 
+            scrn-800:text-8xl 
             scrn-900:text-8xl 
             scrn-1000:text-8xl 
-            scrn-1250:text-9xl 
+            scrn-1100:text-9xl 
             scrn-1500:text-9xl 
             scrn-1700:text-10xl 
             scrn-1900:text-11xl 
@@ -162,27 +153,15 @@ const Hero: React.FC = () => {
               text-2xl 
               scrn-400:text-3xl 
               scrn-450:text-4xl
-              scrn-450:tracking-tighter 
               scrn-600:text-4xl 
-              scrn-600:tracking-normal 
-              scrn-750:text-4xl 
-              scrn-750:tracking-widest 
-              scrn-800:text-5xl 
-              scrn-800:tracking-tighter 
-              scrn-900:text-5xl 
-              scrn-900:tracking-wide 
+              scrn-700:text-5xl 
+              scrn-800:text-6xl 
+              scrn-900:text-6xl 
               scrn-1000:text-6xl 
-              scrn-1000:tracking-tighter 
-              scrn-1250:text-7xl 
-              scrn-1250:tracking-normal 
-              scrn-1500:text-8xl 
-              scrn-1500:tracking-tighter 
-              scrn-1700:text-8xl 
-              scrn-1700:tracking-wide 
-              scrn-1900:text-8xl 
-              scrn-1900:tracking-widest 
-              scrn-2500:text-9xl 
-              scrn-2500:tracking-widest'
+              scrn-1100:text-7xl  
+              scrn-1300:text-8xl  
+              scrn-1700:text-9xl  
+              scrn-2300:text-10xl'
             >
               CONSTRUCTION
             </span>
