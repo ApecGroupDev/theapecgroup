@@ -103,16 +103,15 @@ const MainFinancing: React.FC = () => {
             scrn-800:text-base 
             scrn-900:text-base 
             scrn-1000:text-lg 
-            xl:text-lg 
             scrn-1500:text-xl 
             scrn-1700:text-2xl 
             scrn-1900:text-2xl 
-            scrn-2k:text-3xl"
+            scrn-2500:text-3xl"
           >
             Choose APEC Construction for a partner dedicated to bringing your vision
             with affordability, speed, and unmatched quality.
           </p>
-          <div className="hidden scrn-1000:block scrn-1000:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-normal scrn-900:font-normal scrn-900:space-y-2 scrn-1000:space-y-2 xl:space-y-3 scrn-1500:space-y-6 2xl:space-y-6 scrn-1000:font-normal tracking-widest">
+          <div className="hidden scrn-1000:block scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2500:text-3xl scrn-800:font-normal scrn-900:font-normal scrn-900:space-y-2 scrn-1000:space-y-2 scrn-1500:space-y-6 scrn-1000:font-normal tracking-widest">
             <CheckmarkBadge text="Competitive Pricing" />
             <CheckmarkBadge text="Speedy Project Execution" />
             <CheckmarkBadge text="Uncompromising Quality" />
@@ -170,7 +169,7 @@ const MainFinancing: React.FC = () => {
                 scrn-1900:space-y-12 
                 scrn-2000:space-y-12 
              
-                scrn-mobile:mt-6 
+                mt-6 
                 scrn-600:mt-6 
                 scrn-750:mt-8 
                 scrn-800:mt-6 
@@ -178,7 +177,7 @@ const MainFinancing: React.FC = () => {
                 scrn-1000:mt-12 
 
                 scrn-300:text-xs 
-                scrn-mobile:text-sm 
+                scrn-450:text-sm 
                 scrn-600:text-base 
                 scrn-750:text-sm 
                 scrn-800:text-base 
