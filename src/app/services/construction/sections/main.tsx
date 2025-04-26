@@ -41,7 +41,6 @@ const MainFinancing: React.FC = () => {
       scrn-2450:h-464
       scrn-2500:h-480"
     >
-
       <div className="outline-dashed outline-green-400 grid mx-4 scrn-600:grid-cols-2
         scrn-350:max-w-xs
         scrn-400:max-w-sm
