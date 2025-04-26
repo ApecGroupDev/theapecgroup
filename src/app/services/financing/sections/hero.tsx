@@ -123,8 +123,8 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Left Text Section */}
-      <div className={`
-        fixed scrn-750:ms-0 p-2
+      <div className={`fixed 
+        scrn-750:ms-0 p-2
         scrn-600:ps-4 
         scrn-800:ps-12
         scrn-950:ps-16
