@@ -32,12 +32,12 @@ const Hero: React.FC = () => {
       id="hero-section"
       className="relative flex pointer-events-none items-center overflow-hidden
       h-116
-      scrn-400:h-112
+      scrn-400:h-112 
       scrn-450:h-118
       scrn-500:h-118
       scrn-550:h-118
       scrn-600:h-120
-      scrn-650:h-120
+      scrn-650:h-120 
       scrn-700:h-120
       scrn-750:h-116
       scrn-800:h-120
