@@ -7,16 +7,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const MainContact: React.FC = () => {
   return (
-    <div className="bg-transparent outline-dashed outline-green-500 flex flex-col items-center overflow-hidden
-      scrn-600:justify-center
-
-      h-160
-      scrn-300:h-152
-      scrn-350:h-152
-      scrn-400:h-152
-      scrn-450:h-152
+    <div className="bg-transparent outline-dashed outline-1 outline-green-500 flex flex-col items-center scrn-600:justify-center
+      h-168
+      scrn-400:h-168
       scrn-500:h-152
-      scrn-550:h-152
       scrn-600:h-160
       scrn-800:h-164 
       scrn-850:h-172
@@ -47,9 +41,10 @@ const MainContact: React.FC = () => {
       scrn-2300:h-448
       scrn-2400:h-464
       scrn-2450:h-464
-      scrn-2500:h-480
-    ">
-      <div className="outline-dashed overflow-hidden outline-green-400 grid mx-4 max-w-xs scrn-600:grid-cols-2
+      scrn-2500:h-480"
+    >
+      <div className="outline-dashed outline-1 outline-green-400 grid mx-4 scrn-600:grid-cols-2
+        scrn-350:max-w-xs
         scrn-400:max-w-sm
         scrn-600:max-w-xl 
         scrn-700:max-w-2xl
@@ -65,27 +60,37 @@ const MainContact: React.FC = () => {
         scrn-750:gap-x-10
         scrn-1200:gap-x-24
 
-        scrn-750:pt-0 
-        scrn-800:pt-0
+        scrn-800:pt-0 
         scrn-900:pt-0
         scrn-1000:pt-0
-        scrn-1500:pt-24 
-      ">
-        <div className="h-auto
-        space-y-2
-        scrn-600:space-y-12
+        scrn-1500:pt-24"
+      >
+        <div className="h-auto 
+          space-y-3
+          scrn-400:space-y-3
+          scrn-450:space-y-3
+          scrn-500:space-y-4
+          scrn-550:space-y-4
+          scrn-600:space-y-4
+          scrn-1200:space-y-12
 
-        pt-4
-        scrn-600:pt-16
-        scrn-1000:pt-20
-        scrn-1600:pt-32">
-          <span className="text-red-600 font-semibold
-          text-xl
-          scrn-600:text-4xl
-          scrn-850:text-5xl 
-          scrn-1200:text-6xl  
-          scrn-1500:text-7xl 
-          ">
+          scrn-400:pt-8
+          scrn-450:pt-8
+          scrn-500:pt-4
+          scrn-600:pt-16
+          scrn-750:pt-8
+          scrn-1000:pt-20
+          scrn-1600:pt-32"
+        >
+          <span className="text-red-600 font-semibold 
+            text-sm
+            scrn-500:text-base 
+            scrn-800:text-xl  
+            scrn-1500:text-3xl 
+            scrn-1700:text-4xl 
+            scrn-1900:text-4xl
+            scrn-2000:text-5xl"
+          >
             855-444-APEC
           </span>
           <div className="tracking-wide hidden scrn-1500:block 
@@ -98,11 +103,11 @@ const MainContact: React.FC = () => {
             <LocationRed text="4732-E North Royal Atlanta Drive, Tucker, Georgia 30084" size={36} />
             <LocationRed text="505 Garden Oaks Boulevard, Houston, Texas 77018" size={36} />
           </div>
+
           <div className="tracking-wide hidden scrn-600:block scrn-1500:hidden
           text-sm
           scrn-800:text-base
           scrn-1400:text-lg  
-          
           space-y-6
           scrn-1200:space-y-10 
           ">
@@ -111,13 +116,10 @@ const MainContact: React.FC = () => {
             <LocationRed text="4732-E North Royal Atlanta Drive, Tucker, Georgia 30084" size={30} />
             <LocationRed text="505 Garden Oaks Boulevard, Houston, Texas 77018" size={30} />
           </div>
-          <div className="scrn-400:tracking-wide scrn-600:hidden
-          text-xs
-          space-y-2
-          scrn-1200:space-y-10 
-          ">
-            <MailRed text="Sales@TheAPECGroup.com" size={14} />
-            <MailRed text="Service@TheAPECGroup.com" size={14} />
+
+          <div className="scrn-600:hidden text-2xs scrn-400:text-xs space-y-2">
+            <MailRed text="Sales@TheAPECGroup.com" size={18} />
+            <MailRed text="Service@TheAPECGroup.com" size={18} />
             <LocationRed text="4732-E North Royal Atlanta Drive, Tucker, Georgia 30084" size={18} />
             <LocationRed text="505 Garden Oaks Boulevard, Houston, Texas 77018" size={18} />
           </div>
@@ -127,7 +129,9 @@ const MainContact: React.FC = () => {
         scrn-400:mt-6
         scrn-450:mt-6
         scrn-500:mt-8
-        scrn-550:mt-8">
+        scrn-550:mt-8
+        scrn-750:mt-0"
+        >
           <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
           <div className="relative z-10 
             p-4
@@ -138,44 +142,56 @@ const MainContact: React.FC = () => {
             scrn-1500:p-24 
           ">
             <span className="font-medium
-              text-sm
-              scrn-400:text-lg 
+              scrn-300:text-base 
+              scrn-500:text-xl 
+              scrn-600:text-xl 
+              scrn-750:text-lg 
+              scrn-800:text-lg 
               scrn-900:text-xl 
               scrn-1000:text-xl 
               scrn-1250:text-2xl 
               scrn-1500:text-3xl 
               scrn-1700:text-3xl 
-              scrn-1900:text-3xl 
-              scrn-2000:text-4xl
-            ">
+              scrn-1900:text-4xl 
+              scrn-2000:text-4xl"
+            >
               FOR MORE INFORMATION
             </span>
             <form className="
               scrn-300:space-y-2 
               scrn-450:space-y-2
-              scrn-600:space-y-4
+              scrn-600:space-y-3 
               scrn-750:space-y-4 
               scrn-800:space-y-4 
-              scrn-900:space-y-4
-              scrn-1000:space-y-6
-              scrn-1250:space-y-8
-              scrn-1400:space-y-8
-             
-              scrn-mobile:mt-6 
+              scrn-900:space-y-2 
+              scrn-1000:space-y-4 
+              scrn-1250:space-y-2 
+              scrn-1400:space-y-4
+              scrn-1500:space-y-8 
+              scrn-1700:space-y-8 
+              scrn-1900:space-y-12 
+              scrn-2000:space-y-12 
+           
+              mt-6 
               scrn-600:mt-6 
               scrn-750:mt-8 
               scrn-800:mt-6 
               scrn-900:mt-12 
+              scrn-1000:mt-12 
 
-              text-xs
-              scrn-700:text-sm 
-              scrn-800:text-sm
+              scrn-300:text-xs 
+              scrn-450:text-sm 
+              scrn-600:text-base 
+              scrn-750:text-sm 
+              scrn-800:text-base 
               scrn-900:text-base 
               scrn-1000:text-lg 
               scrn-1250:text-lg 
               scrn-1500:text-lg 
-              scrn-1700:text-xl
-            ">
+              scrn-1700:text-xl 
+              scrn-1900:text-xl 
+              scrn-2000:text-xl"
+            >
               <input type="text" placeholder="Your Name" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="email" placeholder="Email Address" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="text" placeholder="Phone Number" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
@@ -190,7 +206,7 @@ const MainContact: React.FC = () => {
             </form>
           </div>
         </div>
-        <p className="space-x-2 font-semibold text-nowrap hidden scrn-500:block text-transparent
+        <p className="space-x-2 font-semibold text-nowrap hidden text-transparent
           pt-6
           scrn-400:pt-6
           scrn-450:pt-12
@@ -244,8 +260,8 @@ const MainContact: React.FC = () => {
           scrn-1500:text-5xl 
           scrn-1700:text-6xl 
           scrn-1900:text-6xl 
-          scrn-2000:text-7xl">
-
+          scrn-2000:text-7xl"
+          >
           </span>
         </p>
       </div>

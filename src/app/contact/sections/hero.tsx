@@ -32,138 +32,176 @@ const Hero: React.FC = () => {
       id="hero-section"
       className=" relative flex items-center pointer-events-none overflow-hidden
         h-116
-        scrn-400:h-112
-        scrn-450:h-116
-        scrn-500:h-118
-        scrn-550:h-118
-        scrn-600:h-120
-        scrn-650:h-120
-        scrn-700:h-120
-        scrn-750:h-116
-        scrn-800:h-120
-        scrn-850:h-124
-        scrn-900:h-128
-        scrn-950:h-132
-        scrn-1000:h-140
-        scrn-1050:h-144
-        scrn-1100:h-148
-        scrn-1150:h-156
-        scrn-1200:h-164
-        scrn-1250:h-168
-        scrn-1300:h-176
-        scrn-1350:h-180
-        scrn-1400:h-188
-        scrn-1450:h-195
-        scrn-1500:h-198
-        scrn-1550:h-208
-        scrn-1600:h-216
-        scrn-1650:h-224
-        scrn-1700:h-228
-        scrn-1750:h-232
-        scrn-1800:h-240
-        scrn-1850:h-248
-        scrn-1900:h-256
-        scrn-1950:h-260
-        scrn-2000:h-268
-        scrn-2050:h-276
-        scrn-2100:h-280
-        scrn-2150:h-288
-        scrn-2200:h-296
-        scrn-2250:h-304
-        scrn-2300:h-308
-        scrn-2350:h-312
-        scrn-2400:h-316
-        scrn-2450:h-324
-        scrn-2500:h-326
-      ">
-      <div className="absolute z-10 hidden scrn-300:block
-        scale-250
-        scrn-350:scale-250
-        scrn-400:scale-185
-        scrn-500:scale-165
-        scrn-550:scale-150
-        scrn-650:scale-135
-        scrn-750:scale-105
-        scrn-800:scale-110
-        scrn-850:scale-110
-        scrn-900:scale-110
-        scrn-1000:scale-110
-        scrn-1100:scale-105
-      ">
+      scrn-400:h-116
+      scrn-450:h-118
+      scrn-500:h-118
+      scrn-550:h-118
+      scrn-600:h-120
+      scrn-650:h-120
+      scrn-700:h-120
+      scrn-800:h-120
+      scrn-850:h-124
+      scrn-900:h-128
+      scrn-950:h-132
+      scrn-1000:h-144
+      scrn-1100:h-148
+      scrn-1150:h-156
+      scrn-1200:h-164
+      scrn-1250:h-168
+      scrn-1300:h-176
+      scrn-1350:h-180
+      scrn-1400:h-188
+      scrn-1450:h-195
+      scrn-1500:h-198
+      scrn-1550:h-208
+      scrn-1600:h-216
+      scrn-1650:h-224
+      scrn-1700:h-228
+      scrn-1750:h-232
+      scrn-1800:h-240
+      scrn-1850:h-248
+      scrn-1900:h-256
+      scrn-1950:h-260
+      scrn-2000:h-268
+      scrn-2050:h-276
+      scrn-2100:h-280
+      scrn-2150:h-288
+      scrn-2200:h-296
+      scrn-2250:h-304
+      scrn-2300:h-308
+      scrn-2350:h-312
+      scrn-2400:h-316
+      scrn-2450:h-324
+      scrn-2500:h-326"
+    >
+      {/* Background Image */}
+      <div className="absolute z-10">
         <Image
-          className='hidden scrn-400:block'
-          src="/backgrounds/contact/Hero_Contact2.png"
+          src="/backgrounds/contact/Hero_Contact_New.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}
           height={1437}
           priority
-        />
-        <Image
-          className='scrn-400:hidden'
-          src="/backgrounds/contact/Hero_Contact_Mobile.png"
-          alt="Background"
-          style={{ objectFit: 'cover' }}
-          width={2786}
-          height={1437}
-          priority
+          className="
+          h-124
+          mb-24
+                
+          scrn-400:h-120
+          scrn-400:mt-10
+          scrn-450:h-124
+          scrn-450:mt-12
+          scrn-500:h-120
+          scrn-500:mt-16
+          scrn-600:h-120
+          scrn-600:mt-16
+          scrn-700:h-120
+          scrn-700:mt-16
+          scrn-800:mt-20
+          scrn-850:h-124
+          scrn-900:h-128
+          scrn-900:mt-12
+          scrn-950:h-140
+          scrn-950:mt-8
+          scrn-1000:h-160
+          scrn-1000:mt-6
+          scrn-1100:mt-12
+          scrn-1150:h-160
+          scrn-1150:mt-20
+          scrn-1200:h-168
+          scrn-1200:mt-16
+          scrn-1250:h-176
+          scrn-1300:h-195
+          scrn-1300:mt-0
+          scrn-1350:mt-12
+          scrn-1400:h-208
+          scrn-1400:mb-24
+          scrn-1400:mt-0
+          scrn-1450:mt-12
+          scrn-1500:mt-16
+          scrn-1550:mt-20
+          scrn-1600:h-232
+          scrn-1650:mt-0
+          scrn-1650:mb-0
+          scrn-1800:h-240
+          scrn-1850:h-248
+          scrn-1900:h-260
+          scrn-1900:mb-12
+          scrn-1950:mt-12
+          scrn-2000:h-272
+          scrn-2000:mt-0
+          scrn-2000:mb-12
+          scrn-2050:mb-4
+          scrn-2100:h-280
+          scrn-2100:mb-0
+          scrn-2100:mt-0
+          scrn-2150:h-296
+          scrn-2150:mb-8
+          scrn-2300:h-304
+          scrn-2300:mb-8
+          scrn-2350:h-312
+          scrn-2350:mb-4
+          scrn-2400:h-320
+          scrn-2400:mb-0
+          scrn-2450:h-324
+          scrn-2500:h-339
+          scrn-2500:mb-8"
         />
       </div>
 
-      <div
-        className={`fixed scrn-300:p-2 space-y-8 text-left flex items-center transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
-          }`}
+      {/* Left Text Section */}
+      <div className={`
+        fixed scrn-750:ms-0 p-2 scrn-600:ps-4 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        }`}
       >
-        <div className='scrn-600:ps-4 scrn-1250:ps-12'>
-          <nav className='gap-y-12'>
-            <ul className="flex items-center space-x-2 mb-10 scrn-400:mb-4 scrn-450:mb-0 font-semibold text-gray-600 tracking-widest
+
+        {/* Breadcrumb */}
+        <nav className="">
+          <ul className="flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest
             text-2xs 
             scrn-600:text-xs
             scrn-750:text-sm
             scrn-1000:text-lg 
-            scrn-1500:text-xl
-          ">
-              <li>
-                <Link href="/home">
-                  Home
-                </Link>
-              </li>
-              <li>/</li>
-              <li>Services</li>
-              <li>/</li>
-              <li className="text-red-600">APEC Contact</li>
-            </ul>
-          </nav>
+            scrn-1500:text-xl"
+          >
+            <li>
+              <Link href="/home">
+                Home
+              </Link>
+            </li>
+            <li>/</li>
+            <li className="text-red-600">Contact</li>
+          </ul>
+        </nav>
 
-          <div>
-            <span className="font-semibold whitespace-nowrap text-red-600
-            text-4xl
-            scrn-450:text-5xl
-            scrn-550:text-6xl
+        <div>
+          <span className="font-semibold whitespace-nowrap text-red-600
+            text-3xl
+            scrn-400:text-5xl
+            scrn-500:text-6xl
             scrn-650:text-7xl
-            scrn-850:text-8xl
-            scrn-1150:text-9xl
-            scrn-1450:text-10xl
+            scrn-800:text-8xl
+            scrn-1000:text-9xl
+            scrn-1400:text-10xl
             scrn-1600:text-10xl
             scrn-1700:text-11xl
             scrn-1900:text-11xl
             scrn-2000:text-12xl
             scrn-2400:text-13xl
           ">
-              CONTACT
-            </span><br />
-            <span className="font-semibold whitespace-nowrap text-red-600
+            CONTACT
+          </span><br />
+          <span className="font-semibold whitespace-nowrap text-red-600
             text-2xl
-            scrn-450:text-4xl
-            scrn-550:text-5xl
-            scrn-850:text-7xl
-            scrn-1450:text-8xl
-            scrn-1700:text-9xl
+            scrn-400:text-4xl
+            scrn-500:text-5xl
+            scrn-800:text-7xl
+            scrn-1000:text-8xl
+            scrn-1400:text-9xl
             scrn-1900:text-9xl
           ">
-              US
-            </span>
-          </div>
+            US
+          </span>
         </div>
       </div>
     </div>

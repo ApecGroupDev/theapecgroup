@@ -1,4 +1,4 @@
-import Footer from "./sections/footerContact";
+import Footer from "@/components/footer";
 import MainContact from "./sections/main";
 import Hero from "./sections/hero";
 const Contact: React.FC = () => {
