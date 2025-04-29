@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="bg-[#343434] text-gray-800">
+    <html lang="en" className="bg-gray-300 text-gray-800">
       <head>
         {/* Meta tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
