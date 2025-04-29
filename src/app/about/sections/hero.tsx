@@ -6,20 +6,20 @@ import Link from 'next/link';
 
 const Hero: React.FC = () => {
   const [fadeOut, setFadeOut] = useState(false);
+  const fadeOutThreshold = -20;
 
+  // Scroll to top on page load
   useEffect(() => {
-    const handleBeforeUnload = () => window.scrollTo(0, 0);
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    window.scrollTo(0, 0);
   }, []);
 
+  // Fade out hero section based on scroll
   useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.getElementById('hero-section');
       if (heroSection) {
         const { top } = heroSection.getBoundingClientRect();
-        setFadeOut(top < -80);
+        setFadeOut(top < fadeOutThreshold);
       }
     };
 
@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
       scrn-800:pb-20
       scrn-1000:pb-12
       scrn-1200:pb-0
-      fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-75 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
         }`}
       >
         <nav className="">
