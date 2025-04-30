@@ -1,25 +1,36 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero: React.FC = () => {
   const [fadeOut, setFadeOut] = useState(false);
+  const fadeOutThreshold = -20;
+  const heroRef = useRef<HTMLDivElement | null>(null); // 👈 Step 1: create ref
 
+  // Scroll to top on page load
   useEffect(() => {
-    const handleBeforeUnload = () => window.scrollTo(0, 0);
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
   }, []);
 
+  // Fade out hero section based on scroll
   useEffect(() => {
+    const hero = heroRef.current;
+    if (!hero) return;
+
+    let ticking = false;
+
     const handleScroll = () => {
-      const heroSection = document.getElementById('hero-section');
-      if (heroSection) {
-        const { top } = heroSection.getBoundingClientRect();
-        setFadeOut(top < -80);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const { top } = hero.getBoundingClientRect();
+          const shouldFadeOut = top < fadeOutThreshold;
+          setFadeOut(prev => (prev !== shouldFadeOut ? shouldFadeOut : prev));
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
@@ -30,6 +41,7 @@ const Hero: React.FC = () => {
   return (
     <div
       id="hero-section"
+      ref={heroRef}
       className=" relative flex items-center pointer-events-none overflow-hidden
         h-116
       scrn-400:h-116
@@ -83,15 +95,79 @@ const Hero: React.FC = () => {
           width={2786}
           height={1437}
           priority
-          className="h-124 mb-24 scrn-400:h-120 scrn-400:mt-10 scrn-450:h-124 scrn-450:mt-12 scrn-500:h-120 scrn-500:mt-16 scrn-600:h-120 scrn-600:mt-16 scrn-700:h-120 scrn-700:mt-16 scrn-800:mt-20 scrn-850:h-124 scrn-900:h-128 scrn-900:mt-12 scrn-950:h-140 scrn-950:mt-8 scrn-1000:h-160 scrn-1000:mt-6 scrn-1100:mt-12 scrn-1150:h-160 scrn-1150:mt-20 scrn-1200:h-168 scrn-1200:mt-16 scrn-1250:h-176 scrn-1300:h-195 scrn-1300:mt-0 scrn-1350:mt-12 scrn-1400:h-208 scrn-1400:mb-24 scrn-1400:mt-0 scrn-1450:mt-12 scrn-1500:mt-16 scrn-1550:mt-20 scrn-1600:h-232 scrn-1650:mt-0 scrn-1650:mb-0 scrn-1800:h-240 scrn-1850:h-248 scrn-1900:h-260 scrn-1900:mb-12 scrn-1950:mt-12 scrn-2000:h-272 scrn-2000:mt-0 scrn-2000:mb-12 scrn-2050:mb-4 scrn-2100:h-280 scrn-2100:mb-0 scrn-2100:mt-0 scrn-2150:h-296 scrn-2150:mb-8 scrn-2300:h-304 scrn-2300:mb-8 scrn-2350:h-312 scrn-2350:mb-4 scrn-2400:h-320 scrn-2400:mb-0 scrn-2450:h-324 scrn-2500:h-339 scrn-2500:mb-8"/>
+          className="
+          h-124 
+          mb-24 
+          scrn-400:h-120 
+          scrn-400:mt-10 
+          scrn-450:h-124 
+          scrn-450:mt-12 
+          scrn-500:h-120 
+          scrn-500:mt-16 
+          scrn-600:h-120 
+          scrn-600:mt-16 
+          scrn-700:h-120 
+          scrn-700:mt-16 
+          scrn-800:mt-20 
+          scrn-850:h-124 
+          scrn-900:h-128 
+          scrn-900:mt-12 
+          scrn-950:h-140 
+          scrn-950:mt-8 
+          scrn-1000:h-160 
+          scrn-1000:mt-6 
+          scrn-1100:mt-12 
+          scrn-1150:h-160 
+          scrn-1150:mt-20 
+          scrn-1200:h-168 
+          scrn-1200:mt-16 
+          scrn-1250:h-176 
+          scrn-1300:h-195 
+          scrn-1300:mt-0 
+          scrn-1350:mt-12 
+          scrn-1400:h-208 
+          scrn-1400:mb-24 
+          scrn-1400:mt-0 
+          scrn-1450:mt-12 
+          scrn-1500:mt-16 
+          scrn-1550:mt-20 
+          scrn-1600:h-232 
+          scrn-1650:mt-0 
+          scrn-1650:mb-0 
+          scrn-1800:h-240 
+          scrn-1850:h-248 
+          scrn-1900:h-260 
+          scrn-1900:mb-12 
+          scrn-1950:mt-12 
+          scrn-2000:h-272 
+          scrn-2000:mt-0 
+          scrn-2000:mb-12 
+          scrn-2050:mb-4 
+          scrn-2100:h-280 
+          scrn-2100:mb-0 
+          scrn-2100:mt-0 
+          scrn-2150:h-296 
+          scrn-2150:mb-8 
+          scrn-2300:h-304 
+          scrn-2300:mb-8 
+          scrn-2350:h-312 
+          scrn-2350:mb-4 
+          scrn-2400:h-320 
+          scrn-2400:mb-0 
+          scrn-2450:h-324 
+          scrn-2500:h-339 
+          scrn-2500:mb-8"
+        />
       </div>
 
       {/* Left Text Section */}
-      <div className={`
-        fixed scrn-750:ms-0 p-2 scrn-600:ps-4 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
-        }`}
-      >
-
+      <div className={`fixed 
+      scrn-750:ms-0 
+      p-2 
+      scrn-600:ps-4 
+      text-left transition-opacity duration-75
+        ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}
+      `}>
         {/* Breadcrumb */}
         <nav className="">
           <ul className="flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest
