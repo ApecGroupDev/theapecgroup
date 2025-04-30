@@ -39,7 +39,7 @@ const HorizontalScrollSection: React.FC = () => {
       }
 
       event.preventDefault();
-      section.scrollLeft += event.deltaY * 4;
+      section.scrollLeft += event.deltaY * 2;
       updateProgress();
     };
 
@@ -413,7 +413,7 @@ const HorizontalScrollSection: React.FC = () => {
     >
       <div
         ref={sectionRef}
-        className="w-full overflow-x-scroll overflow-y-hidden flex scrn-750:whitespace-nowrap scrollbar-custom scrollbar scroll-smooth"
+        className="flex w-full overflow-x-auto scrollbar-visible scroll-smooth"
       >
         <div className="flex flex-nowrap min-w-max">
           {sections.map((section, index) => (
