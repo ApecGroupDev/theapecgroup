@@ -1,25 +1,36 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero: React.FC = () => {
   const [fadeOut, setFadeOut] = useState(false);
+  const fadeOutThreshold = -20;
+  const heroRef = useRef<HTMLDivElement | null>(null); // 👈 Step 1: create ref
 
+  // Scroll to top on page load
   useEffect(() => {
-    const handleBeforeUnload = () => window.scrollTo(0, 0);
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
   }, []);
 
+  // Fade out hero section based on scroll
   useEffect(() => {
+    const hero = heroRef.current;
+    if (!hero) return;
+
+    let ticking = false;
+
     const handleScroll = () => {
-      const heroSection = document.getElementById('hero-section');
-      if (heroSection) {
-        const { top } = heroSection.getBoundingClientRect();
-        setFadeOut(top < -80); // Adjust to control when the fade starts
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const { top } = hero.getBoundingClientRect();
+          const shouldFadeOut = top < fadeOutThreshold;
+          setFadeOut(prev => (prev !== shouldFadeOut ? shouldFadeOut : prev));
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
@@ -30,6 +41,7 @@ const Hero: React.FC = () => {
   return (
     <div
       id="hero-section"
+      ref={heroRef}
       className=" relative flex pointer-events-none items-center overflow-hidden
       h-116
       scrn-350:h-120
@@ -115,12 +127,13 @@ const Hero: React.FC = () => {
 
       {/* Left Text Section */}
       <div className={`
-      scrn-800:pb-20
-      scrn-1000:pb-12
-      scrn-1200:pb-0
-      fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-100 ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
-        }`}
-      >
+        scrn-800:pb-20
+        scrn-1000:pb-12
+        scrn-1200:pb-0
+        scrn-1900:pb-14
+        fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-75
+        ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}
+      `}>
         {/* Breadcrumb */}
         <nav className="">
           <ul className="flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest
