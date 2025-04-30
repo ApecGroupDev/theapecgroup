@@ -51,7 +51,7 @@ const features: Services[] = [
 
 const MainServices: React.FC = () => {
   return (
-    <div className="bg-transparent outline-dashed outline-1 outline-green-500
+    <div className="bg-transparent
     h-128
     scrn-400:h-132
     scrn-500:h-148

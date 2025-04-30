@@ -379,7 +379,7 @@ const HorizontalScrollSection: React.FC = () => {
   ];
 
   return (
-    <div className="relative w-full outline-dashed outline-lime-600 scrn-600:justify-end 
+    <div className="relative w-full scrn-600:justify-end 
       h-128 
       scrn-400:h-132
       scrn-500:h-124

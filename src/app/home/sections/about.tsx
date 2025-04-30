@@ -11,7 +11,7 @@ const About: React.FC = () => {
   });
 
   return (
-    <div className="w-full bg-transparent flex flex-col scrn-750:flex-row px-12 scrn-300:px-8 outline-dashed 
+    <div className="w-full bg-transparent flex flex-col scrn-750:flex-row px-12 scrn-300:px-8 
       scrn-1500:-mt-8
       
       h-140

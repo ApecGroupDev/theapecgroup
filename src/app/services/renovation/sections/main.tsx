@@ -5,7 +5,7 @@ import React from "react";
 
 const MainFinancing: React.FC = () => {
   return (
-    <div className="bg-transparent outline-dashed outline-1 outline-green-500 flex flex-col items-center scrn-600:justify-center
+    <div className="bg-transparent flex flex-col items-center scrn-600:justify-center
       h-168
       scrn-400:h-168
       scrn-500:h-160
@@ -41,7 +41,7 @@ const MainFinancing: React.FC = () => {
       scrn-2450:h-464
       scrn-2500:h-480"
     >
-      <div className="outline-dashed outline-1 outline-green-400 grid mx-4 scrn-600:grid-cols-2
+      <div className="grid mx-4 scrn-600:grid-cols-2
         scrn-350:max-w-xs
         scrn-400:max-w-sm
         scrn-600:max-w-xl 

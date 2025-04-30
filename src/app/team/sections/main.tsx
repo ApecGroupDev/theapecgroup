@@ -35,7 +35,7 @@ const TeamPage: React.FC = () => {
   }
 
   return (
-    <section className="outline-dashed outline-green-500 text-center font-bold text-gray-800
+    <section className="text-center font-bold text-gray-800
       scrn-450:pt-6 
       scrn-600:pt-6 
       scrn-700:pt-12 

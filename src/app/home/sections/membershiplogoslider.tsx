@@ -27,7 +27,7 @@ const MembershipLogosCarousel: React.FC = () => {
   });
 
   return (
-    <div className="bg-transparent px-12 scrn-750:px-36 scrn-2000:px-40 outline-dashed 
+    <div className="bg-transparent px-12 scrn-750:px-36 scrn-2000:px-40
       h-124
       scrn-400:h-128
       scrn-600:h-128 
