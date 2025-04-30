@@ -39,7 +39,9 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <div id="hero-section" ref={heroRef} className="relative flex items-center
+    <div id="hero-section"
+      ref={heroRef}
+      className="relative flex items-center
       h-116
       scrn-350:h-120
       scrn-400:h-132
@@ -112,14 +114,20 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className={`
+      {/* Left Text Section */}
+      <div className={`fixed
+        p-2
         scrn-600:pt-24
         scrn-800:pb-20
         scrn-1000:pb-12
         scrn-1200:pb-0
-        fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-75
+        scrn-750:ms-0 
+        scrn-600:ps-4 
+        scrn-1250:ps-12 
+        text-left transition-opacity duration-75
         ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}
       `}>
+        {/* Breadcrumb */}
         <nav className="">
           <ul className="flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest
             text-2xs 
