@@ -16,29 +16,29 @@ const Footer: React.FC = () => {
               url="https://twitter.com"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
             <SocialIcon
               url="https://www.instagram.com"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
             <SocialIcon
               url="https://www.facebook.com"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
             <SocialIcon
               url="https://www.linkedin.com"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
           </div>
           <div className="flex scrn-750:hidden space-x-4 pb-2 scrn-400:pb-0">
@@ -46,29 +46,29 @@ const Footer: React.FC = () => {
               url="https://twitter.com"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
             <SocialIcon
               url="https://www.instagram.com"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
             <SocialIcon
               url="https://www.facebook.com"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
             <SocialIcon
               url="https://www.linkedin.com"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#e82228"
-              className="hover:bg-[#e82228] transition-transform transform hover:scale-105"
+              bgColor="#c62931"
+              className="transition-transform transform hover:scale-125"
             />
           </div>
         </div>
@@ -89,14 +89,14 @@ const Footer: React.FC = () => {
             For More Info: 855-444-APEC<br />
             <a
               href="mailto:Service@TheAPECgroup.com"
-              className="text-[#e82228] hover:text-[#9c2e2b] transition-colors"
+              className="text-[#c62931] hover:text-red-500 transition-colors"
             >
               Service@TheAPECgroup.com
             </a>
             <br />
             <a
               href="mailto:Sales@TheAPECgroup.com"
-              className="text-[#e82228] hover:text-[#9c2e2b] transition-colors"
+              className="text-[#c62931] hover:text-red-500 transition-colors"
             >
               Sales@TheAPECgroup.com
             </a>

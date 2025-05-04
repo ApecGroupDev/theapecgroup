@@ -75,7 +75,7 @@ const Header: React.FC = () => {
       <div className="scrn-750:hidden container min-w-full relative flex items-center py-4">
         {/* Search Icon (Left) */}
         <button
-          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none z-20"
+          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20"
           onClick={toggleSearch}
           aria-label="Toggle Search"
         >
@@ -114,7 +114,7 @@ const Header: React.FC = () => {
 
         {/* Menu Button (Right) */}
         <button
-          className="absolute right-4 top-10 transform -translate-y-1/2 text-red-600 focus:outline-none z-20"
+          className="absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20"
           onClick={toggleMenu}
         >
           {isOpen ? (
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`block text-lg font-medium tracking-widest text-gray-800 hover:text-red-600 py-2 ${pathname === path ? "text-red-600" : ""
+                className={`block text-lg font-medium tracking-widest text-gray-800 hover:text-[#c62931] py-2 ${pathname === path ? "text-[#c62931]" : ""
                   }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -180,12 +180,12 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-red-600 transition-colors duration-200 relative ${pathname === path ? "text-red-600" : ""
+                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname === path ? "text-red-800" : ""
                   }`}
               >
                 {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
                 {pathname === path && (
-                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-red-600" />
+                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                 )}
               </Link>
             )
@@ -199,13 +199,13 @@ const Header: React.FC = () => {
               ref={searchRef}
               type="text"
               placeholder="Search APEC"
-              className="p-2 rounded-full border z-50 border-gray-300 focus:border-red-600 focus:outline-none w-48 scrn-750:w-64 transition-all duration-200"
+              className="p-2 rounded-full border z-50 border-gray-300 focus:border-[#c62931] focus:outline-none w-48 scrn-750:w-64 transition-all duration-200"
               autoFocus
             />
           ) : (
             <button
               onClick={() => setShowSearch(true)}
-              className="p-3 me-2 rounded-full bg-gray-100 hover:bg-red-600 hover:text-white transition-all duration-200 text-red-600"
+              className="p-3 me-2 rounded-full bg-gray-100 hover:bg-[#c62931] hover:text-white transition-all duration-200 text-[#c62931]"
               aria-label="Search"
             >
               <FiSearch className="text-xl" />
