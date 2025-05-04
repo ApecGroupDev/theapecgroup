@@ -74,7 +74,7 @@ const About: React.FC = () => {
         >
           Welcome to
         </motion.p>
-        <p className="text-4xl scrn-750:text-4xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-red-600">
+        <p className="text-4xl scrn-750:text-4xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl scrn-2k:text-9xl font-extrabold text-[#c62931]">
           APEC
         </p>
         <p className="scrn-300:text-lg text-xl scrn-750:text-lg scrn-1000:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2k:text-5xl font-medium text-gray-800">
@@ -93,7 +93,7 @@ const About: React.FC = () => {
         {/* Button */}
         <div className="mt-8 scrn-300:mt-4 scrn-400:mt-2 scrn-750:mt-4 scrn-850:mt-6 scrn-1700:mt-12 scrn-2k:mt-20 flex justify-center">
           <button
-            className="scrn-300:px-6 scrn-400:px-8 px-16 scrn-750:px-12 scrn-300:text-xs scrn-400:text-xs scrn-750:text-sm scrn-1000:px-20 scrn-2k:px-28 py-1 border-2 border-red-600 text-gray-800 scrn-1000:text-lg scrn-1700:text-2xl font-regular rounded-lg hover:bg-red-600 hover:text-white transition duration-200"
+            className="scrn-300:px-6 scrn-400:px-8 px-16 scrn-750:px-12 scrn-300:text-xs scrn-400:text-xs scrn-750:text-sm scrn-1000:px-20 scrn-2k:px-28 py-1 border-2 border-[#c62931] text-gray-800 scrn-1000:text-lg scrn-1700:text-2xl font-regular rounded-lg hover:bg-red-600 hover:text-white transition duration-200"
           >
             Sales@TheAPECgroup.com
           </button>

@@ -15,27 +15,27 @@ const features: FeatureBox[] = [
   {
     title: "TEAM",
     description: "“The truth is that teamwork is at the heart of great achievement” – John C. Maxwell.",
-    icon: <FaUsers className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
+    icon: <FaUsers className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]" />,
   },
   {
     title: "EXECUTION",
     description: "“You can’t build a reputation on what you are going to do” – Henry Ford.",
-    icon: <FaTasks className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
+    icon: <FaTasks className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]" />,
   },
   {
     title: "CUSTOMER",
     description: "“Get closer than ever to your customers.” – Steve Jobs.",
-    icon: <FaHandshake className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
+    icon: <FaHandshake className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]" />,
   },
   {
     title: "EXPERIENCE",
     description: "“Experience is the teacher of all things” – Julius Caesar.",
-    icon: <FaChartLine className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
+    icon: <FaChartLine className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]" />,
   },
   {
     title: "SERVICE",
     description: "“Great customer service means honoring the customer” – Chris LoCurto.",
-    icon: <FaCogs className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-red-600" />,
+    icon: <FaCogs className="text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]" />,
   },
 ];
 
@@ -90,7 +90,7 @@ const FeatureBoxes: React.FC = () => {
           WHY CHOOSE
         </motion.p>
         <p className="hidden scrn-750:block scrn-900:hidden scrn-1100:block mb-4">
-          <span className="text-red-600"> APEC?</span>
+          <span className="text-[#c62931]"> APEC?</span>
         </p>
         <p className=" scrn-750:hidden scrn-900:block scrn-1100:hidden mb-4">
           <span className="text-white"> APEC?</span>

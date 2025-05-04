@@ -62,7 +62,7 @@ const MembershipLogosCarousel: React.FC = () => {
               animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <span className="text-red-600">Proud</span>
+              <span className="text-[#c62931]">Proud</span>
             </motion.p>
             Member Of
           </h2>
