@@ -1,6 +1,6 @@
 .swiper-button-prev,
 .swiper-button-next {
-  color: red;
+  color:#c62931;
   /* Make navigation arrows red */
   font-size: 1.5rem;
   /* Adjust size if needed */
@@ -9,13 +9,13 @@
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: darkred;
+  color:#c62931;
   /* Darker red on hover */
 }
 
 /* Scrollbar draggable handle */
 .swiper-scrollbar-drag {
-  background: #ff0000;
+  background:#c62931;
   /* Red color for draggable part */
   border-radius: 10px;
   height: 100%;
@@ -25,7 +25,7 @@
 
 /* Change color and size on hover */
 .swiper-scrollbar-drag:hover {
-  background: #cc0000;
+  background:#c62931;
   /* Darker red on hover */
   transform: scaleY(1.2);
   /* Slightly enlarge for smooth interaction */

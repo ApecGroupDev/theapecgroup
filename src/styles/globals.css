@@ -226,7 +226,7 @@ body {
 .scrollbar-visible {
   overflow-x: auto;
   scrollbar-width: thick;
-  scrollbar-color: #ef4444 #ffffff;
+  scrollbar-color:#c62931 #ffffff;
   /* red thumb, gray track */
 }
 
@@ -239,6 +239,6 @@ body {
 }
 
 .scrollbar-visible::-webkit-scrollbar-thumb {
-  background-color: #ef4444;
+  background-color:#c62931;
   border-radius: 10px;
 }
