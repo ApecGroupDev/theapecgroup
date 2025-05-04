@@ -146,13 +146,13 @@ const Hero: React.FC = () => {
             <li>/</li>
             <li>Services</li>
             <li>/</li>
-            <li className="text-red-600">APEC Imaging & Canopies</li>
+            <li className="text-[#c62931]">APEC Imaging & Canopies</li>
           </ul>
         </nav>
 
         <div>
           <span
-            className="font-semibold whitespace-nowrap text-white
+            className="font-semibold whitespace-nowrap text-[#c62931]
             text-3xl
             scrn-400:text-4xl 
             scrn-450:text-5xl
@@ -164,7 +164,7 @@ const Hero: React.FC = () => {
             scrn-1200:text-9xl 
             scrn-1500:text-9xl 
             scrn-1600:text-10xl 
-            scrn-1900:text-11xl 
+            scrn-1900:text-10xl 
             scrn-2500:text-13xl"
           >
             IMAGING & <br />

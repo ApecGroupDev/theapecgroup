@@ -95,7 +95,7 @@ const MainFinancing: React.FC = () => {
             regulatory success with efficiency, affordability, and unmatched expertise.
           </p>
           <p>
-            <span className="text-red-600 font-semibold 
+            <span className="text-[#c62931] font-semibold 
             text-sm
             scrn-500:text-base 
             scrn-800:text-xl  
@@ -197,7 +197,7 @@ const MainFinancing: React.FC = () => {
               <input type="email" placeholder="Email" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <input type="text" placeholder="Site Address" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
               <textarea placeholder="Message" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600"></textarea>
-              <button type="submit" className="w-2/5 bg-red-600 text-white py-3 rounded-md font-semibold hover:bg-red-700 transition">
+              <button type="submit" className="w-2/5 bg-[#c62931] text-white py-3 rounded-md font-semibold hover:bg-red-500 transition">
                 SUBMIT
               </button>
             </form>
@@ -228,7 +228,7 @@ const MainFinancing: React.FC = () => {
           scrn-1900:pt-72
           scrn-2400:pt-96"
         >
-          <span className="text-red-600
+          <span className="text-[#c62931]
             scrn-300:text-2xl 
             scrn-450:text-3xl 
             scrn-600:text-4xl

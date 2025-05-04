@@ -135,18 +135,18 @@ const Hero: React.FC = () => {
             scrn-1500:text-xl"
           >
             <li>
-              <Link href="/home" className="hover:text-red-600">
+              <Link href="/home" className="hover:text-[#c62931]">
                 Home
               </Link>
             </li>
             <li>/</li>
-            <li className="text-red-600">Services</li>
+            <li className="text-[#c62931]">Services</li>
           </ul>
         </nav>
 
         {/* Headline */}
         <div>
-          <span className="scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap
+          <span className="scale-y-110 text-[#c62931] p-0 m-0 font-semibold whitespace-nowrap
             text-5xl 
             scrn-400:text-7xl
             scrn-600:text-8xl 

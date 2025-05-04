@@ -131,12 +131,12 @@ const Hero: React.FC = () => {
               <li>/</li>
               <li>Services</li>
               <li>/</li>
-              <li className="text-red-600">APEC Link</li>
+              <li className="text-[#c62931]">APEC Link</li>
             </ul>
           </nav>
 
           <div>
-            <span className="font-semibold whitespace-nowrap text-red-600
+            <span className="font-semibold whitespace-nowrap text-[#c62931]
               text-5xl
               scrn-400:text-6xl
               scrn-450:text-7xl
