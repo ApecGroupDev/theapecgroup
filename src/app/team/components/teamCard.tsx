@@ -36,7 +36,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
 
       {/* Text content */}
       <div className="z-10 flex-1 text-end">
-        <h2 className="text-red-600 font-normal scrn-600:font-semibold
+        <h2 className="text-[#c62931] font-normal scrn-600:font-semibold
           text-3xs
           scrn-450:text-xs 
           scrn-600:text-2xs  
@@ -60,7 +60,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, title }) => {
         </p>
       </div>
 
-      <div className="relative bg-gradient-to-r from-red-600 to-transparent clip-parallelogram overflow-visible
+      <div className="relative bg-gradient-to-r from-[#c62931] to-transparent clip-parallelogram overflow-visible
         w-16
         h-12
         scrn-450:w-24 

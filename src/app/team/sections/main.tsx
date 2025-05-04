@@ -86,7 +86,7 @@ const TeamPage: React.FC = () => {
       >
         Dedicated professionals delivering exceptional service
       </span><br />
-      <span className="font-bold text-red-600
+      <span className="font-bold text-[#c62931]
         scrn-900:text-xl 
         scrn-1000:text-2xl 
         scrn-1250:text-2xl 
