@@ -48,7 +48,7 @@ const ChooseUs: React.FC = () => {
         Why
         <motion.p
           ref={ref} // Set the ref to the element
-          className="text-4xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-6xl scrn-1000:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold text-red-600"
+          className="text-4xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-6xl scrn-1000:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold text-[#c62931]"
           initial={{ y: 70, opacity: 0 }}
           animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -148,7 +148,7 @@ const ChooseUs: React.FC = () => {
       {/* Contact Button */}
       <a
         href="mailto:Sales@TheAPECgroup.com"
-        className="px-16 font-regular py-1 border-2 rounded-lg hover:bg-red-600 border-red-600 text-gray-800  hover:text-white transition duration-200
+        className="px-16 font-regular py-1 border-2 rounded-lg hover:bg-red-500 border-[#c62931] text-gray-800  hover:text-white transition duration-200
         mt-4 
         scrn-900:mt-4 
         scrn-600:mt-6

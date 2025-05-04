@@ -146,7 +146,7 @@ const HorizontalScrollSection: React.FC = () => {
             <span className="text-6xl scrn-300:text-4xl scrn-450:mt-6 scrn-600:text-5xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-2500:text-9xl italic">Our</span>
             <motion.span
               ref={missionRef}
-              className="text-7xl scrn-300:text-5xl scrn-600:text-6xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2500:text-10xl font-bold text-red-600"
+              className="text-7xl scrn-300:text-5xl scrn-600:text-6xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2500:text-10xl font-bold text-[#c62931]"
               initial={{ y: 70, opacity: 0 }}
               animate={{ y: missionInView ? 0 : 50, opacity: missionInView ? 1 : 0 }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -231,7 +231,7 @@ const HorizontalScrollSection: React.FC = () => {
           <span className="text-6xl scrn-300:text-4xl scrn-300:mt-4 scrn-450:mt-6 scrn-1900:mt-24 scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1250:text-7xl scrn-2500:text-9xl italic">Our</span>
           <motion.span
             ref={valuesRef}
-            className="scrn-300:text-5xl text-7xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1250:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2500:text-10xl font-bold text-red-600"
+            className="scrn-300:text-5xl text-7xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1250:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2500:text-10xl font-bold text-[#c62931]"
             initial={{ y: 70, opacity: 0 }}
             animate={{ y: valuesInView ? 0 : 50, opacity: valuesInView ? 1 : 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -251,8 +251,8 @@ const HorizontalScrollSection: React.FC = () => {
           >
             {/* Customer Commitment */}
             <div className="flex items-center gap-4">
-              <CheckCircle size={48} className="text-red-600 hidden scrn-1600:block" />
-              <CheckCircle size={20} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <CheckCircle size={48} className="text-[#c62931] hidden scrn-1600:block" />
+              <CheckCircle size={20} className="text-[#c62931] scrn-1000:block scrn-1600:hidden" />
               <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2500:text-5xl font-bold text-gray-800">Customer Commitment</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2500:text-2xl text-gray-600">
@@ -261,8 +261,8 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Innovation */}
             <div className="flex items-center gap-4 scrn-2500:mt-10">
-              <Lightbulb size={48} className="text-red-600 hidden scrn-1600:block" />
-              <Lightbulb size={24} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <Lightbulb size={48} className="text-[#c62931] hidden scrn-1600:block" />
+              <Lightbulb size={24} className="text-[#c62931] scrn-1000:block scrn-1600:hidden" />
               <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2500:text-5xl font-bold text-gray-800">Innovation</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2500:text-2xl text-gray-600">
@@ -271,8 +271,8 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Integrity */}
             <div className="flex items-center gap-4 scrn-2500:mt-10">
-              <ShieldCheck size={48} className="text-red-600 hidden scrn-1600:block" />
-              <ShieldCheck size={24} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <ShieldCheck size={48} className="text-[#c62931] hidden scrn-1600:block" />
+              <ShieldCheck size={24} className="text-[#c62931] scrn-1000:block scrn-1600:hidden" />
               <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2500:text-5xl font-bold text-gray-800">Integrity</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2500:text-2xl text-gray-600">
@@ -281,8 +281,8 @@ const HorizontalScrollSection: React.FC = () => {
 
             {/* Excellence */}
             <div className="flex items-center gap-4 scrn-1000:mt-0 scrn-2500:mt-10">
-              <Award size={48} className="text-red-600 hidden scrn-1600:block" />
-              <Award size={24} className="text-red-600 scrn-1000:block scrn-1600:hidden" />
+              <Award size={48} className="text-[#c62931] hidden scrn-1600:block" />
+              <Award size={24} className="text-[#c62931] scrn-1000:block scrn-1600:hidden" />
               <span className="scrn-1000:text-xl scrn-1200:text-xl scrn-1500:text-2xl scrn-1900:text-4xl scrn-2500:text-5xl font-bold text-gray-800">Excellence</span>
             </div>
             <p className="scrn-300:text-sm scrn-1200:text-lg scrn-1500:text-xl scrn-1900:text-xl scrn-2500:text-2xl text-gray-600">
@@ -335,7 +335,7 @@ const HorizontalScrollSection: React.FC = () => {
             <span className="text-6xl scrn-300:text-4xl scrn-450:mt-6 scrn-600:text-5xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1500:text-7xl scrn-1900:text-7xl scrn-2500:text-9xl italic">Our</span>
             <motion.span
               ref={visionRef}
-              className="text-7xl scrn-300:text-5xl scrn-600:text-6xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2500:text-10xl font-bold text-red-600"
+              className="text-7xl scrn-300:text-5xl scrn-600:text-6xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2500:text-10xl font-bold text-[#c62931]"
               initial={{ y: 70, opacity: 0 }}
               animate={{ y: visionInView ? 0 : 50, opacity: visionInView ? 1 : 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}

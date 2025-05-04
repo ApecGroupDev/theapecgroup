@@ -137,12 +137,12 @@ const Hero: React.FC = () => {
             scrn-1500:text-xl"
           >
             <li>
-              <Link href="/home" className="hover:text-red-600">
+              <Link href="/home" className="hover:text-[#c62931]">
                 Home
               </Link>
             </li>
             <li>/</li>
-            <li className="text-red-600">About Us</li>
+            <li className="text-[#c62931]">About Us</li>
           </ul>
         </nav>
 
@@ -157,7 +157,7 @@ const Hero: React.FC = () => {
             scrn-1700:-space-y-8 
             scrn-1900:-space-y-12"
           >
-            <p className="scale-y-110 text-red-600 p-0 m-0 font-semibold whitespace-nowrap
+            <p className="scale-y-110 text-[#c62931] p-0 m-0 font-semibold whitespace-nowrap
               text-7xl 
               scrn-500:text-8xl 
               scrn-750:text-8xl 
