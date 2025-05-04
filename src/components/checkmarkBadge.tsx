@@ -1,6 +1,6 @@
 import { FaCheck } from "react-icons/fa";
 
-const CheckmarkBadge = ({ text = "", size = 30, fontSize = 18, bgColor = "red", textColor = "white" }) => {
+const CheckmarkBadge = ({ text = "", size = 30, fontSize = 18, bgColor = "#c62931", textColor = "white" }) => {
   return (
     <div style={{ display: "flex", alignItems: "center" }}>
       <div style={{
