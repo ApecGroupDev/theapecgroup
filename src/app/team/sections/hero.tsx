@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
 
         {/* Headline */}
         <div className='scrn-1250:space-x-4 scrn-1500:space-x-0'>
-          <span className="
+          <span className="italic
             text-4xl 
             scrn-450:text-5xl 
             scrn-600:text-7xl 

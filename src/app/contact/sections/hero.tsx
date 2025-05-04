@@ -204,7 +204,7 @@ const Hero: React.FC = () => {
           >
             CONTACT
           </span><br />
-          <span className="font-semibold whitespace-nowrap text-[#c62931]
+          <span className="italic 
             text-2xl
             scrn-400:text-4xl
             scrn-500:text-5xl
