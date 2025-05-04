@@ -82,7 +82,7 @@ const MainContact: React.FC = () => {
           scrn-1000:pt-20
           scrn-1600:pt-32"
         >
-          <span className="text-red-600 font-semibold 
+          <span className="text-[#c62931] font-semibold 
             text-sm
             scrn-500:text-base 
             scrn-800:text-xl  
@@ -200,7 +200,7 @@ const MainContact: React.FC = () => {
                 sitekey="test_key"
                 className="scale-75 scrn-400:scale-90 scrn-600:scale-75 scrn-1000:scale-100 w-1"
               />
-              <button type="submit" className="w-2/5 bg-red-600 text-white py-3 rounded-md font-semibold hover:bg-red-700 transition">
+              <button type="submit" className="w-2/5 bg-[#c62931] text-white py-3 rounded-md font-semibold hover:bg-red-500 transition">
                 SUBMIT
               </button>
             </form>

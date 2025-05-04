@@ -183,12 +183,12 @@ const Hero: React.FC = () => {
               </Link>
             </li>
             <li>/</li>
-            <li className="text-red-600">Contact</li>
+            <li className="text-[#c62931]">Contact</li>
           </ul>
         </nav>
 
         <div>
-          <span className="font-semibold whitespace-nowrap text-red-600
+          <span className="font-semibold whitespace-nowrap text-[#c62931]
             text-3xl
             scrn-400:text-5xl
             scrn-500:text-6xl
@@ -204,7 +204,7 @@ const Hero: React.FC = () => {
           >
             CONTACT
           </span><br />
-          <span className="font-semibold whitespace-nowrap text-red-600
+          <span className="font-semibold whitespace-nowrap text-[#c62931]
             text-2xl
             scrn-400:text-4xl
             scrn-500:text-5xl
