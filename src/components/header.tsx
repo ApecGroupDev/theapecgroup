@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`block text-lg font-medium tracking-widest text-gray-800 hover:text-[#c62931] py-2 ${pathname === path ? "text-[#c62931]" : ""
+                className={`block text-lg font-medium tracking-widest text-gray-800 hover:text-[#c62931] py-2 ${pathname.startsWith(path) ? "text-[#c62931]" : ""
                   }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -180,11 +180,11 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname === path ? "text-red-800" : ""
+                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""
                   }`}
               >
                 {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
-                {pathname === path && (
+                {pathname.startsWith(path) && (
                   <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                 )}
               </Link>
