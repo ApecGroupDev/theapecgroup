@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
-import { Scrollbar } from 'swiper/modules';
+import { Scrollbar, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import '../../../styles/membershiplogoslider.css';
 
@@ -71,7 +71,13 @@ const MembershipLogosCarousel: React.FC = () => {
           </p>
         </div>
         <Swiper
-          modules={[Scrollbar]}
+          modules={[Scrollbar, Autoplay]}
+          loop={true}
+          speed={4000} // duration of transition in ms (higher = smoother)
+          autoplay={{
+            delay: 1, // delay between transitions (1ms = nearly none)
+            disableOnInteraction: false,
+          }}
           scrollbar={{
             hide: false,
             draggable: true,
