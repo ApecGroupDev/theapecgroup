@@ -53,10 +53,21 @@ const features: Services[] = [
 const ServicesBoxLinks: React.FC = () => {
   const pathname = usePathname(); // 👈 Get current URL path
 
-  // Filter out the compliance item only on /team
-  const filteredFeatures = pathname === "/services/compliance"
-    ? features.filter(feature => feature.slug !== "compliance")
-    : features;
+  const hiddenSlugsByPath: Record<string, string[]> = {
+    "/services/compliance": ["compliance"],
+    "/services/financing": ["financing"],
+    "/services/imaging-and-canopies": ["imaging-and-canopies"],
+    "/services/renovation": ["renovation"],
+    "/services/construction": ["construction"],
+    "/services/link": ["link"],
+    // add more pages and slugs to hide here
+  };
+
+  const hiddenSlugs = hiddenSlugsByPath[pathname] || [];
+
+  const filteredFeatures = features.filter(
+    (feature) => !hiddenSlugs.includes(feature.slug)
+  );
   return (
     <div>
       {/* Feature Boxes */}
