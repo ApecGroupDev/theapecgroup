@@ -2,6 +2,7 @@
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import React from "react";
+import ServicesBoxLinks from "@/components/servicesLinks";
 
 const MainFinancing: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const MainFinancing: React.FC = () => {
       scrn-400:h-160
       scrn-500:h-168
       scrn-600:h-160
+      scrn-750:h-172
       scrn-800:h-184
       scrn-850:h-184
       scrn-900:h-184
@@ -203,7 +205,7 @@ const MainFinancing: React.FC = () => {
             </form>
           </div>
         </div>
-        <p className="space-x-2 font-semibold text-nowrap hidden scrn-600:block
+        <div className="space-x-2 font-semibold text-nowrap hidden scrn-600:block
           pt-6
           scrn-400:pt-6
           scrn-450:pt-12
@@ -228,41 +230,8 @@ const MainFinancing: React.FC = () => {
           scrn-1900:pt-72
           scrn-2400:pt-96"
         >
-          <span className="text-[#c62931]
-            scrn-300:text-2xl 
-            scrn-450:text-3xl 
-            scrn-600:text-4xl
-            scrn-700:text-5xl 
-            scrn-750:text-4xl 
-            scrn-800:text-4xl 
-            scrn-850:text-5xl
-            scrn-900:text-5xl 
-            scrn-1000:text-6xl 
-            scrn-1250:text-7xl 
-            scrn-1500:text-8xl 
-            scrn-1700:text-8xl 
-            scrn-1900:text-8xl
-            scrn-2000:text-9xl"
-          >
-            START RIGHT
-          </span>
-          <span className="
-            scrn-300:text-base 
-            scrn-450:text-xl 
-            scrn-600:text-2xl 
-            scrn-750:text-3xl 
-            scrn-800:text-3xl 
-            scrn-900:text-3xl 
-            scrn-1000:text-4xl
-            scrn-1200:text-5xl 
-            scrn-1500:text-5xl 
-            scrn-1700:text-6xl 
-            scrn-1900:text-6xl 
-            scrn-2000:text-7xl"
-          >
-            STAY RIGHT
-          </span>
-        </p>
+          <ServicesBoxLinks />
+        </div>
       </div>
     </div >
   );
