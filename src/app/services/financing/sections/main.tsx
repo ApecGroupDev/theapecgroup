@@ -10,9 +10,8 @@ const MainFinancing: React.FC = () => {
       scrn-400:h-152
       scrn-500:h-160
       scrn-600:h-160
-      scrn-750:h-172
-      scrn-800:h-184
-      scrn-850:h-184
+      scrn-800:h-164
+      scrn-850:h-172
       scrn-900:h-184
       scrn-950:h-192
       scrn-1000:h-216
@@ -240,8 +239,8 @@ const MainFinancing: React.FC = () => {
           scrn-550:pt-8
           scrn-600:pt-24
           scrn-700:pt-20
-          scrn-750:pt-16
-          scrn-800:pt-14
+          scrn-750:pt-6
+          scrn-800:pt-10
           scrn-850:pt-16
           scrn-900:pt-12
           scrn-950:pt-16
