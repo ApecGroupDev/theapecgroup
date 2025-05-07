@@ -183,7 +183,7 @@ const Hero: React.FC = () => {
             scrn-1200:text-7xl
             scrn-1500:text-8xl 
             scrn-1700:text-8xl 
-            scrn-1900:text-9xl'
+            scrn-1900:text-8.5xl'
             >
               INSPECTION AND <br />
               COMPLIANCE

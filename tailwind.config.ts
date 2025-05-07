@@ -79,6 +79,7 @@ export default {
         '2xs': '0.625rem',
         '3xs': '0.5rem',
         '4xs': '0.3rem',
+        '8.5xl': '7rem',
         '10xl': '10rem',
         '11xl': '12rem',
         '12xl': '14rem',
