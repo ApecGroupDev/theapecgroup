@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import ServicesBoxLinks from "@/components/servicesLinks";
 
 const MainFinancing: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const MainFinancing: React.FC = () => {
       scrn-400:h-152
       scrn-500:h-160
       scrn-600:h-160
+      scrn-750:h-172
       scrn-800:h-184
       scrn-850:h-184
       scrn-900:h-184
@@ -80,7 +82,7 @@ const MainFinancing: React.FC = () => {
           <span className="text-[#c62931] font-semibold 
             text-sm
             scrn-500:text-base 
-            scrn-800:text-xl  
+            scrn-800:text-lg  
             scrn-1500:text-3xl 
             scrn-1700:text-4xl 
             scrn-1900:text-4xl
@@ -93,7 +95,7 @@ const MainFinancing: React.FC = () => {
             scrn-400:text-sm 
             scrn-600:text-sm 
             scrn-750:text-sm 
-            scrn-800:text-base 
+            scrn-800:text-sm 
             scrn-900:text-base 
             scrn-1000:text-lg 
             scrn-1500:text-xl 
@@ -109,7 +111,7 @@ const MainFinancing: React.FC = () => {
             scrn-400:text-sm 
             scrn-600:text-sm 
             scrn-750:text-sm 
-            scrn-800:text-base 
+            scrn-800:text-sm
             scrn-900:text-base 
             scrn-1000:text-lg 
             scrn-1500:text-xl 
@@ -125,7 +127,7 @@ const MainFinancing: React.FC = () => {
             <span className="font-semibold hidden scrn-600:block
             text-sm
             scrn-500:text-base 
-            scrn-800:text-xl  
+            scrn-800:text-lg  
             scrn-1500:text-3xl 
             scrn-1700:text-4xl 
             scrn-1900:text-4xl
@@ -139,7 +141,7 @@ const MainFinancing: React.FC = () => {
             scrn-400:text-sm 
             scrn-600:text-sm 
             scrn-750:text-sm 
-            scrn-800:text-base 
+            scrn-800:text-sm 
             scrn-900:text-base 
             scrn-1000:text-lg 
             scrn-1500:text-xl 
@@ -230,7 +232,7 @@ const MainFinancing: React.FC = () => {
             </form>
           </div>
         </div>
-        <p className="space-x-2 font-semibold text-nowrap hidden scrn-600:block
+        <div className="space-x-2 font-semibold text-nowrap hidden scrn-600:block
           pt-6
           scrn-400:pt-6
           scrn-450:pt-12
@@ -255,41 +257,8 @@ const MainFinancing: React.FC = () => {
           scrn-1900:pt-72
           scrn-2400:pt-96"
         >
-          <span className="text-[#c62931]
-            scrn-300:text-2xl 
-            scrn-450:text-3xl 
-            scrn-600:text-4xl
-            scrn-700:text-5xl 
-            scrn-750:text-4xl 
-            scrn-800:text-4xl 
-            scrn-850:text-5xl
-            scrn-900:text-5xl 
-            scrn-1000:text-6xl 
-            scrn-1250:text-7xl 
-            scrn-1500:text-8xl 
-            scrn-1700:text-8xl 
-            scrn-1900:text-8xl
-            scrn-2000:text-9xl"
-          >
-            INVEST
-          </span>
-          <span className="
-            scrn-300:text-base 
-            scrn-450:text-xl 
-            scrn-600:text-2xl 
-            scrn-750:text-3xl 
-            scrn-800:text-3xl 
-            scrn-900:text-3xl 
-            scrn-1000:text-4xl
-            scrn-1200:text-5xl 
-            scrn-1500:text-5xl 
-            scrn-1700:text-6xl 
-            scrn-1900:text-6xl 
-            scrn-2000:text-7xl"
-          >
-            FUEL YOUR GROWTH
-          </span>
-        </p>
+          <ServicesBoxLinks />
+        </div>
       </div>
     </div >
   );
