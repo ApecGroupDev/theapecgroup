@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
       scrn-1750:h-232
       scrn-1800:h-240
       scrn-1850:h-248
-      scrn-1900:h-256
+      scrn-1900:h-236
       scrn-1950:h-260
       scrn-2000:h-268
       scrn-2050:h-276
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute z-10">
         <Image
-          src="/backgrounds/blog/Hero_Blog.png"
+          src="/backgrounds/blog/Hero_.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}
@@ -136,7 +136,7 @@ const Hero: React.FC = () => {
             scrn-1400:text-10xl
             scrn-1600:text-10xl
             scrn-1700:text-11xl
-            scrn-1900:text-10xl
+            scrn-1900:text-13xl
             scrn-2000:text-12xl
             scrn-2400:text-13xl"
           >

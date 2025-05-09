@@ -47,6 +47,16 @@ const blogData: BlogThumbnail[] = [
     subtitle: 'Innovations Shaping the Petroleum Industry',
     imageUrl: '/blogImages/blog1.png',
   },
+  {
+    title: 'Franchise vs. Independent',
+    subtitle: 'Pros and cons of owning each type',
+    imageUrl: '/blogImages/blog1.png',
+  },
+  {
+    title: 'Building Materials',
+    subtitle: 'What’s best for gas station construction',
+    imageUrl: '/blogImages/blog1.png',
+  },
 ];
 
 const BlogMain: React.FC = () => {
@@ -87,56 +97,58 @@ const BlogMain: React.FC = () => {
       scrn-2450:h-464
       scrn-2500:h-480"
     >
-      <div className="grid grid-cols-2 max-w-7xl gap-4 p-4 outline-1 outline-dashed">
-        {/* Left Large Thumbnail */}
-        <div className="relative overflow-hidden rounded-lg h-full shadow-lg">
-          <img
-            src={blogData[0].imageUrl}
-            alt=""
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-white to-transparent" />
-          <div className="absolute text-2xl bottom-2 left-4 right-4 text-black font-semibold">
-            <p className="text-[#c62931]">{blogData[0].title}</p>
-            <p>{blogData[0].subtitle}</p>
-          </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="flex flex-col gap-4 h-full">
-          {/* Top Two Thumbnails (half height) */}
-          <div className="grid grid-cols-2 gap-4 h-1/2">
-            {[1, 2].map((i) => (
-              <div key={i} className="relative h-full overflow-hidden rounded-lg shadow-lg">
-                <img
-                  src={blogData[i].imageUrl}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-0 left-0 w-full h-[140px] bg-gradient-to-t from-white to-transparent" />
-                <div className="absolute text-xl bottom-2 left-4 text-black font-semibold">
-                  <p className="text-[#c62931]">{blogData[i].title}</p>
-                  <p>{blogData[i].subtitle}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom Thumbnail (half height) */}
-          <div className="relative h-1/2 overflow-hidden rounded-lg shadow-lg">
+      {[0, 4].map((startIdx) => (
+        <div key={startIdx} className="grid grid-cols-2 gap-4 p-4 outline-1 outline-dashed
+        scrn-1900:max-w-7xl">
+          {/* Left Large Thumbnail */}
+          <div className="relative overflow-hidden rounded-lg h-full shadow-lg">
             <img
-              src={blogData[3].imageUrl}
+              src={blogData[startIdx].imageUrl}
               alt=""
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-0 left-0 w-full h-[140px] bg-gradient-to-t from-white to-transparent" />
-            <div className="absolute text-xl bottom-2 left-4 text-black font-semibold">
-              <p className="text-[#c62931]">{blogData[3].title}</p>
-              <p>{blogData[3].subtitle}</p>
+            <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-white to-transparent" />
+            <div className="absolute text-2xl bottom-2 left-4 right-4 text-black font-semibold">
+              <p className="text-[#c62931]">{blogData[startIdx].title}</p>
+              <p>{blogData[startIdx].subtitle}</p>
+            </div>
+          </div>
+
+          {/* Right Column */}
+          <div className="flex flex-col gap-4 h-full">
+            <div className="grid grid-cols-2 gap-4 h-1/2">
+              {[startIdx + 1, startIdx + 2].map((i) => (
+                <div key={i} className="relative h-full overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src={blogData[i].imageUrl}
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 w-full h-[140px] bg-gradient-to-t from-white to-transparent" />
+                  <div className="absolute text-xl bottom-2 left-4 text-black font-semibold">
+                    <p className="text-[#c62931]">{blogData[i].title}</p>
+                    <p>{blogData[i].subtitle}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="relative h-1/2 overflow-hidden rounded-lg shadow-lg">
+              <img
+                src={blogData[startIdx + 3].imageUrl}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-full h-[140px] bg-gradient-to-t from-white to-transparent" />
+              <div className="absolute text-xl bottom-2 left-4 text-black font-semibold">
+                <p className="text-[#c62931]">{blogData[startIdx + 3].title}</p>
+                <p>{blogData[startIdx + 3].subtitle}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ))}
+
     </div>
   );
 };
