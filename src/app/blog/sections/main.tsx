@@ -1,9 +1,12 @@
+"use client";
+
 import React from 'react';
 
 type BlogThumbnail = {
   title: string;
   subtitle?: string;
   imageUrl: string;
+  content?: string;
 };
 
 const blogData: BlogThumbnail[] = [
@@ -11,11 +14,15 @@ const blogData: BlogThumbnail[] = [
     title: 'The Future of Gas Stations:',
     subtitle: 'Innovations Shaping the Petroleum Industry',
     imageUrl: '/blogImages/blog1.png',
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
   },
   {
     title: 'How much does it cost',
     subtitle: 'to build a gas station?',
     imageUrl: '/blogImages/blog1.png',
+    content: 'This is the full content of the second blog post.',
   },
   {
     title: 'How much does it cost',
@@ -60,6 +67,10 @@ const blogData: BlogThumbnail[] = [
 ];
 
 const BlogMain: React.FC = () => {
+  const [activeBlog, setActiveBlog] = React.useState<BlogThumbnail | null>(null);
+
+  const openBlog = (blog: BlogThumbnail) => setActiveBlog(blog);
+  const closeBlog = () => setActiveBlog(null);
   return (
     <div className="bg-transparent flex flex-col items-center scrn-600:justify-center outline-1 outline-dashed gap-y-4
       h-168
@@ -98,10 +109,12 @@ const BlogMain: React.FC = () => {
       scrn-2500:h-480"
     >
       {[0, 4].map((startIdx) => (
-        <div key={startIdx} className="grid grid-cols-2 gap-4 p-4 outline-1 outline-dashed
-        scrn-1900:max-w-7xl">
+        <div key={startIdx} className="grid grid-cols-2 gap-4 p-4 max-w-7xl">
           {/* Left Large Thumbnail */}
-          <div className="relative overflow-hidden rounded-lg h-full shadow-lg">
+          <div
+            onClick={() => openBlog(blogData[startIdx])}
+            className="relative overflow-hidden rounded-lg h-full shadow-lg cursor-pointer"
+          >
             <img
               src={blogData[startIdx].imageUrl}
               alt=""
@@ -118,7 +131,11 @@ const BlogMain: React.FC = () => {
           <div className="flex flex-col gap-4 h-full">
             <div className="grid grid-cols-2 gap-4 h-1/2">
               {[startIdx + 1, startIdx + 2].map((i) => (
-                <div key={i} className="relative h-full overflow-hidden rounded-lg shadow-lg">
+                <div
+                  key={i}
+                  onClick={() => openBlog(blogData[i])}
+                  className="relative h-full overflow-hidden rounded-lg shadow-lg cursor-pointer"
+                >
                   <img
                     src={blogData[i].imageUrl}
                     alt=""
@@ -133,7 +150,10 @@ const BlogMain: React.FC = () => {
               ))}
             </div>
 
-            <div className="relative h-1/2 overflow-hidden rounded-lg shadow-lg">
+            <div
+              onClick={() => openBlog(blogData[startIdx + 3])}
+              className="relative h-1/2 overflow-hidden rounded-lg shadow-lg cursor-pointer"
+            >
               <img
                 src={blogData[startIdx + 3].imageUrl}
                 alt=""
@@ -149,6 +169,28 @@ const BlogMain: React.FC = () => {
         </div>
       ))}
 
+      {activeBlog && (
+        <div className="fixed inset-0 z-50 bg-white bg-opacity-95 flex flex-col items-center justify-start p-8 overflow-y-auto">
+          <button
+            onClick={closeBlog}
+            className="self-end mb-4 text-4xl text-gray-700 hover:text-red-500"
+          >
+            &times;
+          </button>
+          <img
+            src={activeBlog.imageUrl}
+            alt=""
+            className="w-full max-h-224 object-cover rounded-lg mb-6"
+          />
+          <h2 className="text-3xl font-bold text-[#c62931] mb-2">{activeBlog.title}</h2>
+          {activeBlog.subtitle && (
+            <h3 className="text-xl font-semibold mb-4">{activeBlog.subtitle}</h3>
+          )}
+          <p className="text-gray-800 text-lg whitespace-pre-line">
+            {activeBlog.content || 'Full blog content goes here...'}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
