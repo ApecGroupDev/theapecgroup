@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col-reverse scrn-600:flex-row scrn-600:ms-2 items-center justify-between bg-transparent 
+    <div className="flex flex-col-reverse scrn-600:flex-row scrn-600:ms-2 items-center justify-between bg-transparent outline-1 outline-dashed
       h-140
       scrn-400:h-140
       scrn-600:h-124
