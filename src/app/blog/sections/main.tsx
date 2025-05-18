@@ -1,70 +1,7 @@
 "use client";
 
 import React from 'react';
-
-type BlogThumbnail = {
-  title: string;
-  subtitle?: string;
-  imageUrl: string;
-  content?: string;
-};
-
-const blogData: BlogThumbnail[] = [
-  {
-    title: 'The Future of Gas Stations:',
-    subtitle: 'Innovations Shaping the Petroleum Industry',
-    imageUrl: '/blogImages/blog1.png',
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
-  },
-  {
-    title: 'How much does it cost',
-    subtitle: 'to build a gas station?',
-    imageUrl: '/blogImages/blog1.png',
-    content: 'This is the full content of the second blog post.',
-  },
-  {
-    title: 'How much does it cost',
-    subtitle: 'to build a gas station?',
-    imageUrl: '/blogImages/blog1.png',
-  },
-  {
-    title: 'The Future of Gas Stations:',
-    subtitle: 'Innovations Shaping the Petroleum Industry',
-    imageUrl: '/blogImages/blog1.png',
-  },
-  {
-    title: 'The Future of Gas Stations:',
-    subtitle: 'Innovations Shaping the Petroleum Industry',
-    imageUrl: '/blogImages/blog1.png',
-  },
-  {
-    title: 'How much does it cost',
-    subtitle: 'to build a gas station?',
-    imageUrl: '/blogImages/blog1.png',
-  },
-  {
-    title: 'How much does it cost',
-    subtitle: 'to build a gas station?',
-    imageUrl: '/blogImages/blog1.png',
-  },
-  {
-    title: 'The Future of Gas Stations:',
-    subtitle: 'Innovations Shaping the Petroleum Industry',
-    imageUrl: '/blogImages/blog1.png',
-  },
-  {
-    title: 'Franchise vs. Independent',
-    subtitle: 'Pros and cons of owning each type',
-    imageUrl: '/blogImages/blog1.png',
-  },
-  {
-    title: 'Building Materials',
-    subtitle: 'What’s best for gas station construction',
-    imageUrl: '/blogImages/blog1.png',
-  },
-];
+import { blogData, BlogThumbnail } from '../components/blogData';
 
 const BlogMain: React.FC = () => {
   const [activeBlog, setActiveBlog] = React.useState<BlogThumbnail | null>(null);
@@ -109,7 +46,7 @@ const BlogMain: React.FC = () => {
       scrn-2500:h-480"
     >
       {[0, 4].map((startIdx) => (
-        <div key={startIdx} className="grid grid-cols-2 gap-4 p-4 max-w-7xl">
+        <div key={startIdx} className="grid grid-cols-2 gap-4 max-w-7xl">
           {/* Left Large Thumbnail */}
           <div
             onClick={() => openBlog(blogData[startIdx])}
