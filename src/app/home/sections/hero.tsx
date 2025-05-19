@@ -3,7 +3,19 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <div className="flex flex-col-reverse scrn-600:flex-row scrn-600:ms-2 items-center justify-between bg-transparent outline-1 outline-dashed
+    <div className="relative">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-contain z-10"
+      >
+        <source src="/videos/Main_v2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-between bg-transparent outline-2 outline-green-500 outline-dashed
       h-140
       scrn-400:h-140
       scrn-600:h-124
@@ -28,28 +40,28 @@ const Hero: React.FC = () => {
       scrn-2350:h-320
       scrn-2400:h-324
       scrn-2500:h-339"
-    >
-      {/* Left Text Section */}
-      <div className="scrn-1500:ms-4 scrn-2300:ms-8 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5">
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-bold whitespace-nowrap">
-          YOUR TOP CHOICE
-        </p>
-        <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-7xl scrn-2300:text-8xl font-regular italic text-[#c62931] tracking-wider whitespace-nowrap">
-          ONE-STOP SHOP
-        </p>
-        <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-regular">
-          ATLANTA COMPANY
-        </p>
-      </div>
+      >
+        {/* Left Text Section */}
+        <div className="scrn-1500:ms-4 scrn-2300:ms-8 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5 z-20">
+          <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-bold whitespace-nowrap">
+            YOUR TOP CHOICE
+          </p>
+          <p className="text-3xl scrn-750:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-7xl scrn-2300:text-8xl font-regular italic text-[#c62931] tracking-wider whitespace-nowrap">
+            ONE-STOP SHOP
+          </p>
+          <p className="text-2xl scrn-750:text-xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-regular">
+            ATLANTA COMPANY
+          </p>
+        </div>
 
-      {/* Right Image Section */}
-      <div className="w-full scrn-750:w-1/2 flex justify-center mt-auto">
-        <Image
-          src="/products/Fuel_Dispenser_Face_Left.png"
-          alt="Hero"
-          width={1011}
-          height={1211}
-          className="rounded-lg object-cover 
+        {/* Right Image Section */}
+        <div className="w-full scrn-750:w-1/2 flex justify-center mt-auto">
+          <Image
+            src="/products/Fuel_Dispenser_Face_Left.png"
+            alt="Hero"
+            width={1011}
+            height={1211}
+            className="rounded-lg object-cover hidden
           scrn-400:mb-6 
           
 
@@ -71,7 +83,8 @@ const Hero: React.FC = () => {
           scrn-1900:w-192
           scrn-2300:w-216
           scrn-2500:w-232 scrn-2500:mb-28"
-        />
+          />
+        </div>
       </div>
     </div>
   );
