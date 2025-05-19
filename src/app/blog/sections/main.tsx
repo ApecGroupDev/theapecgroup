@@ -107,25 +107,31 @@ const BlogMain: React.FC = () => {
       ))}
 
       {activeBlog && (
-        <div className="fixed inset-0 z-50 bg-white bg-opacity-95 flex flex-col items-center justify-start p-8 overflow-y-auto">
-          <button
-            onClick={closeBlog}
-            className="self-end mb-4 text-4xl text-gray-700 hover:text-red-500"
-          >
-            &times;
-          </button>
-          <img
-            src={activeBlog.imageUrl}
-            alt=""
-            className="w-full max-h-224 object-cover rounded-lg mb-6"
-          />
-          <h2 className="text-3xl font-bold text-[#c62931] mb-2">{activeBlog.title}</h2>
-          {activeBlog.subtitle && (
-            <h3 className="text-xl font-semibold mb-4">{activeBlog.subtitle}</h3>
-          )}
-          <p className="text-gray-800 text-lg whitespace-pre-line">
-            {activeBlog.content || 'Full blog content goes here...'}
-          </p>
+        <div className="fixed inset-0 z-50 bg-white bg-opacity-95 flex flex-col p-8 overflow-y-auto">
+          <div className="wax-w-7xl">
+            <button
+              onClick={closeBlog}
+              className="self-end mb-4 text-4xl text-gray-700 hover:text-red-500"
+            >
+              &times;
+            </button>
+            <img
+              src={activeBlog.imageUrl}
+              alt="Blog Image"
+              className="max-w-7xl mx-auto max-h-224 object-cover rounded-lg mb-6"
+            />
+
+            {/* Title + Subtitle inline */}
+            <div className="text-3xl font-bold mb-4">
+              <span className="text-[#c62931]">{activeBlog.title} </span>
+              <span className="text-black font-semibold">{activeBlog.subtitle}</span>
+            </div>
+
+            <p className="text-gray-800 text-xl whitespace-pre-line">
+              {activeBlog.p1 || ''}
+            </p>
+
+          </div>
         </div>
       )}
     </div>

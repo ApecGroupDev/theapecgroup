@@ -3,6 +3,7 @@ export type BlogThumbnail = {
   subtitle?: string;
   imageUrl: string;
   content?: string;
+  p1?: string;
 };
 
 export const blogData: BlogThumbnail[] = [
@@ -10,9 +11,7 @@ export const blogData: BlogThumbnail[] = [
     title: 'The Future of Gas Stations: 1',
     subtitle: 'Innovations Shaping the Petroleum Industry',
     imageUrl: '/blogImages/blog1.png',
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. `,
+    p1: 'The petroleum industry is in the midst of a transformation, driven by technological advancements and evolving consumer demands. Modern gas stations are evolving beyond simple refueling stops—they’re becoming high-tech service hubs focused on enhancing convenience, efficiency, and environmental responsibility.'
   },
   {
     title: 'How much does it cost 2',
