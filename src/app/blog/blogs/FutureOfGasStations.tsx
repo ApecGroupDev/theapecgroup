@@ -3,8 +3,8 @@ const FutureOfGasStations = () => {
     <div className='ps-12 pt-12 space-y-8'>
       <p className="text-gray-800 text-xl whitespace-pre-line">
         The petroleum industry is in the midst of a transformation, driven by technological advancements and evolving consumer demands.
-        Modern gas stations are evolving beyond simple refueling stops—they’re becoming high-tech service hubs focused on enhancing
-        convenience, efficiency, and environmental responsibility.'
+        Modern gas stations are evolving beyond simple refueling stops—they&apos;re becoming high-tech service hubs focused on enhancing
+        convenience, efficiency, and environmental responsibility.
       </p>
 
       <p className="text-3xl font-semibold text-[#c62931] whitespace-pre-line">
