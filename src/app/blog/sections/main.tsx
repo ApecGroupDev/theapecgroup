@@ -8,6 +8,7 @@ const BlogMain: React.FC = () => {
 
   const openBlog = (blog: BlogThumbnail) => setActiveBlog(blog);
   const closeBlog = () => setActiveBlog(null);
+
   return (
     <div className="bg-transparent flex flex-col items-center scrn-600:justify-center outline-1 outline-dashed gap-y-4
       h-168
@@ -108,17 +109,17 @@ const BlogMain: React.FC = () => {
 
       {activeBlog && (
         <div className="fixed inset-0 z-50 bg-white bg-opacity-95 flex flex-col p-8 overflow-y-auto">
-          <div className="wax-w-7xl">
-            <button
-              onClick={closeBlog}
-              className="self-end mb-4 text-4xl text-gray-700 hover:text-red-500"
-            >
-              &times;
-            </button>
+          <button
+            onClick={closeBlog}
+            className="ml-auto text-6xl text-red-700 hover:text-red-500 hover:scale-150"
+          >
+            &times;
+          </button>
+          <div className="max-w-7xl mx-auto">
             <img
               src={activeBlog.imageUrl}
               alt="Blog Image"
-              className="max-w-7xl mx-auto max-h-224 object-cover rounded-lg mb-6"
+              className="w-full h-172 object-center  rounded-lg mb-6"
             />
 
             {/* Title + Subtitle inline */}
@@ -127,9 +128,10 @@ const BlogMain: React.FC = () => {
               <span className="text-black font-semibold">{activeBlog.subtitle}</span>
             </div>
 
-            <p className="text-gray-800 text-xl whitespace-pre-line">
-              {activeBlog.p1 || ''}
-            </p>
+            <hr className='border-[#c62931] border-2 w-20 my-2' />
+
+            {/* ✅ Render component here */}
+            <activeBlog.ContentComponent />
 
           </div>
         </div>
