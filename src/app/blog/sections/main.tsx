@@ -10,77 +10,50 @@ const BlogMain: React.FC = () => {
   const closeBlog = () => setActiveBlog(null);
 
   return (
-    <div className="bg-transparent flex flex-col items-center scrn-600:justify-center outline-1 outline-dashed gap-y-4
-      h-168
-      scrn-400:h-168
-      scrn-500:h-152
-      scrn-600:h-160
-      scrn-800:h-164 
-      scrn-850:h-172
-      scrn-900:h-184
-      scrn-950:h-192
-      scrn-1000:h-216
-      scrn-1050:h-216
-      scrn-1100:h-228
-      scrn-1150:h-240
-      scrn-1200:h-248
-      scrn-1300:h-256
-      scrn-1350:h-272
-      scrn-1400:h-276
-      scrn-1450:h-288
-      scrn-1500:h-304
-      scrn-1550:h-304
-      scrn-1600:h-316
-      scrn-1650:h-324
-      scrn-1700:h-324
-      scrn-1750:h-339
-      scrn-1800:h-352
-      scrn-1850:h-360
-      scrn-1900:h-352
-      scrn-1950:h-368
-      scrn-2000:h-384
-      scrn-2100:h-416
-      scrn-2250:h-432
-      scrn-2300:h-448
-      scrn-2400:h-464
-      scrn-2450:h-464
-      scrn-2500:h-480"
+    <div className="flex flex-col items-center scrn-600:justify-center outline-2 outline-dashed outline-green-500 gap-y-4
+     h-auto mb-12"
     >
       {[0, 4].map((startIdx) => (
-        <div key={startIdx} className="grid grid-cols-2 gap-4 max-w-7xl">
+        <div key={startIdx} className="grid grid-cols-1 px-2 scrn-600:grid-cols-2 gap-4 max-w-7xl">
           {/* Left Large Thumbnail */}
           <div
             onClick={() => openBlog(blogData[startIdx])}
-            className="relative overflow-hidden rounded-lg h-full shadow-lg cursor-pointer"
+            className="relative overflow-hidden rounded-lg scrn-1000:h-full shadow-lg cursor-pointer scrn-500:mx-12
+            h-64
+            scrn-450:h-72
+            scrn-500:h-80"
           >
             <img
               src={blogData[startIdx].imageUrl}
               alt=""
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-white to-transparent" />
-            <div className="absolute text-2xl bottom-2 left-4 right-4 text-black font-semibold">
+            <div className="absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-white to-transparent" />
+            <div className="absolute text-base scrn-600:text-2xl bottom-2 left-4 right-4 text-black font-semibold">
               <p className="text-[#c62931]">{blogData[startIdx].title}</p>
               <p>{blogData[startIdx].subtitle}</p>
             </div>
           </div>
 
           {/* Right Column */}
-          <div className="flex flex-col gap-4 h-full">
-            <div className="grid grid-cols-2 gap-4 h-1/2">
+          <div className="flex flex-col gap-4">
+            <div className="grid grid-cols-1 scrn-600:grid-cols-2 gap-4 scrn-600:h-1/2">
               {[startIdx + 1, startIdx + 2].map((i) => (
                 <div
                   key={i}
                   onClick={() => openBlog(blogData[i])}
-                  className="relative h-full overflow-hidden rounded-lg shadow-lg cursor-pointer"
+                  className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer scrn-500:mx-12
+                  h-64
+                  scrn-450:h-72
+                  scrn-500:h-80"
                 >
                   <img
                     src={blogData[i].imageUrl}
                     alt=""
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-0 left-0 w-full h-[140px] bg-gradient-to-t from-white to-transparent" />
-                  <div className="absolute text-xl bottom-2 left-4 text-black font-semibold">
+                  <div className="absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-white to-transparent" />
+                  <div className="absolute text-base scrn-600:text-xl bottom-2 left-4 text-black font-semibold">
                     <p className="text-[#c62931]">{blogData[i].title}</p>
                     <p>{blogData[i].subtitle}</p>
                   </div>
@@ -90,7 +63,10 @@ const BlogMain: React.FC = () => {
 
             <div
               onClick={() => openBlog(blogData[startIdx + 3])}
-              className="relative h-1/2 overflow-hidden rounded-lg shadow-lg cursor-pointer"
+              className="relative scrn-1000:h-1/2 overflow-hidden rounded-lg shadow-lg cursor-pointer scrn-500:mx-12
+              h-64
+              scrn-450:h-72
+              scrn-500:h-80"
             >
               <img
                 src={blogData[startIdx + 3].imageUrl}
@@ -98,7 +74,7 @@ const BlogMain: React.FC = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 w-full h-[140px] bg-gradient-to-t from-white to-transparent" />
-              <div className="absolute text-xl bottom-2 left-4 text-black font-semibold">
+              <div className="absolute text-base scrn-600:text-2xl bottom-2 left-4 text-black font-semibold">
                 <p className="text-[#c62931]">{blogData[startIdx + 3].title}</p>
                 <p>{blogData[startIdx + 3].subtitle}</p>
               </div>

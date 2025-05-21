@@ -42,8 +42,14 @@ const Hero: React.FC = () => {
     <div
       id="hero-section"
       ref={heroRef}
-      className=" relative flex items-center pointer-events-none overflow-hidden
-        h-116
+      style={{
+        backgroundImage: "url('/backgrounds/blog/Hero_Blog_M.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+      className=" relative flex items-center pointer-events-none overflow-hidden outline-2 outline-dashed outline-red-500
+      h-116
       scrn-400:h-116
       scrn-450:h-118
       scrn-500:h-118
@@ -86,17 +92,6 @@ const Hero: React.FC = () => {
       scrn-2450:h-324
       scrn-2500:h-326"
     >
-      {/* Background Image */}
-      <div className="absolute z-10">
-        <Image
-          src="/backgrounds/blog/Hero_.png"
-          alt="Background"
-          style={{ objectFit: 'cover' }}
-          width={2786}
-          height={1437}
-          priority
-        />
-      </div>
 
       {/* Left Text Section */}
       <div className={`fixed 
@@ -112,7 +107,7 @@ const Hero: React.FC = () => {
             text-2xs 
             scrn-600:text-xs
             scrn-750:text-sm
-            scrn-1000:text-lg 
+            scrn-1000:text-lg
             scrn-1500:text-xl"
           >
             <li>
@@ -127,18 +122,10 @@ const Hero: React.FC = () => {
 
         <div>
           <span className="font-semibold whitespace-nowrap text-[#c62931]
-            text-3xl
-            scrn-400:text-5xl
-            scrn-500:text-6xl
-            scrn-650:text-7xl
-            scrn-800:text-8xl
-            scrn-1000:text-9xl
-            scrn-1400:text-10xl
-            scrn-1600:text-10xl
-            scrn-1700:text-11xl
-            scrn-1900:text-13xl
-            scrn-2000:text-12xl
-            scrn-2400:text-13xl"
+            text-5xl
+            scrn-400:text-6xl
+            scrn-450:text-7xl
+            "
           >
             APEC <br /> BLOG
           </span>
