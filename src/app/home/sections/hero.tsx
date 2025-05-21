@@ -10,12 +10,18 @@ const Hero: React.FC = () => {
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-contain z-10"
+        className="absolute top-0 left-0 w-full h-full object-cover z-10"
       >
         <source src="/videos/Main_v2.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-between bg-transparent outline-2 outline-green-500 outline-dashed
+      {/* Bottom Blur Overlay */}
+      <div className="absolute -bottom-1 left-0 w-full h-60 z-20 pointer-events-none"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,1) 100%)',
+        }}
+      />
+      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-between bg-transparent
       h-140
       scrn-400:h-140
       scrn-600:h-124
