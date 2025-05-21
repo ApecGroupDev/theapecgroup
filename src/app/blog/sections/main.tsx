@@ -11,17 +11,19 @@ const BlogMain: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center scrn-600:justify-center outline-2 outline-dashed outline-green-500 gap-y-4
-     h-auto mb-12"
+     h-auto mb-12 pt-4"
     >
       {[0, 4].map((startIdx) => (
-        <div key={startIdx} className="grid grid-cols-1 px-2 scrn-600:grid-cols-2 gap-4 max-w-7xl">
+        <div key={startIdx} className="grid grid-cols-1 px-2 scrn-1000:grid-cols-2 gap-4 max-w-7xl">
           {/* Left Large Thumbnail */}
           <div
             onClick={() => openBlog(blogData[startIdx])}
-            className="relative overflow-hidden rounded-lg scrn-1000:h-full shadow-lg cursor-pointer scrn-500:mx-12
+            className="relative overflow-hidden rounded-lg scrn-1000:h-full shadow-lg cursor-pointer scrn-500:mx-12 scrn-600:mx-0
             h-64
             scrn-450:h-72
-            scrn-500:h-80"
+            scrn-500:h-80
+            scrn-800:h-96
+            scrn-900:h-118"
           >
             <img
               src={blogData[startIdx].imageUrl}
@@ -37,15 +39,17 @@ const BlogMain: React.FC = () => {
 
           {/* Right Column */}
           <div className="flex flex-col gap-4">
-            <div className="grid grid-cols-1 scrn-600:grid-cols-2 gap-4 scrn-600:h-1/2">
+            <div className="grid grid-cols-1 scrn-600:grid-cols-2 gap-4 scrn-1000:h-1/2">
               {[startIdx + 1, startIdx + 2].map((i) => (
                 <div
                   key={i}
                   onClick={() => openBlog(blogData[i])}
-                  className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer scrn-500:mx-12
+                  className="relative overflow-hidden rounded-lg shadow-lg cursor-pointer scrn-500:mx-12 scrn-600:mx-0
                   h-64
                   scrn-450:h-72
-                  scrn-500:h-80"
+                  scrn-500:h-80
+                  scrn-900:h-96
+                  scrn-1000:h-full"
                 >
                   <img
                     src={blogData[i].imageUrl}
@@ -63,10 +67,12 @@ const BlogMain: React.FC = () => {
 
             <div
               onClick={() => openBlog(blogData[startIdx + 3])}
-              className="relative scrn-1000:h-1/2 overflow-hidden rounded-lg shadow-lg cursor-pointer scrn-500:mx-12
+              className="relative scrn-1000:h-1/2 overflow-hidden rounded-lg shadow-lg cursor-pointer scrn-500:mx-12 scrn-600:mx-0
               h-64
               scrn-450:h-72
-              scrn-500:h-80"
+              scrn-500:h-80
+              scrn-800:h-96
+              scrn-900:h-118"
             >
               <img
                 src={blogData[startIdx + 3].imageUrl}
