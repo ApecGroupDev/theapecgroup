@@ -73,7 +73,7 @@ const FutureOfGasStations = () => {
       <hr className="my-4 border-2 border-gray-300" />
 
       <p className="text-xl scrn-1000:text-2xl font-semibold whitespace-pre-line">
-        FAQ's
+        FAQ&apos;s
       </p>
 
       <p className="text-[#c62931] scrn-1000:text-lg italic font-medium whitespace-pre-line">
