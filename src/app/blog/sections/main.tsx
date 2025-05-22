@@ -101,11 +101,12 @@ const BlogMain: React.FC = () => {
             <img
               src={activeBlog.imageUrl}
               alt="Blog Image"
-              className="w-full h-172 object-center  rounded-lg mb-6"
+              className="w-full object-center rounded-lg mb-6
+              scrn-1900:h-172"
             />
 
             {/* Title + Subtitle inline */}
-            <div className="text-3xl font-bold mb-4">
+            <div className="text-xl scrn-1900:text-3xl font-bold mb-4">
               <span className="text-[#c62931]">{activeBlog.title} </span>
               <span className="text-black font-semibold">{activeBlog.subtitle}</span>
             </div>
