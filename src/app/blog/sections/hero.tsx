@@ -124,7 +124,13 @@ const Hero: React.FC = () => {
             text-5xl
             scrn-400:text-6xl
             scrn-450:text-7xl
-            "
+            scrn-600:text-8xl
+            scrn-900:text-9xl
+            scrn-1300:text-10xl
+            scrn-1500:text-11xl
+            scrn-1700:text-12xl
+            scrn-1900:text-13xl
+            scrn-2400:text-14xl"
           >
             APEC <br /> BLOG
           </span>
