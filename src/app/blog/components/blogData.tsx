@@ -1,5 +1,6 @@
 import FutureOfGasStations from "../blogs/FutureOfGasStations";
 import HowDoGasPumpsWork from "../blogs/HowDoGasPumpsWork";
+import MainPartsOfTheIndustry from "../blogs/MainPartsOfTheIndustry";
 
 export type BlogThumbnail = {
   title: string;
@@ -22,10 +23,10 @@ export const blogData: BlogThumbnail[] = [
     ContentComponent: HowDoGasPumpsWork,
   },
   {
-    title: 'How much does it cost 3',
-    subtitle: 'to build a gas station?',
+    title: 'Main Parts Of The Petroleum Industry',
+    subtitle: '',
     imageUrl: '/blogImages/blog3.jpg',
-    ContentComponent: FutureOfGasStations,
+    ContentComponent: MainPartsOfTheIndustry,
   },
   {
     title: 'The Future of Gas Stations: 4',
