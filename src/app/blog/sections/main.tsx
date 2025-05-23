@@ -106,7 +106,7 @@ const BlogMain: React.FC = () => {
             />
 
             {/* Title + Subtitle inline */}
-            <div className="text-xl scrn-1000:text-2xl scrn-1900:text-3xl font-bold mb-4">
+            <div className="text-3xl scrn-1000:text-5xl scrn-1900:text-7xl font-bold mb-4">
               <span className="text-[#c62931]">{activeBlog.title} </span>
               <span className="text-black font-semibold">{activeBlog.subtitle}</span>
             </div>

@@ -7,7 +7,7 @@ const FutureOfGasStations = () => {
         convenience, efficiency, and environmental responsibility.
       </p>
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+      <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
         Smart Fueling Technology
       </p>
 
@@ -17,7 +17,7 @@ const FutureOfGasStations = () => {
         reducing wait times, and boosting operational efficiency.
       </p>
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+      <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
         Eco-Friendly Fueling Solutions
       </p>
 
@@ -27,7 +27,7 @@ const FutureOfGasStations = () => {
         contributing to environmental conservation.
       </p>
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+      <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
         Advanced Safety and Compliance Measures
       </p>
 
@@ -37,7 +37,7 @@ const FutureOfGasStations = () => {
         standards.
       </p>
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+      <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
         Convenience Store Upgrades
       </p>
 
@@ -47,7 +47,7 @@ const FutureOfGasStations = () => {
         more competitive with standalone retail stores.
       </p>
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+      <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
         The Role of Data Analytics
       </p>
 
@@ -56,7 +56,7 @@ const FutureOfGasStations = () => {
         and adjust pricing strategies. Customer behavior insights also help in creating targeted promotions and improving service offerings.
       </p>
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+      <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
         Conclusion
       </p>
 
@@ -66,13 +66,17 @@ const FutureOfGasStations = () => {
         ensuring compliance, safety, and customer satisfaction.
       </p>
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold whitespace-pre-line my-6">
+      {/* STAY TUNED */}
+      <p className="text-3xl italic scrn-1000:text-2xl font-semibold whitespace-pre-line my-6">
         Stay tuned for more updates on industry trends and innovations in petroleum services!
       </p>
+      {/*END - STAY TUNED */}
 
       <hr className="my-4 border-2 border-gray-300" />
 
-      <p className="text-xl scrn-1000:text-2xl font-semibold whitespace-pre-line">
+
+      {/* FAQ'S */}
+      <p className="text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line">
         FAQ&apos;s
       </p>
 
@@ -99,6 +103,7 @@ const FutureOfGasStations = () => {
       <p className="text-gray-800 whitespace-pre-line">
         Yes, we receive cash checks, and some gas stations may offer check-cashing services, but it depends on the location and available amenities.
       </p>
+      {/* END - FAQ'S */}
     </div>
   );
 };
