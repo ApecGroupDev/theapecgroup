@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const HowDoGasPumpsWork = () => {
   return (
     <div className='scrn-1000:ps-12 pt-12'>
@@ -23,7 +25,7 @@ const HowDoGasPumpsWork = () => {
 
       {/* PARTS OF GASOLINE PUMP */}
       <div className="space-y-3">
-        <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+        <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-10">
           Parts of a gasoline pump
         </p>
 
@@ -51,7 +53,7 @@ const HowDoGasPumpsWork = () => {
 
       {/* TYPES OF GASOLINE PUMP */}
       <div className="space-y-3">
-        <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+        <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-10">
           Types of a Gasoline Pumps
         </p>
 
@@ -71,7 +73,7 @@ const HowDoGasPumpsWork = () => {
 
       {/* TYPE OF PUMP USED FOR GASOLINE */}
       <div className="space-y-3">
-        <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+        <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-10">
           Type of pump used for gasoline
         </p>
 
@@ -94,9 +96,17 @@ const HowDoGasPumpsWork = () => {
 
       {/* WORKING PRINCIPLE OF GASOLINE PUMPS */}
       <div className="space-y-3">
-        <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+        <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-10">
           Working Principle of Gasoline Pumps
         </p>
+
+        <Image
+          src="/blogImages/Blog_2_Img_2.png" // Adjust this path to your public directory image
+          alt="Fuel pump system illustration"
+          width={1024}
+          height={500}
+          className="rounded-lg shadow w-full h-auto"
+        />
 
         <p className="text-gray-800 scrn-1000:text-lg whitespace-pre-line">
           A fuel pump is a fluid-handling device that moves gasoline from the fuel tank to the engine. It&apos;s often found in internal combustion engines.
@@ -109,7 +119,7 @@ const HowDoGasPumpsWork = () => {
           thousand gallons of gasoline. But for the gas to come up from these tanks into the pump, it must defy gravity.
         </p>
 
-        <p className="scrn-1000:text-lg whitespace-pre-line mt-3 text-[#c62931]">
+        <p className="text-2xl scrn-1000:text-3xl whitespace-pre-line mt-3 text-[#c62931]">
           Most gasoline stations use one of two kinds of pumps to get the gas from the storage tanks into the dispenser:
         </p>
 
@@ -142,9 +152,17 @@ const HowDoGasPumpsWork = () => {
 
       {/* KEEP YOUR GASOLINE PUMP HEALTHY */}
       <div className="space-y-3">
-        <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+        <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-10">
           Keep Your Gasoline Pump Healthy
         </p>
+
+        <Image
+          src="/blogImages/Blog_2_Img_3.png" // Adjust this path to your public directory image
+          alt="Fuel pump system illustration"
+          width={1024}
+          height={500}
+          className="rounded-lg shadow w-full h-auto"
+        />
 
         <p className="text-gray-800 scrn-1000:text-lg whitespace-pre-line">
           These modest actions should help keep it in good condition. Gasoline doubles as a coolant when used with in-tank pumps.
@@ -155,10 +173,10 @@ const HowDoGasPumpsWork = () => {
 
       {/* CONCLUSION */}
       <div>
-        <p className="text-xl scrn-1000:text-2xl font-semibold text-[#c62931] whitespace-pre-line mt-6">
+        <p className="text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-10">
           Conclusion
         </p>
-        <p className="text-gray-800 scrn-1000:text-lg whitespace-pre-line">
+        <p className="text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-6">
           Gasoline pumps have been briefly described here, but a more detailed discussion is needed to fully understand the workings of gasoline
           pumps. You are encouraged to visit the <span className="font-semibold text-[#c62931] italic">APEC</span> website&apos;s gasoline pump based
           on your demand and application.
