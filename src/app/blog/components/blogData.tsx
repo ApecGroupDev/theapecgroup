@@ -1,6 +1,7 @@
 import FutureOfGasStations from "../blogs/FutureOfGasStations";
 import HowDoGasPumpsWork from "../blogs/HowDoGasPumpsWork";
 import MainPartsOfTheIndustry from "../blogs/MainPartsOfTheIndustry";
+import PetroleumResearchIndustry from "../blogs/PetroleumResearchIndustry";
 
 export type BlogThumbnail = {
   title: string;
@@ -29,10 +30,10 @@ export const blogData: BlogThumbnail[] = [
     ContentComponent: MainPartsOfTheIndustry,
   },
   {
-    title: 'The Future of Gas Stations: 4',
-    subtitle: 'Innovations Shaping the Petroleum Industry',
+    title: 'Petroleum Research Industry',
+    subtitle: '',
     imageUrl: '/blogImages/blog4.jpg',
-    ContentComponent: FutureOfGasStations,
+    ContentComponent: PetroleumResearchIndustry,
   },
   {
     title: 'The Future of Gas Stations: 5',
