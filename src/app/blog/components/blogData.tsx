@@ -1,4 +1,5 @@
 import BestGasStationFinancing from "../blogs/BestGasStationFinancing";
+import BiggestInTheUSA from "../blogs/BiggestInTheUSA";
 import FutureOfGasStations from "../blogs/FutureOfGasStations";
 import HowDoGasPumpsWork from "../blogs/HowDoGasPumpsWork";
 import MainPartsOfTheIndustry from "../blogs/MainPartsOfTheIndustry";
@@ -46,7 +47,7 @@ export const blogData: BlogThumbnail[] = [
     title: 'Biggest In The USA:',
     subtitle: 'Oil And Gas Equipment And Services Companies',
     imageUrl: '/blogImages/blog6.jpg',
-    ContentComponent: FutureOfGasStations,
+    ContentComponent: BiggestInTheUSA,
   },
   {
     title: 'How much does it cost 7',
