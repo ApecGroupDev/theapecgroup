@@ -2,6 +2,7 @@ import BestGasStationFinancing from "../blogs/BestGasStationFinancing";
 import BiggestInTheUSA from "../blogs/BiggestInTheUSA";
 import FutureOfGasStations from "../blogs/FutureOfGasStations";
 import HowDoGasPumpsWork from "../blogs/HowDoGasPumpsWork";
+import InnovationsInPetroleumEquipment from "../blogs/InnovationsInPetroleumEquipment";
 import MainPartsOfTheIndustry from "../blogs/MainPartsOfTheIndustry";
 import PetroleumResearchIndustry from "../blogs/PetroleumResearchIndustry";
 
@@ -50,10 +51,10 @@ export const blogData: BlogThumbnail[] = [
     ContentComponent: BiggestInTheUSA,
   },
   {
-    title: 'How much does it cost 7',
-    subtitle: 'to build a gas station?',
+    title: 'Innovations in Petroleum Equipment:',
+    subtitle: 'How Leading Companies Are Shaping the Future',
     imageUrl: '/blogImages/blog7.jpg',
-    ContentComponent: FutureOfGasStations,
+    ContentComponent: InnovationsInPetroleumEquipment,
   },
   {
     title: 'The Future of Gas Stations: 8',
