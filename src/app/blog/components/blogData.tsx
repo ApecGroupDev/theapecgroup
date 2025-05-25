@@ -1,3 +1,4 @@
+import BestGasStationFinancing from "../blogs/BestGasStationFinancing";
 import FutureOfGasStations from "../blogs/FutureOfGasStations";
 import HowDoGasPumpsWork from "../blogs/HowDoGasPumpsWork";
 import MainPartsOfTheIndustry from "../blogs/MainPartsOfTheIndustry";
@@ -36,10 +37,10 @@ export const blogData: BlogThumbnail[] = [
     ContentComponent: PetroleumResearchIndustry,
   },
   {
-    title: 'The Future of Gas Stations: 5',
-    subtitle: 'Innovations Shaping the Petroleum Industry',
+    title: 'Best Gas Station Financing Companies',
+    subtitle: 'In Atlanta',
     imageUrl: '/blogImages/blog5.jpg',
-    ContentComponent: FutureOfGasStations,
+    ContentComponent: BestGasStationFinancing,
   },
   {
     title: 'How much does it cost 6',
