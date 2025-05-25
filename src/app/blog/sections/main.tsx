@@ -117,6 +117,12 @@ const BlogMain: React.FC = () => {
             <activeBlog.ContentComponent />
 
           </div>
+          <button
+            onClick={closeBlog}
+            className="ml-auto mt-12 text-6xl text-red-700 hover:text-red-500 hover:scale-150"
+          >
+            &times;
+          </button>
         </div>
       )}
     </div>
