@@ -1,6 +1,7 @@
 import BestGasStationFinancing from "../blogs/BestGasStationFinancing";
 import BiggestInTheUSA from "../blogs/BiggestInTheUSA";
 import FutureOfGasStations from "../blogs/FutureOfGasStations";
+import GasStationInspection from "../blogs/GasStationInspection";
 import HowDoGasPumpsWork from "../blogs/HowDoGasPumpsWork";
 import InnovationsInPetroleumEquipment from "../blogs/InnovationsInPetroleumEquipment";
 import MainPartsOfTheIndustry from "../blogs/MainPartsOfTheIndustry";
@@ -57,10 +58,10 @@ export const blogData: BlogThumbnail[] = [
     ContentComponent: InnovationsInPetroleumEquipment,
   },
   {
-    title: 'The Future of Gas Stations: 8',
-    subtitle: 'Innovations Shaping the Petroleum Industry',
+    title: 'Gas Station',
+    subtitle: 'Inspection Checklist',
     imageUrl: '/blogImages/blog8.jpg',
-    ContentComponent: FutureOfGasStations,
+    ContentComponent: GasStationInspection,
   },
   // ...rest of your blogData
 ];
