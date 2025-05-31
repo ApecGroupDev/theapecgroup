@@ -43,10 +43,10 @@ const VisionSection: React.FC = () => {
           scrn-2550:h-352"
     >
       <div className="flex flex-col scrn-300:p-6 scrn-450:p-4 text-center scrn-700:text-start scrn-700:items-start scrn-600:mt-4 scrn-600:ms-4 scrn-750:mt-6 scrn-750:ms-6 scrn-800:mt-8 scrn-800:ms-8 scrn-900:mt-8 scrn-900:ml-10 scrn-1000:mt-12 scrn-1000:ms-12 scrn-1250:mt-24 scrn-1250:ml-20 scrn-1500:ml-24 scrn-1500:mt-20 scrn-1900:ml-32 scrn-1900:mt-28">
-        <span className="text-6xl scrn-300:text-4xl scrn-450:mt-6 scrn-600:text-5xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1500:text-7xl scrn-1900:text-7xl scrn-2500:text-9xl italic">Our</span>
+        <span className="text-6xl scrn-300:text-4xl scrn-1900:text-6xl scrn-450:mt-6 scrn-600:text-5xl scrn-750:text-4xl scrn-800:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1500:text-7xl scrn-2500:text-9xl italic">Our</span>
         <motion.span
           ref={visionRef}
-          className="text-7xl scrn-300:text-5xl scrn-600:text-6xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2500:text-10xl font-bold text-[#c62931]"
+          className="text-7xl scrn-300:text-5xl scrn-600:text-6xl scrn-750:text-5xl scrn-800:text-6xl scrn-900:text-6xl scrn-1000:text-6xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-1900:text-9xl scrn-2500:text-10xl font-bold text-[#c62931]"
           initial={{ y: 70, opacity: 0 }}
           animate={{ y: visionInView ? 0 : 50, opacity: visionInView ? 1 : 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
@@ -65,7 +65,7 @@ const VisionSection: React.FC = () => {
               scrn-1250:text-xl
               scrn-1300:text-2xl
               scrn-1500:text-2xl
-              scrn-1800:text-3xl
+              scrn-1800:text-4xl
               scrn-2500:text-4xl
 
               scrn-500:mx-12

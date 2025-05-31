@@ -14,17 +14,17 @@ const MissionSection: React.FC = () => {
       scrn-2550:h-352"
     >
       <div className="flex flex-col ml-auto scrn-300:p-6 scrn-450:p-4 text-center scrn-700:text-end scrn-600:mt-4 scrn-600:me-4 scrn-750:mt-6 scrn-750:me-6 scrn-800:mt-8 scrn-800:me-8 scrn-900:mt-8 scrn-900:me-10 scrn-1000:mt-12 scrn-1000:me-12 scrn-1250:mt-24 scrn-1250:me-20 scrn-1500:mt-20 scrn-1500:me-24 scrn-1900:mt-28 scrn-1900:me-32">
-        <span className="text-6xl scrn-300:text-4xl italic">Our</span>
+        <span className="text-6xl scrn-300:text-4xl scrn-1900:text-6xl italic">Our</span>
         <motion.span
           ref={missionRef}
-          className="text-7xl font-bold text-[#c62931] scrn-300:text-5xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-2500:text-10xl"
+          className="text-7xl font-bold text-[#c62931] scrn-300:text-5xl scrn-1200:text-7xl scrn-1500:text-9xl scrn-2500:text-10xl"
           initial={{ y: 70, opacity: 0 }}
           animate={{ y: missionInView ? 0 : 50, opacity: missionInView ? 1 : 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
         >
           MISSION
         </motion.span>
-        <p className="text-pretty tracking-widest scrn-300:text-lg scrn-1300:text-2xl scrn-1800:text-3xl scrn-2500:text-4xl mt-4 scrn-1500:mt-16">
+        <p className="text-pretty tracking-widest scrn-300:text-lg scrn-1300:text-2xl scrn-1800:text-4xl scrn-2500:text-4xl mt-4 scrn-1500:mt-16">
           To empower businesses with reliable, innovative, <br className="scrn-450:hidden scrn-700:block" />
           and efficient petroleum equipment solutions <br className="scrn-450:hidden scrn-700:block" />
           that drive success and ensure <br className="scrn-450:hidden scrn-700:block" />

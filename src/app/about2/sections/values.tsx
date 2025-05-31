@@ -13,18 +13,18 @@ const ValuesSection: React.FC = () => {
       scrn-1850:h-272 scrn-1900:h-272 scrn-2000:h-280 scrn-2100:h-296 scrn-2200:h-308 scrn-2250:h-312 scrn-2300:h-320 scrn-2350:h-326 scrn-2450:h-339
       scrn-2550:h-352"
     >
-      <div className="flex flex-col scrn-300:p-6 scrn-450:p-4 text-center my-auto scrn-600:mt-4 scrn-750:mt-6 scrn-800:mt-8 scrn-900:mt-8 scrn-1000:mt-12 scrn-1250:mt-24 scrn-1500:mt-20 scrn-1900:mt-28">
-        <span className="text-6xl scrn-300:text-4xl italic">Our</span>
+      <div className="flex flex-col justify-center h-full text-center px-4">
+        <span className="text-6xl scrn-300:text-4xl scrn-1900:text-6xl italic">Our</span>
         <motion.span
           ref={valuesRef}
-          className="text-7xl font-bold text-[#c62931] scrn-300:text-5xl scrn-1200:text-7xl scrn-1500:text-8xl scrn-2500:text-10xl"
+          className="text-7xl font-bold text-[#c62931] scrn-300:text-5xl scrn-1200:text-7xl scrn-1500:text-9xl scrn-2500:text-10xl"
           initial={{ y: 70, opacity: 0 }}
           animate={{ y: valuesInView ? 0 : 50, opacity: valuesInView ? 1 : 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
         >
           VALUES
         </motion.span>
-        <p className="text-pretty tracking-widest scrn-300:text-lg scrn-1300:text-2xl scrn-1800:text-3xl scrn-2500:text-4xl mt-4 scrn-1500:mt-16">
+        <p className="text-pretty tracking-widest scrn-300:text-lg scrn-1300:text-2xl scrn-1800:text-4xl scrn-2500:text-4xl mt-4 scrn-1500:mt-16">
           Integrity, innovation, and customer-centricity <br className="scrn-450:hidden scrn-700:block" />
           form the foundation of our values. We strive <br className="scrn-450:hidden scrn-700:block" />
           to deliver excellence through collaboration, <br className="scrn-450:hidden scrn-700:block" />
