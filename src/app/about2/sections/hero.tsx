@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
   return (
     <div id="hero-section"
       ref={heroRef}
-      className="relative flex items-center
+      className="relative flex items-center outline-green-400 outline
       h-116
       scrn-350:h-120
       scrn-400:h-132
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
       scrn-1700:h-228
       scrn-1800:h-240
       scrn-1850:h-244
-      scrn-1900:h-264
+      scrn-1900:h-280
       scrn-1950:h-272
       scrn-2000:h-280
       scrn-2050:h-288
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
         scrn-800:mt-4
         scrn-1100:mt-0
         
-        scrn-1900:scale-y-110 scrn-1900:mt-12"
+        scrn-1900:scale-y-110 scrn-1900:mt-24"
       >
         <Image
           src="/backgrounds/aboutUs/Hero_About.png"

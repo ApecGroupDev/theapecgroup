@@ -177,7 +177,7 @@ const Header: React.FC = () => {
 
         {/* Center: Navigation */}
         <nav className="flex z-10 justify-center space-x-8">
-          {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) =>
+          {["/home", "/about", "/about2", "/team", "/services", "/careers", "/blog", "/contact"].map((path) =>
             path === "/services" ? (
               <div
                 key={path}

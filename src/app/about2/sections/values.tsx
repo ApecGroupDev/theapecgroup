@@ -10,7 +10,7 @@ const ValuesSection: React.FC = () => {
       pt-12 scrn-500:pt-8 scrn-600:pt-12 scrn-700:pt-0
       h-128 scrn-400:h-132 scrn-500:h-132 scrn-700:h-128 scrn-750:h-124 scrn-800:h-132 scrn-900:h-140 scrn-1000:h-152 scrn-1100:h-168 scrn-1200:h-188
       scrn-1300:h-198 scrn-1400:h-216 scrn-1450:h-224 scrn-1500:h-208 scrn-1550:h-216 scrn-1600:h-240 scrn-1650:h-248 scrn-1700:h-256 scrn-1800:h-264
-      scrn-1850:h-272 scrn-1900:h-272 scrn-2000:h-280 scrn-2100:h-296 scrn-2200:h-308 scrn-2250:h-312 scrn-2300:h-320 scrn-2350:h-326 scrn-2450:h-339
+      scrn-1850:h-272 scrn-1900:h-304 scrn-2000:h-280 scrn-2100:h-296 scrn-2200:h-308 scrn-2250:h-312 scrn-2300:h-320 scrn-2350:h-326 scrn-2450:h-339
       scrn-2550:h-352"
     >
       <div className="flex flex-col justify-center h-full text-center px-4">

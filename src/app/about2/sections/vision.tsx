@@ -32,7 +32,7 @@ const VisionSection: React.FC = () => {
           scrn-1700:h-256
           scrn-1800:h-264
           scrn-1850:h-272
-          scrn-1900:h-272
+          scrn-1900:h-304
           scrn-2000:h-280
           scrn-2100:h-296
           scrn-2200:h-308
