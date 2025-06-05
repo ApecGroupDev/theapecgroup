@@ -10,7 +10,15 @@ const Hero: React.FC = () => {
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-10"
+        className="absolute top-0 left-0 w-full h-full object-cover scrn-750:object-center z-10 scrn-600:mt-4 scrn-750:mt-0
+        object-[85%_center]
+        scrn-350:object-[88%_center]
+        scrn-400:object-[90%_center]
+        scrn-450:object-[93%_center]
+        scrn-500:object-[96%_center]
+        scrn-550:object-[99%_center]
+        scrn-600:object-[80%_center]
+        "
       >
         <source src="/videos/PumpAnimation.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -60,8 +68,8 @@ const Hero: React.FC = () => {
           </p>
         </div>
 
-        {/* Right Image Section */}
-        <div className="w-full scrn-750:w-1/2 flex justify-center mt-auto">
+        {/* Right Image Section - Coded Out for video animation*/}
+        {/* <div className="w-full scrn-750:w-1/2 flex justify-center mt-auto">
           <Image
             src="/products/Fuel_Dispenser_Face_Left.png"
             alt="Hero"
@@ -70,7 +78,6 @@ const Hero: React.FC = () => {
             className="rounded-lg object-cover hidden
           scrn-400:mb-6 
           
-
           scrn-300:w-64 
           scrn-350:w-72 
           scrn-400:w-72
@@ -90,7 +97,7 @@ const Hero: React.FC = () => {
           scrn-2300:w-216
           scrn-2500:w-232 scrn-2500:mb-28"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
