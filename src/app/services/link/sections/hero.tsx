@@ -38,6 +38,24 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const backgroundImages = [
+    "/backgrounds/services/link/Background_Link_1.jpg",
+    "/backgrounds/services/link/Background_Link_2.jpg",
+  ];
+
+  const frontLayerImages = [
+    "/backgrounds/services/link/Hero_Link_1.png",
+    "/backgrounds/services/link/Hero_Link_2.png",
+  ];
+
+  // Pick a random image index on initial render
+  const [imageIndex, setImageIndex] = useState(0);
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    setImageIndex(randomIndex);
+  }, []);
+
   return (
     <div
       id="hero-section"
@@ -88,7 +106,7 @@ const Hero: React.FC = () => {
       scrn-2450:h-324
       scrn-2500:h-326"
     >
-      <div className="absolute z-10 hidden scrn-300:block
+      <div className="absolute hidden scrn-300:block
         scale-200
         scrn-500:scale-175
         scrn-600:scale-150
@@ -98,9 +116,19 @@ const Hero: React.FC = () => {
       >
         <Image
           className='mt-6 scrn-350:mt-0'
-          src="/backgrounds/services/link/Hero_Link.png"
+          src={backgroundImages[imageIndex]}
           alt="Background"
           style={{ objectFit: 'cover' }}
+          width={2786}
+          height={1437}
+          priority
+        />
+
+        {/* Front layer image */}
+        <Image
+          className="absolute top-0 left-0 z-20"
+          src={frontLayerImages[imageIndex]}
+          alt="Foreground"
           width={2786}
           height={1437}
           priority
@@ -108,7 +136,7 @@ const Hero: React.FC = () => {
       </div>
 
       <div
-        className={`fixed 
+        className={`fixed z-10
         scrn-300:p-2 
         space-y-8 
         text-left transition-opacity duration-75
