@@ -119,6 +119,7 @@ const Hero: React.FC = () => {
 
       <div
         className={`fixed 
+        mt-20
         scrn-300:p-2 
         space-y-8 
         text-left transition-opacity duration-75
