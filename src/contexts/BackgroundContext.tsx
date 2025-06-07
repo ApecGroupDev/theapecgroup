@@ -7,7 +7,7 @@ export const BackgroundProvider = ({ children }: { children: React.ReactNode }) 
   const [imageIndex, setImageIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * 2); // 0 or 1
+    const randomIndex = Math.floor(Math.random() * 4); // update this to total number of paireed bg and hero
     setImageIndex(randomIndex);
   }, []);
 
