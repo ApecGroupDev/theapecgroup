@@ -42,8 +42,10 @@ const Hero: React.FC = () => {
   const { imageIndex } = useBackgroundIndex();
 
   const backgroundImages = [
-    "/backgrounds/services/link/Hero_Link_1.png",
-    "/backgrounds/services/link/Hero_Link_2.png",
+     "/backgrounds/services/link/Hero_Link_1.png",
+     "/backgrounds/services/link/Hero_Link_2.png",
+    // "/backgrounds/services/link/Hero_Link_3.png",
+    // "/backgrounds/services/link/Hero_Link_4.png",
   ];
 
   const selectedBg = imageIndex !== null ? imageIndex : 0;
