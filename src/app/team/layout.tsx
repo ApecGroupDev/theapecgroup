@@ -1,12 +1,14 @@
+import { BackgroundProvider } from '@/contexts/BackgroundContext';
+import ClientLayoutWrapper from './ClientLayoutWrapper';
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 export default function TeamLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-[url('/backgrounds/ourTeam/Background.png')] bg-cover bg-top bg-no-repeat min-h-screen">
+    <BackgroundProvider>
       <Header />
-      <div className="w-full">{children}</div>
+      <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
       <Footer />
-    </div>
+    </BackgroundProvider>
   );
 }

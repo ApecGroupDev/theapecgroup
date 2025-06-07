@@ -1,6 +1,6 @@
 "use client";
-
 import React, { useEffect, useState, useRef } from 'react';
+import { useBackgroundIndex } from '@/contexts/BackgroundContext';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -37,6 +37,15 @@ const Hero: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const { imageIndex } = useBackgroundIndex();
+
+  const backgroundImages = [
+    "/backgrounds/ourTeam/Hero_Team_1.png",
+    "/backgrounds/ourTeam/Hero_Team_2.png",
+  ];
+
+  const selectedBg = imageIndex !== null ? imageIndex : 0;
 
   return (
     <div
@@ -100,7 +109,7 @@ const Hero: React.FC = () => {
         scrn-1700:mt-6"
       >
         <Image
-          src="/backgrounds/ourTeam/Hero.png"
+          src={backgroundImages[selectedBg]}
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}
