@@ -8,6 +8,8 @@ export default function ClientLayoutWrapper({ children }: { children: React.Reac
   const backgroundImages = [
      "/backgrounds/ourTeam/Background_Team_1.png",
      "/backgrounds/ourTeam/Background_Team_2.png",
+     "/backgrounds/ourTeam/Background_Team_1.png",
+     "/backgrounds/ourTeam/Background_Team_2.png",
   ];
 
   const backgroundUrl = imageIndex !== null ? backgroundImages[imageIndex] : backgroundImages[0];

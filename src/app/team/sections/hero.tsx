@@ -43,6 +43,8 @@ const Hero: React.FC = () => {
   const backgroundImages = [
     "/backgrounds/ourTeam/Hero_Team_1.png",
     "/backgrounds/ourTeam/Hero_Team_2.png",
+    "/backgrounds/ourTeam/Hero_Team_1.png",
+    "/backgrounds/ourTeam/Hero_Team_2.png",
   ];
 
   const selectedBg = imageIndex !== null ? imageIndex : 0;
