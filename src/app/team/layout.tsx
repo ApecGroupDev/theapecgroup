@@ -6,9 +6,11 @@ import Footer from "@/components/footer";
 export default function TeamLayout({ children }: { children: React.ReactNode }) {
   return (
     <BackgroundProvider>
-      <Header />
-      <ClientLayoutWrapper>{children}</ClientLayoutWrapper>
-      <Footer />
+      <ClientLayoutWrapper>
+        <Header />
+        {children}
+        <Footer />
+      </ClientLayoutWrapper>
     </BackgroundProvider>
   );
 }
