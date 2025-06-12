@@ -51,7 +51,7 @@ export default function ContactForm() {
       } else {
         setError(true);
       }
-    } catch (err) {
+    } catch {
       setError(true);
     }
   };
