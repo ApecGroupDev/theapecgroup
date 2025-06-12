@@ -14,14 +14,11 @@ const teamMembers: TeamMember[] = [
   { name: 'Wade LeComte', title: 'COMMERCIAL SALES EXECUTIVE' },
   { name: 'Jorge Salazar', title: 'COO IMAGING AND CANOPIES' },
   { name: 'Dami Ajasa', title: 'OPERATIONS MANAGER' },
-  { name: 'Salman Mehdi', title: 'IT DIRECTOR' },
-  { name: 'Sam Hakani', title: 'CUSTOMER RELATIONS MANAGER' },
   { name: 'Billy Boulware', title: 'ASST. SERVICE MANAGER' },
   { name: 'Peggy Hulka', title: 'POS MANAGER' },
-  { name: 'Tyler Beck', title: 'SALES EXECUTIVE' },
   { name: 'Walid Bayoumi', title: 'SALES EXECUTIVE' },
   { name: 'Michael Henning', title: 'PARTS SPECIALIST' },
-  { name: 'Arash Husain', title: 'PROJECT MANAGER, APEC COMPLIANCE' },
+  { name: 'Rani Sonpari', title: 'CUSTOMER CARE' },
 ];
 
 const TeamPage: React.FC = () => {
