@@ -3,7 +3,8 @@
 import React from "react";
 import MailRed from "@/components/mailRed";
 import LocationRed from "@/components/locationRed";
-import ReCAPTCHA from "react-google-recaptcha";
+import ContactPageForm
+  from "@/components/contactForm";
 
 const MainContact: React.FC = () => {
   return (
@@ -157,53 +158,7 @@ const MainContact: React.FC = () => {
             >
               FOR MORE INFORMATION
             </span>
-            <form className="
-              scrn-300:space-y-2 
-              scrn-450:space-y-2
-              scrn-600:space-y-3 
-              scrn-750:space-y-4 
-              scrn-800:space-y-4 
-              scrn-900:space-y-2 
-              scrn-1000:space-y-4 
-              scrn-1250:space-y-2 
-              scrn-1400:space-y-4
-              scrn-1500:space-y-8 
-              scrn-1700:space-y-8 
-              scrn-1900:space-y-12 
-              scrn-2000:space-y-12 
-           
-              mt-6 
-              scrn-600:mt-6 
-              scrn-750:mt-8 
-              scrn-800:mt-6 
-              scrn-900:mt-12 
-              scrn-1000:mt-12 
-
-              scrn-300:text-xs 
-              scrn-450:text-sm 
-              scrn-600:text-base 
-              scrn-750:text-sm 
-              scrn-800:text-base 
-              scrn-900:text-base 
-              scrn-1000:text-lg 
-              scrn-1250:text-lg 
-              scrn-1500:text-lg 
-              scrn-1700:text-xl 
-              scrn-1900:text-xl 
-              scrn-2000:text-xl"
-            >
-              <input type="text" placeholder="Your Name" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
-              <input type="email" placeholder="Email Address" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
-              <input type="text" placeholder="Phone Number" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
-              <textarea placeholder="Message" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600"></textarea>
-              <ReCAPTCHA
-                sitekey="test_key"
-                className="scale-75 scrn-400:scale-90 scrn-600:scale-75 scrn-1000:scale-100 w-1"
-              />
-              <button type="submit" className="w-2/5 bg-[#c62931] text-white py-3 rounded-md font-semibold hover:bg-red-500 transition">
-                SUBMIT
-              </button>
-            </form>
+            <ContactPageForm />
           </div>
         </div>
         <p className="space-x-2 font-semibold text-nowrap hidden text-transparent
