@@ -19,6 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <title>{metadata.title}</title>
         <link rel="icon" href={metadata.icons.icon} />
         <meta name="description" content={metadata.description} />
+
+        {/* ✅ Google Search Console verification */}
+        <meta
+          name="google-site-verification"
+          content="h5105p5iWJykIV1y3DbAOkWpFei5332BIw9M2XvO72s"
+        />
       </head>
       <body className="min-h-screen">
         {/* Render children */}
