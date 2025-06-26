@@ -2,8 +2,8 @@ import '../styles/globals.css';
 import ScrollToTopButton from '@/components/scrollToTop';
 
 export const metadata = {
-  title: 'APEC Main Website',
-  description: 'APEC Main Website',
+  title: 'Atlanta Petroleum Equipment Company - APEC',
+  description: 'Petroleum Equipment Services APEC is dedicated to delivering exceptional results through meticulous project management and outstanding execution. Our success stems from in-depth project analysis, constant communication with customers, and proactive planning to address unforeseen challenges. This commitment has driven our rapid growth and established us as a trusted partner in the petroleum industry. APEC offers a wide range of services, including canopy installation, construction, environmental compliance inspections and testing, C-store renovations, digital marketing for Anthem dispensers, and financing solutions.',
   icons: {
     icon: '/logos/One-Stop-Shop-Logo.png',
   },
