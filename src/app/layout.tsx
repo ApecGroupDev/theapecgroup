@@ -14,10 +14,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="bg-gray-300 text-gray-800">
       <head>
-        {/* Viewport and character encoding */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
-
         {/* Google Search Console */}
         <meta
           name="google-site-verification"
