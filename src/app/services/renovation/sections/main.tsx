@@ -65,51 +65,16 @@ const MainFinancing: React.FC = () => {
         scrn-1000:pt-0
         scrn-1500:pt-24"
       >
-        <div className="h-auto 
-          space-y-3
-          scrn-400:space-y-3
-          scrn-450:space-y-3
-          scrn-500:space-y-4
-          scrn-550:space-y-4
-          scrn-600:space-y-4
-          scrn-1200:space-y-12
-
-          scrn-400:pt-8
-          scrn-450:pt-8
-          scrn-500:pt-4
-          scrn-600:pt-16
-          scrn-1000:pt-20
-          scrn-1600:pt-32"
-        >
-          <span className="text-[#c62931] font-semibold 
-            text-sm
-            scrn-500:text-base 
-            scrn-800:text-xl  
-            scrn-1500:text-3xl 
-            scrn-1700:text-4xl 
-            scrn-1900:text-4xl
-            scrn-2000:text-5xl"
-          >
+        <div className='h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 scrn-400:pt-8 scrn-500:pt-4 scrn-600:pt-16 scrn-1000:pt-20 scrn-1600:pt-32'>
+          <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
             Our Gas Station Renovation and <br /> Remodelling
             Services Include:
           </span>
-          <p className="tracking-widest hidden scrn-600:block
-            scrn-300:text-xs 
-            scrn-400:text-sm 
-            scrn-600:text-sm 
-            scrn-750:text-sm 
-            scrn-800:text-base 
-            scrn-900:text-base 
-            scrn-1000:text-lg 
-            scrn-1500:text-xl 
-            scrn-1700:text-2xl 
-            scrn-1900:text-2xl 
-            scrn-2500:text-3xl"
-          >
+          <p className='tracking-widest hidden scrn-600:block scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
             We provide various C-store renovation services to revamp your gas station
             and make it relevant to today’s industry.
           </p>
-          <div className="hidden lg:block lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-normal scrn-900:font-normal scrn-900:space-y-2 lg:space-y-2 xl:space-y-3 scrn-1500:space-y-6 2xl:space-y-6 lg:font-normal tracking-widest">
+          <div className='hidden lg:block lg:text-lg xl:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-1900:text-2xl scrn-2k:text-3xl scrn-800:font-normal scrn-900:font-normal scrn-900:space-y-2 lg:space-y-2 xl:space-y-3 scrn-1500:space-y-6 2xl:space-y-6 lg:font-normal tracking-widest'>
             <CheckmarkBadge text="Canopy under deck and columns paint" />
             <CheckmarkBadge text="Pressure washing" />
             <CheckmarkBadge text="Outside building paint" />
@@ -117,7 +82,7 @@ const MainFinancing: React.FC = () => {
             <CheckmarkBadge text="Graphics and Signage" />
             <CheckmarkBadge text="Lighting" />
           </div>
-          <div className="lg:hidden scrn-300:text-xs scrn-mobile:text-sm sm:text-sm md:text-sm scrn-800:text-base scrn-900:text-base scrn-300:space-y-2 scrn-mobile:space-y-2 sm:space-y-2 md:space-y-3 scrn-800:space-y-2 scrn-900:space-y-2 tracking-widest">
+          <div className='lg:hidden scrn-300:text-xs scrn-mobile:text-sm sm:text-sm md:text-sm scrn-800:text-base scrn-900:text-base scrn-300:space-y-2 scrn-mobile:space-y-2 sm:space-y-2 md:space-y-3 scrn-800:space-y-2 scrn-900:space-y-2 tracking-widest'>
             <CheckmarkBadgeSmall text="Canopy under deck and columns paint" />
             <CheckmarkBadgeSmall text="Pressure washing" />
             <CheckmarkBadgeSmall text="Outside building paint" />
@@ -126,109 +91,25 @@ const MainFinancing: React.FC = () => {
             <CheckmarkBadgeSmall text="Lighting" />
           </div>
         </div>
-        <div className="relative rounded-3xl shadow-2xl 
-            mt-6
-            scrn-400:mt-6
-            scrn-450:mt-6
-            scrn-500:mt-8
-            scrn-550:mt-8"
-        >
-          <div className="absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0"></div>
-          <div className="relative z-10 
-              p-4 
-              scrn-800:p-8 
-              scrn-900:p-10 
-              scrn-1000:p-12 
-              scrn-1250:p-16 
-              scrn-1500:p-24"
-          >
-            <span className="font-medium
-                scrn-300:text-base 
-                scrn-500:text-xl 
-                scrn-600:text-xl 
-                scrn-750:text-lg 
-                scrn-800:text-lg 
-                scrn-900:text-xl 
-                scrn-1000:text-xl 
-                scrn-1250:text-2xl 
-                scrn-1500:text-3xl 
-                scrn-1700:text-3xl 
-                scrn-1900:text-4xl 
-                scrn-2000:text-4xl"
-            >
+        <div className='relative rounded-3xl shadow-2xl mt-6 scrn-500:mt-8'>
+          <div className='absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0'></div>
+          <div className='relative z-10 p-4 scrn-800:p-8 scrn-900:p-10 scrn-1000:p-12 scrn-1250:p-16 scrn-1500:p-24'>
+            <span className='font-medium scrn-300:text-base scrn-500:text-xl scrn-750:text-lg scrn-900:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1900:text-4xl'>
               SERVICE REQUEST
             </span>
-            <form className="
-                scrn-300:space-y-2 
-                scrn-450:space-y-2
-                scrn-600:space-y-3 
-                scrn-750:space-y-4 
-                scrn-800:space-y-4 
-                scrn-900:space-y-2 
-                scrn-1000:space-y-4 
-                scrn-1250:space-y-2 
-                scrn-1400:space-y-4
-                scrn-1500:space-y-8 
-                scrn-1700:space-y-8 
-                scrn-1900:space-y-12 
-                scrn-2000:space-y-12 
-             
-                mt-6 
-                scrn-600:mt-6 
-                scrn-750:mt-8 
-                scrn-800:mt-6 
-                scrn-900:mt-12 
-                scrn-1000:mt-12 
-
-                scrn-300:text-xs 
-                scrn-450:text-sm 
-                scrn-600:text-base 
-                scrn-750:text-sm 
-                scrn-800:text-base 
-                scrn-900:text-base 
-                scrn-1000:text-lg 
-                scrn-1250:text-lg 
-                scrn-1500:text-lg 
-                scrn-1700:text-xl 
-                scrn-1900:text-xl 
-                scrn-2000:text-xl"
-            >
-              <input type="text" placeholder="Name" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
-              <input type="text" placeholder="Phone No." className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
-              <input type="email" placeholder="Email" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
-              <input type="text" placeholder="Site Address" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600" />
-              <textarea placeholder="Message" className="w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600"></textarea>
-              <button type="submit" className="w-2/5 bg-[#c62931] text-white py-3 rounded-md font-semibold hover:bg-red-500 transition">
+            <form className='scrn-300:space-y-2 scrn-600:space-y-3 scrn-750:space-y-4 scrn-900:space-y-2 scrn-1000:space-y-4 scrn-1250:space-y-2 scrn-1400:space-y-4 scrn-1500:space-y-8 scrn-1900:space-y-12 mt-6 scrn-750:mt-8 scrn-800:mt-6 scrn-900:mt-12 scrn-300:text-xs scrn-450:text-sm scrn-600:text-base scrn-750:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1700:text-xl'>
+              <input type="text" placeholder="Name" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
+              <input type="text" placeholder="Phone No." className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
+              <input type="email" placeholder="Email" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
+              <input type="text" placeholder="Site Address" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
+              <textarea placeholder="Message" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600'></textarea>
+              <button type="submit" className='w-2/5 bg-[#c62931] text-white py-3 rounded-md font-semibold hover:bg-red-500 transition'>
                 SUBMIT
               </button>
             </form>
           </div>
         </div>
-        <div className="space-x-2 font-semibold text-nowrap hidden scrn-600:block
-          pt-6
-          scrn-400:pt-6
-          scrn-450:pt-12
-          scrn-500:pt-8
-          scrn-550:pt-8
-          scrn-600:pt-24
-          scrn-700:pt-20
-          scrn-750:pt-8
-          scrn-800:pt-4
-          scrn-850:pt-8
-          scrn-900:pt-12
-          scrn-950:pt-16
-          scrn-1000:pt-28
-          scrn-1200:pt-28
-          scrn-1300:pt-40
-          scrn-1350:pt-48
-          scrn-1400:pt-56
-          scrn-1450:pt-64
-          scrn-1500:pt-40
-          scrn-1600:pt-48
-          scrn-1800:pt-64
-          scrn-1900:pt-72
-          scrn-2400:pt-96"
-        >
+        <div className='space-x-2 font-semibold text-nowrap hidden scrn-600:block pt-6 scrn-450:pt-12 scrn-500:pt-8 scrn-600:pt-24 scrn-700:pt-20 scrn-750:pt-8 scrn-800:pt-4 scrn-850:pt-8 scrn-900:pt-12 scrn-950:pt-16 scrn-1000:pt-28 scrn-1300:pt-40 scrn-1350:pt-48 scrn-1400:pt-56 scrn-1450:pt-64 scrn-1500:pt-40 scrn-1600:pt-48 scrn-1800:pt-64 scrn-1900:pt-72 scrn-2400:pt-96'>
           <ServicesBoxLinks />
         </div>
       </div>
