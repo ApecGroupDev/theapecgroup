@@ -74,17 +74,17 @@ const Header: React.FC = () => {
         }`}
     >
       {/* Mobile Header */}
-      <div className="scrn-1000:hidden container min-w-full relative flex items-center py-4">
+      <div className='scrn-1000:hidden container min-w-full relative flex items-center py-4'>
         {/* Search Icon (Left) */}
         <button
-          className="absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20"
+          className='absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
           onClick={toggleSearch}
           aria-label="Toggle Search"
         >
           {searchOpen ? (
-            <FiX className="text-2xl" />
+            <FiX className='text-2xl' />
           ) : (
-            <FiSearch className="text-2xl" />
+            <FiSearch className='text-2xl' />
           )}
         </button>
         {/* Search Input */}
@@ -97,34 +97,34 @@ const Header: React.FC = () => {
             placeholder="Search APEC"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full p-2 border rounded-md focus:outline-none"
+            className='w-full p-2 border rounded-md focus:outline-none'
           />
         </div>
 
         {/* Centered Logo */}
-        <div className="absolute pt-10 inset-0 flex justify-center items-center">
+        <div className='absolute pt-10 inset-0 flex justify-center items-center'>
           <Link href="/">
             <Image
               src="/logos/APEC.png"
               alt="Logo"
               width={1315}
               height={1206}
-              className="h-20 w-auto"
+              className='h-20 w-auto'
             />
           </Link>
         </div>
 
         {/* Menu Button (Right) */}
         <button
-          className="absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20"
+          className='absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
           onClick={toggleMenu}
         >
           {isOpen ? (
-            <span className="text-5xl">×</span>
+            <span className='text-5xl'>×</span>
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
+              className='h-8 w-8'
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -161,31 +161,31 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className="hidden scrn-1000:grid grid-cols-3 items-center px-6 py-1">
+      <div className='hidden scrn-1000:grid grid-cols-3 items-center px-6 py-1'>
         {/* Left: Logo */}
-        <div className="flex items-center">
+        <div className='flex items-center'>
           <Link href="/">
             <Image
               src="/logos/APEC.png"
               alt="Logo"
               width={1315}
               height={1206}
-              className="w-auto scrn-750:h-16 scrn-1250:h-20"
+              className='w-auto scrn-750:h-16 scrn-1250:h-20'
             />
           </Link>
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-center space-x-8">
+        <nav className='flex z-10 justify-center space-x-8'>
           {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) =>
             path === "/services" ? (
               <div
                 key={path}
-                className="relative group"
+                className='relative group'
                 onMouseEnter={() => setShowDropdown(true)}
                 onMouseLeave={() => setShowDropdown(false)}
               >
-                <div className="relative">
+                <div className='relative'>
                   <Link
                     href={path}
                     className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
@@ -193,54 +193,54 @@ const Header: React.FC = () => {
                     SERVICES
                   </Link>
                   {pathname.startsWith(path) && (
-                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
+                    <span className='absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]' />
                   )}
                 </div>
 
                 {/* DROPDOWN MENU */}
                 {showDropdown && (
                   <div
-                    className="absolute left-0 top-full w-40 bg-transparent backdrop-blur-sm rounded-md py-2 z-50"
+                    className='absolute left-0 top-full w-40 bg-transparent backdrop-blur-sm rounded-md py-2 z-50'
                   // Make sure there's no gap from the top of the dropdown to the bottom of the link
                   >
                     <Link
                       href="/services/compliance"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
                       onClick={() => setShowDropdown(false)}
                     >
                       Compliance
                     </Link>
                     <Link
                       href="/services/financing"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
                       onClick={() => setShowDropdown(false)}
                     >
                       Financing
                     </Link>
                     <Link
                       href="/services/imaging-and-canopies"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
                       onClick={() => setShowDropdown(false)}
                     >
                       Imaging
                     </Link>
                     <Link
                       href="/services/renovation"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
                       onClick={() => setShowDropdown(false)}
                     >
                       Renovations
                     </Link>
                     <Link
                       href="/services/construction"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
                       onClick={() => setShowDropdown(false)}
                     >
                       Construction
                     </Link>
                     <Link
                       href="/services/link"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
                       onClick={() => setShowDropdown(false)}
                     >
                       Link
@@ -257,7 +257,7 @@ const Header: React.FC = () => {
               >
                 {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
                 {pathname.startsWith(path) && (
-                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
+                  <span className='absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]' />
                 )}
               </Link>
             )
@@ -265,22 +265,22 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Right: Search Icon */}
-        <div className="relative flex justify-end">
+        <div className='relative flex justify-end'>
           {showSearch ? (
             <input
               ref={searchRef}
               type="text"
               placeholder="Search APEC"
-              className="p-2 rounded-full border z-50 border-gray-300 focus:border-[#c62931] focus:outline-none w-48 scrn-750:w-64 transition-all duration-200"
+              className='p-2 rounded-full border z-50 border-gray-300 focus:border-[#c62931] focus:outline-none w-48 scrn-750:w-64 transition-all duration-200'
               autoFocus
             />
           ) : (
             <button
               onClick={() => setShowSearch(true)}
-              className="p-3 me-2 rounded-full bg-gray-100 hover:bg-[#c62931] hover:text-white transition-all duration-200 text-[#c62931]"
+              className='p-3 me-2 rounded-full bg-gray-100 hover:bg-[#c62931] hover:text-white transition-all duration-200 text-[#c62931]'
               aria-label="Search"
             >
-              <FiSearch className="text-xl" />
+              <FiSearch className='text-xl' />
             </button>
           )}
         </div>
