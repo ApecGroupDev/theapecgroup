@@ -16,10 +16,10 @@ export default function ClientLayoutWrapper({ children }: { children: React.Reac
 
   return (
     <div
-      className="bg-cover bg-top bg-no-repeat min-h-screen"
+      className='bg-cover bg-top bg-no-repeat min-h-screen'
       style={{ backgroundImage: `url('${backgroundUrl}')` }}
     >
-      <div className="w-full">{children}</div>
+      <div className='w-full'>{children}</div>
     </div>
   );
 }
