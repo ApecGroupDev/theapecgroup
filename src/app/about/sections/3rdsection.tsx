@@ -44,7 +44,7 @@ const ThirdSection: React.FC = () => {
           </div>
 
           {/* Right Side (WORK + the competition) */}
-          <div className="w-auto flex flex-col items-center relative">
+          <div className='w-auto flex flex-col items-center relative'>
             {/* WORK */}
             <div className='w-full flex items-center justify-center scrn-900:ms-8'>
               <span className='text-transparent font-bold scrn-1900:scale-y-110 mt-7 scrn-450:mt-4 scrn-600:mt-6 scrn-700:mt-12 scrn-800:mt-12 scrn-900:mt-16 scrn-1000:mt-24 scrn-1300:mt-32 scrn-1700:mt-32 scrn-1900:mt-6'>
