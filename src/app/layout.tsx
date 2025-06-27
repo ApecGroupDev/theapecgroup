@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="bg-gray-300 text-gray-800">
+    <html lang="en" className='bg-gray-300 text-gray-800'>
       <head>
         {/* Google Search Console */}
         <meta
@@ -20,9 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="h5105p5iWJykIV1y3DbAOkWpFei5332BIw9M2XvO72s"
         />
       </head>
-      <body className="min-h-screen">
+      <body className='min-h-screen'>
         {/* Render children */}
-        <div className="max-w-[2560px] mx-auto">
+        <div className='max-w-[2560px] mx-auto'>
           {children}
         </div>
         <ScrollToTopButton />
