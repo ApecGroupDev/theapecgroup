@@ -3,8 +3,7 @@
 import React from "react";
 import MailRed from "@/components/mailRed";
 import LocationRed from "@/components/locationRed";
-import ContactPageForm
-  from "@/components/contactForm";
+import ContactPageForm from "@/components/contactForm";
 
 const MainContact: React.FC = () => {
   return (
