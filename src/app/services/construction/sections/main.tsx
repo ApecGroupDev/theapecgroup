@@ -3,6 +3,7 @@ import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import React from "react";
 import ServicesBoxLinks from "@/components/servicesLinks";
+import ConstructionContactForm from "@/components/constructionContactForm";
 
 const MainFinancing: React.FC = () => {
   return (
@@ -34,16 +35,7 @@ const MainFinancing: React.FC = () => {
             <span className='font-medium scrn-300:text-base scrn-500:text-xl scrn-600:text-xl scrn-750:text-lg scrn-800:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2000:text-4xl'>
               SERVICE REQUEST
             </span>
-            <form className='space-y-2 scrn-600:space-y-3 scrn-750:space-y-4 scrn-900:space-y-2 scrn-1000:space-y-4 scrn-1250:space-y-2 scrn-1400:space-y-4 scrn-1500:space-y-8 scrn-1900:space-y-12 mt-6 scrn-600:mt-6 scrn-750:mt-8 scrn-800:mt-6 scrn-900:mt-12 scrn-1000:mt-12 scrn-300:text-xs scrn-450:text-sm scrn-600:text-base scrn-750:text-sm scrn-800:text-base scrn-900:text-base scrn-1000:text-lg scrn-1250:text-lg scrn-1500:text-lg scrn-1700:text-xl scrn-1900:text-xl scrn-2000:text-xl'>
-              <input type="text" placeholder="Name" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
-              <input type="text" placeholder="Phone No." className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
-              <input type="email" placeholder="Email" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
-              <input type="text" placeholder="Site Address" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600' />
-              <textarea placeholder="Message" className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600'></textarea>
-              <button type="submit" className='w-2/5 bg-[#c62931] text-white py-3 rounded-md font-semibold hover:bg-red-500 transition'>
-                SUBMIT
-              </button>
-            </form>
+            <ConstructionContactForm />
           </div>
         </div>
         <div className='space-x-2 font-semibold text-nowrap hidden scrn-600:block pt-6 scrn-400:pt-6 scrn-450:pt-12 scrn-500:pt-8 scrn-550:pt-8 scrn-600:pt-24 scrn-700:pt-20 scrn-750:pt-6 scrn-800:pt-4 scrn-850:pt-8 scrn-900:pt-12 scrn-950:pt-16 scrn-1000:pt-28 scrn-1200:pt-28 scrn-1300:pt-40 scrn-1350:pt-48 scrn-1400:pt-56 scrn-1450:pt-64 scrn-1500:pt-40 scrn-1600:pt-48 scrn-1800:pt-64 scrn-1900:pt-72 scrn-2400:pt-96'>
