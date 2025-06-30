@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import ScrollToTopButton from '@/components/scrollToTop';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Atlanta Petroleum Equipment Company - APEC',
@@ -19,6 +20,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           name="google-site-verification"
           content="h5105p5iWJykIV1y3DbAOkWpFei5332BIw9M2XvO72s"
         />
+
+        {/* ✅ Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WXLE69Q1SV"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WXLE69Q1SV');
+          `}
+        </Script>
       </head>
       <body className='min-h-screen'>
         {/* Render children */}
