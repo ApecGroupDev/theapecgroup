@@ -68,6 +68,9 @@ const Header: React.FC = () => {
 
   const [showDropdown, setShowDropdown] = useState(false);
 
+  const isActive = (path: string) =>
+  path === "/" ? pathname === "/" : pathname.startsWith(path);
+
   return (
     <header
       className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
@@ -144,19 +147,17 @@ const Header: React.FC = () => {
           className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
-          {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map(
-            (path) => (
-              <Link
-                key={path}
-                href={path}
-                className={`block text-lg font-medium tracking-widest text-gray-800 hover:text-[#c62931] py-2 ${pathname.startsWith(path) ? "text-[#c62931]" : ""
-                  }`}
-                onClick={() => setIsOpen(false)}
-              >
-                {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
-              </Link>
-            )
-          )}
+          {["/", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) => (
+            <Link
+              key={path}
+              href={path}
+              className={`block text-lg font-medium tracking-widest py-2 transition-colors duration-200 ${isActive(path) ? "text-[#c62931]" : "text-gray-800 hover:text-[#c62931]"
+                }`}
+              onClick={() => setIsOpen(false)}
+            >
+              {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
+            </Link>
+          ))}
         </nav>
       </div>
 
@@ -176,71 +177,69 @@ const Header: React.FC = () => {
         </div>
 
         {/* Center: Navigation */}
-        <nav className='flex z-10 justify-center space-x-8'>
-          {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) =>
+        <nav className="flex z-10 justify-center space-x-8">
+          {["/", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) =>
             path === "/services" ? (
               <div
                 key={path}
-                className='relative group'
+                className="relative group"
                 onMouseEnter={() => setShowDropdown(true)}
                 onMouseLeave={() => setShowDropdown(false)}
               >
-                <div className='relative'>
+                <div className="relative">
                   <Link
                     href={path}
-                    className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
+                    className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""
+                      }`}
                   >
                     SERVICES
                   </Link>
                   {pathname.startsWith(path) && (
-                    <span className='absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]' />
+                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                   )}
                 </div>
 
                 {/* DROPDOWN MENU */}
                 {showDropdown && (
-                  <div
-                    className='absolute left-0 top-full w-40 bg-transparent backdrop-blur-sm rounded-md py-2 z-50'
-                  // Make sure there's no gap from the top of the dropdown to the bottom of the link
-                  >
+                  <div className="absolute left-0 top-full w-40 bg-transparent backdrop-blur-sm rounded-md py-2 z-50">
                     <Link
                       href="/services/compliance"
-                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
                       Compliance
                     </Link>
                     <Link
                       href="/services/financing"
-                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
                       Financing
                     </Link>
                     <Link
                       href="/services/imaging-and-canopies"
-                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
                       Imaging
                     </Link>
                     <Link
                       href="/services/renovation"
-                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
                       Renovations
                     </Link>
                     <Link
                       href="/services/construction"
-                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
                       Construction
                     </Link>
                     <Link
                       href="/services/link"
-                      className='block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md'
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
                       Link
@@ -252,12 +251,12 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""
+                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${(path === "/" ? pathname === "/" : pathname.startsWith(path)) ? "text-red-800" : ""
                   }`}
               >
                 {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
-                {pathname.startsWith(path) && (
-                  <span className='absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]' />
+                {(path === "/" ? pathname === "/" : pathname.startsWith(path)) && (
+                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                 )}
               </Link>
             )
