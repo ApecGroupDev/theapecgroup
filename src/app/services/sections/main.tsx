@@ -15,37 +15,37 @@ const features: Services[] = [
     title: "APEC COMPLIANCE",
     description: "Gas Station Inspection and Compliance Services",
     imageSrc: "/servicesLogos/Apec-Compliance.png",
-    slug: "compliance",
+    slug: "environmental-compliance-solutions",
   },
   {
     title: "SPEC FINANCES",
     description: "Gas Station Financing and Loans Services",
     imageSrc: "/servicesLogos/Apec-Financing.png",
-    slug: "financing"
+    slug: "gas-station-financing"
   },
   {
     title: "APEC IMAGING AND CANOPIES",
     description: "Gas Station Canopy Panels Installation",
     imageSrc: "/servicesLogos/Apec-Imaging.png",
-    slug: "imaging-and-canopies",
+    slug: "canopy-imaging-solutions",
   },
   {
     title: "APEC RENOVATIONS",
     description: "Gas Station Renovation and Remodelling Services",
     imageSrc: "/servicesLogos/Apec-Renovations.png",
-    slug: "renovation",
+    slug: "convenience-store-remodel",
   },
   {
     title: "APEC CONSTRUCTION",
     description: "Gas Station Construction Company Services",
     imageSrc: "/servicesLogos/Apec-Constructions.png",
-    slug: "construction",
+    slug: "gas-station-construction",
   },
   {
     title: "APEC LINK",
     description: "Digital Marketing Content and Remote Monitoring Services",
     imageSrc: "/servicesLogos/Apec-Constructions.png",
-    slug: "link",
+    slug: "gas-station-pump-advertising",
   },
 ];
 
