@@ -16,7 +16,7 @@ const features: Services[] = [
     title: "APEC COMPLIANCE",
     description: "Gas Station Inspection and Compliance Services",
     imageSrc: "/servicesLogos/Apec-Compliance.png",
-    slug: "compliance",
+    slug: "environmental-compliance-solutions",
   },
   {
     title: "SPEC FINANCES",
@@ -54,7 +54,7 @@ const ServicesBoxLinks: React.FC = () => {
   const pathname = usePathname(); // 👈 Get current URL path
 
   const hiddenSlugsByPath: Record<string, string[]> = {
-    "/services/compliance": ["compliance"],
+    "/services/environmental-compliance-solutions": ["environmental-compliance-solutions"],
     "/services/gas-station-financing": ["gas-station-financing"],
     "/services/canopy-imaging-solutions": ["canopy-imaging-solutions"],
     "/services/convenience-store-remodel": ["convenience-store-remodel"],
