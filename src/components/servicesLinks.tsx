@@ -22,7 +22,7 @@ const features: Services[] = [
     title: "SPEC FINANCES",
     description: "Gas Station Financing and Loans Services",
     imageSrc: "/servicesLogos/Apec-Financing.png",
-    slug: "financing"
+    slug: "gas-station-financing"
   },
   {
     title: "APEC IMAGING AND CANOPIES",
@@ -55,7 +55,7 @@ const ServicesBoxLinks: React.FC = () => {
 
   const hiddenSlugsByPath: Record<string, string[]> = {
     "/services/compliance": ["compliance"],
-    "/services/financing": ["financing"],
+    "/services/gas-station-financing": ["gas-station-financing"],
     "/services/canopy-imaging-solutions": ["canopy-imaging-solutions"],
     "/services/convenience-store-remodel": ["convenience-store-remodel"],
     "/services/gas-station-construction": ["gas-station-construction"],

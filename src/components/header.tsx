@@ -210,11 +210,11 @@ const Header: React.FC = () => {
                       Compliance
                     </Link>
                     <Link
-                      href="/services/financing"
+                      href="/services/gas-station-financing"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Financing
+                      Gas Station Financing
                     </Link>
                     <Link
                       href="/services/canopy-imaging-solutions"
