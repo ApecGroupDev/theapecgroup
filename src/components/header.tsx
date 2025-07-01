@@ -238,11 +238,11 @@ const Header: React.FC = () => {
                       Gas Station Construction
                     </Link>
                     <Link
-                      href="/services/link"
+                      href="/services/gas-station-pump-advertising"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Link
+                      Gas Station Pump Advertising
                     </Link>
                   </div>
                 )}

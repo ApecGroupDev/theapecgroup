@@ -46,7 +46,7 @@ const features: Services[] = [
     title: "APEC LINK",
     description: "Digital Marketing Content and Remote Monitoring Services",
     imageSrc: "/servicesLogos/Apec-Constructions.png",
-    slug: "link",
+    slug: "gas-station-pump-advertising",
   },
 ];
 
@@ -59,7 +59,7 @@ const ServicesBoxLinks: React.FC = () => {
     "/services/imaging-and-canopies": ["imaging-and-canopies"],
     "/services/renovation": ["renovation"],
     "/services/gas-station-construction": ["gas-station-construction"],
-    "/services/link": ["link"],
+    "/services/gas-station-pump-advertising": ["gas-station-pump-advertising"],
     // add more pages and slugs to hide here
   };
 
