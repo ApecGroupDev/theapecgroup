@@ -224,11 +224,11 @@ const Header: React.FC = () => {
                       Imaging
                     </Link>
                     <Link
-                      href="/services/renovation"
+                      href="/services/convenience-store-remodel"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Renovations
+                      Convenience Store Remodel
                     </Link>
                     <Link
                       href="/services/gas-station-construction"

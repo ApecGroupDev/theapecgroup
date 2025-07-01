@@ -34,7 +34,7 @@ const features: Services[] = [
     title: "APEC RENOVATIONS",
     description: "Gas Station Renovation and Remodelling Services",
     imageSrc: "/servicesLogos/Apec-Renovations.png",
-    slug: "renovation",
+    slug: "convenience-store-remodel",
   },
   {
     title: "APEC CONSTRUCTION",
@@ -57,7 +57,7 @@ const ServicesBoxLinks: React.FC = () => {
     "/services/compliance": ["compliance"],
     "/services/financing": ["financing"],
     "/services/imaging-and-canopies": ["imaging-and-canopies"],
-    "/services/renovation": ["renovation"],
+    "/services/convenience-store-remodel": ["convenience-store-remodel"],
     "/services/gas-station-construction": ["gas-station-construction"],
     "/services/gas-station-pump-advertising": ["gas-station-pump-advertising"],
     // add more pages and slugs to hide here
