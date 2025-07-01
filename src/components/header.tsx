@@ -217,11 +217,11 @@ const Header: React.FC = () => {
                       Financing
                     </Link>
                     <Link
-                      href="/services/imaging-and-canopies"
+                      href="/services/canopy-imaging-solutions"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Imaging
+                      Canopy Imaging Solutions
                     </Link>
                     <Link
                       href="/services/convenience-store-remodel"

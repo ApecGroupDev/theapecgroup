@@ -56,7 +56,7 @@ const ServicesBoxLinks: React.FC = () => {
   const hiddenSlugsByPath: Record<string, string[]> = {
     "/services/compliance": ["compliance"],
     "/services/financing": ["financing"],
-    "/services/imaging-and-canopies": ["imaging-and-canopies"],
+    "/services/canopy-imaging-solutions": ["canopy-imaging-solutions"],
     "/services/convenience-store-remodel": ["convenience-store-remodel"],
     "/services/gas-station-construction": ["gas-station-construction"],
     "/services/gas-station-pump-advertising": ["gas-station-pump-advertising"],
