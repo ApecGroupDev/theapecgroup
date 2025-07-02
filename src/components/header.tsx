@@ -69,7 +69,7 @@ const Header: React.FC = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const isActive = (path: string) =>
-  path === "/" ? pathname === "/" : pathname.startsWith(path);
+    path === "/" ? pathname === "/" : pathname.startsWith(path);
 
   return (
     <header
@@ -147,7 +147,15 @@ const Header: React.FC = () => {
           className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
-          {["/", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) => (
+          {[
+            { label: "HOME", path: "/" },
+            { label: "ABOUT", path: "/about-us" },
+            { label: "TEAM", path: "/our-team" },
+            { label: "SERVICES", path: "/services" },
+            { label: "CAREERS", path: "/petroleum-companies-jobs" },
+            { label: "BLOG", path: "/blogs" },
+            { label: "CONTACT", path: "/contact-us" },
+          ].map(({ label, path }) => (
             <Link
               key={path}
               href={path}
@@ -155,7 +163,7 @@ const Header: React.FC = () => {
                 }`}
               onClick={() => setIsOpen(false)}
             >
-              {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
+              {label}
             </Link>
           ))}
         </nav>
@@ -178,8 +186,16 @@ const Header: React.FC = () => {
 
         {/* Center: Navigation */}
         <nav className="flex z-10 justify-center space-x-8">
-          {["/", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) =>
-            path === "/services" ? (
+          {[
+            { label: "HOME", path: "/" },
+            { label: "ABOUT", path: "/about-us" },
+            { label: "TEAM", path: "/our-team" },
+            { label: "SERVICES", path: "/services" },
+            { label: "CAREERS", path: "/petroleum-companies-jobs" },
+            { label: "BLOG", path: "/blogs" },
+            { label: "CONTACT", path: "/contact-us" },
+          ].map(({ label, path }) =>
+            label === "SERVICES" ? (
               <div
                 key={path}
                 className="relative group"
@@ -192,7 +208,7 @@ const Header: React.FC = () => {
                     className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""
                       }`}
                   >
-                    SERVICES
+                    {label}
                   </Link>
                   {pathname.startsWith(path) && (
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
@@ -232,7 +248,7 @@ const Header: React.FC = () => {
                     </Link>
                     <Link
                       href="/services/gas-station-construction"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md" 
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
                       Gas Station Construction
@@ -251,10 +267,12 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${(path === "/" ? pathname === "/" : pathname.startsWith(path)) ? "text-red-800" : ""
+                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${(path === "/" ? pathname === "/" : pathname.startsWith(path))
+                  ? "text-red-800"
+                  : ""
                   }`}
               >
-                {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
+                {label}
                 {(path === "/" ? pathname === "/" : pathname.startsWith(path)) && (
                   <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                 )}
