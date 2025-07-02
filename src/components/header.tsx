@@ -201,7 +201,7 @@ const Header: React.FC = () => {
 
                 {/* DROPDOWN MENU */}
                 {showDropdown && (
-                  <div className="absolute left-0 top-full w-auto text-nowrap bg-transparent backdrop-blur-sm rounded-md py-2 z-50">
+                  <div className="absolute top-full w-auto text-nowrap bg-white/50 backdrop-blur-sm rounded-md py-2 z-50">
                     <Link
                       href="/services/environmental-compliance-solutions"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
@@ -232,7 +232,7 @@ const Header: React.FC = () => {
                     </Link>
                     <Link
                       href="/services/gas-station-construction"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md" 
                       onClick={() => setShowDropdown(false)}
                     >
                       Gas Station Construction
