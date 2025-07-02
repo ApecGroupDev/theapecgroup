@@ -1,6 +1,12 @@
 import MainLink from "./sections/main";
 import Hero from "./sections/hero";
 import Footer from "@/components/footer";
+
+export const metadata = {
+  title: "Gas Station Pump Advertising | The APEC Group",
+  description: "Elevate your brand with The APEC Group's gas station pump advertising. Discover effective, high-visibility marketing solutions.",
+};
+
 const ServicesLink: React.FC = () => {
   return (
     <div className='flex flex-col'>
