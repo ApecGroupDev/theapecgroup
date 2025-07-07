@@ -12,6 +12,12 @@ interface Services {
 
 const features: Services[] = [
   {
+    title: "APEC IMAGING AND CANOPIES",
+    description: "Gas Station Canopy Panels Installation",
+    imageSrc: "/servicesLogos/Apec-Imaging.png",
+    slug: "canopy-imaging-solutions",
+  },
+  {
     title: "APEC COMPLIANCE",
     description: "Gas Station Inspection and Compliance Services",
     imageSrc: "/servicesLogos/Apec-Compliance.png",
@@ -23,30 +29,24 @@ const features: Services[] = [
     imageSrc: "/servicesLogos/Apec-Financing.png",
     slug: "gas-station-financing"
   },
+  // {
+  //   title: "APEC RENOVATIONS",
+  //   description: "Gas Station Renovation and Remodelling Services",
+  //   imageSrc: "/servicesLogos/Apec-Renovations.png",
+  //   slug: "convenience-store-remodel",
+  // },
   {
-    title: "APEC IMAGING AND CANOPIES",
-    description: "Gas Station Canopy Panels Installation",
-    imageSrc: "/servicesLogos/Apec-Imaging.png",
-    slug: "canopy-imaging-solutions",
-  },
-  {
-    title: "APEC RENOVATIONS",
-    description: "Gas Station Renovation and Remodelling Services",
-    imageSrc: "/servicesLogos/Apec-Renovations.png",
-    slug: "convenience-store-remodel",
-  },
-  {
-    title: "APEC CONSTRUCTION",
+    title: "APEC ELECTRICAL",
     description: "Gas Station Construction Company Services",
     imageSrc: "/servicesLogos/Apec-Constructions.png",
     slug: "gas-station-construction",
   },
-  {
-    title: "APEC LINK",
-    description: "Digital Marketing Content and Remote Monitoring Services",
-    imageSrc: "/servicesLogos/Apec-Constructions.png",
-    slug: "gas-station-pump-advertising",
-  },
+  // {
+  //   title: "APEC LINK",
+  //   description: "Digital Marketing Content and Remote Monitoring Services",
+  //   imageSrc: "/servicesLogos/Apec-Constructions.png",
+  //   slug: "gas-station-pump-advertising",
+  // },
 ];
 
 const MainServices: React.FC = () => {
@@ -60,14 +60,57 @@ const MainServices: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className='flex justify-center flex-wrap mx-auto scrn-600:max-w-128 scrn-700:max-w-416 mt-2 scrn-700:mt-8 scrn-1000:mt-12 scrn-1200:mt-14 scrn-1650:mt-24 scrn-2400:mt-32 gap-4 scrn-350:gap-6 scrn-800:gap-8 scrn-1100:gap-10 scrn-1400:gap-12 scrn-1700:gap-16 scrn-1900:gap-24'>
+      <div className='flex justify-center flex-wrap mx-auto 
+      scrn-600:max-w-128 
+      scrn-700:max-w-416 
+      mt-2 
+      scrn-700:mt-8 
+      scrn-1000:mt-12 
+      scrn-1200:mt-14 
+      scrn-1650:mt-24 
+      scrn-2400:mt-32 
+      gap-4 
+      scrn-350:gap-6 
+      scrn-800:gap-8 
+      scrn-1100:gap-10 
+      scrn-1400:gap-12 
+      scrn-1700:gap-16 
+      scrn-1900:gap-12'>
         {features.map((feature, index) => (
           <Link key={index} href={`/services/${feature.slug}`} passHref>
             <div
               key={index}
-              className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-32 scrn-400:w-40 scrn-500:w-48 scrn-800:w-52 scrn-900:w-60 scrn-1000:w-64 scrn-1100:w-72 scrn-1200:w-80 scrn-1400:w-96 scrn-1650:w-116 scrn-1700:w-120'>
+              className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
+              w-32 
+              scrn-400:w-40 
+              scrn-500:w-60
+               scrn-800:w-52 
+               scrn-900:w-60 
+               scrn-1000:w-64 
+               scrn-1100:w-72 
+               scrn-1200:w-80 
+               scrn-1400:w-96 
+               scrn-1650:w-116 
+               scrn-1700:w-120 
+               scrn-1900:w-110'
+            >
               {/* Image Display */}
-              <div className='flex flex-col items-center justify-center h-16 scrn-400:h-20 scrn-450:h-24 scrn-500:h-28 scrn-600:h-32 scrn-800:h-36 scrn-900:h-44 scrn-1000:h-44 scrn-1100:h-56 scrn-1200:h-60 scrn-1400:h-72 scrn-1650:h-80 scrn-1700:h-96'>
+              <div className='flex flex-col items-center justify-center 
+              h-16 
+              scrn-400:h-20 
+              scrn-450:h-24 
+              scrn-500:h-28 
+              scrn-600:h-32 
+              scrn-800:h-36 
+              scrn-900:h-44 
+              scrn-1000:h-44 
+              scrn-1100:h-56 
+              scrn-1200:h-60 
+              scrn-1400:h-72 
+              scrn-1650:h-80 
+              scrn-1700:h-96 
+              scrn-1900:h-72'
+              >
                 <img
                   src={feature.imageSrc}
                   alt={feature.title}
@@ -84,6 +127,42 @@ const MainServices: React.FC = () => {
             </div>
           </Link>
         ))}
+
+        {/* ✅ Larger External Box with Centered Logo */}
+        <a
+          href="https://external-website.com" // Replace with actual URL
+          target="_blank"
+          rel="noopener noreferrer"
+          className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
+          w-72 
+          scrn-500:w-80 
+          scrn-800:w-96 
+          scrn-1000:w-[28rem] 
+          scrn-1400:w-[32rem] 
+          scrn-1900:w-160
+          h-60 
+          scrn-600:h-64 
+          scrn-800:h-72 
+          scrn-1000:h-80 
+          scrn-1900:h-136
+          flex-shrink-0'
+        >
+          {/* Logo - centered vertically and horizontally */}
+          <div className='flex items-center justify-center h-full'>
+            <img
+              src="/servicesLogos/Logo_MPC_Main.png"
+              alt="External Partner"
+              className='w-full px-4 object-contain'
+            />
+          </div>
+
+          {/* Description on Hover */}
+          <div className="absolute inset-0 flex flex-col justify-center items-center p-4 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
+            <p className='text-gray-700 text-center overflow-y-auto max-h-48 text-xs scrn-600:text-sm scrn-800:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2500:text-4xl'>
+              Visit Metal Products Company website
+            </p>
+          </div>
+        </a>
       </div>
     </div>
   );
