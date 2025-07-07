@@ -1,5 +1,6 @@
 import React from 'react';
 import TeamCard from '../components/teamCard';
+import TeamCardNoImage from '../components/teamCardNoImage';
 
 type TeamMember = {
   name: string;
@@ -9,16 +10,20 @@ type TeamMember = {
 const teamMembers: TeamMember[] = [
   { name: 'Mehboob "Ali" Husain', title: 'PRESIDENT' },
   { name: 'Mavis Brown', title: 'CONTROLLER' },
+
   { name: 'Earl Sego', title: 'VP OF CONSTRUCTION' },
   { name: 'Ron Brown', title: 'SERVICE MANAGER' },
-  { name: 'Wade LeComte', title: 'COMMERCIAL SALES EXECUTIVE' },
-  { name: 'Jorge Salazar', title: 'COO IMAGING AND CANOPIES' },
   { name: 'Dami Ajasa', title: 'OPERATIONS MANAGER' },
+
+  { name: 'Jorge Salazar', title: 'COO IMAGING AND CANOPIES' },
+  { name: 'Walid Bayoumi', title: 'SALES EXECUTIVE' },
+
+  { name: 'Rani Sonpari', title: 'CUSTOMER CARE' },
   { name: 'Billy Boulware', title: 'ASST. SERVICE MANAGER' },
   { name: 'Peggy Hulka', title: 'POS MANAGER' },
-  { name: 'Walid Bayoumi', title: 'SALES EXECUTIVE' },
+
   { name: 'Michael Henning', title: 'PARTS SPECIALIST' },
-  { name: 'Rani Sonpari', title: 'CUSTOMER CARE' },
+  { name: 'Wade LeComte', title: 'COMMERCIAL SALES EXECUTIVE' },
 ];
 
 const TeamPage: React.FC = () => {
@@ -48,9 +53,14 @@ const TeamPage: React.FC = () => {
             ${row.length === 2 ? '' : ''}
           `}
           >
-            {row.map((member) => (
-              <TeamCard key={member.name} name={member.name} title={member.title} />
-            ))}
+            {row.map((member) => {
+              const globalIndex = teamMembers.findIndex((tm) => tm.name === member.name);
+              return globalIndex < 2 ? (
+                <TeamCard key={member.name} name={member.name} title={member.title} />
+              ) : (
+                <TeamCardNoImage key={member.name} name={member.name} title={member.title} />
+              );
+            })}
           </div>
         ))}
       </div>
@@ -68,9 +78,14 @@ const TeamPage: React.FC = () => {
                 : 'grid-cols-2 justify-items-center'
                 } mx-4 scrn-550:mx-14 `}
             >
-              {row.map((member, index) => (
-                <TeamCard key={index} name={member.name} title={member.title} />
-              ))}
+              {row.map((member) => {
+                const globalIndex = teamMembers.findIndex((tm) => tm.name === member.name);
+                return globalIndex < 2 ? (
+                  <TeamCard key={member.name} name={member.name} title={member.title} />
+                ) : (
+                  <TeamCardNoImage key={member.name} name={member.name} title={member.title} />
+                );
+              })}
             </div>
           );
         })}
