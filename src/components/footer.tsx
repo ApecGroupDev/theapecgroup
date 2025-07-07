@@ -13,28 +13,28 @@ const Footer: React.FC = () => {
           <span className='text-xs scrn-750:ps-0 scrn-1000:ps-6 scrn-125:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg whitespace-nowrap footer-text-dark'>855-444-APEC | Sales@TheAPECgroup.com</span>
           <div className='hidden scrn-750:flex space-x-4 scrn-750:ps-0 scrn-1000:ps-12'>
             <SocialIcon
-              url="https://twitter.com"
+              url="https://twitter.com/theapecgroup"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
               bgColor="#c62931"
               className='transition-transform transform hover:scale-125'
             />
             <SocialIcon
-              url="https://www.instagram.com"
+              url="https://www.instagram.com/the_apec_group/"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
               bgColor="#c62931"
               className='transition-transform transform hover:scale-125'
             />
             <SocialIcon
-              url="https://www.facebook.com"
+              url="https://www.facebook.com/people/APEC-Group/100078538340182/"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
               bgColor="#c62931"
               className='transition-transform transform hover:scale-125'
             />
             <SocialIcon
-              url="https://www.linkedin.com"
+              url="https://www.linkedin.com/company/apec-group-petroleum-equipment-and-services"
               target="_blank"
               style={{ height: 36, width: 36, borderRadius: 8 }}
               bgColor="#c62931"
@@ -43,28 +43,28 @@ const Footer: React.FC = () => {
           </div>
           <div className='flex scrn-750:hidden space-x-4 pb-2 scrn-400:pb-0'>
             <SocialIcon
-              url="https://twitter.com"
+              url="https://twitter.com/theapecgroup"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
               bgColor="#c62931"
               className='transition-transform transform hover:scale-125'
             />
             <SocialIcon
-              url="https://www.instagram.com"
+              url="https://www.instagram.com/the_apec_group/"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
               bgColor="#c62931"
               className='transition-transform transform hover:scale-125'
             />
             <SocialIcon
-              url="https://www.facebook.com"
+              url="https://www.facebook.com/people/APEC-Group/100078538340182/"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
               bgColor="#c62931"
               className='transition-transform transform hover:scale-125'
             />
             <SocialIcon
-              url="https://www.linkedin.com"
+              url="https://www.linkedin.com/company/apec-group-petroleum-equipment-and-services"
               target="_blank"
               style={{ height: 28, width: 28, borderRadius: 8 }}
               bgColor="#c62931"
