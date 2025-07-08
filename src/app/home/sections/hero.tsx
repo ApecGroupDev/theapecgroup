@@ -26,7 +26,16 @@ const Hero: React.FC = () => {
           <img
             src="/logos/One-Stop-Shop.gif"
             alt="Animated Logo"
-            className="mx-auto scrn-600:mx-0 w-40 scrn-800:w-56 scrn-1000:w-64 scrn-1200:w-72 scrn-1500:w-80 scrn-1800:w-140"
+            className="mx-auto scrn-600:mx-0
+            w-48 
+            scrn-700:w-60
+            scrn-800:w-64
+            scrn-900:w-72
+            scrn-1000:w-80 
+            scrn-1100:w-96 
+            scrn-1500:w-120
+            scrn-1600:w-128
+            scrn-1800:w-140"
           />
           {/* <p className='text-xl scrn-700:text-2xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-bold whitespace-nowrap'>
             YOUR TOP CHOICE
