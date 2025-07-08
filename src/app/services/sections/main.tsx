@@ -51,10 +51,10 @@ const features: Services[] = [
 
 const MainServices: React.FC = () => {
   return (
-    <div className='bg-transparent h-128 scrn-400:h-132 scrn-500:h-148 scrn-600:h-160 scrn-800:h-164 scrn-850:h-172 scrn-900:h-184 scrn-950:h-192 scrn-1000:h-216 scrn-1050:h-216 scrn-1100:h-228 scrn-1150:h-240 scrn-1200:h-248 scrn-1300:h-256 scrn-1350:h-272 scrn-1400:h-276 scrn-1450:h-288 scrn-1500:h-304 scrn-1550:h-304 scrn-1600:h-316 scrn-1650:h-324 scrn-1700:h-324 scrn-1750:h-339 scrn-1800:h-352 scrn-1850:h-360 scrn-1900:h-339 scrn-2000:h-360 scrn-2050:h-368 scrn-2100:h-384 scrn-2200:h-416 scrn-2350:h-432 scrn-2450:h-448 scrn-2500:h-464'>
+    <div className='bg-transparent h-128 scrn-400:h-132 scrn-500:h-148 scrn-600:h-160 scrn-800:h-180 scrn-850:h-180 scrn-900:h-184 scrn-950:h-192 scrn-1000:h-216 scrn-1050:h-216 scrn-1100:h-228 scrn-1150:h-240 scrn-1200:h-248 scrn-1300:h-256 scrn-1350:h-272 scrn-1400:h-276 scrn-1450:h-288 scrn-1500:h-304 scrn-1550:h-304 scrn-1600:h-316 scrn-1650:h-324 scrn-1700:h-324 scrn-1750:h-339 scrn-1800:h-352 scrn-1850:h-360 scrn-1900:h-339 scrn-2000:h-360 scrn-2050:h-368 scrn-2100:h-384 scrn-2200:h-416 scrn-2350:h-432 scrn-2450:h-448 scrn-2500:h-464'>
       {/* Section Title */}
       <div className='text-center'>
-        <div className='font-semibold text-gray-800 scrn-300:text-sm scrn-600:text-base scrn-750:text-lg scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-4xl scrn-1900:text-5xl mt-4 scrn-600:mt-8 scrn-750:mt-0 scrn-800:mt-12 scrn-1200:mt-20 scrn-1650:mt-28 scrn-1900:mt-24'>
+        <div className='font-semibold text-gray-800 scrn-300:text-sm scrn-600:text-base scrn-750:text-lg scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-4xl scrn-1900:text-5xl mt-4 scrn-600:mt-8 scrn-750:mt-0 scrn-800:mt-12 scrn-900:mt-4 scrn-1200:mt-20 scrn-1650:mt-28 scrn-1900:mt-24'>
           Check out some of our services here!
         </div>
       </div>
@@ -74,7 +74,7 @@ const MainServices: React.FC = () => {
       scrn-800:gap-8 
       scrn-1100:gap-10 
       scrn-1400:gap-12 
-      scrn-1700:gap-16 
+      scrn-1700:gap-10 
       scrn-1900:gap-12'>
         {features.map((feature, index) => (
           <Link key={index} href={`/services/${feature.slug}`} passHref>
@@ -82,16 +82,18 @@ const MainServices: React.FC = () => {
               key={index}
               className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
               w-32 
-              scrn-400:w-40 
-              scrn-500:w-60
-               scrn-800:w-52 
-               scrn-900:w-60 
-               scrn-1000:w-64 
-               scrn-1100:w-72 
-               scrn-1200:w-80 
-               scrn-1400:w-96 
-               scrn-1650:w-116 
-               scrn-1700:w-120 
+              scrn-400:w-44 
+              scrn-500:w-52
+              scrn-700:w-64
+              scrn-750:w-72
+               scrn-800:w-72
+               scrn-900:w-80 
+               scrn-1000:w-96 
+               scrn-1100:w-116 
+               scrn-1200:w-64 
+               scrn-1350:w-72
+               scrn-1500:w-80
+               scrn-1700:w-96
                scrn-1900:w-110'
             >
               {/* Image Display */}
@@ -101,14 +103,15 @@ const MainServices: React.FC = () => {
               scrn-450:h-24 
               scrn-500:h-28 
               scrn-600:h-32 
-              scrn-800:h-36 
-              scrn-900:h-44 
-              scrn-1000:h-44 
-              scrn-1100:h-56 
-              scrn-1200:h-60 
-              scrn-1400:h-72 
-              scrn-1650:h-80 
-              scrn-1700:h-96 
+              scrn-700:h-28
+              scrn-800:h-28
+              scrn-900:h-32 
+              scrn-1000:h-32 
+              scrn-1100:h-40 
+              scrn-1200:h-48 
+              scrn-1400:h-52
+              scrn-1500:h-60  
+              scrn-1700:h-72 
               scrn-1900:h-72'
               >
                 <img
@@ -130,20 +133,37 @@ const MainServices: React.FC = () => {
 
         {/* ✅ Larger External Box with Centered Logo */}
         <a
-          href="https://external-website.com" // Replace with actual URL
+          href="https://metalproducts.vercel.app/" // Replace with actual URL
           target="_blank"
           rel="noopener noreferrer"
           className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
-          w-72 
-          scrn-500:w-80 
-          scrn-800:w-96 
-          scrn-1000:w-[28rem] 
-          scrn-1400:w-[32rem] 
+          w-60
+          scrn-400:w-72
+          scrn-500:w-72
+          scrn-600:w-80
+          scrn-700:w-96
+          scrn-800:w-96
+          scrn-900:w-120 
+          scrn-1000:w-124
+          scrn-1100:w-132
+          scrn-1200:w-160
+          scrn-1400:w-180
+          scrn-1500:w-198
+          scrn-1700:w-208
           scrn-1900:w-160
-          h-60 
-          scrn-600:h-64 
-          scrn-800:h-72 
-          scrn-1000:h-80 
+          h-36
+          scrn-400:h-36
+          scrn-450:h-40
+          scrn-500:h-48
+          scrn-600:h-44 
+          scrn-800:h-48
+          scrn-950:h-52
+          scrn-1000:h-80
+          scrn-1100:h-72
+          scrn-1150:h-80
+          scrn-1200:h-96
+          scrn-1400:h-118
+          scrn-1500:h-124
           scrn-1900:h-136
           flex-shrink-0'
         >
