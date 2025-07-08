@@ -3,7 +3,7 @@ import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import React from "react";
 import ServicesBoxLinks from "@/components/servicesLinks";
-import ConstructionContactForm from "@/components/constructionContactForm";
+import ElectricalContactForm from "@/components/electricalContactForm";
 
 const MainFinancing: React.FC = () => {
   return (
@@ -35,7 +35,7 @@ const MainFinancing: React.FC = () => {
             <span className='font-medium scrn-300:text-base scrn-500:text-xl scrn-600:text-xl scrn-750:text-lg scrn-800:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2000:text-4xl'>
               SERVICE REQUEST
             </span>
-            <ConstructionContactForm />
+            <ElectricalContactForm />
           </div>
         </div>
         <div className='space-x-2 font-semibold text-nowrap hidden scrn-600:block pt-6 scrn-400:pt-6 scrn-450:pt-12 scrn-500:pt-8 scrn-550:pt-8 scrn-600:pt-24 scrn-700:pt-20 scrn-750:pt-6 scrn-800:pt-4 scrn-850:pt-8 scrn-900:pt-12 scrn-950:pt-16 scrn-1000:pt-28 scrn-1200:pt-28 scrn-1300:pt-40 scrn-1350:pt-48 scrn-1400:pt-56 scrn-1450:pt-64 scrn-1500:pt-40 scrn-1600:pt-48 scrn-1800:pt-64 scrn-1900:pt-72 scrn-2400:pt-96'>
