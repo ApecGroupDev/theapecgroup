@@ -30,12 +30,12 @@ const features: Services[] = [
     imageSrc: "/servicesLogos/Apec-Imaging.png",
     slug: "imaging-and-canopies",
   },
-  {
-    title: "APEC RENOVATIONS",
-    description: "Gas Station Renovation and Remodelling Services",
-    imageSrc: "/servicesLogos/Apec-Renovations.png",
-    slug: "convenience-store-remodel",
-  },
+  // {
+  //   title: "APEC RENOVATIONS",
+  //   description: "Gas Station Renovation and Remodelling Services",
+  //   imageSrc: "/servicesLogos/Apec-Renovations.png",
+  //   slug: "convenience-store-remodel",
+  // },
   {
     title: "APEC CONSTRUCTION",
     description: "Gas Station Construction Company Services",

@@ -38,8 +38,8 @@ const features: Services[] = [
   {
     title: "APEC ELECTRICAL",
     description: "Gas Station Construction Company Services",
-    imageSrc: "/servicesLogos/Apec-Constructions.png",
-    slug: "gas-station-construction",
+    imageSrc: "/servicesLogos/Apec-Electrical.png",
+    slug: "gas-station-electrical",
   },
   // {
   //   title: "APEC LINK",
