@@ -260,6 +260,13 @@ const Header: React.FC = () => {
                     >
                       Gas Station Pump Advertising
                     </Link>
+                    <Link
+                      href="/services/gas-station-electrical"
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      onClick={() => setShowDropdown(false)}
+                    >
+                      Gas Station Electrical 
+                    </Link>
                   </div>
                 )}
               </div>
