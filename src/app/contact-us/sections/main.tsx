@@ -11,25 +11,49 @@ const MainContact: React.FC = () => {
       <div className='grid mx-4 scrn-600:grid-cols-2 scrn-350:max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl scrn-600:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24 scrn-800:pt-0 scrn-900:pt-0 scrn-1000:pt-0 scrn-1500:pt-24'>
         <div className='h-auto space-y-3 scrn-400:space-y-3 scrn-450:space-y-3 scrn-500:space-y-4 scrn-550:space-y-4 scrn-600:space-y-4 scrn-1200:space-y-12 scrn-400:pt-8 scrn-450:pt-8 scrn-500:pt-4 scrn-600:pt-16 scrn-750:pt-8 scrn-1000:pt-20 scrn-1600:pt-32'>
           <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl'>
-            855-444-2732
+            <a href="tel:855-444-2732">855-444-2732</a>
           </span>
           <div className='tracking-wide hidden scrn-1500:block scrn-1500:text-lg scrn-1700:text-xl space-y-6'>
-            <MailRed text="Sales@TheAPECGroup.com" size={32} />
-            <MailRed text="Service@TheAPECGroup.com" size={32} />
+            <div>
+              <a href="mailto:Sales@TheAPECGroup.com">
+                <MailRed text="Sales@TheAPECGroup.com" size={32} />
+              </a>
+            </div>
+            <div>
+              <a href="mailto:Service@TheAPECGroup.com">
+                <MailRed text="Service@TheAPECGroup.com" size={32} />
+              </a>
+            </div>
             <LocationRed text="4732-E North Royal Atlanta Drive, Tucker, Georgia 30084" size={36} />
             <LocationRed text="505 Garden Oaks Boulevard, Houston, Texas 77018" size={36} />
           </div>
 
           <div className='tracking-wide hidden scrn-600:block scrn-1500:hidden text-sm scrn-800:text-base scrn-1400:text-lg space-y-6 scrn-1200:space-y-10'>
-            <MailRed text="Sales@TheAPECGroup.com" size={20} />
-            <MailRed text="Service@TheAPECGroup.com" size={20} />
+            <div>
+              <a href="mailto:Sales@TheAPECGroup.com">
+                <MailRed text="Sales@TheAPECGroup.com" size={20} />
+              </a>
+            </div>
+            <div>
+              <a href="mailto:Service@TheAPECGroup.com">
+                <MailRed text="Service@TheAPECGroup.com" size={20} />
+              </a>
+            </div>
             <LocationRed text="4732-E North Royal Atlanta Drive, Tucker, Georgia 30084" size={30} />
             <LocationRed text="505 Garden Oaks Boulevard, Houston, Texas 77018" size={30} />
           </div>
 
           <div className='scrn-600:hidden text-2xs scrn-400:text-xs space-y-2'>
-            <MailRed text="Sales@TheAPECGroup.com" size={18} />
-            <MailRed text="Service@TheAPECGroup.com" size={18} />
+            <div>
+              <a href="mailto:Sales@TheAPECGroup.com">
+                <MailRed text="Sales@TheAPECGroup.com" size={18} />
+              </a>
+            </div>
+            <div>
+              <a href="mailto:Service@TheAPECGroup.com">
+                <MailRed text="Service@TheAPECGroup.com" size={18} />
+              </a>
+            </div>
             <LocationRed text="4732-E North Royal Atlanta Drive, Tucker, Georgia 30084" size={18} />
             <LocationRed text="505 Garden Oaks Boulevard, Houston, Texas 77018" size={18} />
           </div>
