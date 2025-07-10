@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         {/* Column 1: Social Media Icons */}
         <div className='flex flex-col ms-2 scrn-600:ms-4 scrn-600:mt-8 scrn-750:mt-0 scrn-750:ms-0 items-start space-y-2 scrn-750:space-y-1 scrn-1000:space-y-2'>
           <span className='text-xs scrn-750:pt-6 scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg footer-text-dark whitespace-nowrap'>For More Information</span>
-          <span className='text-xs scrn-750:ps-0 scrn-1000:ps-6 scrn-125:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg whitespace-nowrap footer-text-dark'>855-444-2732 | Sales@TheAPECgroup.com</span>
+          <span className='text-xs scrn-750:ps-0 scrn-1000:ps-6 scrn-125:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg whitespace-nowrap footer-text-dark'><a href="tel:855-444-2732">855-444-2732</a> | <a href="mailto:Sales@TheAPECgroup.com">Sales@TheAPECgroup.com</a></span>
           <div className='hidden scrn-750:flex space-x-4 scrn-750:ps-0 scrn-1000:ps-12'>
             <SocialIcon
               url="https://twitter.com/theapecgroup"
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             Houston, TX 77018
           </p>
           <p className='hidden scrn-750:hidden scrn-1000:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark'>
-            For More Info: 855-444-2732<br />
+            For More Info: <a href="tel:855-444-2732">855-444-2732</a><br />
             <a
               href="mailto:Service@TheAPECgroup.com"
               className='text-[#c62931] hover:text-red-500 transition-colors'
