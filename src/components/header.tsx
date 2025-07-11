@@ -30,15 +30,15 @@ const Header: React.FC = () => {
     });
   };
 
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
-      const currentScrollY = window.scrollY;
-      setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
-      setLastScrollY(currentScrollY);
-    }
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== "undefined") {
+        const currentScrollY = window.scrollY;
+        setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
+        setLastScrollY(currentScrollY);
+      }
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -265,7 +265,7 @@ const Header: React.FC = () => {
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Gas Station Electrical 
+                      Gas Station Electrical
                     </Link>
                   </div>
                 )}
