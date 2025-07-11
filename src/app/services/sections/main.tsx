@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Services {
   title: string;
@@ -29,24 +30,12 @@ const features: Services[] = [
     imageSrc: "/servicesLogos/Apec-Financing.png",
     slug: "gas-station-financing"
   },
-  // {
-  //   title: "APEC RENOVATIONS",
-  //   description: "Gas Station Renovation and Remodelling Services",
-  //   imageSrc: "/servicesLogos/Apec-Renovations.png",
-  //   slug: "convenience-store-remodel",
-  // },
   {
     title: "APEC ELECTRICAL",
     description: "Gas Station Construction Company Services",
     imageSrc: "/servicesLogos/Apec-Electrical.png",
     slug: "gas-station-electrical",
   },
-  // {
-  //   title: "APEC LINK",
-  //   description: "Digital Marketing Content and Remote Monitoring Services",
-  //   imageSrc: "/servicesLogos/Apec-Constructions.png",
-  //   slug: "gas-station-pump-advertising",
-  // },
 ];
 
 const MainServices: React.FC = () => {
@@ -114,10 +103,17 @@ const MainServices: React.FC = () => {
               scrn-1700:h-72 
               scrn-1900:h-72'
               >
-                <img
+                {/* <img
                   src={feature.imageSrc}
                   alt={feature.title}
                   className='scrn-400:w-2/3 object-contain'
+                /> */}
+                <Image
+                  src={feature.imageSrc}
+                  alt={feature.title}
+                  width={400} // Replace with actual width
+                  height={200} // Replace with actual height
+                  className="scrn-400:w-2/3 object-contain"
                 />
               </div>
 
@@ -169,10 +165,12 @@ const MainServices: React.FC = () => {
         >
           {/* Logo - centered vertically and horizontally */}
           <div className='flex items-center justify-center h-full'>
-            <img
+            <Image
               src="/servicesLogos/Logo_MPC_Main.png"
               alt="External Partner"
-              className='w-full px-4 object-contain'
+              width={5830}
+              height={1858}
+              className="w-full px-4 object-contain"
             />
           </div>
 
