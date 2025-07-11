@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 interface Services {
   title: string;
@@ -78,9 +79,11 @@ const ServicesBoxLinks: React.FC = () => {
               className='relative group bg-gray-100 p-3 scrn-1000:p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-20 scrn-1000:w-24 scrn-1400:w-32 scrn-1900:w-40 scrn-2000:w-48'>
               {/* Image Display */}
               <div className='flex items-center justify-center h-12 scrn-1000:h-12 scrn-1400:h-16 scrn-1900:h-24 scrn-2000:h-32'>
-                <img
+                <Image
                   src={feature.imageSrc}
                   alt={feature.title}
+                  width={400} // Replace with actual width
+                  height={200}
                   className='w-full object-contain'
                 />
               </div>
