@@ -46,7 +46,7 @@ const features: Services[] = [
   {
     title: "APEC LINK",
     description: "Digital Marketing Content and Remote Monitoring Services",
-    imageSrc: "/servicesLogos/Apec-Constructions.png",
+    imageSrc: "/servicesLogos/Apec-Link.png",
     slug: "gas-station-pump-advertising",
   },
 ];
