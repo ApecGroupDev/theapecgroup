@@ -4,7 +4,7 @@ import Hero from "./sections/hero";
 
 export const metadata = {
   title: "Environmental Compliance Solutions | APEC",
-  description: "Stay compliant with APEC's tailored environmental services for petroleum industries. Visit theapecgroup.com/services/compliance for eco-friendly solutions.",
+  description: "APEC provides environmental compliance solutions for fuel stations, offering testing, training, and eco-friendly petroleum site services.",
 };
 
 const ServicesCompliance: React.FC = () => {
