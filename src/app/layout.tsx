@@ -3,8 +3,8 @@ import ScrollToTopButton from '@/components/scrollToTop';
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Atlanta Petroleum Equipment Company - APEC',
-  description: 'Petroleum Equipment Services APEC is dedicated to delivering exceptional results through meticulous project management and outstanding execution. Our success stems from in-depth project analysis, constant communication with customers, and proactive planning to address unforeseen challenges. This commitment has driven our rapid growth and established us as a trusted partner in the petroleum industry. APEC offers a wide range of services, including canopy installation, construction, environmental compliance inspections and testing, C-store renovations, digital marketing for Anthem dispensers, and financing solutions.',
+  title: 'Petroleum Products Company | The APEC Group',
+  description: 'The APEC Group is a petroleum products company offering fuels, lubricants, gas station construction, financing, compliance, and equipment services.',
   robots: 'index,follow',
   icons: {
     icon: '/logos/One-Stop-Shop-Logo.png',
