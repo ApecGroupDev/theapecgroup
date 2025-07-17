@@ -77,11 +77,11 @@ const BestGasStationFinancing = () => {
       <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
         <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
       </ul>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
-            <td className='border p-2 border-gray-300'><a className='text-[#c62931]' href="https://theapecgroupwebsite.vercel.app/">https://theapecgroupwebsite.vercel.app/</a></td>
+            <td className='border p-2 border-gray-300'><a className='text-[#c62931]' href="https://theapecgroup.com">https://theapecgroup.com</a></td>
           </tr>
           <tr>
             <td className='border p-2 border-gray-300'>Email Address</td>
@@ -159,7 +159,7 @@ const BestGasStationFinancing = () => {
       <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
         <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
       </ul>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -231,7 +231,7 @@ const BestGasStationFinancing = () => {
       <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
         <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
       </ul>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -303,7 +303,7 @@ const BestGasStationFinancing = () => {
       <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
         <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
       </ul>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
