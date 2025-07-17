@@ -4,7 +4,7 @@ import Hero from "./sections/hero";
 
 export const metadata = {
   title: "Gas Station Construction Services | APEC",
-  description: "Build reliable gas stations with APEC's expert construction services. Visit theapecgroup.com/services/construction for quality energy infrastructure solutions.",
+  description: "Gas station construction services by APEC. We build durable, compliant fuel stations with full design, installation, and project management support.",
 };
 
 const ServicesConstruction: React.FC = () => {
