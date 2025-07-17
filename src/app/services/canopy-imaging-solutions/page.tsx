@@ -4,7 +4,7 @@ import Hero from "./sections/hero";
 
 export const metadata = {
   title: "Canopy Imaging Solutions | APEC",
-  description: "Transform gas stations with APEC's advanced canopy imaging services. Visit theapecgroup.com/services/imaging-and-canopies for cutting-edge visual designs.",
+  description: "Canopy imaging solutions from APEC deliver custom visual designs and installations that transform gas station branding and customer appeal.",
 };
 
 const ServicesImaging: React.FC = () => {
