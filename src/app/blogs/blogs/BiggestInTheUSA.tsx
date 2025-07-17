@@ -47,12 +47,12 @@ const BiggestInTheUSA = () => {
         comprises several business units and offers services such as installation, compliance, renovation,
         imaging canopies, etc.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
             <td className='border p-2 border-gray-300'>
-              <a className='text-[#c62931]' href="https://theapecgroupwebsite.vercel.app/">https://theapecgroupwebsite.vercel.app/</a>
+              <a className='text-[#c62931]' href="https://theapecgroup.com">https://theapecgroup.com</a>
             </td>
           </tr>
           <tr>
@@ -107,7 +107,7 @@ const BiggestInTheUSA = () => {
         streamline operations. It offers full services, such as energy supply, industrial solutions delivery,
         operating chemicals, refined oils, etc.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -162,7 +162,7 @@ const BiggestInTheUSA = () => {
         talented workers who strive to deliver exceptional services to empower the company’s success. Chevron
         specializes in exploring, producing, refining, and distributing fuels, lubricants, and power generation.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -216,7 +216,7 @@ const BiggestInTheUSA = () => {
         and processing technologies, production optimization, and reservoir characterization. Its expertise and innovation
         have made it a top company in the oilfield industry.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -265,7 +265,7 @@ const BiggestInTheUSA = () => {
         services makes it a top-notch company in the oil and gas industry. Halliburton is a name of collaboration,
         safety, and reliability.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -316,7 +316,7 @@ const BiggestInTheUSA = () => {
         Its expertise, services, and innovative technologies make it a remarkable and top-notch company.
         Its services include formation, evaluation, well drilling, reservoir consulting, etc., using digital technologies.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -366,7 +366,7 @@ const BiggestInTheUSA = () => {
         for growth. NOV is a leading worldwide provider of production equipment, oilfield services, supply chain
         integration services, etc.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -416,7 +416,7 @@ const BiggestInTheUSA = () => {
         has boosted its presence and become a significant player in the oilfield industry. Their great workforce
         strives to deliver smooth operations and maintain transparency.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -468,7 +468,7 @@ const BiggestInTheUSA = () => {
         technologies and produces a range of fuels, such as gasoline, diesel, ethanol, and many others. Their vision,
         unmatched execution, values, and transparency help advance energy’s future.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -516,7 +516,7 @@ const BiggestInTheUSA = () => {
         and has a global presence and operations in 15 countries. It is an upstream oil and gas company that invests great effort
         into finding and producing oil and natural gas. They play a significant role in fulfilling the world’s energy demand.
       </p>
-      <table className='border-collapse border border-gray-400 w-full mt-6'>
+      {/* <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
         <tbody>
           <tr>
             <td className='border p-2 border-gray-300'>Website Link</td>
@@ -549,10 +549,10 @@ const BiggestInTheUSA = () => {
             <td className='border p-2 border-gray-300'>Houston, Texas, United States</td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
 
       {/* END - TOP 10 BIGGEST OIL AND GAS EQUIPMENT AND SERVICES */}
-    </div>
+    </div >
   );
 };
 
