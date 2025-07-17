@@ -3,8 +3,8 @@ import MainServices from "./sections/main";
 import Footer from "@/components/footer";
 
 export const metadata = {
-  title: "Petroleum Equipment Services | The APEC Group",
-  description: "Achieve regulatory compliance with APEC's specialized environmental services for petroleum. Visit theapecgroup.com/services/compliance for sustainable solutions.",
+  title: "Petroleum Equipment Services & Repairs | The APEC Group",
+  description: "APEC provides petroleum equipment services, construction, tank repair, and environmental compliance for fuel stations. Reliable energy partner.",
 };
 
 const Services: React.FC = () => {
