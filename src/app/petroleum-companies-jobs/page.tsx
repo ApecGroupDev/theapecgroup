@@ -2,7 +2,7 @@ import React from "react";
 
 export const metadata = {
   title: "Petroleum Companies Jobs | APEC Careers",
-  description: "Explore rewarding job opportunities in the petroleum industry with APEC. Visit theapecgroup.com/careers for exciting career paths in energy.",
+  description: "Petroleum companies jobs at APEC offer careers in fuel systems, construction, compliance, and energy services. Join a trusted industry leader.",
 };
 
 const CareersPage: React.FC = () => {
