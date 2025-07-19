@@ -16,6 +16,19 @@ const Header: React.FC = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1000);
+    };
+
+    checkScreenSize(); // Initial check
+
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   const toggleMenu = () => {
     setIsOpen((prev) => {
       if (!prev) setSearchOpen(false); // Close search if opening menu
@@ -32,7 +45,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (typeof window !== "undefined") {
+      if (typeof window !== "undefined" && isLargeScreen) {
         const currentScrollY = window.scrollY;
         setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
         setLastScrollY(currentScrollY);
@@ -43,7 +56,7 @@ const Header: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY, isLargeScreen]);
 
   // Close search input when clicking outside
   useEffect(() => {
@@ -73,7 +86,11 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
+      className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isLargeScreen
+          ? isVisible
+            ? "top-0"
+            : "top-full"
+          : "top-0" // Always show on mobile
         }`}
     >
       {/* Mobile Header */}
