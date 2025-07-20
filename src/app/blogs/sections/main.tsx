@@ -10,7 +10,7 @@ const BlogMain: React.FC = () => {
   const closeBlog = () => setActiveBlog(null);
 
   return (
-    <div className='flex flex-col items-center scrn-600:justify-center outline-2 outline-dashed outline-green-500 gap-y-4 h-auto mb-12 scrn-800:mx-8 scrn-1350:mx-0 py-4 scrn-1750:py-24 scrn-2000:py-32 scrn-2100:py-44 scrn-2400:py-60'>
+    <div className='flex flex-col items-center scrn-600:justify-center gap-y-4 h-auto mb-12 scrn-800:mx-8 scrn-1350:mx-0 py-4 scrn-1750:py-24 scrn-2000:py-32 scrn-2100:py-44 scrn-2400:py-60'>
       {[0, 4].map((startIdx) => (
         <div key={startIdx} className='grid grid-cols-1 px-2 scrn-1000:grid-cols-2 gap-4 max-w-7xl scrn-2100:max-w-8xl'>
           {/* Left Large Thumbnail */}
