@@ -14,40 +14,40 @@ interface Services {
 
 const features: Services[] = [
   {
-    title: "APEC COMPLIANCE",
-    description: "Gas Station Inspection and Compliance Services",
-    imageSrc: "/servicesLogos/Apec-Compliance.png",
-    slug: "environmental-compliance-solutions",
-  },
-  {
-    title: "SPEC FINANCES",
-    description: "Gas Station Financing and Loans Services",
-    imageSrc: "/servicesLogos/Apec-Financing.png",
-    slug: "gas-station-financing"
-  },
-  {
-    title: "APEC IMAGING AND CANOPIES",
-    description: "Gas Station Canopy Panels Installation",
-    imageSrc: "/servicesLogos/Apec-Imaging.png",
-    slug: "imaging-and-canopies",
-  },
-  // {
-  //   title: "APEC RENOVATIONS",
-  //   description: "Gas Station Renovation and Remodelling Services",
-  //   imageSrc: "/servicesLogos/Apec-Renovations.png",
-  //   slug: "convenience-store-remodel",
-  // },
-  {
     title: "APEC CONSTRUCTION",
     description: "Gas Station Construction Company Services",
     imageSrc: "/servicesLogos/Apec-Constructions.png",
     slug: "gas-station-construction",
   },
   {
-    title: "APEC LINK",
-    description: "Digital Marketing Content and Remote Monitoring Services",
-    imageSrc: "/servicesLogos/Apec-Link.png",
-    slug: "gas-station-pump-advertising",
+    title: "APEC IMAGING AND CANOPIES",
+    description: "Gas Station Canopy Panels Installation",
+    imageSrc: "/servicesLogos/Apec-Imaging.png",
+    slug: "canopy-imaging-solutions",
+  },
+  {
+    title: "METAL PRODUCTS COMPANY",
+    description: "Gas Station Fuel Tanks Manufacturing",
+    imageSrc: "/servicesLogos/Logo_MPC_Main_Only.png",
+    slug: "metalproducts.vercel.app",
+  },
+  {
+    title: "APEC FINANCES",
+    description: "Gas Station Financing and Loans Services",
+    imageSrc: "/servicesLogos/Apec-Financing.png",
+    slug: "gas-station-financing"
+  },
+  {
+    title: "APEC ELECTRICAL",
+    description: "Electrical Solutions for Gas Stations",
+    imageSrc: "/servicesLogos/Apec-Electrical.png",
+    slug: "gas-station-electrical",
+  },
+  {
+    title: "APEC COMPLIANCE",
+    description: "Gas Station Inspection and Compliance Services",
+    imageSrc: "/servicesLogos/Apec-Compliance.png",
+    slug: "environmental-compliance-solutions",
   },
 ];
 
@@ -55,13 +55,11 @@ const ServicesBoxLinks: React.FC = () => {
   const pathname = usePathname(); // 👈 Get current URL path
 
   const hiddenSlugsByPath: Record<string, string[]> = {
-    "/services/environmental-compliance-solutions": ["environmental-compliance-solutions"],
-    "/services/gas-station-financing": ["gas-station-financing"],
-    "/services/canopy-imaging-solutions": ["canopy-imaging-solutions"],
-    "/services/convenience-store-remodel": ["convenience-store-remodel"],
     "/services/gas-station-construction": ["gas-station-construction"],
-    "/services/gas-station-pump-advertising": ["gas-station-pump-advertising"],
-    // add more pages and slugs to hide here
+    "/services/canopy-imaging-solutions": ["canopy-imaging-solutions"],
+    "/services/gas-station-financing": ["gas-station-financing"],
+    "/services/gas-station-electrical": ["gas-station-electrical"],
+    "/services/environmental-compliance-solutions": ["environmental-compliance-solutions"],
   };
 
   const hiddenSlugs = hiddenSlugsByPath[pathname] || [];
@@ -73,30 +71,41 @@ const ServicesBoxLinks: React.FC = () => {
     <div>
       {/* Feature Boxes */}
       <div className='flex flex-row mt-auto scrn-1000:pb-0 gap-4 scrn-1000:gap-6 scrn-1400:gap-8 scrn-2000:gap-12'>
-        {filteredFeatures.map((feature, index) => (
-          <Link key={index} href={`/services/${feature.slug}`} passHref>
-            <div
-              className='relative group bg-gray-100 p-3 scrn-1000:p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-20 scrn-1000:w-24 scrn-1400:w-32 scrn-1900:w-40 scrn-2000:w-48'>
-              {/* Image Display */}
-              <div className='flex items-center justify-center h-12 scrn-1000:h-12 scrn-1400:h-16 scrn-1900:h-24 scrn-2000:h-32'>
-                <Image
-                  src={feature.imageSrc}
-                  alt={feature.title}
-                  width={400} // Replace with actual width
-                  height={200}
-                  className='w-full object-contain'
-                />
-              </div>
+        {filteredFeatures.map((feature, index) => {
+          const isExternal = feature.slug === "metalproducts.vercel.app";
+          const href = isExternal ? `https://${feature.slug}` : `/services/${feature.slug}`;
 
-              {/* Description */}
-              <div className='absolute inset-0 flex flex-col justify-center items-center p-0 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
-                <p className='text-gray-700 text-center overflow-x-auto max-h-48 px-4 text-wrap text-3xs scrn-1000:text-xs'>
-                  {feature.description}
-                </p>
+          return (
+            <Link
+              key={index}
+              href={href}
+              {...(isExternal
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+              passHref
+            >
+              <div
+                className='relative group bg-gray-100 p-3 scrn-1000:p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-20 scrn-1000:w-24 scrn-1400:w-32 scrn-1900:w-40 scrn-2000:w-48'>
+
+                <div className='flex items-center justify-center h-12 scrn-1000:h-12 scrn-1400:h-16 scrn-1900:h-24 scrn-2000:h-32'>
+                  <Image
+                    src={feature.imageSrc}
+                    alt={feature.title}
+                    width={400}
+                    height={200}
+                    className='w-full object-contain'
+                  />
+                </div>
+
+                <div className='absolute inset-0 flex flex-col justify-center items-center p-0 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
+                  <p className='text-gray-700 text-center overflow-x-auto max-h-48 px-4 text-wrap text-3xs scrn-1000:text-xs'>
+                    {feature.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );
