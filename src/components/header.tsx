@@ -87,10 +87,10 @@ const Header: React.FC = () => {
   return (
     <header
       className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isLargeScreen
-          ? isVisible
-            ? "top-0"
-            : "top-full"
-          : "top-0" // Always show on mobile
+        ? isVisible
+          ? "top-0"
+          : "top-full"
+        : "top-0" // Always show on mobile
         }`}
     >
       {/* Mobile Header */}
@@ -236,18 +236,11 @@ const Header: React.FC = () => {
                 {showDropdown && (
                   <div className="absolute top-full w-auto text-nowrap bg-white/50 backdrop-blur-sm rounded-md py-2 z-50">
                     <Link
-                      href="/services/environmental-compliance-solutions"
+                      href="/services/gas-station-construction"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Environmental Compliance Solutions
-                    </Link>
-                    <Link
-                      href="/services/gas-station-financing"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Gas Station Financing
+                      Gas Station Construction
                     </Link>
                     <Link
                       href="/services/canopy-imaging-solutions"
@@ -257,25 +250,20 @@ const Header: React.FC = () => {
                       Canopy Imaging Solutions
                     </Link>
                     <Link
-                      href="/services/convenience-store-remodel"
+                      href="https://metalproducts.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Convenience Store Remodel
+                      Fuel Tanks Manufacturing
                     </Link>
                     <Link
-                      href="/services/gas-station-construction"
+                      href="/services/gas-station-financing"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
                       onClick={() => setShowDropdown(false)}
                     >
-                      Gas Station Construction
-                    </Link>
-                    <Link
-                      href="/services/gas-station-pump-advertising"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Gas Station Pump Advertising
+                      Gas Station Financing
                     </Link>
                     <Link
                       href="/services/gas-station-electrical"
@@ -284,6 +272,27 @@ const Header: React.FC = () => {
                     >
                       Gas Station Electrical
                     </Link>
+                    <Link
+                      href="/services/environmental-compliance-solutions"
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      onClick={() => setShowDropdown(false)}
+                    >
+                      Environmental Compliance Solutions
+                    </Link>
+                    {/* <Link
+                      href="/services/convenience-store-remodel"
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      onClick={() => setShowDropdown(false)}
+                    >
+                      Convenience Store Remodel
+                    </Link>
+                    <Link
+                      href="/services/gas-station-pump-advertising"
+                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                      onClick={() => setShowDropdown(false)}
+                    >
+                      Gas Station Pump Advertising
+                    </Link> */}
                   </div>
                 )}
               </div>
