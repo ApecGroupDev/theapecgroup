@@ -26,6 +26,7 @@ const Hero: React.FC = () => {
           <Image
             src="/logos/One-Stop-Shop.gif"
             alt="Animated Logo"
+            unoptimized
             width={800} // Provide an appropriate width
             height={800} // Provide an appropriate height
             className='mx-auto scrn-600:mx-0
