@@ -122,14 +122,14 @@ const Header: React.FC = () => {
         </div>
 
         {/* Centered Logo */}
-        <div className='absolute pt-10 inset-0 flex justify-center items-center'>
+        <div className='absolute pt-12 scrn-600:pt-14 inset-0 flex justify-center items-center'>
           <Link href="/">
             <Image
               src="/logos/APEC.png"
               alt="Logo"
               width={1315}
               height={1206}
-              className='h-20 w-auto'
+              className='h-24 scrn-600:h-28 w-auto'
             />
           </Link>
         </div>
@@ -196,13 +196,13 @@ const Header: React.FC = () => {
               alt="Logo"
               width={1315}
               height={1206}
-              className='w-auto scrn-750:h-16 scrn-1250:h-20'
+              className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
             />
           </Link>
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-center space-x-8">
+        <nav className="flex z-10 justify-center space-x-8 -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28">
           {[
             { label: "HOME", path: "/" },
             { label: "ABOUT", path: "/about-us" },
@@ -279,20 +279,6 @@ const Header: React.FC = () => {
                     >
                       Environmental Compliance Solutions
                     </Link>
-                    {/* <Link
-                      href="/services/convenience-store-remodel"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Convenience Store Remodel
-                    </Link>
-                    <Link
-                      href="/services/gas-station-pump-advertising"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Gas Station Pump Advertising
-                    </Link> */}
                   </div>
                 )}
               </div>
@@ -315,7 +301,7 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Right: Search Icon */}
-        <div className='relative flex justify-end'>
+        <div className='relative flex justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28'>
           {showSearch ? (
             <input
               ref={searchRef}
