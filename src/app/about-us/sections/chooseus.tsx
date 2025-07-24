@@ -10,7 +10,7 @@ const ChooseUs: React.FC = () => {
   });
 
   return (
-    <section className='flex flex-col items-center text-center overflow-y-visible scrn-750:overflow-hidden py-20 px-10 scrn-1700:pt-40 scrn-2100:pt-48 h-160 scrn-450:h-196 scrn-600:h-148 scrn-700:h-148 scrn-800:h-152 scrn-900:h-164 scrn-1000:h-188 scrn-1100:h-195 scrn-1200:h-208 scrn-1300:h-224 scrn-1400:h-232 scrn-1500:h-256 scrn-1550:h-260 scrn-1600:h-264 scrn-1650:h-268 scrn-1700:h-276 scrn-1850:h-288 scrn-1900:h-296 scrn-2050:h-308 scrn-2150:h-316 scrn-2200:h-324 scrn-2250:h-339 scrn-2300:h-352 scrn-2450:h-368 scrn-2500:h-416'>
+    <section className='flex flex-col items-center text-center overflow-y-visible scrn-750:overflow-hidden scrn-450:py-20 px-10 scrn-1700:pt-40 scrn-2100:pt-48 h-160 scrn-450:h-196 scrn-600:h-148 scrn-700:h-148 scrn-800:h-152 scrn-900:h-164 scrn-1000:h-188 scrn-1100:h-195 scrn-1200:h-208 scrn-1300:h-224 scrn-1400:h-232 scrn-1500:h-256 scrn-1550:h-260 scrn-1600:h-264 scrn-1650:h-268 scrn-1700:h-276 scrn-1850:h-288 scrn-1900:h-296 scrn-2050:h-308 scrn-2150:h-316 scrn-2200:h-324 scrn-2250:h-339 scrn-2300:h-352 scrn-2450:h-368 scrn-2500:h-416'>
       {/* Heading */}
       <span className='text-3xl scrn-750:text-3xl scrn-800:text-4xl scrn-900:text-5xl scrn-1000:text-6xl scrn-1500:text-8xl scrn-1900:text-8xl scrn-2550:text-9xl font-bold'>
         Why

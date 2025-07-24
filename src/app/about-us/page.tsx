@@ -1,7 +1,9 @@
 import ThirdSection from "./sections/3rdsection";
 import ChooseUs from "./sections/chooseus";
 import Hero from "./sections/hero";
-import HorizontalScrollSection from "./sections/principles";
+import MissionSection from "./sections/mission";
+import ValuesSection from "./sections/values";
+import VisionSection from "./sections/vision";
 
 export const metadata = {
   title: "About The APEC Group | Petroleum Services",
@@ -13,8 +15,10 @@ const About: React.FC = () => {
     <div className='flex flex-col'>
       {/* Sections */}
       <Hero />
-      <HorizontalScrollSection />
-      <ThirdSection />
+      <MissionSection/>
+      <ValuesSection/>
+      <VisionSection/>
+      {/* <ThirdSection /> */}
       <ChooseUs />
     </div>
   );
