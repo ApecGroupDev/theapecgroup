@@ -1,4 +1,3 @@
-import ThirdSection from "./sections/3rdsection";
 import ChooseUs from "./sections/chooseus";
 import Hero from "./sections/hero";
 import MissionSection from "./sections/mission";
