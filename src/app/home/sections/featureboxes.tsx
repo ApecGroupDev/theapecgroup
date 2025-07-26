@@ -78,8 +78,8 @@ const FeatureBoxes: React.FC = () => {
             </div>
 
             {/* Description hover box */}
-            <div className='absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
-              <p className='scrn-300:text-xs scrn-750:text-xs scrn-800:text-xs scrn-900:text-xs scrn-1000:text-sm scrn-1200:text-base scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4'>
+            <div className='absolute inset-0 flex flex-col justify-center items-center scrn-1000:p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
+              <p className='text-xs scrn-500:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4'>
                 {feature.description}
               </p>
             </div>
@@ -100,8 +100,8 @@ const FeatureBoxes: React.FC = () => {
             </div>
 
             {/* Description hover box */}
-            <div className='absolute inset-0 flex flex-col justify-center items-center p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
-              <p className='scrn-300:text-xs scrn-750:text-xs scrn-800:text-xs scrn-900:text-xs scrn-1000:text-sm scrn-1200:text-base scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4'>
+            <div className='absolute inset-0 flex flex-col justify-center items-center scrn-1000:p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
+              <p className='text-xs scrn-500:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4'>
                 {feature.description}
               </p>
             </div>
