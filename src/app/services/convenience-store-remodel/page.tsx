@@ -3,7 +3,7 @@ import MainFinancing from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Convenience Store Remodel | The APEC Group",
   description: "Transform your convenience store with The APEC Group's expert renovation services. Visit theapecgroup.com/services/renovation for modern store solutions.",
   alternates: {
