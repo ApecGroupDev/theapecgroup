@@ -1,13 +1,18 @@
 import '../styles/globals.css';
 import ScrollToTopButton from '@/components/scrollToTop';
 import Script from 'next/script';
+import type { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Petroleum Products Company | The APEC Group',
   description: 'The APEC Group is a petroleum products company offering fuels, lubricants, gas station construction, financing, compliance, and equipment services.',
   robots: 'index,follow',
   icons: {
     icon: '/logos/One-Stop-Shop-Logo.png',
+  },
+  metadataBase: new URL('https://www.theapecgroup.com'), 
+  alternates: {
+    canonical: '/',
   },
 };
 
