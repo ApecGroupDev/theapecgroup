@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import ScrollToTopButton from '@/components/scrollToTop';
 import Script from 'next/script';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: 'Petroleum Products Company | The APEC Group',
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/logos/One-Stop-Shop-Logo.png',
   },
-  metadataBase: new URL('https://www.theapecgroup.com'), 
+  metadataBase: new URL('https://www.theapecgroup.com'),
   alternates: {
     canonical: '/',
   },
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </div>
         <ScrollToTopButton />
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   );
