@@ -14,12 +14,6 @@ const Hero: React.FC = () => {
         <source src="/videos/PumpAnimation.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      {/* Bottom Blur Overlay */}
-      {/* <div className='absolute bottom-0 left-0 w-full h-16 z-20 pointer-events-none'
-        style={{
-          background: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,1) 100%)',
-        }}
-      /> */}
       <div className='relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-between bg-transparent h-140 scrn-400:h-140 scrn-600:h-124 scrn-750:h-120 scrn-800:h-124 scrn-900:h-136 scrn-1000:h-160 scrn-1100:h-168 scrn-1150:h-168 scrn-1200:h-176 scrn-1300:h-188 scrn-1400:h-198 scrn-1500:h-216 scrn-1600:h-228 scrn-1700:h-248 scrn-1800:h-260 scrn-1900:h-272 scrn-2000:h-280 scrn-2100:h-288 scrn-2200:h-304 scrn-2300:h-308 scrn-2350:h-320 scrn-2400:h-324 scrn-2500:h-339'>
         {/* Left Text Section */}
         <div className='scrn-1500:ms-16 scrn-2300:ms-8 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5 z-20 hidden scrn-600:block scrn-600:pt-20 scrn-750:pt-12 scrn-1000:pt-20 scrn-1300:pt-24 scrn-1800:pt-32'>
@@ -27,8 +21,8 @@ const Hero: React.FC = () => {
             src="/logos/One-Stop-Shop.gif"
             alt="Animated Logo"
             unoptimized
-            width={800} // Provide an appropriate width
-            height={800} // Provide an appropriate height
+            width={800} 
+            height={800} 
             className='mx-auto scrn-600:mx-0
             w-48 
             scrn-700:w-60
@@ -50,16 +44,6 @@ const Hero: React.FC = () => {
             ATLANTA COMPANY
           </p> */}
         </div>
-
-        {/* Right Image Section - Coded Out for video animation*/}
-        {/* <div className='w-full scrn-750:w-1/2 flex justify-center mt-auto'>
-          <Image
-            src="/products/Fuel_Dispenser_Face_Left.png"
-            alt="Hero"
-            width={1011}
-            height={1211}
-            className='rounded-lg object-cover hidden scrn-400:mb-6 scrn-300:w-64 scrn-350:w-72 scrn-400:w-72 scrn-600:w-80 scrn-750:w-80 scrn-900:w-110 scrn-900:mb-12 scrn-1000:w-120 scrn-1000:mb-12 scrn-1100:w-124 scrn-1200:w-128 scrn-1200:mb-14 scrn-1300:w-132 scrn-1400:w-140 scrn-1500:w-148 scrn-1600:w-160 scrn-1700:w-176 scrn-1700:mb-20 scrn-1800:w-180 scrn-1900:w-192 scrn-2300:w-216 scrn-2500:w-232 scrn-2500:mb-28'/>
-        </div> */}
       </div>
     </div>
   );

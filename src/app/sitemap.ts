@@ -36,27 +36,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/canopy-imaging-solutions`,
+      url: `${baseUrl}/services/canopy-imaging-solutions`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/environmental-compliance-solutions`,
+      url: `${baseUrl}/services/environmental-compliance-solutions`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/gas-station-construction`,
+      url: `${baseUrl}/services/gas-station-construction`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/gas-station-electrical`,
+      url: `${baseUrl}/services/gas-station-electrical`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/gas-station-financing`,
+      url: `${baseUrl}/services/gas-station-financing`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/gas-station-pump-advertising`,
+      url: `${baseUrl}/services/gas-station-pump-advertising`,
       lastModified: new Date(),
     },
     // Add more static pages as needed
