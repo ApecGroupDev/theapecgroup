@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FiSearch, FiX } from "react-icons/fi";
+// import { FiSearch, FiX } from "react-icons/fi";
 import Image from "next/image";
 
 const Header: React.FC = () => {
@@ -13,8 +13,8 @@ const Header: React.FC = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showSearch, setShowSearch] = useState(false);
   const searchRef = useRef<HTMLInputElement | null>(null);
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  // const [searchOpen, setSearchOpen] = useState(false);
+  // const [searchQuery, setSearchQuery] = useState("");
 
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
@@ -31,17 +31,17 @@ const Header: React.FC = () => {
 
   const toggleMenu = () => {
     setIsOpen((prev) => {
-      if (!prev) setSearchOpen(false); // Close search if opening menu
+      // if (!prev) setSearchOpen(false); // Close search if opening menu
       return !prev;
     });
   };
 
-  const toggleSearch = () => {
-    setSearchOpen((prev) => {
-      if (!prev) setIsOpen(false); // Close menu if opening search
-      return !prev;
-    });
-  };
+  // const toggleSearch = () => {
+  //   setSearchOpen((prev) => {
+  //     if (!prev) setIsOpen(false); // Close menu if opening search
+  //     return !prev;
+  //   });
+  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
       {/* Mobile Header */}
       <div className='scrn-1000:hidden container min-w-full relative flex items-center py-4'>
         {/* Search Icon (Left) */}
-        <button
+        {/* <button
           className='absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
           onClick={toggleSearch}
           aria-label="Toggle Search"
@@ -106,10 +106,10 @@ const Header: React.FC = () => {
           ) : (
             <FiSearch className='text-2xl' />
           )}
-        </button>
+        </button> */}
         {/* Search Input */}
-        <div
-          className={`absolute top-16 left-0 w-3/4 p-2 m-2 bg-white shadow-md rounded-lg z-10 overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
+        {/* <div
+          className={`hidden absolute top-16 left-0 w-3/4 p-2 m-2 bg-white shadow-md rounded-lg z-10 overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
             }`}
         >
           <input
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className='w-full p-2 border rounded-md focus:outline-none'
           />
-        </div>
+        </div> */}
 
         {/* Centered Logo */}
         <div className='absolute pt-12 scrn-600:pt-14 inset-0 flex justify-center items-center'>
@@ -301,7 +301,7 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Right: Search Icon */}
-        <div className='relative flex justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28'>
+        {/* <div className='hidden relative justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28'>
           {showSearch ? (
             <input
               ref={searchRef}
@@ -319,7 +319,7 @@ const Header: React.FC = () => {
               <FiSearch className='text-xl' />
             </button>
           )}
-        </div>
+        </div> */}
       </div>
     </header>
   );
