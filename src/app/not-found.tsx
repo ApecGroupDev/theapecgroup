@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Header from '@/components/header';
-import FooterNotFound from '@/components/footer_not_found';
+import Footer from '@/components/footer';
 
 export default function NotFound() {
   return (
@@ -19,10 +19,12 @@ export default function NotFound() {
           RETURN TO HOMEPAGE
         </Link>
       </main>
-      <div className="w-full my-4">
-        <div className="h-2 bg-gradient-to-r from-gray-800 via-gray-500 to-red-600" />
+      <div className="w-full">
+        <div className="h-3 bg-gradient-to-r from-gray-800 to-red-600" />
       </div>
-      <FooterNotFound />
+      <div className='bg-gray-800'>
+        <Footer />
+      </div>
     </div>
   );
 }
