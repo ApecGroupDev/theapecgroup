@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-300">
       <Header />
-      <main className="flex-grow flex flex-col items-center justify-center text-center px-4">
+      <main className="flex-grow flex flex-col items-center justify-center text-center px-4 scrn-1000:py-40 scrn-1200:py-60">
         <h1 className="text-5xl scrn-1500:text-7xl font-bold text-red-600 mt-12">404</h1>
         <p className="text-xl scrn-1500:text-3xl mt-4 text-gray-700">Page Not Found</p>
         <p className="mt-2 scrn-1500:text-2xl text-gray-500">The page you&apos;re looking for does not exist.</p>
