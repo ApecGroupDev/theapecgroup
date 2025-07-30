@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
 
       <div className='absolute inset-0 z-10 hidden scrn-500:block mt-64 scrn-550:mt-60 scrn-600:mt-44 scrn-650:mt-36 scrn-750:mt-28 scrn-800:mt-24 scrn-1000:mt-24 scrn-1100:mt-24 scrn-1150:mt-16 scrn-1200:mt-24 scrn-1700:mt-28 scrn-1900:scale-y-110 scrn-1900:mt-16'>
         <Image
-          src="/backgrounds/aboutUs/Hero_About_Flipped.png"
+          src="/backgrounds/aboutUs/Hero_About_Test.png"
           alt="Background"
           style={{ objectFit: 'cover' }}
           width={2786}
