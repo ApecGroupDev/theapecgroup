@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Main = () => {
   return (
     <div className='px-4 scrn-600:px-12 scrn-800:px-20 max-w-7xl mx-auto mb-20'>
-      <div className='mt-28 scrn-600:mt-32 scrn-1000:mt-40 scrn-1900:mt-60 items-end flex underline'>
+      <div className='mt-28 scrn-600:mt-32 scrn-1000:mt-24 scrn-1900:mt-32 items-end flex underline'>
         <Link
           href="/blogs"
           className="ms-auto scrn-750:text-lg scrn-1400:text-xl text-red-700 hover:text-red-500 hover:scale-150"

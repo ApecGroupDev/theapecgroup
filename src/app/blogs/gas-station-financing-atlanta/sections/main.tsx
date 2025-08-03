@@ -13,7 +13,7 @@ const Main = () => {
         </Link>
       </div>
       <img
-        src="/blogImages/blog1.png"
+        src="/blogImages/blog5.jpg"
         alt="Blog Image"
         className='w-full object-center rounded-lg mb-6 scrn-1900:h-172 mt-4'
       />
@@ -146,7 +146,7 @@ const Main = () => {
         </p>
 
         {/* BP GAS STATION */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-24'>
+        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-12'>
           BP Gas Station
         </p>
         <Image
@@ -218,7 +218,7 @@ const Main = () => {
         </p>
 
         {/* QUIK TRIP */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-24'>
+        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-12'>
           Quik Trip
         </p>
         <Image
@@ -287,7 +287,7 @@ const Main = () => {
         </p>
 
         {/* DIVIDEND AMERICA COMMERCIAL LENDING */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-24'>
+        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-12'>
           Dividend America Commercial Leading
         </p>
         <Image
