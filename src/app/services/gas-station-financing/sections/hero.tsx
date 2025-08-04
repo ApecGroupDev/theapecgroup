@@ -56,9 +56,10 @@ const Hero: React.FC = () => {
       </div> */}
 
       {/* Left Text Section */}
-      <div className={`fixed scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-800:ps-12 scrn-950:ps-16 scrn-1150:ps-20 scrn-1400:ps-28 scrn-2100:ps-32 scrn-2400:ps-40 text-left transition-opacity duration-75
-        ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}
-      `}>
+      <div
+        className={`fixed scrn-750:ms-0 p-2 scrn-600:ps-4 text-left transition-opacity duration-75
+        ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+      >
         {/* Breadcrumb */}
         <nav>
           <ul className='flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest text-2xs scrn-600:text-xs scrn-750:text-sm scrn-1000:text-lg scrn-1500:text-xl'
@@ -76,11 +77,20 @@ const Hero: React.FC = () => {
         </nav>
 
         <div>
+          <span
+            className='font-semibold whitespace-nowrap text-[#c62931] text-3xl scrn-400:text-4xl scrn-450:text-5xl scrn-600:text-6xl scrn-750:text-6xl scrn-800:text-7xl scrn-900:text-7xl scrn-1000:text-8xl scrn-1200:text-9xl scrn-1500:text-9xl scrn-1600:text-10xl scrn-1900:text-10xl scrn-2500:text-13xl'>
+            GAS STATION <br />
+            FINANCING <br />
+            COMPANY
+          </span>
+        </div>
+
+        {/* <div>
           <span className='font-semibold whitespace-nowrap text-[#c62931] text-3xl scrn-350:text-4xl scrn-450:text-4xl scrn-600:text-3xl scrn-750:text-4xl scrn-800:text-4xl scrn-900:text-4xl scrn-1000:text-5xl scrn-1300:text-6xl scrn-1500:text-7xl scrn-1700:text-8xl scrn-2000:text-8xl' >
             GAS STATION <br className='scrn-600:hidden' /> FINANCING <br />
             COMPANY
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

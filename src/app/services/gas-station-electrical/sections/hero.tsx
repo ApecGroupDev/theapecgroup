@@ -56,9 +56,10 @@ const Hero: React.FC = () => {
       </div> */}
 
       {/* Left Text Section */}
-      <div className={`fixed scrn-750:ms-0 p-2 scrn-600:ps-4 text-left transition-opacity duration-75
-        ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}
-      `}>
+      <div
+        className={`fixed scrn-750:ms-0 p-2 scrn-600:ps-4 text-left transition-opacity duration-75
+        ${fadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+      >
         {/* Breadcrumb */}
         <nav>
           <ul className='flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest text-2xs scrn-600:text-xs scrn-750:text-sm scrn-1000:text-lg scrn-1500:text-xl'>
@@ -75,6 +76,14 @@ const Hero: React.FC = () => {
         </nav>
 
         <div>
+          <span
+            className='font-semibold whitespace-nowrap text-[#c62931] text-3xl scrn-400:text-4xl scrn-450:text-5xl scrn-600:text-6xl scrn-750:text-6xl scrn-800:text-7xl scrn-900:text-7xl scrn-1000:text-8xl scrn-1200:text-9xl scrn-1500:text-9xl scrn-1600:text-10xl scrn-1900:text-10xl scrn-2500:text-13xl'>
+            APEC <br />
+            ELECTRICAL
+          </span>
+        </div>
+
+        {/* <div>
           <span className='font-semibold whitespace-nowrap text-[#c62931]'>
             <span className='text-5xl scrn-450:text-6xl scrn-700:text-7xl scrn-800:text-8xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1100:text-9xl scrn-1500:text-9xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-2500:text-12xl'>
               APEC
@@ -83,7 +92,7 @@ const Hero: React.FC = () => {
               ELECTRICAL
             </span>
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
