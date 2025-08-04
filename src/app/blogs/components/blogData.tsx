@@ -1,17 +1,8 @@
-import BestGasStationFinancing from "../blogs/BestGasStationFinancing";
-import BiggestInTheUSA from "../blogs/BiggestInTheUSA";
-import FutureOfGasStations from "../blogs/FutureOfGasStations";
-import GasStationInspection from "../blogs/GasStationInspection";
-import HowDoGasPumpsWork from "../blogs/HowDoGasPumpsWork";
-import InnovationsInPetroleumEquipment from "../blogs/InnovationsInPetroleumEquipment";
-import MainPartsOfTheIndustry from "../blogs/MainPartsOfTheIndustry";
-import PetroleumResearchIndustry from "../blogs/PetroleumResearchIndustry";
-
 export type BlogThumbnail = {
   title: string;
   subtitle?: string;
   imageUrl: string;
-  ContentComponent: React.FC;
+  slug: string;
 };
 
 export const blogData: BlogThumbnail[] = [
@@ -19,49 +10,49 @@ export const blogData: BlogThumbnail[] = [
     title: 'The Future of Gas Stations:',
     subtitle: 'Innovations Shaping the Petroleum Industry',
     imageUrl: '/blogImages/blog1.png',
-    ContentComponent: FutureOfGasStations,
+    slug: 'future-of-gas-stations',
   },
   {
     title: 'Gasoline Pumps:',
     subtitle: 'How Do They Work?',
     imageUrl: '/blogImages/blog2.jpg',
-    ContentComponent: HowDoGasPumpsWork,
+    slug: 'how-gasoline-pumps-work',
   },
   {
     title: 'Main Parts Of The',
     subtitle: 'Petroleum Industry',
     imageUrl: '/blogImages/blog3.jpg',
-    ContentComponent: MainPartsOfTheIndustry,
+    slug: 'petroleum-industry-segments',
   },
   {
     title: 'Petroleum Research Industry:',
     subtitle: 'What are they studying?',
     imageUrl: '/blogImages/blog4.jpg',
-    ContentComponent: PetroleumResearchIndustry,
+    slug: 'petroleum-research',
   },
   {
     title: 'Best In Atlanta:',
     subtitle: 'Gas Station Financing Companies',
     imageUrl: '/blogImages/blog5.jpg',
-    ContentComponent: BestGasStationFinancing,
+    slug: 'gas-station-financing-atlanta',
   },
   {
     title: 'Biggest In The USA:',
     subtitle: 'Oil And Gas Equipment And Services Companies',
     imageUrl: '/blogImages/blog6.jpg',
-    ContentComponent: BiggestInTheUSA,
+    slug: 'top-oil-and-gas-equipment-companies-usa',
   },
   {
     title: 'Innovations in Petroleum Equipment:',
     subtitle: 'How Leading Companies Are Shaping the Future',
     imageUrl: '/blogImages/blog7.jpg',
-    ContentComponent: InnovationsInPetroleumEquipment,
+    slug: 'petroleum-equipment-innovations',
   },
   {
     title: 'Gas Station',
     subtitle: 'Inspection Checklist',
     imageUrl: '/blogImages/blog8.jpg',
-    ContentComponent: GasStationInspection,
+    slug: 'gas-station-inspection-checklist',
   },
   // ...rest of your blogData
 ];
