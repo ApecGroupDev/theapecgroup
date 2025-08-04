@@ -3,10 +3,10 @@ import Main from "./sections/main";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oil and Gas Industry Blogs | The APEC Group",
-  description: "Stay informed with The APEC Group's oil and gas industry blogs. Explore expert insights and trends at theapecgroup.com/blog for energy sector updates.",
+  title: "Petroleum Research: Key Focus Areas & Innovation",
+  description: "See how petroleum research is shaping safer, cleaner energy. From extraction to renewables, discover what top institutes are studying.",
   alternates: {
-    canonical: 'https://www.theapecgroup.com/blogs',
+    canonical: 'https://www.theapecgroup.com/blogs/petroleum-research',
   },
 };
 

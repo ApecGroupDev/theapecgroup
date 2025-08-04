@@ -3,10 +3,10 @@ import Main from "./sections/main";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oil and Gas Industry Blogs | The APEC Group",
-  description: "Stay informed with The APEC Group's oil and gas industry blogs. Explore expert insights and trends at theapecgroup.com/blog for energy sector updates.",
+  title: "Top Oil & Gas Equipment Companies in the USA",
+  description: "Meet the biggest oil and gas equipment companies in the USA. Learn who’s leading in drilling, services, and innovation.",
   alternates: {
-    canonical: 'https://www.theapecgroup.com/blogs',
+    canonical: 'https://www.theapecgroup.com/blogs/top-oil-and-gas-equipment-companies-usa',
   },
 };
 

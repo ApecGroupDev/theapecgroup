@@ -3,8 +3,8 @@ import Main from "./sections/main";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oil and Gas Industry Blogs | The APEC Group",
-  description: "Stay informed with The APEC Group's oil and gas industry blogs. Explore expert insights and trends at theapecgroup.com/blog for energy sector updates.",
+  title: "Gas Station Inspection Checklist: Full Safety Guide",
+  description: "Stay compliant and safe with this gas station inspection checklist. Covers fuel systems, fire safety, signage, spills, and more.",
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },

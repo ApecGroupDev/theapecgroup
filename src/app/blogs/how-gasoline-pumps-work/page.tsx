@@ -3,8 +3,8 @@ import Main from "./sections/main";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oil and Gas Industry Blogs | The APEC Group",
-  description: "Stay informed with The APEC Group's oil and gas industry blogs. Explore expert insights and trends at theapecgroup.com/blog for energy sector updates.",
+  title: "How Gasoline Pumps Work: Full Guide Explained",
+  description: "Learn how gasoline pumps work, from tank to nozzle. Understand their parts, types, and how they power everyday fuel stations.",
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },
