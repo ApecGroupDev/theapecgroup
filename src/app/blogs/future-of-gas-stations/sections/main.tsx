@@ -12,9 +12,16 @@ const Main = () => {
           Back to Blogs
         </Link>
       </div>
-      <img
+      {/* <img
         src="/blogImages/blog1.png"
         alt="Blog Image"
+        className='w-full object-center rounded-lg mb-6 scrn-1900:h-172 mt-4'
+      /> */}
+      <Image
+        src="/blogImages/blog1.png"
+        alt="Blog Image"
+        width={1024}
+        height={484}
         className='w-full object-center rounded-lg mb-6 scrn-1900:h-172 mt-4'
       />
 
@@ -28,7 +35,7 @@ const Main = () => {
 
       <div className='scrn-1000:ps-12 pt-12'>
         {/* INTRO */}
-        <div className='space-y-3'>
+        <div className='space-y-3'>m
           <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line'>
             If you are looking for the best gas station financing companies to run your own gas station in Atlanta.
             Then this is the right place for you. In this article, we listed the top gas station financing companies
