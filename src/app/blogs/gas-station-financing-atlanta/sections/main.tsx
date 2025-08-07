@@ -12,9 +12,16 @@ const Main = () => {
           Back to Blogs
         </Link>
       </div>
-      <img
+      {/* <img
         src="/blogImages/blog5.jpg"
         alt="Blog Image"
+        className='w-full object-center rounded-lg mb-6 scrn-1900:h-172 mt-4'
+      /> */}
+      <Image
+        src="/blogImages/blog5.jpg"
+        alt="Blog Image"
+        width={1024}
+        height={500}
         className='w-full object-center rounded-lg mb-6 scrn-1900:h-172 mt-4'
       />
 
