@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [fadeOutThreshold]);
 
   return (
     <div
