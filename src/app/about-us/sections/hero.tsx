@@ -11,6 +11,12 @@ const Hero: React.FC = () => {
 
   // Scroll to top on page load
   useEffect(() => {
+    history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+  }, []);
+
+  // Scroll to top on page load
+  useEffect(() => {
     const hero = heroRef.current;
     if (!hero) return;
 
