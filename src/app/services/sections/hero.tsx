@@ -36,25 +36,13 @@ const Hero: React.FC = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [fadeOutThreshold]);
 
   return (
     <div
       id="hero-section"
       ref={heroRef}
       className='relative flex pointer-events-none items-center overflow-hidden h-80 scrn-450:h-96 scrn-500:h-114 scrn-600:h-118 scrn-700:h-124 scrn-750:h-128 scrn-800:h-120 scrn-850:h-124 scrn-900:h-128 scrn-950:h-132 scrn-1000:h-140 scrn-1050:h-144 scrn-1100:h-148 scrn-1150:h-152 scrn-1200:h-160 scrn-1300:h-172 scrn-1400:h-180 scrn-1450:h-184 scrn-1500:h-192 scrn-1550:h-198 scrn-1600:h-208 scrn-1700:h-228 scrn-1800:h-240 scrn-1850:h-244 scrn-1900:h-264 scrn-1950:h-280 scrn-2050:h-288 scrn-2100:h-296 scrn-2150:h-304 scrn-2200:h-312 scrn-2250:h-316 scrn-2300:h-324 scrn-2400:h-339 scrn-2500:h-352'>
-      {/* Background Image */}
-      {/* <div className='absolute z-10'
-      >
-        <Image
-          src="/backgrounds/services/Hero_Services.png"
-          alt="Background"
-          style={{ objectFit: 'cover' }}
-          width={2786}
-          height={1438}
-          priority
-          className='scrn-300:h-64 scrn-300:mt-12 scrn-400:h-72 scrn-400:mt-8 scrn-450:h-80 scrn-500:h-96 scrn-500:mt-10 scrn-600:h-114 scrn-600:mt-4 scrn-700:h-full scrn-700:mt-8 scrn-750:pb-10 scrn-800:pb-0 scrn-1900:pb-16 scrn-1950:pb-24 scrn-2000:pb-20 scrn-2150:pb-24 scrn-2300:pb-32'/>
-      </div> */}
 
       {/* Left Text Section */}
       <div className={`fixed scrn-800:pb-20 scrn-1000:pb-12 scrn-1200:pb-0 scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-75
