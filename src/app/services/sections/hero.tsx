@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
     <div
       id="hero-section"
       ref={heroRef}
-      className='relative flex pointer-events-none items-center overflow-hidden h-80 scrn-450:h-96 scrn-500:h-114 scrn-600:h-118 scrn-700:h-124 scrn-750:h-128 scrn-800:h-120 scrn-850:h-124 scrn-900:h-128 scrn-950:h-132 scrn-1000:h-140 scrn-1050:h-144 scrn-1100:h-148 scrn-1150:h-152 scrn-1200:h-160 scrn-1300:h-172 scrn-1400:h-180 scrn-1450:h-184 scrn-1500:h-192 scrn-1550:h-198 scrn-1600:h-208 scrn-1700:h-228 scrn-1800:h-240 scrn-1850:h-244 scrn-1900:h-264 scrn-1950:h-280 scrn-2050:h-288 scrn-2100:h-296 scrn-2150:h-304 scrn-2200:h-312 scrn-2250:h-316 scrn-2300:h-324 scrn-2400:h-339 scrn-2500:h-352'>
+      className='relative flex items-center overflow-hidden h-80 scrn-450:h-96 scrn-500:h-114 scrn-600:h-118 scrn-700:h-124 scrn-750:h-128 scrn-800:h-120 scrn-850:h-124 scrn-900:h-128 scrn-950:h-132 scrn-1000:h-140 scrn-1050:h-144 scrn-1100:h-148 scrn-1150:h-152 scrn-1200:h-160 scrn-1300:h-172 scrn-1400:h-180 scrn-1450:h-184 scrn-1500:h-192 scrn-1550:h-198 scrn-1600:h-208 scrn-1700:h-228 scrn-1800:h-240 scrn-1850:h-244 scrn-1900:h-264 scrn-1950:h-280 scrn-2050:h-288 scrn-2100:h-296 scrn-2150:h-304 scrn-2200:h-312 scrn-2250:h-316 scrn-2300:h-324 scrn-2400:h-339 scrn-2500:h-352'>
 
       {/* Left Text Section */}
       <div className={`fixed scrn-800:pb-20 scrn-1000:pb-12 scrn-1200:pb-0 scrn-750:ms-0 p-2 scrn-600:ps-4 scrn-1250:ps-12 text-left transition-opacity duration-75
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
         <nav>
           <ul className='flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest text-2xs scrn-600:text-xs scrn-750:text-sm scrn-1000:text-lg scrn-1500:text-xl'>
             <li>
-              <Link href="/home" className='hover:text-[#c62931]'>
+              <Link href="/" className='hover:text-[#c62931]'>
                 Home
               </Link>
             </li>
