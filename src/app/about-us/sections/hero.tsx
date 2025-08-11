@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
         <nav>
           <ul className='flex scrn-600:items-center space-x-2 font-semibold text-gray-600 tracking-widest text-2xs scrn-600:text-xs scrn-750:text-sm scrn-1000:text-lg scrn-1500:text-xl'>
             <li>
-              <Link href="/home" className='hover:text-[#c62931]'>
+              <Link href="/" className='hover:text-[#c62931]'>
                 Home
               </Link>
             </li>
