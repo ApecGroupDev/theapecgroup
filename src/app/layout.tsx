@@ -1,8 +1,8 @@
 import '../styles/globals.css';
 import ScrollToTopButton from '@/components/scrollToTop';
-import Script from 'next/script';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
+import HeadManager from './HeadManager'; // client wrapper
 
 export const metadata: Metadata = {
   title: 'Petroleum Products Company | The APEC Group',
@@ -19,33 +19,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className='bg-gray-300 text-gray-800'>
-      <head>
-        {/* Google Search Console */}
-        <meta
-          name="google-site-verification"
-          content="h5105p5iWJykIV1y3DbAOkWpFei5332BIw9M2XvO72s"
-        />
-
-        {/* ✅ Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WXLE69Q1SV"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-WXLE69Q1SV');
-          `}
-        </Script>
-      </head>
-      <body className='min-h-screen'>
-        {/* Render children */}
-        <div className='max-w-[2560px] mx-auto'>
-          {children}
-        </div>
+    <html lang="en" className="bg-gray-300 text-gray-800">
+      <HeadManager />
+      <body className="min-h-screen">
+        <div className="max-w-[2560px] mx-auto">{children}</div>
         <ScrollToTopButton />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
