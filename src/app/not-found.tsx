@@ -1,14 +1,6 @@
 import Link from 'next/link';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  robots: {
-    index: false, // noindex
-    follow: true, // follow
-  },
-};
 
 export default function NotFound() {
   return (
