@@ -85,22 +85,11 @@ const Footer: React.FC = () => {
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <p className='hidden scrn-750:hidden scrn-1000:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark'>
-            For More Info: <a href="tel:855-444-2732">855-444-2732</a><br />
-            <a
-              href="mailto:Service@TheAPECgroup.com"
-              className='text-[#c62931] hover:text-red-500 transition-colors'
-            >
-              Service@TheAPECgroup.com
-            </a>
-            <br />
-            <a
-              href="mailto:Sales@TheAPECgroup.com"
-              className='text-[#c62931] hover:text-red-500 transition-colors'
-            >
-              Sales@TheAPECgroup.com
-            </a>
-          </p>
+          <div className="space-y-2">
+            <p>For More Info: <a href="tel:855-444-2732" className="inline-block">855-444-2732</a></p>
+            <a href="mailto:Service@TheAPECgroup.com" className="inline-block text-[#c62931] hover:text-red-500 transition-colors">Service@TheAPECgroup.com</a><br />
+            <a href="mailto:Sales@TheAPECgroup.com" className="inline-block text-[#c62931] hover:text-red-500 transition-colors">Sales@TheAPECgroup.com</a>
+          </div>
         </div>
 
         {/* Column 3: Logo */}
