@@ -75,17 +75,17 @@ const Footer: React.FC = () => {
 
         {/* Column 2: Addresses and Contact Information */}
         <div className='flex flex-col space-y-4 pb-4 items-center scrn-750:pt-2'>
-          <p className='hidden scrn-750:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark'>
+          <p className='hidden scrn-800:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark'>
             Main Office: Atlanta, Georgia<br />
             4732-E North Royal Atlanta<br />
             Drive Tucker, GA 30084
           </p>
-          <p className='hidden scrn-750:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark'>
+          <p className='hidden scrn-800:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark'>
             Branch Office: Houston, Texas<br />
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <div className="space-y-2 hidden scrn-750:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark">
+          <div className="space-y-2 hidden scrn-800:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark">
             <p>For More Info: <a href="tel:855-444-2732">855-444-2732</a></p>
             <a href="mailto:Service@TheAPECgroup.com" className="text-[#c62931] hover:text-red-500 transition-colors">Service@TheAPECgroup.com</a><br />
             <a href="mailto:Sales@TheAPECgroup.com" className="text-[#c62931] hover:text-red-500 transition-colors">Sales@TheAPECgroup.com</a>
