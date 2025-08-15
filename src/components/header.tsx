@@ -190,13 +190,24 @@ const Header: React.FC = () => {
       {/* Desktop Header - 3 Grid Layout */}
       <div className='hidden scrn-1000:grid grid-cols-3 items-center px-6 py-1'>
         {/* Left: Logo */}
-        <div className='flex items-center'>
+        <div className='flex items-center scrn-600:hidden'>
           <Link href="/">
             <Image
               src="/logos/APEC.webp"
               alt="Logo"
               width={116}
               height={106}
+              className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
+            />
+          </Link>
+        </div>
+        <div className='items-center hidden scrn-600:flex'>
+          <Link href="/">
+            <Image
+              src="/logos/APEC.webp"
+              alt="Logo"
+              width={227}
+              height={208}
               className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
             />
           </Link>
