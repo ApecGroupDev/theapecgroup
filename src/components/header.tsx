@@ -127,8 +127,8 @@ const Header: React.FC = () => {
             <Image
               src="/logos/APEC.webp"
               alt="Logo"
-              width={1315}
-              height={1206}
+              width={116}
+              height={106}
               className='h-24 scrn-600:h-28 w-auto'
             />
           </Link>
@@ -195,8 +195,8 @@ const Header: React.FC = () => {
             <Image
               src="/logos/APEC.webp"
               alt="Logo"
-              width={1315}
-              height={1206}
+              width={116}
+              height={106}
               className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
             />
           </Link>

@@ -98,8 +98,8 @@ const Footer: React.FC = () => {
             <Image
               src="/logos/APEC.webp"
               alt="APEC Since 1989"
-              height={1206}
-              width={1315}
+              height={116}
+              width={106}
               className='transition-transform duration-300 ease-in-out transform hover:scale-105 scrn-450:h-24 scrn-600:h-32 scrn-750:h-28 scrn-1000:h-40 scrn-1250:h-52 scrn-1500:h-60 scrn-1700:h-72 scrn-1900:h-72 scrn-2500:h-80 w-auto'
             />
           </Link>
