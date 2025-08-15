@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
         <div className='hidden scrn-350:flex justify-center scrn-750:justify-end'>
           <Link href="/">
             <Image
-              src="/logos/APEC.png"
+              src="/logos/APEC.webp"
               alt="APEC Since 1989"
               height={1206}
               width={1315}
