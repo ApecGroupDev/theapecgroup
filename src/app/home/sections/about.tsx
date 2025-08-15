@@ -17,8 +17,8 @@ const About: React.FC = () => {
         <Image
           src="/products/aboutUsSection.png"
           alt="Hero"
-          width={3264}
-          height={4601}
+          width={477}
+          height={710}
           className='rounded-lg object-cover mx-auto w-7/12 scrn-750:w-full scrn-1000:w-11/12 scrn-1200:w-9/12 scrn-1500:w-10/12 scrn-1800:w-9/12' />
       </div>
 
