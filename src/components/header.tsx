@@ -125,7 +125,7 @@ const Header: React.FC = () => {
         <div className='absolute pt-12 scrn-600:pt-14 inset-0 flex justify-center items-center'>
           <Link href="/">
             <Image
-              src="/logos/APEC.png"
+              src="/logos/APEC.webp"
               alt="Logo"
               width={1315}
               height={1206}
@@ -193,7 +193,7 @@ const Header: React.FC = () => {
         <div className='flex items-center'>
           <Link href="/">
             <Image
-              src="/logos/APEC.png"
+              src="/logos/APEC.webp"
               alt="Logo"
               width={1315}
               height={1206}
