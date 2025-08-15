@@ -15,7 +15,7 @@ const About: React.FC = () => {
       {/* Left Image Section */}
       <div className='w-full hidden scrn-750:block scrn-750:w-2/5 scrn-1200:w-1/2'>
         <Image
-          src="/products/aboutUsSection.png"
+          src="/products/aboutUsSection.webp"
           alt="Hero"
           width={477}
           height={710}
