@@ -85,15 +85,15 @@ const Footer: React.FC = () => {
             505 Garden Oaks Boulevard<br />
             Houston, TX 77018
           </p>
-          <div className="space-y-2">
-            <p>For More Info: <a href="tel:855-444-2732" className="inline-block">855-444-2732</a></p>
-            <a href="mailto:Service@TheAPECgroup.com" className="inline-block text-[#c62931] hover:text-red-500 transition-colors">Service@TheAPECgroup.com</a><br />
-            <a href="mailto:Sales@TheAPECgroup.com" className="inline-block text-[#c62931] hover:text-red-500 transition-colors">Sales@TheAPECgroup.com</a>
+          <div className="space-y-2 hidden scrn-750:block scrn-750:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl leading-relaxed footer-text-dark">
+            <p>For More Info: <a href="tel:855-444-2732">855-444-2732</a></p>
+            <a href="mailto:Service@TheAPECgroup.com" className="text-[#c62931] hover:text-red-500 transition-colors">Service@TheAPECgroup.com</a><br />
+            <a href="mailto:Sales@TheAPECgroup.com" className="text-[#c62931] hover:text-red-500 transition-colors">Sales@TheAPECgroup.com</a>
           </div>
         </div>
 
         {/* Column 3: Logo */}
-        <div className='hidden scrn-350:flex justify-center scrn-750:justify-end'>
+        <div className='hidden scrn-350:flex justify-center scrn-750:hidden'>
           <Link href="/">
             <Image
               src="/logos/APEC.webp"
@@ -104,6 +104,18 @@ const Footer: React.FC = () => {
             />
           </Link>
         </div>
+        <div className='hidden scrn-750:flex justify-center scrn-750:justify-end'>
+          <Link href="/">
+            <Image
+              src="/logos/APEC.webp"
+              alt="APEC Since 1989"
+              height={1315}
+              width={1206}
+              className='transition-transform duration-300 ease-in-out transform hover:scale-105 scrn-450:h-24 scrn-600:h-32 scrn-750:h-28 scrn-1000:h-40 scrn-1250:h-52 scrn-1500:h-60 scrn-1700:h-72 scrn-1900:h-72 scrn-2500:h-80 w-auto'
+            />
+          </Link>
+        </div>
+
       </div>
 
       <hr className='h-px bg-gray-600 border-0'></hr>
