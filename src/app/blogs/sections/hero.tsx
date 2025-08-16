@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
       id="hero-section"
       ref={heroRef}
       style={{
-        backgroundImage: "url('/backgrounds/blog/Hero_Blog_M.png')",
+        backgroundImage: "url('/backgrounds/blog/Hero_Blog.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
