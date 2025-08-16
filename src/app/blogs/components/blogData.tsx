@@ -9,50 +9,49 @@ export const blogData: BlogThumbnail[] = [
   {
     title: 'The Future of Gas Stations:',
     subtitle: 'Innovations Shaping the Petroleum Industry',
-    imageUrl: '/blogImages/blog1.png',
+    imageUrl: '/blogImages/blogThumbnails/blog1.webp',
     slug: 'future-of-gas-stations',
   },
   {
     title: 'Gasoline Pumps:',
     subtitle: 'How Do They Work?',
-    imageUrl: '/blogImages/blog2.jpg',
+    imageUrl: '/blogImages/blogThumbnails/blog2.webp',
     slug: 'how-gasoline-pumps-work',
   },
   {
     title: 'Main Parts Of The',
     subtitle: 'Petroleum Industry',
-    imageUrl: '/blogImages/blog3.jpg',
+    imageUrl: '/blogImages/blogThumbnails/blog3.webp',
     slug: 'petroleum-industry-segments',
   },
   {
     title: 'Petroleum Research Industry:',
     subtitle: 'What are they studying?',
-    imageUrl: '/blogImages/blog4.jpg',
+    imageUrl: '/blogImages/blogThumbnails/blog4.webp',
     slug: 'petroleum-research',
   },
   {
     title: 'Best In Atlanta:',
     subtitle: 'Gas Station Financing Companies',
-    imageUrl: '/blogImages/blog5.jpg',
+    imageUrl: '/blogImages/blogThumbnails/blog5.webp',
     slug: 'gas-station-financing-atlanta',
   },
   {
     title: 'Biggest In The USA:',
     subtitle: 'Oil And Gas Equipment And Services Companies',
-    imageUrl: '/blogImages/blog6.jpg',
+    imageUrl: '/blogImages/blogThumbnails/blog6.webp',
     slug: 'top-oil-and-gas-equipment-companies-usa',
   },
   {
     title: 'Innovations in Petroleum Equipment:',
     subtitle: 'How Leading Companies Are Shaping the Future',
-    imageUrl: '/blogImages/blog7.jpg',
+    imageUrl: '/blogImages/blogThumbnails/blog7.webp',
     slug: 'petroleum-equipment-innovations',
   },
   {
     title: 'Gas Station',
     subtitle: 'Inspection Checklist',
-    imageUrl: '/blogImages/blog8.jpg',
+    imageUrl: '/blogImages/blogThumbnails/blog8.webp',
     slug: 'gas-station-inspection-checklist',
   },
-  // ...rest of your blogData
 ];
