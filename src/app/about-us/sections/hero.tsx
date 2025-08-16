@@ -1,13 +1,12 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from 'react';
-// import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero: React.FC = () => {
   const [fadeOut, setFadeOut] = useState(false);
   const fadeOutThreshold = -20;
-  const heroRef = useRef<HTMLDivElement | null>(null); // 👈 Step 1: create ref
+  const heroRef = useRef<HTMLDivElement | null>(null); 
 
   // Scroll to top on page load
   useEffect(() => {
