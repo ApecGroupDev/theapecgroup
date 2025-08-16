@@ -14,7 +14,7 @@ const CareersMain: React.FC = () => {
         <div className='scrn-800:w-2/3 relative rounded-xl overflow-hidden shadow-md'>
           {/* Background Image */}
           <Image
-            src="/backgrounds/careers/Background_1.jpg"
+            src="/backgrounds/careers/Background_1.webp"
             alt="Current Openings Background"
             fill
             className="object-cover"
@@ -56,7 +56,7 @@ const CareersMain: React.FC = () => {
         <div className='scrn-800:w-2/3 relative rounded-xl overflow-hidden shadow-md'>
           {/* Background Image */}
           <Image
-            src="/backgrounds/careers/Background_2.jpg"
+            src="/backgrounds/careers/Background_2.webp"
             alt="Current Openings Background"
             fill
             className="object-cover"
