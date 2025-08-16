@@ -69,7 +69,15 @@ const MembershipLogosCarousel: React.FC = () => {
           className='mySwiper scrn-1500:mt-24 scrn-1700:mt-20 scrn-1900:mt-20 scrn-2k:mt-12 w-full'>
           {associations.map((association, index) => (
             <SwiperSlide key={index}>
-              <div className='mt-12 scrn-300:mt-0 scrn-400:mt-0 scrn-600:mt-0 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110'>
+              <div className='scrn-600:hidden mt-12 scrn-300:mt-0 scrn-400:mt-0 scrn-600:mt-0 flex flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110'>
+                <Image
+                  src={association.src}
+                  alt={association.alt}
+                  width={112}
+                  height={112}
+                  className='max-w-full scrn-2000:max-w-7xl object-contain mb-4 h-44 scrn-400:h-28 scrn-750:h-36 scrn-1000:h-48 scrn-1200:h-60 scrn-1500:h-64 scrn-1700:h-80' />
+              </div>
+              <div className='hidden scrn-600:flex mt-12 scrn-300:mt-0 scrn-400:mt-0 scrn-600:mt-0 flex-col items-center p-4 transition-transform duration-300 ease-in-out hover:scale-110'>
                 <Image
                   src={association.src}
                   alt={association.alt}
