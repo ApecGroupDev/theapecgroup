@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             </p>
             <div className="grid grid-cols-1 gap-4 scrn-1000:gap-2 scrn-1300:gap-6 scrn-1000:ms-4">
               <Image src="/logos/Auth_Dis/Auth_Dis_Dover.webp" alt="Dover" width={180} height={60} className='scrn-1200:scale-90' />
-              <Image src="/logos/Auth_Dis/Auth_Dis_Wayne.webp" alt="Wayne" width={180} height={60} className='scrn-1200:scale-90' />
+              <Image src="/logos/Auth_Dis/Auth_Dis_Wayne.webp" alt="Wayne" width={180} height={60} quality={60} className='scrn-1200:scale-90' />
               <Image src="/logos/Auth_Dis/Auth_Dis_Verifone.webp" alt="Verifone" width={180} height={60} className='scrn-1200:scale-90' />
               <Image src="/logos/Auth_Dis/Auth_Dis_OPW.webp" alt="OPW" width={180} height={60} className='scrn-1200:scale-90' />
               <Image src="/logos/Auth_Dis/Auth_Dis_Franklin.webp" alt="Franklin" width={180} height={60} className='scrn-1200:scale-90' />
