@@ -11,13 +11,13 @@ import 'swiper/css/navigation';
 import '../../../styles/membershiplogoslider.css';
 
 const associations = [
-  { src: "/associations/ARA.png", alt: "ARA - Atlanta Retailers Association", name: "Atlanta Retailers Association" },
-  { src: "/associations/GACS.png", alt: "GACS - Georgia Association of Convenience Stores", name: "Georgia Association of Convenience Stores" },
-  { src: "/associations/GHRA.png", alt: "GHRCA - Greater Houston Retailers Cooperative Association, Inc.", name: "Greater Houston Retailers Cooperative Association, Inc." },
-  { src: "/associations/GOA.png", alt: "GOA - Georgia Oilman’s Association", name: "Georgia Oilman’s Association" },
-  { src: "/associations/GTEC.png", alt: "GTEC - Georgia Tank Environmental Contractors Association", name: "Georgia Tank Environmental Contractors Association" },
-  { src: "/associations/PEI.png", alt: "PEI - Petroleum Equipment Institute", name: "Petroleum Equipment Institute" },
-  { src: "/associations/TFFA.png", alt: "TFFA - Texas Food & Fuel Association", name: "Texas Food & Fuel Association" },
+  { src: "/associations/ARA.webp", alt: "ARA - Atlanta Retailers Association", name: "Atlanta Retailers Association" },
+  { src: "/associations/GACS.webp", alt: "GACS - Georgia Association of Convenience Stores", name: "Georgia Association of Convenience Stores" },
+  { src: "/associations/GHRA.webp", alt: "GHRCA - Greater Houston Retailers Cooperative Association, Inc.", name: "Greater Houston Retailers Cooperative Association, Inc." },
+  { src: "/associations/GOA.webp", alt: "GOA - Georgia Oilman’s Association", name: "Georgia Oilman’s Association" },
+  { src: "/associations/GTEC.webp", alt: "GTEC - Georgia Tank Environmental Contractors Association", name: "Georgia Tank Environmental Contractors Association" },
+  { src: "/associations/PEI.webp", alt: "PEI - Petroleum Equipment Institute", name: "Petroleum Equipment Institute" },
+  { src: "/associations/TFFA.webp", alt: "TFFA - Texas Food & Fuel Association", name: "Texas Food & Fuel Association" },
 ];
 
 const MembershipLogosCarousel: React.FC = () => {
