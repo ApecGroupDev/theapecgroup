@@ -32,28 +32,30 @@ export function middleware(request: NextRequest) {
         <title>Page Gone</title>
         <style>
           body {
-            font-family: Arial, sans-serif;
-            background: #f8f9fa;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-          }
+              font-family: 'Metropolis', sans-serif;
+              background: #f8f9fa;
+              color: #333;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              height: 100vh;
+              margin: 0;
+              text-align: center;
+            }
           h1 {
-            font-size: 4rem;
+            font-size: 5rem;
             margin-bottom: 1rem;
             color: #c62931;
           }
           p {
-            font-size: 1.50rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
             padding: 4px;
           }
           a {
             display: inline-block;
+            font-size: 1.50rem;
             padding: 0.75rem 1.5rem;
             background: #c62931;
             color: white;
