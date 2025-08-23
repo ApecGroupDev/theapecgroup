@@ -103,11 +103,6 @@ const MainServices: React.FC = () => {
               scrn-1700:h-72 
               scrn-1900:h-72'
               >
-                {/* <img
-                  src={feature.imageSrc}
-                  alt={feature.title}
-                  className='scrn-400:w-2/3 object-contain'
-                /> */}
                 <Image
                   src={feature.imageSrc}
                   alt={feature.title}
@@ -129,7 +124,7 @@ const MainServices: React.FC = () => {
 
         {/* ✅ Larger External Box with Centered Logo */}
         <a
-          href="https://metalproducts.vercel.app/" // Replace with actual URL
+          href="https://www.metalproductsusa.com/"
           target="_blank"
           rel="noopener noreferrer"
           className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
