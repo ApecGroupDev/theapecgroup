@@ -15,25 +15,25 @@ const features: Services[] = [
   {
     title: "APEC IMAGING AND CANOPIES",
     description: "Gas Station Canopy Panels Installation",
-    imageSrc: "/servicesLogos/Apec-Imaging.png",
+    imageSrc: "/servicesLogos/Apec-Imaging.webp",
     slug: "canopy-imaging-solutions",
   },
   {
     title: "APEC COMPLIANCE",
     description: "Gas Station Inspection and Compliance Services",
-    imageSrc: "/servicesLogos/Apec-Compliance.png",
+    imageSrc: "/servicesLogos/Apec-Compliance.webp",
     slug: "environmental-compliance-solutions",
   },
   {
     title: "SPEC FINANCES",
     description: "Gas Station Financing and Loans Services",
-    imageSrc: "/servicesLogos/Apec-Financing.png",
+    imageSrc: "/servicesLogos/Apec-Financing.webp",
     slug: "gas-station-financing"
   },
   {
     title: "APEC ELECTRICAL",
     description: "Gas Station Construction Company Services",
-    imageSrc: "/servicesLogos/Apec-Electrical.png",
+    imageSrc: "/servicesLogos/Apec-Electrical.webp",
     slug: "gas-station-electrical",
   },
 ];
@@ -166,7 +166,7 @@ const MainServices: React.FC = () => {
           {/* Logo - centered vertically and horizontally */}
           <div className='flex items-center justify-center h-full'>
             <Image
-              src="/servicesLogos/Logo_MPC_Main.png"
+              src="/servicesLogos/Logo_MPC_Main.webp"
               alt="External Partner"
               width={5830}
               height={1858}
