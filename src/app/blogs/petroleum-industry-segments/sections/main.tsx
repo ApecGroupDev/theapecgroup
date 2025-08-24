@@ -13,7 +13,7 @@ const Main = () => {
         </Link>
       </div>
       <Image
-        src="/blogImages/blog3.jpg"
+        src="/blogImages/blogThumbnails/blog3.webp"
         alt="Blog Image"
         width={1024}
         height={500}
@@ -62,7 +62,7 @@ const Main = () => {
           Regulations within the Petroleum Industry
         </p>
         <Image
-          src="/blogImages/Blog_3_Img_1.webp" // Adjust this path to your public directory image
+          src="/blogImages/Blog_3_Img_1.webp"
           alt="Fuel pump system illustration"
           width={1024}
           height={500}
@@ -135,7 +135,7 @@ const Main = () => {
           Opportunities in the Petroleum Industry
         </p>
         <Image
-          src="/blogImages/Blog_3_Img_2.webp" // Adjust this path to your public directory image
+          src="/blogImages/Blog_3_Img_2.webp"
           alt="Fuel pump system illustration"
           width={1024}
           height={500}
@@ -179,7 +179,7 @@ const Main = () => {
           Trends in the Petroleum Industry
         </p>
         <Image
-          src="/blogImages/Blog_3_Img_3.webp" // Adjust this path to your public directory image
+          src="/blogImages/Blog_3_Img_3.webp"
           alt="Fuel pump system illustration"
           width={1024}
           height={500}
