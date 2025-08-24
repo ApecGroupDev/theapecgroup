@@ -12,13 +12,8 @@ const Main = () => {
           Back to Blogs
         </Link>
       </div>
-      {/* <img
-        src="/blogImages/blog1.png"
-        alt="Blog Image"
-        className='w-full object-center rounded-lg mb-6 scrn-1900:h-172 mt-4'
-      /> */}
       <Image
-        src="/blogImages/blog1.png"
+        src="/blogImages/blogThumbnails/blog1.webp"
         alt="Blog Image"
         width={1024}
         height={484}
@@ -35,7 +30,7 @@ const Main = () => {
 
       <div className='scrn-1000:ps-12 pt-12'>
         {/* INTRO */}
-        <div className='space-y-3'>m
+        <div className='space-y-3'>
           <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line'>
             If you are looking for the best gas station financing companies to run your own gas station in Atlanta.
             Then this is the right place for you. In this article, we listed the top gas station financing companies
@@ -71,7 +66,7 @@ const Main = () => {
           Atlanta Petroleum Equipment Company(APEC)
         </p>
         <Image
-          src="/blogImages/Blog_5_Img_1.webp" // Adjust this path to your public directory image
+          src="/blogImages/Blog_5_Img_1.webp"
           alt="Fuel pump system illustration"
           width={1024}
           height={500}
