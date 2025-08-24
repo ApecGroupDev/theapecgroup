@@ -49,65 +49,19 @@ const MainServices: React.FC = () => {
       </div>
 
       {/* Feature Boxes */}
-      <div className='flex justify-center flex-wrap mx-auto 
-      scrn-600:max-w-128 
-      scrn-700:max-w-416 
-      mt-2 
-      scrn-700:mt-8 
-      scrn-1000:mt-12 
-      scrn-1200:mt-14 
-      scrn-1650:mt-24 
-      scrn-2400:mt-32 
-      gap-4 
-      scrn-350:gap-6 
-      scrn-800:gap-8 
-      scrn-1100:gap-10 
-      scrn-1400:gap-12 
-      scrn-1700:gap-10 
-      scrn-1900:gap-12'>
+      <div className='flex justify-center flex-wrap mx-auto scrn-600:max-w-128 scrn-700:max-w-416 mt-2 scrn-700:mt-8 scrn-1000:mt-12 scrn-1200:mt-14 scrn-1650:mt-24 scrn-2400:mt-32 gap-4 scrn-350:gap-6 scrn-800:gap-8 scrn-1100:gap-10 scrn-1400:gap-12 scrn-1700:gap-10 scrn-1900:gap-12'>
         {features.map((feature, index) => (
           <Link key={index} href={`/services/${feature.slug}`} passHref>
             <div
               key={index}
-              className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
-              w-32 
-              scrn-400:w-44 
-              scrn-500:w-52
-              scrn-700:w-64
-              scrn-750:w-72
-               scrn-800:w-72
-               scrn-900:w-80 
-               scrn-1000:w-96 
-               scrn-1100:w-116 
-               scrn-1200:w-64 
-               scrn-1350:w-72
-               scrn-1500:w-80
-               scrn-1700:w-96
-               scrn-1900:w-110'
-            >
+              className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-32 scrn-400:w-44 scrn-500:w-52 scrn-700:w-64 scrn-750:w-72 scrn-900:w-80 scrn-1000:w-96 scrn-1100:w-116 scrn-1200:w-64 scrn-1350:w-72 scrn-1500:w-80 scrn-1700:w-96 scrn-1900:w-110'>
               {/* Image Display */}
-              <div className='flex flex-col items-center justify-center 
-              h-16 
-              scrn-400:h-20 
-              scrn-450:h-24 
-              scrn-500:h-28 
-              scrn-600:h-32 
-              scrn-700:h-28
-              scrn-800:h-28
-              scrn-900:h-32 
-              scrn-1000:h-32 
-              scrn-1100:h-40 
-              scrn-1200:h-48 
-              scrn-1400:h-52
-              scrn-1500:h-60  
-              scrn-1700:h-72 
-              scrn-1900:h-72'
-              >
+              <div className='flex flex-col items-center justify-center h-16 scrn-400:h-20 scrn-450:h-24 scrn-500:h-28 scrn-600:h-32 scrn-700:h-28 scrn-900:h-32 scrn-1100:h-40 scrn-1200:h-48 scrn-1400:h-52 scrn-1500:h-60 scrn-1700:h-72'>
                 <Image
                   src={feature.imageSrc}
                   alt={feature.title}
-                  width={400} // Replace with actual width
-                  height={200} // Replace with actual height
+                  width={400}
+                  height={200}
                   className="scrn-400:w-2/3 object-contain"
                 />
               </div>
@@ -127,37 +81,7 @@ const MainServices: React.FC = () => {
           href="https://www.metalproductsusa.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 
-          w-60
-          scrn-400:w-72
-          scrn-500:w-72
-          scrn-600:w-80
-          scrn-700:w-96
-          scrn-800:w-96
-          scrn-900:w-120 
-          scrn-1000:w-124
-          scrn-1100:w-132
-          scrn-1200:w-160
-          scrn-1400:w-180
-          scrn-1500:w-198
-          scrn-1700:w-208
-          scrn-1900:w-160
-          h-36
-          scrn-400:h-36
-          scrn-450:h-40
-          scrn-500:h-48
-          scrn-600:h-44 
-          scrn-800:h-48
-          scrn-950:h-52
-          scrn-1000:h-80
-          scrn-1100:h-72
-          scrn-1150:h-80
-          scrn-1200:h-96
-          scrn-1400:h-118
-          scrn-1500:h-124
-          scrn-1900:h-136
-          flex-shrink-0'
-        >
+          className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-60 scrn-400:w-72 scrn-600:w-80 scrn-700:w-96 scrn-900:w-120 scrn-1000:w-124 scrn-1100:w-132 scrn-1200:w-160 scrn-1400:w-180 scrn-1500:w-198 scrn-1700:w-208 scrn-1900:w-160 h-36 scrn-400:h-36 scrn-450:h-40 scrn-500:h-48 scrn-600:h-44 scrn-800:h-48 scrn-950:h-52 scrn-1000:h-80 scrn-1100:h-72 scrn-1150:h-80 scrn-1200:h-96 scrn-1400:h-118 scrn-1500:h-124 scrn-1900:h-136 flex-shrink-0'>
           {/* Logo - centered vertically and horizontally */}
           <div className='flex items-center justify-center h-full'>
             <Image
