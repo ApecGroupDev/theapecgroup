@@ -13,7 +13,7 @@ const Main = () => {
         </Link>
       </div>
       <Image
-        src="/blogImages/blog7.jpg"
+        src="/blogImages/blogThumbnails/blog7.webp"
         alt="Blog Image"
         width={1024}
         height={500}
