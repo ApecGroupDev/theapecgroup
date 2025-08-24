@@ -13,7 +13,7 @@ const Main = () => {
         </Link>
       </div>
       <Image
-        src="/blogImages/blog2.jpg"
+        src="/blogImages/blogThumbnails/blog2.webp"
         alt="Blog Image"
         width={1024}
         height={500}
@@ -127,7 +127,7 @@ const Main = () => {
           </p>
 
           <Image
-            src="/blogImages/Blog_2_Img_2.png" // Adjust this path to your public directory image
+            src="/blogImages/Blog_2_Img_2.png"
             alt="Fuel pump system illustration"
             width={1024}
             height={500}
@@ -183,7 +183,7 @@ const Main = () => {
           </p>
 
           <Image
-            src="/blogImages/Blog_2_Img_3.png" // Adjust this path to your public directory image
+            src="/blogImages/Blog_2_Img_3.png"
             alt="Fuel pump system illustration"
             width={1024}
             height={500}
