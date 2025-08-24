@@ -127,7 +127,7 @@ const Main = () => {
           </p>
 
           <Image
-            src="/blogImages/Blog_2_Img_2.png"
+            src="/blogImages/Blog_2_Img_2.webp"
             alt="Fuel pump system illustration"
             width={1024}
             height={500}
@@ -183,7 +183,7 @@ const Main = () => {
           </p>
 
           <Image
-            src="/blogImages/Blog_2_Img_3.png"
+            src="/blogImages/Blog_2_Img_3.webp"
             alt="Fuel pump system illustration"
             width={1024}
             height={500}
