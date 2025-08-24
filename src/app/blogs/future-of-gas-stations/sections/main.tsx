@@ -7,7 +7,7 @@ const Main = () => {
       <div className='mt-28 scrn-600:mt-32 scrn-1000:mt-24 scrn-1300:mt-28 scrn-1600:mt-32 scrn-1900:mt-40 items-end flex underline'>
         <Link
           href="/blogs"
-          className="ms-auto scrn-750:text-lg scrn-1400:text-xl text-red-700 hover:text-red-500 hover:scale-150"
+          className="ms-auto scrn-750:text-lg scrn-1400:text-xl text-red-700 hover:text-red-500 hover:scale-105"
         >
           Back to Blogs
         </Link>
