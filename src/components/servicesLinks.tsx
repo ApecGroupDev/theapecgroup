@@ -29,7 +29,7 @@ const features: Services[] = [
     title: "METAL PRODUCTS COMPANY",
     description: "Gas Station Fuel Tanks Manufacturing",
     imageSrc: "/servicesLogos/Logo_MPC_Main_Only.webp",
-    slug: "metalproducts.vercel.app",
+    slug: "metalproductsusa.com",
   },
   {
     title: "APEC FINANCES",
@@ -72,7 +72,7 @@ const ServicesBoxLinks: React.FC = () => {
       {/* Feature Boxes */}
       <div className='flex flex-row mt-auto scrn-1000:pb-0 gap-4 scrn-1000:gap-6 scrn-1400:gap-8 scrn-2000:gap-12'>
         {filteredFeatures.map((feature, index) => {
-          const isExternal = feature.slug === "metalproducts.vercel.app";
+          const isExternal = feature.slug === "metalproductsusa.com";
           const href = isExternal ? `https://${feature.slug}` : `/services/${feature.slug}`;
 
           return (
