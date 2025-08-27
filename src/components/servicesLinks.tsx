@@ -16,37 +16,37 @@ const features: Services[] = [
   {
     title: "APEC CONSTRUCTION",
     description: "Gas Station Construction Company Services",
-    imageSrc: "/servicesLogos/Apec-Constructions.png",
+    imageSrc: "/servicesLogos/Apec-Constructions.webp",
     slug: "gas-station-construction",
   },
   {
     title: "APEC IMAGING AND CANOPIES",
     description: "Gas Station Canopy Panels Installation",
-    imageSrc: "/servicesLogos/Apec-Imaging.png",
+    imageSrc: "/servicesLogos/Apec-Imaging.webp",
     slug: "canopy-imaging-solutions",
   },
   {
     title: "METAL PRODUCTS COMPANY",
     description: "Gas Station Fuel Tanks Manufacturing",
-    imageSrc: "/servicesLogos/Logo_MPC_Main_Only.png",
+    imageSrc: "/servicesLogos/Logo_MPC_Main_Only.webp",
     slug: "metalproducts.vercel.app",
   },
   {
     title: "APEC FINANCES",
     description: "Gas Station Financing and Loans Services",
-    imageSrc: "/servicesLogos/Apec-Financing.png",
+    imageSrc: "/servicesLogos/Apec-Financing.webp",
     slug: "gas-station-financing"
   },
   {
     title: "APEC ELECTRICAL",
     description: "Electrical Solutions for Gas Stations",
-    imageSrc: "/servicesLogos/Apec-Electrical.png",
+    imageSrc: "/servicesLogos/Apec-Electrical.webp",
     slug: "gas-station-electrical",
   },
   {
     title: "APEC COMPLIANCE",
     description: "Gas Station Inspection and Compliance Services",
-    imageSrc: "/servicesLogos/Apec-Compliance.png",
+    imageSrc: "/servicesLogos/Apec-Compliance.webp",
     slug: "environmental-compliance-solutions",
   },
 ];
