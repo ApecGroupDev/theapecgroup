@@ -5,7 +5,7 @@ import CareersForm from '@/components/careersForm';
 
 const CareersMain: React.FC = () => {
   return (
-    <div className='flex flex-col items-center scrn-600:justify-center gap-y-4 h-auto mb-12 scrn-800:mx-8 scrn-1350:mx-0 py-4 scrn-1750:py-24 scrn-2000:py-32 scrn-2100:py-44 scrn-2400:py-60'>
+    <div className='flex flex-col items-center scrn-600:justify-center gap-y-4 h-auto mb-12 scrn-800:mx-8 py-4 scrn-1750:py-24 scrn-2000:py-32 scrn-2100:py-44 scrn-2400:py-60'>
 
       {/* First Row */}
       {/* <div className='flex flex-col-reverse scrn-800:flex-row w-full max-w-[1200px] gap-4 px-4'>
@@ -64,8 +64,12 @@ const CareersMain: React.FC = () => {
         </div>
       </div> */}
 
-      <div className="w-full mx-auto scrn-1900:max-w-7xl py-12">
-        <div className="grid grid-cols-1 scrn-1000:grid-cols-3 gap-6 rounded-xl shadow-lg overflow-hidden">
+      <div className="w-full mx-auto scrn-1500:max-w-8xl">
+        <div className="grid grid-cols-2 scrn-1000:grid-cols-3 gap-6 rounded-xl shadow-lg overflow-hidden
+        mt-16
+        scrn-450:mt-24
+        scrn-800:mt-40
+        ">
 
           {/* Column 1 - Office */}
           <div className="p-6 flex flex-col justify-center">
@@ -93,11 +97,11 @@ const CareersMain: React.FC = () => {
           </div>
 
           {/* Column 3 - Jobs Open */}
-          <div className="relative rounded-xl overflow-hidden">
+          <div className="relative rounded-xl overflow-hidden w-full col-span-2 scrn-1000:col-span-1">
             <div className="absolute inset-0"></div>
-            <div className="relative p-6 flex flex-col justify-center h-full">
+            <div className="relative p-6 flex flex-col items-center scrn-1000:items-start justify-center h-full">
               <h2 className="text-xl font-semibold mb-4 text-[#c62931]">Current Openings</h2>
-              <ul className="list-disc list-inside space-y-2 text-sm">
+              <ul className="list-disc list-inside space-y-2 text-sm text-center scrn-1000:text-left">
                 <li>Environmental Compliance Technician / Trainee</li>
                 <li>Field Service Technician / Trainee</li>
                 <li>Construction Assistant</li>
@@ -111,7 +115,7 @@ const CareersMain: React.FC = () => {
       <hr className='border-2 border-red-600 mx-auto w-4/5'/>
         <hr className='border-2 border-gray-500 mt-1 mx-auto w-3/5'/>
 
-      <div className='relative rounded-3xl shadow-2xl mt-6 scrn-400:mt-6 scrn-450:mt-6 scrn-500:mt-8 scrn-550:mt-8 scrn-750:mt-0 mx-4 scrn-1900:max-w-7xl'>
+      <div className='relative rounded-3xl shadow-2xl mt-6 scrn-400:mt-6 scrn-450:mt-6 scrn-500:mt-8 scrn-550:mt-8 scrn-750:mt-0 mx-4 scrn-1900:max-w-7xl scrn-1450:py-8 scrn-2300:py-16'>
         <div className='absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0'></div>
         <div className='relative z-10 p-4 scrn-800:p-8 scrn-900:p-10 scrn-1000:p-12 scrn-1250:p-16 scrn-1500:p-24'>
           <span className='font-medium scrn-300:text-base scrn-500:text-xl scrn-600:text-xl scrn-750:text-lg scrn-800:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2000:text-4xl'>
