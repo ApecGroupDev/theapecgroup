@@ -5,9 +5,7 @@ import { Analytics } from '@vercel/analytics/next';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Petroleum Products Company | The APEC Group',
-  description: 'The APEC Group is a petroleum products company offering fuels, lubricants, gas station construction, financing, compliance, and equipment services.',
-  robots: 'index,follow',
+  metadataBase: new URL('https://www.theapecgroup.com'),
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -15,10 +13,6 @@ export const metadata: Metadata = {
       { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
     ],
     apple: '/apple-touch-icon.png',
-  },
-  metadataBase: new URL('https://www.theapecgroup.com'),
-  alternates: {
-    canonical: '/',
   },
 };
 
