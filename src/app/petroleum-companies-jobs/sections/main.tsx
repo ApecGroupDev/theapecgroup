@@ -35,7 +35,6 @@ const CareersMain: React.FC = () => {
         </div>
       </div> */}
 
-
       {/* Second Row */}
       {/* <div className='flex flex-col scrn-800:flex-row w-full max-w-[1200px] gap-4 px-4'>
         <div className='scrn-800:w-1/3 bg-red-600 rounded-xl text-white shadow-md p-6 flex flex-col justify-center'>
@@ -65,12 +64,7 @@ const CareersMain: React.FC = () => {
       </div> */}
 
       <div className="w-full mx-auto scrn-1500:max-w-8xl">
-        <div className="grid grid-cols-2 scrn-1000:grid-cols-3 gap-6 rounded-xl shadow-lg overflow-hidden
-        mt-16
-        scrn-450:mt-24
-        scrn-800:mt-40
-        ">
-
+        <div className="grid grid-cols-2 bg-zinc-300 scrn-1000:grid-cols-3 gap-6 rounded-xl shadow-lg overflow-hidden mt-16 scrn-450:mt-24 scrn-800:mt-40">
           {/* Column 1 - Office */}
           <div className="p-6 flex flex-col justify-center">
             <h2 className="text-xl font-semibold mb-2 text-[#c62931]">Main Office</h2>
@@ -105,7 +99,6 @@ const CareersMain: React.FC = () => {
                 <li>Environmental Compliance Technician / Trainee</li>
                 <li>Field Service Technician / Trainee</li>
                 <li>Construction Assistant</li>
-                <li>Sales Person</li>
               </ul>
             </div>
           </div>
