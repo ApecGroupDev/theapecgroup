@@ -71,7 +71,6 @@ export function middleware(request: NextRequest) {
       <body>
         <h1>410 Gone</h1>
         <p>Sorry, this page is permanently removed.</p>
-        <a href="/">Go back to Home</a>
       </body>
       </html>
     `
