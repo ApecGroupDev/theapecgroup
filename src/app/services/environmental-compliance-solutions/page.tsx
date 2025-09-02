@@ -6,6 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Environmental Compliance Solutions | APEC",
   description: "APEC provides environmental compliance solutions for fuel stations, offering testing, training, and eco-friendly petroleum site services.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/environmental-compliance-solutions',
   },

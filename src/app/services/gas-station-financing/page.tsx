@@ -6,6 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Gas Station Financing Experts | APEC",
   description: "APEC offers gas station financing with flexible funding options for construction, equipment, and improvements. Power your energy project today.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/gas-station-financing',
   },

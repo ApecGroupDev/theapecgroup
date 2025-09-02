@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How Gasoline Pumps Work: Full Guide Explained",
   description: "Learn how gasoline pumps work, from tank to nozzle. Understand their parts, types, and how they power everyday fuel stations.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },

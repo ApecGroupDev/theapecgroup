@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Gas Station Inspection Checklist: Full Safety Guide",
   description: "Stay compliant and safe with this gas station inspection checklist. Covers fuel systems, fire safety, signage, spills, and more.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },

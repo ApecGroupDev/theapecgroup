@@ -6,6 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact The APEC Group | Petroleum Services",
   description: "Reach out to The APEC Group for expert petroleum services and solutions. Connect with our team for inquiries and support.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/contact-us',
   },

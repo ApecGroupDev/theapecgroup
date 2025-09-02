@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Petroleum Equipment Innovations Changing the Game",
   description: "Explore petroleum equipment innovations like IoT, AI, and eco-tech reshaping safety, efficiency, and sustainability in the industry.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },

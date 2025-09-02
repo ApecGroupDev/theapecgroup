@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Petroleum Industry Segments Explained Clearly",
   description: "Explore the main petroleum industry segments—upstream, midstream, and downstream—and how they work together to fuel the economy.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },

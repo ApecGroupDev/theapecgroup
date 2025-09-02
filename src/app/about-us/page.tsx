@@ -8,6 +8,7 @@ import VisionSection from "./sections/vision";
 export const metadata: Metadata = {
   title: "About The APEC Group | Petroleum Services",
   description: "Discover The APEC Group’s legacy in petroleum services since 1989. Explore our innovative energy solutions and commitment to excellence.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/about-us',
   },

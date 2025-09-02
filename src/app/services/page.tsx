@@ -6,6 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Petroleum Equipment Services & Repairs | The APEC Group",
   description: "APEC provides petroleum equipment services, construction, tank repair, and environmental compliance for fuel stations. Reliable energy partner.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/services',
   },

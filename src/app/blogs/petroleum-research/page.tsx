@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Petroleum Research: Key Focus Areas & Innovation",
   description: "See how petroleum research is shaping safer, cleaner energy. From extraction to renewables, discover what top institutes are studying.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs/petroleum-research',
   },

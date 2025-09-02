@@ -7,6 +7,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Petroleum Companies Jobs | APEC Careers",
   description: "Petroleum companies jobs at APEC offer careers in fuel systems, construction, compliance, and energy services. Join a trusted industry leader.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/petroleum-companies-jobs',
   },

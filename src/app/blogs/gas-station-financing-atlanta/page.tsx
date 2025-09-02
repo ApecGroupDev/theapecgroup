@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Top Gas Station Financing Options in Atlanta",
   description: "Looking to build a gas station? Find the best gas station financing companies in Atlanta offering expert advice, equipment, and support.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },

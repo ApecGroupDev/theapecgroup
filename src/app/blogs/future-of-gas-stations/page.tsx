@@ -5,6 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Future of Gas Stations: Tech & Trends to Watch",
   description: "Discover how the future of gas stations is evolving with smart tech, eco-fuels, and better convenience. See what's next in fuel station innovation.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },
