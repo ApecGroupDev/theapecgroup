@@ -3,21 +3,26 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 const goneUrls = [
-  '/blog',
-  '/underground-tanks',
-  '/services/construction',
-  '/services/imaging-and-canopies',
   '/above-ground-tank',
-  '/resources',
-  '/gas-station-financing',
-  '/home',
-  '/gas-station-pump-advertising',
-  '/gas-station-electrical',
+  '/blog',
   '/canopy-imaging-solutions',
+  '/careers',
   '/environmental-compliance-solutions',
   '/gas-station-construction',
-  '/careers',
-]
+  '/gas-station-electrical',
+  '/gas-station-financing',
+  '/gas-station-pump-advertising',
+  '/home',
+  '/resources',
+  '/services/compliance',
+  '/services/construction',
+  '/services/financing',
+  '/services/gas-station-pump-advertising',
+  '/services/imaging-and-canopies',
+  '/services/link',
+  '/services/renovation',
+  '/underground-tanks',
+];
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
@@ -87,19 +92,24 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/blog',
-    '/underground-tanks',
-    '/services/construction',
-    '/services/imaging-and-canopies',
     '/above-ground-tank',
-    '/resources',
-    '/gas-station-financing',
-    '/home',
-    '/gas-station-pump-advertising',
-    '/gas-station-electrical',
+    '/blog',
     '/canopy-imaging-solutions',
+    '/careers',
     '/environmental-compliance-solutions',
     '/gas-station-construction',
-    '/careers',
+    '/gas-station-electrical',
+    '/gas-station-financing',
+    '/gas-station-pump-advertising',
+    '/home',
+    '/resources',
+    '/services/compliance',
+    '/services/construction',
+    '/services/financing',
+    '/services/gas-station-pump-advertising',
+    '/services/imaging-and-canopies',
+    '/services/link',
+    '/services/renovation',
+    '/underground-tanks',
   ],
 }
