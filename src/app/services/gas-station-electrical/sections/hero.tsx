@@ -65,11 +65,13 @@ const Hero: React.FC = () => {
         </nav>
 
         <div>
-          <span
-            className='font-semibold whitespace-nowrap text-[#c62931] text-3xl scrn-400:text-4xl scrn-450:text-5xl scrn-600:text-6xl scrn-750:text-6xl scrn-800:text-7xl scrn-900:text-7xl scrn-1000:text-8xl scrn-1200:text-9xl scrn-1500:text-9xl scrn-1600:text-10xl scrn-1900:text-10xl scrn-2500:text-13xl'>
-            APEC <br />
-            ELECTRICAL
-          </span>
+          <h1>
+            <span
+              className='font-semibold whitespace-nowrap text-[#c62931] text-3xl scrn-400:text-4xl scrn-450:text-5xl scrn-600:text-6xl scrn-750:text-6xl scrn-800:text-7xl scrn-900:text-7xl scrn-1000:text-8xl scrn-1200:text-9xl scrn-1500:text-9xl scrn-1600:text-10xl scrn-1900:text-10xl scrn-2500:text-13xl'>
+              APEC <br />
+              ELECTRICAL
+            </span>
+          </h1>
         </div>
       </div>
     </div>
