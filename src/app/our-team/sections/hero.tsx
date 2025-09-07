@@ -63,12 +63,14 @@ const Hero: React.FC = () => {
 
           {/* Headline */}
           <div className='scrn-1250:space-x-4 scrn-1500:space-x-0'>
-            <span className='italic text-white text-5xl scrn-600:text-7xl scrn-750:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1250:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-10xl scrn-2200:text-11xl scrn-2400:text-12xl'>
-              OUR
-            </span>
-            <span className='scale-y-110 text-[#c62931] p-0 m-0 font-semibold whitespace-nowrap text-6xl scrn-450:text-7xl scrn-500:text-8xl scrn-600:text-8xl scrn-750:text-9xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-10xl scrn-1250:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2200:text-16xl scrn-2400:text-18xl'>
-              TEAM
-            </span>
+            <h1>
+              <span className='italic text-white text-5xl scrn-600:text-7xl scrn-750:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1250:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-10xl scrn-2200:text-11xl scrn-2400:text-12xl'>
+                OUR
+              </span>
+              <span className='scale-y-110 text-[#c62931] p-0 m-0 font-semibold whitespace-nowrap text-6xl scrn-450:text-7xl scrn-500:text-8xl scrn-600:text-8xl scrn-750:text-9xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-10xl scrn-1250:text-11xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2200:text-16xl scrn-2400:text-18xl'>
+                TEAM
+              </span>
+            </h1>
           </div>
         </div>
       </div>
