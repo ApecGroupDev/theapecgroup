@@ -61,11 +61,13 @@ const Hero: React.FC = () => {
 
         <div>
           <div className='scrn-750:space-y-0 scrn-800:-space-y-4 scrn-900:-space-y-6 scrn-1000:-space-y-4 scrn-1250:-space-y-6 scrn-1500:-space-y-8 scrn-1700:-space-y-8 scrn-1900:-space-y-12'>
-            <h1 className='scale-y-110 text-[#c62931] p-0 m-0 font-semibold whitespace-nowrap text-7xl scrn-500:text-8xl scrn-750:text-8xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-9xl scrn-1250:text-10xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2550:text-18xl'>
-              ABOUT
-            </h1>
-            <h1 className='text-white font-regular italic whitespace-nowrap text-5xl scrn-500:text-7xl scrn-750:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1250:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-2550:text-13xl'>
-              US
+            <h1>
+              <span className='scale-y-110 text-[#c62931] p-0 m-0 font-semibold whitespace-nowrap text-7xl scrn-500:text-8xl scrn-750:text-8xl scrn-800:text-9xl scrn-900:text-9xl scrn-1000:text-9xl scrn-1250:text-10xl scrn-1500:text-12xl scrn-1700:text-13xl scrn-1900:text-14xl scrn-2550:text-18xl'>
+                ABOUT
+              </span>
+              <span className='text-white font-regular italic whitespace-nowrap text-5xl scrn-500:text-7xl scrn-750:text-7xl scrn-800:text-7xl scrn-900:text-8xl scrn-1000:text-8xl scrn-1250:text-9xl scrn-1500:text-10xl scrn-1700:text-10xl scrn-1900:text-11xl scrn-2550:text-13xl'>
+                US
+              </span>
             </h1>
           </div>
         </div>
