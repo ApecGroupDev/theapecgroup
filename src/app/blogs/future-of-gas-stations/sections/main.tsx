@@ -22,8 +22,10 @@ const Main = () => {
 
       {/* Title + Subtitle inline */}
       <div className='text-3xl scrn-1000:text-5xl scrn-1900:text-7xl font-bold mb-4'>
-        <h1 className='text-[#c62931]'>The Future of Gas Stations: </h1>
-        <h1 className='text-black font-semibold'>Innovations Shaping the Petroleum Industry</h1>
+        <h1>
+          <span className='text-[#c62931]'>The Future of Gas Stations: </span>
+          <span className='text-black font-semibold'>Innovations Shaping the Petroleum Industry</span>
+        </h1>
       </div>
 
       <hr className='border-[#c62931] border-2 w-20 my-2' />
