@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "APEC offers gas station financing with flexible funding options for construction, equipment, and improvements. Power your energy project today.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.theapecgroup.com/gas-station-financing',
+    canonical: 'https://www.theapecgroup.com/services/gas-station-financing',
   },
 };
 
