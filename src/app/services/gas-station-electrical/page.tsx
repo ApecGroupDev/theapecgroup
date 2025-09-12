@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Build reliable gas stations with APEC's expert construction services. Visit theapecgroup.com/services/construction for quality energy infrastructure solutions.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.theapecgroup.com/gas-station-electrical',
+    canonical: 'https://www.theapecgroup.com/services/gas-station-electrical',
   },
 };
 
