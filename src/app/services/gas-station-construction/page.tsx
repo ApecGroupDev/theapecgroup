@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Gas station construction services by APEC. We build durable, compliant fuel stations with full design, installation, and project management support.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.theapecgroup.com/gas-station-construction',
+    canonical: 'https://www.theapecgroup.com/services/gas-station-construction',
   },
 };
 
