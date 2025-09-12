@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Canopy imaging solutions from APEC deliver custom visual designs and installations that transform gas station branding and customer appeal.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.theapecgroup.com/canopy-imaging-solutions',
+    canonical: 'https://www.theapecgroup.com/services/canopy-imaging-solutions',
   },
 };
 
