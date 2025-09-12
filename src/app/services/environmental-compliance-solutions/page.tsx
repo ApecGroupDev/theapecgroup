@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "APEC provides environmental compliance solutions for fuel stations, offering testing, training, and eco-friendly petroleum site services.",
   robots: 'index,follow',
   alternates: {
-    canonical: 'https://www.theapecgroup.com/environmental-compliance-solutions',
+    canonical: 'https://www.theapecgroup.com/services/environmental-compliance-solutions',
   },
 };
 
