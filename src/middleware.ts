@@ -22,6 +22,7 @@ const goneUrls = [
   '/services/link',
   '/services/renovation',
   '/underground-tanks',
+  '/contact',
 ];
 
 export function middleware(request: NextRequest) {
@@ -38,7 +39,7 @@ export function middleware(request: NextRequest) {
         <style>
           body {
               font-family: 'Metropolis', sans-serif;
-              background: #f8f9fa;
+              background: #D1D5DB;
               color: #333;
               display: flex;
               flex-direction: column;
@@ -111,5 +112,6 @@ export const config = {
     '/services/link',
     '/services/renovation',
     '/underground-tanks',
+    '/contact',
   ],
 }
