@@ -16,7 +16,7 @@ const items: AccordionItem[] = [
 
 const MainImaging: React.FC = () => {
   return (
-    <div className='outline outline-gray-600bg-transparent flex flex-col items-center scrn-600:justify-center h-auto'>
+    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto'>
       <div className="max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl">
         <div className="mt-8">
           <span className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
