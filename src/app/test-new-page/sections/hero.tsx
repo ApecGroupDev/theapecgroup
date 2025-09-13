@@ -57,10 +57,10 @@ const Hero: React.FC = () => {
       >
         <div className="">
           {/* Top div */}
-          <div className='pt-40'>
+          <div className='mb-8 mt-12 ps-2'>
             <h1>
               <span
-                className='font-semibold whitespace-nowrap text-[#c62931] text-3xl scrn-400:text-4xl scrn-450:text-5xl scrn-600:text-6xl scrn-750:text-6xl scrn-800:text-7xl scrn-900:text-7xl scrn-1000:text-8xl scrn-1200:text-9xl scrn-1500:text-9xl scrn-1600:text-10xl scrn-1900:text-10xl scrn-2500:text-13xl'>
+                className='font-semibold whitespace-nowrap text-[#c62931] text-5xl scrn-400:text-6xl scrn-600:text-7xl scrn-750:text-8xl scrn-1200:text-9xl scrn-1500:text-9xl scrn-1600:text-10xl scrn-1900:text-10xl scrn-2500:text-13xl'>
                 IMAGING & <br />
                 CANOPIES
               </span>
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Bottom div */}
-          <div className='pb-12'>
+          <div>
             <h1 className='bg-red-600/65 p-2 scrn-600:w-2/3'>
               <span
                 className='font-semibold whitespace-normal text-gray-200 text-3xl scrn-750:text-4xl scrn-1000:text-5xl scrn-1500:text-6xl'>
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
               </span>
             </h1>
             <div className='bg-white/65 p-2 scrn-600:w-2/3'>
-              <h1 className='text-xl scrn-750:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl'>
+              <h1 className='text-2xl scrn-750:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl'>
                 <span>
                   30+ years helping fuel retailers across Georgia, Texas, and
                   Atlanta create standout stations with custom canopy designs and installations.
