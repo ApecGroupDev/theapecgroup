@@ -118,19 +118,19 @@ const HeaderWhite: React.FC = () => {
         {/* CTA (Right) */}
 
         <div className="absolute right-4 top-10 scrn-650:top-11 -translate-y-1/2 flex gap-2">
-          <button
-            type="button"
+          <a
+            href="tel:855-444-2732"
             className="hidden scrn-650:flex items-center gap-2 bg-[#c62931] text-white p-4 rounded-md hover:bg-red-500 transition"
           >
             <FaPhoneAlt className="text-lg" />
             FREE CONSULTATION
-          </button>
-          <button
-            type="button"
+          </a>
+          <a
+            href="tel:855-444-2732"
             className="scrn-650:hidden items-center gap-2 bg-[#c62931] text-white py-4 px-8  rounded-md hover:bg-red-500 transition"
           >
             <FaPhoneAlt className="text-lg" />
-          </button>
+          </a>
         </div>
 
         {/* Centered Logo */}
