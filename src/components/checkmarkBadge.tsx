@@ -10,7 +10,8 @@ const CheckmarkBadge = ({ text = "", size = 30, fontSize = 18, bgColor = "#c6293
         height: `${size}px`,
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        flexShrink: 0
       }}>
         <FaCheck style={{ color: textColor, fontSize: `${fontSize}px` }} />
       </div>
