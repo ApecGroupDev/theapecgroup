@@ -3,8 +3,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { FiSearch, FiX } from "react-icons/fi";
+import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
+
 
 const HeaderWhite: React.FC = () => {
   const pathname = usePathname();
@@ -35,13 +36,6 @@ const HeaderWhite: React.FC = () => {
       return !prev;
     });
   };
-
-  // const toggleSearch = () => {
-  //   setSearchOpen((prev) => {
-  //     if (!prev) setIsOpen(false); // Close menu if opening search
-  //     return !prev;
-  //   });
-  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,49 +88,10 @@ const HeaderWhite: React.FC = () => {
         }`}
     >
       {/* Mobile Header */}
-      <div className='scrn-1000:hidden container min-w-full relative flex items-center py-4'>
-        {/* Search Icon (Left) */}
-        {/* <button
-          className='absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
-          onClick={toggleSearch}
-          aria-label="Toggle Search"
-        >
-          {searchOpen ? (
-            <FiX className='text-2xl' />
-          ) : (
-            <FiSearch className='text-2xl' />
-          )}
-        </button> */}
-        {/* Search Input */}
-        {/* <div
-          className={`hidden absolute top-16 left-0 w-3/4 p-2 m-2 bg-white shadow-md rounded-lg z-10 overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
-            }`}
-        >
-          <input
-            type="text"
-            placeholder="Search APEC"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className='w-full p-2 border rounded-md focus:outline-none'
-          />
-        </div> */}
-
-        {/* Centered Logo */}
-        <div className='absolute pt-12 scrn-600:pt-14 inset-0 flex justify-center items-center'>
-          <Link href="/">
-            <Image
-              src="/logos/APEC.webp"
-              alt="Logo"
-              width={116}
-              height={106}
-              className='h-24 scrn-600:h-28 w-auto'
-            />
-          </Link>
-        </div>
-
-        {/* Menu Button (Right) */}
+      <div className="scrn-1000:hidden container min-w-full relative flex items-center py-4">
+        {/* Menu Button (Left) */}
         <button
-          className='absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
+          className='absolute left-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
           onClick={toggleMenu}
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
         >
@@ -159,6 +114,37 @@ const HeaderWhite: React.FC = () => {
             </svg>
           )}
         </button>
+
+        {/* CTA (Right) */}
+
+        <div className="absolute right-4 top-10 scrn-650:top-11 -translate-y-1/2 flex gap-2">
+          <button
+            type="button"
+            className="hidden scrn-650:flex items-center gap-2 bg-[#c62931] text-white p-4 rounded-md hover:bg-red-500 transition"
+          >
+            <FaPhoneAlt className="text-lg" />
+            FREE CONSULTATION
+          </button>
+          <button
+            type="button"
+            className="scrn-650:hidden items-center gap-2 bg-[#c62931] text-white py-4 px-8  rounded-md hover:bg-red-500 transition"
+          >
+            <FaPhoneAlt className="text-lg" />
+          </button>
+        </div>
+
+        {/* Centered Logo */}
+        <div className='absolute pt-12 scrn-600:pt-14 inset-0 flex justify-center items-center'>
+          <Link href="/">
+            <Image
+              src="/logos/APEC.webp"
+              alt="Logo"
+              width={116}
+              height={106}
+              className='h-24 scrn-600:h-28 w-auto'
+            />
+          </Link>
+        </div>
 
         {/* Mobile Navigation */}
         <nav
@@ -197,7 +183,7 @@ const HeaderWhite: React.FC = () => {
               alt="Logo"
               width={116}
               height={106}
-              className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
+              className='w-auto h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
             />
           </Link>
         </div>
@@ -208,7 +194,7 @@ const HeaderWhite: React.FC = () => {
               alt="Logo"
               width={227}
               height={208}
-              className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
+              className='w-auto h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
             />
           </Link>
         </div>
@@ -312,28 +298,24 @@ const HeaderWhite: React.FC = () => {
           )}
         </nav>
 
-        {/* Right: Search Icon */}
-        {/* <div className='hidden relative justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28'>
-          {showSearch ? (
-            <input
-              ref={searchRef}
-              type="text"
-              placeholder="Search APEC"
-              className='p-2 rounded-full border z-50 border-gray-300 focus:border-[#c62931] focus:outline-none w-48 scrn-750:w-64 transition-all duration-200'
-              autoFocus
-            />
-          ) : (
-            <button
-              onClick={() => setShowSearch(true)}
-              className='p-3 me-2 rounded-full bg-gray-100 hover:bg-[#c62931] hover:text-white transition-all duration-200 text-[#c62931]'
-              aria-label="Search"
-            >
-              <FiSearch className='text-xl' />
-            </button>
-          )}
-        </div> */}
+        {/* Right: CTA */}
+        <div className="flex justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28">
+          <button
+            type="button"
+            className="hidden scrn-1200:flex items-center gap-2 bg-[#c62931] text-white p-4 rounded-md hover:bg-red-500 transition"
+          >
+            <FaPhoneAlt className="text-lg" />
+            FREE CONSULTATION
+          </button>
+          <button
+            type="button"
+            className="flex scrn-1200:hidden items-center gap-2 bg-[#c62931] text-white py-4 px-8  rounded-md hover:bg-red-500 transition"
+          >
+            <FaPhoneAlt className="text-lg" />
+          </button>
+        </div>
       </div>
-    </header>
+    </header >
   );
 };
 
