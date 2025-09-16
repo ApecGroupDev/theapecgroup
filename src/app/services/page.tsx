@@ -1,4 +1,5 @@
 import Hero from "./sections/hero";
+import Header from "@/components/header";
 import MainServices from "./sections/main";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
@@ -15,9 +16,10 @@ export const metadata: Metadata = {
 const Services: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <Header />
       <Hero />
       <MainServices />
-      <Footer />
+      <Footer /> 
     </div>
   );
 };
