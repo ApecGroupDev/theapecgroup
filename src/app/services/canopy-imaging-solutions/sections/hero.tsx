@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       id="hero-section"
       className='
       bg-[url("/backgrounds/services/imaging-and-canopies/Test-Page-Hero.jpg")] bg-cover bg-top bg-no-repeat bg-blend-multiply bg-black/40
-      items-center relative flex pointer-events-none overflow-hidden h-screen'>
+      items-center relative flex overflow-hidden h-screen'>
       <div>
         {/* Top div */}
         <div>
@@ -34,8 +34,15 @@ const Hero: React.FC = () => {
             Atlanta create standout stations with custom canopy designs and installations.
           </h1>
           <button
-            type="submit"
+            type="button"
             className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition'
+            onClick={() => {
+              const section = document.getElementById("ImagingContactForm");
+              if (section) {
+                const y = section.getBoundingClientRect().top + window.scrollY - 322; // adjust 80px as needed
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
           >
             GET QUOTE
           </button>

@@ -64,7 +64,9 @@ const MainImaging: React.FC = () => {
               <span className='font-medium scrn-300:text-base scrn-500:text-xl scrn-750:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1900:text-4xl'>
                 SERVICE REQUEST
               </span>
-              <ImagingContactForm />
+              <div id="ImagingContactForm">
+                <ImagingContactForm />
+              </div>
             </div>
           </div>
         </div>
