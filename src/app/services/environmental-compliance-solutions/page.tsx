@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import Footer from "@/components/footer";
 import MainFinancing from "./sections/main";
 import Hero from "./sections/hero";
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 const ServicesCompliance: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <Header />
       <Hero />
       <MainFinancing />
       <Footer />
