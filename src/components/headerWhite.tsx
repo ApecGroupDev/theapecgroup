@@ -300,19 +300,21 @@ const HeaderWhite: React.FC = () => {
 
         {/* Right: CTA */}
         <div className="flex justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28">
-          <button
-            type="button"
+          <Link
             className="hidden scrn-1200:flex items-center gap-2 bg-[#c62931] text-white p-4 rounded-md hover:bg-red-500 transition"
+            href="/contact-us#MainContactForm"
+            scroll={false}
           >
             <FaPhoneAlt className="text-lg" />
             FREE CONSULTATION
-          </button>
-          <button
-            type="button"
+          </Link>
+          <Link
             className="flex scrn-1200:hidden items-center gap-2 bg-[#c62931] text-white py-4 px-8  rounded-md hover:bg-red-500 transition"
+            href="/contact-us#MainContactForm"
+            scroll={false}
           >
             <FaPhoneAlt className="text-lg" />
-          </button>
+          </Link>
         </div>
       </div>
     </header >

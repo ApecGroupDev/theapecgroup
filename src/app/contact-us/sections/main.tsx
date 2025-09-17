@@ -64,7 +64,9 @@ const MainContact: React.FC = () => {
             <span className='font-medium scrn-300:text-base scrn-500:text-xl scrn-600:text-xl scrn-750:text-lg scrn-800:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2000:text-4xl'>
               FOR MORE INFORMATION
             </span>
-            <ContactPageForm />
+            <div id="MainContactForm">
+              <ContactPageForm />
+            </div>
           </div>
         </div>
       </div>

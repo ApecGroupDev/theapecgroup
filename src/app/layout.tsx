@@ -3,6 +3,7 @@ import ScrollToTopButton from '@/components/scrollToTop';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
 import Script from 'next/script';
+import ScrollToHash from '@/components/ScrollToHash';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.theapecgroup.com'),
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen">
+        <ScrollToHash />
         <div className="max-w-[2560px] mx-auto">{children}</div>
         <ScrollToTopButton />
         {/* ✅ Google Analytics */}
