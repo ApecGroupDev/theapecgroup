@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { FiSearch, FiX } from "react-icons/fi";
+import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
 
 const Header: React.FC = () => {
@@ -13,8 +13,6 @@ const Header: React.FC = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showSearch, setShowSearch] = useState(false);
   const searchRef = useRef<HTMLInputElement | null>(null);
-  // const [searchOpen, setSearchOpen] = useState(false);
-  // const [searchQuery, setSearchQuery] = useState("");
 
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
@@ -30,18 +28,8 @@ const Header: React.FC = () => {
   }, []);
 
   const toggleMenu = () => {
-    setIsOpen((prev) => {
-      // if (!prev) setSearchOpen(false); // Close search if opening menu
-      return !prev;
-    });
+    setIsOpen((prev) => !prev);
   };
-
-  // const toggleSearch = () => {
-  //   setSearchOpen((prev) => {
-  //     if (!prev) setIsOpen(false); // Close menu if opening search
-  //     return !prev;
-  //   });
-  // };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -312,26 +300,24 @@ const Header: React.FC = () => {
           )}
         </nav>
 
-        {/* Right: Search Icon */}
-        {/* <div className='hidden relative justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28'>
-          {showSearch ? (
-            <input
-              ref={searchRef}
-              type="text"
-              placeholder="Search APEC"
-              className='p-2 rounded-full border z-50 border-gray-300 focus:border-[#c62931] focus:outline-none w-48 scrn-750:w-64 transition-all duration-200'
-              autoFocus
-            />
-          ) : (
-            <button
-              onClick={() => setShowSearch(true)}
-              className='p-3 me-2 rounded-full bg-gray-100 hover:bg-[#c62931] hover:text-white transition-all duration-200 text-[#c62931]'
-              aria-label="Search"
-            >
-              <FiSearch className='text-xl' />
-            </button>
-          )}
-        </div> */}
+        {/* Right: CTA */}
+        <div className="flex justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28">
+          <Link
+            className="hidden scrn-1200:flex items-center gap-2 bg-[#c62931] text-white p-4 rounded-md hover:bg-red-500 transition"
+            href="/contact-us#MainContactForm"
+            scroll={false}
+          >
+            <FaPhoneAlt className="text-lg" />
+            FREE CONSULTATION
+          </Link>
+          <Link
+            className="flex scrn-1200:hidden items-center gap-2 bg-[#c62931] text-white py-4 px-8  rounded-md hover:bg-red-500 transition"
+            href="/contact-us#MainContactForm"
+            scroll={false}
+          >
+            <FaPhoneAlt className="text-lg" />
+          </Link>
+        </div>
       </div>
     </header>
   );
