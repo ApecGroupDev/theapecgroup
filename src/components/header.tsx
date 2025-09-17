@@ -82,71 +82,58 @@ const Header: React.FC = () => {
         }`}
     >
       {/* Mobile Header */}
-      <div className='scrn-1000:hidden container min-w-full relative flex items-center py-4'>
-        {/* Search Icon (Left) */}
-        {/* <button
-          className='absolute mx-2 p-3 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
-          onClick={toggleSearch}
-          aria-label="Toggle Search"
-        >
-          {searchOpen ? (
-            <FiX className='text-2xl' />
-          ) : (
-            <FiSearch className='text-2xl' />
-          )}
-        </button> */}
-        {/* Search Input */}
-        {/* <div
-          className={`hidden absolute top-16 left-0 w-3/4 p-2 m-2 bg-white shadow-md rounded-lg z-10 overflow-hidden transition-all duration-300 ease-in-out ${searchOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
-            }`}
-        >
-          <input
-            type="text"
-            placeholder="Search APEC"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className='w-full p-2 border rounded-md focus:outline-none'
+      <div className='scrn-1000:hidden container min-w-full relative flex items-center p-1 scrn-600:p-2'>
+        {/* APEC Logo (Left) */}
+        <Link href="/">
+          <Image
+            src="/logos/APEC.webp"
+            alt="Logo"
+            width={116}
+            height={106}
+            className='h-24 scrn-600:h-28 w-auto'
           />
-        </div> */}
+        </Link>
 
-        {/* Centered Logo */}
-        <div className='absolute pt-12 scrn-600:pt-14 inset-0 flex justify-center items-center'>
-          <Link href="/">
-            <Image
-              src="/logos/APEC.webp"
-              alt="Logo"
-              width={116}
-              height={106}
-              className='h-24 scrn-600:h-28 w-auto'
-            />
-          </Link>
-        </div>
-
-        {/* Menu Button (Right) */}
-        <button
-          className='absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
-          onClick={toggleMenu}
-          aria-label={isOpen ? 'Close menu' : 'Open menu'}
-        >
-          {isOpen ? (
-            <span className='text-5xl'>×</span>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className='h-8 w-8'
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
+        {/* CTA + Menu (Right) */}
+        <div className="absolute right-4 top-12 scrn-650:top-11 -translate-y-1/2 flex items-center gap-2">
+          {/* Phone CTA */}
+          <div>
+            <a
+              href="tel:855-444-2732"
+              className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
+              <FaPhoneAlt className="text-sm scrn-600:text-lg" />
+              <span className="text-sm scrn-400:text-lg hidden scrn-350:block">FREE CONSULTATION</span>
+              <span className="text-sm scrn-600:text-lg scrn-350:hidden">FREE</span>
+            </a>
+          </div>
+
+          {/* Menu Button (always rightmost) */}
+          <button
+            className="text-[#c62931] focus:outline-none z-20 flex items-center"
+            onClick={toggleMenu}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          >
+            {isOpen ? (
+              <span className="text-6xl leading-none">×</span>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
 
         {/* Mobile Navigation */}
         <nav
