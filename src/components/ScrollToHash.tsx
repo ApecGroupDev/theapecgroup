@@ -14,8 +14,7 @@ export default function ScrollToHash() {
       if (hash) {
         const el = document.querySelector(hash);
         if (el) {
-          const y = el.getBoundingClientRect().top + window.scrollY - 300;
-          // 👆 adjust "120" to match your sticky header height
+          const y = el.getBoundingClientRect().top + window.scrollY - 300; //adjust preferred scroll height
           window.scrollTo({ top: y, behavior: "smooth" });
         }
       }
