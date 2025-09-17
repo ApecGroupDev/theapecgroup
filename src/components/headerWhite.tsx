@@ -300,7 +300,7 @@ const HeaderWhite: React.FC = () => {
             FREE CONSULTATION
           </Link>
           <Link
-            className="flex scrn-1200:hidden items-center gap-2 bg-[#c62931] text-white py-4 px-8  rounded-md hover:bg-red-500 transition"
+            className="flex scrn-1200:hidden items-center gap-2 bg-[#c62931] text-white py-2 px-8  rounded-md hover:bg-red-500 transition"
             href="/contact-us#MainContactForm"
             scroll={false}
           >
