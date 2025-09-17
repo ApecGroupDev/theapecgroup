@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         <div className='items-start gap-1 scrn-1500:ms-16 scrn-2300:ms-8 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5 z-20 hidden scrn-600:flex'>
 
           {/* Authorized Distributor Section - fixed left */}
-          <div className="text-[#c62931] my-auto scale-50 scrn-800:scale-75 scrn-1000:scale-100 -ms-8 scrn-800:-ms-2 scrn-1000:ms-2">
+          <div className="text-[#c62931] my-auto scale-50 scrn-900:scale-75 scrn-1000:scale-100 -ms-8 scrn-800:-ms-2 scrn-1000:ms-2">
             <p className="font-semibold italic text-sm mb-2 scrn-600:text-base scrn-800:text-xl">
               Authorized Distributor For:
             </p>
