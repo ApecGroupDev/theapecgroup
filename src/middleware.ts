@@ -3,16 +3,19 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 const goneUrls = [
+  '/about',
   '/above-ground-tank',
   '/blog',
   '/canopy-imaging-solutions',
   '/careers',
+  '/contact',
   '/environmental-compliance-solutions',
   '/gas-station-construction',
   '/gas-station-electrical',
   '/gas-station-financing',
   '/gas-station-pump-advertising',
   '/home',
+  '/oil-and-water-separator',
   '/resources',
   '/services/compliance',
   '/services/construction',
@@ -21,8 +24,8 @@ const goneUrls = [
   '/services/imaging-and-canopies',
   '/services/link',
   '/services/renovation',
+  '/team',
   '/underground-tanks',
-  '/contact',
 ]
 
 const goneHtml = `
