@@ -14,8 +14,6 @@ const HeaderWhite: React.FC = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showSearch, setShowSearch] = useState(false);
   const searchRef = useRef<HTMLInputElement | null>(null);
-  // const [searchOpen, setSearchOpen] = useState(false);
-  // const [searchQuery, setSearchQuery] = useState("");
 
   const [isLargeScreen, setIsLargeScreen] = useState(false);
 
@@ -31,10 +29,7 @@ const HeaderWhite: React.FC = () => {
   }, []);
 
   const toggleMenu = () => {
-    setIsOpen((prev) => {
-      // if (!prev) setSearchOpen(false); // Close search if opening menu
-      return !prev;
-    });
+    setIsOpen((prev) => !prev);
   };
 
   useEffect(() => {
