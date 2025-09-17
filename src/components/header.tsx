@@ -103,8 +103,8 @@ const Header: React.FC = () => {
               className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
             >
               <FaPhoneAlt className="text-sm scrn-600:text-lg" />
-              <span className="text-sm scrn-400:text-lg hidden scrn-350:block">FREE CONSULTATION</span>
-              <span className="text-sm scrn-600:text-lg scrn-350:hidden">FREE</span>
+              <span className="text-sm hidden scrn-350:block">FREE CONSULTATION</span>
+              <span className="text-sm scrn-350:hidden">FREE</span>
             </a>
           </div>
 
