@@ -87,63 +87,59 @@ const HeaderWhite: React.FC = () => {
         : "top-0" // Always show on mobile
         }`}
     >
+
       {/* Mobile Header */}
-      <div className="scrn-1000:hidden container min-w-full relative flex items-center py-4">
-        {/* Menu Button (Left) */}
-        <button
-          className='absolute left-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
-          onClick={toggleMenu}
-          aria-label={isOpen ? 'Close menu' : 'Open menu'}
-        >
-          {isOpen ? (
-            <span className='text-5xl'>×</span>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className='h-8 w-8'
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
+      <div className="scrn-1000:hidden container min-w-full relative flex items-center p-1 scrn-600:p-2">
+        {/* APEC Logo (Left) */}
+        <Link href="/">
+          <Image
+            src="/logos/APEC.webp"
+            alt="Logo"
+            width={116}
+            height={106}
+            className='h-24 scrn-600:h-28 w-auto'
+          />
+        </Link>
+
+        {/* CTA + Menu (Right) */}
+        <div className="absolute right-4 top-12 scrn-650:top-11 -translate-y-1/2 flex items-center gap-2">
+          {/* Phone CTA */}
+          <div>
+            <a
+              href="tel:855-444-2732"
+              className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
+              <FaPhoneAlt className="text-sm scrn-600:text-lg" />
+              <span className="text-sm scrn-400:text-lg hidden scrn-350:block">FREE CONSULTATION</span>
+              <span className="text-sm scrn-600:text-lg scrn-350:hidden">FREE</span>
+            </a>
+          </div>
 
-        {/* CTA (Right) */}
-
-        <div className="absolute right-4 top-10 scrn-650:top-11 -translate-y-1/2 flex gap-2">
-          <a
-            href="tel:855-444-2732"
-            className="hidden scrn-650:flex items-center gap-2 bg-[#c62931] text-white p-4 rounded-md hover:bg-red-500 transition"
+          {/* Menu Button (always rightmost) */}
+          <button
+            className="text-[#c62931] focus:outline-none z-20 flex items-center"
+            onClick={toggleMenu}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
           >
-            <FaPhoneAlt className="text-lg" />
-            FREE CONSULTATION
-          </a>
-          <a
-            href="tel:855-444-2732"
-            className="scrn-650:hidden items-center gap-2 bg-[#c62931] text-white py-4 px-8  rounded-md hover:bg-red-500 transition"
-          >
-            <FaPhoneAlt className="text-lg" />
-          </a>
-        </div>
-
-        {/* Centered Logo */}
-        <div className='absolute pt-12 scrn-600:pt-14 inset-0 flex justify-center items-center'>
-          <Link href="/">
-            <Image
-              src="/logos/APEC.webp"
-              alt="Logo"
-              width={116}
-              height={106}
-              className='h-24 scrn-600:h-28 w-auto'
-            />
-          </Link>
+            {isOpen ? (
+              <span className="text-6xl leading-none">×</span>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
