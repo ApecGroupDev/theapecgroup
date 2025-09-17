@@ -305,6 +305,7 @@ const HeaderWhite: React.FC = () => {
             scroll={false}
           >
             <FaPhoneAlt className="text-lg" />
+            FREE
           </Link>
         </div>
       </div>
