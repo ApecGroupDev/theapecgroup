@@ -1,6 +1,6 @@
 import HeaderWhite from "@/components/headerWhite";
 import Footer from "@/components/footer";
-import MainFinancing from "./sections/main";
+import MainConstruction from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 
@@ -18,7 +18,7 @@ const ServicesConstruction: React.FC = () => {
     <div className='flex flex-col'>
       <HeaderWhite />
       <Hero />
-      <MainFinancing />
+      <MainConstruction />
       <div className="w-full">
         <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
       </div>

@@ -15,7 +15,7 @@ const items: AccordionItem[] = [
   { id: 'five', title: 'How long does construction take?', content: <p>Timelines vary by project size, but we provide clear schedules and deliver on time.</p> },
 ];
 
-const MainImaging: React.FC = () => {
+const MainConstruction: React.FC = () => {
   return (
     <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto'>
       <div className="max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl">
@@ -88,4 +88,4 @@ const MainImaging: React.FC = () => {
   );
 };
 
-export default MainImaging;
+export default MainConstruction;
