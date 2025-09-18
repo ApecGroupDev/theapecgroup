@@ -20,8 +20,7 @@ const Hero: React.FC = () => {
         {/* Top div */}
         <div>
           <h1 className='ps-8 pe-4 scrn-750:pe-0 scrn-750:w-4/5 scrn-1700:w-1/2'>
-            <span
-              className='font-bold scrn-750:font-semibold whitespace-normal text-gray-200 text-4xl scrn-750:text-6xl scrn-1000:text-7xl tracking-wide'>
+            <span className='font-bold scrn-750:font-semibold whitespace-normal text-gray-200 text-4xl scrn-750:text-6xl scrn-1000:text-7xl tracking-wide'>
               Custom Canopy Imaging That Elevates Your Gas Station’s Brand
             </span>
           </h1>
