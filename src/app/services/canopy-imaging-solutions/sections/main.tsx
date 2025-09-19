@@ -35,10 +35,10 @@ const MainImaging: React.FC = () => {
               </span>
             </h2>
             <p className='tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-              30+ years of fuel industry design and installation expertise
-              Custom designs that align with your brand
-              Quality materials that withstand the elements
-              Local service and support in Georgia, Texas, and Atlanta
+              30+ years of fuel industry design and installation expertise.
+              Custom designs that align with your brand.
+              Quality materials that withstand the elements.
+              Local service and support in Georgia, Texas, and Atlanta.
               Seamless project management from concept to installation.
             </p>
             <div>
