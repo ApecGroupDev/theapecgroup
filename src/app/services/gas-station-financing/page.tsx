@@ -19,7 +19,12 @@ const ServicesFinancing: React.FC = () => {
       <Header />
       <Hero />
       <MainFinancing />
-      <Footer />
+      <div className="w-full">
+        <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
+      </div>
+      <div className='bg-gray-800'>
+        <Footer />
+      </div>
     </div>
   );
 };
