@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
             type="button"
             className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition'
             onClick={() => {
-              const section = document.getElementById("ImagingContactForm");
+              const section = document.getElementById("ConstructionContactForm");
               if (section) {
                 const y = section.getBoundingClientRect().top + window.scrollY - 322; // adjust 80px as needed
                 window.scrollTo({ top: y, behavior: "smooth" });

@@ -36,10 +36,10 @@ const MainConstruction: React.FC = () => {
               </span>
             </h2>
             <p className='tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-              30+ years’ experience delivering durable fuel sites
-              Licensed, insured, and a spotless safety record
-              End-to-end service: design, permitting, build, inspection
-              Local compliance expertise in Georgia, Texas, and Atlanta
+              30+ years’ experience delivering durable fuel sites.
+              Licensed, insured, and a spotless safety record.
+              End-to-end service: design, permitting, build, inspection.
+              Local compliance expertise in Georgia, Texas, and Atlanta.
               We guarantee our work meets all regulatory standards.
             </p>
             <div>
@@ -70,7 +70,7 @@ const MainConstruction: React.FC = () => {
               <span className='font-medium scrn-300:text-base scrn-500:text-xl scrn-750:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1900:text-4xl'>
                 SERVICE REQUEST
               </span>
-              <div id="ImagingContactForm">
+              <div id="ConstructionContactForm">
                 <ConstructionContactForm />
               </div>
             </div>
