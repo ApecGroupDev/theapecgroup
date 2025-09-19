@@ -77,7 +77,7 @@ const MainConstruction: React.FC = () => {
           </div>
         </div>
         <div className="w-full p-6 mt-24">
-          <span className="text-[#c62931] text-xl font-bold">Imaging and Canopy FAQs</span>
+          <span className="text-[#c62931] text-xl font-bold">Gas Station Construction FAQs</span>
           <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
         </div>
         <div className='space-x-2 font-semibold text-nowrap hidden scrn-600:block mt-16'>
