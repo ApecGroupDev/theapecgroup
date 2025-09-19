@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
         <div className='text-gray-200 font-normal ps-8 pe-4 scrn-750:pe-0 pt-8 scrn-750:w-4/5 scrn-1700:w-1/2'>
           <h1 className='text-2xl scrn-750:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl'>
             30+ years helping fuel retailers secure funding for construction,
-            equipment, and upgrades across Georgia, Texas, and Atlanta.
+            equipment, and upgrades across Georgia.
           </h1>
           <button
             type="button"
