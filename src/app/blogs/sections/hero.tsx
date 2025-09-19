@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect } from 'react';
-// import Image from 'next/image';
 
 const Hero: React.FC = () => {
   // Scroll to top on page load
