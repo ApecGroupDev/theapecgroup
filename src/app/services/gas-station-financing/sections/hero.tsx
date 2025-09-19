@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
     <div
       id="hero-section"
       className='
-      bg-[url("/backgrounds/services/financing/Hero.webp")] bg-cover bg-top bg-no-repeat bg-blend-multiply bg-black/40
+      bg-[url("/backgrounds/services/financing/Hero_Financing.webp")] bg-cover bg-top bg-no-repeat bg-blend-multiply bg-black/40
       items-center relative flex overflow-hidden h-screen'>
       <div>
         {/* Top div */}
