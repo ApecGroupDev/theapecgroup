@@ -81,12 +81,12 @@ const Main = () => {
           Services
         </p>
         <ol className='list-decimal list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/imaging-and-canopies">APEC Imaging and Canopies</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/compliance">APEC Compliance</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/renovation">APEC Renovation</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/construction">APEC Construction</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/link">APEC Link</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/financing">APEC Financing</a></li>
+          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/canopy-imaging-solutions">APEC Canopy Imaging Solutions</a></li>
+          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/environmental-compliance-solutions">APEC Environmental Compliance Solutions</a></li>
+          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="https://www.metalproductsusa.com/">Metal Products Manufacturing</a></li>
+          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/gas-station-construction">APEC Gas Station Construction</a></li>
+          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/gas-station-electrical">APEC Gas Station Electrical</a></li>
+          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/gas-station-financing">APEC Gas Station Financing</a></li>
         </ol>
         <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
           Pros
