@@ -34,13 +34,13 @@ const MainImaging: React.FC = () => {
                 Why Choose APEC for Canopy Imaging?
               </span>
             </h2>
-            <p className='tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-              30+ years of fuel industry design and installation expertise.
-              Custom designs that align with your brand.
-              Quality materials that withstand the elements.
-              Local service and support in Georgia, Texas, and Atlanta.
-              Seamless project management from concept to installation.
-            </p>
+            <div className='tracking-widest space-y-4 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
+              <div>30+ years of fuel industry design and installation expertise.</div>
+              <div>Custom designs that align with your brand.</div>
+              <div>Quality materials that withstand the elements.</div>
+              <div>Local service and support in Georgia, Texas, and Atlanta.</div>
+              <div>Seamless project management from concept to installation.</div>
+            </div>
             <div>
               <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
                 Our Canopy Imaging Solutions Include:
