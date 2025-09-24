@@ -35,13 +35,13 @@ const MainConstruction: React.FC = () => {
                 Why Choose APEC for Gas Station Construction?
               </span>
             </h2>
-            <p className='tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-              30+ years’ experience delivering durable fuel sites.
-              Licensed, insured, and a spotless safety record.
-              End-to-end service: design, permitting, build, inspection.
-              Local compliance expertise in Georgia, Texas, and Atlanta.
-              We guarantee our work meets all regulatory standards.
-            </p>
+            <div className='tracking-widest space-y-4 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
+              <div>30+ years’ experience delivering durable fuel sites.</div>
+              <div>Licensed, insured, and a spotless safety record.</div>
+              <div>End-to-end service: design, permitting, build, inspection.</div>
+              <div>Local compliance expertise in Georgia, Texas, and Atlanta.</div>
+              <div>We guarantee our work meets all regulatory standards.</div>
+            </div>
             <div>
               <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
                 Our Gas Station Construction Services Include:
