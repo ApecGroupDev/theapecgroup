@@ -1,4 +1,4 @@
-import Header from "@/components/headerWhite";
+import HeaderWhite from "@/components/headerWhite";
 import Footer from "@/components/footer";
 import MainImaging from "./sections/main";
 import Hero from "./sections/hero";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const ServicesImaging: React.FC = () => {
   return (
     <div className='flex flex-col'>
-      <Header />
+      <HeaderWhite />
       <Hero />
       <MainImaging />
       <div className="w-full">

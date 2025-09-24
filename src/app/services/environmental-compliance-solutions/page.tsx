@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import HeaderWhite from "@/components/headerWhite";
 import Footer from "@/components/footer";
 import MainCompliance from "./sections/main";
 import Hero from "./sections/hero";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const ServicesCompliance: React.FC = () => {
   return (
     <div className='flex flex-col'>
-      <Header />
+      <HeaderWhite />
       <Hero />
       <MainCompliance />
       <div className="w-full">
