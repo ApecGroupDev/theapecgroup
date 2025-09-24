@@ -39,7 +39,7 @@ const MainFinancing: React.FC = () => {
               <div>30+ years’ experience in petroleum projects and financing.</div>
               <div>Flexible funding options for construction, equipment, and upgrades.</div>
               <div>Guidance from experts who understand fuel site operations.</div>
-              <div>Local expertise in Georgia.</div>
+              <div>Local expertise across Georgia.</div>
               <div>Trusted by fuel retailers, distributors, and fleet operators.</div>
             </div>
             <div>

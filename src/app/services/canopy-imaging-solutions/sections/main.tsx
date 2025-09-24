@@ -38,7 +38,7 @@ const MainImaging: React.FC = () => {
               <div>30+ years of fuel industry design and installation expertise.</div>
               <div>Custom designs that align with your brand.</div>
               <div>Quality materials that withstand the elements.</div>
-              <div>Local service and support in Georgia, Texas, and Atlanta.</div>
+              <div>Local service and support across Georgia.</div>
               <div>Seamless project management from concept to installation.</div>
             </div>
             <div>

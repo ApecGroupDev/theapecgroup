@@ -39,7 +39,7 @@ const MainConstruction: React.FC = () => {
               <div>30+ years’ experience delivering durable fuel sites.</div>
               <div>Licensed, insured, and a spotless safety record.</div>
               <div>End-to-end service: design, permitting, build, inspection.</div>
-              <div>Local compliance expertise in Georgia, Texas, and Atlanta.</div>
+              <div>Local compliance expertise across Georgia.</div>
               <div>We guarantee our work meets all regulatory standards.</div>
             </div>
             <div>
