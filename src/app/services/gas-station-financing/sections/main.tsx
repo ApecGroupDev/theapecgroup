@@ -35,13 +35,13 @@ const MainFinancing: React.FC = () => {
                 Why Choose APEC for Gas Station Financing?
               </span>
             </h2>
-            <p className='tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-              30+ years’ experience in petroleum projects and financing.
-              Flexible funding options for construction, equipment, and upgrades.
-              Guidance from experts who understand fuel site operations.
-              Local expertise in Georgia, Texas, and Atlanta
-              Trusted by fuel retailers, distributors, and fleet operators.
-            </p>
+            <div className='tracking-widest space-y-4 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
+              <div>30+ years’ experience in petroleum projects and financing.</div>
+              <div>Flexible funding options for construction, equipment, and upgrades.</div>
+              <div>Guidance from experts who understand fuel site operations.</div>
+              <div>Local expertise in Georgia.</div>
+              <div>Trusted by fuel retailers, distributors, and fleet operators.</div>
+            </div>
             <div>
               <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
                 Our Gas Station Financing Solutions Include:
