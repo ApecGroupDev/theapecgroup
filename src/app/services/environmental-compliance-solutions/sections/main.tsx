@@ -35,13 +35,13 @@ const MainCompliance: React.FC = () => {
                 Why Choose APEC for Environmental Compliance?
               </span>
             </h2>
-            <p className='tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-              30+ years’ experience managing petroleum system compliance.
-              Licensed, insured, and known for a spotless safety record.
-              Complete solutions — inspections, permitting, testing, remediation.
-              Local experts in Georgia regulations.
-              Compliance guarantee — we stand behind our work.
-            </p>
+            <div className='tracking-widest space-y-4 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
+              <div>30+ years’ experience managing petroleum system compliance.</div>
+              <div>Licensed, insured, and known for a spotless safety record.</div>
+              <div>Complete solutions — inspections, permitting, testing, remediation.</div>
+              <div>Trusted local experts on Georgia’s regulatory requirements.</div>
+              <div>Compliance guarantee — we stand behind our work.</div>
+            </div>
             <div>
               <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
                 Our Environmental Compliance Services Include:
