@@ -27,10 +27,11 @@ const Hero: React.FC = () => {
 
         {/* Bottom div */}
         <div className='text-gray-200 font-normal ps-8 pe-4 scrn-750:pe-0 pt-8 scrn-750:w-4/5 scrn-1700:w-1/2'>
-          <h1 className='text-2xl scrn-750:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl'>
+          <span className='text-2xl scrn-750:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl'>
             Powered by 30+ years of industry experience, APEC’s blog helps fuel retailers
             and energy professionals stay ahead with expert insights, trends, and compliance updates.
-          </h1>
+          </span>
+          <br />
           <button
             type="button"
             className="bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition"
