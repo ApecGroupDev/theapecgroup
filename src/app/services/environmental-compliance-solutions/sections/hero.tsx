@@ -32,6 +32,7 @@ const Hero: React.FC = () => {
             30+ years of experience keeping petroleum businesses compliant across
             Georgia — trusted by fuel retailers, distributors, and fleet operators.
           </span>
+          <br />
           <button
             type="button"
             className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition'

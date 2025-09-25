@@ -32,6 +32,7 @@ const Hero: React.FC = () => {
             30+ years helping fuel retailers across Georgia create standout
             stations with custom canopy designs and installations.
           </span>
+          <br />
           <button
             type="button"
             className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition'

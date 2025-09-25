@@ -32,6 +32,7 @@ const Hero: React.FC = () => {
             Trusted by fuel retailers across Georgia for
             30+ years — licensed, insured, and known for safety-first construction.
           </span>
+          <br />
           <button
             type="button"
             className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition'
