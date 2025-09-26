@@ -2,7 +2,6 @@
 
 import React from "react";
 import ServicesBoxLinks2 from "@/components/servicesLinks2";
-import FinancingContactForm from "@/components/financingContactForm";
 import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
@@ -44,7 +43,7 @@ const MainFinancing: React.FC = () => {
 
           </p>
           <p className="apec-red tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl italic mt-8">
-            If you're searching for petroleum companies jobs where you can grow, contribute, and thrive — this is it.
+            If you’re searching for petroleum companies jobs where you can grow, contribute, and thrive — this is it.
           </p>
         </div>
 
