@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderWhite from "@/components/headerWhite";
 import Hero from "./sections/hero";
 import MainContact from "./sections/main";
 import Footer from "@/components/footer";
@@ -17,9 +18,15 @@ const CareersPage: React.FC = () => {
 
   return (
     <div className='flex flex-col'>
+      <HeaderWhite />
       <Hero />
       <MainContact />
-      <Footer />
+      <div className="w-full">
+        <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
+      </div>
+      <div className='bg-gray-800'>
+        <Footer />
+      </div>
     </div>
   );
 };
