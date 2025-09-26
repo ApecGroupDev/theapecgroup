@@ -29,19 +29,15 @@ const Hero: React.FC = () => {
         {/* Bottom div */}
         <div className='text-gray-200 font-normal ps-8 pe-4 scrn-750:pe-0 pt-8 scrn-750:w-4/5 scrn-1700:w-1/2'>
           <span className='text-2xl scrn-750:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl'>
-            Decades of expertise delivering petroleum equipment solutions across 
+            Decades of expertise delivering petroleum equipment solutions across
             Georgia — trusted by fuel retailers, distributors, and fleet operators to keep their businesses running strong.
           </span>
           <br />
           <button
             type="button"
-            className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition'
+            className="bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md font-semibold hover:bg-red-500 transition"
             onClick={() => {
-              const section = document.getElementById("ComplianceContactForm");
-              if (section) {
-                const y = section.getBoundingClientRect().top + window.scrollY - 322; // adjust 80px as needed
-                window.scrollTo({ top: y, behavior: "smooth" });
-              }
+              window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
             }}
           >
             EXPLORE SERVICES
