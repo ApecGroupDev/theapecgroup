@@ -89,7 +89,7 @@ export default function ImagingContactForm() {
         placeholder="Message"
         value={formData.message}
         onChange={handleChange}
-        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600'
+        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600 min-h-40'
         required
       />
       <button
