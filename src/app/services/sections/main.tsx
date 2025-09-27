@@ -137,13 +137,13 @@ const MainServices: React.FC = () => {
             </h2>
             <p className="text-lg scrn-600:text-xl">
               Call us now at{" "}
-              <a href="tel:8554442732" className="font-semibold underline hover:text-gray-200">
+              <a href="tel:8554442732" className="font-semibold underline hover:text-gray-600">
                 855-444-2732
               </a>
             </p>
             <p className="text-lg scrn-600:text-xl">
               Email:{" "}
-              <a href="mailto:Sales@TheAPECgroup.com" className="font-semibold underline hover:text-gray-200">
+              <a href="mailto:Sales@TheAPECgroup.com" className="font-semibold underline hover:text-gray-600">
                 Sales@TheAPECgroup.com
               </a>
             </p>
