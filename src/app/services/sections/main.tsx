@@ -4,40 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-interface Services {
-  title: string;
-  description: string;
-  imageSrc: string;
-  slug: string;
-}
-
-const features: Services[] = [
-  {
-    title: "APEC IMAGING AND CANOPIES",
-    description: "Gas Station Canopy Panels Installation",
-    imageSrc: "/servicesLogos/Apec-Imaging.webp",
-    slug: "canopy-imaging-solutions",
-  },
-  {
-    title: "APEC COMPLIANCE",
-    description: "Gas Station Inspection and Compliance Services",
-    imageSrc: "/servicesLogos/Apec-Compliance.webp",
-    slug: "environmental-compliance-solutions",
-  },
-  {
-    title: "SPEC FINANCES",
-    description: "Gas Station Financing and Loans Services",
-    imageSrc: "/servicesLogos/Apec-Financing.webp",
-    slug: "gas-station-financing"
-  },
-  {
-    title: "APEC ELECTRICAL",
-    description: "Gas Station Construction Company Services",
-    imageSrc: "/servicesLogos/Apec-Electrical.webp",
-    slug: "gas-station-electrical",
-  },
-];
-
 interface Service {
   title: string;
   description: string;
