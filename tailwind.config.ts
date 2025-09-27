@@ -57,6 +57,15 @@ export default {
       'scrn-2550': '2550px',
     },
     extend: {
+      keyframes: {
+        pulseScale: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" }, // grows bigger in the middle
+        },
+      },
+      animation: {
+        pulseScale: "pulseScale 3s ease-in-out infinite",
+      },
       maxWidth: {
         '8xl': '90rem',
         '9xl': '100rem',

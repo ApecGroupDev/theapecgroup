@@ -38,68 +38,155 @@ const features: Services[] = [
   },
 ];
 
+interface Service {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
+const services: Service[] = [
+  {
+    title: "GAS STATION CONSTRUCTION",
+    description:
+      "From design to grand opening, we build durable, compliant stations that are ready to serve customers from day one.",
+    image: "/servicesLogos/Apec-Constructions.webp",
+    link: "/services/gas-station-construction",
+  },
+  {
+    title: "CANOPY IMAGING SOLUTIONS",
+    description:
+      "Custom canopy designs and installations that strengthen your brand, attract attention, and enhance customer experience.",
+    image: "/servicesLogos/Apec-Imaging.webp",
+    link: "services/canopy-imaging-solutions",
+  },
+  {
+    title: "METAL PRODUCTS MANUFACTURING",
+    description:
+      "Reliable, high-quality metal products engineered for safety, compliance, and long-term performance.",
+    image: "/servicesLogos/Logo_MPC_Main.webp",
+    link: "https://www.metalproductsusa.com/",
+  },
+  {
+    title: "GAS STATION FINANCING",
+    description:
+      "Flexible funding solutions that make it easier to build, renovate, or expand your petroleum business without cash flow stress.",
+    image: "/servicesLogos/Apec-Financing.webp",
+    link: "/services/gas-station-financing",
+  },
+  {
+    title: "GAS STATION ELECTRICAL",
+    description:
+      "Full electrical system design, installation, and maintenance tailored for fueling stations and convenience stores.",
+    image: "/servicesLogos/Apec-Electrical.webp",
+    link: "/services/gas-station-electrical",
+  },
+  {
+    title: "ENVIRONMENTAL COMPLIANCE SOLUTIONS",
+    description:
+      "Stay ahead of regulations with inspections, permitting, testing, and remediation that protect your investment and reputation.",
+    image: "/servicesLogos/Apec-Compliance.webp",
+    link: "/services/environmental-compliance-solutions",
+  },
+];
+
 const MainServices: React.FC = () => {
   return (
-    <div className='bg-transparent h-128 scrn-400:h-132 scrn-500:h-148 scrn-600:h-160 scrn-800:h-180 scrn-850:h-180 scrn-900:h-184 scrn-950:h-192 scrn-1000:h-216 scrn-1050:h-216 scrn-1100:h-228 scrn-1150:h-240 scrn-1200:h-248 scrn-1300:h-256 scrn-1350:h-272 scrn-1400:h-276 scrn-1450:h-288 scrn-1500:h-304 scrn-1550:h-304 scrn-1600:h-316 scrn-1650:h-324 scrn-1700:h-324 scrn-1750:h-339 scrn-1800:h-352 scrn-1850:h-360 scrn-1900:h-339 scrn-2000:h-360 scrn-2050:h-368 scrn-2100:h-384 scrn-2200:h-416 scrn-2350:h-432 scrn-2450:h-448 scrn-2500:h-464'>
-      {/* Section Title */}
-      <div className='text-center'>
-        <div className='font-semibold text-gray-800 scrn-300:text-sm scrn-600:text-base scrn-750:text-lg scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-4xl scrn-1900:text-5xl mt-4 scrn-600:mt-8 scrn-750:mt-0 scrn-800:mt-12 scrn-900:mt-4 scrn-1200:mt-20 scrn-1650:mt-28 scrn-1900:mt-24'>
-          Check out some of our services here!
+    <div className='flex flex-col items-center scrn-600:justify-center h-auto'>
+      <div className="max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl">
+
+        {/* Introductory Paragraph */}
+        <div className="mt-12">
+          <p className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
+            At <span className="apec-red font-semibold">The APEC Group</span>, we don’t just provide petroleum equipment — we deliver peace of mind. From <span className="apec-red font-semibold">environmental compliance</span> to <span className="apec-red font-semibold">gas station construction, financing, electricals, and canopy solutions</span>, we’re your one-stop partner for building and growing a profitable, future-proof petroleum business.
+          </p>
         </div>
-      </div>
 
-      {/* Feature Boxes */}
-      <div className='flex justify-center flex-wrap mx-auto scrn-600:max-w-128 scrn-700:max-w-416 mt-2 scrn-700:mt-8 scrn-1000:mt-12 scrn-1200:mt-14 scrn-1650:mt-24 scrn-2400:mt-32 gap-4 scrn-350:gap-6 scrn-800:gap-8 scrn-1100:gap-10 scrn-1400:gap-12 scrn-1700:gap-10 scrn-1900:gap-12'>
-        {features.map((feature, index) => (
-          <Link key={index} href={`/services/${feature.slug}`} passHref>
-            <div
-              key={index}
-              className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-32 scrn-400:w-44 scrn-500:w-52 scrn-700:w-64 scrn-750:w-72 scrn-900:w-80 scrn-1000:w-96 scrn-1100:w-116 scrn-1200:w-64 scrn-1350:w-72 scrn-1500:w-80 scrn-1700:w-96 scrn-1900:w-110'>
-              {/* Image Display */}
-              <div className='flex flex-col items-center justify-center h-16 scrn-400:h-20 scrn-450:h-24 scrn-500:h-28 scrn-600:h-32 scrn-700:h-28 scrn-900:h-32 scrn-1100:h-40 scrn-1200:h-48 scrn-1400:h-52 scrn-1500:h-60 scrn-1700:h-72'>
-                <Image
-                  src={feature.imageSrc}
-                  alt={feature.title}
-                  width={400}
-                  height={200}
-                  className="scrn-400:w-2/3 object-contain"
-                />
-              </div>
-
-              {/* Description (Hidden by default, revealed on hover) */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center p-0 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-                <p className='text-gray-700 text-center overflow-y-auto max-h-48 px-4 text-xs scrn-600:text-sm scrn-800:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2500:text-4xl'>
-                  {feature.description}
-                </p>
-              </div>
-            </div>
-          </Link>
-        ))}
-
-        {/* ✅ Larger External Box with Centered Logo */}
-        <a
-          href="https://www.metalproductsusa.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-60 scrn-400:w-72 scrn-600:w-80 scrn-700:w-96 scrn-900:w-120 scrn-1000:w-124 scrn-1100:w-132 scrn-1200:w-160 scrn-1400:w-180 scrn-1500:w-198 scrn-1700:w-208 scrn-1900:w-160 h-36 scrn-400:h-36 scrn-450:h-40 scrn-500:h-48 scrn-600:h-44 scrn-800:h-48 scrn-950:h-52 scrn-1000:h-80 scrn-1100:h-72 scrn-1150:h-80 scrn-1200:h-96 scrn-1400:h-118 scrn-1500:h-124 scrn-1900:h-136 flex-shrink-0'>
-          {/* Logo - centered vertically and horizontally */}
-          <div className='flex items-center justify-center h-full'>
-            <Image
-              src="/servicesLogos/Logo_MPC_Main.webp"
-              alt="External Partner"
-              width={5830}
-              height={1858}
-              className="w-full px-4 object-contain"
-            />
+        <div className='h-auto pt-4 scrn-400:pt-8 scrn-600:pt-16'>
+          <h2>
+            <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
+              WHY CHOOSE APEC?
+            </span>
+          </h2>
+          <div className='pt-4 tracking-widest space-y-6 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
+            <div><span className="apec-red font-semibold">END-TO-END SOLUTIONS</span> – From inspection and compliance to financing and construction — all under one trusted roof.</div>
+            <div><span className="apec-red font-semibold">EXPERTISE THAT SAVES YOU MILLIONS</span> – Over 30 years of proven success helping gas station owners avoid fines, delays, and costly mistakes.</div>
+            <div><span className="apec-red font-semibold">SUSTAINABILITY FIRST</span> – Our services help you meet environmental regulations without the headaches.</div>
+            <div><span className="apec-red font-semibold">FINANCING THAT WORKS FOR YOU</span> – Flexible funding options so you can build or upgrade your station without cash flow worries.</div>
+            <div><span className="apec-red font-semibold">FAST, EFFICIENT EXECUTION</span> – We deliver on time and on budget. Every time.</div>
           </div>
+        </div>
 
-          {/* Description on Hover */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center p-4 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out">
-            <p className='text-gray-700 text-center overflow-y-auto max-h-48 text-xs scrn-600:text-sm scrn-800:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1700:text-3xl scrn-1900:text-4xl scrn-2500:text-4xl'>
-              Visit Metal Products Company website
+        {/* Section Title */}
+        <div className='italic apec-red text-2xl font-bold
+          mt-32 scrn-600:mt-24 scrn-1200:mt-20'>
+          CHECK OUT OUR SERVICES HERE!
+        </div>
+
+        {/* Services Section */}
+        <section className="w-full px-4 py-12">
+          <div className="p-6 space-y-40 max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl mx-auto">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className={`flex flex-col items-stretch scrn-1000:flex-row ${index % 2 === 1 ? "scrn-1000:flex-row-reverse" : ""
+                  } border-l-4 border-gray-700 pl-6`}
+              >
+                {/* Description */}
+                <div className="flex-1 flex flex-col justify-center text-center scrn-1000:text-left px-6 py-8">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
+                    {service.description}
+                  </p>
+                  <Link
+                    href={service.link}
+                    className="inline-block scrn-600:w-1/3 scrn-1000:w-2/3 scrn-1200:w-1/3 text-center px-6 py-2 text-white bg-[#c62931] rounded-md mt-6 hover:bg-[#a92128] transition"
+                  >
+                    Read More
+                  </Link>
+                </div>
+
+                {/* Image */}
+                <div className="flex-1 flex justify-center items-center px-6 py-8">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={350}
+                    height={350}
+                    className="animate-pulseScale"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full outline-dashed apec-red py-12 px-6 my-16 rounded-2xl">
+          <div className="max-w-4xl mx-auto text-center space-y-6">
+            <h2 className="text-2xl scrn-600:text-3xl scrn-1000:text-4xl font-bold">
+              Ready to Build or Grow Your Gas Station Business?
+            </h2>
+            <p className="text-lg scrn-600:text-xl">
+              Call us now at{" "}
+              <a href="tel:8554442732" className="font-semibold underline hover:text-gray-200">
+                855-444-2732
+              </a>
+            </p>
+            <p className="text-lg scrn-600:text-xl">
+              Email:{" "}
+              <a href="mailto:Sales@TheAPECgroup.com" className="font-semibold underline hover:text-gray-200">
+                Sales@TheAPECgroup.com
+              </a>
+            </p>
+            <p className="text-xl scrn-600:text-2xl font-medium">
+              Get a free consultation today — let’s fuel your success!
             </p>
           </div>
-        </a>
+        </section>
+
       </div>
     </div>
   );
