@@ -4,6 +4,10 @@ import Hero from "./sections/hero";
 import MissionSection from "./sections/mission";
 import ValuesSection from "./sections/values";
 import VisionSection from "./sections/vision";
+import HeaderWhite from '@/components/headerWhite';
+import Footer from '@/components/footer';
+import IntroAbout from './sections/intro';
+import CTAAbout from './sections/cta';
 
 export const metadata: Metadata = {
   title: "About The APEC Group | Petroleum Services",
@@ -18,11 +22,20 @@ const About: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
+      <HeaderWhite />
       <Hero />
+      <IntroAbout />
       <MissionSection />
       <ValuesSection />
       <VisionSection />
       <ChooseUs />
+      <CTAAbout />
+      <div className="w-full">
+        <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
+      </div>
+      <div className='bg-gray-800'>
+        <Footer />
+      </div>
     </div>
   );
 };
