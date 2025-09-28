@@ -3,7 +3,7 @@ import HeaderWhite from "@/components/headerWhite";
 import MainServices from "./sections/main";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
-import CTAServices from "./sections/cta";
+import CTA from "@/components/cta";
 
 export const metadata: Metadata = {
   title: "Petroleum Equipment Services & Repairs | The APEC Group",
@@ -20,7 +20,7 @@ const Services: React.FC = () => {
       <HeaderWhite />
       <Hero />
       <MainServices />
-      <CTAServices />
+      <CTA />
       <div className="w-full">
         <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
       </div>

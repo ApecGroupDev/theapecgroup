@@ -7,7 +7,7 @@ import VisionSection from "./sections/vision";
 import HeaderWhite from '@/components/headerWhite';
 import Footer from '@/components/footer';
 import IntroAbout from './sections/intro';
-import CTAAbout from './sections/cta';
+import CTA from '@/components/cta';
 
 export const metadata: Metadata = {
   title: "About The APEC Group | Petroleum Services",
@@ -29,7 +29,7 @@ const About: React.FC = () => {
       <ValuesSection />
       <VisionSection />
       <ChooseUs />
-      <CTAAbout />
+      <CTA />
       <div className="w-full">
         <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
       </div>

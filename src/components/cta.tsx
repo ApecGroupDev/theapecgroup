@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const CTAServices: React.FC = () => {
+const CTA: React.FC = () => {
   return (
     <div className='flex flex-col items-center scrn-600:justify-center h-auto px-2 scrn-600:px-14'>
       {/* CTA Section */}
@@ -32,4 +32,4 @@ const CTAServices: React.FC = () => {
   );
 };
 
-export default CTAServices;
+export default CTA;
