@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className='text-black font-inter scrn-750:px-8 scrn-450:pt-24 scrn-600:pt-20 scrn-750:pt-8 scrn-800:pt-12 scrn-1250:pt-24 scrn-1500:pt-28 scrn-1700:pt-36 scrn-1700:px-20 scrn-1900:pt-48 scrn-1900:px-24 scrn-2500:px-32'>
+    <footer className='text-black bg-gray-800 font-inter scrn-750:px-8 scrn-450:pt-24 scrn-600:pt-20 scrn-750:pt-8 scrn-800:pt-12 scrn-1250:pt-24 scrn-1500:pt-28 scrn-1700:pt-36 scrn-1700:px-20 scrn-1900:pt-48 scrn-1900:px-24 scrn-2500:px-32'>
       <div className='grid grid-cols-3 gap-8 items-center text-gray-300'>
         {/* Column 1: Social Media Icons */}
         <div className='flex flex-col ms-2 scrn-600:ms-4 scrn-600:mt-8 scrn-750:mt-0 scrn-750:ms-0 items-start space-y-2 scrn-750:space-y-1 scrn-1000:space-y-2'>
