@@ -21,12 +21,8 @@ const CareersPage: React.FC = () => {
       <HeaderWhite />
       <Hero />
       <MainContact />
-      <div className="w-full">
-        <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
-      </div>
-      <div className='bg-gray-800'>
-        <Footer />
-      </div>
+      <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
+      <Footer />
     </div>
   );
 };
