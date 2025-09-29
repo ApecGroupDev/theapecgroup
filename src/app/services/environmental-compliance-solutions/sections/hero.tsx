@@ -19,16 +19,16 @@ const Hero: React.FC = () => {
       <div>
         {/* Top div */}
         <div>
-          <h1 className='ps-8 pe-4 scrn-750:pe-0 scrn-750:w-4/5 scrn-1700:w-1/2'>
-            <span className='font-bold scrn-750:font-semibold whitespace-normal text-gray-200 text-4xl scrn-750:text-6xl scrn-1000:text-7xl tracking-wide'>
+          <h1 className='ps-8 pe-4 scrn-750:pe-0 scrn-750:w-4/5 scrn-1000:w-1/2'>
+            <span className='font-bold scrn-750:font-semibold whitespace-normal text-gray-200 text-4xl scrn-750:text-3xl scrn-1200:text-4xl scrn-1500:text-5xl scrn-1900:text-6xl tracking-wide'>
               Environmental Compliance Solutions That Protect Your Business and the Environment
             </span>
           </h1>
         </div>
 
         {/* Bottom div */}
-        <div className='text-gray-200 font-normal ps-8 pe-4 scrn-750:pe-0 pt-8 scrn-750:w-4/5 scrn-1700:w-1/2'>
-          <span className='text-2xl scrn-750:text-2xl scrn-1000:text-3xl scrn-1500:text-4xl'>
+        <div className='text-gray-200 font-normal ps-8 pe-4 scrn-750:pe-0 pt-8 scrn-750:w-4/5 scrn-1000:w-1/2'>
+          <span className='text-xl scrn-1200:text-2xl scrn-1500:text-4xl'>
             30+ years of experience keeping petroleum businesses compliant across
             Georgia — trusted by fuel retailers, distributors, and fleet operators.
           </span>
