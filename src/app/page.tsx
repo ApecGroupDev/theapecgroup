@@ -1,9 +1,12 @@
+import Header from "@/components/header";
 import About from "./home/sections/about";
 import FeatureBoxes from "./home/sections/featureboxes";
 import Hero from "./home/sections/hero";
 import MembershipLogosCarousel from "./home/sections/membershiplogoslider";
 import HomePageLayout from "./layouts/homepageLayout";
 import type { Metadata } from 'next';
+import Footer from "@/components/footer";
+import CTA from "@/components/cta";
 
 export const metadata: Metadata = {
   title: 'Petroleum Products Company | The APEC Group',
@@ -19,10 +22,14 @@ export default function Page() {
   return (
     <HomePageLayout>
       <div className="flex flex-col">
+        <Header />
         <Hero />
         <About />
         <FeatureBoxes />
         <MembershipLogosCarousel />
+        <CTA />
+        <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
+        <Footer />
       </div>
     </HomePageLayout>
   );

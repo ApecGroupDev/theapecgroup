@@ -46,7 +46,7 @@ const FeatureBoxes: React.FC = () => {
   });
 
   return (
-    <div className='bg-transparent scrn-1000:-top-4 h-140 scrn-450:h-140 scrn-500:h-160 scrn-600:h-140 scrn-750:h-152 scrn-800:h-152 scrn-900:h-176 scrn-950:h-180 scrn-1000:h-176 scrn-1100:h-184 scrn-1150:h-184 scrn-1200:h-208 scrn-1300:h-224 scrn-1400:h-248 scrn-1500:h-256 scrn-1600:h-272 scrn-1700:h-296 scrn-1800:h-312 scrn-1900:h-339 scrn-2000:h-360 scrn-2400:h-368'>
+    <div className='py-40 scrn-1100:py-72'>
       {/* Section Title */}
       <div className='text-center font-extrabold text-gray-800 text-5xl scrn-300:text-4xl scrn-750:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1200:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl'>
         <motion.p
@@ -57,11 +57,8 @@ const FeatureBoxes: React.FC = () => {
         >
           WHY CHOOSE
         </motion.p>
-        <p className='hidden scrn-750:block scrn-900:hidden scrn-1100:block mb-4'>
+        <p className='mb-4'>
           <span className="text-[#c62931]"> APEC?</span>
-        </p>
-        <p className='scrn-750:hidden scrn-900:block scrn-1100:hidden mb-4'>
-          <span className='text-white'> APEC?</span>
         </p>
       </div>
 
