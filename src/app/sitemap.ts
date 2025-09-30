@@ -55,10 +55,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/services/gas-station-financing`,
       lastModified: new Date(),
     },
-    {
-      url: `${baseUrl}/services/gas-station-pump-advertising`,
-      lastModified: new Date(),
-    },
     // Add more static pages as needed
   ]
 }
