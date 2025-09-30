@@ -46,7 +46,7 @@ const FeatureBoxes: React.FC = () => {
   });
 
   return (
-    <div className='py-40 scrn-1100:py-72'>
+    <div className='py-16 bg-gradient-to-b from-gray-200 to-red-500'>
       {/* Section Title */}
       <div className='text-center font-extrabold text-gray-800 text-5xl scrn-300:text-4xl scrn-750:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1200:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl'>
         <motion.p

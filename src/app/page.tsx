@@ -7,6 +7,9 @@ import HomePageLayout from "./layouts/homepageLayout";
 import type { Metadata } from 'next';
 import Footer from "@/components/footer";
 import CTA from "@/components/cta";
+import HeroText from "./home/sections/heroText";
+import Introductory from "./home/sections/introductory";
+import AccordionHome from "./home/sections/accordion";
 
 export const metadata: Metadata = {
   title: 'Petroleum Products Company | The APEC Group',
@@ -24,10 +27,13 @@ export default function Page() {
       <div className="flex flex-col">
         <Header />
         <Hero />
+        <HeroText />
         <About />
-        <FeatureBoxes />
         <MembershipLogosCarousel />
+        <Introductory />
+        <FeatureBoxes />
         <CTA />
+        <AccordionHome />
         <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
         <Footer />
       </div>

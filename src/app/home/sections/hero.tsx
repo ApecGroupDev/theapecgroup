@@ -54,6 +54,18 @@ const Hero: React.FC = () => {
             />
           </div>
         </div>
+        {/* H1 text pinned bottom-left */}
+        <h1
+          className="
+            hidden scrn-600:block absolute z-30 pt-1
+            -bottom-2 scrn-700:bottom-0 scrn-750:bottom-1 scrn-1000:bottom-6 scrn-1100:bottom-8 scrn-1500:bottom-12 scrn-1700:bottom-2 scrn-1800:bottom-10 scrn-1900:bottom-14 scrn-2000:bottom-16 scrn-2300:bottom-24
+            left-2 scrn-650:left-5 scrn-800:left-12 scrn-900:left-6 scrn-1200:left-9 scrn-1500:left-24 scrn-2300:left-16
+            text-xl scrn-750:text-2xl scrn-900:text-3xl scrn-1000:text-4xl scrn-1300:text-5xl scrn-1700:text-6xl scrn-2300:text-7xl
+            max-w-xs scrn-700:max-w-sm scrn-750:max-w-md scrn-900:max-w-xl scrn-1000:max-w-2xl scrn-1300:max-w-4xl scrn-1800:max-w-6xl scrn-2300:max-w-7xl
+            font-bold bg-white/50 backdrop-blur-md rounded-lg"
+        >
+          <span className="apec-red italic">One-Stop-Shop</span> for All Your Petroleum Needs — Protecting Your Business, Customers and Future
+        </h1>
       </div>
     </div>
   );
