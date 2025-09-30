@@ -1,9 +1,7 @@
 "use client";
 
 import React from "react";
-import ServicesBoxLinks2 from "@/components/servicesLinks2";
 import ContactForm from "@/components/contactForm";
-import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 
@@ -16,7 +14,7 @@ const MainImaging: React.FC = () => {
             Have a question? Need a quote? Want expert advice on your next fuel station or compliance project? You’re in the right place.
           </p>
           <p className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl mt-4">
-            At <span className="apec-red font-semibold">The APEC Group,</span> we make it easy to get the answers and support you need. Whether you're planning construction, 
+            At <span className="apec-red font-semibold">The APEC Group,</span> we make it easy to get the answers and support you need. Whether you’re planning construction,
             seeking financing, upgrading fuel equipment, or ensuring regulatory compliance — our team is ready to help.
           </p>
         </div>
