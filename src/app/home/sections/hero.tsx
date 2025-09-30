@@ -62,9 +62,9 @@ const Hero: React.FC = () => {
             left-2 scrn-650:left-5 scrn-800:left-12 scrn-900:left-6 scrn-1200:left-9 scrn-1500:left-24 scrn-2300:left-16
             text-xl scrn-750:text-2xl scrn-900:text-3xl scrn-1000:text-4xl scrn-1300:text-5xl scrn-1700:text-6xl scrn-2300:text-7xl
             max-w-xs scrn-700:max-w-sm scrn-750:max-w-md scrn-900:max-w-xl scrn-1000:max-w-2xl scrn-1300:max-w-4xl scrn-1800:max-w-6xl scrn-2300:max-w-7xl
-            font-bold bg-white/50 backdrop-blur-md rounded-lg"
+            font-semibold bg-white/50 backdrop-blur-md rounded-lg"
         >
-          <span className="apec-red italic">One-Stop-Shop</span> for All Your Petroleum Needs — Protecting Your Business, Customers and Future
+          <span className="apec-red italic font-bold">One-Stop-Shop</span> for All Your Petroleum Needs — Protecting Your Business, Customers and Future
         </h1>
       </div>
     </div>
