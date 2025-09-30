@@ -2,6 +2,8 @@ import Footer from "@/components/footer";
 import MainContact from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
+import HeaderWhite from "@/components/headerWhite";
+import GoogleMaps from "./sections/googleMaps";
 
 export const metadata: Metadata = {
   title: "Contact The APEC Group | Petroleum Services",
@@ -15,8 +17,10 @@ export const metadata: Metadata = {
 const Contact: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <HeaderWhite />
       <Hero />
       <MainContact />
+      <GoogleMaps />
       <Footer />
     </div>
   );
