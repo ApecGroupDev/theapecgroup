@@ -1,6 +1,8 @@
 import Hero from "./sections/hero";
 import TeamPage from "./sections/main";
 import { Metadata } from "next";
+import HeaderWhite from "@/components/headerWhite";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Meet Our Team | The APEC Group",
@@ -14,8 +16,11 @@ export const metadata: Metadata = {
 const About: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <HeaderWhite />
       <Hero />
       <TeamPage />
+      <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
+      <Footer />
     </div>
   );
 };
