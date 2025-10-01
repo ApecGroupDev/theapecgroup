@@ -14,7 +14,7 @@ const About: React.FC = () => {
     <div className='bg-transparent py-16 flex flex-col items-center scrn-600:justify-center h-auto'>
       <div className='flex flex-col items-center justify-center gap-y-4 h-auto max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl w-full bg-transparent'>
         <div className='h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 w-full'>
-          <div className="grid mx-4 scrn-1000:grid-cols-[1fr_2fr]">
+          <div className="grid mx-4 gap-4 scrn-1000:grid-cols-[1fr_2fr]">
 
             {/* Left Image Section */}
             <div className="hidden scrn-1000:flex justify-start items-start">
@@ -23,8 +23,7 @@ const About: React.FC = () => {
                 alt="Hero"
                 width={500}
                 height={800}
-                className="h-auto w-auto max-w-full max-h-full object-cover my-auto
-                scrn-1200:scale-110 scrn-1400:scale-125 scrn-1700:scale-135 scrn-1500:ms-12"
+                className="h-auto w-auto max-w-full max-h-full object-cover my-auto"
               />
             </div>
 
