@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="bg-gray-300 text-gray-800">
+    <html lang="en" className="text-gray-800">
       <head>
         {/* Google Search Console */}
         <meta
