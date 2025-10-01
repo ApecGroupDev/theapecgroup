@@ -57,14 +57,14 @@ export default function FinancingContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='space-y-2 scrn-600:space-y-3 scrn-750:space-y-4 scrn-900:space-y-2 scrn-1000:space-y-4 scrn-1250:space-y-2 scrn-1400:space-y-4 scrn-1500:space-y-8 scrn-1900:space-y-12 mt-6 scrn-750:mt-8 scrn-800:mt-6 scrn-900:mt-12 scrn-300:text-xs scrn-450:text-sm scrn-600:text-base scrn-750:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1700:text-xl'>
+    <form onSubmit={handleSubmit} className='tracking-wider space-y-2 scrn-600:space-y-3 scrn-750:space-y-4 scrn-900:space-y-2 scrn-1000:space-y-4 scrn-1250:space-y-2 scrn-1400:space-y-4 scrn-1500:space-y-8 scrn-1900:space-y-12 mt-6 scrn-750:mt-8 scrn-800:mt-6 scrn-900:mt-12 scrn-300:text-xs scrn-450:text-sm scrn-600:text-base scrn-750:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1700:text-xl'>
       <input
         type="text"
         name="name"
         placeholder="Your Name"
         value={formData.name}
         onChange={handleChange}
-        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600'
+        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 placeholder-black'
         required
       />
       <input
@@ -73,7 +73,7 @@ export default function FinancingContactForm() {
         placeholder="Email Address"
         value={formData.email}
         onChange={handleChange}
-        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600'
+        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 placeholder-black'
         required
       />
       <input
@@ -82,19 +82,19 @@ export default function FinancingContactForm() {
         placeholder="Phone Number"
         value={formData.phone}
         onChange={handleChange}
-        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600'
+        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 placeholder-black'
       />
       <textarea
         name="message"
         placeholder="Message"
         value={formData.message}
         onChange={handleChange}
-        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 text-gray-900 placeholder-gray-600 min-h-40'
+        className='w-full border-b border-gray-400 bg-transparent outline-none py-2 placeholder-black min-h-40'
         required
       />
       <button
         type="submit"
-        className='w-2/5 bg-[#c62931] text-white py-3 rounded-md font-semibold hover:bg-red-500 transition'
+        className='w-2/5 bg-[#c62931] text-white py-3 rounded-md hover:bg-red-500 transition'
       >
         SUBMIT
       </button>
