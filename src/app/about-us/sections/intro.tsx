@@ -6,9 +6,9 @@ import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 
 const IntroAbout: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center min-h-screen'>
+    <div className='bg-transparent flex flex-col items-center justify-center'>
       {/* Intro Paragraph */}
-      <div className="flex flex-col items-center scrn-600:justify-center gap-y-4 h-auto mb-12 max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl">
+      <div className="flex flex-col items-center scrn-600:justify-center h-auto max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl">
         <div className="mt-12">
           <p className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
             Since 1989, <span className="apec-red font-semibold">The APEC Group(Atlanta Petroleum Equipment Company)</span>  has helped fuel retailers, contractors,

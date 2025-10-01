@@ -30,7 +30,7 @@ const ValuesSection = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section className='w-full bg-gradient-to-b from-gray-200 from-1% to-red-600 to-75% text-center text-gray-200'>
+    <section className='w-full bg-gradient-to-b from-white from-1% to-red-600 to-75% text-center text-gray-200'>
       <div className='flex flex-col mx-auto items-center justify-center text-center w-full overflow-hidden max-w-[2560px] py-40 scrn-1100:py-72'>
         <span className='text-white scrn-300:text-4xl scrn-800:text-5xl scrn-1250:text-7xl scrn-2500:text-9xl italic'>Our</span>
         <motion.span
