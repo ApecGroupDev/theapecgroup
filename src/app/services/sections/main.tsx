@@ -70,7 +70,7 @@ const MainServices: React.FC = () => {
 
         <div className='h-auto pt-4 scrn-400:pt-8 scrn-600:pt-16'>
           <h2>
-            <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
+            <span className='font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
               WHY CHOOSE APEC?
             </span>
           </h2>
