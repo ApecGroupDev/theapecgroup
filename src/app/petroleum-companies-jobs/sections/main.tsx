@@ -142,7 +142,7 @@ const MainFinancing: React.FC = () => {
         </section>
 
         <div className='relative rounded-3xl shadow-2xl mt-6 scrn-500:mt-8'>
-          <div className='absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0'></div>
+          <div className='absolute inset-0 bg-gray-200 backdrop-blur-md rounded-3xl z-0'></div>
           <div className='relative text-center z-10 p-4 scrn-800:p-8 scrn-900:p-10 scrn-1000:p-12 scrn-1250:p-16 scrn-1500:p-24'>
             <span className='apec-red font-medium scrn-300:text-base scrn-500:text-xl scrn-750:text-lg scrn-900:text-xl scrn-1000:text-xl scrn-1250:text-2xl scrn-1500:text-3xl scrn-1900:text-4xl'>
               APPLY NOW!
