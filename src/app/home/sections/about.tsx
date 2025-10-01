@@ -61,7 +61,7 @@ const About: React.FC = () => {
               {/* Button */}
               <div className='mt-8 scrn-300:mt-4 scrn-400:mt-2 scrn-750:mt-4 scrn-850:mt-6 scrn-1700:mt-12 scrn-2k:mt-20 flex justify-center'>
                 <button
-                  className='scrn-300:px-6 scrn-400:px-8 px-16 scrn-750:px-12 scrn-300:text-xs scrn-400:text-xs scrn-750:text-sm scrn-1000:px-20 scrn-2k:px-28 py-1 border-2 border-[#c62931] text-gray-800 scrn-1000:text-lg scrn-1700:text-2xl font-regular rounded-lg hover:bg-red-600 hover:text-white transition duration-200'>
+                  className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md hover:bg-red-500 transition'>
                   Sales@TheAPECgroup.com
                 </button>
               </div>
