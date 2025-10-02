@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import ServicesBoxLinks2 from "@/components/servicesLinks";
 import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
