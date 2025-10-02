@@ -30,7 +30,6 @@ const About: React.FC = () => {
       <VisionSection />
       <ChooseUs />
       <CTA />
-      <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
       <Footer />
     </div>
   );
