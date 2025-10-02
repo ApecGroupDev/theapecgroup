@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import ServicesBoxLinks2 from "@/components/servicesLinks2";
+import ServicesBoxLinks2 from "@/components/servicesLinks";
 import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
@@ -155,9 +155,6 @@ const MainFinancing: React.FC = () => {
         <div className="w-full p-6 mt-24">
           <span className="apec-red text-xl font-bold">Petroleum Careers FAQs</span>
           <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
-        </div>
-        <div className='space-x-2 font-semibold text-nowrap hidden scrn-600:block mt-16'>
-          <ServicesBoxLinks2 />
         </div>
       </div>
     </div>
