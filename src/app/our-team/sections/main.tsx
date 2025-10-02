@@ -30,16 +30,16 @@ const TeamPage: React.FC = () => {
   const rows: TeamMember[][] = [];
   let i = 0;
 
-  while (i < teamMembers.length) {
+  while (i < teamMembers.length) {//gg
     const count: number = rows.length % 2 === 0 ? 2 : 3; // Alternate rows
     rows.push(teamMembers.slice(i, i + count));
     i += count;
   }
 
   return (
-    <section className='text-center font-bold text-gray-800 scrn-450:pt-6 scrn-600:pt-6 scrn-700:pt-12 scrn-800:pt-12 scrn-900:pt-12 scrn-1000:pt-12 scrn-1100:pt-16 scrn-1400:pt-20 scrn-1500:pt-24 scrn-1700:pt-28 scrn-1800:pt-32 scrn-1900:pt-20 h-160 scrn-450:h-188 scrn-600:h-160 scrn-650:h-172 scrn-700:h-188 scrn-750:h-208 scrn-800:h-224 scrn-850:h-232 scrn-900:h-244 scrn-950:h-256 scrn-1000:h-288 scrn-1100:h-296 scrn-1150:h-312 scrn-1200:h-324 scrn-1300:h-360 scrn-1400:h-384 scrn-1500:h-416 scrn-1600:h-432 scrn-1700:h-464 scrn-1800:h-480 scrn-2000:h-512 scrn-2100:h-544 scrn-2250:h-576 scrn-2350:h-608 scrn-2500:h-640'>
+    <section className='text-center font-bold text-gray-800 h-auto mb-24'>
       <span className='scrn-300:text-xs scrn-450:text-sm scrn-600:text-base scrn-900:text-xl scrn-1000:text-2xl scrn-1250:text-2xl scrn-1500:text-4xl'>
-        Dedicated professionals delivering exceptional service
+        Meet a Few of Our Leaders
       </span><br />
       <span className='font-bold text-[#c62931] scrn-900:text-xl scrn-1000:text-2xl scrn-1250:text-2xl scrn-1500:text-4xl'>
         100% privately owned and operated
