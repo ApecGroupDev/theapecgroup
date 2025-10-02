@@ -12,6 +12,11 @@ interface Services {
   slug: string;
 }
 
+const externalSlugs = [
+  "metalproductsusa.com",
+  "https://www.theapecgroup.com/contact-us",
+];
+
 const features: Services[] = [
   {
     title: "APEC CONSTRUCTION",
@@ -33,9 +38,9 @@ const features: Services[] = [
   },
   {
     title: "APEC FINANCES",
-    description: "Gas Station Financing and Loans Services",
+    description: "Financing and Loans Services",
     imageSrc: "/servicesLogos/Apec-Financing.webp",
-    slug: "gas-station-financing"
+    slug: "gas-station-financing",
   },
   {
     title: "APEC ELECTRICAL",
@@ -45,21 +50,27 @@ const features: Services[] = [
   },
   {
     title: "APEC COMPLIANCE",
-    description: "Gas Station Inspection and Compliance Services",
+    description: "Inspection and Compliance Services",
     imageSrc: "/servicesLogos/Apec-Compliance.webp",
     slug: "environmental-compliance-solutions",
+  },
+  {
+    title: "APEC CONSULTATION",
+    description: "Free Consultation Anytime!",
+    imageSrc: "/logos/APEC.webp",
+    slug: "https://www.theapecgroup.com/contact-us",
   },
 ];
 
 const ServicesBoxLinks: React.FC = () => {
-  const pathname = usePathname(); // 👈 Get current URL path
+  const pathname = usePathname();
 
   const hiddenSlugsByPath: Record<string, string[]> = {
     "/services/gas-station-construction": ["gas-station-construction"],
     "/services/canopy-imaging-solutions": ["canopy-imaging-solutions"],
     "/services/gas-station-financing": ["gas-station-financing"],
     "/services/gas-station-electrical": ["gas-station-electrical"],
-    "/services/environmental-compliance-solutions": ["environmental-compliance-solutions"],
+    "/services/environmental-compliance-solutions": ["environmental-compliance-solutions",],
   };
 
   const hiddenSlugs = hiddenSlugsByPath[pathname] || [];
@@ -67,13 +78,28 @@ const ServicesBoxLinks: React.FC = () => {
   const filteredFeatures = features.filter(
     (feature) => !hiddenSlugs.includes(feature.slug)
   );
+
   return (
-    <div>
-      {/* Feature Boxes */}
-      <div className='flex flex-row mt-auto scrn-1000:pb-0 gap-4 scrn-1000:gap-6 scrn-1400:gap-8 scrn-2000:gap-12'>
+    <div className="w-full pb-24">
+      {/* Section Heading */}
+      <div className="my-6">
+        <h2 className="text-xl scrn-1000:text-2xl font-semibold">
+          You may also be interested in:
+        </h2>
+      </div>
+
+      {/* Responsive Grid (multiple per row, not full width) */}
+      <div className="grid scrn-600:grid-cols-2 scrn-1000:grid-cols-3 lg:grid-cols-4 gap-8">
         {filteredFeatures.map((feature, index) => {
-          const isExternal = feature.slug === "metalproductsusa.com";
-          const href = isExternal ? `https://${feature.slug}` : `/services/${feature.slug}`;
+          // check if slug is external
+          const isExternal = externalSlugs.includes(feature.slug);
+
+          // build the href
+          const href = isExternal
+            ? feature.slug.startsWith("http")
+              ? feature.slug // already full URL
+              : `https://${feature.slug}` // add protocol if just domain
+            : `/services/${feature.slug}`;
 
           return (
             <Link
@@ -84,21 +110,24 @@ const ServicesBoxLinks: React.FC = () => {
                 : {})}
               passHref
             >
-              <div
-                className='relative group bg-gray-100 p-3 scrn-1000:p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-20 scrn-1000:w-24 scrn-1400:w-32 scrn-1900:w-40 scrn-2000:w-48'>
-
-                <div className='flex items-center justify-center h-12 scrn-1000:h-12 scrn-1400:h-16 scrn-1900:h-24 scrn-2000:h-32'>
+              <div className="group bg-gray-300 rounded-xl mb-12 transition-all duration-300 overflow-hidden outline-red-600 outline-1 outline">
+                {/* Logo */}
+                <div className="flex items-center justify-center bg-gray-50 p-6 h-32">
                   <Image
                     src={feature.imageSrc}
                     alt={feature.title}
-                    width={400}
-                    height={200}
-                    className='w-full object-contain'
+                    width={200}
+                    height={120}
+                    className="object-contain max-h-full"
                   />
                 </div>
 
-                <div className='absolute inset-0 flex flex-col justify-center items-center p-0 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
-                  <p className='text-gray-700 text-center overflow-x-auto max-h-48 px-4 text-wrap text-3xs scrn-1000:text-xs'>
+                {/* Title + Description */}
+                <div className="p-4 text-center">
+                  <h3 className="text-base md:text-lg font-bold text-gray-800 mb-2 group-hover:text-red-600 transition-colors">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm font-medium">
                     {feature.description}
                   </p>
                 </div>
