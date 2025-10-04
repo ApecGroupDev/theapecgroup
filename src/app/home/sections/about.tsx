@@ -59,7 +59,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Button */}
-              <div className='mt-8 scrn-300:mt-4 scrn-400:mt-2 scrn-750:mt-4 scrn-850:mt-6 scrn-1700:mt-12 scrn-2k:mt-20 flex justify-center'>
+              <div className='mt-8 flex justify-center'>
                 <button
                   className='bg-[#c62931] text-white py-4 px-12 mt-8 rounded-md hover:bg-red-500 transition'>
                   Sales@TheAPECgroup.com
