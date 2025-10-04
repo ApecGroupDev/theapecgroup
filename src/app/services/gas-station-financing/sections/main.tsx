@@ -3,17 +3,9 @@
 import React from "react";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import FinancingContactForm from "@/components/financingContactForm";
-import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'Do you provide financing directly or connect us with lenders?', content: <p>We work with trusted lending partners to connect you with the best funding options for your needs.</p> },
-  { id: 'two', title: 'Can you help with both construction and equipment financing?', content: <p>Yes — we provide solutions for both construction and equipment, as well as upgrades and remodels.</p> },
-  { id: 'three', title: 'Where do you offer gas station financing services?', content: <p>Georgia, Texas, and Atlanta — with local expertise to match regional requirements.</p> },
-  { id: 'four', title: 'Is financing available for remodels or site upgrades?', content: <p>Absolutely — we can help secure funding for improvements, expansions, or compliance upgrades.</p> },
-  { id: 'five', title: 'How quickly can financing be arranged?', content: <p>Timelines vary, but we work to secure fast approvals so you can keep your project moving.</p> },
-];
+import AccordionFinancing from "./accordion";
 
 const MainFinancing: React.FC = () => {
   return (
@@ -71,9 +63,8 @@ const MainFinancing: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full p-6 mt-24">
-          <span className="text-[#c62931] text-xl font-bold">Gas Station Financing FAQs</span>
-          <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
+        <div className="my-20">
+          <AccordionFinancing />
         </div>
         <div className='space-x-2 font-semibold text-nowrap mt-16'>
           <ServicesBoxLinks />

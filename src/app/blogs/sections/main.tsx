@@ -6,7 +6,7 @@ import { blogData } from "../components/blogData";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import { Check } from "lucide-react";
-import Accordion, { AccordionItem } from "@/components/accordion";
+import AccordionBlogs from "./accordion";
 
 const checklistItems = [
   "Regulatory compliance updates (federal, state, and local)",
@@ -15,14 +15,6 @@ const checklistItems = [
   "Fuel tank maintenance and monitoring guidance",
   "Financing and equipment upgrade tips",
   "Branding and customer engagement strategies",
-];
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'How often is the blog updated?', content: <p>We add new posts every week — covering timely trends, updates, and expert advice.</p> },
-  { id: 'two', title: 'Is the blog content relevant to my region?', content: <p>Yes — we provide insights specific across Georgia and national regulations.</p> },
-  { id: 'three', title: 'Can I request topics or ask questions?', content: <p>Absolutely. Contact us to request a topic or clarification — we may turn it into a future post.</p> },
-  { id: 'four', title: 'Is this content beginner-friendly?', content: <p>Yes — our content is written in clear, natural language while offering real value for industry pros.</p> },
-  { id: 'five', title: 'Can I share the blog posts with my team or customers?', content: <p>Yes — please do! Sharing helps fuel smarter, safer operations across the industry.</p> },
 ];
 
 const BlogMain: React.FC = () => {
@@ -139,12 +131,9 @@ const BlogMain: React.FC = () => {
             </div>
           </div>
         ))}
-
-        <div className="w-full p-6 mt-24">
-          <span className="text-[#c62931] text-xl font-bold">FAQs About the APEC Blog</span>
-          <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
+        <div className="my-20">
+          <AccordionBlogs />
         </div>
-
       </div>
     </div >
   );

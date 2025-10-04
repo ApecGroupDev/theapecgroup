@@ -3,17 +3,9 @@
 import React from "react";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import ComplianceContactForm from "@/components/complianceContactForm";
-import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'Who do you serve with your environmental compliance services?', content: <p>We support gas stations, fleet yards, fuel distributors, C-stores, and other commercial fueling sites.</p> },
-  { id: 'two', title: 'Can you handle all compliance paperwork and permitting?', content: <p>Yes — we take care of permits, reports, documentation, and liaising with regulators so you stay ahead.</p> },
-  { id: 'three', title: 'Do you provide spill prevention and response?', content: <p>Absolutely — we offer prevention systems, emergency response, and cleanup services.</p> },
-  { id: 'four', title: 'Are your services specific to Georgia and Texas regulations?', content: <p>Yes — we have deep local expertise and handle compliance to match all regional codes.</p> },
-  { id: 'five', title: 'Can you test our tanks and lines for leaks?', content: <p>Yes — we provide certified testing and inspections to detect issues before they become costly problems.</p> },
-];
+import AccordionCompliance from "./accordion";
 
 const MainCompliance: React.FC = () => {
   return (
@@ -73,9 +65,8 @@ const MainCompliance: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full p-6 mt-24">
-          <span className="text-[#c62931] text-xl font-bold">Environmental Compliance FAQs</span>
-          <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
+        <div className="my-20">
+          <AccordionCompliance />
         </div>
         <div className='space-x-2 font-semibold text-nowrap mt-16'>
           <ServicesBoxLinks />

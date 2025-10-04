@@ -3,16 +3,9 @@
 import React from "react";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import ImagingContactForm from "@/components/imagingContactForm";
-import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'Do you handle both design and installation?', content: <p>Yes — we provide full-service canopy imaging from design to final install.</p> },
-  { id: 'two', title: 'Can you update or refresh an existing canopy?', content: <p>Absolutely — we can refurbish, rebrand, or upgrade your current canopy for a fresh new look.</p> },
-  { id: 'three', title: 'Where do you offer canopy imaging services?', content: <p>We serve Georgia, Texas, and Atlanta with local expertise.</p> },
-  { id: 'four', title: 'Are the materials weather-resistant?', content: <p>Yes — we use high-quality, durable materials built to withstand the elements and keep your station looking sharp.</p> },
-];
+import AccordionImaging from "./accordion";
 
 const MainImaging: React.FC = () => {
   return (
@@ -70,9 +63,8 @@ const MainImaging: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full p-6 mt-24">
-          <span className="text-[#c62931] text-xl font-bold">Imaging and Canopy FAQs</span>
-          <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
+        <div className="my-20">
+          <AccordionImaging />
         </div>
         <div className='space-x-2 font-semibold text-nowrap mt-16'>
           <ServicesBoxLinks />

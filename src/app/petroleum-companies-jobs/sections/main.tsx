@@ -1,17 +1,10 @@
 "use client";
 
 import React from "react";
-import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import CareersForm from "@/components/careersForm";
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'Do I need petroleum industry experience?', content: <p>Not always. We offer training for many roles — especially in fuel delivery and equipment service.</p> },
-  { id: 'two', title: 'How fast is the hiring process?', content: <p>We typically schedule interviews within a week of reviewing applications.</p> },
-  { id: 'three', title: 'Do you provide safety and compliance training?', content: <p>Absolutely. We prioritize safety and ensure all employees are trained to industry standards.</p> },
-  { id: 'four', title: 'Where do you operate?', content: <p>Our core operations are in Georgia and surrounding Southeastern states.</p> },
-];
+import AccordionCareers from "./accordion";
 
 const steps = [
   {
@@ -151,9 +144,8 @@ const MainFinancing: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full p-6 mt-24">
-          <span className="apec-red text-xl font-bold">Petroleum Careers FAQs</span>
-          <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
+        <div className="my-20">
+          <AccordionCareers />
         </div>
       </div>
     </div>

@@ -3,17 +3,9 @@
 import React from "react";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import ConstructionContactForm from "@/components/constructionContactForm";
-import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'Do you handle permits and compliance?', content: <p>Yes — we manage all permitting, inspections, and regulatory requirements.</p> },
-  { id: 'two', title: 'Can you design and build the entire station?', content: <p>Absolutely — we handle design, permitting, construction, and final inspection.</p> },
-  { id: 'three', title: 'Where do you provide these services?', content: <p>We serve Georgia, Texas, and Atlanta with local expertise.</p> },
-  { id: 'four', title: 'Do you build canopies and convenience store structures too?', content: <p>Yes — we provide full fueling site construction, including canopy and C-store build-out.</p> },
-  { id: 'five', title: 'How long does construction take?', content: <p>Timelines vary by project size, but we provide clear schedules and deliver on time.</p> },
-];
+import AccordionConstruction from "./accordion";
 
 const MainConstruction: React.FC = () => {
   return (
@@ -73,9 +65,8 @@ const MainConstruction: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full p-6 mt-24">
-          <span className="text-[#c62931] text-xl font-bold">Gas Station Construction FAQs</span>
-          <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
+        <div className="my-20">
+          <AccordionConstruction />
         </div>
         <div className='space-x-2 font-semibold text-nowrap mt-16'>
           <ServicesBoxLinks />

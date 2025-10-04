@@ -2,18 +2,10 @@
 
 import React from "react";
 import ServicesBoxLinks from "@/components/servicesLinks";
-import Accordion, { AccordionItem } from "@/components/accordion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import ElectricalContactForm from "@/components/electricalContactForm";
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'Who do you serve with your electrical services?', content: <p>We support gas stations, petroleum facilities, fleet yards, and convenience store operators.</p> },
-  { id: 'two', title: 'Do you handle both new builds and existing stations?', content: <p>Yes — we provide turnkey installations for new fuel stations and upgrades for existing sites.</p> },
-  { id: 'three', title: 'Are your services code-compliant?', content: <p>Absolutely — we follow NEC, OSHA, and local codes to ensure 100% compliance and safety.</p> },
-  { id: 'four', title: 'Do you install canopy and lot lighting?', content: <p>Yes — we install and maintain canopy and parking lot lighting to keep your station safe and visible.</p> },
-  { id: 'five', title: 'Do you provide emergency electrical service?', content: <p>Yes — our 24/7 emergency support keeps your fuel station online and prevents costly downtime.</p> },
-];
+import AccordionElectrical from "./accordion";
 
 const MainFinancing: React.FC = () => {
   return (
@@ -81,9 +73,8 @@ const MainFinancing: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="w-full p-6 mt-24">
-          <span className="text-[#c62931] text-xl font-bold">Gas Station Financing FAQs</span>
-          <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
+        <div className="my-20">
+          <AccordionElectrical />
         </div>
         <div className='space-x-2 font-semibold text-nowrapw mt-16'>
           <ServicesBoxLinks />
