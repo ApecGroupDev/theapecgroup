@@ -20,7 +20,7 @@ const externalSlugs = [
 const features: Services[] = [
   {
     title: "APEC CONSTRUCTION",
-    description: "Gas Station Construction Company Services",
+    description: "Gas Station Construction Services",
     imageSrc: "/servicesLogos/Apec-Constructions.webp",
     slug: "gas-station-construction",
   },
