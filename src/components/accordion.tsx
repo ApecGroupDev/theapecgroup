@@ -72,7 +72,7 @@ export default function Accordion({
         const isOpen = currentOpen.includes(item.id);
 
         return (
-          <div className="border-b-2 border-gray-400 last:border-b-0 text-xs scrn-450:text-sm scrn-600:text-base scrn-750:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1700:text-xl" key={item.id}>
+          <div className="border-b-2 border-gray-400 last:border-b-0 text-base scrn-1000:text-lg scrn-1700:text-xl" key={item.id}>
             <h3>
               <button
                 id={headerId}
@@ -101,7 +101,7 @@ export default function Accordion({
                 }}
                 className="w-full text-left py-4 px-3 flex items-center justify-between focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 transition-colors"
               >
-                <span className="font-medium">{item.title}</span>
+                <span className="font-medium text-lg scrn-1000:text-xl scrn-1700:2xl apec-red">{item.title}</span>
                 <span
                   className={`ml-3 transform transition-transform duration-200 ${isOpen ? "rotate-180" : "rotate-0"
                     }`}
@@ -131,7 +131,7 @@ export default function Accordion({
                 maxHeight: isOpen ? undefined : 0,
               }}
             >
-              <div className="py-3">{item.content}</div>
+              <div className="px-6 py-4 tracking-wide">{item.content}</div>
             </div>
           </div>
         );
@@ -140,27 +140,3 @@ export default function Accordion({
   );
 }
 
-/*
-Usage example (paste into a page or component):
-
-import Accordion, { AccordionItem } from './Accordion';
-
-const items: AccordionItem[] = [
-  { id: 'one', title: 'First item', content: <p>Content for first</p> },
-  { id: 'two', title: 'Second item', content: <p>Content for second</p> },
-  { id: 'three', title: 'Third item', content: <p>Content for third</p> },
-];
-
-export default function Demo() {
-  return (
-    <div className="max-w-xl mx-auto p-6">
-      <Accordion items={items} allowMultiple={false} defaultOpenIds={["one"]} />
-    </div>
-  );
-}
-
-Notes:
-- This component supports controlled (pass openIds prop) and uncontrolled (defaultOpenIds) usage.
-- Keyboard: ArrowUp/Down to move, Home/End, Enter/Space to toggle.
-- Tailwind classes handle the styling. Tweak as needed for your theme.
-*/
