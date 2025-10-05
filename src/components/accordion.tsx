@@ -66,7 +66,7 @@ export default function Accordion({
                 aria-controls={panelId}
                 aria-expanded={isOpen}
                 className={`w-full text-left flex justify-between items-center py-4 px-5 transition-all duration-300
-                  hover:bg-gray-100 focus-visible:ring-2 focus-visible:ring-red-500`}
+                  hover:bg-gray-200 focus-visible:ring-2 focus-visible:ring-red-500`}
               >
                 <span className="font-semibold text-lg scrn-1000:text-xl text-[#c62931]">
                   {item.title}
@@ -102,7 +102,7 @@ export default function Accordion({
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="relative w-full min-w-full flex-shrink-0 overflow-hidden"
                   >
-                    <div className="px-6 pb-5 pt-1 text-gray-700 tracking-wide leading-relaxed w-full">
+                    <div className="px-10 py-5 pt-2 text-gray-800 tracking-wide leading-relaxed w-full">
                       {item.content}
                     </div>
                   </motion.div>
