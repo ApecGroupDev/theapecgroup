@@ -1,4 +1,7 @@
-import React, { useId, useState, useRef, useEffect } from "react";
+"use client";
+
+import React, { useId, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export type AccordionItem = {
   id: string;
@@ -8,11 +11,8 @@ export type AccordionItem = {
 
 export type AccordionProps = {
   items: AccordionItem[];
-  /** allow multiple panels to be open at once */
   allowMultiple?: boolean;
-  /** controlled open ids */
   openIds?: string[];
-  /** default open ids for uncontrolled mode */
   defaultOpenIds?: string[];
   onChange?: (openIds: string[]) => void;
   className?: string;
@@ -29,11 +29,7 @@ export default function Accordion({
   const isControlled = Array.isArray(openIds);
   const [internalOpen, setInternalOpen] = useState<string[]>(defaultOpenIds);
   const currentOpen = isControlled ? openIds! : internalOpen;
-
-  useEffect(() => {
-    if (!isControlled) return;
-    // no-op: controlled mode expects parent to manage state
-  }, [isControlled]);
+  const idRoot = useId();
 
   const toggle = (id: string) => {
     const isOpen = currentOpen.includes(id);
@@ -48,69 +44,42 @@ export default function Accordion({
     onChange?.(next);
   };
 
-  // keyboard focus management
-  const headersRef = useRef<HTMLButtonElement[]>([]);
-
-  const setHeaderRef = (el: HTMLButtonElement | null, index: number) => {
-    if (el) {
-      headersRef.current[index] = el;
-    }
-  };
-
-  const focusHeader = (index: number) => {
-    const btn = headersRef.current[index];
-    if (btn) btn.focus();
-  };
-
-  const idRoot = useId();
-
   return (
     <div className={`w-full ${className}`}>
-      {items.map((item, idx) => {
-        const panelId = `${idRoot}-panel-${item.id}`;
-        const headerId = `${idRoot}-header-${item.id}`;
-        const isOpen = currentOpen.includes(item.id);
+      {/* full-width container */}
+      <div className="w-full divide-y divide-gray-300 bg-white/60 backdrop-blur-md rounded-lg">
+        {items.map((item) => {
+          const isOpen = currentOpen.includes(item.id);
+          const panelId = `${idRoot}-panel-${item.id}`;
+          const headerId = `${idRoot}-header-${item.id}`;
 
-        return (
-          <div className="border-b-2 border-gray-400 last:border-b-0 text-base scrn-1000:text-lg scrn-1700:text-xl" key={item.id}>
-            <h3>
+          return (
+            <motion.div
+              key={item.id}
+              layout
+              className="w-full overflow-hidden"
+              transition={{ layout: { duration: 0.3, ease: "easeInOut" } }}
+            >
               <button
                 id={headerId}
-                ref={(el) => setHeaderRef(el, idx)}
+                onClick={() => toggle(item.id)}
                 aria-controls={panelId}
                 aria-expanded={isOpen}
-                onClick={() => toggle(item.id)}
-                onKeyDown={(e) => {
-                  const key = e.key;
-                  if (key === "ArrowDown") {
-                    e.preventDefault();
-                    focusHeader((idx + 1) % items.length);
-                  } else if (key === "ArrowUp") {
-                    e.preventDefault();
-                    focusHeader((idx - 1 + items.length) % items.length);
-                  } else if (key === "Home") {
-                    e.preventDefault();
-                    focusHeader(0);
-                  } else if (key === "End") {
-                    e.preventDefault();
-                    focusHeader(items.length - 1);
-                  } else if (key === "Enter" || key === " ") {
-                    e.preventDefault();
-                    toggle(item.id);
-                  }
-                }}
-                className="w-full text-left py-4 px-3 flex items-center justify-between focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 transition-colors"
+                className={`w-full text-left flex justify-between items-center py-4 px-5 transition-all duration-300
+                  hover:bg-gray-100 focus-visible:ring-2 focus-visible:ring-red-500`}
               >
-                <span className="font-medium text-lg scrn-1000:text-xl scrn-1700:2xl apec-red">{item.title}</span>
-                <span
-                  className={`ml-3 transform transition-transform duration-200 ${isOpen ? "rotate-180" : "rotate-0"
-                    }`}
-                  aria-hidden="true"
+                <span className="font-semibold text-lg scrn-1000:text-xl text-[#c62931]">
+                  {item.title}
+                </span>
+
+                <motion.span
+                  animate={{ rotate: isOpen ? 180 : 0 }}
+                  transition={{ duration: 0.25 }}
+                  className="ml-3 flex-shrink-0"
                 >
-                  {/* simple chevron */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 text-red-600"
+                    className="h-6 w-6 text-[#c62931]"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -118,25 +87,31 @@ export default function Accordion({
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
-                </span>
+                </motion.span>
               </button>
-            </h3>
 
-            <div
-              id={panelId}
-              role="region"
-              aria-labelledby={headerId}
-              className={`overflow-hidden transition-all duration-200 px-3`}
-              style={{
-                maxHeight: isOpen ? undefined : 0,
-              }}
-            >
-              <div className="px-6 py-4 tracking-wide">{item.content}</div>
-            </div>
-          </div>
-        );
-      })}
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    id={panelId}
+                    role="region"
+                    aria-labelledby={headerId}
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className="relative w-full min-w-full flex-shrink-0 overflow-hidden"
+                  >
+                    <div className="px-6 pb-5 pt-1 text-gray-700 tracking-wide leading-relaxed w-full">
+                      {item.content}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          );
+        })}
+      </div>
     </div>
   );
 }
-
