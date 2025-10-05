@@ -80,7 +80,7 @@ const ServicesBoxLinks: React.FC = () => {
   );
 
   return (
-    <div className="w-full pb-24">
+    <div className="w-full pb-24 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
       {/* Section Heading */}
       <div className="my-6">
         <h2 className="text-xl scrn-1000:text-2xl font-semibold">
