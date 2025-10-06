@@ -4,9 +4,9 @@ import React from "react";
 
 const CTA: React.FC = () => {
   return (
-    <div className='flex flex-col items-center scrn-600:justify-center h-auto px-2 scrn-600:px-14'>
+    <div className='flex flex-col items-center scrn-600:justify-center h-auto w-full max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
       {/* CTA Section */}
-      <section className="w-full outline-dashed py-12 px-6 my-16 rounded-2xl">
+      <section className="w-full outline-dashed py-12 my-16 rounded-2xl">
         <div className="mx-auto text-center space-y-6">
           <h2 className="text-2xl scrn-600:text-3xl scrn-1000:text-4xl font-bold">
             Ready to Build or Grow Your Gas Station Business?
