@@ -45,7 +45,7 @@ export default function Accordion({
   };
 
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`w-full outline outline-gray-300 rounded-lg ${className}`}>
       {/* full-width container */}
       <div className="w-full divide-y divide-gray-300 bg-white/60 backdrop-blur-md rounded-lg">
         {items.map((item) => {
