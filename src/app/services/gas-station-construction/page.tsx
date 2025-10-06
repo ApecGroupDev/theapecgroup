@@ -3,6 +3,8 @@ import Footer from "@/components/footer";
 import MainConstruction from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
+import AccordionConstruction from "./sections/accordion";
+import ServicesBoxLinks from "@/components/servicesLinks";
 
 export const metadata: Metadata = {
   title: "Gas Station Construction Services | APEC",
@@ -19,6 +21,8 @@ const ServicesConstruction: React.FC = () => {
       <HeaderWhite />
       <Hero />
       <MainConstruction />
+      <AccordionConstruction />
+      <ServicesBoxLinks />
       <Footer />
     </div>
   );
