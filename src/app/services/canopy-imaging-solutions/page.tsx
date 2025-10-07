@@ -3,6 +3,8 @@ import Footer from "@/components/footer";
 import MainImaging from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
+import AccordionImaging from "./sections/accordion";
+import ServicesBoxLinks from "@/components/servicesLinks";
 
 export const metadata: Metadata = {
   title: "Canopy Imaging Solutions | APEC",
@@ -19,6 +21,8 @@ const ServicesImaging: React.FC = () => {
       <HeaderWhite />
       <Hero />
       <MainImaging />
+      <AccordionImaging />
+      <ServicesBoxLinks />
       <Footer />
     </div>
   );
