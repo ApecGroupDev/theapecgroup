@@ -19,8 +19,8 @@ export const blogData: BlogThumbnail[] = [
     slug: 'how-gasoline-pumps-work',
   },
   {
-    title: 'Main Parts Of The',
-    subtitle: 'Petroleum Industry',
+    title: 'Main Parts Of The Petroleum Industry',
+    subtitle: 'Explore Parts of the Industry',
     imageUrl: '/blogImages/blogThumbnails/blog3.webp',
     slug: 'petroleum-industry-segments',
   },
@@ -49,8 +49,8 @@ export const blogData: BlogThumbnail[] = [
     slug: 'petroleum-equipment-innovations',
   },
   {
-    title: 'Gas Station',
-    subtitle: 'Inspection Checklist',
+    title: 'Gas Station Inspection Checklist',
+    subtitle: 'See Important Details',
     imageUrl: '/blogImages/blogThumbnails/blog8.webp',
     slug: 'gas-station-inspection-checklist',
   },
