@@ -1,96 +1,105 @@
-import React from 'react';
-import TeamCard from '../components/teamCard';
-import TeamCardNoImage from '../components/teamCardNoImage';
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { HardHat } from "lucide-react"; // icon for no-image cards
 
 type TeamMember = {
   name: string;
   title: string;
+  image?: string;
 };
 
 const teamMembers: TeamMember[] = [
-  { name: 'Mehboob "Ali" Husain', title: 'PRESIDENT' },
-  { name: 'Mavis Brown', title: 'CONTROLLER' },
-
+  { name: 'Mehboob "Ali" Husain', title: 'PRESIDENT', image: "/placeholders/profile.png" },
+  { name: 'Mavis Brown', title: 'CONTROLLER', image: "/placeholders/profile.png" },
   { name: 'Earl Sego', title: 'VP OF CONSTRUCTION' },
   { name: 'Ron Brown', title: 'SERVICE MANAGER' },
   { name: 'Dami Ajasa', title: 'OPERATIONS MANAGER' },
-
   { name: 'Jorge Salazar', title: 'COO IMAGING AND CANOPIES' },
   { name: 'Walid Bayoumi', title: 'SALES EXECUTIVE' },
-
   { name: 'Rani Sonpari', title: 'CUSTOMER CARE' },
   { name: 'Billy Boulware', title: 'ASST. SERVICE MANAGER' },
   { name: 'Peggy Hulka', title: 'POS MANAGER' },
-
   { name: 'Michael Henning', title: 'PARTS SPECIALIST' },
   { name: 'Wade LeComte', title: 'COMMERCIAL SALES EXECUTIVE' },
 ];
 
 const TeamPage: React.FC = () => {
-  const rows: TeamMember[][] = [];
-  let i = 0;
-
-  while (i < teamMembers.length) {//gg
-    const count: number = rows.length % 2 === 0 ? 2 : 3; // Alternate rows
-    rows.push(teamMembers.slice(i, i + count));
-    i += count;
-  }
+  const execs = teamMembers.slice(0, 2); // Ali + Mavis
+  const others = teamMembers.slice(2);
 
   return (
-    <section className='text-center font-bold text-gray-800 h-auto mb-24'>
-      <span className='scrn-300:text-xs scrn-450:text-sm scrn-600:text-base scrn-900:text-xl scrn-1000:text-2xl scrn-1250:text-2xl scrn-1500:text-4xl'>
-        Meet a Few of Our Leaders
-      </span><br />
-      <span className='font-bold text-[#c62931] scrn-900:text-xl scrn-1000:text-2xl scrn-1250:text-2xl scrn-1500:text-4xl'>
-        100% privately owned and operated
-      </span>
+    <section className="bg-gradient-to-b from-gray-50 to-white py-16 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+      {/* Header */}
+      <div className="text-center mb-14">
+        <h2 className="text-3xl scrn-600:text-4xl scrn-1000:text-5xl font-bold text-gray-900">
+          Meet a Few of Our <span className="text-[#c62931]">Leaders</span>
+        </h2>
+        <p className="text-gray-600 mt-4 text-2xl max-w-2xl mx-auto">
+          100% privately owned and operated — committed to excellence across every project.
+        </p>
+      </div>
 
-      <div className='hidden scrn-600:block space-y-6 scrn-800:space-y-8 scrn-900:space-y-7 scrn-1000:space-y-8 scrn-1200:space-y-12 scrn-1400:space-y-16 scrn-1500:space-y-16 scrn-1700:space-y-20 scrn-1900:space-y-24 scrn-2500:space-y-32 scrn-600:mt-6 scrn-750:mt-4 scrn-800:mt-8 scrn-900:mt-12 scrn-1000:mt-6 scrn-1100:mt-16 scrn-1400:mt-16 scrn-1700:mt-20 scrn-1800:mt-24'>
-        {rows.map((row, rowIndex) => (
-          <div
-            key={rowIndex}
-            className={`flex flex-wrap justify-center items-start gap-x-6 scrn-700:gap-x-8 scrn-1400:gap-x-16 scrn-1500:gap-x-20
-            ${row.length === 2 ? '' : ''}
-          `}
+      {/* Top Executives (With Images) */}
+      <div className="grid grid-cols-1 scrn-600:grid-cols-2 gap-10 scrn-1000:gap-14 mb-16">
+        {execs.map((member, index) => (
+          <motion.div
+            key={member.name}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col border border-gray-200"
           >
-            {row.map((member) => {
-              const globalIndex = teamMembers.findIndex((tm) => tm.name === member.name);
-              return globalIndex < 2 ? (
-                <TeamCard key={member.name} name={member.name} title={member.title} />
-              ) : (
-                <TeamCardNoImage key={member.name} name={member.name} title={member.title} />
-              );
-            })}
-          </div>
+            {/* Profile Image */}
+            <div className="relative w-2/3 scrn-1000:w-1/2 mx-auto h-60 bg-gray-100">
+              <Image
+                src={member.image || "/placeholders/profile.png"}
+                alt={member.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority={index === 0} // improves LCP for first card
+              />
+            </div>
+
+            {/* Info */}
+            <div className="p-6 text-center">
+              <h3 className="text-xl font-semibold text-gray-800 leading-tight">
+                {member.name}
+              </h3>
+              <p className="text-xl uppercase tracking-wide text-red-600 mt-1">
+                {member.title}
+              </p>
+            </div>
+          </motion.div>
         ))}
       </div>
 
-      <div className='space-y-4 scrn-600:hidden pt-6'>
-        {Array.from({ length: Math.ceil(teamMembers.length / 2) }).map((_, rowIndex) => {
-          const start = rowIndex * 2;
-          const row = teamMembers.slice(start, start + 2); // Get 2 members per row
-
-          return (
-            <div
-              key={rowIndex}
-              className={`grid ${row.length === 1 && start + 1 === teamMembers.length
-                ? 'grid-cols-1 justify-items-center'
-                : 'grid-cols-2 justify-items-center'
-                } mx-4 scrn-550:mx-14 `}
-            >
-              {row.map((member) => {
-                const globalIndex = teamMembers.findIndex((tm) => tm.name === member.name);
-                return globalIndex < 2 ? (
-                  <TeamCard key={member.name} name={member.name} title={member.title} />
-                ) : (
-                  <TeamCardNoImage key={member.name} name={member.name} title={member.title} />
-                );
-              })}
+      {/* Other Team Members (No Images) */}
+      <div className="grid grid-cols-1 scrn-600:grid-cols-2 scrn-1000:grid-cols-3 gap-8 scrn-1000:gap-12">
+        {others.map((member, index) => (
+          <motion.div
+            key={member.name}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.5, delay: index * 0.05 }}
+            viewport={{ once: true }}
+            className="bg-white border border-gray-400 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 p-6 flex flex-col items-center text-center"
+          >
+            <div className="mb-4 bg-gray-100 rounded-full w-20 h-20 flex items-center justify-center">
+              <HardHat className="w-10 h-10 text-gray-400" />
             </div>
-          );
-        })}
+            <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
+            <p className="uppercase tracking-wide text-gray-500 mt-1">
+              {member.title}
+            </p>
+          </motion.div>
+        ))}
       </div>
-
     </section>
   );
 };
