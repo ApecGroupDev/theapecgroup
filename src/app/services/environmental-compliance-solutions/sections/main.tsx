@@ -3,6 +3,7 @@
 import React from "react";;
 import ComplianceContactForm from "@/components/complianceContactForm";
 import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
+import { Check } from "lucide-react";
 
 const badges = [
   "Fuel system inspections and leak detection",
@@ -11,6 +12,14 @@ const badges = [
   "Permitting and regulatory liaison",
   "Spill prevention and emergency response",
   "Environmental remediation and cleanup",
+];
+
+const checklistItems = [
+  "30+ years’ experience managing petroleum system compliance",
+  "Licensed, insured, and known for a spotless safety record",
+  "Complete solutions — inspections, permitting, testing, remediation",
+  "Trusted local experts on Georgia’s regulatory requirements",
+  "Compliance guarantee — we stand behind our work",
 ];
 
 const MainCompliance: React.FC = () => {
@@ -32,12 +41,13 @@ const MainCompliance: React.FC = () => {
               Why Choose APEC for Environmental Compliance?
             </span>
           </h2>
-          <div className='tracking-widest space-y-4 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-            <div>30+ years’ experience managing petroleum system compliance.</div>
-            <div>Licensed, insured, and known for a spotless safety record.</div>
-            <div>Complete solutions — inspections, permitting, testing, remediation.</div>
-            <div>Trusted local experts on Georgia’s regulatory requirements.</div>
-            <div>Compliance guarantee — we stand behind our work.</div>
+          <div className="flex flex-wrap gap-x-6 gap-y-4">
+            {checklistItems.map((item, index) => (
+              <div key={index} className="flex items-center gap-2 tracking-widest">
+                <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
+                <span className="text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">{item}</span>
+              </div>
+            ))}
           </div>
           <div>
             <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
