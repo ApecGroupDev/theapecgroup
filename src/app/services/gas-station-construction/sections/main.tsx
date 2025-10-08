@@ -3,6 +3,7 @@
 import React from "react";
 import ConstructionContactForm from "@/components/constructionContactForm";
 import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
+import { Check } from "lucide-react";
 
 const badges = [
   "Custom station design and layout",
@@ -11,6 +12,14 @@ const badges = [
   "Canopy and C-store build-out",
   "Environmental compliance support",
   "Complete project management",
+];
+
+const checklistItems = [
+  "Long-term careers in fuel infrastructure and petroleum construction",
+  "Hands-on work: gas station builds, tank installations, system upgrades",
+  "Team-first culture with a serious focus on safety",
+  "Projects throughout Georgia",
+  "35+ years of proven leadership and client trust",
 ];
 
 const MainConstruction: React.FC = () => {
@@ -32,12 +41,13 @@ const MainConstruction: React.FC = () => {
               Why Choose APEC for Gas Station Construction?
             </span>
           </h2>
-          <div className='tracking-widest space-y-4 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-            <div>30+ years’ experience delivering durable fuel sites.</div>
-            <div>Licensed, insured, and a spotless safety record.</div>
-            <div>End-to-end service: design, permitting, build, inspection.</div>
-            <div>Local compliance expertise across Georgia.</div>
-            <div>We guarantee our work meets all regulatory standards.</div>
+          <div className="flex flex-wrap gap-x-6 gap-y-4">
+            {checklistItems.map((item, index) => (
+              <div key={index} className="flex items-center gap-2 tracking-widest">
+                <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
+                <span className="text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">{item}</span>
+              </div>
+            ))}
           </div>
           <div>
             <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
