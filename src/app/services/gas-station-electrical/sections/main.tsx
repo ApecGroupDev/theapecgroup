@@ -3,6 +3,7 @@
 import React from "react";
 import ElectricalContactForm from "@/components/electricalContactForm";
 import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
+import { Check } from "lucide-react";
 
 const badges = [
   "Power distribution and backup systems",
@@ -12,6 +13,14 @@ const badges = [
   "Electrical system upgrades and retrofits",
   "Preventive maintenance and safety inspections",
   "24/7 emergency electrical services",
+];
+
+const checklistItems = [
+  "30+ years of proven experience with fuel stations and petroleum facilities",
+  "Licensed, insured, and trusted for a spotless safety record",
+  "Complete solutions — design, installation, upgrades, and emergency service",
+  "Specialists in hazardous location and explosion-proof systems",
+  "Code-compliant execution — NEC, OSHA, and local authority approved",
 ];
 
 const MainFinancing: React.FC = () => {
@@ -39,12 +48,13 @@ const MainFinancing: React.FC = () => {
               Why Choose APEC for Gas Station Electrical Work?
             </span>
           </h2>
-          <div className='tracking-widest space-y-4 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
-            <div>30+ years of proven experience with fuel stations and petroleum facilities.</div>
-            <div>Licensed, insured, and trusted for a spotless safety record.</div>
-            <div>Complete solutions — design, installation, upgrades, and emergency service.</div>
-            <div>Specialists in hazardous location and explosion-proof systems.</div>
-            <div>Code-compliant execution — NEC, OSHA, and local authority approved.</div>
+          <div className="flex flex-wrap gap-x-6 gap-y-4">
+            {checklistItems.map((item, index) => (
+              <div key={index} className="flex items-center gap-2 tracking-widest">
+                <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
+                <span className="text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">{item}</span>
+              </div>
+            ))}
           </div>
           <div>
             <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
