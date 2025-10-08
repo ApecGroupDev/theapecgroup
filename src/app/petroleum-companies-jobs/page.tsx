@@ -1,9 +1,10 @@
 import React from "react";
 import HeaderWhite from "@/components/headerWhite";
 import Hero from "./sections/hero";
-import MainContact from "./sections/main";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
+import AccordionCareers from "./sections/accordion";
+import MainCareers from "./sections/main";
 
 export const metadata: Metadata = {
   title: "Petroleum Companies Jobs | APEC Careers",
@@ -20,7 +21,8 @@ const CareersPage: React.FC = () => {
     <div className='flex flex-col'>
       <HeaderWhite />
       <Hero />
-      <MainContact />
+      <MainCareers />
+      <AccordionCareers />
       <Footer />
     </div>
   );
