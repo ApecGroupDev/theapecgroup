@@ -7,8 +7,8 @@ import ServicesBoxLinks from "@/components/servicesLinks";
 import AccordionElectrical from "./sections/accordion";
 
 export const metadata: Metadata = {
-  title: "Gas Station Construction Services | APEC",
-  description: "Build reliable gas stations with APEC's expert construction services. Visit theapecgroup.com/services/construction for quality energy infrastructure solutions.",
+  title: "Gas Station Electrical Contractors | APEC Electrical Services",
+  description: "Trusted gas station electrical contractors. APEC delivers safe, code-compliant installations, canopy lighting, wiring & 24/7 support for fuel stations.",
   robots: 'index,follow',
   alternates: {
     canonical: 'https://www.theapecgroup.com/services/gas-station-electrical',
