@@ -6,7 +6,7 @@ const GoogleMaps: React.FC = () => {
   return (
     <div className='bg-transparent flex flex-col items-center my-20'>
       {/* Google Maps Section */}
-      <div className="w-full max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl">
+      <div className="w-full max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
         <h2 className="text-center text-lg font-semibold text-gray-800 mb-4 scrn-1000:text-xl">
           Find Us on Google Maps
         </h2>
