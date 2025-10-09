@@ -10,7 +10,7 @@ const ChooseUs: React.FC = () => {
   });
 
   return (
-    <section className="flex flex-col items-center justify-center text-center px-6 py-40 scrn-1100:py-72">
+    <section className="flex flex-col items-center justify-center text-center py-40 scrn-1100:py-72 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
       {/* Heading */}
       <motion.h2
         ref={ref}
