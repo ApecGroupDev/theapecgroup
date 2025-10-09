@@ -10,8 +10,8 @@ const HeroText: React.FC = () => {
   }, []);
 
   return (
-    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto'>
-      <div className="flex flex-col scrn-600:justify-center gap-y-4 h-auto mb-12 max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl">
+    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
+      <div className="flex flex-col scrn-600:justify-center gap-y-4 h-auto mb-12">
         {/* Top div */}
         <div className='scrn-600:hidden mt-4'>
           <h1 className='scrn-750:pe-0 scrn-750:w-4/5'>
