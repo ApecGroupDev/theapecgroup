@@ -1,123 +1,107 @@
-import { SocialIcon } from 'react-social-icons';
-import Link from 'next/link';
-import React from 'react';
-import Image from 'next/image';
+import { SocialIcon } from "react-social-icons";
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <footer className='text-black bg-[#333333] font-inter'>
-      {/* Gradient Bar */}
-      <div className="h-4 bg-gradient-to-r from-[#333333] from-10% to-red-700 to-90%" />
-      <div className='grid grid-cols-1 scrn-750:grid-cols-2 scrn-1000:grid-cols-3 gap-8 pt-12 items-center text-gray-300 scrn-750:px-8 scrn-1900:px-24 scrn-2500:px-32
-      justify-center
-      '>
-        {/* Column 1: Social Media Icons */}
-        <div className='flex flex-col scrn-600:mt-8 scrn-750:mt-0 items-center space-y-2 scrn-750:space-y-1 scrn-1000:space-y-2'>
-          <span className='scrn-750:pt-6 footer-text-dark whitespace-nowrap'>For More Information</span>
-          <span className='text-xs scrn-400:text-base scrn-1000:ps-6 whitespace-nowrap footer-text-dark'><a href="tel:855-444-2732">855-444-2732</a> | <a href="mailto:Sales@TheAPECgroup.com">Sales@TheAPECgroup.com</a></span>
-          <div className='hidden scrn-750:flex space-x-4 pb-4'>
-            <SocialIcon
-              url="https://twitter.com/theapecgroup"
-              target="_blank"
-              style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-            <SocialIcon
-              url="https://www.instagram.com/the_apec_group/"
-              target="_blank"
-              style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-            <SocialIcon
-              url="https://www.facebook.com/people/APEC-Group/100078538340182/"
-              target="_blank"
-              style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-            <SocialIcon
-              url="https://www.linkedin.com/company/apec-group-petroleum-equipment-and-services"
-              target="_blank"
-              style={{ height: 36, width: 36, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-          </div>
-          <div className='flex items-center mx-auto scrn-750:hidden space-x-4 pb-4'>
-            <SocialIcon
-              url="https://twitter.com/theapecgroup"
-              target="_blank"
-              style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-            <SocialIcon
-              url="https://www.instagram.com/the_apec_group/"
-              target="_blank"
-              style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-            <SocialIcon
-              url="https://www.facebook.com/people/APEC-Group/100078538340182/"
-              target="_blank"
-              style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-            <SocialIcon
-              url="https://www.linkedin.com/company/apec-group-petroleum-equipment-and-services"
-              target="_blank"
-              style={{ height: 28, width: 28, borderRadius: 8 }}
-              bgColor="#c62931"
-              className='transition-transform transform hover:scale-125'
-            />
-          </div>
-        </div>
+    <footer className="relative bg-gradient-to-b from-[#0c0c0c] to-[#151515] text-gray-300 font-inter overflow-hidden">
+      {/* Top Accent Line */}
+      <div className="absolute top-0 left-0 w-full h-[6px] bg-gradient-to-r from-transparent via-[#c62931] to-transparent" />
 
-        {/* Column 2: Addresses and Contact Information */}
-        <div className='flex flex-col space-y-4 pb-4 items-center scrn-750:pt-2 text-center mx-auto'>
-          <p className='leading-relaxed footer-text-dark'>
-            Main Office: Atlanta, Georgia<br />
-            4732-E North Royal Atlanta<br />
-            Drive Tucker, GA 30084
-          </p>
-          <p className='leading-relaxed footer-text-dark'>
-            Branch Office: Houston, Texas<br />
-            505 Garden Oaks Boulevard<br />
-            Houston, TX 77018
-          </p>
-          <div className="space-y-2 leading-relaxed footer-text-dark">
-            <p>For More Info: <a href="tel:855-444-2732">855-444-2732</a></p>
-            <a href="mailto:Service@TheAPECgroup.com" className="text-[#c62931] hover:text-red-500 transition-colors">Service@TheAPECgroup.com</a><br />
-            <a href="mailto:Sales@TheAPECgroup.com" className="text-[#c62931] hover:text-red-500 transition-colors">Sales@TheAPECgroup.com</a>
-          </div>
-        </div>
-
-        {/* Column 3: Logo */}
-        <div className='justify-center scrn-750:hidden scrn-1000:block'>
-          <Link href="/">
+      {/* Main Content */}
+      <div
+        className="
+        max-w-[1440px] mx-auto 
+        px-6 scrn-600:px-8 scrn-750:px-12 scrn-1000:px-20 
+        py-16 
+        flex flex-col items-center text-center
+        scrn-750:grid scrn-750:grid-cols-2 scrn-1000:grid-cols-3
+        scrn-750:gap-x-10 scrn-1000:gap-x-14 gap-y-14
+      "
+      >
+        {/* 1️⃣ Logo + Tagline */}
+        <div className="relative flex flex-col items-center scrn-750:hidden scrn-1000:flex">
+          <div className="absolute -inset-20 bg-[#c62931]/25 blur-[140px] rounded-full -z-10" />
+          <Link href="/" className="block">
             <Image
               src="/logos/APEC.webp"
               alt="APEC Since 1989"
-              height={227}
-              width={208}
-              className='scale-75 h-auto w-auto mx-auto'
+              width={260}
+              height={260}
+              className="w-auto h-24 scrn-600:h-28 scrn-1000:h-32 transition-transform duration-300 hover:scale-105"
             />
           </Link>
+
+          <p className="mt-4 text-sm text-gray-400 max-w-[320px] leading-relaxed">
+            Since 1989, The APEC Group has delivered reliable petroleum equipment,
+            environmental compliance, and construction services across the U.S.
+          </p>
         </div>
 
+        {/* 2️⃣ Contact + Social (Moves below logo on mobile) */}
+        <div className="order-last scrn-750:order-none flex flex-col items-center scrn-750:items-start text-center scrn-750:text-left">
+          <h3 className="text-white text-lg font-semibold tracking-wide">Contact Us</h3>
+
+          <p className="mt-2 text-sm text-gray-400">
+            <a href="tel:855-444-2732" className="hover:text-[#c62931] transition-colors">
+              855-444-2732
+            </a>{" "}
+            |{" "}
+            <a href="mailto:Sales@TheAPECgroup.com" className="hover:text-[#c62931] transition-colors">
+              Sales@TheAPECgroup.com
+            </a>
+          </p>
+
+          <div className="mt-3 flex flex-wrap justify-center scrn-750:justify-start gap-3">
+            {[
+              "https://twitter.com/theapecgroup",
+              "https://www.instagram.com/the_apec_group/",
+              "https://www.facebook.com/people/APEC-Group/100078538340182/",
+              "https://www.linkedin.com/company/apec-group-petroleum-equipment-and-services",
+            ].map((url, i) => (
+              <SocialIcon
+                key={i}
+                url={url}
+                target="_blank"
+                style={{ height: 34, width: 34, borderRadius: 6 }}
+                bgColor="#c62931"
+                className="transition-transform transform hover:scale-110"
+              />
+            ))}
+          </div>
+
+          <p className="mt-3 text-xs text-gray-500 max-w-[280px] leading-relaxed">
+            Follow us for updates on petroleum equipment, compliance, and service announcements.
+          </p>
+        </div>
+
+        {/* 3️⃣ Office Locations */}
+        <div className="flex flex-col items-center scrn-750:items-end text-center scrn-750:text-right">
+          <h3 className="text-white text-lg font-semibold tracking-wide">Our Offices</h3>
+
+          <div className="mt-3 text-sm text-gray-400 space-y-4 leading-relaxed">
+            <div>
+              <p className="font-medium text-gray-200">Main Office:</p>
+              <p>4732-E North Royal Atlanta Drive</p>
+              <p>Tucker, GA 30084</p>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-200">Branch Office:</p>
+              <p>505 Garden Oaks Blvd</p>
+              <p>Houston, TX 77018</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <hr className='h-px bg-gray-600 border-0'></hr>
+      {/* Divider */}
+      <div className="border-t border-gray-700/50 mt-8" />
 
-      {/* Copyright*/}
-      <div className='w-full py-4'>
-        <p className='text-center text-gray-300 font-light'>
-          Copyright 2024–2025 © The APEC Group. All rights reserved.
-        </p>
+      {/* Copyright */}
+      <div className="py-6 text-center text-gray-500 text-sm tracking-wide">
+        © 2024–2025 The APEC Group. All rights reserved.
       </div>
     </footer>
   );
