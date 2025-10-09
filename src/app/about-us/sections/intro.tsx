@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import CheckmarkBadge from "@/components/checkmarkBadge";
-import CheckmarkBadgeSmall from "@/components/checkmarkBadgeSmall";
 import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
 
 const badges = [
