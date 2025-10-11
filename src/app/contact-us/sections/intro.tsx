@@ -1,17 +1,6 @@
 "use client";
 
 import React from "react";
-import ContactForm from "@/components/contactForm";
-import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
-
-const badges = [
-  "Gas station construction planning and estimates",
-  "Environmental compliance support (UST/AST)",
-  "Fuel tank repairs, replacement, or transfers",
-  "Financing options for petroleum projects",
-  "Equipment installation (canopies, oil pumps, dispensers)",
-  "Convenience store remodeling",
-];
 
 const IntroContact: React.FC = () => {
   return (
