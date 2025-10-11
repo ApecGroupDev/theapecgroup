@@ -74,29 +74,29 @@ const HowWeWork = () => {
             Why Choose <span className="text-[#c62931]">The APEC Group</span>
           </h2>
 
-          <div className="grid scrn-600:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4">
+          <div className="grid scrn-750:grid-cols-2 gap-8">
+            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
               <ShieldCheck className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 30+ years of hands-on petroleum experience
               </p>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
               <Wrench className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 Licensed, insured, and safety-certified professionals
               </p>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
               <Building2 className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 Deep local expertise across Georgia, Texas, and Atlanta
               </p>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
               <MessageSquare className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 Transparent communication and reliable project delivery
