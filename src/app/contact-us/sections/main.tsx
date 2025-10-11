@@ -16,16 +16,6 @@ const badges = [
 const MainImaging: React.FC = () => {
   return (
     <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
-      <div className="mt-12">
-        <p className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
-          Have a question? Need a quote? Want expert advice on your next fuel station or compliance project? You’re in the right place.
-        </p>
-        <p className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl mt-4">
-          At <span className="apec-red font-semibold">The APEC Group,</span> we make it easy to get the answers and support you need. Whether you’re planning construction,
-          seeking financing, upgrading fuel equipment, or ensuring regulatory compliance — our team is ready to help.
-        </p>
-      </div>
-
       <div className='mt-12 grid scrn-600:grid-cols-2 scrn-600:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
         <div className='h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 pt-4 scrn-400:pt-8 scrn-600:pt-16 scrn-1000:pt-20 scrn-1600:pt-32'>
           <div>

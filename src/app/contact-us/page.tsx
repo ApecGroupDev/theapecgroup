@@ -4,6 +4,10 @@ import Hero from "./sections/hero";
 import { Metadata } from "next";
 import HeaderWhite from "@/components/headerWhite";
 import GoogleMaps from "./sections/googleMaps";
+import OurOffices from "./sections/ourOffices";
+import IntroContact from "./sections/intro";
+import HowWeWork from "./sections/howWeWork";
+import ContactCTA from "./sections/contactcta";
 
 export const metadata: Metadata = {
   title: "Contact The APEC Group | Petroleum Services",
@@ -19,7 +23,11 @@ const Contact: React.FC = () => {
     <div className='flex flex-col'>
       <HeaderWhite />
       <Hero />
+      <IntroContact />
+      <OurOffices />
+      <HowWeWork />
       <MainContact />
+      <ContactCTA />
       <GoogleMaps />
       <Footer />
     </div>
