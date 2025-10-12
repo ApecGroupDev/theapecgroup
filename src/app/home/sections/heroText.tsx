@@ -22,7 +22,7 @@ const HeroText: React.FC = () => {
         </div>
         {/* Bottom div */}
         <div className='font-normal scrn-750:pe-0 pt-8'>
-          <span className='text-xl scrn-1200:text-2xl scrn-1500:text-4xl tracking-widest'>
+          <span className='text-xl scrn-1200:text-2xl scrn-1500:text-3xl tracking-widest'>
             Backed by 30+ years of experience and a spotless safety record, <span className='apec-red'>The APEC Group (Atlanta Petroleum Equipment Company Inc) </span>
             is a trusted petroleum products company serving retailers across Georgia.
           </span>
