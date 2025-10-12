@@ -94,7 +94,7 @@ const MainServices: React.FC = () => {
             <div
               key={index}
               className={`flex flex-col items-stretch scrn-1000:flex-row ${index % 2 === 1 ? "scrn-1000:flex-row-reverse" : ""
-                } border-l-4 border-gray-700 pl-6`}
+                }`}
             >
               {/* Description */}
               <div className="flex-1 flex flex-col justify-center text-center scrn-1000:text-left px-6 py-8">
