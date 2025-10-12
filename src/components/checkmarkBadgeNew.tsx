@@ -27,7 +27,7 @@ const CheckmarkBadgeNew: React.FC<CheckmarkBadgeProps> = ({
 
       {/* Text */}
       {text && (
-        <span className="ml-2 text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl tracking-wider">
+        <span className="ml-2 scrn-1000:text-lg scrn-1500:text-xl tracking-wider">
           {text}
         </span>
       )}
