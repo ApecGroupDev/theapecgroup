@@ -102,7 +102,7 @@ export default function Accordion({
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="relative w-full min-w-full flex-shrink-0 overflow-hidden"
                   >
-                    <div className="px-10 py-5 pt-2 text-gray-800 tracking-wide leading-relaxed w-full">
+                    <div className="px-10 py-5 pt-2 scrn-1000:text-lg text-gray-800 tracking-wide leading-relaxed w-full">
                       {item.content}
                     </div>
                   </motion.div>
