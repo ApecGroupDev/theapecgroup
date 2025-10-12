@@ -61,18 +61,18 @@ const MainServices: React.FC = () => {
     <div className='flex flex-col items-center scrn-600:justify-center h-auto w-full max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
       {/* Introductory Paragraph */}
       <div className="mt-12">
-        <p className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
+        <p className="tracking-wider text-lg">
           At <span className="apec-red font-semibold">The APEC Group</span>, we don’t just provide petroleum equipment — we deliver peace of mind. From <span className="apec-red font-semibold">environmental compliance</span> to <span className="apec-red font-semibold">gas station construction, financing, electricals, and canopy solutions</span>, we’re your one-stop partner for building and growing a profitable, future-proof petroleum business.
         </p>
       </div>
 
       <div className='h-auto pt-4 scrn-400:pt-8 scrn-600:pt-16'>
         <h2>
-          <span className='font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
+          <span className='font-semibold scrn-800:text-xl scrn-1500:text-3xl'>
             WHY CHOOSE APEC?
           </span>
         </h2>
-        <div className='pt-4 tracking-widest space-y-6 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl'>
+        <div className='pt-4 tracking-widest space-y-6 scrn-1000:text-lg scrn-1500:text-xl'>
           <div><span className="apec-red font-semibold">END-TO-END SOLUTIONS</span> – From inspection and compliance to financing and construction — all under one trusted roof.</div>
           <div><span className="apec-red font-semibold">EXPERTISE THAT SAVES YOU MILLIONS</span> – Over 30 years of proven success helping gas station owners avoid fines, delays, and costly mistakes.</div>
           <div><span className="apec-red font-semibold">SUSTAINABILITY FIRST</span> – Our services help you meet environmental regulations without the headaches.</div>
@@ -82,7 +82,7 @@ const MainServices: React.FC = () => {
       </div>
 
       {/* Section Title */}
-      <div className='italic apec-red text-2xl font-bold
+      <div className='italic apec-red scrn-800:text-xl scrn-1500:text-3xl font-bold
           mt-32 scrn-600:mt-24 scrn-1200:mt-20'>
         CHECK OUT OUR SERVICES HERE!
       </div>
