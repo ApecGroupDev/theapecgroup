@@ -15,7 +15,7 @@ const AccordionConstruction: React.FC = () => {
   return (
     <div className="bg-transparent flex flex-col justify-center w-full h-auto py-24 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
       <div className="text-center mb-6">
-        <span className="text-4xl font-bold">Gas Station Construction FAQs</span>
+        <span className="text-3xl font-bold">Gas Station Construction FAQs</span>
       </div>
       <Accordion
         className="text-left w-full"
