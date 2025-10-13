@@ -33,24 +33,26 @@ const BlogMain: React.FC = () => {
         </p>
       </div>
 
-      <div className='h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 pt-12 w-full mb-12'>
-        <div className="grid space-y-16 scrn-700:space-y-0 scrn-700:grid-cols-2 scrn-700:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24">
-          <div className='scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl space-y-2'>
-            <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
+      <div className='h-auto pt-12 w-full'>
+        <div className="grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24">
+          <div className='h-auto'>
+            <h2 className="text-4xl font-extrabold text-gray-900">
               What You’ll Find <span className="text-[#c62931]">In Our Blog</span>
             </h2>
-            {checklistItems.map((item, index) => (
-              <div key={index} className="flex items-center gap-2 tracking-widest">
-                <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
-                <span className="scrn-1000:text-lg scrn-1500:text-xl">{item}</span>
-              </div>
-            ))}
+            <div className="flex flex-wrap gap-x-20 gap-y-4 mt-4">
+              {checklistItems.map((item, index) => (
+                <div key={index} className="flex items-center gap-2 tracking-wider">
+                  <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
+                  <span className="scrn-1000:text-lg scrn-1500:text-xl">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
-          <div>
-            <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
+          <div className="mt-12 scrn-800:mt-0">
+            <h2 className="text-4xl font-extrabold text-gray-900">
               Who Should <span className="text-[#c62931]">Read This Blog?</span>
             </h2>
-            <div className="space-y-3 scrn-1000:space-y-6 tracking-widest mt-4">
+            <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
               {badges.map((text, i) => (
                 <CheckmarkBadgeNew key={i} text={text} />
               ))}
@@ -59,7 +61,7 @@ const BlogMain: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 scrn-600:grid-cols-2 scrn-1000:grid-cols-4 gap-8 py-20">
+      <div className="grid grid-cols-1 scrn-600:grid-cols-2 scrn-1000:grid-cols-4 gap-8 py-24">
         {blogData.map((blog, i) => (
           <Link
             key={i}
