@@ -5,6 +5,7 @@ import Hero from "./sections/hero";
 import { Metadata } from "next";
 import AccordionImaging from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
+import CTA from "@/components/cta";
 
 export const metadata: Metadata = {
   title: "Canopy Imaging Solutions | APEC",
@@ -22,6 +23,7 @@ const ServicesImaging: React.FC = () => {
       <Hero />
       <MainImaging />
       <AccordionImaging />
+      <CTA />
       <ServicesBoxLinks />
       <Footer />
     </div>
