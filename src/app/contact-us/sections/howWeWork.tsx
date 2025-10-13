@@ -9,7 +9,7 @@ const HowWeWork = () => {
       <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
         {/* HOW WE WORK */}
         <div>
-          <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">
+          <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-8">
             How We <span className="text-[#c62931]">Work With You</span>
           </h2>
 
@@ -69,8 +69,8 @@ const HowWeWork = () => {
         </div>
 
         {/* WHY CHOOSE APEC */}
-        <div className="pt-12">
-          <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">
+        <div className="pt-16">
+          <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-8">
             Why Choose <span className="text-[#c62931]">The APEC Group</span>
           </h2>
 
