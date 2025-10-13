@@ -4,6 +4,7 @@ import MainServices from "./sections/main";
 import Footer from "@/components/footer";
 import { Metadata } from "next";
 import CTA from "@/components/cta";
+import IntroServices from "./sections/intro";
 
 export const metadata: Metadata = {
   title: "Petroleum Equipment Services & Repairs | The APEC Group",
@@ -19,6 +20,7 @@ const Services: React.FC = () => {
     <div className='flex flex-col'>
       <HeaderWhite />
       <Hero />
+      <IntroServices />
       <MainServices />
       <CTA />
       <Footer />
