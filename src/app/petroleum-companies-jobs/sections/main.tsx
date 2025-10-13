@@ -51,13 +51,13 @@ const MainCareers: React.FC = () => {
         </p>
       </div>
 
-      <div className="mt-12 grid space-y-16 scrn-700:space-y-0 scrn-700:grid-cols-2 scrn-700:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24">
+      <div className="mt-12 grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24">
         {/* Left Column – What Makes APEC Different */}
-        <div className="h-auto pt-4 scrn-400:pt-8 space-y-3 scrn-500:space-y-4 scrn-1200:space-y-8">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
+        <div className="h-auto">
+          <h2 className="text-4xl font-extrabold text-gray-900">
             What Makes <span className="text-[#c62931]">APEC Different?</span>
           </h2>
-          <div className="flex flex-wrap gap-x-6 gap-y-4">
+          <div className="flex flex-wrap gap-x-6 gap-y-4 mt-4">
             {checklistItems.map((item, index) => (
               <div key={index} className="flex items-center gap-2 tracking-widest">
                 <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
@@ -68,14 +68,14 @@ const MainCareers: React.FC = () => {
         </div>
 
         {/* Right Column – Benefits of Working at APEC Group */}
-        <div className="h-auto pt-4 scrn-400:pt-8 space-y-3 scrn-500:space-y-4 scrn-1200:space-y-8">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
+        <div className="h-auto mt-12 scrn-800:mt-0">
+          <h2 className="text-4xl font-extrabold text-gray-900">
             Benefits Of Working <span className="text-[#c62931]">At APEC Group</span>
           </h2>
-          <p className="italic tracking-wider scrn-1000:text-lg scrn-1500:text-xl">
+          <p className="italic tracking-wider scrn-1000:text-lg scrn-1500:text-xl mt-4">
             We invest in our people with competitive benefits and a supportive culture.
           </p>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-widest">
+          <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
             {badges.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
