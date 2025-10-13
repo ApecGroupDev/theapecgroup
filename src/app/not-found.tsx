@@ -4,7 +4,7 @@ import Footer from '@/components/footer';
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-300">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-center text-center px-4 scrn-1000:py-40 scrn-1200:py-52">
         <h1 className="text-5xl scrn-1500:text-7xl font-bold text-red-600 mt-12">404</h1>
@@ -17,9 +17,6 @@ export default function NotFound() {
           RETURN TO HOMEPAGE
         </Link>
       </main>
-      <div className="w-full">
-        <div className="h-4 bg-gradient-to-r from-gray-800 to-red-600 -mb-1" />
-      </div>
       <div className='bg-gray-800'>
         <Footer />
       </div>
