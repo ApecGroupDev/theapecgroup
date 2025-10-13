@@ -31,13 +31,13 @@ const TeamPage: React.FC = () => {
   const others = teamMembers.slice(2);
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-16 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+    <section className="my-14 rounded-2xl bg-gradient-to-b from-gray-50 to-white py-16 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
       {/* Header */}
-      <div className="text-center mb-14">
-        <h2 className="text-3xl scrn-600:text-4xl scrn-1000:text-5xl font-bold text-gray-900">
+      <div className="text-center">
+        <h2 className="text-4xl font-extrabold text-gray-900">
           Meet a Few of Our <span className="text-[#c62931]">Leaders</span>
         </h2>
-        <p className="text-gray-600 mt-4 text-2xl max-w-2xl mx-auto">
+        <p className="text-gray-600 my-4 text-2xl max-w-3xl mx-auto">
           100% privately owned and operated — committed to excellence across every project.
         </p>
       </div>
