@@ -31,7 +31,7 @@ const MainFinancing: React.FC = () => {
           Running a gas station comes with unique electrical challenges. From hazardous location wiring to canopy lighting and underground systems, one mistake can lead to costly downtime,
           safety hazards, or regulatory violations.
         </p>
-        <p className="mt-12 tracking-wider text-lg">
+        <p className="mt-8 tracking-wider text-lg">
           At <span className="text-[#c62931] font-semibold">APEC</span>, we specialize in <span className="text-[#c62931] font-semibold">gas station electrical contracting</span>
           — delivering <span className="text-[#c62931] font-semibold">turnkey installations, upgrades, and maintenance</span> designed specifically for fueling environments.
           With decades of expertise, we ensure every project is <span className="text-[#c62931] font-semibold">code-compliant, efficient, and built to last.</span>
@@ -41,27 +41,25 @@ const MainFinancing: React.FC = () => {
         </p>
       </div>
 
-      <div className='mt-12 grid scrn-600:grid-cols-2 scrn-600:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
-        <div className='h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 pt-4 scrn-400:pt-8 scrn-600:pt-16 scrn-1000:pt-20 scrn-1600:pt-32'>
-          <h2>
-            <span className='text-[#c62931] font-semibold scrn-800:text-xl scrn-1500:text-3xl'>
-              Why Choose APEC for Gas Station Electrical Work?
-            </span>
+      <div className='mt-12 grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
+        <div className='h-auto'>
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Why Choose APEC For <span className="text-[#c62931]">Gas Station Electrical Work?</span>
           </h2>
-          <div className="flex flex-wrap gap-x-6 gap-y-4">
+          <div className="flex flex-wrap gap-x-6 gap-y-4 mt-4">
             {checklistItems.map((item, index) => (
-              <div key={index} className="flex items-center gap-2 tracking-widest">
+              <div key={index} className="flex items-center gap-2 tracking-wider">
                 <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
                 <span className="scrn-1000:text-lg scrn-1500:text-xl">{item}</span>
               </div>
             ))}
           </div>
-          <div>
-            <span className='text-[#c62931] font-semibold scrn-800:text-xl scrn-1500:text-3xl'>
-              Our Gas Station Electrical Services Include:
-            </span>
+          <div className="mt-12">
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              Our Gas Station <span className="text-[#c62931]">Electrical Services Include:</span>
+            </h2>
           </div>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-widest">
+          <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
             {badges.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
@@ -69,9 +67,9 @@ const MainFinancing: React.FC = () => {
         </div>
         <div className='relative flex items-center mt-6 scrn-500:mt-8 z-10'>
           <div id="ElectricalContactForm" className="p-4 scrn-800:p-8 scrn-900:p-10 scrn-1000:p-12 scrn-1250:p-16 scrn-1500:p-24 bg-gray-200 rounded-xl shadow-2xl">
-            <span className='font-medium scrn-800:text-xl scrn-1500:text-3xl'>
-              SERVICE REQUEST
-            </span>
+            <h2 className="text-4xl font-extrabold mb-12">
+              <span className="text-[#c62931]">Service Request</span>
+            </h2>
             <ElectricalContactForm />
           </div>
         </div>
