@@ -83,8 +83,8 @@ const ServicesBoxLinks: React.FC = () => {
     <div className="w-full pb-24 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
       {/* Section Heading */}
       <div className="my-6">
-        <h2 className="text-lg scrn-1000:text-xl scrn-1500:text-3xl font-semibold">
-          You may also be interested in:
+        <h2 className="text-4xl font-extrabold text-gray-900 uppercase">
+          You May Also <span className="text-[#c62931]">Be Interested In:</span>
         </h2>
       </div>
 
