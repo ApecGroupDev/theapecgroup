@@ -29,7 +29,7 @@ const About: React.FC = () => {
         <div>
           <motion.p
             ref={ref}
-            className="text-2xl scrn-600:text-3xl scrn-1250:text-6xl scrn-1500:text-7xl font-semibold italic"
+            className="text-4xl font-semibold italic"
             initial={{ y: 70, opacity: 0 }}
             animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -37,15 +37,15 @@ const About: React.FC = () => {
             Welcome to
           </motion.p>
 
-          <p className="text-4xl scrn-1250:text-7xl scrn-1500:text-8xl font-extrabold text-[#c62931]">
+          <p className="text-4xl scrn-1250:text-7xl font-extrabold text-[#c62931]">
             APEC
           </p>
 
-          <p className="text-xl scrn-1000:text-2xl scrn-1250:text-3xl scrn-1500:text-4xl font-medium text-gray-800">
+          <p className="text-4xl font-medium text-gray-800">
             Petroleum Equipment Services
           </p>
 
-          <div className="mt-4 space-y-4 text-justify text-gray-800 tracking-wider scrn-1000:text-lg scrn-1250:text-2xl">
+          <div className="mt-4 space-y-4 text-justify text-gray-800 tracking-wider text-lg">
             <p>
               The APEC Group you know today started out as Atlanta Petroleum Equipment Company in September 1989.
               From our modest beginnings as a small service company, we have grown into a leader offering a full
