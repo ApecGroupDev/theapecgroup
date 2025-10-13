@@ -3,15 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-interface Service {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-}
-
-const services: Service[] = [
+const services = [
   {
     title: "GAS STATION CONSTRUCTION",
     description:
@@ -24,7 +18,7 @@ const services: Service[] = [
     description:
       "Custom canopy designs and installations that strengthen your brand, attract attention, and enhance customer experience.",
     image: "/servicesLogos/Apec-Imaging.webp",
-    link: "services/canopy-imaging-solutions",
+    link: "/services/canopy-imaging-solutions",
   },
   {
     title: "METAL PRODUCTS MANUFACTURING",
@@ -58,75 +52,72 @@ const services: Service[] = [
 
 const MainServices: React.FC = () => {
   return (
-    <div className='flex flex-col items-center scrn-600:justify-center h-auto w-full max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
-      {/* Introductory Paragraph */}
-      <div className="mt-12">
-        <p className="tracking-wider text-lg">
-          At <span className="apec-red font-semibold">The APEC Group</span>, we don’t just provide petroleum equipment — we deliver peace of mind. From <span className="apec-red font-semibold">environmental compliance</span> to <span className="apec-red font-semibold">gas station construction, financing, electricals, and canopy solutions</span>, we’re your one-stop partner for building and growing a profitable, future-proof petroleum business.
-        </p>
-      </div>
+    <section className="relative w-full bg-gradient-to-b from-white to-gray-50 py-32">
+      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+          <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight uppercase">
+            Our <span className="text-[#c62931]">Core Services</span>
+          </h2>
+          <p className="mt-4 text-gray-600 text-lg tracking-wider uppercase">
+            Comprehensive petroleum solutions built on decades of experience.
+          </p>
+          <div className="mt-6 w-24 h-[4px] bg-[#c62931] mx-auto rounded-full shadow-md"></div>
+        </motion.div>
 
-      <div className='h-auto pt-4 scrn-400:pt-8 scrn-600:pt-16'>
-        <h2>
-          <span className='font-semibold scrn-800:text-xl scrn-1500:text-3xl'>
-            WHY CHOOSE APEC?
-          </span>
-        </h2>
-        <div className='pt-4 tracking-widest space-y-6 scrn-1000:text-lg scrn-1500:text-xl'>
-          <div><span className="apec-red font-semibold">END-TO-END SOLUTIONS</span> – From inspection and compliance to financing and construction — all under one trusted roof.</div>
-          <div><span className="apec-red font-semibold">EXPERTISE THAT SAVES YOU MILLIONS</span> – Over 30 years of proven success helping gas station owners avoid fines, delays, and costly mistakes.</div>
-          <div><span className="apec-red font-semibold">SUSTAINABILITY FIRST</span> – Our services help you meet environmental regulations without the headaches.</div>
-          <div><span className="apec-red font-semibold">FINANCING THAT WORKS FOR YOU</span> – Flexible funding options so you can build or upgrade your station without cash flow worries.</div>
-          <div><span className="apec-red font-semibold">FAST, EFFICIENT EXECUTION</span> – We deliver on time and on budget. Every time.</div>
-        </div>
-      </div>
-
-      {/* Section Title */}
-      <div className='italic apec-red scrn-800:text-xl scrn-1500:text-3xl font-bold
-          mt-32 scrn-600:mt-24 scrn-1200:mt-20'>
-        CHECK OUT OUR SERVICES HERE!
-      </div>
-
-      {/* Services Section */}
-      <section className="w-full px-4 py-12">
-        <div className="space-y-40">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 scrn-800:grid-cols-2 scrn-1300:grid-cols-3 gap-10">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
-              className={`flex flex-col items-stretch scrn-1000:flex-row ${index % 2 === 1 ? "scrn-1000:flex-row-reverse" : ""
-                }`}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="group bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-2xl hover:border-[#c62931]/70 transition-all duration-500 flex flex-col"
             >
-              {/* Description */}
-              <div className="flex-1 flex flex-col justify-center text-center scrn-1000:text-left px-6 py-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
-                  {service.description}
-                </p>
-                <Link
-                  href={service.link}
-                  className="inline-block scrn-600:w-1/3 scrn-1000:w-2/3 scrn-1200:w-1/3 text-center px-6 py-2 text-white bg-[#c62931] rounded-md mt-6 hover:bg-[#a92128] transition"
-                >
-                  Read More
-                </Link>
-              </div>
-
-              {/* Image */}
-              <div className="flex-1 flex justify-center items-center px-6 py-8">
+              {/* Logo Section (equal height) */}
+              <div className="flex items-center justify-center h-48 bg-gray-50 border-b border-gray-200 group-hover:bg-[#c62931]/5 transition-all duration-500">
                 <Image
                   src={service.image}
                   alt={service.title}
-                  width={350}
-                  height={350}
-                  className="animate-pulseScale"
+                  width={180}
+                  height={180}
+                  className="max-h-32 w-auto object-contain transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-            </div>
+
+              {/* Text Section */}
+              <div className="flex flex-col justify-between flex-1 p-8 text-center scrn-1000:text-left">
+                <div>
+                  <h3 className="text-lg scrn-1000:text-xl font-bold text-gray-900 mb-3 tracking-wide uppercase group-hover:text-[#c62931] transition-colors duration-300">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-sm scrn-800:text-base">
+                    {service.description}
+                  </p>
+                </div>
+
+                <div className="mt-8">
+                  <Link
+                    href={service.link}
+                    className="inline-block w-full text-center px-6 py-3 bg-[#c62931] text-white font-semibold rounded-md hover:bg-[#a91f27] transition-all duration-300 shadow-sm hover:shadow-md"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
