@@ -18,7 +18,7 @@ const MainImaging: React.FC = () => {
     <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
       <div className='mt-12 grid scrn-600:grid-cols-2 scrn-600:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
         <div className='h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 pt-4 scrn-400:pt-8 scrn-600:pt-16 scrn-1000:pt-20 scrn-1600:pt-32'>
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-12">
+          <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
             What We Can <span className="text-[#c62931]">Help You With:</span>
           </h2>
           <div className="space-y-3 scrn-1000:space-y-6 tracking-widest">
