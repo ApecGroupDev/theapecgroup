@@ -4,6 +4,7 @@ import BlogMain from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 import AccordionBlogs from "./sections/accordion";
+import CTA from "@/components/cta";
 
 export const metadata: Metadata = {
   title: "Oil and Gas Industry Blogs | The APEC Group",
@@ -20,6 +21,7 @@ const Contact: React.FC = () => {
       <HeaderWhite />
       <Hero />
       <BlogMain />
+      <CTA />
       <AccordionBlogs />
       <Footer />
     </div>
