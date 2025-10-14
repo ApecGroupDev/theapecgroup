@@ -2,7 +2,6 @@ import Header from "@/components/header";
 import About from "./home/sections/about";
 import FeatureBoxes from "./home/sections/featureboxes";
 import Hero from "./home/sections/hero";
-import MembershipLogosCarousel from "./home/sections/membership";
 import HomePageLayout from "./layouts/homepageLayout";
 import type { Metadata } from 'next';
 import Footer from "@/components/footer";
