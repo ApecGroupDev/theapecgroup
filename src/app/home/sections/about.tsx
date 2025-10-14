@@ -7,63 +7,81 @@ import { useInView } from "react-intersection-observer";
 const About: React.FC = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.25,
   });
 
   return (
-    <section className="py-16 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
-      <div className="grid gap-6 scrn-1000:grid-cols-[1fr_2fr] items-center">
+    <section className="relative overflow-hidden bg-white py-20">
+      {/* Subtle background gradient */}
+      <div className="absolute top-0 right-0 w-[55%] h-full bg-gradient-to-bl from-gray-50 to-white z-0" />
 
-        {/* Left Image */}
-        <div className="hidden scrn-1000:flex justify-start">
-          <Image
-            src="/products/aboutUsSection.webp"
-            alt="APEC About Section"
-            width={500}
-            height={800}
-            className="w-full h-auto object-cover"
-          />
-        </div>
+      <div className="relative max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 grid scrn-1000:grid-cols-2 gap-16 items-center z-10">
 
-        {/* Right Content */}
-        <div>
-          <motion.p
-            ref={ref}
-            className="text-4xl font-semibold italic"
-            initial={{ y: 70, opacity: 0 }}
-            animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-          >
-            Welcome to
-          </motion.p>
-
-          <p className="text-4xl scrn-1250:text-7xl font-extrabold text-[#c62931]">
-            APEC
-          </p>
-
-          <p className="text-4xl font-medium text-gray-800">
-            Petroleum Equipment Services
-          </p>
-
-          <div className="mt-4 space-y-4 text-justify text-gray-800 tracking-wider text-lg">
-            <p>
-              The APEC Group you know today started out as Atlanta Petroleum Equipment Company in September 1989.
-              From our modest beginnings as a small service company, we have grown into a leader offering a full
-              line of petroleum equipment, installation, repair, and support services.
-            </p>
-            <p>
-              APEC is committed to providing only the highest quality products and services. Our industry continues
-              to evolve year after year, and we stay on the leading edge of innovations and technologies to support
-              our customers’ needs — as the industry experts you can rely on.
+        {/* LEFT CONTENT */}
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="relative space-y-8 scrn-1000:before:absolute scrn-1000:before:left-0 scrn-1000:before:top-0 scrn-1000:before:w-[4px] scrn-1000:before:h-full scrn-1000:before:bg-[#c62931] scrn-1000:before:rounded-full scrn-1000:before:-translate-x-6"
+        >
+          <div className="space-y-2">
+            <h2 className="text-4xl scrn-1000:text-5xl font-extrabold text-gray-900 leading-snug">
+              Building Trust <br /> Since <span className="text-[#c62931]">1989</span>
+            </h2>
+            <p className="text-xl italic text-gray-600">
+              Where innovation meets integrity — the APEC standard.
             </p>
           </div>
 
-          <div className="mt-8 flex justify-center lg:justify-start">
-            <button className="bg-[#c62931] text-white py-4 px-12 rounded-md hover:bg-red-500 transition">
+          <div className="text-lg scrn-1000:text-xl text-gray-700 leading-relaxed space-y-5 tracking-wide">
+            <p>
+              Founded as Atlanta Petroleum Equipment Company in 1989, APEC has evolved from a small service provider into an industry leader — offering full-spectrum petroleum equipment, installation, and support services.
+            </p>
+            <p>
+              Our commitment to quality and progress drives us forward. As the industry evolves, we stay ahead — combining heritage, innovation, and expertise to deliver lasting results you can depend on.
+            </p>
+          </div>
+
+          <div className="pt-6">
+            <motion.a
+              href="mailto:Sales@TheAPECgroup.com"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-block bg-[#c62931] text-white text-lg font-semibold px-10 py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+            >
               Sales@TheAPECgroup.com
-            </button>
+            </motion.a>
           </div>
-        </div>
+        </motion.div>
+
+        {/* RIGHT IMAGE BLOCK */}
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          animate={inView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="relative flex flex-col items-center scrn-1000:items-end justify-center gap-6"
+        >
+          {/* Primary Image */}
+          <div className="relative w-full scrn-1000:w-[90%] h-[300px] scrn-600:h-[380px] scrn-1000:h-[480px] rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/home/chevron_canopy.webp"
+              alt="APEC Operations"
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-700"
+            />
+          </div>
+
+          {/* Floating Secondary Image */}
+          <div className="relative -mt-24 scrn-1000:mt-0 scrn-1000:absolute scrn-1000:-bottom-10 scrn-1000:-left-10 w-[85%] scrn-600:w-[70%] scrn-1000:w-[55%] h-[220px] scrn-600:h-[260px] scrn-1000:h-[280px] rounded-xl overflow-hidden shadow-lg border-4 border-white">
+            <Image
+              src="/home/green_pumps.webp"
+              alt="APEC Project"
+              fill
+              className="object-cover hover:scale-110 transition-transform duration-700"
+            />
+          </div>
+        </motion.div>
 
       </div>
     </section>
