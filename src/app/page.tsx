@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import About from "./home/sections/about";
 import FeatureBoxes from "./home/sections/featureboxes";
 import Hero from "./home/sections/hero";
-import MembershipLogosCarousel from "./home/sections/membershiplogoslider";
+import MembershipLogosCarousel from "./home/sections/membership";
 import HomePageLayout from "./layouts/homepageLayout";
 import type { Metadata } from 'next';
 import Footer from "@/components/footer";
@@ -10,6 +10,7 @@ import CTA from "@/components/cta";
 import HeroText from "./home/sections/heroText";
 import Introductory from "./home/sections/introductory";
 import AccordionHome from "./home/sections/accordion";
+import MembershipGrid from "./home/sections/membership";
 
 export const metadata: Metadata = {
   title: 'Petroleum Products Company | The APEC Group',
@@ -29,7 +30,7 @@ export default function Page() {
         <Hero />
         <HeroText />
         <About />
-        <MembershipLogosCarousel />
+        <MembershipGrid />
         <Introductory />
         <FeatureBoxes />
         <CTA />
