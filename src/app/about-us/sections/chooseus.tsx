@@ -19,7 +19,7 @@ const ChooseUs: React.FC = () => {
   };
 
   return (
-    <section className="relative py-40 scrn-1100:py-72 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
+    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
       {/* Subtle Background Accent */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(198,41,49,0.05)_0%,transparent_60%)] pointer-events-none" />
 
