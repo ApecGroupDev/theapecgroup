@@ -1,112 +1,110 @@
 "use client";
 
 import React from "react";
-import { FaUsers, FaTasks, FaHandshake, FaCogs, FaChartLine } from "react-icons/fa";
+import { FaUsers, FaTasks, FaCogs, FaChartLine } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-interface FeatureBox {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-}
-
-const features: FeatureBox[] = [
+const features = [
   {
     title: "TEAM",
-    description: "“The truth is that teamwork is at the heart of great achievement” – John C. Maxwell.",
-    icon: <FaUsers className='text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]' />,
+    description:
+      "“The truth is that teamwork is at the heart of great achievement.” – John C. Maxwell.",
+    icon: <FaUsers />,
   },
   {
     title: "EXECUTION",
-    description: "“You can’t build a reputation on what you are going to do” – Henry Ford.",
-    icon: <FaTasks className='text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]' />,
-  },
-  {
-    title: "CUSTOMER",
-    description: "“Get closer than ever to your customers.” – Steve Jobs.",
-    icon: <FaHandshake className='text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]' />,
+    description:
+      "“You can’t build a reputation on what you are going to do.” – Henry Ford.",
+    icon: <FaTasks />,
   },
   {
     title: "EXPERIENCE",
-    description: "“Experience is the teacher of all things” – Julius Caesar.",
-    icon: <FaChartLine className='text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]' />,
+    description: "“Experience is the teacher of all things.” – Julius Caesar.",
+    icon: <FaChartLine />,
   },
   {
     title: "SERVICE",
-    description: "“Great customer service means honoring the customer” – Chris LoCurto.",
-    icon: <FaCogs className='text-4xl scrn-750:text-2xl scrn-1000:text-4xl scrn-1800:text-6xl text-[#c62931]' />,
+    description:
+      "“Great customer service means honoring the customer.” – Chris LoCurto.",
+    icon: <FaCogs />,
   },
 ];
 
 const FeatureBoxes: React.FC = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Trigger animation only once when in view
-    threshold: 0.2, // Trigger when 20% of the element is in view
-  });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
-    <div className='py-16 bg-gradient-to-b from-white to-red-500'>
-      {/* Section Title */}
-      <div className='text-center font-extrabold text-gray-800 text-5xl scrn-300:text-4xl scrn-750:text-5xl scrn-900:text-5xl scrn-1000:text-5xl scrn-1200:text-6xl scrn-1500:text-7xl scrn-1700:text-7xl scrn-1900:text-8xl'>
-        <motion.p
-          ref={ref} // Set the ref to the element
-          initial={{ y: 70, opacity: 0 }}
-          animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+    <section className="relative py-12 bg-gradient-to-b from-white via-gray-50 to-gray-100 overflow-hidden">
+      {/* Subtle background accent */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(198,41,49,0.05),transparent_60%)]"></div>
+
+      <div className="max-w-[1440px] mx-auto px-12 scrn-600:px-6 scrn-1000:px-24 scrn-1200:px-8 relative z-10">
+        {/* Title */}
+        <motion.div
+          ref={ref}
+          variants={fadeUp}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-20"
         >
-          WHY CHOOSE
-        </motion.p>
-        <p className='mb-4'>
-          <span className="text-[#c62931]"> APEC?</span>
-        </p>
-      </div>
+          <h2 className="font-extrabold text-gray-900 text-4xl tracking-tight">
+            WHY CHOOSE <span className="text-[#c62931]">APEC?</span>
+          </h2>
+          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+            Building excellence through teamwork, expertise, and unwavering commitment.
+          </p>
+        </motion.div>
 
-      {/* First row: 3 boxes */}
-      <div className='flex justify-center flex-wrap scrn-2400:mt-32 gap-4 scrn-350:gap-6 scrn-400:gap-6 scrn-750:gap-6 scrn-800:gap-8 scrn-900:gap-8 scrn-1400:gap-10 scrn-1700:gap-16 scrn-1900:gap-20'>
-        {features.slice(0, 3).map((feature, index) => (
-          <div
-            key={index} className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-32 scrn-350:w-36 scrn-400:w-36 scrn-450:w-40 scrn-500:w-48 scrn-600:w-40 scrn-750:w-44 scrn-800:w-48 scrn-900:w-44 scrn-950:w-48 scrn-1000:w-60 scrn-1100:w-64 scrn-1150:w-72 scrn-1250:w-72 scrn-1300:w-80 scrn-1500:w-80 scrn-1600:w-96 scrn-1700:w-112 scrn-1900:w-118'>
-            <div className='flex flex-col items-center justify-center h-18 scrn-350:h-20 scrn-500:h-28 scrn-600:h-24 scrn-750:h-28 scrn-800:h-28 scrn-900:h-28 scrn-950:h-32 scrn-1000:h-40 scrn-1100:h-44 scrn-1150:h-48 scrn-1250:h-48 scrn-1300:h-52 scrn-1400:h-56 scrn-1500:h-60 scrn-1600:h-64 scrn-1700:h-72 scrn-1900:h-72 scrn-2000:h-80'>
-              {feature.icon}
-              <h3 className='scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl scrn-1800:text-3xl font-bold text-center mt-4 text-gray-800'>
+        {/* Feature Grid */}
+        <div
+          className="
+            grid grid-cols-1 scrn-600:grid-cols-2 scrn-1200:grid-cols-4 gap-8
+          "
+        >
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              variants={fadeUp}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="
+                flex flex-col items-center text-center
+                bg-white/70 backdrop-blur-sm border border-gray-100
+                rounded-3xl shadow-[0_8px_24px_rgba(0,0,0,0.05)]
+                hover:shadow-[0_12px_32px_rgba(198,41,49,0.15)]
+                hover:-translate-y-2
+                transition-all duration-500 ease-out
+                p-10 min-h-[360px]
+              "
+            >
+              <div
+                className="
+                  flex items-center justify-center 
+                  w-20 h-20 mb-6 rounded-full 
+                  bg-[#c62931]/10 text-[#c62931] text-5xl
+                "
+              >
+                {feature.icon}
+              </div>
+              <h3 className="text-xl scrn-1000:text-2xl font-semibold text-gray-900 mb-3 tracking-wide">
                 {feature.title}
               </h3>
-            </div>
-
-            {/* Description hover box */}
-            <div className='absolute inset-0 flex flex-col justify-center items-center scrn-1000:p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
-              <p className='text-xs scrn-500:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4'>
+              <p className="text-gray-600 text-base leading-relaxed max-w-[85%] mx-auto">
                 {feature.description}
               </p>
-            </div>
-          </div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
-
-      {/* Second row: 2 centered boxes */}
-      <div className='flex justify-center flex-wrap mt-4 scrn-350:mt-6 scrn-1400:mt-10 scrn-1700:mt-16 scrn-1900:mt-16 gap-4 scrn-350:gap-6 scrn-400:gap-6 scrn-750:gap-6 scrn-800:gap-8 scrn-900:gap-8 scrn-1400:gap-10 scrn-1700:gap-16 scrn-1900:gap-20'>
-        {features.slice(3).map((feature, index) => (
-          <div
-            key={index} className='relative group bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-white transition-all duration-500 w-32 scrn-350:w-36 scrn-450:w-40 scrn-500:w-48 scrn-600:w-40 scrn-750:w-44 scrn-800:w-48 scrn-900:w-44 scrn-950:w-48 scrn-1000:w-60 scrn-1100:w-64 scrn-1150:w-72 scrn-1300:w-80 scrn-1600:w-96 scrn-1700:w-112 scrn-1900:w-118'>
-            <div className='flex flex-col items-center justify-center h-18 scrn-400:h-20 scrn-500:h-28 scrn-600:h-24 scrn-750:h-28 scrn-800:h-28 scrn-900:h-28 scrn-950:h-32 scrn-1000:h-40 scrn-1100:h-44 scrn-1150:h-48 scrn-1250:h-48 scrn-1300:h-52 scrn-1400:h-56 scrn-1500:h-60 scrn-1600:h-64 scrn-1700:h-72 scrn-1900:h-72 scrn-2000:h-80'>
-              {feature.icon}
-              <h3 className='scrn-300:text-xs scrn-300:font-semibold scrn-750:text-sm scrn-1000:text-xl scrn-1800:text-3xl font-bold text-center mt-4 text-gray-800'>
-                {feature.title}
-              </h3>
-            </div>
-
-            {/* Description hover box */}
-            <div className='absolute inset-0 flex flex-col justify-center items-center scrn-1000:p-6 opacity-0 translate-y-8 group-hover:translate-y-0 group-hover:opacity-100 bg-white bg-opacity-95 rounded-lg shadow-lg transition-all duration-500 ease-in-out'>
-              <p className='text-xs scrn-500:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl text-gray-700 text-center overflow-y-auto max-h-48 px-4'>
-                {feature.description}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-    </div>
+    </section>
   );
 };
 
