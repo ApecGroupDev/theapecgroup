@@ -25,38 +25,34 @@ const IntroAbout: React.FC = () => {
     <div className='bg-transparent flex flex-col items-center justify-center max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
       {/* Intro Paragraph */}
       <div className="mt-12">
-        <p className="tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
+        <p className="tracking-wider text-lg">
           Since 1989, <span className="apec-red font-semibold">The APEC Group(Atlanta Petroleum Equipment Company)</span>  has helped fuel retailers, contractors,
           and business owners power their operations with confidence. From underground tanks to above-ground solutions,
           from environmental compliance to full gas station builds — we bring expertise, integrity, and a commitment to results.
         </p>
-        <p className="mt-8 tracking-widest scrn-300:text-xs scrn-400:text-sm scrn-800:text-base scrn-1000:text-lg scrn-1500:text-xl scrn-1700:text-2xl scrn-2500:text-3xl">
+        <p className="mt-8 tracking-wider text-lg">
           Whether you run a single site or a multi-location network, we’re your trusted partner in
           safe, efficient, and future-ready petroleum infrastructure.
         </p>
       </div>
 
       {/* Second Section */}
-      <div className='mt-12 grid scrn-600:grid-cols-2 scrn-600:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
-        <div className='h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 pt-4 scrn-400:pt-8'>
-          <div>
-            <span className='apec-red font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
-              Who We Serve
-            </span>
-          </div>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-widest">
+      <div className='mt-12 grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
+        <div>
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Who We <span className="text-[#c62931]">Serve</span>
+          </h2>
+          <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
             {badges.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
           </div>
         </div>
-        <div className="h-auto space-y-3 scrn-500:space-y-4 scrn-1200:space-y-12 pt-4 scrn-400:pt-8">
-          <div>
-            <span className='apec-red font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-2000:text-5xl'>
-              Certifications & Affiliations
-            </span>
-          </div>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-widest">
+        <div className="mt-12 scrn-800:mt-0">
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Certifications & <span className="text-[#c62931]">Affiliations</span>
+          </h2>
+          <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
             {badges2.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
