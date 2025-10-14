@@ -9,45 +9,75 @@ const ChooseUs: React.FC = () => {
     threshold: 0.2,
   });
 
+  const fadeUp = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (delay = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut", delay },
+    }),
+  };
+
   return (
-    <section className="flex flex-col items-center justify-center text-center py-40 scrn-1100:py-72 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
-      {/* Heading */}
-      <motion.h2
-        ref={ref}
-        className="text-4xl scrn-600:text-5xl scrn-750:text-6xl scrn-1000:text-7xl font-bold"
-        initial={{ y: 70, opacity: 0 }}
-        animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
-      >
-        Why <span className="text-[#c62931]">Choose Us</span>
-      </motion.h2>
+    <section className="relative py-40 scrn-1100:py-72 overflow-hidden bg-gradient-to-b from-white via-gray-50 to-white">
+      {/* Subtle Background Accent */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(198,41,49,0.05)_0%,transparent_60%)] pointer-events-none" />
 
-      {/* Content */}
-      <div className="mt-6 space-y-6 max-w-3xl text-base scrn-450:text-lg scrn-600:text-base scrn-700:text-sm scrn-900:text-base scrn-1100:text-xl scrn-1300:text-2xl scrn-1800:text-3xl scrn-2500:text-4xl">
-        <p>
-          Today, APEC Group offers a diverse range of services, including canopy imaging and installation,
-          environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring,
-          and digital marketing for dispensaries. We also provide tailored financing options to help you grow your business.
-        </p>
+      <div className="relative flex flex-col items-center justify-center text-center max-w-[1200px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 z-10">
+        {/* Heading */}
+        <motion.h2
+          ref={ref}
+          variants={fadeUp}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          className="text-4xl scrn-600:text-5xl scrn-750:text-6xl scrn-1000:text-7xl font-extrabold leading-tight text-gray-900"
+        >
+          Why <span className="text-[#c62931]">Choose Us</span>
+        </motion.h2>
 
-        <p>
-          With offices in Atlanta, Georgia, and Houston, Texas, we are dedicated to serving businesses nationwide
-          with unparalleled expertise and commitment.
-        </p>
+        {/* Divider Line */}
+        <motion.div
+          variants={fadeUp}
+          custom={0.2}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          className="w-24 h-[4px] bg-[#c62931] rounded-full mt-6"
+        />
 
-        <p>
-          <span>Let us partner with you to build success for your business.</span><br />
-          <span>What can we do for you today?</span>
-        </p>
+        {/* Content */}
+        <motion.div
+          variants={fadeUp}
+          custom={0.4}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          className="mt-10 space-y-8 text-gray-700 font-light leading-relaxed tracking-wide text-base scrn-450:text-lg scrn-700:text-xl scrn-1000:text-2xl scrn-1300:text-2xl scrn-1800:text-3xl max-w-[950px]"
+        >
+          <p>
+            Today, <span className="font-semibold text-gray-900">APEC Group</span> offers a diverse range of services — from canopy imaging and installation to environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring, and digital marketing for dispensaries.
+          </p>
+
+          <p>
+            With offices in <span className="font-semibold text-gray-900">Atlanta, Georgia</span> and <span className="font-semibold text-gray-900">Houston, Texas</span>, we proudly serve clients nationwide — delivering results backed by decades of expertise and a commitment to excellence.
+          </p>
+
+          <p className="text-gray-800 font-medium">
+            Let’s build success together.<br />
+            <span className="text-[#c62931] font-semibold">What can we do for you today?</span>
+          </p>
+        </motion.div>
+
+        {/* Contact Button */}
+        <motion.a
+          variants={fadeUp}
+          custom={0.6}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          href="mailto:Sales@TheAPECgroup.com"
+          className="mt-10 inline-block bg-[#c62931] text-white font-semibold tracking-wide px-12 py-4 rounded-full shadow-md hover:shadow-xl hover:bg-red-600 transition-all duration-300 text-base scrn-750:text-lg scrn-1000:text-xl"
+        >
+          Sales@TheAPECgroup.com
+        </motion.a>
       </div>
-
-      {/* Contact Button */}
-      <a
-        href="mailto:Sales@TheAPECgroup.com"
-        className="mt-8 px-10 py-3 border-2 rounded-lg border-[#c62931] text-gray-800 font-medium hover:bg-red-500 hover:text-white transition duration-200 text-sm scrn-750:text-lg scrn-1000:text-2xl"
-      >
-        Sales@TheAPECgroup.com
-      </a>
     </section>
   );
 };
