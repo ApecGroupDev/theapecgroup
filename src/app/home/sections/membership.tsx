@@ -8,37 +8,37 @@ import { useInView } from "react-intersection-observer";
 const associations = [
   {
     src: "/associations/ARA.webp",
-    alt: "ARA - Atlanta Retailers Association",
+    alt: "Atlanta Retailers Association (ARA) Logo",
     link: "https://www.araonline.us/",
   },
   {
     src: "/associations/GACS.webp",
-    alt: "GACS - Georgia Association of Convenience Stores",
+    alt: "Georgia Association of Convenience Stores (GACS) Logo",
     link: "https://www.gacs.com/",
   },
   {
     src: "/associations/GHRA.webp",
-    alt: "GHRA - Greater Houston Retailers Cooperative Association, Inc.",
+    alt: "Greater Houston Retailers Cooperative Association (GHRA) Logo",
     link: "https://www.ghraonline.com/",
   },
   {
     src: "/associations/GOA.webp",
-    alt: "GOA - Georgia Oilman’s Association",
+    alt: "Georgia Oilmen’s Association (GOA) Logo",
     link: "https://www.georgiaoilmensassoc.com/",
   },
   {
     src: "/associations/GTEC.webp",
-    alt: "GTEC - Georgia Tank Environmental Contractors Association",
+    alt: "Georgia Tank & Environmental Contractors Association (GTECA) Logo",
     link: "https://gteca.com/",
   },
   {
     src: "/associations/PEI.webp",
-    alt: "PEI - Petroleum Equipment Institute",
+    alt: "Petroleum Equipment Institute (PEI) Logo",
     link: "https://www.pei.org/",
   },
   {
     src: "/associations/TFFA.webp",
-    alt: "TFFA - Texas Food & Fuel Association",
+    alt: "Texas Food & Fuel Association (TFFA) Logo",
     link: "https://www.tffa.com/",
   },
 ];
