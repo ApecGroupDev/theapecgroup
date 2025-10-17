@@ -56,11 +56,15 @@ const ContactCTA = () => {
         >
           <div className="flex items-center gap-2">
             <Phone className="w-5 h-5 text-white" />
-            <span>855-444-2732</span>
+            <a href="tel:855-444-2732" className="hover:text-gray-300 transition-colors">
+              855-444-2732
+            </a>
           </div>
           <div className="flex items-center gap-2">
             <Mail className="w-5 h-5 text-white" />
-            <span>info@theapecgroup.com</span>
+            <a href="mailto:Sales@TheAPECgroup.com" className="hover:text-gray-300 transition-colors">
+              Sales@TheAPECgroup.com
+            </a>
           </div>
           <div className="flex items-center gap-2">
             <MessageSquare className="w-5 h-5 text-white" />

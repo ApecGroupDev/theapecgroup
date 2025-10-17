@@ -49,12 +49,16 @@ const OurOffices = () => {
         <div className="mt-16 flex flex-col scrn-600:flex-row justify-center items-center scrn-600:space-x-10 space-y-5 scrn-600:space-y-0 text-gray-700 text-lg">
           <div className="flex items-center space-x-2">
             <Phone className="w-5 h-5 text-[#c62931]" />
-            <span>855-444-2732</span>
+            <a href="tel:855-444-2732" className="hover:text-[#c62931] transition-colors">
+              855-444-2732
+            </a>
           </div>
 
           <div className="flex items-center space-x-2">
             <Mail className="w-5 h-5 text-[#c62931]" />
-            <span>info@theapecgroup.com</span>
+            <a href="mailto:Sales@TheAPECgroup.com" className="hover:text-[#c62931] transition-colors">
+              Sales@TheAPECgroup.com
+            </a>
           </div>
 
           <div className="flex items-center space-x-2">
