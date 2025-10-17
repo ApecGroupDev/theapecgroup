@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 
 const Header: React.FC = () => {
   const pathname = usePathname();
@@ -206,14 +207,21 @@ const Header: React.FC = () => {
                 onMouseEnter={() => setShowDropdown(true)}
                 onMouseLeave={() => setShowDropdown(false)}
               >
-                <div className="relative">
+                <div className="relative flex items-center gap-1">
                   <Link
                     href={path}
-                    className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""
+                    className={`capitalize scrn-750:text-xs scrn-1000:text-base hover:text-[#c62931] transition-colors duration-200 relative flex items-center gap-1 ${pathname.startsWith(path) ? "text-red-800" : ""
                       }`}
                   >
                     {label}
+                    <ChevronDown
+                      className={`w-6 h-6 transition-transform duration-200 ${showDropdown
+                        ? "rotate-180 text-[#c62931]"
+                        : "group-hover:text-[#c62931]"
+                        }`}
+                    />
                   </Link>
+
                   {pathname.startsWith(path) && (
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                   )}
@@ -237,7 +245,7 @@ const Header: React.FC = () => {
                       Canopy Imaging Solutions
                     </Link>
                     <Link
-                      href="https://metalproducts.vercel.app"
+                      href="https://metalproductsusa.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
