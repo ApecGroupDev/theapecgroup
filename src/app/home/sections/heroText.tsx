@@ -16,7 +16,7 @@ const HeroText: React.FC = () => {
         <div className='scrn-600:hidden mt-4'>
           <h1 className='scrn-750:pe-0 scrn-750:w-4/5'>
             <span className='font-bold scrn-750:font-semibold whitespace-normal apec-red text-2xl scrn-750:text-3xl scrn-1200:text-4xl scrn-1500:text-5xl scrn-1900:text-6xl tracking-wide'>
-              One-Stop-Shop for All Your Petroleum Needs — Protecting Your Business, Customers and Future
+              One-Stop-Shop for All Your Petroleum Needs — <span className='text-black'>Protecting Your Business, Customers and Future</span>
             </span>
           </h1>
         </div>
