@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import AccordionConstruction from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
+import ConstructionSchema from "@/components/schema/ConstructionSchema";
 
 export const metadata: Metadata = {
   title: "Gas Station Construction Services | APEC",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 const ServicesConstruction: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <ConstructionSchema />
       <HeaderWhite />
       <Hero />
       <MainConstruction />
