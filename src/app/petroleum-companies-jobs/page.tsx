@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import { Metadata } from "next";
 import AccordionCareers from "./sections/accordion";
 import MainCareers from "./sections/main";
+import CareersSchema from "@/components/schema/CareersSchema";
 
 export const metadata: Metadata = {
   title: "Petroleum Companies Jobs | APEC Careers",
@@ -19,6 +20,7 @@ const CareersPage: React.FC = () => {
 
   return (
     <div className='flex flex-col'>
+      <CareersSchema />
       <HeaderWhite />
       <Hero />
       <MainCareers />
