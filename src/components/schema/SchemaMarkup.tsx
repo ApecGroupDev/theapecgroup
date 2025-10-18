@@ -1,18 +1,21 @@
 "use client";
-import Script from "next/script";
+
+import React from "react";
 
 interface SchemaMarkupProps {
-  id: string;
-  data: Record<string, any>;
+  id?: string;
+  data: Record<string, unknown> | Record<string, unknown>[];
 }
 
-export default function SchemaMarkup({ id, data }: SchemaMarkupProps) {
+const SchemaMarkup: React.FC<SchemaMarkupProps> = ({ id, data }) => {
   return (
-    <Script
+    <script
       id={id}
       type="application/ld+json"
-      strategy="afterInteractive"
+      // Safely stringify your schema (Next.js needs this for structured data)
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   );
-}
+};
+
+export default SchemaMarkup;
