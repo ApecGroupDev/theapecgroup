@@ -8,6 +8,7 @@ import HeaderWhite from '@/components/headerWhite';
 import Footer from '@/components/footer';
 import IntroAbout from './sections/intro';
 import CTA from '@/components/cta';
+import OrganizationSchema from '@/components/schema/OrganizationSchema';
 
 export const metadata: Metadata = {
   title: "About The APEC Group | Petroleum Services",
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
 const About: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <OrganizationSchema />
       {/* Sections */}
       <HeaderWhite />
       <Hero />
