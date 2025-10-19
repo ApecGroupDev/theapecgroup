@@ -5,6 +5,7 @@ import Hero from "./sections/hero";
 import { Metadata } from "next";
 import AccordionBlogs from "./sections/accordion";
 import CTA from "@/components/cta";
+import BlogSchema from "@/components/schema/BlogsSchema";
 
 export const metadata: Metadata = {
   title: "Oil and Gas Industry Blogs | The APEC Group",
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
 const Contact: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <BlogSchema />
       <HeaderWhite />
       <Hero />
       <BlogMain />
