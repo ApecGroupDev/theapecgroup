@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import AccordionFinancing from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
+import FinancingSchema from "@/components/schema/FinancingSchema";
 
 export const metadata: Metadata = {
   title: "Gas Station Financing Experts | APEC",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 const ServicesFinancing: React.FC = () => {
   return (
     <div className='flex flex-col'>
+      <FinancingSchema />
       <HeaderWhite />
       <Hero />
       <MainFinancing />
