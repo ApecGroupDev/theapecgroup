@@ -29,12 +29,11 @@ const checklistItems = [
 ];
 
 const badges = [
-  "Custom canopy design and branding",
-  "Production of durable canopy signage and elements",
-  "Full canopy imaging installation",
-  "Canopy and C-store build-out",
-  "LED lighting integration",
-  "Refurbishment of existing canopies",
+  "Long-term careers in fuel infrastructure and petroleum construction",
+  "Hands-on work: gas station builds, tank installations, system upgrades",
+  "Team-first culture with a serious focus on safety",
+  "Projects throughout Georgia, Texas, and the Southeast",
+  "35+ years of proven leadership and client trust",
 ];
 
 const MainCareers: React.FC = () => {
@@ -93,6 +92,8 @@ const MainCareers: React.FC = () => {
             We’re actively hiring for petroleum companies jobs in operations, compliance, and delivery — with immediate openings like:
           </p>
         </div>
+
+        {/* Job Listing 1 */}
         <div className="mt-8 bg-white/5 backdrop-blur-sm border border-[#c62931]/30 rounded-2xl p-8 text-center shadow-[0_8px_20px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:border-[#c62931]/60">
           <h3 className="font-bold text-[#c62931] text-lg scrn-600:text-2xl scrn-1200:text-3xl scrn-1700:text-4xl mb-3 tracking-wide">
             Service Technician – Atlanta, GA
@@ -108,6 +109,31 @@ const MainCareers: React.FC = () => {
             <div>
               <span className="text-[#c62931] font-medium">📍 Location:</span>{' '}
               <span className="font-semibold">Atlanta, GA</span>
+            </div>
+            <span className="hidden scrn-600:inline-block text-gray-400">|</span>
+            <div>
+              <span className="text-[#c62931] font-medium">💼 Type:</span>{' '}
+              <span className="font-semibold">Full-Time</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Job Listing 2 */}
+        <div className="mt-8 bg-white/5 backdrop-blur-sm border border-[#c62931]/30 rounded-2xl p-8 text-center shadow-[0_8px_20px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:border-[#c62931]/60">
+          <h3 className="font-bold text-[#c62931] text-lg scrn-600:text-2xl scrn-1200:text-3xl scrn-1700:text-4xl mb-3 tracking-wide">
+            Budget Analyst – Tucker, GA
+          </h3>
+
+          <p className="text-gray-800 text-lg tracking-wider leading-relaxed max-w-4xl mx-auto">
+            Atlanta Petroleum Equipment Company seeks a full-time Budget Analyst to assist with cost analysis, fiscal allocation, and budget preparation. Responsibilities include reviewing operating budgets for completeness, accuracy, and conformance with procedures and regulations, as well as analyzing accounting records and financial resources for program development.
+            <br /><br />
+            Must have a Bachelor’s degree in Actuarial Science (or foreign equivalent) and at least 6 months of work experience in business management. Resumes can be sent to 4732 N. Royal Atlanta Drive, Suite E, Tucker, GA 30084.
+          </p>
+
+          <div className="mt-6 flex flex-col scrn-600:flex-row justify-center items-center gap-2 text-gray-800 text-sm scrn-600:text-base scrn-1200:text-lg">
+            <div>
+              <span className="text-[#c62931] font-medium">📍 Location:</span>{' '}
+              <span className="font-semibold">Tucker, GA</span>
             </div>
             <span className="hidden scrn-600:inline-block text-gray-400">|</span>
             <div>
