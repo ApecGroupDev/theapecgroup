@@ -5,6 +5,7 @@ import Link from "next/link";
 import { blogData } from "../components/blogData";
 import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 const checklistItems = [
   "Regulatory compliance updates (federal, state, and local)",
@@ -70,11 +71,14 @@ const BlogMain: React.FC = () => {
           >
             {/* Image */}
             <div className="h-56 w-full overflow-hidden">
-              <img
-                src={blog.imageUrl}
-                alt={blog.title}
-                className="h-full w-full object-cover hover:scale-105 transition-transform duration-500"
-              />
+              <div className="relative h-full w-full">
+                <Image
+                  src={blog.imageUrl}
+                  alt={blog.title}
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
             </div>
 
             {/* Content */}
