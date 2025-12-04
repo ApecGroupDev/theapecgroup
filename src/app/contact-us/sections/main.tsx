@@ -15,20 +15,20 @@ const badges = [
 
 const MainImaging: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
-      <div className='mt-12 grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
-        <div className='h-auto scrn-800:mt-16 scrn-1000:mt-20 scrn-1250:mt-24 scrn-1500:mt-32'>
+    <div className='bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
+      <div className='mt-12 grid md:grid-cols-2 md:gap-x-10 xl:gap-x-24'>
+        <div className='h-auto md:mt-16 lg:mt-20 xl:mt-24 2xl:mt-32'>
           <h2 className="text-4xl font-extrabold text-gray-900">
             What We Can <span className="text-[#c62931]">Help You With:</span>
           </h2>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-widest mt-4">
+          <div className="space-y-3 lg:space-y-6 tracking-widest mt-4">
             {badges.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
           </div>
         </div>
-        <div className='relative flex items-center mt-6 scrn-500:mt-8 z-10'>
-          <div id="MainContactForm" className="p-4 scrn-800:p-8 scrn-900:p-10 scrn-1000:p-12 scrn-1250:p-16 scrn-1500:p-24 bg-gray-200 rounded-xl shadow-2xl">
+        <div className='relative flex items-center mt-6 sm:mt-8 z-10'>
+          <div id="MainContactForm" className="p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-24 bg-gray-200 rounded-xl shadow-2xl">
             <h2 className="text-4xl font-extrabold mb-12">
               <span className="text-[#c62931]">Contact Us</span> Now!
             </h2>

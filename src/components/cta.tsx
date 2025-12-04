@@ -16,7 +16,7 @@ const CTA: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl scrn-750:text-5xl font-extrabold tracking-tight mb-6"
+          className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6"
         >
           Ready to Build or Grow Your Gas Station Business?
         </motion.h2>
@@ -51,7 +51,7 @@ const CTA: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex flex-col scrn-600:flex-row items-center justify-center gap-6 scrn-600:gap-10 mt-8 text-white/90"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 mt-8 text-white/90"
         >
           {[
             {

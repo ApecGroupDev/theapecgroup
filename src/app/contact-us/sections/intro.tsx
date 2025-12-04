@@ -4,7 +4,7 @@ import React from "react";
 
 const IntroContact: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
+    <div className='bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
       <div className="mt-12">
         <p className="text-lg">
           Have a question? Need a quote? Want expert advice on your next fuel station or compliance project? You’re in the right place.

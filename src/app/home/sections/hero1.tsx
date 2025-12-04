@@ -32,17 +32,17 @@ const Hero1: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/25 via-black/10 to-transparent z-20" />
 
       {/* Text content */}
-      <div className="relative z-30 flex items-center justify-start h-full px-4 scrn-600:px-8 scrn-1000:px-16">
+      <div className="relative z-20 md:flex items-center justify-start h-full px-4 sm:px-8 lg:px-16 hidden">
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, ease: "easeOut" }}
           className="
-            text-white text-left font-extrabold leading-tight hidden scrn-750:block
-            text-xl scrn-750:text-2xl scrn-900:text-3xl scrn-1000:text-4xl scrn-1300:text-5xl scrn-1700:text-6xl scrn-2300:text-7xl
-            max-w-xs scrn-700:max-w-sm scrn-900:max-w-lg scrn-1000:max-w-xl scrn-1300:max-w-3xl scrn-1800:max-w-5xl scrn-2300:max-w-7xl
-            drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]
-          "
+    text-white text-left font-extrabold leading-tight
+    text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl
+    max-w-xs md:max-w-sm lg:max-w-xl xl:max-w-3xl 2xl:max-w-5xl
+    drop-shadow-[0_2px_6px_rgba(0,0,0,0.4)]
+  "
         >
           <span className="text-[#c62931] italic font-extrabold tracking-wide">
             One-Stop-Shop

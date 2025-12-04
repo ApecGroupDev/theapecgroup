@@ -6,8 +6,8 @@ const GoogleMaps: React.FC = () => {
   return (
     <div className='bg-transparent flex flex-col items-center my-20'>
       {/* Google Maps Section */}
-      <div className="w-full max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
-        <h2 className="text-center text-lg font-semibold text-gray-800 mb-4 scrn-1000:text-xl">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-center text-lg font-semibold text-gray-800 mb-4 lg:text-xl">
           Find Us on Google Maps
         </h2>
         <div className="w-full mx-auto h-140 rounded-xl overflow-hidden shadow-2xl">

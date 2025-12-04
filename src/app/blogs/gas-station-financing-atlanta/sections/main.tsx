@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 const Main = () => {
   return (
-    <div className='px-4 scrn-600:px-12 scrn-800:px-20 max-w-7xl mx-auto mb-20'>
-      <div className='mt-28 scrn-600:mt-32 scrn-1000:mt-24 scrn-1300:mt-28 scrn-1600:mt-32 scrn-1900:mt-40 items-end flex underline'>
+    <div className='px-4 sm:px-12 md:px-20 max-w-7xl mx-auto mb-20'>
+      <div className='mt-28 sm:mt-32 lg:mt-24 xl:mt-28 2xl:mt-32 items-end flex underline'>
         <Link
           href="/blogs"
-          className="ms-auto scrn-750:text-lg scrn-1400:text-xl text-red-700 hover:text-red-500 hover:scale-105"
+          className="ms-auto md:text-lg 2xl:text-xl text-red-700 hover:text-red-500 hover:scale-105"
         >
           Back to Blogs
         </Link>
@@ -17,11 +17,11 @@ const Main = () => {
         alt="Blog Image"
         width={1024}
         height={500}
-        className='w-full object-center rounded-lg mb-6 scrn-1900:h-172 mt-4'
+        className='w-full object-center rounded-lg mb-6 2xl:h-172 mt-4'
       />
 
       {/* Title + Subtitle inline */}
-      <div className='text-3xl scrn-1000:text-5xl scrn-1900:text-7xl font-bold mb-4'>
+      <div className='text-3xl lg:text-5xl 2xl:text-7xl font-bold mb-4'>
         <h1>
           <span className='text-[#c62931]'>Best In Atlanta: </span>
           <span className='text-black font-semibold'>Gas Station Financing Companies</span>
@@ -30,16 +30,16 @@ const Main = () => {
 
       <hr className='border-[#c62931] border-2 w-20 my-2' />
 
-      <div className='scrn-1000:ps-12 pt-12'>
+      <div className='lg:ps-12 pt-12'>
         {/* INTRO */}
         <div className='space-y-3'>
-          <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line'>
+          <p className='text-gray-800 lg:text-lg whitespace-pre-line'>
             If you are looking for the best gas station financing companies to run your own gas station in Atlanta.
             Then this is the right place for you. In this article, we listed the top gas station financing companies
             with their essential features, qualities and services they provide all across in Atlanta.
           </p>
 
-          <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line'>
+          <p className='text-gray-800 lg:text-lg whitespace-pre-line'>
             Gas station is the best growing business all cross in Atlanta that provide fuel, gasoline and petrol to the
             vehicles. It is a suitable place for a driver to stop their vehicles and fill up their fuel tanks. Gas station
             also offer a wide range of product services such as car washing, repairing, rental and also provide convenient
@@ -48,7 +48,7 @@ const Main = () => {
             current growth of gas, it is an opportunity for financing companies to invest in making gas stations.
           </p>
 
-          <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line'>
+          <p className='text-gray-800 lg:text-lg whitespace-pre-line'>
             If you want to construct a gas station in Atlanta just contact our company that financially helps you in this project.
             Our professional experts make realistic plans and use the best patterns that are competitive in the market.
             They also used high quality equipment such as fuel dispensers, canopies, petroleum lines, pumps, security systems
@@ -59,12 +59,12 @@ const Main = () => {
         {/* END - INTRO */}
 
         {/* LIST OF BEST GAS STATION FINANCING COMPANIES */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-12'>
+        <p className='text-4xl lg:text-5xl font-semibold text-[#c62931] whitespace-pre-line mt-12'>
           Here Is The List Of Best Gas Station Financing Companies In Atlanta
         </p>
 
         {/* APEC */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-6'>
+        <p className='text-4xl lg:text-5xl font-semibold whitespace-pre-line mt-6'>
           Atlanta Petroleum Equipment Company(APEC)
         </p>
         <Image
@@ -74,36 +74,36 @@ const Main = () => {
           height={500}
           className='rounded-lg shadow w-full h-auto my-3'
         />
-        <p className='text-[#c62931] scrn-1000:text-lg whitespace-pre-line mt-4'>
+        <p className='text-[#c62931] lg:text-lg whitespace-pre-line mt-4'>
           BEST FOR ALL BUSINESS
         </p>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Services
         </p>
-        <ol className='list-decimal list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/canopy-imaging-solutions">APEC Canopy Imaging Solutions</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/environmental-compliance-solutions">APEC Environmental Compliance Solutions</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="https://www.metalproductsusa.com/">Metal Products Manufacturing</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/gas-station-construction">APEC Gas Station Construction</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/gas-station-electrical">APEC Gas Station Electrical</a></li>
-          <li className='text-lg scrn-1000:text-xl text-[#c62931]'><a href="/services/gas-station-financing">APEC Gas Station Financing</a></li>
+        <ol className='list-decimal list-inside space-y-2 lg:ps-12 mt-3 text-lg lg:text-xl text-[#c62931]'>
+          <li><a href="/services/canopy-imaging-solutions">APEC Canopy Imaging Solutions</a></li>
+          <li><a href="/services/environmental-compliance-solutions">APEC Environmental Compliance Solutions</a></li>
+          <li><a href="https://www.metalproductsusa.com/">Metal Products Manufacturing</a></li>
+          <li><a href="/services/gas-station-construction">APEC Gas Station Construction</a></li>
+          <li><a href="/services/gas-station-electrical">APEC Gas Station Electrical</a></li>
+          <li><a href="/services/gas-station-financing">APEC Gas Station Financing</a></li>
         </ol>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Pros
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Fast and reliable services</li>
-          <li className='text-lg scrn-1000:text-xl'>Positive customer review</li>
-          <li className='text-lg scrn-1000:text-xl'>Provide cost–effective services</li>
-          <li className='text-lg scrn-1000:text-xl'>Provide friendly team</li>
-          <li className='text-lg scrn-1000:text-xl'>Use high quality construction material</li>
-          <li className='text-lg scrn-1000:text-xl'>Save your time and money</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3 text-lg lg:text-xl'>
+          <li>Fast and reliable services</li>
+          <li>Positive customer review</li>
+          <li>Provide cost–effective services</li>
+          <li>Provide friendly team</li>
+          <li>Use high quality construction material</li>
+          <li>Save your time and money</li>
         </ul>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Cons
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3'>
+          <li className='text-lg lg:text-xl'>Fixed Rate</li>
         </ul>
         <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
           <tbody>
@@ -129,28 +129,28 @@ const Main = () => {
             </tr>
           </tbody>
         </table>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           APEC provide Gas station financial support
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           APEC is the best gas station financing company in Atlanta. They provide you financial support to construct your gas station.
           They provide a highly qualified professional team and consultant to complete your projects.
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           For many years, they provide gas station services and financial support services with honesty, trustworthy and integrity to
           small or large size businesses. Professional experts firstly make a map and construction plan for your dream project.
         </p>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Use Quality Materials
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           Use high quality equipment such as pumps, underground tanks, petroleum lines, fuel dispensers and canopies. They also use high
           quality materials during gas station construction. They provide best services by guiding their clients and using best techniques
           in construction. Company has a 5-star rating with positive reviews.
         </p>
 
         {/* BP GAS STATION */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-12'>
+        <p className='text-4xl lg:text-5xl font-semibold whitespace-pre-line mt-12'>
           BP Gas Station
         </p>
         <Image
@@ -160,32 +160,32 @@ const Main = () => {
           height={500}
           className='rounded-lg shadow w-full h-auto my-3'
         />
-        <p className='text-[#c62931] scrn-1000:text-lg whitespace-pre-line mt-4'>
+        <p className='text-[#c62931] lg:text-lg whitespace-pre-line mt-4'>
           Suitable For Small Business
         </p>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Services
         </p>
-        <ol className='list-decimal list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Restaurants services include deliver all types of food and also make reservation</li>
-          <li className='text-lg scrn-1000:text-xl'>Home Services include home cleaners, plumbers, contractors and HVAC</li>
-          <li className='text-lg scrn-1000:text-xl'>Auto services include repair, dealers, towing and washing</li>
+        <ol className='list-decimal list-inside text-lg lg:text-xl space-y-2 lg:ps-12 mt-3'>
+          <li>Restaurants services include deliver all types of food and also make reservation</li>
+          <li>Home Services include home cleaners, plumbers, contractors and HVAC</li>
+          <li>Auto services include repair, dealers, towing and washing</li>
         </ol>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Pros
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Provide Experts for construction</li>
-          <li className='text-lg scrn-1000:text-xl'>Help you in making decision</li>
-          <li className='text-lg scrn-1000:text-xl'>Deliver services to the clients in some languages</li>
-          <li className='text-lg scrn-1000:text-xl'>Few years of experiences</li>
-          <li className='text-lg scrn-1000:text-xl'>Customer satisfication</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3 text-lg lg:text-xl'>
+          <li>Provide Experts for construction</li>
+          <li>Help you in making decision</li>
+          <li>Deliver services to the clients in some languages</li>
+          <li>Few years of experiences</li>
+          <li>Customer satisfication</li>
         </ul>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Cons
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3'>
+          <li className='text-lg lg:text-xl'>Fixed Rate</li>
         </ul>
         <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
           <tbody>
@@ -203,16 +203,16 @@ const Main = () => {
             </tr>
           </tbody>
         </table>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Professional expertise of BP gas station
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           If you are looking for financial support for your business BP gas station is best for this purpose. They are known in
           this field due to their accuracy and precise decision. They also provide a wide range of services other than gas
           station finance. The services include food delivery, towing, auto washing, repairing, rental, home cleaners, HVAC,
           contractors and also dealers.
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           Their professional experts are highly skillful in these services and deliver effective results. They understand
           the real struggle of small business so that they provide them with financial expertise. They make a plan of
           construction using advanced techniques and equipment that are essential for your business. We give you proper
@@ -222,7 +222,7 @@ const Main = () => {
         </p>
 
         {/* QUIK TRIP */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-12'>
+        <p className='text-4xl lg:text-5xl font-semibold whitespace-pre-line mt-12'>
           Quik Trip
         </p>
         <Image
@@ -232,32 +232,32 @@ const Main = () => {
           height={500}
           className='rounded-lg shadow w-full h-auto my-3'
         />
-        <p className='text-[#c62931] scrn-1000:text-lg whitespace-pre-line mt-4'>
+        <p className='text-[#c62931] lg:text-lg whitespace-pre-line mt-4'>
           Suitable For Small Business
         </p>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Services
         </p>
-        <ol className='list-decimal list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Restaurants services include delivery food</li>
-          <li className='text-lg scrn-1000:text-xl'>Home services include electricians, Landscaping, plumbers, home cleaners</li>
-          <li className='text-lg scrn-1000:text-xl'>Auto services include washing, repairing, oil changing and towing</li>
+        <ol className='list-decimal list-inside space-y-2 lg:ps-12 mt-3 text-lg lg:text-xl'>
+          <li>Restaurants services include delivery food</li>
+          <li>Home services include electricians, Landscaping, plumbers, home cleaners</li>
+          <li>Auto services include washing, repairing, oil changing and towing</li>
         </ol>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Pros
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Provide excellent services</li>
-          <li className='text-lg scrn-1000:text-xl'>Making strong strategies</li>
-          <li className='text-lg scrn-1000:text-xl'>Use quality material</li>
-          <li className='text-lg scrn-1000:text-xl'>Provide consultant</li>
-          <li className='text-lg scrn-1000:text-xl'>Best customer services</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3 text-lg lg:text-xl'>
+          <li>Provide excellent services</li>
+          <li>Making strong strategies</li>
+          <li>Use quality material</li>
+          <li>Provide consultant</li>
+          <li>Best customer services</li>
         </ul>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Cons
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3'>
+          <li className='text-lg lg:text-xl'>Fixed Rate</li>
         </ul>
         <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
           <tbody>
@@ -275,23 +275,23 @@ const Main = () => {
             </tr>
           </tbody>
         </table>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Quik Trip provide financial support to your business
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           Quik Trip is a company that provides financial support to small businesses. This company provides professional
           expertise that make plans about construction, use technologies and also use high quality equipment such as pumps,
           pipe line, dispenser. Their professional team is well trained and mannered. They provide the best advice that
           helps you in your business. Their services are budget friendly that save your time and money.
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           The specialized professionals of quik trip company handle all of your construction and management work. They
           build a strong connection with their clients by delivering their outstanding services. Their main priority is
           to protect customer privacy. Company is at a 3.9 rating star with some positive reviews.
         </p>
 
         {/* DIVIDEND AMERICA COMMERCIAL LENDING */}
-        <p className='text-4xl scrn-1000:text-5xl font-semibold whitespace-pre-line mt-12'>
+        <p className='text-4xl lg:text-5xl font-semibold whitespace-pre-line mt-12'>
           Dividend America Commercial Leading
         </p>
         <Image
@@ -301,35 +301,35 @@ const Main = () => {
           height={500}
           className='rounded-lg shadow w-full h-auto my-3'
         />
-        <p className='text-[#c62931] scrn-1000:text-lg whitespace-pre-line mt-4'>
+        <p className='text-[#c62931] lg:text-lg whitespace-pre-line mt-4'>
           Best For All Business
         </p>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Services
         </p>
-        <ol className='list-decimal list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Multifamily & Apartments</li>
-          <li className='text-lg scrn-1000:text-xl'>Construction Loans</li>
-          <li className='text-lg scrn-1000:text-xl'>Bridge Loans</li>
-          <li className='text-lg scrn-1000:text-xl'>Investment Property</li>
-          <li className='text-lg scrn-1000:text-xl'>Hostel & Hospitality</li>
-          <li className='text-lg scrn-1000:text-xl'>Commercial Real Estate</li>
+        <ol className='list-decimal list-inside space-y-2 lg:ps-12 mt-3 text-lg lg:text-xl'>
+          <li>Multifamily & Apartments</li>
+          <li>Construction Loans</li>
+          <li>Bridge Loans</li>
+          <li>Investment Property</li>
+          <li>Hostel & Hospitality</li>
+          <li>Commercial Real Estate</li>
         </ol>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Pros
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Fast and reliable services</li>
-          <li className='text-lg scrn-1000:text-xl'>Positive customer review</li>
-          <li className='text-lg scrn-1000:text-xl'>Provide cost–effective services</li>
-          <li className='text-lg scrn-1000:text-xl'>Use high quality construction material</li>
-          <li className='text-lg scrn-1000:text-xl'>Save your time and money</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3 text-lg lg:text-xl'>
+          <li>Fast and reliable services</li>
+          <li>Positive customer review</li>
+          <li>Provide cost–effective services</li>
+          <li>Use high quality construction material</li>
+          <li>Save your time and money</li>
         </ul>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Cons
         </p>
-        <ul className='list-disc list-inside space-y-2 scrn-1000:ps-12 mt-3'>
-          <li className='text-lg scrn-1000:text-xl'>Fixed Rate</li>
+        <ul className='list-disc list-inside space-y-2 lg:ps-12 mt-3'>
+          <li className='text-lg lg:text-xl'>Fixed Rate</li>
         </ul>
         <table className='border-collapse border border-gray-400 w-full mt-6 text-2xs scrn-350:text-xs scrn-400:text-sm scrn-450:text-base'>
           <tbody>
@@ -351,15 +351,15 @@ const Main = () => {
             </tr>
           </tbody>
         </table>
-        <p className='text-3xl font-semibold scrn-1000:text-4xl whitespace-pre-line mt-6'>
+        <p className='text-3xl font-semibold lg:text-4xl whitespace-pre-line mt-6'>
           Gas Station Financing Program By Professionals
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           Dividend America Commercial Leading company provides financial support for your business. They provide various range
           of services in Atlanta such as construction loan, hotel loan, gas station construction, bridge loan, apartment loan
           and commercial real estate.
         </p>
-        <p className='text-gray-800 scrn-1000:text-lg whitespace-pre-line mt-3'>
+        <p className='text-gray-800 lg:text-lg whitespace-pre-line mt-3'>
           They only prioritize their effective services that help your business to grow rapidly. They ensure that your business
           system can run smoothly as soon as possible. The company is 3.7 star-rating with positive reviews.
         </p>

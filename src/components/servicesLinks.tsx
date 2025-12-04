@@ -80,7 +80,7 @@ const ServicesBoxLinks: React.FC = () => {
   );
 
   return (
-    <div className="w-full pb-24 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+    <div className="w-full pb-24 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
       {/* Section Heading */}
       <div className="my-6">
         <h2 className="text-4xl font-extrabold text-gray-900 uppercase">
@@ -89,7 +89,7 @@ const ServicesBoxLinks: React.FC = () => {
       </div>
 
       {/* Responsive Grid (multiple per row, not full width) */}
-      <div className="grid scrn-650:grid-cols-2 scrn-1000:grid-cols-3 gap-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredFeatures.map((feature, index) => {
           // check if slug is external
           const isExternal = externalSlugs.includes(feature.slug);
@@ -124,7 +124,7 @@ const ServicesBoxLinks: React.FC = () => {
 
                 {/* Title + Description */}
                 <div className="p-4 text-center">
-                  <h3 className="text-base scrn-750::text-lg font-bold text-gray-800 mb-2 group-hover:text-red-600 transition-colors">
+                  <h3 className="text-base md:text-lg font-bold text-gray-800 mb-2 group-hover:text-red-600 transition-colors">
                     {feature.title}
                   </h3>
                   <p className="text-sm font-medium">

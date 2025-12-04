@@ -47,7 +47,7 @@ export default function Accordion({
   };
 
   return (
-    <div className={`w-full space-y-4 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 ${className}`}>
+    <div className={`w-full space-y-4 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 ${className}`}>
       {items.map((item) => {
         const isOpen = currentOpen.includes(item.id);
         const panelId = `${idRoot}-panel-${item.id}`;
@@ -69,7 +69,7 @@ export default function Accordion({
               className="w-full flex justify-between items-center py-5 px-6 text-left group"
             >
               <span
-                className={`font-semibold text-lg scrn-1000:text-xl transition-colors ${isOpen ? "text-[#c62931]" : "text-gray-800 group-hover:text-[#c62931]"
+                className={`font-semibold text-lg lg:text-xl transition-colors ${isOpen ? "text-[#c62931]" : "text-gray-800 group-hover:text-[#c62931]"
                   }`}
               >
                 {item.title}
@@ -100,7 +100,7 @@ export default function Accordion({
                   transition={{ duration: 0.35, ease: "easeInOut" }}
                   className="overflow-hidden"
                 >
-                  <div className="px-6 pb-6 pt-1 text-gray-700 leading-relaxed scrn-1000:text-lg">
+                  <div className="px-6 pb-6 pt-1 text-gray-700 leading-relaxed lg:text-lg">
                     {item.content}
                   </div>
                 </motion.div>

@@ -21,7 +21,7 @@ const badges = [
 
 const IntroBlog: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
+    <div className='bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
       <div className="mt-12 tracking-wider text-lg">
         <p>
           At <span className="apec-red font-semibold">The APEC Group,</span> our strength lies in our people. From project managers and engineers to compliance specialists and service technicians, each member of our team is dedicated to your success. With 30+ years of combined experience in petroleum systems, our professionals are not only skilled — they’re deeply committed to safety, precision, and innovation.
@@ -32,7 +32,7 @@ const IntroBlog: React.FC = () => {
       </div>
 
       <div className='h-auto pt-12 w-full'>
-        <div className="grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24">
+        <div className="grid md:grid-cols-2 md:gap-x-10 xl:gap-x-24">
           <div className='h-auto'>
             <h2 className="text-4xl font-extrabold text-gray-900">
               What Sets <span className="text-[#c62931]">Our Team Apart</span>
@@ -40,17 +40,17 @@ const IntroBlog: React.FC = () => {
             {checklistItems.map((item, index) => (
               <div key={index} className="flex items-center gap-2 tracking-wider mt-4">
                 <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
-                <span className="scrn-1000:text-lg scrn-1500:text-xl">{item}</span>
+                <span className="lg:text-lg 2xl:text-xl">{item}</span>
               </div>
             ))}
           </div>
           <div>
-            <div className="mt-12 scrn-800:mt-0">
+            <div className="mt-12 md:mt-0">
               <h2 className="text-4xl font-extrabold text-gray-900">
                 Our Team <span className="text-[#c62931]">Values</span>
               </h2>
             </div>
-            <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
+            <div className="space-y-3 lg:space-y-6 tracking-wider mt-4">
               {badges.map((text, i) => (
                 <CheckmarkBadgeNew key={i} text={text} />
               ))}

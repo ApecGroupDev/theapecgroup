@@ -51,7 +51,7 @@ const MembershipGrid = () => {
 
   return (
     <section className="py-24 bg-gray-50">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <div className="text-center mb-14">
@@ -60,11 +60,11 @@ const MembershipGrid = () => {
             initial={{ y: 70, opacity: 0 }}
             animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="text-4xl scrn-600:text-5xl scrn-1000:text-6xl font-extrabold text-gray-900"
+            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900"
           >
             Proud <span className="text-[#c62931]">Member Of:</span>
           </motion.h2>
-          <p className="text-base scrn-600:text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
             Our associations reflect our dedication to quality, collaboration, and industry leadership.
           </p>
         </div>
@@ -74,7 +74,7 @@ const MembershipGrid = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="grid grid-cols-2 scrn-600:grid-cols-3 scrn-1000:grid-cols-4 gap-y-12 gap-x-10 items-center justify-items-center justify-center [grid-auto-flow:row]"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-10 items-center justify-items-center justify-center [grid-auto-flow:row]"
         >
           {associations.map((assoc, index) => (
             <Link
@@ -89,7 +89,7 @@ const MembershipGrid = () => {
                 alt={assoc.alt}
                 width={250}
                 height={250}
-                className="object-contain w-[160px] scrn-600:w-[180px] scrn-750:w-[200px] scrn-1000:w-[230px] scrn-1500:w-[260px]"
+                className="object-contain w-[160px] sm:w-[180px] md:w-[200px] lg:w-[230px] 2xl:w-[260px]"
               />
             </Link>
           ))}

@@ -22,7 +22,7 @@ const badges2 = [
 
 const IntroAbout: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center justify-center max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
+    <div className='bg-transparent flex flex-col items-center justify-center max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
       {/* Intro Paragraph */}
       <div className="mt-12">
         <p className="tracking-wider text-lg">
@@ -37,22 +37,22 @@ const IntroAbout: React.FC = () => {
       </div>
 
       {/* Second Section */}
-      <div className='mt-12 grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
+      <div className='mt-12 grid md:grid-cols-2 md:gap-x-10 xl:gap-x-24'>
         <div>
           <h2 className="text-4xl font-extrabold text-gray-900">
             Who We <span className="text-[#c62931]">Serve</span>
           </h2>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
+          <div className="space-y-3 lg:space-y-6 tracking-wider mt-4">
             {badges.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
           </div>
         </div>
-        <div className="mt-12 scrn-800:mt-0">
+        <div className="mt-12 md:mt-0">
           <h2 className="text-4xl font-extrabold text-gray-900">
             Certifications & <span className="text-[#c62931]">Affiliations</span>
           </h2>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
+          <div className="space-y-3 lg:space-y-6 tracking-wider mt-4">
             {badges2.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}

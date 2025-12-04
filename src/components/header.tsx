@@ -83,7 +83,7 @@ const Header: React.FC = () => {
         }`}
     >
       {/* Mobile Header */}
-      <div className='scrn-1000:hidden container min-w-full relative flex items-center p-1 scrn-600:p-2'>
+      <div className='lg:hidden container min-w-full relative flex items-center p-1 sm:p-2'>
         {/* APEC Logo (Left) */}
         <Link href="/">
           <Image
@@ -91,21 +91,21 @@ const Header: React.FC = () => {
             alt="Logo"
             width={116}
             height={106}
-            className='h-24 scrn-600:h-28 w-auto'
+            className='h-24 sm:h-28 w-auto'
           />
         </Link>
 
         {/* CTA + Menu (Right) */}
-        <div className="absolute right-4 top-12 scrn-650:top-11 -translate-y-1/2 flex items-center gap-2">
+        <div className="absolute right-4 top-12 sm:top-11 -translate-y-1/2 flex items-center gap-2">
           {/* Phone CTA */}
           <div>
             <a
               href="tel:855-444-2732"
               className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
             >
-              <FaPhoneAlt className="text-sm scrn-600:text-lg" />
-              <span className="text-sm hidden scrn-350:block">FREE CONSULTATION</span>
-              <span className="text-sm scrn-350:hidden">FREE</span>
+              <FaPhoneAlt className="text-sm sm:text-lg" />
+              <span className="text-sm hidden sm:block">FREE CONSULTATION</span>
+              <span className="text-sm sm:hidden">FREE</span>
             </a>
           </div>
 
@@ -164,33 +164,33 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className='hidden scrn-1000:grid grid-cols-3 items-center px-6 py-1'>
+      <div className='hidden lg:grid grid-cols-3 items-center px-6 py-1'>
         {/* Left: Logo */}
-        <div className='flex items-center scrn-600:hidden'>
+        <div className='flex items-center sm:hidden'>
           <Link href="/">
             <Image
               src="/logos/APEC.webp"
               alt="Logo"
               width={116}
               height={106}
-              className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
+              className='w-auto lg:h-24 xl:h-28 2xl:h-32'
             />
           </Link>
         </div>
-        <div className='items-center hidden scrn-600:flex'>
+        <div className='items-center hidden sm:flex'>
           <Link href="/">
             <Image
               src="/logos/APEC.webp"
               alt="Logo"
               width={227}
               height={208}
-              className='w-auto scrn-1000:h-24 scrn-1300:h-28 scrn-1600:h-32 scrn-1900:h-40 scrn-2200:h-48'
+              className='w-auto lg:h-24 xl:h-28 2xl:h-32'
             />
           </Link>
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-center space-x-8 -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28">
+        <nav className="flex z-10 justify-center space-x-8 -mt-10 2xl:-mt-14">
           {[
             { label: "HOME", path: "/" },
             { label: "ABOUT", path: "/about-us" },
@@ -210,7 +210,7 @@ const Header: React.FC = () => {
                 <div className="relative flex items-center gap-1">
                   <Link
                     href={path}
-                    className={`capitalize scrn-750:text-xs scrn-1000:text-base hover:text-[#c62931] transition-colors duration-200 relative flex items-center gap-1 ${pathname.startsWith(path) ? "text-red-800" : ""
+                    className={`capitalize md:text-xs lg:text-base hover:text-[#c62931] transition-colors duration-200 relative flex items-center gap-1 ${pathname.startsWith(path) ? "text-red-800" : ""
                       }`}
                   >
                     {label}
@@ -281,7 +281,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${(path === "/" ? pathname === "/" : pathname.startsWith(path))
+                className={`capitalize md:text-xs lg:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${(path === "/" ? pathname === "/" : pathname.startsWith(path))
                   ? "text-red-800"
                   : ""
                   }`}
@@ -296,9 +296,9 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Right: CTA */}
-        <div className="flex justify-end -mt-10 scrn-1600:-mt-14 scrn-1900:-mt-20 scrn-2200:-mt-28">
+        <div className="flex justify-end -mt-10 2xl:-mt-14">
           <Link
-            className="hidden scrn-1200:flex items-center gap-2 bg-[#c62931] text-white py-2 px-4 rounded-md hover:bg-red-500 transition"
+            className="hidden xl:flex items-center gap-2 bg-[#c62931] text-white py-2 px-4 rounded-md hover:bg-red-500 transition"
             href="/contact-us#MainContactForm"
             scroll={false}
           >
@@ -306,7 +306,7 @@ const Header: React.FC = () => {
             FREE CONSULTATION
           </Link>
           <Link
-            className="flex scrn-1200:hidden items-center gap-2 bg-[#c62931] text-white py-2 px-8  rounded-md hover:bg-red-500 transition"
+            className="flex xl:hidden items-center gap-2 bg-[#c62931] text-white py-2 px-8  rounded-md hover:bg-red-500 transition"
             href="/contact-us#MainContactForm"
             scroll={false}
           >

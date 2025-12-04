@@ -88,7 +88,7 @@ export default function CareersForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="tracking-wider space-y-4 mt-8 text-base scrn-1000:text-lg scrn-1500:text-xl"
+      className="tracking-wider space-y-4 mt-8 text-base lg:text-lg 2xl:text-xl"
     >
       <input
         type="text"

@@ -44,7 +44,7 @@ const FeatureBoxes: React.FC = () => {
       {/* Subtle background accent */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(198,41,49,0.05),transparent_60%)]"></div>
 
-      <div className="max-w-[1440px] mx-auto px-12 scrn-600:px-6 scrn-1000:px-24 scrn-1200:px-8 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-12 sm:px-6 lg:px-24 2xl:px-8 relative z-10">
         {/* Title */}
         <motion.div
           ref={ref}
@@ -65,7 +65,7 @@ const FeatureBoxes: React.FC = () => {
         {/* Feature Grid */}
         <div
           className="
-            grid grid-cols-1 scrn-600:grid-cols-2 scrn-1200:grid-cols-4 gap-8
+            grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-8
           "
         >
           {features.map((feature, index) => (
@@ -94,7 +94,7 @@ const FeatureBoxes: React.FC = () => {
               >
                 {feature.icon}
               </div>
-              <h3 className="text-xl scrn-1000:text-2xl font-semibold text-gray-900 mb-3 tracking-wide">
+              <h3 className="text-xl lg:text-2xl font-semibold text-gray-900 mb-3 tracking-wide">
                 {feature.title}
               </h3>
               <p className="text-gray-600 text-base leading-relaxed max-w-[85%] mx-auto">

@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 const OurOffices = () => {
   return (
     <section className="relative w-full bg-white py-20">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight">
@@ -19,7 +19,7 @@ const OurOffices = () => {
         </div>
 
         {/* Office Cards */}
-        <div className="grid scrn-750:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10">
           {/* Main Office */}
           <div className="group bg-gray-50 hover:bg-white border border-gray-200 rounded-3xl p-10 shadow-sm hover:shadow-xl transition-all duration-300">
             <div className="flex justify-center items-center mb-6">
@@ -46,7 +46,7 @@ const OurOffices = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="mt-16 flex flex-col scrn-600:flex-row justify-center items-center scrn-600:space-x-10 space-y-5 scrn-600:space-y-0 text-gray-700 text-lg">
+        <div className="mt-16 flex flex-col sm:flex-row justify-center items-center sm:space-x-10 space-y-5 sm:space-y-0 text-gray-700 text-lg">
           <div className="flex items-center space-x-2">
             <Phone className="w-5 h-5 text-[#c62931]" />
             <a href="tel:855-444-2732" className="hover:text-[#c62931] transition-colors">

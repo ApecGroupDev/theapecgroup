@@ -4,7 +4,7 @@ import React from "react";
 
 const IntroServices: React.FC = () => {
   return (
-    <div className='flex flex-col items-center scrn-600:justify-center h-auto w-full max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
+    <div className='flex flex-col items-center sm:justify-center h-auto w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
       {/* Introductory Paragraph */}
       <div className="mt-12">
         <p className="tracking-wider text-lg">
@@ -12,7 +12,7 @@ const IntroServices: React.FC = () => {
         </p>
       </div>
 
-      <div className="h-auto pt-12 scrn-400:pt-16 scrn-800:pt-20">
+      <div className="h-auto pt-12 sm:pt-16 md:pt-20">
         {/* Heading */}
         <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center">
           Why <span className="text-[#c62931]">Choose APEC?</span>
@@ -49,16 +49,16 @@ const IntroServices: React.FC = () => {
           ];
 
           return (
-            <div className="max-w-6xl mx-auto grid grid-cols-1 scrn-700:grid-cols-2 gap-8 text-gray-800">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-800">
               {features.map((feature, index) => (
                 <div
                   key={index}
                   className="group bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                 >
-                  <h3 className="text-[#c62931] font-bold text-lg scrn-800:text-xl mb-2 tracking-wide">
+                  <h3 className="text-[#c62931] font-bold text-lg md:text-xl mb-2 tracking-wide">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 scrn-1000:text-lg leading-relaxed">
+                  <p className="text-gray-600 lg:text-lg leading-relaxed">
                     {feature.description}
                   </p>
                 </div>

@@ -24,7 +24,7 @@ const checklistItems = [
 
 const MainCompliance: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center scrn-600:justify-center h-auto max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8'>
+    <div className='bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
       <div className="mt-12">
         <p className="tracking-wider text-lg">
           Environmental regulations in the petroleum industry are complex — and failing to comply can put your business, customers, and community at risk. At <span className="text-[#c62931] font-semibold">The APEC Group</span>, we provide <span className="text-[#c62931] font-semibold">custom environmental compliance solutions</span> that protect your business from fines, shutdowns, and environmental harm. With 30+ years of expertise, we help fuel retailers and operators meet or exceed all local, state, and federal requirements.
@@ -34,16 +34,16 @@ const MainCompliance: React.FC = () => {
         </p>
       </div>
 
-      <div className='mt-12 grid scrn-800:grid-cols-2 scrn-800:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24'>
+      <div className='mt-12 grid md:grid-cols-2 md:gap-x-6 xl:gap-x-24'>
         <div className='h-auto'>
-         <h2 className="text-4xl font-extrabold text-gray-900">
+          <h2 className="text-4xl font-extrabold text-gray-900">
             Why Choose APEC For <span className="text-[#c62931]">Environmental Compliance?</span>
           </h2>
           <div className="flex flex-wrap gap-x-6 gap-y-4 mt-4">
             {checklistItems.map((item, index) => (
               <div key={index} className="flex items-center gap-2 tracking-wider">
                 <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
-                <span className="scrn-1000:text-lg scrn-1500:text-xl">{item}</span>
+                <span className="lg:text-lg 2xl:text-xl">{item}</span>
               </div>
             ))}
           </div>
@@ -52,15 +52,15 @@ const MainCompliance: React.FC = () => {
               Our Environmental <span className="text-[#c62931]">Compliance Services Include:</span>
             </h2>
           </div>
-          <div className="space-y-3 scrn-1000:space-y-6 tracking-wider mt-4">
+          <div className="space-y-3 lg:space-y-6 tracking-wider mt-4">
             {badges.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
           </div>
         </div>
-        <div className='relative flex items-center mt-6 scrn-500:mt-8 z-10'>
-          <div id="ComplianceContactForm" className="p-4 scrn-800:p-8 scrn-900:p-10 scrn-1000:p-12 scrn-1250:p-16 scrn-1500:p-24 bg-gray-200 rounded-xl shadow-2xl">
-             <h2 className="text-4xl font-extrabold mb-12">
+        <div className='relative flex items-center mt-6 sm:mt-8 z-10'>
+          <div id="ComplianceContactForm" className="p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-24 bg-gray-200 rounded-xl shadow-2xl">
+            <h2 className="text-4xl font-extrabold mb-12">
               <span className="text-[#c62931]">Environmental Compliance Solutions</span> Service Request
             </h2>
             <ComplianceContactForm />

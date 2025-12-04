@@ -10,8 +10,8 @@ const Hero3: React.FC = () => {
       <div
         className="
           max-w-[1440px] mx-auto px-6 py-6
-          flex flex-col scrn-900:flex-row items-center justify-between
-          gap-12 scrn-1000:gap-20
+          flex flex-col lg:flex-row items-center justify-between
+          gap-12 lg:gap-20
         "
       >
         {/* Left – GIF */}
@@ -29,7 +29,7 @@ const Hero3: React.FC = () => {
             width={800}
             height={800}
             className="
-              w-48 scrn-700:w-60 scrn-900:w-72 scrn-1200:w-80 scrn-1500:w-96
+              w-48 md:w-60 lg:w-72 xl:w-80 2xl:w-96
               object-contain
             "
           />
@@ -41,11 +41,11 @@ const Hero3: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, ease: 'easeOut', delay: 0.1 }}
           viewport={{ once: true }}
-          className="max-w-2xl text-center scrn-900:text-left"
+          className="max-w-2xl text-center lg:text-left"
         >
           <h2
             className="
-              text-[#c62931] font-semibold text-2xl scrn-900:text-3xl scrn-1200:text-4xl mb-6
+              text-[#c62931] font-semibold text-2xl lg:text-3xl xl:text-4xl mb-6
               leading-snug
             "
           >
@@ -54,7 +54,7 @@ const Hero3: React.FC = () => {
 
           <p
             className="
-              text-gray-700 text-lg scrn-1000:text-xl
+              text-gray-700 text-lg lg:text-xl
               leading-relaxed tracking-wide mb-4
             "
           >
@@ -68,7 +68,7 @@ const Hero3: React.FC = () => {
 
           <p
             className="
-              text-gray-600 text-base scrn-1000:text-lg
+              text-gray-600 text-base lg:text-lg
               leading-relaxed tracking-wide
             "
           >

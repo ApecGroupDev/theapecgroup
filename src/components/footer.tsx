@@ -13,15 +13,15 @@ const Footer: React.FC = () => {
       <div
         className="
         max-w-[1440px] mx-auto 
-        px-6 scrn-600:px-8 scrn-750:px-12 scrn-1000:px-20 
+        px-6 sm:px-8 md:px-12 lg:px-20 
         py-16 
         flex flex-col items-center text-center
-        scrn-750:grid scrn-750:grid-cols-2 scrn-1000:grid-cols-3
-        scrn-750:gap-x-10 scrn-1000:gap-x-14 gap-y-14
+        md:grid md:grid-cols-2 lg:grid-cols-3
+        md:gap-x-10 lg:gap-x-14 gap-y-14
       "
       >
         {/* 1️⃣ Logo + Tagline */}
-        <div className="relative flex flex-col items-center scrn-750:hidden scrn-1000:flex">
+        <div className="relative flex flex-col items-center md:hidden lg:flex">
           <div className="absolute -inset-20 bg-[#c62931]/25 blur-[140px] rounded-full -z-10" />
           <Link href="/" className="block">
             <Image
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               alt="APEC Since 1989"
               width={260}
               height={260}
-              className="w-auto h-24 scrn-600:h-28 scrn-1000:h-32 transition-transform duration-300 hover:scale-105"
+              className="w-auto h-24 sm:h-28 lg:h-32 transition-transform duration-300 hover:scale-105"
             />
           </Link>
 
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* 2️⃣ Contact + Social (Moves below logo on mobile) */}
-        <div className="order-last scrn-750:order-none flex flex-col items-center scrn-750:items-start text-center scrn-750:text-left">
+        <div className="order-last md:order-none flex flex-col items-center md:items-start text-center md:text-left">
           <h3 className="text-white text-lg font-semibold tracking-wide">Contact Us</h3>
 
           <p className="mt-2 text-sm text-gray-400">
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             </a>
           </p>
 
-          <div className="mt-3 flex flex-wrap justify-center scrn-750:justify-start gap-3">
+          <div className="mt-3 flex flex-wrap justify-center md:justify-start gap-3">
             {[
               "https://twitter.com/theapecgroup",
               "https://www.instagram.com/the_apec_group/",
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* 3️⃣ Office Locations */}
-        <div className="flex flex-col items-center scrn-750:items-end text-center scrn-750:text-right">
+        <div className="flex flex-col items-center md:items-end text-center md:text-right">
           <h3 className="text-white text-lg font-semibold tracking-wide">Our Offices</h3>
 
           <div className="mt-3 text-sm text-gray-400 space-y-4 leading-relaxed">

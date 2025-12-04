@@ -36,27 +36,27 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Main Container */}
-      <div className="relative z-20 max-w-[1440px] mx-auto flex flex-col scrn-1000:flex-row items-center justify-between px-6 pt-32 pb-20 scrn-1000:pt-48 scrn-1000:pb-32 scrn-2000:pt-72 scrn-2000:pb-60">
+      <div className="relative z-20 max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 pt-32 pb-20 lg:pt-48 lg:pb-32">
 
         {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="text-center scrn-1000:text-left max-w-3xl"
+          className="text-center lg:text-left max-w-3xl"
         >
-          <h1 className="text-4xl scrn-500:text-5xl scrn-900:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">
             Let’s Build Smarter, Safer Fuel Solutions — Together
           </h1>
 
-          <div className="mt-6 h-[4px] w-24 bg-[#c62931] mx-auto scrn-1000:mx-0 rounded-full"></div>
+          <div className="mt-6 h-[4px] w-24 bg-[#c62931] mx-auto lg:mx-0 rounded-full"></div>
 
-          <p className="mt-8 text-gray-200 text-lg scrn-700:text-xl font-light max-w-md mx-auto scrn-1000:mx-0 leading-relaxed">
+          <p className="mt-8 text-gray-200 text-lg md:text-xl font-light max-w-md mx-auto lg:mx-0 leading-relaxed">
             30+ years of trusted petroleum expertise. Fully licensed and insured.
             Serving across Georgia with compliance-first solutions.
           </p>
 
-          <div className="mt-10 flex justify-center scrn-1000:justify-start">
+          <div className="mt-10 flex justify-center lg:justify-start">
             <button
               type="button"
               onClick={scrollToForm}

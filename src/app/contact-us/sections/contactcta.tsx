@@ -16,7 +16,7 @@ const ContactCTA = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl scrn-750:text-5xl font-extrabold tracking-tight mb-6"
+          className="text-4xl md:text-5xl font-extrabold tracking-tight mb-6"
         >
           Let’s Start the Conversation
         </motion.h2>
@@ -52,7 +52,7 @@ const ContactCTA = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex flex-col scrn-750:flex-row items-center justify-center gap-8 text-white/90 text-base"
+          className="flex flex-col md:flex-row items-center justify-center gap-8 text-white/90 text-base"
         >
           <div className="flex items-center gap-2">
             <Phone className="w-5 h-5 text-white" />

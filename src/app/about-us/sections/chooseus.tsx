@@ -23,14 +23,14 @@ const ChooseUs: React.FC = () => {
       {/* Subtle Background Accent */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(198,41,49,0.05)_0%,transparent_60%)] pointer-events-none" />
 
-      <div className="relative flex flex-col items-center justify-center text-center max-w-[1200px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 z-10">
+      <div className="relative flex flex-col items-center justify-center text-center max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Heading */}
         <motion.h2
           ref={ref}
           variants={fadeUp}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="text-4xl scrn-600:text-5xl scrn-750:text-6xl scrn-1000:text-7xl font-extrabold leading-tight text-gray-900"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900"
         >
           Why <span className="text-[#c62931]">Choose Us</span>
         </motion.h2>
@@ -50,7 +50,7 @@ const ChooseUs: React.FC = () => {
           custom={0.4}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="mt-10 space-y-8 text-gray-700 font-light leading-relaxed tracking-wide text-base scrn-450:text-lg scrn-700:text-xl scrn-1000:text-2xl scrn-1300:text-2xl scrn-1800:text-3xl max-w-[950px]"
+          className="mt-10 space-y-8 text-gray-700 font-light leading-relaxed tracking-wide text-base scrn-450:text-lg md:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl max-w-[950px]"
         >
           <p>
             Today, <span className="font-semibold text-gray-900">APEC Group</span> offers a diverse range of services — from canopy imaging and installation to environmental compliance inspections, C-store renovations, EV charging solutions, remote site monitoring, and digital marketing for dispensaries.
@@ -73,7 +73,7 @@ const ChooseUs: React.FC = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           href="mailto:Sales@TheAPECgroup.com"
-          className="mt-10 inline-block bg-[#c62931] text-white font-semibold tracking-wide px-12 py-4 rounded-full shadow-md hover:shadow-xl hover:bg-red-600 transition-all duration-300 text-base scrn-750:text-lg scrn-1000:text-xl"
+          className="mt-10 inline-block bg-[#c62931] text-white font-semibold tracking-wide px-12 py-4 rounded-full shadow-md hover:shadow-xl hover:bg-red-600 transition-all duration-300 text-base md:text-lg lg:text-xl"
         >
           Sales@TheAPECgroup.com
         </motion.a>

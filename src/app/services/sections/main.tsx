@@ -53,7 +53,7 @@ const services = [
 const MainServices: React.FC = () => {
   return (
     <section className="relative w-full bg-gradient-to-b from-white to-gray-50 py-32">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ const MainServices: React.FC = () => {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 scrn-800:grid-cols-2 scrn-1300:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-10">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -94,12 +94,12 @@ const MainServices: React.FC = () => {
               </div>
 
               {/* Text Section */}
-              <div className="flex flex-col justify-between flex-1 p-8 text-center scrn-1000:text-left">
+              <div className="flex flex-col justify-between flex-1 p-8 text-center lg:text-left">
                 <div>
-                  <h3 className="text-lg scrn-1000:text-xl font-bold text-gray-900 mb-3 tracking-wide uppercase group-hover:text-[#c62931] transition-colors duration-300">
+                  <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-3 tracking-wide uppercase group-hover:text-[#c62931] transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm scrn-800:text-base">
+                  <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                     {service.description}
                   </p>
                 </div>

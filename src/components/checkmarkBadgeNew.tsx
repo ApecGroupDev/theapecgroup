@@ -16,18 +16,18 @@ const CheckmarkBadgeNew: React.FC<CheckmarkBadgeProps> = ({
       {/* Circle Checkmark */}
       <div
         className="flex justify-center items-center flex-shrink-0 rounded-full
-                   w-4 h-4 scrn-600:w-5 scrn-600:h-5 scrn-1000:w-7 scrn-1000:h-7 scrn-1250:w-8 scrn-1250:h-8"
+                   w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8"
         style={{ backgroundColor: bgColor }}
       >
         <FaCheck
-          className="text-white text-[8px] scrn-600:text-[10px] scrn-1000:text-[14px] scrn-1250:text-[16px]"
+          className="text-white text-[8px] sm:text-[10px] lg:text-[14px] xl:text-[16px]"
           style={{ color: textColor }}
         />
       </div>
 
       {/* Text */}
       {text && (
-        <span className="ml-2 scrn-1000:text-lg scrn-1500:text-xl tracking-wider">
+        <span className="ml-2 lg:text-lg 2xl:text-xl tracking-wider">
           {text}
         </span>
       )}

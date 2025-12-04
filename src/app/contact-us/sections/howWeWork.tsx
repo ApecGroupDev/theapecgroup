@@ -6,14 +6,14 @@ import { Clock, ClipboardCheck, FileText, Handshake, ShieldCheck, Wrench, Buildi
 const HowWeWork = () => {
   return (
     <section className="relative w-full bg-gray-50 py-20">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* HOW WE WORK */}
         <div>
           <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-8">
             How We <span className="text-[#c62931]">Work With You</span>
           </h2>
 
-          <div className="grid scrn-600:grid-cols-2 scrn-1000:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Step 1 */}
             <div className="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 text-center">
               <div className="flex justify-center mb-5">
@@ -74,29 +74,29 @@ const HowWeWork = () => {
             Why Choose <span className="text-[#c62931]">The APEC Group</span>
           </h2>
 
-          <div className="grid scrn-750:grid-cols-2 gap-8">
-            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex items-start justify-center space-x-4 col-span-2 md:col-span-1">
               <ShieldCheck className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 30+ years of hands-on petroleum experience
               </p>
             </div>
 
-            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
+            <div className="flex items-start justify-center space-x-4 col-span-2 md:col-span-1">
               <Wrench className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 Licensed, insured, and safety-certified professionals
               </p>
             </div>
 
-            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
+            <div className="flex items-start justify-center space-x-4 col-span-2 md:col-span-1">
               <Building2 className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 Deep local expertise across Georgia, Texas, and Atlanta
               </p>
             </div>
 
-            <div className="flex items-start justify-center space-x-4 col-span-2 scrn-750:col-span-1">
+            <div className="flex items-start justify-center space-x-4 col-span-2 md:col-span-1">
               <MessageSquare className="w-7 h-7 text-[#c62931] flex-shrink-0" />
               <p className="text-gray-700 text-lg">
                 Transparent communication and reliable project delivery

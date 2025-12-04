@@ -31,7 +31,7 @@ const TeamPage: React.FC = () => {
   const others = teamMembers.slice(2);
 
   return (
-    <section className="my-14 rounded-2xl bg-gradient-to-b from-gray-50 to-white py-16 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+    <section className="my-14 rounded-2xl bg-gradient-to-b from-gray-50 to-white py-16 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
       <div className="text-center">
         <h2 className="text-4xl font-extrabold text-gray-900">
@@ -43,7 +43,7 @@ const TeamPage: React.FC = () => {
       </div>
 
       {/* Top Executives (With Images) */}
-      <div className="grid grid-cols-1 scrn-600:grid-cols-2 gap-10 scrn-1000:gap-14 mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-14 mb-16">
         {execs.map((member, index) => (
           <motion.div
             key={member.name}
@@ -54,7 +54,7 @@ const TeamPage: React.FC = () => {
             className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col border border-gray-200"
           >
             {/* Profile Image */}
-            <div className="relative w-2/3 scrn-1000:w-1/2 mx-auto h-60 bg-gray-100">
+            <div className="relative w-2/3 lg:w-1/2 mx-auto h-60 bg-gray-100">
               <Image
                 src={member.image || "/placeholders/profile.png"}
                 alt={member.name}
@@ -79,7 +79,7 @@ const TeamPage: React.FC = () => {
       </div>
 
       {/* Other Team Members (No Images) */}
-      <div className="grid grid-cols-1 scrn-600:grid-cols-2 scrn-1000:grid-cols-3 gap-8 scrn-1000:gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
         {others.map((member, index) => (
           <motion.div
             key={member.name}

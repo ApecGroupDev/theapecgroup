@@ -13,7 +13,7 @@ const items: AccordionItem[] = [
 
 const AccordionCompliance: React.FC = () => {
   return (
-    <div className="bg-transparent flex flex-col justify-center w-full h-auto py-24 max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+    <div className="bg-transparent flex flex-col justify-center w-full h-auto py-24 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-6">
         <span className="text-3xl font-bold">Environmental Compliance FAQs</span>
       </div>
