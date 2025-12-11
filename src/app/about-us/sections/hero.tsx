@@ -36,6 +36,8 @@ const Hero: React.FC = () => {
 
       {/* test push content */}
 
+      {/* 2nd test push content */}
+
       {/* Main Container */}
       <div className="relative z-20 max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 pt-32 pb-20 lg:pt-48 lg:pb-32">
 
