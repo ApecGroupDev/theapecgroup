@@ -34,10 +34,6 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-[rgba(198,41,49,0.2)] mix-blend-multiply"></div>
       </div>
 
-      {/* test push content */}
-
-      {/* 2nd test push content */}
-
       {/* Main Container */}
       <div className="relative z-20 max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 pt-32 pb-20 lg:pt-48 lg:pb-32">
 
