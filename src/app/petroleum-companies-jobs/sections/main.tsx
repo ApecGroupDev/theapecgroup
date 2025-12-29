@@ -119,7 +119,7 @@ const MainCareers: React.FC = () => {
         </div>
 
         {/* Job Listing 2 */}
-        <div className="mt-8 bg-white/5 backdrop-blur-sm border border-[#c62931]/30 rounded-2xl p-8 text-center shadow-[0_8px_20px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:border-[#c62931]/60">
+        {/* <div className="mt-8 bg-white/5 backdrop-blur-sm border border-[#c62931]/30 rounded-2xl p-8 text-center shadow-[0_8px_20px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:border-[#c62931]/60">
           <h3 className="font-bold text-[#c62931] text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl mb-3 tracking-wide">
             Budget Analyst – Tucker, GA
           </h3>
@@ -141,7 +141,7 @@ const MainCareers: React.FC = () => {
               <span className="font-semibold">Full-Time</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* STEPS TO APPLY */}
