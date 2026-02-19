@@ -30,7 +30,7 @@ export default function Page() {
       <HomeSchema />
 
       {/* ✅ Main Page Sections */}
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-x-hidden">
         <Header />
         <Hero1 />
         <Hero2 />
