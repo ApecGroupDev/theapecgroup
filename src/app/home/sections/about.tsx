@@ -48,7 +48,7 @@ const About: React.FC = () => {
               href="mailto:Sales@TheAPECgroup.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-block bg-[#c62931] text-white text-lg font-semibold px-10 py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+              className="inline-block bg-[#c62931] text-white font-medium px-10 py-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
             >
               Sales@TheAPECgroup.com
             </motion.a>
