@@ -75,15 +75,12 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isLargeScreen
-        ? isVisible
-          ? "top-0"
-          : "top-full"
-        : "top-0" // Always show on mobile
-        }`}
+      className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${
+        isLargeScreen ? (isVisible ? "top-0" : "top-full") : "top-0" // Always show on mobile
+      }`}
     >
       {/* Mobile Header */}
-      <div className='lg:hidden container min-w-full relative flex items-center p-1 sm:p-2'>
+      <div className="lg:hidden container min-w-full relative flex items-center p-1 sm:p-2">
         {/* APEC Logo (Left) */}
         <Link href="/">
           <Image
@@ -91,7 +88,7 @@ const Header: React.FC = () => {
             alt="Logo"
             width={116}
             height={106}
-            className='h-24 sm:h-28 w-auto'
+            className="h-24 sm:h-28 w-auto"
           />
         </Link>
 
@@ -104,8 +101,10 @@ const Header: React.FC = () => {
               className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
             >
               <FaPhoneAlt className="text-sm sm:text-lg" />
-              <span className="text-sm hidden sm:block">FREE CONSULTATION</span>
-              <span className="text-sm sm:hidden">FREE</span>
+              <span className="text-sm hidden scrn-350:block">
+                FREE CONSULTATION
+              </span>
+              <span className="text-sm scrn-350:hidden">FREE</span>
             </a>
           </div>
 
@@ -113,7 +112,7 @@ const Header: React.FC = () => {
           <button
             className="text-[#c62931] focus:outline-none z-20 flex items-center"
             onClick={toggleMenu}
-            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? (
               <span className="text-6xl leading-none">×</span>
@@ -138,8 +137,11 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         <nav
-          className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
-            }`}
+          className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${
+            isOpen
+              ? "opacity-100 scale-100"
+              : "opacity-0 scale-95 pointer-events-none"
+          }`}
         >
           {[
             { label: "HOME", path: "/" },
@@ -153,8 +155,11 @@ const Header: React.FC = () => {
             <Link
               key={path}
               href={path}
-              className={`block text-lg font-medium tracking-widest py-2 transition-colors duration-200 ${isActive(path) ? "text-[#c62931]" : "text-gray-800 hover:text-[#c62931]"
-                }`}
+              className={`block text-lg font-medium tracking-widest py-2 transition-colors duration-200 ${
+                isActive(path)
+                  ? "text-[#c62931]"
+                  : "text-gray-800 hover:text-[#c62931]"
+              }`}
               onClick={() => setIsOpen(false)}
             >
               {label}
@@ -164,27 +169,27 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className='hidden lg:grid grid-cols-3 items-center px-6 py-1'>
+      <div className="hidden lg:grid grid-cols-3 items-center px-6 py-1">
         {/* Left: Logo */}
-        <div className='flex items-center sm:hidden'>
+        <div className="flex items-center sm:hidden">
           <Link href="/">
             <Image
               src="/logos/APEC.webp"
               alt="Logo"
               width={116}
               height={106}
-              className='w-auto lg:h-24 xl:h-28 2xl:h-32'
+              className="w-auto lg:h-24 xl:h-28 2xl:h-32"
             />
           </Link>
         </div>
-        <div className='items-center hidden sm:flex'>
+        <div className="items-center hidden sm:flex">
           <Link href="/">
             <Image
               src="/logos/APEC.webp"
               alt="Logo"
               width={227}
               height={208}
-              className='w-auto lg:h-24 xl:h-28 2xl:h-32'
+              className="w-auto lg:h-24 xl:h-28 2xl:h-32"
             />
           </Link>
         </div>
@@ -210,15 +215,17 @@ const Header: React.FC = () => {
                 <div className="relative flex items-center gap-1">
                   <Link
                     href={path}
-                    className={`capitalize md:text-xs lg:text-base hover:text-[#c62931] transition-colors duration-200 relative flex items-center gap-1 ${pathname.startsWith(path) ? "text-red-800" : ""
-                      }`}
+                    className={`capitalize md:text-xs lg:text-base hover:text-[#c62931] transition-colors duration-200 relative flex items-center gap-1 ${
+                      pathname.startsWith(path) ? "text-red-800" : ""
+                    }`}
                   >
                     {label}
                     <ChevronDown
-                      className={`w-6 h-6 transition-transform duration-200 ${showDropdown
-                        ? "rotate-180 text-[#c62931]"
-                        : "group-hover:text-[#c62931]"
-                        }`}
+                      className={`w-6 h-6 transition-transform duration-200 ${
+                        showDropdown
+                          ? "rotate-180 text-[#c62931]"
+                          : "group-hover:text-[#c62931]"
+                      }`}
                     />
                   </Link>
 
@@ -281,17 +288,20 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize md:text-xs lg:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${(path === "/" ? pathname === "/" : pathname.startsWith(path))
-                  ? "text-red-800"
-                  : ""
-                  }`}
+                className={`capitalize md:text-xs lg:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${
+                  (path === "/" ? pathname === "/" : pathname.startsWith(path))
+                    ? "text-red-800"
+                    : ""
+                }`}
               >
                 {label}
-                {(path === "/" ? pathname === "/" : pathname.startsWith(path)) && (
+                {(path === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(path)) && (
                   <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                 )}
               </Link>
-            )
+            ),
           )}
         </nav>
 
