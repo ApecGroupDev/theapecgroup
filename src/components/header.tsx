@@ -7,30 +7,61 @@ import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  white?: boolean; // true = white nav text (all pages), false/omitted = dark nav text (landing page)
+}
+
+const NAV_LINKS = [
+  { label: "HOME", path: "/" },
+  { label: "ABOUT", path: "/about-us" },
+  { label: "TEAM", path: "/our-team" },
+  { label: "SERVICES", path: "/services" },
+  { label: "CAREERS", path: "/petroleum-companies-jobs" },
+  { label: "BLOG", path: "/blogs" },
+  { label: "CONTACT", path: "/contact-us" },
+];
+
+const SERVICES_DROPDOWN = [
+  {
+    label: "Gas Station Construction",
+    href: "/services/gas-station-construction",
+  },
+  {
+    label: "Canopy Imaging Solutions",
+    href: "/services/canopy-imaging-solutions",
+  },
+  {
+    label: "Fuel Tanks Manufacturing",
+    href: "https://metalproductsusa.com",
+    external: true,
+  },
+  { label: "Gas Station Financing", href: "/services/gas-station-financing" },
+  { label: "Gas Station Electrical", href: "/services/gas-station-electrical" },
+  {
+    label: "Environmental Compliance Solutions",
+    href: "/services/environmental-compliance-solutions",
+  },
+];
+
+const Header: React.FC<HeaderProps> = ({ white = false }) => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showSearch, setShowSearch] = useState(false);
   const searchRef = useRef<HTMLInputElement | null>(null);
-
   const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  // The only difference between variants: nav link text color
+  const navTextColor = white ? "text-white" : "text-gray-900";
 
   useEffect(() => {
-    const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth >= 1000);
-    };
-
-    checkScreenSize(); // Initial check
-
+    const checkScreenSize = () => setIsLargeScreen(window.innerWidth >= 1000);
+    checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
-
-  const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,14 +71,10 @@ const Header: React.FC = () => {
         setLastScrollY(currentScrollY);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY, isLargeScreen]);
 
-  // Close search input when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -58,17 +85,9 @@ const Header: React.FC = () => {
         setShowSearch(false);
       }
     };
-
-    if (showSearch) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    if (showSearch) document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [showSearch]);
-
-  const [showDropdown, setShowDropdown] = useState(false);
 
   const isActive = (path: string) =>
     path === "/" ? pathname === "/" : pathname.startsWith(path);
@@ -76,12 +95,11 @@ const Header: React.FC = () => {
   return (
     <header
       className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${
-        isLargeScreen ? (isVisible ? "top-0" : "top-full") : "top-0" // Always show on mobile
+        isLargeScreen ? (isVisible ? "top-0" : "top-full") : "top-0"
       }`}
     >
       {/* Mobile Header */}
       <div className="lg:hidden container min-w-full relative flex items-center p-1 sm:p-2">
-        {/* APEC Logo (Left) */}
         <Link href="/">
           <Image
             src="/logos/APEC.webp"
@@ -92,26 +110,21 @@ const Header: React.FC = () => {
           />
         </Link>
 
-        {/* CTA + Menu (Right) */}
         <div className="absolute right-4 top-12 sm:top-11 -translate-y-1/2 flex items-center gap-2">
-          {/* Phone CTA */}
-          <div>
-            <a
-              href="tel:855-444-2732"
-              className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
-            >
-              <FaPhoneAlt className="text-sm sm:text-lg" />
-              <span className="text-sm hidden scrn-350:block">
-                FREE CONSULTATION
-              </span>
-              <span className="text-sm scrn-350:hidden">FREE</span>
-            </a>
-          </div>
+          <a
+            href="tel:855-444-2732"
+            className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
+          >
+            <FaPhoneAlt className="text-sm sm:text-lg" />
+            <span className="text-sm hidden scrn-350:block">
+              FREE CONSULTATION
+            </span>
+            <span className="text-sm scrn-350:hidden">FREE</span>
+          </a>
 
-          {/* Menu Button (always rightmost) */}
           <button
             className="text-[#c62931] focus:outline-none z-20 flex items-center"
-            onClick={toggleMenu}
+            onClick={() => setIsOpen((prev) => !prev)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? (
@@ -135,7 +148,6 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         <nav
           className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${
             isOpen
@@ -143,15 +155,7 @@ const Header: React.FC = () => {
               : "opacity-0 scale-95 pointer-events-none"
           }`}
         >
-          {[
-            { label: "HOME", path: "/" },
-            { label: "ABOUT", path: "/about-us" },
-            { label: "TEAM", path: "/our-team" },
-            { label: "SERVICES", path: "/services" },
-            { label: "CAREERS", path: "/petroleum-companies-jobs" },
-            { label: "BLOG", path: "/blogs" },
-            { label: "CONTACT", path: "/contact-us" },
-          ].map(({ label, path }) => (
+          {NAV_LINKS.map(({ label, path }) => (
             <Link
               key={path}
               href={path}
@@ -168,7 +172,7 @@ const Header: React.FC = () => {
         </nav>
       </div>
 
-      {/* Desktop Header - 3 Grid Layout */}
+      {/* Desktop Header */}
       <div className="hidden lg:grid grid-cols-3 items-center px-6 py-1">
         {/* Left: Logo */}
         <div className="flex items-center sm:hidden">
@@ -196,15 +200,7 @@ const Header: React.FC = () => {
 
         {/* Center: Navigation */}
         <nav className="flex z-10 justify-center space-x-8 -mt-10 2xl:-mt-14">
-          {[
-            { label: "HOME", path: "/" },
-            { label: "ABOUT", path: "/about-us" },
-            { label: "TEAM", path: "/our-team" },
-            { label: "SERVICES", path: "/services" },
-            { label: "CAREERS", path: "/petroleum-companies-jobs" },
-            { label: "BLOG", path: "/blogs" },
-            { label: "CONTACT", path: "/contact-us" },
-          ].map(({ label, path }) =>
+          {NAV_LINKS.map(({ label, path }) =>
             label === "SERVICES" ? (
               <div
                 key={path}
@@ -215,72 +211,39 @@ const Header: React.FC = () => {
                 <div className="relative flex items-center gap-1">
                   <Link
                     href={path}
-                    className={`capitalize md:text-xs lg:text-base hover:text-[#c62931] transition-colors duration-200 relative flex items-center gap-1 ${
-                      pathname.startsWith(path) ? "text-red-800" : ""
+                    className={`capitalize md:text-xs lg:text-base hover:text-red-500 transition-colors duration-200 relative flex items-center gap-1 ${
+                      pathname.startsWith(path) ? "text-red-400" : navTextColor
                     }`}
                   >
                     {label}
                     <ChevronDown
                       className={`w-6 h-6 transition-transform duration-200 ${
                         showDropdown
-                          ? "rotate-180 text-[#c62931]"
-                          : "group-hover:text-[#c62931]"
+                          ? "rotate-180 text-red-400"
+                          : `${white ? "" : ""} group-hover:text-[#c62931]`
                       }`}
                     />
                   </Link>
-
                   {pathname.startsWith(path) && (
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
                   )}
                 </div>
 
-                {/* DROPDOWN MENU */}
                 {showDropdown && (
                   <div className="absolute top-full w-auto text-nowrap bg-white/50 backdrop-blur-sm rounded-md py-2 z-50">
-                    <Link
-                      href="/services/gas-station-construction"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Gas Station Construction
-                    </Link>
-                    <Link
-                      href="/services/canopy-imaging-solutions"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Canopy Imaging Solutions
-                    </Link>
-                    <Link
-                      href="https://metalproductsusa.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Fuel Tanks Manufacturing
-                    </Link>
-                    <Link
-                      href="/services/gas-station-financing"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Gas Station Financing
-                    </Link>
-                    <Link
-                      href="/services/gas-station-electrical"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Gas Station Electrical
-                    </Link>
-                    <Link
-                      href="/services/environmental-compliance-solutions"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Environmental Compliance Solutions
-                    </Link>
+                    {SERVICES_DROPDOWN.map(({ label, href, external }) => (
+                      <Link
+                        key={href}
+                        href={href}
+                        {...(external
+                          ? { target: "_blank", rel: "noopener noreferrer" }
+                          : {})}
+                        className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
+                        onClick={() => setShowDropdown(false)}
+                      >
+                        {label}
+                      </Link>
+                    ))}
                   </div>
                 )}
               </div>
@@ -288,17 +251,13 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`capitalize md:text-xs lg:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${
-                  (path === "/" ? pathname === "/" : pathname.startsWith(path))
-                    ? "text-red-800"
-                    : ""
+                className={`capitalize md:text-xs lg:text-base hover:text-red-500 transition-colors duration-200 relative ${
+                  isActive(path) ? "text-red-400" : navTextColor
                 }`}
               >
                 {label}
-                {(path === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(path)) && (
-                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
+                {isActive(path) && (
+                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-red-500" />
                 )}
               </Link>
             ),
@@ -316,7 +275,7 @@ const Header: React.FC = () => {
             FREE CONSULTATION
           </Link>
           <Link
-            className="flex xl:hidden items-center gap-2 bg-[#c62931] text-white py-2 px-8  rounded-md hover:bg-red-500 transition"
+            className="flex xl:hidden items-center gap-2 bg-[#c62931] text-white py-2 px-8 rounded-md hover:bg-red-500 transition"
             href="/contact-us#MainContactForm"
             scroll={false}
           >
