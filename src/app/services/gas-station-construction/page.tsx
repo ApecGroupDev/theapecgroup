@@ -1,4 +1,3 @@
-import HeaderWhite from "@/components/headerWhite";
 import Footer from "@/components/footer";
 import MainConstruction from "./sections/main";
 import Hero from "./sections/hero";
@@ -7,21 +6,23 @@ import AccordionConstruction from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
 import ConstructionSchema from "@/components/schema/ConstructionSchema";
+import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Gas Station Construction Services | APEC",
-  description: "Gas station construction services by APEC. We build durable, compliant fuel stations with full design, installation, and project management support.",
-  robots: 'index,follow',
+  description:
+    "Gas station construction services by APEC. We build durable, compliant fuel stations with full design, installation, and project management support.",
+  robots: "index,follow",
   alternates: {
-    canonical: 'https://www.theapecgroup.com/services/gas-station-construction',
+    canonical: "https://www.theapecgroup.com/services/gas-station-construction",
   },
 };
 
 const ServicesConstruction: React.FC = () => {
   return (
-    <div className='flex flex-col'>
+    <div className="flex flex-col">
       <ConstructionSchema />
-      <HeaderWhite />
+      <Header white />
       <Hero />
       <MainConstruction />
       <AccordionConstruction />
