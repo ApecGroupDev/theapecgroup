@@ -1,100 +1,74 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { associations } from "../components/associations"; 
 
-const associations = [
-  {
-    src: "/associations/ARA.webp",
-    alt: "Atlanta Retailers Association (ARA) Logo",
-    link: "https://www.araonline.us/",
-  },
-  {
-    src: "/associations/GACS.webp",
-    alt: "Georgia Association of Convenience Stores (GACS) Logo",
-    link: "https://www.gacs.com/",
-  },
-  {
-    src: "/associations/GHRA.webp",
-    alt: "Greater Houston Retailers Cooperative Association (GHRA) Logo",
-    link: "https://www.ghraonline.com/",
-  },
-  {
-    src: "/associations/GOA.webp",
-    alt: "Georgia Oilmen’s Association (GOA) Logo",
-    link: "https://www.georgiaoilmensassoc.com/",
-  },
-  {
-    src: "/associations/GTEC.webp",
-    alt: "Georgia Tank & Environmental Contractors Association (GTECA) Logo",
-    link: "https://gteca.com/",
-  },
-  {
-    src: "/associations/PEI.webp",
-    alt: "Petroleum Equipment Institute (PEI) Logo",
-    link: "https://www.pei.org/",
-  },
-  {
-    src: "/associations/TFFA.webp",
-    alt: "Texas Food & Fuel Association (TFFA) Logo",
-    link: "https://www.tffa.com/",
-  },
-];
+const headingVariants = {
+  hidden: { y: 50, opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
 
 const MembershipGrid = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-
+    <section ref={ref} className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-14">
           <motion.h2
-            ref={ref}
-            initial={{ y: 70, opacity: 0 }}
-            animate={{ y: inView ? 0 : 50, opacity: inView ? 1 : 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            variants={headingVariants}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900"
           >
             Proud <span className="text-[#c62931]">Member Of:</span>
           </motion.h2>
           <p className="text-base sm:text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
-            Our associations reflect our dedication to quality, collaboration, and industry leadership.
+            Our associations reflect our dedication to quality, collaboration,
+            and industry leadership.
           </p>
         </div>
 
         {/* Logo Grid */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 30 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-12 gap-x-10 items-center justify-items-center justify-center [grid-auto-flow:row]"
+          variants={containerVariants}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-10"
         >
-          {associations.map((assoc, index) => (
-            <Link
-              key={index}
-              href={assoc.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center transition-all duration-300 hover:scale-125"
-            >
-              <Image
-                src={assoc.src}
-                alt={assoc.alt}
-                width={250}
-                height={250}
-                className="object-contain w-[160px] sm:w-[180px] md:w-[200px] lg:w-[230px] 2xl:w-[260px]"
-              />
-            </Link>
+          {associations.map((assoc) => (
+            <motion.div key={assoc.alt} variants={itemVariants}>
+              <Link
+                href={assoc.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center p-4 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-md hover:scale-110"
+              >
+                <Image
+                  src={assoc.src}
+                  alt={assoc.alt}
+                  width={230}
+                  height={230}
+                  className="object-contain w-[130px] sm:w-[160px] md:w-[190px] lg:w-[210px]"
+                />
+              </Link>
+            </motion.div>
           ))}
         </motion.div>
-
       </div>
     </section>
   );
