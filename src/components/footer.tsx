@@ -34,21 +34,30 @@ const Footer: React.FC = () => {
           </Link>
 
           <p className="mt-4 text-sm text-gray-400 max-w-[320px] leading-relaxed">
-            Since 1989, The APEC Group has delivered reliable petroleum equipment,
-            environmental compliance, and construction services across the U.S.
+            Since 1989, The APEC Group has delivered reliable petroleum
+            equipment, environmental compliance, and construction services
+            across the U.S.
           </p>
         </div>
 
         {/* 2️⃣ Contact + Social (Moves below logo on mobile) */}
         <div className="order-last md:order-none flex flex-col items-center md:items-start text-center md:text-left">
-          <h3 className="text-white text-lg font-semibold tracking-wide">Contact Us</h3>
+          <h3 className="text-white text-lg font-semibold tracking-wide">
+            Contact Us
+          </h3>
 
           <p className="mt-2 text-sm text-gray-400">
-            <a href="tel:855-444-2732" className="hover:text-[#c62931] transition-colors">
+            <a
+              href="tel:855-444-2732"
+              className="hover:text-[#c62931] transition-colors"
+            >
               855-444-2732
             </a>{" "}
             |{" "}
-            <a href="mailto:Sales@TheAPECgroup.com" className="hover:text-[#c62931] transition-colors">
+            <a
+              href="mailto:Sales@TheAPECgroup.com"
+              className="hover:text-[#c62931] transition-colors"
+            >
               Sales@TheAPECgroup.com
             </a>
           </p>
@@ -72,13 +81,16 @@ const Footer: React.FC = () => {
           </div>
 
           <p className="mt-3 text-xs text-gray-500 max-w-[280px] leading-relaxed">
-            Follow us for updates on petroleum equipment, compliance, and service announcements.
+            Follow us for updates on petroleum equipment, compliance, and
+            service announcements.
           </p>
         </div>
 
         {/* 3️⃣ Office Locations */}
         <div className="flex flex-col items-center md:items-end text-center md:text-right">
-          <h3 className="text-white text-lg font-semibold tracking-wide">Our Offices</h3>
+          <h3 className="text-white text-lg font-semibold tracking-wide">
+            Our Offices
+          </h3>
 
           <div className="mt-3 text-sm text-gray-400 space-y-4 leading-relaxed">
             <div>
@@ -101,7 +113,7 @@ const Footer: React.FC = () => {
 
       {/* Copyright */}
       <div className="py-6 text-center text-gray-500 text-sm tracking-wide">
-        © 2024–2025 The APEC Group. All rights reserved.
+        © {new Date().getFullYear()} The APEC Group. All rights reserved.
       </div>
     </footer>
   );
