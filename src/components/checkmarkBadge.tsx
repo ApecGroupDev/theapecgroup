@@ -6,7 +6,7 @@ interface CheckmarkBadgeProps {
   textColor?: string;
 }
 
-const CheckmarkBadgeNew: React.FC<CheckmarkBadgeProps> = ({
+const CheckmarkBadge: React.FC<CheckmarkBadgeProps> = ({
   text = "",
   bgColor = "#c62931",
   textColor = "white",
@@ -16,11 +16,11 @@ const CheckmarkBadgeNew: React.FC<CheckmarkBadgeProps> = ({
       {/* Circle Checkmark */}
       <div
         className="flex justify-center items-center flex-shrink-0 rounded-full
-                   w-4 h-4 sm:w-5 sm:h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8"
+                   w-7 h-7 xl:w-8 xl:h-8"
         style={{ backgroundColor: bgColor }}
       >
         <FaCheck
-          className="text-white text-[8px] sm:text-[10px] lg:text-[14px] xl:text-[16px]"
+          className="text-white text-[14px] xl:text-[16px]"
           style={{ color: textColor }}
         />
       </div>
@@ -35,4 +35,4 @@ const CheckmarkBadgeNew: React.FC<CheckmarkBadgeProps> = ({
   );
 };
 
-export default CheckmarkBadgeNew;
+export default CheckmarkBadge;
