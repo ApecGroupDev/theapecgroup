@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { associations } from "../components/associations"; 
+import { associations } from "../components/associations";
 
 const headingVariants = {
   hidden: { y: 50, opacity: 0 },
@@ -20,7 +20,6 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
-
 const MembershipGrid = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 

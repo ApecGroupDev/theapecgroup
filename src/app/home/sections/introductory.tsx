@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
-import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
+import CheckmarkBadge from "@/components/checkmarkBadge";
 import { Check } from "lucide-react";
 
 const checklistItems = [
   "30+ years of petroleum systems expertise",
   "Licensed, insured, and safety-first on every project",
   "Complete solutions — fuels, tanks, pumps, compliance, emergency response",
-  "Local experts in Georgia, Texas, and Atlanta",
+  "Local experts across Georgia and Texas",
 ];
 
 const badges = [
@@ -22,50 +22,52 @@ const badges = [
 
 const Introductory: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
-      <div className="flex flex-col items-center sm:justify-center gap-y-4 mb-12">
-        <div className="mt-12 space-y-3">
-          <p className="tracking-wider text-lg">
-            When you’re managing a fueling operation, the stakes are high. A mistake could mean costly fines, lost customers, or even shutdowns.
-            At <span className="apec-red font-semibold">The APEC Group(Atlanta Petroleum Equipment Company)</span>, we don’t just supply petroleum
-            products —we are a petroleum products company that helps protect what you’ve built. Since 1989, we’ve partnered with fuel retailers,
-            fleet operators, and distributors across Georgia to deliver safe, compliant, and reliable fueling solutions.
-          </p>
-          <p className="tracking-wider apec-red italic text-lg">
-            Looking for a partner who handles the complexity so you can focus on running your business? That’s what we do.
-          </p>
-        </div>
+    <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="space-y-4 mb-12">
+        <p className="text-lg leading-relaxed">
+          When you're managing a fueling operation, the stakes are high. A
+          mistake could mean costly fines, lost customers, or even shutdowns. At{" "}
+          <span className="apec-red font-semibold">
+            The APEC Group (Atlanta Petroleum Equipment Company)
+          </span>
+          , we don't just supply petroleum products — we help protect what
+          you've built. Since 1989, we've partnered with fuel retailers, fleet
+          operators, and distributors across Georgia to deliver safe, compliant,
+          and reliable fueling solutions.
+        </p>
+        <p className="text-lg apec-red italic">
+          Looking for a partner who handles the complexity so you can focus on
+          running your business? That's what we do.
+        </p>
+      </div>
 
-        <div className='h-auto space-y-3 sm:space-y-4 xl:space-y-12 pt-12 w-full mb-12'>
-          <div className="grid md:grid-cols-2 lg:gap-x-6 md:gap-x-10 xl:gap-x-24">
-            <div className='text-sm md:text-base lg:text-lg 2xl:text-xl space-y-2'>
-              <h2 className="text-4xl font-extrabold text-gray-900">
-                Core Value <span className="text-[#c62931]">Points</span>
-              </h2>
-              <div className="flex flex-wrap gap-x-20 gap-y-4 mt-4">
-                {checklistItems.map((item, index) => (
-                  <div key={index} className="flex items-center gap-2 tracking-wider">
-                    <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
-                    <span className="lg:text-lg 2xl:text-xl">{item}</span>
-                  </div>
-                ))}
+      <div className="grid md:grid-cols-2 gap-x-10 xl:gap-x-20 gap-y-12">
+        <div>
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Why Choose <span className="apec-red">APEC</span>
+          </h2>
+          <div className="space-y-4">
+            {checklistItems.map((item, index) => (
+              <div key={index} className="flex items-start gap-2 mt-4">
+                <Check className="w-6 h-6 mt-0.5 flex-shrink-0 apec-red" />
+                <span className="lg:text-lg 2xl:text-xl">{item}</span>
               </div>
-            </div>
-            <div className="mt-12 md:mt-0">
-              <h2 className="text-4xl font-extrabold text-gray-900">
-                Our Petroleum <span className="text-[#c62931]">Products & Services:</span>
-              </h2>
-              <div className="space-y-3 lg:space-y-6 tracking-wider mt-4">
-                {badges.map((text, i) => (
-                  <CheckmarkBadgeNew key={i} text={text} />
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
+        <div>
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Products &amp; <span className="apec-red">Services</span>
+          </h2>
+          <div className="space-y-4 mt-4">
+            {badges.map((text, i) => (
+              <CheckmarkBadge key={i} text={text} />
+            ))}
+          </div>
+        </div>
       </div>
-    </div >
+    </section>
   );
 };
 

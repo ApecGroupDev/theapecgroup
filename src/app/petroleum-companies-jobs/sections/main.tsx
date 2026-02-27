@@ -2,7 +2,7 @@
 
 import React from "react";
 import CareersForm from "@/components/careersForm";
-import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
+import CheckmarkBadgeNew from "@/components/checkmarkBadge";
 import { Check } from "lucide-react";
 
 const steps = [
@@ -38,15 +38,19 @@ const badges = [
 
 const MainCareers: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
+    <div className="bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-12">
         <p className="tracking-wider text-lg">
-          For over 35 years, we’ve helped shape fuel infrastructure across Georgia surrounding regions — and we’re just getting started.
-          Since 1989, we’ve built a reputation for integrity, innovation, and results in the petroleum services industry.
-          Whether you’re a seasoned foreman or entering the workforce, APEC offers career stability, growth potential, and meaningful work.
+          For over 35 years, we’ve helped shape fuel infrastructure across
+          Georgia surrounding regions — and we’re just getting started. Since
+          1989, we’ve built a reputation for integrity, innovation, and results
+          in the petroleum services industry. Whether you’re a seasoned foreman
+          or entering the workforce, APEC offers career stability, growth
+          potential, and meaningful work.
         </p>
         <p className="apec-red tracking-wider text-lg italic mt-8">
-          If you’re searching for petroleum companies jobs where you can grow, contribute, and thrive — this is it.
+          If you’re searching for petroleum companies jobs where you can grow,
+          contribute, and thrive — this is it.
         </p>
       </div>
 
@@ -56,10 +60,10 @@ const MainCareers: React.FC = () => {
           <h2 className="text-4xl font-extrabold text-gray-900">
             What Makes <span className="text-[#c62931]">APEC Different?</span>
           </h2>
-          <div className="flex flex-wrap gap-x-6 gap-y-4 mt-4">
+          <div className="space-y-4">
             {checklistItems.map((item, index) => (
-              <div key={index} className="flex items-center gap-2 tracking-widest">
-                <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
+              <div key={index} className="flex items-start gap-2 mt-4">
+                <Check className="w-6 h-6 mt-0.5 flex-shrink-0 apec-red" />
                 <span className="lg:text-lg 2xl:text-xl">{item}</span>
               </div>
             ))}
@@ -69,12 +73,14 @@ const MainCareers: React.FC = () => {
         {/* Right Column – Benefits of Working at APEC Group */}
         <div className="h-auto mt-12 md:mt-0">
           <h2 className="text-4xl font-extrabold text-gray-900">
-            Benefits Of Working <span className="text-[#c62931]">At APEC Group</span>
+            Benefits Of Working{" "}
+            <span className="text-[#c62931]">At APEC Group</span>
           </h2>
           <p className="italic tracking-wider lg:text-lg 2xl:text-xl mt-4">
-            We invest in our people with competitive benefits and a supportive culture.
+            We invest in our people with competitive benefits and a supportive
+            culture.
           </p>
-          <div className="space-y-3 lg:space-y-6 tracking-wider mt-4">
+          <div className="space-y-4 mt-4">
             {badges.map((text, i) => (
               <CheckmarkBadgeNew key={i} text={text} />
             ))}
@@ -86,10 +92,12 @@ const MainCareers: React.FC = () => {
       <div className="py-32">
         <div>
           <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
-            NOW HIRING: <span className="text-[#c62931]">Petroleum Jobs Near You</span>
+            NOW HIRING:{" "}
+            <span className="text-[#c62931]">Petroleum Jobs Near You</span>
           </h2>
           <p className="italic mt-4 text-lg tracking-wider">
-            We’re actively hiring for petroleum companies jobs in operations, compliance, and delivery — with immediate openings like:
+            We’re actively hiring for petroleum companies jobs in operations,
+            compliance, and delivery — with immediate openings like:
           </p>
         </div>
 
@@ -100,19 +108,20 @@ const MainCareers: React.FC = () => {
           </h3>
 
           <p className="text-gray-800 text-lg tracking-wider leading-relaxed max-w-4xl mx-auto">
-            Looking for an experienced technician with expertise in POS systems and fuel dispensers.
-            Past certifications and at least two years of experience are required.
-            Must be willing to work long hours and be on-call on weekends.
+            Looking for an experienced technician with expertise in POS systems
+            and fuel dispensers. Past certifications and at least two years of
+            experience are required. Must be willing to work long hours and be
+            on-call on weekends.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-2 text-gray-800 text-sm sm:text-base xl:text-lg">
             <div>
-              <span className="text-[#c62931] font-medium">📍 Location:</span>{' '}
+              <span className="text-[#c62931] font-medium">📍 Location:</span>{" "}
               <span className="font-semibold">Atlanta, GA</span>
             </div>
             <span className="hidden sm:inline-block text-gray-400">|</span>
             <div>
-              <span className="text-[#c62931] font-medium">💼 Type:</span>{' '}
+              <span className="text-[#c62931] font-medium">💼 Type:</span>{" "}
               <span className="font-semibold">Full-Time</span>
             </div>
           </div>
@@ -184,9 +193,9 @@ const MainCareers: React.FC = () => {
         </div>
       </section>
 
-      <div className='relative rounded-3xl max-w-4xl shadow-2xl mt-6 sm:mt-8'>
-        <div className='absolute inset-0 bg-gray-200 backdrop-blur-md rounded-3xl z-0'></div>
-        <div className='relative text-center z-10 p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-24'>
+      <div className="relative rounded-3xl max-w-4xl shadow-2xl mt-6 sm:mt-8">
+        <div className="absolute inset-0 bg-gray-200 backdrop-blur-md rounded-3xl z-0"></div>
+        <div className="relative text-center z-10 p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-24">
           <h2 className="text-4xl font-extrabold mb-12">
             <span className="text-[#c62931]">Apply Now!</span>
           </h2>

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import CheckmarkBadgeNew from "@/components/checkmarkBadgeNew";
+import CheckmarkBadge from "@/components/checkmarkBadge";
 import { Check } from "lucide-react";
 
 const checklistItems = [
@@ -21,28 +21,38 @@ const badges = [
 
 const IntroBlog: React.FC = () => {
   return (
-    <div className='bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8'>
+    <div className="bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mt-12 tracking-wider text-lg">
         <p>
-          At <span className="apec-red font-semibold">The APEC Group,</span> our strength lies in our people. From project managers and engineers to compliance specialists and service technicians, each member of our team is dedicated to your success. With 30+ years of combined experience in petroleum systems, our professionals are not only skilled — they’re deeply committed to safety, precision, and innovation.
+          At <span className="apec-red font-semibold">The APEC Group,</span> our
+          strength lies in our people. From project managers and engineers to
+          compliance specialists and service technicians, each member of our
+          team is dedicated to your success. With 30+ years of combined
+          experience in petroleum systems, our professionals are not only
+          skilled — they’re deeply committed to safety, precision, and
+          innovation.
         </p>
         <p className="mt-8 apec-red italic">
-          Whether you’re building a gas station, repairing a fuel tank, or navigating regulations, you’ll have experts by your side — every step of the way.
+          Whether you’re building a gas station, repairing a fuel tank, or
+          navigating regulations, you’ll have experts by your side — every step
+          of the way.
         </p>
       </div>
 
-      <div className='h-auto pt-12 w-full'>
+      <div className="h-auto pt-12 w-full">
         <div className="grid md:grid-cols-2 md:gap-x-10 xl:gap-x-24">
-          <div className='h-auto'>
+          <div className="h-auto">
             <h2 className="text-4xl font-extrabold text-gray-900">
               What Sets <span className="text-[#c62931]">Our Team Apart</span>
             </h2>
-            {checklistItems.map((item, index) => (
-              <div key={index} className="flex items-center gap-2 tracking-wider mt-4">
-                <Check className="w-6 h-6 flex-shrink-0 text-[#c62931]" />
-                <span className="lg:text-lg 2xl:text-xl">{item}</span>
-              </div>
-            ))}
+            <div className="space-y-4">
+              {checklistItems.map((item, index) => (
+                <div key={index} className="flex items-start gap-2 mt-4">
+                  <Check className="w-6 h-6 mt-0.5 flex-shrink-0 apec-red" />
+                  <span className="lg:text-lg 2xl:text-xl">{item}</span>
+                </div>
+              ))}
+            </div>
           </div>
           <div>
             <div className="mt-12 md:mt-0">
@@ -50,9 +60,9 @@ const IntroBlog: React.FC = () => {
                 Our Team <span className="text-[#c62931]">Values</span>
               </h2>
             </div>
-            <div className="space-y-3 lg:space-y-6 tracking-wider mt-4">
+            <div className="space-y-4 mt-4">
               {badges.map((text, i) => (
-                <CheckmarkBadgeNew key={i} text={text} />
+                <CheckmarkBadge key={i} text={text} />
               ))}
             </div>
           </div>
