@@ -115,12 +115,12 @@ const FeatureBoxes: React.FC = () => {
                 </h3>
                 {/* ✅ Change 5: Quote and author rendered separately for better polish */}
                 <p className="text-gray-600 text-base leading-relaxed max-w-[85%] mx-auto italic">
-                  "{feature.quote}"
+                  &ldquo;{feature.quote}&rdquo;
                 </p>
               </div>
 
               {/* ✅ Change 5: Author styled distinctly at the bottom */}
-              <p className="text-sm text-gray-400 font-medium mt-4">
+              <p className="text-sm text-red-800 tracking-wide font-medium mt-4">
                 — {feature.author}
               </p>
             </motion.div>
