@@ -25,7 +25,7 @@ const About: React.FC = () => {
     <div className="flex flex-col">
       <OrganizationSchema />
       {/* Sections */}
-      <Header white />
+      <Header />
       <Hero />
       <IntroAbout />
       <MissionSection />

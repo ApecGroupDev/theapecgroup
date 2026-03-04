@@ -3,7 +3,7 @@ import MainFinancing from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 import ServicesBoxLinks from "@/components/servicesLinks";
-import AccordionElectrical from "./sections/accordion";
+// import AccordionElectrical from "./sections/accordion";
 import CTA from "@/components/cta";
 import Header from "@/components/header";
 
@@ -20,10 +20,10 @@ export const metadata: Metadata = {
 const ServicesConstruction: React.FC = () => {
   return (
     <div className="flex flex-col">
-      <Header white />
+      <Header />
       <Hero />
       <MainFinancing />
-      <AccordionElectrical />
+      {/* <AccordionElectrical /> */}
       <CTA />
       <ServicesBoxLinks />
       <Footer />

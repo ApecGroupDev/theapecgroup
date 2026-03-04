@@ -21,7 +21,7 @@ const Services: React.FC = () => {
   return (
     <div className="flex flex-col">
       <ServicesSchema />
-      <Header white />
+      <Header />
       <Hero />
       <IntroServices />
       <MainServices />

@@ -5,12 +5,12 @@ import type { Metadata } from "next";
 import Footer from "@/components/footer";
 import CTA from "@/components/cta";
 import Introductory from "./home/sections/introductory";
-import AccordionHome from "./home/sections/accordion";
 import MembershipGrid from "./home/sections/membership";
 import HomeSchema from "@/components/schema/HomeSchema";
 import Hero1 from "./home/sections/hero1";
 import Hero2 from "./home/sections/hero2";
 import Hero3 from "./home/sections/hero3";
+// import AccordionHome from "./home/sections/accordion";
 
 export const metadata: Metadata = {
   title: "Petroleum Products Company | The APEC Group",
@@ -36,7 +36,7 @@ export default function Page() {
         <Introductory />
         <FeatureBoxes />
         <CTA />
-        <AccordionHome />
+        {/* <AccordionHome /> */}
         <Footer />
       </div>
     </>

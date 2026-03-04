@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import BlogMain from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
-import AccordionBlogs from "./sections/accordion";
+// import AccordionBlogs from "./sections/accordion";
 import CTA from "@/components/cta";
 import BlogSchema from "@/components/schema/BlogsSchema";
 import Header from "@/components/header";
@@ -21,11 +21,11 @@ const Contact: React.FC = () => {
   return (
     <div className="flex flex-col">
       <BlogSchema />
-      <Header white />
+      <Header />
       <Hero />
       <BlogMain />
       <CTA />
-      <AccordionBlogs />
+      {/* <AccordionBlogs /> */}
       <Footer />
     </div>
   );

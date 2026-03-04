@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const About: React.FC = () => {
   return (
     <div className="flex flex-col">
-      <Header white />
+      <Header />
       <Hero />
       <IntroBlog />
       <TeamPage />

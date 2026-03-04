@@ -24,13 +24,13 @@ const Contact: React.FC = () => {
   return (
     <div className="flex flex-col">
       <ContactPageSchema />
-      <Header white />
+      <Header />
       <Hero />
       <IntroContact />
       <OurOffices />
+      <ContactCTA />
       <HowWeWork />
       <MainContact />
-      <ContactCTA />
       <GoogleMaps />
       <Footer />
     </div>

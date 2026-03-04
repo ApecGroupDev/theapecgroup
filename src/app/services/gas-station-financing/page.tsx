@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import MainFinancing from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
-import AccordionFinancing from "./sections/accordion";
+// import AccordionFinancing from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
 import FinancingSchema from "@/components/schema/FinancingSchema";
@@ -21,10 +21,10 @@ const ServicesFinancing: React.FC = () => {
   return (
     <div className='flex flex-col'>
       <FinancingSchema />
-      <Header white />
+      <Header />
       <Hero />
       <MainFinancing />
-      <AccordionFinancing />
+      {/* <AccordionFinancing /> */}
       <CTA />
       <ServicesBoxLinks />
       <Footer />
