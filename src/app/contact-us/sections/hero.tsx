@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       eyebrow="Get In Touch"
       heading={
         <>
-          Let's Build Smarter,{" "}
+          Let&apos;s Build Smarter,{" "}
           <span
             className="text-[#ff464f]"
             style={{

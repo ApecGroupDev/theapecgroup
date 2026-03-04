@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       eyebrow="Our Services · Canopy Imaging & Installation"
       heading={
         <>
-          Custom Canopy Imaging That Elevates Your Gas Station's{" "}
+          Custom Canopy Imaging That Elevates Your Gas Station&apos;s{" "}
           <span
             className="text-[#ff464f]"
             style={{
