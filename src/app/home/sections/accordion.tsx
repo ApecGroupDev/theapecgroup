@@ -51,7 +51,7 @@ const AccordionHome: React.FC = () => (
   <Accordion
     items={items}
     allowMultiple={true}
-    defaultOpenIds={["one"]}
+    defaultOpenIds={["one", "two"]}
     eyebrow="FAQ"
     heading={
       <>
