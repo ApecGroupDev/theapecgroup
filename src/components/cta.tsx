@@ -100,8 +100,8 @@ const CTA: React.FC = () => (
           {/* Stat cards */}
           <motion.div {...fadeUp(0.15)} className="grid grid-cols-2 gap-4">
             {[
-              { value: "20+", label: "Years of Experience" },
-              { value: "500+", label: "Projects Completed" },
+              { value: "35+", label: "Years of Experience" },
+              { value: "100%", label: "Licensed & Insured" },
             ].map(({ value, label }) => (
               <div
                 key={label}
