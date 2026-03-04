@@ -1,75 +1,46 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import React, { useEffect } from "react";
+import PageHero from "@/components/pageHero";
 
 const Hero: React.FC = () => {
-  // Scroll to top on page load
   useEffect(() => {
-    history.scrollRestoration = 'manual';
+    history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
   }, []);
 
   const scrollToForm = () => {
-    const section = document.getElementById('ConstructionContactForm');
+    const section = document.getElementById("ConstructionContactForm");
     if (section) {
       const y = section.getBoundingClientRect().top + window.scrollY - 180;
-      window.scrollTo({ top: y, behavior: 'smooth' });
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   return (
-    <section className="relative bg-[#f5f5f5] overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/backgrounds/services/construction/Hero_Construction.webp"
-          alt="Custom Canopy Imaging for Gas Stations"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        {/* Brand-toned overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
-        <div className="absolute inset-0 bg-[rgba(198,41,49,0.2)] mix-blend-multiply"></div>
-      </div>
-
-      {/* Main Container */}
-      <div className="relative z-20 max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 pt-32 pb-20 lg:pt-48 lg:pb-32 2xl:pt-72 2xl:pb-60">
-
-        {/* Text Section */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="text-center lg:text-left max-w-3xl"
-        >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)]">
-            Gas Station Construction That Builds Your Business on a Solid Foundation
-          </h1>
-
-          <div className="mt-6 h-[4px] w-24 bg-[#c62931] mx-auto lg:mx-0 rounded-full"></div>
-
-          <p className="mt-8 text-gray-200 text-lg md:text-xl font-light max-w-md mx-auto lg:mx-0 leading-relaxed">
-            Trusted by fuel retailers across Georgia for
-            30+ years — licensed, insured, and known for safety-first construction.
-          </p>
-
-          <div className="mt-10 flex justify-center lg:justify-start">
-            <button
-              type="button"
-              onClick={scrollToForm}
-              className="px-10 py-4 bg-[#c62931] text-white font-semibold rounded-full shadow-md hover:bg-[#a91f27] transition-all duration-300"
-            >
-              GET QUOTE
-            </button>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+    <PageHero
+      imageSrc="/backgrounds/services/construction/Hero_Construction.webp"
+      imageAlt="Gas Station Construction Services"
+      eyebrow="Our Services · Gas Station Construction"
+      heading={
+        <>
+          Gas Station Construction That Builds Your Business on a{" "}
+          <span
+            className="text-[#ff464f]"
+            style={{
+              textShadow:
+                "0 0 40px rgba(198,41,49,0.5), 0 2px 8px rgba(0,0,0,0.8)",
+            }}
+          >
+            Solid Foundation.
+          </span>
+        </>
+      }
+      subtext="Trusted by fuel retailers across Georgia for 35+ years — licensed, insured, and known for safety-first construction."
+      buttonLabel="Get a Quote"
+      onButtonClick={scrollToForm}
+    />
   );
 };
 
 export default Hero;
-
