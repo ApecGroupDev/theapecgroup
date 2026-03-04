@@ -58,13 +58,14 @@ const IntroCareers: React.FC = () => (
             Build a Career That <span className="text-[#c62931]">Matters.</span>
           </h1>
           <p className="text-[#111]/50 text-base leading-relaxed mb-4">
-            For over 35 years, we've helped shape fuel infrastructure across
-            Georgia and surrounding regions — and we're just getting started.
-            Whether you're a seasoned foreman or entering the workforce, APEC
-            offers career stability, growth potential, and meaningful work.
+            For over 35 years, we&apos;ve helped shape fuel infrastructure
+            across Georgia and surrounding regions — and we&apos;re just getting
+            started. Whether you&apos;re a seasoned foreman or entering the
+            workforce, APEC offers career stability, growth potential, and
+            meaningful work.
           </p>
           <p className="text-[#c62931]/80 text-base leading-relaxed italic">
-            If you're searching for petroleum jobs where you can grow,
+            If you&apos;re searching for petroleum jobs where you can grow,
             contribute, and thrive — this is it.
           </p>
         </motion.div>
