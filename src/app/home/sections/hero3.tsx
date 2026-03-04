@@ -86,7 +86,7 @@ const Hero3: React.FC = () => (
             <span className="font-semibold apec-red">
               The APEC Group (Atlanta Petroleum Equipment Company Inc)
             </span>{" "}
-            has built a reputation as one of Georgia's most trusted names in
+            has built a reputation as one of Georgia&apos;s most trusted names in
             petroleum equipment and services.
           </motion.p>
 
