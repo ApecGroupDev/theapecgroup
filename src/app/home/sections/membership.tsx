@@ -59,7 +59,7 @@ const MembershipGrid = () => {
               className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
               style={{ fontFamily: "'Georgia', serif" }}
             >
-              Proud <span className="text-[#c62931]">Member Of.</span>
+              Proud <span className="text-[#c62931]">Member Of:</span>
             </h2>
             <p className="text-[#111]/40 text-base max-w-md leading-relaxed lg:text-right">
               Our associations reflect our dedication to quality, collaboration,
