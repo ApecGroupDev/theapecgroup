@@ -11,6 +11,14 @@ const fadeUp = (delay = 0) => ({
   transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
 });
 
+const scrollToForm = () => {
+  const section = document.getElementById("MainContactForm");
+  if (section) {
+    const y = section.getBoundingClientRect().top + window.scrollY - 180;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+};
+
 const contacts = [
   {
     icon: Phone,
@@ -67,7 +75,7 @@ const ContactCTA: React.FC = () => (
             className="text-5xl lg:text-6xl font-black text-white leading-[1.05] tracking-tight mb-6"
             style={{ fontFamily: "'Georgia', serif" }}
           >
-            Let's Start the{" "}
+            Let&apos;s Start the{" "}
             <span className="text-[#c62931]">Conversation.</span>
           </motion.h2>
 
@@ -75,20 +83,21 @@ const ContactCTA: React.FC = () => (
             {...fadeUp(0.2)}
             className="text-white/50 text-base leading-relaxed max-w-md mb-10"
           >
-            Ready to grow your petroleum business? Let's discuss how APEC can
-            help you build, maintain, and scale with confidence.
+            Ready to grow your petroleum business? Let&apos;s discuss how APEC
+            can help you build, maintain, and scale with confidence.
           </motion.p>
 
           <motion.div {...fadeUp(0.3)}>
-            <a
-              href="#MainContactForm"
+            <button
+              type="button"
+              onClick={scrollToForm}
               className="group inline-flex items-center gap-3 bg-[#c62931] hover:bg-[#a8232a] text-white font-bold text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(198,41,49,0.4)]"
             >
               Contact Our Team
               <span className="flex items-center justify-center w-6 h-6 rounded-full bg-white/15 group-hover:bg-white/25 transition-colors duration-300">
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </span>
-            </a>
+            </button>
           </motion.div>
         </div>
 
