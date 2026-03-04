@@ -1,24 +1,19 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
-
-interface HeaderProps {
-  white?: boolean; // true = white nav text (all pages), false/omitted = dark nav text (landing page)
-}
+import { usePathname } from "next/navigation";
+import { ChevronDown, Phone, Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: "HOME", path: "/" },
-  { label: "ABOUT", path: "/about-us" },
-  { label: "TEAM", path: "/our-team" },
-  { label: "SERVICES", path: "/services" },
-  { label: "CAREERS", path: "/petroleum-companies-jobs" },
-  { label: "BLOG", path: "/blogs" },
-  { label: "CONTACT", path: "/contact-us" },
+  { label: "Home", path: "/" },
+  { label: "About", path: "/about-us" },
+  { label: "Team", path: "/our-team" },
+  { label: "Services", path: "/services" },
+  { label: "Careers", path: "/petroleum-companies-jobs" },
+  { label: "Blog", path: "/blogs" },
+  { label: "Contact", path: "/contact-us" },
 ];
 
 const SERVICES_DROPDOWN = [
@@ -43,245 +38,221 @@ const SERVICES_DROPDOWN = [
   },
 ];
 
-const Header: React.FC<HeaderProps> = ({ white = false }) => {
+const Header: React.FC = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const [showSearch, setShowSearch] = useState(false);
-  const searchRef = useRef<HTMLInputElement | null>(null);
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
-
-  // The only difference between variants: nav link text color
-  const navTextColor = white ? "text-white" : "text-gray-900";
+  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const checkScreenSize = () => setIsLargeScreen(window.innerWidth >= 1000);
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
+    const onScroll = () => {
+      const current = window.scrollY;
+      setScrolled(current > 20);
+      setVisible(current < 10 || current < lastScrollY.current);
+      lastScrollY.current = current;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (typeof window !== "undefined" && isLargeScreen) {
-        const currentScrollY = window.scrollY;
-        setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
-        setLastScrollY(currentScrollY);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY, isLargeScreen]);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        searchRef.current &&
-        event.target instanceof Node &&
-        !searchRef.current.contains(event.target)
-      ) {
-        setShowSearch(false);
-      }
-    };
-    if (showSearch) document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [showSearch]);
+    setIsOpen(false);
+  }, [pathname]);
 
   const isActive = (path: string) =>
     path === "/" ? pathname === "/" : pathname.startsWith(path);
 
   return (
     <header
-      className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${
-        isLargeScreen ? (isVisible ? "top-0" : "top-full") : "top-0"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        visible ? "translate-y-0" : "-translate-y-full"
+      } ${
+        scrolled
+          ? "bg-[#0a0a0a]/95 backdrop-blur-md shadow-[0_1px_0_rgba(255,255,255,0.06)]"
+          : "bg-gradient-to-b from-black/60 to-transparent"
       }`}
     >
-      {/* Mobile Header */}
-      <div className="lg:hidden container min-w-full relative flex items-center p-1 sm:p-2">
-        <Link href="/">
-          <Image
-            src="/logos/APEC.webp"
-            alt="Logo"
-            width={116}
-            height={106}
-            className="h-24 sm:h-28 w-auto"
-          />
-        </Link>
+      {/* Top accent line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931] to-transparent" />
 
-        <div className="absolute right-4 top-12 sm:top-11 -translate-y-1/2 flex items-center gap-2">
-          <a
-            href="tel:855-444-2732"
-            className="flex items-center gap-2 bg-[#c62931] text-white p-2 crn-600:p-4 rounded-md hover:bg-red-500 transition"
-          >
-            <FaPhoneAlt className="text-sm sm:text-lg" />
-            <span className="text-sm hidden scrn-350:block">
-              FREE CONSULTATION
-            </span>
-            <span className="text-sm scrn-350:hidden">FREE</span>
-          </a>
-
-          <button
-            className="text-[#c62931] focus:outline-none z-20 flex items-center"
-            onClick={() => setIsOpen((prev) => !prev)}
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-          >
-            {isOpen ? (
-              <span className="text-6xl leading-none">×</span>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </button>
-        </div>
-
-        <nav
-          className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${
-            isOpen
-              ? "opacity-100 scale-100"
-              : "opacity-0 scale-95 pointer-events-none"
-          }`}
-        >
-          {NAV_LINKS.map(({ label, path }) => (
-            <Link
-              key={path}
-              href={path}
-              className={`block text-lg font-medium tracking-widest py-2 transition-colors duration-200 ${
-                isActive(path)
-                  ? "text-[#c62931]"
-                  : "text-gray-800 hover:text-[#c62931]"
-              }`}
-              onClick={() => setIsOpen(false)}
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
-      </div>
-
-      {/* Desktop Header */}
-      <div className="hidden lg:grid grid-cols-3 items-center px-6 py-1">
-        {/* Left: Logo */}
-        <div className="flex items-center sm:hidden">
-          <Link href="/">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-24 lg:h-28 relative">
+          {/* Logo — larger, with subtle glow */}
+          <Link href="/" className="flex-shrink-0 relative group">
+            <div className="absolute -inset-3 rounded-xl blur-md transition-all duration-300" />
             <Image
               src="/logos/APEC.webp"
-              alt="Logo"
-              width={116}
-              height={106}
-              className="w-auto lg:h-24 xl:h-28 2xl:h-32"
-            />
-          </Link>
-        </div>
-        <div className="items-center hidden sm:flex">
-          <Link href="/">
-            <Image
-              src="/logos/APEC.webp"
-              alt="Logo"
+              alt="APEC Group"
               width={227}
               height={208}
-              className="w-auto lg:h-24 xl:h-28 2xl:h-32"
+              className="relative w-auto h-16 lg:h-20 xl:h-24 transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
-        </div>
 
-        {/* Center: Navigation */}
-        <nav className="flex z-10 justify-center space-x-8 -mt-10 2xl:-mt-14">
-          {NAV_LINKS.map(({ label, path }) =>
-            label === "SERVICES" ? (
-              <div
-                key={path}
-                className="relative group"
-                onMouseEnter={() => setShowDropdown(true)}
-                onMouseLeave={() => setShowDropdown(false)}
-              >
-                <div className="relative flex items-center gap-1">
+          {/* Desktop Nav — absolutely centered */}
+          <nav className="hidden xl:flex items-center gap-8 absolute left-1/2 -translate-x-1/2 uppercase">
+            {NAV_LINKS.map(({ label, path }) =>
+              label === "Services" ? (
+                <div
+                  key={path}
+                  ref={dropdownRef}
+                  className="relative"
+                  onMouseEnter={() => setShowDropdown(true)}
+                  onMouseLeave={() => setShowDropdown(false)}
+                >
                   <Link
                     href={path}
-                    className={`capitalize md:text-xs lg:text-base hover:text-red-500 transition-colors duration-200 relative flex items-center gap-1 ${
-                      pathname.startsWith(path) ? "text-red-400" : navTextColor
+                    className={`flex items-center gap-1 font-bold transition-colors duration-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] ${
+                      isActive(path)
+                        ? "text-white/80"
+                        : "text-white hover:text-[#c62931]"
                     }`}
                   >
                     {label}
                     <ChevronDown
-                      className={`w-6 h-6 transition-transform duration-200 ${
-                        showDropdown
-                          ? "rotate-180 text-red-400"
-                          : `${white ? "" : ""} group-hover:text-[#c62931]`
-                      }`}
+                      className={`w-6 h-6 transition-transform duration-200 ${showDropdown ? "rotate-180 text-[#c62931]" : ""}`}
                     />
                   </Link>
-                  {pathname.startsWith(path) && (
-                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
+                  {isActive(path) && (
+                    <span className="absolute -bottom-1 left-0 right-0 h-px bg-[#c62931]" />
                   )}
-                </div>
 
-                {showDropdown && (
-                  <div className="absolute top-full w-auto text-nowrap bg-white/50 backdrop-blur-sm rounded-md py-2 z-50">
-                    {SERVICES_DROPDOWN.map(({ label, href, external }) => (
-                      <Link
-                        key={href}
-                        href={href}
-                        {...(external
-                          ? { target: "_blank", rel: "noopener noreferrer" }
-                          : {})}
-                        className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                        onClick={() => setShowDropdown(false)}
-                      >
-                        {label}
-                      </Link>
-                    ))}
+                  {/* Dropdown — has padding-top bridge to prevent gap from closing it */}
+                  <div
+                    className={`absolute top-full left-0 pt-3 transition-all duration-200 ${
+                      showDropdown
+                        ? "opacity-100 translate-y-0 pointer-events-auto"
+                        : "opacity-0 -translate-y-1 pointer-events-none"
+                    }`}
+                  >
+                    <div className="w-72 border border-white/[0.08] bg-[#0a0a0a] rounded-2xl py-2 overflow-hidden shadow-2xl">
+                      {SERVICES_DROPDOWN.map(({ label, href, external }) => (
+                        <Link
+                          key={href}
+                          href={href}
+                          {...(external
+                            ? { target: "_blank", rel: "noopener noreferrer" }
+                            : {})}
+                          onClick={() => setShowDropdown(false)}
+                          className="flex items-center gap-2 px-4 py-2.5 text-sm text-white/80 hover:text-white hover:bg-[#c62931]/10 transition-all duration-200 group"
+                        >
+                          <span className="w-1 h-1 rounded-full bg-[#c62931] opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex-shrink-0" />
+                          {label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                )}
-              </div>
-            ) : (
-              <Link
-                key={path}
-                href={path}
-                className={`capitalize md:text-xs lg:text-base hover:text-red-500 transition-colors duration-200 relative ${
-                  isActive(path) ? "text-red-400" : navTextColor
-                }`}
-              >
-                {label}
-                {isActive(path) && (
-                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-red-500" />
-                )}
-              </Link>
-            ),
-          )}
-        </nav>
+                </div>
+              ) : (
+                <Link
+                  key={path}
+                  href={path}
+                  className={`relative font-medium transition-colors duration-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] ${
+                    isActive(path)
+                      ? "text-white"
+                      : "text-white hover:text-[#c62931]"
+                  }`}
+                >
+                  {label}
+                  {isActive(path) && (
+                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#c62931]" />
+                  )}
+                </Link>
+              ),
+            )}
+          </nav>
 
-        {/* Right: CTA */}
-        <div className="flex justify-end -mt-10 2xl:-mt-14">
-          <Link
-            className="hidden xl:flex items-center gap-2 bg-[#c62931] text-white py-2 px-4 rounded-md hover:bg-red-500 transition"
-            href="/contact-us#MainContactForm"
-            scroll={false}
-          >
-            <FaPhoneAlt className="text-lg" />
-            FREE CONSULTATION
-          </Link>
-          <Link
-            className="flex xl:hidden items-center gap-2 bg-[#c62931] text-white py-2 px-8 rounded-md hover:bg-red-500 transition"
-            href="/contact-us#MainContactForm"
-            scroll={false}
-          >
-            <FaPhoneAlt className="text-lg" />
-            FREE
-          </Link>
+          {/* Desktop CTA */}
+          <div className="hidden xl:flex items-center gap-4">
+            <a
+              href="tel:8554442732"
+              className="flex items-center gap-2 text-white/90 hover:text-white text-sm font-medium transition-colors duration-200 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]"
+            >
+              <Phone className="w-3.5 h-3.5" />
+              855-444-2732
+            </a>
+            <Link
+              href="/contact-us#MainContactForm"
+              scroll={false}
+              className="group inline-flex items-center gap-2 bg-[#c62931] hover:bg-[#a8232a] text-white font-medium text-xs tracking-wide px-5 py-2.5 rounded-full transition-all duration-300 hover:shadow-[0_0_24px_rgba(198,41,49,0.5)]"
+            >
+              Free Consultation
+            </Link>
+          </div>
+
+          {/* Mobile — phone + hamburger */}
+          <div className="flex xl:hidden items-center gap-3">
+            <a
+              href="tel:8554442732"
+              className="flex items-center gap-2 bg-[#c62931] text-white text-xs font-bold px-4 py-2.5 rounded-full"
+            >
+              <Phone className="w-3.5 h-3.5" />
+              <span className="hidden scrn-350:block">Free Consultation</span>
+              <span className="scrn-350:hidden">Call</span>
+            </a>
+            <button
+              onClick={() => setIsOpen((p) => !p)}
+              className="flex items-center justify-center w-10 h-10 rounded-xl border border-white/20 text-white hover:border-white/40 transition-all duration-200"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+            >
+              {isOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`xl:hidden transition-all duration-300 overflow-hidden ${
+          isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="border-t border-white/[0.06] bg-[#0a0a0a]/98 backdrop-blur-md px-4 py-4">
+          {NAV_LINKS.map(({ label, path }) => (
+            <Link
+              key={path}
+              href={path}
+              onClick={() => setIsOpen(false)}
+              className={`flex uppercase items-center justify-between py-3 border-b border-white/[0.05] last:border-0 text-sm font-medium tracking-wide transition-colors duration-200 ${
+                isActive(path)
+                  ? "text-[#c62931]"
+                  : "text-white/80 hover:text-white"
+              }`}
+            >
+              {label}
+              {isActive(path) && (
+                <span className="w-1.5 h-1.5 rounded-full bg-[#c62931]" />
+              )}
+            </Link>
+          ))}
+
+          <div className="mt-3 pt-3 border-t border-white/[0.05]">
+            <p className="font-bold tracking-[0.2em] uppercase text-white/75 mb-3">
+              Our Services
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              {SERVICES_DROPDOWN.map(({ label, href, external }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  {...(external
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                  onClick={() => setIsOpen(false)}
+                  className="text-white uppercase py-2 transition-colors duration-200"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </header>
