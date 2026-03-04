@@ -1,122 +1,174 @@
-import { SocialIcon } from "react-social-icons";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
+import { SocialIcon } from "react-social-icons";
+import { MapPin, Phone, Mail } from "lucide-react";
 
-const Footer: React.FC = () => {
-  return (
-    <footer className="relative bg-gradient-to-b from-[#0c0c0c] to-[#151515] text-gray-300 font-inter overflow-hidden">
-      {/* Top Accent Line */}
-      <div className="absolute top-0 left-0 w-full h-[6px] bg-gradient-to-r from-transparent via-[#c62931] to-transparent" />
+const navLinks = [
+  { label: "Services", href: "/services" },
+  { label: "Construction", href: "/services/gas-station-construction" },
+  { label: "Financing", href: "/services/gas-station-financing" },
+  { label: "Electrical", href: "/services/gas-station-electrical" },
+  { label: "Compliance", href: "/services/environmental-compliance-solutions" },
+  { label: "Careers", href: "/careers" },
+  { label: "Contact", href: "/contact-us" },
+];
 
-      {/* Main Content */}
-      <div
-        className="
-        max-w-[1440px] mx-auto 
-        px-6 sm:px-8 md:px-12 lg:px-20 
-        py-16 
-        flex flex-col items-center text-center
-        md:grid md:grid-cols-2 lg:grid-cols-3
-        md:gap-x-10 lg:gap-x-14 gap-y-14
-      "
-      >
-        {/* 1️⃣ Logo + Tagline */}
-        <div className="relative flex flex-col items-center md:hidden lg:flex">
-          <div className="absolute -inset-20 bg-[#c62931]/25 blur-[140px] rounded-full -z-10" />
-          <Link href="/" className="block">
+const socials = [
+  "https://twitter.com/theapecgroup",
+  "https://www.instagram.com/the_apec_group/",
+  "https://www.facebook.com/people/APEC-Group/100078538340182/",
+  "https://www.linkedin.com/company/apec-group-petroleum-equipment-and-services",
+];
+
+const offices = [
+  {
+    label: "Main Office",
+    address: "4732-E North Royal Atlanta Drive",
+    city: "Tucker, GA 30084",
+  },
+  {
+    label: "Branch Office",
+    address: "505 Garden Oaks Blvd",
+    city: "Houston, TX 77018",
+  },
+];
+
+const Footer: React.FC = () => (
+  <footer className="relative bg-[#0a0a0a] text-white overflow-hidden">
+    {/* Grid pattern */}
+    {/* <div
+      className="absolute inset-0 opacity-[0.025]"
+      style={{
+        backgroundImage: `linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px)`,
+        backgroundSize: "60px 60px",
+      }}
+    /> */}
+
+    {/* Ambient glow */}
+    <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#c62931] opacity-[0.12] blur-[120px] pointer-events-none rounded-full" />
+
+    {/* Top border */}
+    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931] to-transparent" />
+
+    <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+        {/* Col 1 — Logo + tagline */}
+        <div className="lg:col-span-1">
+          <Link href="/" className="inline-block mb-6">
             <Image
               src="/logos/APEC.webp"
               alt="APEC Since 1989"
               width={260}
               height={260}
-              className="w-auto h-24 sm:h-28 lg:h-32 transition-transform duration-300 hover:scale-105"
+              className="w-auto h-16 transition-transform duration-300 hover:scale-105"
             />
           </Link>
-
-          <p className="mt-4 text-sm text-gray-400 max-w-[320px] leading-relaxed">
+          <p className="text-white/40 text-sm leading-relaxed mb-6">
             Since 1989, The APEC Group has delivered reliable petroleum
             equipment, environmental compliance, and construction services
             across the U.S.
           </p>
-        </div>
-
-        {/* 2️⃣ Contact + Social (Moves below logo on mobile) */}
-        <div className="order-last md:order-none flex flex-col items-center md:items-start text-center md:text-left">
-          <h3 className="text-white text-lg font-semibold tracking-wide">
-            Contact Us
-          </h3>
-
-          <p className="mt-2 text-sm text-gray-400">
-            <a
-              href="tel:855-444-2732"
-              className="hover:text-[#c62931] transition-colors"
-            >
-              855-444-2732
-            </a>{" "}
-            |{" "}
-            <a
-              href="mailto:Sales@TheAPECgroup.com"
-              className="hover:text-[#c62931] transition-colors"
-            >
-              Sales@TheAPECgroup.com
-            </a>
-          </p>
-
-          <div className="mt-3 flex flex-wrap justify-center md:justify-start gap-3">
-            {[
-              "https://twitter.com/theapecgroup",
-              "https://www.instagram.com/the_apec_group/",
-              "https://www.facebook.com/people/APEC-Group/100078538340182/",
-              "https://www.linkedin.com/company/apec-group-petroleum-equipment-and-services",
-            ].map((url, i) => (
+          {/* Socials */}
+          <div className="flex flex-wrap gap-2">
+            {socials.map((url) => (
               <SocialIcon
-                key={i}
+                key={url}
                 url={url}
                 target="_blank"
-                style={{ height: 34, width: 34, borderRadius: 6 }}
+                style={{ height: 32, width: 32, borderRadius: 8 }}
                 bgColor="#c62931"
-                className="transition-transform transform hover:scale-110"
+                className="transition-transform duration-300 hover:scale-110 hover:opacity-90"
               />
             ))}
           </div>
-
-          <p className="mt-3 text-xs text-gray-500 max-w-[280px] leading-relaxed">
-            Follow us for updates on petroleum equipment, compliance, and
-            service announcements.
-          </p>
         </div>
 
-        {/* 3️⃣ Office Locations */}
-        <div className="flex flex-col items-center md:items-end text-center md:text-right">
-          <h3 className="text-white text-lg font-semibold tracking-wide">
+        {/* Col 2 — Navigation */}
+        <div>
+          <p className="text-[11px] font-bold tracking-[0.25em] uppercase text-white/30 mb-6">
+            Quick Links
+          </p>
+          <ul className="space-y-3">
+            {navLinks.map(({ label, href }) => (
+              <li key={label}>
+                <Link
+                  href={href}
+                  className="group flex items-center gap-2 text-sm text-white/50 hover:text-white transition-colors duration-300"
+                >
+                  <span className="w-1 h-1 rounded-full bg-[#c62931] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Col 3 — Contact */}
+        <div>
+          <p className="text-[11px] font-bold tracking-[0.25em] uppercase text-white/30 mb-6">
+            Contact Us
+          </p>
+          <div className="space-y-4">
+            <a
+              href="tel:8554442732"
+              className="group flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors duration-300"
+            >
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg border border-white/[0.07] group-hover:border-[#c62931]/40 bg-white/[0.03] group-hover:bg-[#c62931]/10 transition-all duration-300">
+                <Phone className="w-3.5 h-3.5 text-white/40 group-hover:text-[#c62931] transition-colors duration-300" />
+              </span>
+              855-444-2732
+            </a>
+            <a
+              href="mailto:Sales@TheAPECgroup.com"
+              className="group flex items-center gap-3 text-sm text-white/50 hover:text-white transition-colors duration-300"
+            >
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg border border-white/[0.07] group-hover:border-[#c62931]/40 bg-white/[0.03] group-hover:bg-[#c62931]/10 transition-all duration-300">
+                <Mail className="w-3.5 h-3.5 text-white/40 group-hover:text-[#c62931] transition-colors duration-300" />
+              </span>
+              Sales@TheAPECgroup.com
+            </a>
+          </div>
+        </div>
+
+        {/* Col 4 — Offices */}
+        <div>
+          <p className="text-[11px] font-bold tracking-[0.25em] uppercase text-white/30 mb-6">
             Our Offices
-          </h3>
-
-          <div className="mt-3 text-sm text-gray-400 space-y-4 leading-relaxed">
-            <div>
-              <p className="font-medium text-gray-200">Main Office:</p>
-              <p>4732-E North Royal Atlanta Drive</p>
-              <p>Tucker, GA 30084</p>
-            </div>
-
-            <div>
-              <p className="font-medium text-gray-200">Branch Office:</p>
-              <p>505 Garden Oaks Blvd</p>
-              <p>Houston, TX 77018</p>
-            </div>
+          </p>
+          <div className="space-y-6">
+            {offices.map(({ label, address, city }) => (
+              <div key={label} className="flex items-start gap-3">
+                <span className="flex items-center justify-center w-8 h-8 rounded-lg border border-white/[0.07] bg-white/[0.03] flex-shrink-0 mt-0.5">
+                  <MapPin className="w-3.5 h-3.5 text-[#c62931]" />
+                </span>
+                <div>
+                  <p className="text-xs font-bold tracking-wide uppercase text-white/30 mb-0.5">
+                    {label}
+                  </p>
+                  <p className="text-sm text-white/60 leading-relaxed">
+                    {address}
+                  </p>
+                  <p className="text-sm text-white/60">{city}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Divider */}
-      <div className="border-t border-gray-700/50 mt-8" />
-
-      {/* Copyright */}
-      <div className="py-6 text-center text-gray-500 text-sm tracking-wide">
-        © {new Date().getFullYear()} The APEC Group. All rights reserved.
+      {/* Bottom bar */}
+      <div className="mt-16 pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs text-white/25 tracking-wide">
+          © {new Date().getFullYear()} The APEC Group. All rights reserved.
+        </p>
+        <p className="text-xs text-white/20">
+          Atlanta Petroleum Equipment Company Inc.
+        </p>
       </div>
-    </footer>
-  );
-};
+    </div>
+  </footer>
+);
 
 export default Footer;
