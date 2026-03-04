@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import CheckmarkBadge from "@/components/checkmarkBadge";
+import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import CheckmarkBadge from "@/components/checkmarkBadge";
 
 const checklistItems = [
   "30+ years of petroleum systems expertise",
@@ -20,55 +21,121 @@ const badges = [
   "Turnkey project management for fueling sites",
 ];
 
-const Introductory: React.FC = () => {
-  return (
-    <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="space-y-4 mb-12">
-        <p className="text-lg leading-relaxed">
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 32 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
+});
+
+const Introductory: React.FC = () => (
+  <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">
+    {/* Dot grid */}
+    <div
+      className="absolute inset-0 opacity-[0.45]"
+      style={{
+        backgroundImage: `radial-gradient(circle, #c6293120 1px, transparent 1px)`,
+        backgroundSize: "32px 32px",
+      }}
+    />
+
+    {/* Top border */}
+    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
+
+    <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Intro text */}
+      <motion.div {...fadeUp(0)} className="max-w-3xl mb-24">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+          <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+            About APEC
+          </span>
+        </div>
+        <p
+          className="text-3xl lg:text-4xl font-black text-[#111] leading-[1.2] tracking-tight mb-6"
+          style={{ fontFamily: "'Georgia', serif" }}
+        >
+          We don&apos;t just supply petroleum products —{" "}
+          <span className="text-[#c62931]">
+            we help protect what you&apos;ve built.
+          </span>
+        </p>
+        <p className="text-[#111]/50 text-base leading-relaxed mb-4">
           When you&apos;re managing a fueling operation, the stakes are high. A
           mistake could mean costly fines, lost customers, or even shutdowns. At{" "}
-          <span className="apec-red font-semibold">
+          <span className="font-semibold text-[#111]/80">
             The APEC Group (Atlanta Petroleum Equipment Company)
           </span>
-          , we don&apos;t just supply petroleum products — we help protect what
-          you&apos;ve built. Since 1989, we&apos;ve partnered with fuel
-          retailers, fleet operators, and distributors across Georgia to deliver
-          safe, compliant, and reliable fueling solutions.
+          , since 1989 we&apos;ve partnered with fuel retailers, fleet
+          operators, and distributors across Georgia to deliver safe, compliant,
+          and reliable fueling solutions.
         </p>
-        <p className="text-lg apec-red italic">
+        <p className="text-[#c62931]/70 text-sm italic leading-relaxed">
           Looking for a partner who handles the complexity so you can focus on
           running your business? That&apos;s what we do.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-x-10 xl:gap-x-20 gap-y-12">
-        <div>
-          <h2 className="text-4xl font-extrabold text-gray-900">
-            Why Choose <span className="apec-red">APEC</span>
+      {/* Two columns */}
+      <div className="grid md:grid-cols-2 gap-12 xl:gap-24">
+        {/* Left — Why Choose APEC */}
+        <motion.div {...fadeUp(0.1)}>
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+              Our Difference
+            </span>
+          </div>
+          <h2
+            className="text-4xl lg:text-5xl font-black text-[#111] leading-[1.05] tracking-tight mb-8"
+            style={{ fontFamily: "'Georgia', serif" }}
+          >
+            Why Choose <span className="text-[#451b1d]">APEC?</span>
           </h2>
           <div className="space-y-4">
-            {checklistItems.map((item, index) => (
-              <div key={index} className="flex items-start gap-2 mt-4">
-                <Check className="w-6 h-6 mt-0.5 flex-shrink-0 apec-red" />
-                <span className="lg:text-lg 2xl:text-xl">{item}</span>
-              </div>
+            {checklistItems.map((item, i) => (
+              <motion.div
+                key={i}
+                {...fadeUp(0.15 + i * 0.07)}
+                className="flex items-start gap-3 border border-[#111]/[0.08] hover:border-[#c62931]/50 bg-white rounded-2xl px-5 py-4 transition-all duration-300 hover:shadow-lg group"
+              >
+                <span className="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-[#c62931]/10 group-hover:bg-[#c62931]/20 transition-colors duration-300 mt-0.5">
+                  <Check className="w-3.5 h-3.5 text-[#c62931]" />
+                </span>
+                <span className="text-[#111]/70 leading-relaxed">{item}</span>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <div>
-          <h2 className="text-4xl font-extrabold text-gray-900">
-            Products &amp; <span className="apec-red">Services</span>
+        {/* Right — Products & Services */}
+        <motion.div {...fadeUp(0.15)}>
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+              What We Offer
+            </span>
+          </div>
+          <h2
+            className="text-4xl lg:text-5xl font-black text-[#111] leading-[1.05] tracking-tight mb-8"
+            style={{ fontFamily: "'Georgia', serif" }}
+          >
+            Products &amp; <span className="text-[#c62931]">Services.</span>
           </h2>
-          <div className="space-y-4 mt-4">
+          <div className="space-y-4">
             {badges.map((text, i) => (
-              <CheckmarkBadge key={i} text={text} />
+              <motion.div key={i} {...fadeUp(0.2 + i * 0.06)}>
+                <CheckmarkBadge text={text} />
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
-  );
-};
+    </div>
+
+    {/* Bottom border */}
+    <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
+  </section>
+);
 
 export default Introductory;
