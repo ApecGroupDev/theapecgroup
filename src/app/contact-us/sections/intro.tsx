@@ -53,7 +53,7 @@ const IntroContact: React.FC = () => (
             className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.05] tracking-tight mb-6"
             style={{ fontFamily: "'Georgia', serif" }}
           >
-            You're in the <span className="text-[#c62931]">Right Place.</span>
+            You&apos;re in the <span className="text-[#c62931]">Right Place.</span>
           </h1>
           <p className="text-[#111]/50 text-base leading-relaxed mb-10">
             Have a question? Need a quote? Want expert advice on your next fuel
@@ -84,13 +84,13 @@ const IntroContact: React.FC = () => (
                 The APEC Group
               </span>
               , we make it easy to get the answers and support you need. Whether
-              you're planning construction, seeking financing, upgrading fuel
-              equipment, or ensuring regulatory compliance — we've got you
+              you&apos;re planning construction, seeking financing, upgrading fuel
+              equipment, or ensuring regulatory compliance — we&apos;ve got you
               covered.
             </p>
             <div className="h-px bg-[#111]/[0.07]" />
             <p className="text-[#111]/60 text-base leading-relaxed">
-              When you reach out, you'll talk directly to{" "}
+              When you reach out, you&apos;ll talk directly to{" "}
               <span className="font-semibold text-[#111]/80">
                 experienced professionals
               </span>{" "}
