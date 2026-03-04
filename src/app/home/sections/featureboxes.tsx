@@ -1,132 +1,142 @@
 "use client";
 
 import React from "react";
-import { FaUsers, FaTasks, FaMedal, FaHandshake } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Users, CheckSquare, Medal, Handshake } from "lucide-react";
 
-// ✅ Change 7: Moved fadeUp outside the component to avoid re-creation on every render
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 },
-};
-
-// ✅ Change 5: Split quote and author into separate fields for cleaner rendering
-// ✅ Change 1: Fixed icon-title mismatches (Experience → FaMedal, Service → FaHandshake)
 const features = [
   {
-    title: "TEAM",
+    title: "Team",
     quote: "Teamwork is at the heart of great achievement.",
     author: "John C. Maxwell",
-    icon: <FaUsers />,
+    icon: Users,
   },
   {
-    title: "EXECUTION",
+    title: "Execution",
     quote: "You can't build a reputation on what you are going to do.",
     author: "Henry Ford",
-    icon: <FaTasks />,
+    icon: CheckSquare,
   },
   {
-    title: "EXPERIENCE",
+    title: "Experience",
     quote: "Experience is the teacher of all things.",
     author: "Julius Caesar",
-    icon: <FaMedal />,
+    icon: Medal,
   },
   {
-    title: "SERVICE",
+    title: "Service",
     quote: "Great customer service means honoring the customer.",
     author: "Chris LoCurto",
-    icon: <FaHandshake />,
+    icon: Handshake,
   },
 ];
 
 const FeatureBoxes: React.FC = () => {
-  // ✅ Change 2: Lowered threshold to 0.1 so animation triggers more reliably
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    // ✅ Change 8: Added aria-labelledby pointing to the h2 for accessibility
     <section
       aria-labelledby="features-heading"
-      className="relative py-12 bg-gradient-to-b from-white via-gray-50 to-gray-100 overflow-hidden"
+      className="relative w-full overflow-hidden bg-[#f7f5f2] py-32"
     >
-      {/* Subtle background accent */}
-      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(198,41,49,0.05),transparent_60%)]" />
+      {/* Dot grid */}
+      <div
+        className="absolute inset-0 opacity-[0.45]"
+        style={{
+          backgroundImage: `radial-gradient(circle, #c6293120 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
+        }}
+      />
 
-      {/* ✅ Change 3: Fixed inconsistent padding progression */}
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-16 xl:px-24 relative z-10">
-        {/* Title */}
+      {/* Ambient glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-[#c62931] opacity-[0.06] blur-[120px] pointer-events-none rounded-full" />
+
+      {/* Top border */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          initial={{ opacity: 0, y: 32 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-20"
         >
-          {/* ✅ Change 8: Added id for aria-labelledby */}
-          <h2
-            id="features-heading"
-            className="font-extrabold text-gray-900 text-4xl tracking-tight"
-          >
-            WHY CHOOSE <span className="text-[#c62931]">APEC?</span>
-          </h2>
-          <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
-            Building excellence through teamwork, expertise, and unwavering
-            commitment.
-          </p>
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+              Our Values
+            </span>
+          </div>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <h2
+              id="features-heading"
+              className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
+              style={{ fontFamily: "'Georgia', serif" }}
+            >
+              Why Choose <span className="text-[#c62931]">APEC?</span>
+            </h2>
+            <p className="text-[#111]/40 text-base max-w-md leading-relaxed lg:text-right">
+              Building excellence through teamwork, expertise, and unwavering
+              commitment to every project we take on.
+            </p>
+          </div>
+          <div className="mt-10 h-px bg-[#111]/[0.08]" />
         </motion.div>
 
-        {/* ✅ Change 2: Moved ref to the grid so inView triggers when cards are visible */}
-        {/* ✅ Change 4: Changed to lg:grid-cols-4 to avoid skipping breakpoint */}
+        {/* Cards */}
         <div
           ref={ref}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
         >
-          {features.map((feature, index) => (
+          {features.map(({ title, quote, author, icon: Icon }, index) => (
             <motion.div
-              key={index}
-              variants={fadeUp}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="
-                flex flex-col items-center text-center justify-between
-                bg-white/70 backdrop-blur-sm border border-gray-100
-                rounded-3xl shadow-[0_8px_24px_rgba(0,0,0,0.05)]
-                hover:shadow-[0_12px_32px_rgba(198,41,49,0.15)]
-                hover:-translate-y-2
-                transition-all duration-500 ease-out
-                p-10 min-h-[360px]
-              "
+              key={title}
+              initial={{ opacity: 0, y: 32 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.1,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="group relative flex flex-col border border-[#111]/[0.08] hover:border-[#c62931]/60 bg-white rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-2xl p-7"
             >
-              {/* Top content group */}
-              <div className="flex flex-col items-center">
-                <div
-                  className="
-                    flex items-center justify-center
-                    w-20 h-20 mb-6 rounded-full
-                    bg-[#c62931]/10 text-[#c62931] text-5xl
-                  "
-                >
-                  {feature.icon}
-                </div>
-                <h3 className="text-xl lg:text-2xl font-semibold text-gray-900 mb-3 tracking-wide">
-                  {feature.title}
-                </h3>
-                {/* ✅ Change 5: Quote and author rendered separately for better polish */}
-                <p className="text-gray-600 text-base leading-relaxed max-w-[85%] mx-auto italic">
-                  &ldquo;{feature.quote}&rdquo;
-                </p>
+              {/* Red left-edge reveal */}
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#c62931] scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-300 ease-out" />
+
+              {/* Icon */}
+              <div className="flex items-center justify-center w-12 h-12 rounded-xl border border-[#111]/[0.08] group-hover:border-[#c62931]/30 bg-[#f7f5f2] group-hover:bg-[#c62931]/5 transition-all duration-300 mb-6">
+                <Icon className="w-5 h-5 text-[#111]/40 group-hover:text-[#c62931] transition-colors duration-300" />
               </div>
 
-              {/* ✅ Change 5: Author styled distinctly at the bottom */}
-              <p className="text-sm text-red-800 tracking-wide font-medium mt-4">
-                — {feature.author}
+              {/* Title */}
+              <h3
+                className="text-xl font-black text-[#111] group-hover:text-[#c62931] mb-4 tracking-tight transition-colors duration-300"
+                style={{ fontFamily: "'Georgia', serif" }}
+              >
+                {title}
+              </h3>
+
+              {/* Quote */}
+              <p className="text-sm text-[#111]/50 leading-relaxed italic flex-1">
+                &ldquo;{quote}&rdquo;
+              </p>
+
+              {/* Divider */}
+              <div className="mt-5 mb-4 h-px bg-[#111]/[0.07]" />
+
+              {/* Author */}
+              <p className="text-xs font-bold tracking-widest uppercase text-[#c62931]/60">
+                — {author}
               </p>
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Bottom border */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
     </section>
   );
 };
