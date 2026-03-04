@@ -6,11 +6,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { associations } from "../components/associations";
 
-const headingVariants = {
-  hidden: { y: 50, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
-};
-
 const containerVariants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
@@ -18,29 +13,61 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+  },
 };
+
 const MembershipGrid = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-14">
-          <motion.h2
-            variants={headingVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900"
-          >
-            Proud <span className="text-[#c62931]">Member Of:</span>
-          </motion.h2>
-          <p className="text-base sm:text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
-            Our associations reflect our dedication to quality, collaboration,
-            and industry leadership.
-          </p>
-        </div>
+    <section
+      ref={ref}
+      className="relative w-full overflow-hidden bg-[#f7f5f2] py-24"
+    >
+      {/* Dot grid */}
+      <div
+        className="absolute inset-0 opacity-[0.45]"
+        style={{
+          backgroundImage: `radial-gradient(circle, #c6293120 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
+        }}
+      />
+
+      {/* Top border */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mb-16"
+        >
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+              Industry Memberships
+            </span>
+          </div>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <h2
+              className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
+              style={{ fontFamily: "'Georgia', serif" }}
+            >
+              Proud <span className="text-[#c62931]">Member Of.</span>
+            </h2>
+            <p className="text-[#111]/40 text-base max-w-md leading-relaxed lg:text-right">
+              Our associations reflect our dedication to quality, collaboration,
+              and industry leadership.
+            </p>
+          </div>
+          <div className="mt-10 h-px bg-[#111]/[0.08]" />
+        </motion.div>
 
         {/* Logo Grid */}
         <motion.div
@@ -69,6 +96,9 @@ const MembershipGrid = () => {
           ))}
         </motion.div>
       </div>
+
+      {/* Bottom border */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
     </section>
   );
 };
