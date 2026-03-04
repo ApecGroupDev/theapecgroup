@@ -10,7 +10,7 @@ import HomeSchema from "@/components/schema/HomeSchema";
 import Hero1 from "./home/sections/hero1";
 import Hero2 from "./home/sections/hero2";
 import Hero3 from "./home/sections/hero3";
-// import AccordionHome from "./home/sections/accordion";
+import AccordionHome from "./home/sections/accordion";
 
 export const metadata: Metadata = {
   title: "Petroleum Products Company | The APEC Group",
@@ -36,7 +36,7 @@ export default function Page() {
         <Introductory />
         <FeatureBoxes />
         <CTA />
-        {/* <AccordionHome /> */}
+        <AccordionHome />
         <Footer />
       </div>
     </>
