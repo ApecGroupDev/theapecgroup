@@ -6,7 +6,7 @@ import MainCareers from "./sections/main";
 import CareersSchema from "@/components/schema/CareersSchema";
 import Header from "@/components/header";
 import IntroCareers from "./sections/intro";
-// import AccordionCareers from "./sections/accordion";
+import AccordionCareers from "./sections/accordion";
 
 export const metadata: Metadata = {
   title: "Petroleum Companies Jobs | APEC Careers",
@@ -26,7 +26,7 @@ const CareersPage: React.FC = () => {
       <Hero />
       <IntroCareers />
       <MainCareers />
-      {/* <AccordionCareers /> */}
+      <AccordionCareers />
       <Footer />
     </div>
   );
