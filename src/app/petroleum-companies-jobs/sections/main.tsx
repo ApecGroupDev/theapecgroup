@@ -130,8 +130,8 @@ const MainCareers: React.FC = () => (
               Now <span className="text-[#c62931]">Hiring.</span>
             </h2>
             <p className="text-[#111]/40 text-base max-w-md leading-relaxed lg:text-right">
-              We're actively hiring for roles in operations, compliance, and
-              delivery — with immediate openings.
+              We&apos;re actively hiring for roles in operations, compliance,
+              and delivery — with immediate openings.
             </p>
           </div>
           <div className="mt-10 h-px bg-[#111]/[0.08]" />
