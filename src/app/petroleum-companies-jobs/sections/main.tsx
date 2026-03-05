@@ -1,211 +1,228 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
+import { MapPin, Briefcase, ArrowUpRight } from "lucide-react";
 import CareersForm from "@/components/careersForm";
-import CheckmarkBadgeNew from "@/components/checkmarkBadge";
-import { Check } from "lucide-react";
 
 const steps = [
   {
-    title: "1. Browse open roles",
-    description: "and choose the right fit",
+    title: "Browse Open Roles",
+    description:
+      "Explore our current openings and find the position that fits your skills and goals.",
   },
   {
-    title: "2. Submit your resume",
-    description: "(and optional cover letter)",
+    title: "Submit Your Resume",
+    description:
+      "Send us your resume and an optional cover letter telling us why you're a great fit.",
   },
   {
-    title: "3. Questions?",
-    description: "Contact us at service@theapecgroup.com",
+    title: "Still Have Questions?",
+    description:
+      "Reach out directly at service@theapecgroup.com and we'll get back to you promptly.",
   },
 ];
 
-const checklistItems = [
-  "Long-term careers in fuel infrastructure and petroleum construction",
-  "Hands-on work: gas station builds, tank installations, system upgrades",
-  "Team-first culture with a serious focus on safety",
-  "Projects throughout Georgia",
-  "35+ years of proven leadership and client trust",
-];
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 32 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
+});
 
-const badges = [
-  "Long-term careers in fuel infrastructure and petroleum construction",
-  "Hands-on work: gas station builds, tank installations, system upgrades",
-  "Team-first culture with a serious focus on safety",
-  "Projects throughout Georgia, Texas, and the Southeast",
-  "35+ years of proven leadership and client trust",
-];
+const MainCareers: React.FC = () => (
+  <div className="w-full">
+    {/* ── HOW TO APPLY ──────────────────────────────────────────────────── */}
+    <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">
+      <div
+        className="absolute inset-0 opacity-[0.45]"
+        style={{
+          backgroundImage: `radial-gradient(circle, #c6293120 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
+        }}
+      />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
 
-const MainCareers: React.FC = () => {
-  return (
-    <div className="bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="mt-12">
-        <p className="tracking-wider text-lg">
-          For over 35 years, we’ve helped shape fuel infrastructure across
-          Georgia surrounding regions — and we’re just getting started. Since
-          1989, we’ve built a reputation for integrity, innovation, and results
-          in the petroleum services industry. Whether you’re a seasoned foreman
-          or entering the workforce, APEC offers career stability, growth
-          potential, and meaningful work.
-        </p>
-        <p className="apec-red tracking-wider text-lg italic mt-8">
-          If you’re searching for petroleum companies jobs where you can grow,
-          contribute, and thrive — this is it.
-        </p>
-      </div>
-
-      <div className="mt-12 grid md:grid-cols-2 md:gap-x-6 xl:gap-x-24">
-        {/* Left Column – What Makes APEC Different */}
-        <div className="h-auto">
-          <h2 className="text-4xl font-extrabold text-gray-900">
-            What Makes <span className="text-[#c62931]">APEC Different?</span>
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div {...fadeUp(0)} className="mb-14">
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+              Get Started
+            </span>
+          </div>
+          <h2
+            className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
+            style={{ fontFamily: "'Georgia', serif" }}
+          >
+            How to <span className="text-[#c62931]">Apply.</span>
           </h2>
-          <div className="space-y-4">
-            {checklistItems.map((item, index) => (
-              <div key={index} className="flex items-start gap-2 mt-4">
-                <Check className="w-6 h-6 mt-0.5 flex-shrink-0 apec-red" />
-                <span className="lg:text-lg 2xl:text-xl">{item}</span>
+          <div className="mt-10 h-px bg-[#111]/[0.08]" />
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {steps.map((step, i) => (
+            <motion.div
+              key={step.title}
+              {...fadeUp(0.1 + i * 0.08)}
+              className="group relative flex flex-col border border-[#111]/[0.08] hover:border-[#c62931]/60 bg-white rounded-2xl p-7 transition-all duration-500 hover:shadow-2xl overflow-hidden"
+            >
+              {/* Red left-edge reveal */}
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#c62931] scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-300 ease-out" />
+
+              {/* Step number */}
+              <span
+                className="text-6xl font-black text-[#111]/[0.06] leading-none mb-4 select-none"
+                style={{ fontFamily: "'Georgia', serif" }}
+              >
+                0{i + 1}
+              </span>
+
+              <h3
+                className="text-xl font-black text-[#111] group-hover:text-[#c62931] mb-3 tracking-tight transition-colors duration-300"
+                style={{ fontFamily: "'Georgia', serif" }}
+              >
+                {step.title}
+              </h3>
+              <p className="text-sm text-[#111]/50 leading-relaxed flex-1">
+                {step.description}
+              </p>
+
+              <div className="mt-5 h-px bg-[#111]/[0.07]" />
+              <div className="mt-4 flex items-center gap-2 text-[#111]/20 group-hover:text-[#c62931] transition-colors duration-300">
+                <span className="text-xs font-bold tracking-widest uppercase">
+                  Step {i + 1}
+                </span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Right Column – Benefits of Working at APEC Group */}
-        <div className="h-auto mt-12 md:mt-0">
-          <h2 className="text-4xl font-extrabold text-gray-900">
-            Benefits Of Working{" "}
-            <span className="text-[#c62931]">At APEC Group</span>
-          </h2>
-          <p className="italic tracking-wider lg:text-lg 2xl:text-xl mt-4">
-            We invest in our people with competitive benefits and a supportive
-            culture.
-          </p>
-          <div className="space-y-4 mt-4">
-            {badges.map((text, i) => (
-              <CheckmarkBadgeNew key={i} text={text} />
-            ))}
-          </div>
+            </motion.div>
+          ))}
         </div>
       </div>
 
-      {/* OPEN POSITIONS */}
-      <div className="py-32">
-        <div>
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-8">
-            NOW HIRING:{" "}
-            <span className="text-[#c62931]">Petroleum Jobs Near You</span>
-          </h2>
-          <p className="italic mt-4 text-lg tracking-wider">
-            We’re actively hiring for petroleum companies jobs in operations,
-            compliance, and delivery — with immediate openings like:
-          </p>
-        </div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
+    </section>
 
-        {/* Job Listing 1 */}
-        <div className="mt-8 bg-white/5 backdrop-blur-sm border border-[#c62931]/30 rounded-2xl p-8 text-center shadow-[0_8px_20px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:border-[#c62931]/60">
-          <h3 className="font-bold text-[#c62931] text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl mb-3 tracking-wide">
-            Service Technician – Atlanta, GA
-          </h3>
+    {/* ── NOW HIRING ────────────────────────────────────────────────────── */}
+    <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">
+      <div
+        className="absolute inset-0 opacity-[0.45]"
+        style={{
+          backgroundImage: `radial-gradient(circle, #c6293120 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
+        }}
+      />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
 
-          <p className="text-gray-800 text-lg tracking-wider leading-relaxed max-w-4xl mx-auto">
-            Looking for an experienced technician with expertise in POS systems
-            and fuel dispensers. Past certifications and at least two years of
-            experience are required. Must be willing to work long hours and be
-            on-call on weekends.
-          </p>
-
-          <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-2 text-gray-800 text-sm sm:text-base xl:text-lg">
-            <div>
-              <span className="text-[#c62931] font-medium">📍 Location:</span>{" "}
-              <span className="font-semibold">Atlanta, GA</span>
-            </div>
-            <span className="hidden sm:inline-block text-gray-400">|</span>
-            <div>
-              <span className="text-[#c62931] font-medium">💼 Type:</span>{" "}
-              <span className="font-semibold">Full-Time</span>
-            </div>
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div {...fadeUp(0)} className="mb-14">
+          <div className="flex items-center gap-2 mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+              Open Positions
+            </span>
           </div>
-        </div>
-
-        {/* Job Listing 2 */}
-        {/* <div className="mt-8 bg-white/5 backdrop-blur-sm border border-[#c62931]/30 rounded-2xl p-8 text-center shadow-[0_8px_20px_rgba(0,0,0,0.15)] transition-all duration-300 hover:shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:border-[#c62931]/60">
-          <h3 className="font-bold text-[#c62931] text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl mb-3 tracking-wide">
-            Budget Analyst – Tucker, GA
-          </h3>
-
-          <p className="text-gray-800 text-lg tracking-wider leading-relaxed max-w-4xl mx-auto">
-            Atlanta Petroleum Equipment Company seeks a full-time Budget Analyst to assist with cost analysis, fiscal allocation, and budget preparation. Responsibilities include reviewing operating budgets for completeness, accuracy, and conformance with procedures and regulations, as well as analyzing accounting records and financial resources for program development.
-            <br /><br />
-            Must have a Bachelor’s degree in Actuarial Science (or foreign equivalent) and at least 6 months of work experience in business management. Resumes can be sent to 4732 N. Royal Atlanta Drive, Suite E, Tucker, GA 30084.
-          </p>
-
-          <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-2 text-gray-800 text-sm sm:text-base xl:text-lg">
-            <div>
-              <span className="text-[#c62931] font-medium">📍 Location:</span>{' '}
-              <span className="font-semibold">Tucker, GA</span>
-            </div>
-            <span className="hidden sm:inline-block text-gray-400">|</span>
-            <div>
-              <span className="text-[#c62931] font-medium">💼 Type:</span>{' '}
-              <span className="font-semibold">Full-Time</span>
-            </div>
-          </div>
-        </div> */}
-      </div>
-
-      {/* STEPS TO APPLY */}
-      <section className="w-full pb-16 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center">
-          {/* Header */}
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-              How To <span className="text-[#c62931]">Apply</span>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <h2
+              className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
+              style={{ fontFamily: "'Georgia', serif" }}
+            >
+              Now <span className="text-[#c62931]">Hiring.</span>
             </h2>
-            <p className="italic text-lg md:text-xl text-gray-700 tracking-wide">
-              Start your petroleum career with a company that has your back.
+            <p className="text-[#111]/40 text-base max-w-md leading-relaxed lg:text-right">
+              We're actively hiring for roles in operations, compliance, and
+              delivery — with immediate openings.
             </p>
           </div>
+          <div className="mt-10 h-px bg-[#111]/[0.08]" />
+        </motion.div>
 
-          {/* Steps Grid */}
-          <div className="max-w-6xl mx-auto grid gap-8 grid-cols-1 md:grid-cols-3">
-            {steps.map((step, index) => (
-              <div
-                key={index}
-                className="
-            relative bg-white/80 backdrop-blur-sm border border-gray-200 
-            rounded-3xl p-10 shadow-[0_8px_20px_rgba(0,0,0,0.08)] 
-            hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)] 
-            hover:-translate-y-2 transition-all duration-300
-          "
-              >
-                <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#c62931] text-white font-bold text-lg w-10 h-10 flex items-center justify-center rounded-full shadow-md">
-                  {index + 1}
-                </div>
-                <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mt-6 mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-base md:text-lg overflow-auto">
-                  {step.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        {/* Job card */}
+        <motion.div
+          {...fadeUp(0.1)}
+          className="group relative flex flex-col sm:flex-row sm:items-center justify-between gap-6 border border-[#111]/[0.08] hover:border-[#c62931]/60 bg-white rounded-2xl px-8 py-7 transition-all duration-500 hover:shadow-2xl overflow-hidden"
+        >
+          {/* Red left-edge reveal */}
+          <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#c62931] scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-300 ease-out" />
 
-      <div className="relative rounded-3xl max-w-4xl shadow-2xl mt-6 sm:mt-8">
-        <div className="absolute inset-0 bg-gray-200 backdrop-blur-md rounded-3xl z-0"></div>
-        <div className="relative text-center z-10 p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-24">
-          <h2 className="text-4xl font-extrabold mb-12">
-            <span className="text-[#c62931]">Apply Now!</span>
-          </h2>
-          <div id="FinancingContactForm">
-            <CareersForm />
+          <div className="flex-1">
+            <h3
+              className="text-2xl font-black text-[#111] group-hover:text-[#c62931] mb-3 tracking-tight transition-colors duration-300"
+              style={{ fontFamily: "'Georgia', serif" }}
+            >
+              Service Technician
+            </h3>
+            <p className="text-sm text-[#111]/50 leading-relaxed max-w-2xl">
+              Looking for an experienced technician with expertise in POS
+              systems and fuel dispensers. Past certifications and at least two
+              years of experience required. Must be willing to work long hours
+              and be on-call on weekends.
+            </p>
+            <div className="flex flex-wrap items-center gap-4 mt-4">
+              <span className="flex items-center gap-1.5 text-xs font-semibold text-[#111]/50">
+                <MapPin className="w-3.5 h-3.5 text-[#c62931]" /> Atlanta, GA
+              </span>
+              <span className="w-1 h-1 rounded-full bg-[#111]/20" />
+              <span className="flex items-center gap-1.5 text-xs font-semibold text-[#111]/50">
+                <Briefcase className="w-3.5 h-3.5 text-[#c62931]" /> Full-Time
+              </span>
+            </div>
           </div>
-        </div>
+
+          <div className="flex-shrink-0 flex items-center gap-2 text-[#111]/25 group-hover:text-[#c62931] transition-colors duration-300">
+            <span className="text-xs font-bold tracking-widest uppercase">
+              Apply Now
+            </span>
+            <span className="flex items-center justify-center w-7 h-7 rounded-full border border-current group-hover:bg-[#c62931] group-hover:border-[#c62931] transition-all duration-300">
+              <ArrowUpRight className="w-3.5 h-3.5 group-hover:text-white transition-colors duration-300" />
+            </span>
+          </div>
+        </motion.div>
       </div>
-    </div>
-  );
-};
+
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
+    </section>
+
+    {/* ── APPLICATION FORM ──────────────────────────────────────────────── */}
+    <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">
+      <div
+        className="absolute inset-0 opacity-[0.45]"
+        style={{
+          backgroundImage: `radial-gradient(circle, #c6293120 1px, transparent 1px)`,
+          backgroundSize: "32px 32px",
+        }}
+      />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#c62931] opacity-[0.06] blur-[100px] pointer-events-none rounded-full" />
+
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div {...fadeUp(0)} className="text-center mb-12">
+          <div className="flex items-center justify-center gap-2 mb-5">
+            <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+            <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+              Join the Team
+            </span>
+          </div>
+          <h2
+            className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
+            style={{ fontFamily: "'Georgia', serif" }}
+          >
+            Apply <span className="text-[#c62931]">Now.</span>
+          </h2>
+        </motion.div>
+
+        <motion.div
+          {...fadeUp(0.1)}
+          className="border border-[#111]/[0.08] bg-white rounded-3xl p-8 md:p-12 shadow-xl"
+          id="FinancingContactForm"
+        >
+          <CareersForm />
+        </motion.div>
+      </div>
+
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
+    </section>
+  </div>
+);
 
 export default MainCareers;
