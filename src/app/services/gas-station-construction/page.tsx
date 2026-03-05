@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import MainConstruction from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
-// import AccordionConstruction from "./sections/accordion";
+import AccordionConstruction from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
 import ConstructionSchema from "@/components/schema/ConstructionSchema";
@@ -25,7 +25,7 @@ const ServicesConstruction: React.FC = () => {
       <Header />
       <Hero />
       <MainConstruction />
-      {/* <AccordionConstruction /> */}
+      <AccordionConstruction />
       <CTA />
       <ServicesBoxLinks />
       <Footer />
