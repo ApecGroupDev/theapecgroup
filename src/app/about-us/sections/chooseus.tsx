@@ -77,7 +77,7 @@ const ChooseUs: React.FC = () => (
             className="text-3xl lg:text-4xl font-black text-[#111] leading-[1.2] tracking-tight"
             style={{ fontFamily: "'Georgia', serif" }}
           >
-            Let's build success together.{" "}
+            Let’s build success together.{" "}
             <span className="text-[#c62931]">
               What can we do for you today?
             </span>
