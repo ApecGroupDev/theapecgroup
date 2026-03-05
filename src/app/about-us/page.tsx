@@ -1,14 +1,15 @@
 import { Metadata } from "next";
 import ChooseUs from "./sections/chooseus";
 import Hero from "./sections/hero";
-import MissionSection from "./sections/mission";
-import ValuesSection from "./sections/values";
-import VisionSection from "./sections/vision";
+// import MissionSection from "./sections/mission";
+// import ValuesSection from "./sections/values";
+// import VisionSection from "./sections/vision";
 import Footer from "@/components/footer";
 import IntroAbout from "./sections/intro";
 import CTA from "@/components/cta";
 import OrganizationSchema from "@/components/schema/OrganizationSchema";
 import Header from "@/components/header";
+import MissionVisionValues from "./sections/main";
 
 export const metadata: Metadata = {
   title: "About The APEC Group | Petroleum Services",
@@ -28,9 +29,7 @@ const About: React.FC = () => {
       <Header />
       <Hero />
       <IntroAbout />
-      <MissionSection />
-      <ValuesSection />
-      <VisionSection />
+      <MissionVisionValues />
       <ChooseUs />
       <CTA />
       <Footer />
