@@ -99,12 +99,10 @@ const MainCareers: React.FC = () => (
           ))}
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
     </section>
 
     {/* ── NOW HIRING ────────────────────────────────────────────────────── */}
-    <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">
+    <section className="relative w-full overflow-hidden bg-[#f7f5f2] pb-32">
       <div
         className="absolute inset-0 opacity-[0.45]"
         style={{
@@ -112,7 +110,6 @@ const MainCareers: React.FC = () => (
           backgroundSize: "32px 32px",
         }}
       />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div {...fadeUp(0)} className="mb-14">
