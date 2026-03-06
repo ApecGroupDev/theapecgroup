@@ -2,108 +2,96 @@
 
 import React from "react";
 import Link from "next/link";
-import { blogData } from "../components/blogData";
-import CheckmarkBadge from "@/components/checkmarkBadge";
-import { Check } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { blogData } from "../components/blogData";
 
-const checklistItems = [
-  "Regulatory compliance updates (federal, state, and local)",
-  "Environmental best practices for fuel systems",
-  "Construction and remodeling insights for gas stations and C-stores",
-  "Fuel tank maintenance and monitoring guidance",
-  "Financing and equipment upgrade tips",
-  "Branding and customer engagement strategies",
-];
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 32 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
+});
 
-const badges = [
-  "Gas station owners and operators",
-  "Fuel tank installers and contractors",
-  "Petroleum equipment suppliers",
-  "C-store operators",
-  "Environmental compliance professionals",
-  "Fuel system financiers and investors",
-];
+const MainBlog: React.FC = () => (
+  <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">
+    <div
+      className="absolute inset-0 opacity-[0.45]"
+      style={{
+        backgroundImage: `radial-gradient(circle, #c6293120 1px, transparent 1px)`,
+        backgroundSize: "32px 32px",
+      }}
+    />
+    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c62931]/40 to-transparent" />
 
-const BlogMain: React.FC = () => {
-  return (
-    <div className="bg-transparent flex flex-col items-center sm:justify-center h-auto max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="mt-12">
-        <p className="tracking-wider text-lg">
-          The oil and gas industry never stands still — and neither should you.{" "}
-          <span className="text-[#c62931] font-semibold">The APEC Group</span>{" "}
-          Blog delivers timely, practical, and insightful content for fuel
-          retailers, energy professionals, and anyone invested in petroleum
-          operations. From compliance changes to construction tips and marketing
-          strategies, our blog helps you stay competitive and informed.
-        </p>
-      </div>
-
-      <div className="h-auto pt-12 w-full">
-        <div className="grid md:grid-cols-2 md:gap-x-10 xl:gap-x-24">
-          <div className="h-auto">
-            <h2 className="text-4xl font-extrabold text-gray-900">
-              What You’ll Find{" "}
-              <span className="text-[#c62931]">In Our Blog</span>
-            </h2>
-            <div className="space-y-4">
-              {checklistItems.map((item, index) => (
-                <div key={index} className="flex items-start gap-2 mt-4">
-                  <Check className="w-6 h-6 mt-0.5 flex-shrink-0 apec-red" />
-                  <span className="lg:text-lg 2xl:text-xl">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="mt-12 md:mt-0">
-            <h2 className="text-4xl font-extrabold text-gray-900">
-              Who Should <span className="text-[#c62931]">Read This Blog?</span>
-            </h2>
-            <div className="space-y-4 mt-4">
-              {badges.map((text, i) => (
-                <CheckmarkBadge key={i} text={text} />
-              ))}
-            </div>
-          </div>
+    <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Header */}
+      <motion.div {...fadeUp(0)} className="mb-14">
+        <div className="flex items-center gap-2 mb-5">
+          <span className="w-2 h-2 rounded-full bg-[#c62931]" />
+          <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#c62931]/60">
+            Latest Articles
+          </span>
         </div>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-24">
-        {blogData.map((blog, i) => (
-          <Link
-            key={i}
-            href={`/blogs/${blog.slug}`}
-            className="flex flex-col overflow-hidden rounded-xl shadow-2xl hover:shadow-xl transition-shadow duration-300 bg-gray-200"
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+          <h2
+            className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
+            style={{ fontFamily: "'Georgia', serif" }}
           >
-            {/* Image */}
-            <div className="h-56 w-full overflow-hidden">
-              <div className="relative h-full w-full">
-                <Image
-                  src={blog.imageUrl}
-                  alt={blog.title}
-                  fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            </div>
+            From the <span className="text-[#c62931]">Blog.</span>
+          </h2>
+        </div>
+        <div className="mt-10 h-px bg-[#111]/[0.08]" />
+      </motion.div>
 
-            {/* Content */}
-            <div className="flex flex-col p-4 flex-grow">
-              <h3 className="text-lg font-semibold text-[#c62931] mb-1">
-                {blog.title}
-              </h3>
-              <p className="text-gray-700 font-medium text-lg flex-grow">
-                {blog.subtitle}
-              </p>
-              <p className="mt-3 text-sm font-medium text-[#c62931] hover:underline">
-                Read more →
-              </p>
-            </div>
-          </Link>
+      {/* Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {blogData.map((blog, i) => (
+          <motion.div key={i} {...fadeUp(0.06 + i * 0.05)}>
+            <Link
+              href={`/blogs/${blog.slug}`}
+              className="group flex flex-col overflow-hidden border border-[#111]/[0.08] hover:border-[#c62931]/50 bg-white rounded-2xl transition-all duration-300 hover:shadow-2xl h-full relative"
+            >
+              {/* Red left-edge reveal */}
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-[#c62931] scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-300 ease-out z-10" />
+
+              {/* Image */}
+              <div className="h-48 w-full overflow-hidden flex-shrink-0">
+                <div className="relative h-full w-full">
+                  <Image
+                    src={blog.imageUrl}
+                    alt={blog.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="flex flex-col p-5 flex-grow">
+                <h3
+                  className="text-base font-black text-[#111] group-hover:text-[#c62931] mb-2 leading-tight tracking-tight transition-colors duration-300"
+                  style={{ fontFamily: "'Georgia', serif" }}
+                >
+                  {blog.title}
+                </h3>
+                <p className="text-sm text-[#111]/50 leading-relaxed flex-grow">
+                  {blog.subtitle}
+                </p>
+                <div className="mt-4 flex items-center gap-2 text-[#c62931] text-xs font-bold tracking-wide">
+                  <span>Read More</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </div>
+              </div>
+            </Link>
+          </motion.div>
         ))}
       </div>
     </div>
-  );
-};
 
-export default BlogMain;
+    <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#111]/10 to-transparent" />
+  </section>
+);
+
+export default MainBlog;
