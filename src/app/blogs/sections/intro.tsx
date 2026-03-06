@@ -99,7 +99,7 @@ const IntroBlog: React.FC = () => (
               className="text-4xl lg:text-5xl font-black text-[#111] leading-[1.05] tracking-tight mb-8"
               style={{ fontFamily: "'Georgia', serif" }}
             >
-              What You'll Find{" "}
+              What You’ll Find{" "}
               <span className="text-[#c62931]">In Our Blog.</span>
             </h2>
             <div className="space-y-4">
