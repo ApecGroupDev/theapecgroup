@@ -64,12 +64,12 @@ const IntroTeam: React.FC = () => (
             to compliance specialists and service technicians, each member of
             our team is dedicated to your success. With 30+ years of combined
             experience in petroleum systems, our professionals are not only
-            skilled — they're deeply committed to safety, precision, and
+            skilled — they’re deeply committed to safety, precision, and
             innovation.
           </p>
           <p className="text-[#c62931]/80 text-base leading-relaxed italic">
-            Whether you're building a gas station, repairing a fuel tank, or
-            navigating regulations, you'll have experts by your side — every
+            Whether you’re building a gas station, repairing a fuel tank, or
+            navigating regulations, you’ll have experts by your side — every
             step of the way.
           </p>
         </motion.div>
