@@ -79,11 +79,10 @@ const MainConstruction: React.FC = () => (
             <span className="text-white/80 font-semibold">The APEC Group</span>{" "}
             offers complete gas station construction services, from design to
             final inspection. With more than 30 years of experience, we manage
-            every detail so you can focus on your business with confidence.
+            every detail so you can focus on your business.
           </p>
           <p className="text-[#c62931] text-sm font-bold tracking-wide">
-            If you want it built right the first time — safely, efficiently, and
-            to code — we’re the team to call.
+            Safely, efficiently, and to code — every time.
           </p>
         </motion.div>
       </div>
@@ -136,7 +135,7 @@ const MainConstruction: React.FC = () => (
     <div className="relative">
       <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2">
         {/* Services */}
-        <div className="relative z-10 px-4 sm:px-6 lg:px-16 pb-24">
+        <div className="relative z-10 px-4 sm:px-6 lg:px-16 py-24">
           <motion.div {...fadeUp(0)}>
             <div className="flex items-center gap-2 mb-5">
               <span className="w-2 h-2 rounded-full bg-[#c62931]" />
@@ -163,7 +162,7 @@ const MainConstruction: React.FC = () => (
 
         {/* Form */}
         <div
-          className="relative z-10 px-4 sm:px-6 lg:px-16 pb-24"
+          className="relative z-10 px-4 sm:px-6 lg:px-16 py-24"
           id="ConstructionContactForm"
         >
           <motion.div {...fadeUp(0.1)} className="sticky top-28">
