@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import MainImaging from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
-// import AccordionImaging from "./sections/accordion";
+import AccordionImaging from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
 import CanopyImagingSchema from "@/components/schema/CanopyImagingSchema";
@@ -25,7 +25,7 @@ const ServicesImaging: React.FC = () => {
       <Header />
       <Hero />
       <MainImaging />
-      {/* <AccordionImaging /> */}
+      <AccordionImaging />
       <CTA />
       <ServicesBoxLinks />
       <Footer />
