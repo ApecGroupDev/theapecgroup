@@ -2,10 +2,11 @@ import Footer from "@/components/footer";
 import BlogMain from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
-// import AccordionBlogs from "./sections/accordion";
+import AccordionBlogs from "./sections/accordion";
 import CTA from "@/components/cta";
 import BlogSchema from "@/components/schema/BlogsSchema";
 import Header from "@/components/header";
+import IntroBlog from "./sections/intro";
 
 export const metadata: Metadata = {
   title: "Oil and Gas Industry Blogs | The APEC Group",
@@ -23,9 +24,10 @@ const Contact: React.FC = () => {
       <BlogSchema />
       <Header />
       <Hero />
+      <IntroBlog />
       <BlogMain />
       <CTA />
-      {/* <AccordionBlogs /> */}
+      <AccordionBlogs />
       <Footer />
     </div>
   );
