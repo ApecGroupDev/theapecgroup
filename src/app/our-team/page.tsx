@@ -3,7 +3,7 @@ import TeamPage from "./sections/main";
 import { Metadata } from "next";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import IntroBlog from "./sections/intro";
+import IntroTeam from "./sections/intro";
 
 export const metadata: Metadata = {
   title: "Meet Our Team | The APEC Group",
@@ -20,7 +20,7 @@ const About: React.FC = () => {
     <div className="flex flex-col">
       <Header />
       <Hero />
-      <IntroBlog />
+      <IntroTeam />
       <TeamPage />
       <Footer />
     </div>
