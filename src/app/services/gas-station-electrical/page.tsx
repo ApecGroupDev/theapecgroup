@@ -3,7 +3,7 @@ import MainFinancing from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 import ServicesBoxLinks from "@/components/servicesLinks";
-// import AccordionElectrical from "./sections/accordion";
+import AccordionElectrical from "./sections/accordion";
 import CTA from "@/components/cta";
 import Header from "@/components/header";
 
@@ -23,7 +23,7 @@ const ServicesConstruction: React.FC = () => {
       <Header />
       <Hero />
       <MainFinancing />
-      {/* <AccordionElectrical /> */}
+      <AccordionElectrical />
       <CTA />
       <ServicesBoxLinks />
       <Footer />
