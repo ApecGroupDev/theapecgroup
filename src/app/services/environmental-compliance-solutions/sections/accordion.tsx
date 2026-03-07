@@ -4,27 +4,51 @@ import React from "react";
 import Accordion, { AccordionItem } from "@/components/accordion";
 
 const items: AccordionItem[] = [
-  { id: 'one', title: 'Who do you serve with your environmental compliance services?', content: <p>We support gas stations, fleet yards, fuel distributors, C-stores, and other commercial fueling sites.</p> },
-  { id: 'two', title: 'Can you handle all compliance paperwork and permitting?', content: <p>Yes — we take care of permits, reports, documentation, and liaising with regulators so you stay ahead.</p> },
-  { id: 'three', title: 'Do you provide spill prevention and response?', content: <p>Absolutely — we offer prevention systems, emergency response, and cleanup services.</p> },
-  { id: 'four', title: 'Are your services specific to Georgia and Texas regulations?', content: <p>Yes — we have deep local expertise and handle compliance to match all regional codes.</p> },
-  { id: 'five', title: 'Can you test our tanks and lines for leaks?', content: <p>Yes — we provide certified testing and inspections to detect issues before they become costly problems.</p> },
+  {
+    id: "one",
+    title: "Who do you serve with your environmental compliance services?",
+    content:
+      "We support gas stations, fleet yards, fuel distributors, C-stores, and other commercial fueling sites.",
+  },
+  {
+    id: "two",
+    title: "Can you handle all compliance paperwork and permitting?",
+    content:
+      "Yes — we take care of permits, reports, documentation, and liaising with regulators so you stay ahead.",
+  },
+  {
+    id: "three",
+    title: "Do you provide spill prevention and response?",
+    content:
+      "Absolutely — we offer prevention systems, emergency response, and cleanup services.",
+  },
+  {
+    id: "four",
+    title: "Are your services specific to Georgia and Texas regulations?",
+    content:
+      "Yes — we have deep local expertise and handle compliance to match all regional codes.",
+  },
+  {
+    id: "five",
+    title: "Can you test our tanks and lines for leaks?",
+    content:
+      "Yes — we provide certified testing and inspections to detect issues before they become costly problems.",
+  },
 ];
 
-const AccordionCompliance: React.FC = () => {
-  return (
-    <div className="bg-transparent flex flex-col justify-center w-full h-auto py-24 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-6">
-        <span className="text-3xl font-bold">Environmental Compliance FAQs</span>
-      </div>
-      <Accordion
-        className="text-left w-full"
-        items={items}
-        allowMultiple={true}
-        defaultOpenIds={["one", "two"]}
-      />
-    </div>
-  );
-};
+const AccordionCompliance: React.FC = () => (
+  <Accordion
+    items={items}
+    allowMultiple={true}
+    defaultOpenIds={["one", "two"]}
+    eyebrow="FAQ"
+    heading={
+      <>
+        Environmental Compliance <span className="text-[#c62931]">FAQs.</span>
+      </>
+    }
+    subtext="Common questions about our environmental compliance services — answered clearly."
+  />
+);
 
 export default AccordionCompliance;

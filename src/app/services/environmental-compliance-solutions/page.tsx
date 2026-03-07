@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import MainCompliance from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
-// import AccordionCompliance from "./sections/accordion";
+import AccordionCompliance from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
 import EnvironmentalComplianceSchema from "@/components/schema/EnvironmentalComplianceSchema";
@@ -26,7 +26,7 @@ const ServicesCompliance: React.FC = () => {
       <Header />
       <Hero />
       <MainCompliance />
-      {/* <AccordionCompliance /> */}
+      <AccordionCompliance />
       <CTA />
       <ServicesBoxLinks />
       <Footer />
