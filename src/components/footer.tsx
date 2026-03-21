@@ -10,7 +10,7 @@ const navLinks = [
   { label: "Financing", href: "/services/gas-station-financing" },
   { label: "Electrical", href: "/services/gas-station-electrical" },
   { label: "Compliance", href: "/services/environmental-compliance-solutions" },
-  { label: "Careers", href: "/careers" },
+  { label: "Careers", href: "/petroleum-companies-jobs" },
   { label: "Contact", href: "/contact-us" },
 ];
 
@@ -37,14 +37,14 @@ const offices = [
 const Footer: React.FC = () => (
   <footer className="relative bg-[#0a0a0a] text-white overflow-hidden">
     {/* Grid pattern */}
-    {/* <div
+    <div
       className="absolute inset-0 opacity-[0.025]"
       style={{
         backgroundImage: `linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
                           linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px)`,
         backgroundSize: "60px 60px",
       }}
-    /> */}
+    />
 
     {/* Ambient glow */}
     <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#c62931] opacity-[0.12] blur-[120px] pointer-events-none rounded-full" />
