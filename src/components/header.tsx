@@ -211,7 +211,7 @@ const Header: React.FC = () => {
       {/* Mobile menu */}
       <div
         className={`xl:hidden transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+          isOpen ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="border-t border-white/[0.06] bg-[#0a0a0a]/98 backdrop-blur-md px-4 py-4">
