@@ -159,12 +159,24 @@ const Footer: React.FC = () => (
       </div>
 
       {/* Bottom bar */}
-      <div className="mt-16 pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="mt-16 pt-6 border-t border-white/[0.06] flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
         <p className="text-xs text-white/25 tracking-wide">
           © {new Date().getFullYear()} The APEC Group. All rights reserved.
         </p>
         <p className="text-xs text-white/20">
           Atlanta Petroleum Equipment Company Inc.
+        </p>
+        <p className="ft-mono text-xs tracking-wide">
+          Powered by{" "}
+          <a
+            href="https://orangelabs-neon.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold transition-opacity hover:opacity-80"
+          >
+            <span style={{ color: "#FF6A00" }}>Orange</span>
+            <span className="text-white/40">Labs Dev.</span>
+          </a>
         </p>
       </div>
     </div>
