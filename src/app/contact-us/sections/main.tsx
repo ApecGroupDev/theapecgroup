@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ContactForm from "@/components/contactForm";
 import CheckmarkBadge from "@/components/checkmarkBadge";
+import { fadeUp } from "@/lib/animations";
 
 const badges = [
   "Gas station construction planning and estimates",
@@ -14,12 +15,6 @@ const badges = [
   "Convenience store remodeling",
 ];
 
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 const MainContact: React.FC = () => (
   <section id="MainContactForm" className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">

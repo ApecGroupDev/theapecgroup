@@ -3,6 +3,7 @@
 import React, { useId, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
+import { fadeUp } from "@/lib/animations";
 
 export type AccordionItem = {
   id: string;
@@ -22,13 +23,6 @@ export type AccordionProps = {
   heading?: React.ReactNode;
   subtext?: string;
 };
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 export default function Accordion({
   items,

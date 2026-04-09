@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
+import { fadeUp } from "@/lib/animations";
 
 interface Service {
   title: string;
@@ -73,13 +74,6 @@ const externalSlugs = [
   "metalproductsusa.com",
   "https://www.theapecgroup.com/contact-us",
 ];
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 const ServiceCard: React.FC<{ feature: Service; index: number }> = ({
   feature,

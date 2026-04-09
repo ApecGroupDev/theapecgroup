@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
+import { fadeUp } from "@/lib/animations";
 
 const services = [
   {
@@ -63,12 +64,6 @@ const services = [
   },
 ];
 
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 // ─── CARD ─────────────────────────────────────────────────────────────────────
 

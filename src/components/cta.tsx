@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, ArrowUpRight } from "lucide-react";
+import { fadeUp } from "@/lib/animations";
 
 const CONTACTS = [
   {
@@ -18,13 +19,6 @@ const CONTACTS = [
     href: "mailto:Sales@TheAPECgroup.com",
   },
 ] as const;
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 const CTA: React.FC = () => (
   <section className="relative w-full overflow-hidden bg-[#0a0a0a]">

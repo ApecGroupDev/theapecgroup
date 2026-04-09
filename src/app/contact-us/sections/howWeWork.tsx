@@ -12,6 +12,7 @@ import {
   Building2,
   MessageSquare,
 } from "lucide-react";
+import { fadeUp } from "@/lib/animations";
 
 const steps = [
   {
@@ -62,13 +63,6 @@ const reasons = [
     text: "One trusted partner for construction, electrical, financing, and compliance",
   },
 ];
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 const HowWeWork: React.FC = () => (
   <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">

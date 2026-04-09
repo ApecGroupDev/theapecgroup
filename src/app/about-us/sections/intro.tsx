@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import CheckmarkBadge from "@/components/checkmarkBadge";
 import { Check } from "lucide-react";
+import { fadeUp } from "@/lib/animations";
 
 const badges = [
   "Gas station owners and developers",
@@ -22,12 +23,6 @@ const badges2 = [
   "TFFA - Texas Food & Fuel Association",
 ];
 
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 const IntroAbout: React.FC = () => (
   <div className="w-full">

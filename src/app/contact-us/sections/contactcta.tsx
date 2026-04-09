@@ -3,13 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MessageSquare, ArrowUpRight } from "lucide-react";
+import { fadeUp } from "@/lib/animations";
 
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 const scrollToForm = () => {
   const section = document.getElementById("MainContactForm");
