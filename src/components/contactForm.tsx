@@ -10,7 +10,17 @@ interface ContactFormData {
   message: string;
 }
 
-export default function ContactForm() {
+interface ContactFormProps {
+  formspreeUrl?: string;
+  placeholder?: string;
+  buttonLabel?: string;
+}
+
+export default function ContactForm({
+  formspreeUrl = "https://formspree.io/f/mqabwyre",
+  placeholder = "How can we help you?",
+  buttonLabel = "Send Message",
+}: ContactFormProps) {
   const [formData, setFormData] = useState<ContactFormData>({
     name: "",
     email: "",
@@ -33,7 +43,7 @@ export default function ContactForm() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://formspree.io/f/mqabwyre", {
+      const response = await fetch(formspreeUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -96,7 +106,7 @@ export default function ContactForm() {
 
       <textarea
         name="message"
-        placeholder="How can we help you?"
+        placeholder={placeholder}
         value={formData.message}
         onChange={handleChange}
         className={`${inputClass} min-h-36 resize-none`}
@@ -108,7 +118,7 @@ export default function ContactForm() {
         disabled={loading}
         className="group w-full inline-flex items-center justify-center gap-3 bg-[#c62931] hover:bg-[#a8232a] disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300 hover:shadow-[0_8px_30px_rgba(198,41,49,0.3)]"
       >
-        {loading ? "Sending..." : "Send Message"}
+        {loading ? "Sending..." : buttonLabel}
         {!loading && (
           <span className="flex items-center justify-center w-6 h-6 rounded-full bg-white/15 group-hover:bg-white/25 transition-colors duration-300">
             <ArrowUpRight className="w-3.5 h-3.5" />
