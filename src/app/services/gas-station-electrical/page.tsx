@@ -1,5 +1,5 @@
 import Footer from "@/components/footer";
-import MainFinancing from "./sections/main";
+import MainElectrical from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 import ServicesBoxLinks from "@/components/servicesLinks";
@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   },
 };
 
-const ServicesConstruction: React.FC = () => {
+const ServicesElectrical: React.FC = () => {
   return (
     <div className="flex flex-col">
       <Header />
       <Hero />
-      <MainFinancing />
+      <MainElectrical />
       <AccordionElectrical />
       <CTA />
       <ServicesBoxLinks />
@@ -31,4 +31,4 @@ const ServicesConstruction: React.FC = () => {
   );
 };
 
-export default ServicesConstruction;
+export default ServicesElectrical;
