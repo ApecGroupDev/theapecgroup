@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-const Contact: React.FC = () => {
+const BlogsPage: React.FC = () => {
   return (
     <div className="flex flex-col">
       <BlogSchema />
@@ -33,4 +33,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default BlogsPage;
