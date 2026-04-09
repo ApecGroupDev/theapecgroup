@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ServicePage from "@/components/servicesMain";
-import FinancingContactForm from "@/components/financingContactForm";
 
 const MainFinancing: React.FC = () => (
   <ServicePage
@@ -55,7 +54,9 @@ const MainFinancing: React.FC = () => (
         Financing <span className="text-[#c62931]">Service Request.</span>
       </>
     }
-    FormComponent={FinancingContactForm}
+    formspreeUrl="https://formspree.io/f/mkgbynvy"
+    formPlaceholder="Tell us about your financing needs..."
+    formButtonLabel="Send Request"
   />
 );
 

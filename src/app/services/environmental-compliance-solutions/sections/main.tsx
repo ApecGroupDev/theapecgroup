@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ServicePage from "@/components/servicesMain";
-import ComplianceContactForm from "@/components/complianceContactForm";
 
 const MainCompliance: React.FC = () => (
   <ServicePage
@@ -57,7 +56,9 @@ const MainCompliance: React.FC = () => (
         Compliance <span className="text-[#c62931]">Service Request.</span>
       </>
     }
-    FormComponent={ComplianceContactForm}
+    formspreeUrl="https://formspree.io/f/mpwrbzjk"
+    formPlaceholder="Tell us about your compliance needs..."
+    formButtonLabel="Send Request"
   />
 );
 

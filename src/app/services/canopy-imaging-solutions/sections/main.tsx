@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ServicePage from "@/components/servicesMain";
-import ImagingContactForm from "@/components/imagingContactForm";
 
 const MainImaging: React.FC = () => (
   <ServicePage
@@ -58,7 +57,9 @@ const MainImaging: React.FC = () => (
         Canopy Imaging <span className="text-[#c62931]">Service Request.</span>
       </>
     }
-    FormComponent={ImagingContactForm}
+    formspreeUrl="https://formspree.io/f/mvgrloby"
+    formPlaceholder="Tell us about your project..."
+    formButtonLabel="Send Request"
   />
 );
 

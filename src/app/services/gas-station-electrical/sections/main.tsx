@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ServicePage from "@/components/servicesMain";
-import ElectricalContactForm from "@/components/electricalContactForm";
 
 const MainElectrical: React.FC = () => (
   <ServicePage
@@ -59,7 +58,9 @@ const MainElectrical: React.FC = () => (
         Electrical <span className="text-[#c62931]">Service Request.</span>
       </>
     }
-    FormComponent={ElectricalContactForm}
+    formspreeUrl="https://formspree.io/f/xwpbdndg"
+    formPlaceholder="Tell us about your electrical needs..."
+    formButtonLabel="Send Request"
   />
 );
 

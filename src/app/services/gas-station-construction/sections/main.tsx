@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import ServicePage from "@/components/servicesMain";
-import ConstructionContactForm from "@/components/constructionContactForm";
 
 const MainConstruction: React.FC = () => (
   <ServicePage
@@ -58,7 +57,9 @@ const MainConstruction: React.FC = () => (
         Construction <span className="text-[#c62931]">Service Request.</span>
       </>
     }
-    FormComponent={ConstructionContactForm}
+    formspreeUrl="https://formspree.io/f/xkgbynqy"
+    formPlaceholder="Tell us about your project..."
+    formButtonLabel="Send Request"
   />
 );
 
