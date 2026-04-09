@@ -4,6 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import CheckmarkBadge from "@/components/checkmarkBadge";
+import ContactForm from "@/components/contactForm";
+import { fadeUp } from "@/lib/animations";
 
 export type ServicePageProps = {
   // Band 1 — dark banner
@@ -22,15 +24,10 @@ export type ServicePageProps = {
   badges: string[];
   formId: string;
   formHeading: React.ReactNode;
-  FormComponent: React.ComponentType;
+  formspreeUrl: string;
+  formPlaceholder?: string;
+  formButtonLabel?: string;
 };
-
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] },
-});
 
 const ServicePage: React.FC<ServicePageProps> = ({
   eyebrow,
@@ -44,7 +41,9 @@ const ServicePage: React.FC<ServicePageProps> = ({
   badges,
   formId,
   formHeading,
-  FormComponent,
+  formspreeUrl,
+  formPlaceholder,
+  formButtonLabel,
 }) => (
   <section className="relative w-full overflow-hidden bg-[#f7f5f2]">
     {/* Dot grid */}
@@ -181,7 +180,11 @@ const ServicePage: React.FC<ServicePageProps> = ({
               >
                 {formHeading}
               </h2>
-              <FormComponent />
+              <ContactForm
+                formspreeUrl={formspreeUrl}
+                placeholder={formPlaceholder}
+                buttonLabel={formButtonLabel}
+              />
             </div>
           </motion.div>
         </div>
