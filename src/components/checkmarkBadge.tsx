@@ -1,4 +1,4 @@
-import { FaCheck } from "react-icons/fa";
+import { Check } from "lucide-react";
 
 interface CheckmarkBadgeProps {
   text?: string;
@@ -19,9 +19,10 @@ const CheckmarkBadge: React.FC<CheckmarkBadgeProps> = ({
                    w-7 h-7 xl:w-8 xl:h-8"
         style={{ backgroundColor: bgColor }}
       >
-        <FaCheck
-          className="text-white text-[14px] xl:text-[16px]"
+        <Check
+          className="w-3.5 h-3.5 xl:w-4 xl:h-4"
           style={{ color: textColor }}
+          strokeWidth={3}
         />
       </div>
 
