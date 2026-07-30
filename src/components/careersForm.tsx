@@ -45,7 +45,19 @@ export default function CareersForm() {
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFile(e.target.files?.[0] || null);
+    const selectedFile = e.target.files?.[0];
+    if (selectedFile) {
+      if (selectedFile.size > 5 * 1024 * 1024) {
+        setError("File size exceeds 5MB limit. Please upload a smaller file.");
+        setFile(null);
+        e.target.value = "";
+        return;
+      }
+      setError(null);
+      setFile(selectedFile);
+    } else {
+      setFile(null);
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -53,6 +65,9 @@ export default function CareersForm() {
     setError(null);
     setSubmitted(false);
     setLoading(true);
+
+    const formElement = e.target as HTMLFormElement;
+    const gotchaValue = (formElement.elements.namedItem("_gotcha") as HTMLInputElement)?.value;
 
     try {
       const data = new FormData();
@@ -62,24 +77,32 @@ export default function CareersForm() {
       data.append("department", formData.department);
       data.append("message", formData.message);
       if (file) data.append("resume", file);
+      if (gotchaValue) data.append("_gotcha", gotchaValue);
 
-      await fetch("https://formspree.io/f/movljlyj?ajax=true", {
+      const response = await fetch("https://formspree.io/f/movljlyj", {
         method: "POST",
         body: data,
+        headers: {
+          Accept: "application/json",
+        },
       });
 
-      setSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        department: "",
-        message: "",
-      });
-      setFile(null);
-      (e.target as HTMLFormElement).reset();
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          department: "",
+          message: "",
+        });
+        setFile(null);
+        formElement.reset();
+      } else {
+        setError("Failed to submit application. Please try again later.");
+      }
     } catch {
-      setSubmitted(true); // Formspree still receives it on CORS issues
+      setError("Network error occurred. Please check your connection and try again.");
     } finally {
       setLoading(false);
     }
@@ -183,6 +206,9 @@ export default function CareersForm() {
           </span>
         )}
       </div>
+
+      {/* Honeypot for spam protection */}
+      <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
 
       <button
         type="submit"

@@ -42,6 +42,14 @@ export default function ContactForm({
     setError(false);
     setLoading(true);
 
+    const formElement = e.target as HTMLFormElement;
+    const gotchaValue = (formElement.elements.namedItem("_gotcha") as HTMLInputElement)?.value;
+    
+    const payload = {
+      ...formData,
+      ...(gotchaValue ? { _gotcha: gotchaValue } : {}),
+    };
+
     try {
       const response = await fetch(formspreeUrl, {
         method: "POST",
@@ -49,7 +57,7 @@ export default function ContactForm({
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -116,6 +124,9 @@ export default function ContactForm({
         className={`${inputClass} min-h-36 resize-none`}
         required
       />
+
+      {/* Honeypot for spam protection */}
+      <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
 
       <button
         type="submit"
