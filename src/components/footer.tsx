@@ -159,11 +159,16 @@ const Footer: React.FC = () => (
       </div>
 
       {/* Bottom bar */}
-      <div className="mt-16 pt-6 border-t border-white/[0.06] flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
-        <p className="text-xs text-white/25 tracking-wide">
-          © {new Date().getFullYear()} The APEC Group. All rights reserved.
-        </p>
-        <p className="text-xs text-white/20">
+      <div className="mt-16 pt-6 border-t border-white/[0.06] flex flex-col-reverse lg:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-xs text-white/25 tracking-wide">
+          <p>© {new Date().getFullYear()} The APEC Group. All rights reserved.</p>
+          <div className="flex items-center gap-3">
+            <Link href="/privacy-policy" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
+            <span className="opacity-30">|</span>
+            <Link href="/terms-of-service" className="hover:text-white/60 transition-colors">Terms of Service</Link>
+          </div>
+        </div>
+        <p className="text-xs text-white/20 text-center lg:text-left">
           Atlanta Petroleum Equipment Company Inc.
         </p>
         <a

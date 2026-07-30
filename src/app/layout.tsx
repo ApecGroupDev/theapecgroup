@@ -1,8 +1,7 @@
 import '../styles/globals.css';
 import ScrollToTopButton from '@/components/scrollToTop';
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/next';
-import Script from 'next/script';
+import CookieConsent from '@/components/cookieConsent';
 import ScrollToHash from '@/components/ScrollToHash';
 
 export const metadata: Metadata = {
@@ -31,20 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ScrollToHash />
         <div className="max-w-[2560px] mx-auto">{children}</div>
         <ScrollToTopButton />
-        {/* ✅ Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-WXLE69Q1SV"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-WXLE69Q1SV');
-        `}
-        </Script>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <CookieConsent />
       </body>
     </html>
   );
