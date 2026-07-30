@@ -87,7 +87,7 @@ export default function CareersForm() {
 
   const inputClass = `
     w-full bg-[#f7f5f2] border border-[#111]/[0.08] rounded-xl px-4 py-3.5
-    text-sm text-[#111] placeholder-[#111]/30
+    text-sm text-[#111] placeholder-[#111]/60
     focus:outline-none focus:border-[#c62931]/50 focus:bg-white
     transition-all duration-200
   `;
@@ -99,6 +99,7 @@ export default function CareersForm() {
           type="text"
           name="name"
           placeholder="Your Name"
+          aria-label="Your Name"
           value={formData.name}
           onChange={handleChange}
           className={inputClass}
@@ -108,6 +109,7 @@ export default function CareersForm() {
           type="email"
           name="email"
           placeholder="Email Address"
+          aria-label="Email Address"
           value={formData.email}
           onChange={handleChange}
           className={inputClass}
@@ -120,6 +122,7 @@ export default function CareersForm() {
           type="text"
           name="phone"
           placeholder="Phone Number (optional)"
+          aria-label="Phone Number (optional)"
           value={formData.phone}
           onChange={handleChange}
           className={inputClass}
@@ -128,6 +131,7 @@ export default function CareersForm() {
           type="text"
           name="department"
           placeholder="Department"
+          aria-label="Department"
           value={formData.department}
           onChange={handleChange}
           className={inputClass}
@@ -138,6 +142,7 @@ export default function CareersForm() {
       <textarea
         name="message"
         placeholder="Tell us about yourself..."
+        aria-label="Tell us about yourself..."
         value={formData.message}
         onChange={handleChange}
         className={`${inputClass} min-h-32 resize-none`}

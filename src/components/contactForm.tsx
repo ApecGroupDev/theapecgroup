@@ -67,7 +67,7 @@ export default function ContactForm({
 
   const inputClass = `
     w-full bg-[#f7f5f2] border border-[#111]/[0.08] rounded-xl px-4 py-3.5
-    text-sm text-[#111] placeholder-[#111]/30
+    text-sm text-[#111] placeholder-[#111]/60
     focus:outline-none focus:border-[#c62931]/50 focus:bg-white
     transition-all duration-200
   `;
@@ -79,6 +79,7 @@ export default function ContactForm({
           type="text"
           name="name"
           placeholder="Your Name"
+          aria-label="Your Name"
           value={formData.name}
           onChange={handleChange}
           className={inputClass}
@@ -88,6 +89,7 @@ export default function ContactForm({
           type="email"
           name="email"
           placeholder="Email Address"
+          aria-label="Email Address"
           value={formData.email}
           onChange={handleChange}
           className={inputClass}
@@ -99,6 +101,7 @@ export default function ContactForm({
         type="text"
         name="phone"
         placeholder="Phone Number (optional)"
+        aria-label="Phone Number (optional)"
         value={formData.phone}
         onChange={handleChange}
         className={inputClass}
@@ -107,6 +110,7 @@ export default function ContactForm({
       <textarea
         name="message"
         placeholder={placeholder}
+        aria-label={placeholder}
         value={formData.message}
         onChange={handleChange}
         className={`${inputClass} min-h-36 resize-none`}
