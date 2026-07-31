@@ -6,6 +6,33 @@ import ScrollToHash from '@/components/ScrollToHash';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.theapecgroup.com'),
+  title: {
+    default: 'The APEC Group | Petroleum Solutions',
+    template: '%s | The APEC Group',
+  },
+  description: 'One-stop-shop for all petroleum needs — fuels, tanks, pumps, compliance, and emergency services.',
+  openGraph: {
+    title: 'The APEC Group | Petroleum Solutions',
+    description: 'One-stop-shop for all petroleum needs — fuels, tanks, pumps, compliance, and emergency services.',
+    url: 'https://www.theapecgroup.com',
+    siteName: 'The APEC Group',
+    images: [
+      {
+        url: '/logos/APEC.webp',
+        width: 1200,
+        height: 630,
+        alt: 'The APEC Group Preview',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The APEC Group | Petroleum Solutions',
+    description: 'One-stop-shop for all petroleum needs — fuels, tanks, pumps, compliance, and emergency services.',
+    images: ['/logos/APEC.webp'],
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },

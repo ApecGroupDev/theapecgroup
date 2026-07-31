@@ -1,4 +1,3 @@
-"use client";
 import SchemaMarkup from "./SchemaMarkup";
 
 export default function HomeSchema() {
@@ -12,14 +11,25 @@ export default function HomeSchema() {
         "url": "https://www.theapecgroup.com/",
         "telephone": "855-444-2732",
         "description": "One-stop-shop for all petroleum needs — fuels, tanks, pumps, compliance, and emergency services. Serving Georgia, Texas, and Atlanta since 1989.",
-        "image": "https://www.theapecgroup.com/images/logo.webp",
-        "logo": "https://www.theapecgroup.com/images/logo.webp",
+        "image": "https://www.theapecgroup.com/logos/APEC.webp",
+        "logo": "https://www.theapecgroup.com/logos/APEC.webp",
         "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Main Office - Tucker, GA; Branch Office - Houston, TX",
-          "addressCountry": "US"
-        },
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "4732-E North Royal Atlanta Drive",
+            "addressLocality": "Tucker",
+            "addressRegion": "GA",
+            "postalCode": "30084",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "PostalAddress",
+            "addressLocality": "Houston",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+          }
+        ],
         "areaServed": [
           { "@type": "Place", "name": "Georgia" },
           { "@type": "Place", "name": "Texas" },
