@@ -16,11 +16,11 @@
 
 (FIXED) - **Unprotected Lead Channels Open to Automated Spam:** Both the main contact form and careers application form submit directly to client-side Formspree endpoints without CAPTCHA validation, bot-detection Turnstile, or simple honeypot protection, leaving sales and recruitment funnels exposed to automated bot spam and quota exhaustion.
 
-(FIXED)- **Critical Accessibility & ADA Exposure in Lead Funnels:** Contact and job application forms entirely lack programmatic `<label>` elements or screen reader ARIA attributes, relying solely on placeholder text with low contrast (30% opacity black, ~2.2:1 ratio). This violates WCAG 2.1 AA baselines and introduces ADA Title III digital accessibility exposure on high-converting public lead pages.
+(FIXED) - **Critical Accessibility & ADA Exposure in Lead Funnels:** Contact and job application forms entirely lack programmatic `<label>` elements or screen reader ARIA attributes, relying solely on placeholder text with low contrast (30% opacity black, ~2.2:1 ratio). This violates WCAG 2.1 AA baselines and introduces ADA Title III digital accessibility exposure on high-converting public lead pages.
 
-- **Missing Social Sharing Graphs & Broken Schema Markup:** The site contains zero Open Graph or Twitter card metadata, meaning links shared across LinkedIn, messaging apps, or email display without visual preview cards. Additionally, schema structured data references non-existent logo URLs (404 errors) and formats multi-city office addresses incorrectly.
+(FIXED) - **Missing Social Sharing Graphs & Broken Schema Markup:** The site contains zero Open Graph or Twitter card metadata, meaning links shared across LinkedIn, messaging apps, or email display without visual preview cards. Additionally, schema structured data references non-existent logo URLs (404 errors) and formats multi-city office addresses incorrectly.
 
-  (FIXED) - **Non-Compliant Analytics & Privacy Practices:** Google Analytics and Vercel Analytics scripts execute unconditionally for all visitors without a disclosure notice, cookie banner, or link to a published Privacy Policy on the domain—violating general consumer privacy best practices and Google Analytics vendor Terms of Service.
+(FIXED) - **Non-Compliant Analytics & Privacy Practices:** Google Analytics and Vercel Analytics scripts execute unconditionally for all visitors without a disclosure notice, cookie banner, or link to a published Privacy Policy on the domain—violating general consumer privacy best practices and Google Analytics vendor Terms of Service.
 
 ---
 
@@ -196,9 +196,9 @@ _Impact:_
 
 ### 3.7 COMPLIANCE & LEGAL BASICS
 
-- **Zero Privacy Policy or Terms of Service Representation:** Exhaustive repository analysis demonstrates zero dedicated webpages, footer navigation anchors, or document links for a domain Privacy Policy or Terms of Service agreement.
-- **Tracking & Lead Collection Non-Compliance:** The primary application structure (`src/app/layout.tsx`) immediately executes global user tracking via Google Analytics (`G-WXLE69Q1SV`) and Vercel Analytics without user disclosure or consent mechanisms. Combining unannounced user tracking with persistent PII harvesting (names, email addresses, phone contact data, and professional resumes via Formspree) directly exposes the operating enterprise to regulatory enforcement and violating standard vendor terms of use (e.g., Google Analytics core terms).
-- **ADA Title III Digital Accessibility Exposure:** Given that the domain functions as a commercial B2B enterprise operating in domestic US markets (Georgia, Texas, Atlanta), persistent WCAG AA non-compliance across core public engagement funnels (inaccessible form structures and deficient visual contrast ratios) introduces tangible ADA Title III litigation risks.
+(FIXED) - **Zero Privacy Policy or Terms of Service Representation:** Exhaustive repository analysis demonstrates zero dedicated webpages, footer navigation anchors, or document links for a domain Privacy Policy or Terms of Service agreement.
+(FIXED) - **Tracking & Lead Collection Non-Compliance:** The primary application structure (`src/app/layout.tsx`) immediately executes global user tracking via Google Analytics (`G-WXLE69Q1SV`) and Vercel Analytics without user disclosure or consent mechanisms. Combining unannounced user tracking with persistent PII harvesting (names, email addresses, phone contact data, and professional resumes via Formspree) directly exposes the operating enterprise to regulatory enforcement and violating standard vendor terms of use (e.g., Google Analytics core terms).
+(FIXED) - **ADA Title III Digital Accessibility Exposure:** Given that the domain functions as a commercial B2B enterprise operating in domestic US markets (Georgia, Texas, Atlanta), persistent WCAG AA non-compliance across core public engagement funnels (inaccessible form structures and deficient visual contrast ratios) introduces tangible ADA Title III litigation risks.
 
 ---
 
@@ -209,7 +209,7 @@ _Impact:_
 3. **Correct Form Submission Error Handling:** Delete `setSubmitted(true)` from the catch handler in `src/components/careersForm.tsx`, ensuring network or validation failures correctly display an error alert rather than an unearned success confirmation.
 4. **Fix Schema Broken 404 Logo URLs & Server Rendering:** Update `HomeSchema.tsx` and `OrganizationSchema.tsx` to reference the correct image location (`https://www.theapecgroup.com/logos/APEC.webp`), separate office locations into accurate distinct schema entries, and remove `"use client"` statements.
 5. **Add Form Labels & Restore Text Contrast:** Insert explicit `aria-label` properties or visual HTML labels across `contactForm.tsx` and `careersForm.tsx`, and adjust placeholder color styling from `placeholder-[#111]/30` to `placeholder-[#111]/60` (or greater) to satisfy WCAG AA ratio standards.
-6. **Integrate Form Honeypots & Remove Unused Media:** Introduce a silent Formspree honeypot field (`<input type="text" name="_gotcha" className="hidden" />`) to immediately mitigate automated scraping bots, and delete the unused **15.2 MB** `public/videos/Main_v2.mp4` repository artifact.
+   (FIXED) 6. **Integrate Form Honeypots & Remove Unused Media:** Introduce a silent Formspree honeypot field (`<input type="text" name="_gotcha" className="hidden" />`) to immediately mitigate automated scraping bots, and delete the unused **15.2 MB** `public/videos/Main_v2.mp4` repository artifact.
 
 ---
 
