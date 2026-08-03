@@ -68,7 +68,7 @@
 
 ### 3.2 SECURITY & DATA HANDLING AUDIT
 
-#### A. False-Positive Form Submissions (High Risk)
+(FIXED) #### A. False-Positive Form Submissions (High Risk)
 
 In `src/components/careersForm.tsx`, the error handler explicitly forces submission success upon encountering exceptions during fetch execution:
 
@@ -82,14 +82,14 @@ In `src/components/careersForm.tsx`, the error handler explicitly forces submiss
 
 _Impact:_ If Formspree fails due to rate limits, expired endpoint quotas, network drops, or payload rejections (such as an oversized resume file), the user is falsely reassured that their recruitment application was received. This breaks lead reliability and causes untraceable applicant data loss.
 
-#### B. Unprotected Endpoint Exposure & Spam Vulnerability (High Risk)
+(FIXED) #### B. Unprotected Endpoint Exposure & Spam Vulnerability (High Risk)
 
 Both `src/components/contactForm.tsx` and `src/components/careersForm.tsx` submit directly from client components without automated bot mitigations:
 
 - **Zero Bot Verification:** No reCAPTCHA, Cloudflare Turnstile, or silent honeypot inputs (e.g., `<input type="text" name="_gotcha" style="display:none" />`) exist in either form. Automated scraping bots can easily extract the target Formspree keys (`mqabwyre` and `movljlyj`) and flood internal inbox channels with automated spam.
 - **Missing File Size & Type Validation:** The file input in `careersForm.tsx` solely relies on standard HTML `accept=".pdf,.doc,.docx"` attributes without JavaScript-side size verification before transmission. Attempting to attach large documents will trigger silent network rejections without clear user error messaging.
 
-#### C. Absent HTTP Security Headers & Config Hygiene (Info/Medium)
+(FIXED) #### C. Absent HTTP Security Headers & Config Hygiene (Info/Medium)
 
 Because `next.config.ts` is empty and no custom Vercel configurations exist, the web application deploys without hardened Content Security Policy (CSP), strict X-Frame-Options, HSTS preload directives, or explicit Referrer-Policy customizations, relying solely on hosting default configurations. _(Note: Requires live network verification to measure exact Vercel response headers)._
 
