@@ -3,6 +3,21 @@ import ScrollToTopButton from '@/components/scrollToTop';
 import type { Metadata } from 'next';
 import CookieConsent from '@/components/cookieConsent';
 import ScrollToHash from '@/components/ScrollToHash';
+import localFont from 'next/font/local';
+
+const metropolis = localFont({
+  src: [
+    { path: '../../node_modules/@fontsource/metropolis/files/metropolis-latin-300-normal.woff2', weight: '300', style: 'normal' },
+    { path: '../../node_modules/@fontsource/metropolis/files/metropolis-latin-400-normal.woff2', weight: '400', style: 'normal' },
+    { path: '../../node_modules/@fontsource/metropolis/files/metropolis-latin-500-normal.woff2', weight: '500', style: 'normal' },
+    { path: '../../node_modules/@fontsource/metropolis/files/metropolis-latin-600-normal.woff2', weight: '600', style: 'normal' },
+    { path: '../../node_modules/@fontsource/metropolis/files/metropolis-latin-700-normal.woff2', weight: '700', style: 'normal' },
+    { path: '../../node_modules/@fontsource/metropolis/files/metropolis-latin-800-normal.woff2', weight: '800', style: 'normal' },
+    { path: '../../node_modules/@fontsource/metropolis/files/metropolis-latin-900-normal.woff2', weight: '900', style: 'normal' },
+  ],
+  display: 'swap',
+  variable: '--font-metropolis',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.theapecgroup.com'),
@@ -45,7 +60,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="text-gray-800">
+    <html lang="en" className={`${metropolis.variable} text-gray-800`}>
       <head>
         {/* Google Search Console */}
         <meta
@@ -53,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="h5105p5iWJykIV1y3DbAOkWpFei5332BIw9M2XvO72s"
         />
       </head>
-      <body className="min-h-screen">
+      <body className="min-h-screen font-sans">
         <ScrollToHash />
         <div className="max-w-[2560px] mx-auto">{children}</div>
         <ScrollToTopButton />

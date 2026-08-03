@@ -114,12 +114,12 @@ In `src/app/home/sections/hero3.tsx`, an unusually large animated graphic is loa
 
 _Impact:_ Setting the `unoptimized` flag completely disables Next.js dynamic image compression and sizing. Every homepage visitor downloads an untouched **20,782,200 byte (20.8 MB)** file over network conduits, severely increasing Largest Contentful Paint (LCP) times, exhausting cellular data caps, and generating poor Core Web Vitals audit scores.
 
-#### B. Dead Code & Mobile Bandwidth Drain from Heavy Media (Medium Risk)
+(FIXED) #### B. Dead Code & Mobile Bandwidth Drain from Heavy Media (Medium Risk)
 
 - **Hidden Mobile Video Fetching:** In `src/app/home/sections/hero1.tsx`, a **14.5 MB** looping video (`PumpAnimation.mp4`) is wrapped inside a responsive container (`<section className="... hidden md:block">`). Modern mobile browsers continue initiating DOM network fetches for `<video>` elements concealed via CSS `display: none`, wasting significant cellular bandwidth on media that remains entirely invisible to mobile users.
 - **Unreferenced Dead Assets:** The filesystem contains `public/videos/Main_v2.mp4` (a **15.2 MB** file) which zero components or stylesheets reference, needlessly inflating repository size and continuous integration bundle downloads.
 
-#### C. Render-Blocking Font Architecture (Medium Risk)
+(FIXED) #### C. Render-Blocking Font Architecture (Medium Risk)
 
 In `src/styles/globals.css`, fonts are loaded using sequential CSS import declarations:
 
@@ -149,7 +149,7 @@ const goneUrls = [
 ];
 ```
 
-_Impact:_ Returning `410 Gone` with raw HTML strings instructs search engine spiders to immediately drop these indexed URLs and terminate existing external link equity and backlink domain authority. These historical endpoints must be systematically redirected using **301 Moved Permanently** instructions to their contemporary counterparts (e.g., `/services/environmental-compliance-solutions`, `/services/gas-station-construction`).
+(FIXED) _Impact:_ Returning `410 Gone` with raw HTML strings instructs search engine spiders to immediately drop these indexed URLs and terminate existing external link equity and backlink domain authority. These historical endpoints must be systematically redirected using **301 Moved Permanently** instructions to their contemporary counterparts (e.g., `/services/environmental-compliance-solutions`, `/services/gas-station-construction`).
 
 #### B. Broken Structured Schema Data & 404 Image URLs (Medium Risk)
 
