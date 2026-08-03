@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/services/gas-station-financing",
   },
+  openGraph: {
+    title: "Gas Station Financing Experts | APEC",
+    description: "APEC offers gas station financing with flexible funding options for construction, equipment, and improvements. Power your energy project today.",
+  },
+  twitter: {
+    title: "Gas Station Financing Experts | APEC",
+    description: "APEC offers gas station financing with flexible funding options for construction, equipment, and improvements. Power your energy project today.",
+  },
 };
 
 const ServicesFinancing: React.FC = () => {

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },
+  openGraph: {
+    title: "Petroleum Equipment Innovations Changing the Game",
+    description: "Explore petroleum equipment innovations like IoT, AI, and eco-tech reshaping safety, efficiency, and sustainability in the industry.",
+  },
+  twitter: {
+    title: "Petroleum Equipment Innovations Changing the Game",
+    description: "Explore petroleum equipment innovations like IoT, AI, and eco-tech reshaping safety, efficiency, and sustainability in the industry.",
+  },
 };
 
 const BlogArticlePage: React.FC = () => {

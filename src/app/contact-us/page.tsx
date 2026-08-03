@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/contact-us",
   },
+  openGraph: {
+    title: "Contact The APEC Group | Petroleum Services",
+    description: "Reach out to The APEC Group for expert petroleum services and solutions. Connect with our team for inquiries and support.",
+  },
+  twitter: {
+    title: "Contact The APEC Group | Petroleum Services",
+    description: "Reach out to The APEC Group for expert petroleum services and solutions. Connect with our team for inquiries and support.",
+  },
 };
 
 const Contact: React.FC = () => {

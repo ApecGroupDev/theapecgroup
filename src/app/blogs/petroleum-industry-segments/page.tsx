@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },
+  openGraph: {
+    title: "Petroleum Industry Segments Explained Clearly",
+    description: "Explore the main petroleum industry segments—upstream, midstream, and downstream—and how they work together to fuel the economy.",
+  },
+  twitter: {
+    title: "Petroleum Industry Segments Explained Clearly",
+    description: "Explore the main petroleum industry segments—upstream, midstream, and downstream—and how they work together to fuel the economy.",
+  },
 };
 
 const BlogArticlePage: React.FC = () => {

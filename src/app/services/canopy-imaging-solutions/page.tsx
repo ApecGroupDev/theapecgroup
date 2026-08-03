@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/services/canopy-imaging-solutions",
   },
+  openGraph: {
+    title: "Canopy Imaging Solutions | APEC",
+    description: "Canopy imaging solutions from APEC deliver custom visual designs and installations that transform gas station branding and customer appeal.",
+  },
+  twitter: {
+    title: "Canopy Imaging Solutions | APEC",
+    description: "Canopy imaging solutions from APEC deliver custom visual designs and installations that transform gas station branding and customer appeal.",
+  },
 };
 
 const ServicesImaging: React.FC = () => {

@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/services",
   },
+  openGraph: {
+    title: "Petroleum Equipment Services & Repairs | The APEC Group",
+    description: "APEC provides petroleum equipment services, construction, tank repair, and environmental compliance for fuel stations. Reliable energy partner.",
+  },
+  twitter: {
+    title: "Petroleum Equipment Services & Repairs | The APEC Group",
+    description: "APEC provides petroleum equipment services, construction, tank repair, and environmental compliance for fuel stations. Reliable energy partner.",
+  },
 };
 
 const Services: React.FC = () => {

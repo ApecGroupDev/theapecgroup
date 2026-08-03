@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs/petroleum-research',
   },
+  openGraph: {
+    title: "Petroleum Research: Key Focus Areas & Innovation",
+    description: "See how petroleum research is shaping safer, cleaner energy. From extraction to renewables, discover what top institutes are studying.",
+  },
+  twitter: {
+    title: "Petroleum Research: Key Focus Areas & Innovation",
+    description: "See how petroleum research is shaping safer, cleaner energy. From extraction to renewables, discover what top institutes are studying.",
+  },
 };
 
 const BlogArticlePage: React.FC = () => {

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },
+  openGraph: {
+    title: "Gas Station Inspection Checklist: Full Safety Guide",
+    description: "Stay compliant and safe with this gas station inspection checklist. Covers fuel systems, fire safety, signage, spills, and more.",
+  },
+  twitter: {
+    title: "Gas Station Inspection Checklist: Full Safety Guide",
+    description: "Stay compliant and safe with this gas station inspection checklist. Covers fuel systems, fire safety, signage, spills, and more.",
+  },
 };
 
 const BlogArticlePage: React.FC = () => {

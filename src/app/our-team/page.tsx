@@ -13,6 +13,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/our-team",
   },
+  openGraph: {
+    title: "Meet Our Team | The APEC Group",
+    description: "Meet The APEC Group’s expert team, delivering innovative petroleum solutions since 1989. Learn about our dedicated professionals.",
+  },
+  twitter: {
+    title: "Meet Our Team | The APEC Group",
+    description: "Meet The APEC Group’s expert team, delivering innovative petroleum solutions since 1989. Learn about our dedicated professionals.",
+  },
 };
 
 const About: React.FC = () => {

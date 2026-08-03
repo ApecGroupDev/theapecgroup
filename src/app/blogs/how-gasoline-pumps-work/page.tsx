@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs',
   },
+  openGraph: {
+    title: "How Gasoline Pumps Work: Full Guide Explained",
+    description: "Learn how gasoline pumps work, from tank to nozzle. Understand their parts, types, and how they power everyday fuel stations.",
+  },
+  twitter: {
+    title: "How Gasoline Pumps Work: Full Guide Explained",
+    description: "Learn how gasoline pumps work, from tank to nozzle. Understand their parts, types, and how they power everyday fuel stations.",
+  },
 };
 
 const BlogArticlePage: React.FC = () => {

@@ -20,6 +20,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/",
   },
+  openGraph: {
+    title: "Petroleum Products Company | The APEC Group",
+    description: "The APEC Group is a petroleum products company offering fuels, lubricants, gas station construction, financing, compliance, and equipment services.",
+  },
+  twitter: {
+    title: "Petroleum Products Company | The APEC Group",
+    description: "The APEC Group is a petroleum products company offering fuels, lubricants, gas station construction, financing, compliance, and equipment services.",
+  },
 };
 
 export default function Page() {

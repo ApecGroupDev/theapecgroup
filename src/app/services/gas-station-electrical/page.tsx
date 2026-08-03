@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/services/gas-station-electrical",
   },
+  openGraph: {
+    title: "Gas Station Electrical Contractors | APEC Electrical Services",
+    description: "Trusted gas station electrical contractors. APEC delivers safe, code-compliant installations, canopy lighting, wiring & 24/7 support for fuel stations.",
+  },
+  twitter: {
+    title: "Gas Station Electrical Contractors | APEC Electrical Services",
+    description: "Trusted gas station electrical contractors. APEC delivers safe, code-compliant installations, canopy lighting, wiring & 24/7 support for fuel stations.",
+  },
 };
 
 const ServicesElectrical: React.FC = () => {

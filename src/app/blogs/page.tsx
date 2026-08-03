@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/blogs",
   },
+  openGraph: {
+    title: "Oil and Gas Industry Blogs | The APEC Group",
+    description: "Stay informed with The APEC Group's oil and gas industry blogs. Explore expert insights and trends at theapecgroup.com/blog for energy sector updates.",
+  },
+  twitter: {
+    title: "Oil and Gas Industry Blogs | The APEC Group",
+    description: "Stay informed with The APEC Group's oil and gas industry blogs. Explore expert insights and trends at theapecgroup.com/blog for energy sector updates.",
+  },
 };
 
 const BlogsPage: React.FC = () => {

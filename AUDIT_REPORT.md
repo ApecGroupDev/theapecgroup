@@ -157,7 +157,7 @@ _Impact:_ Returning `410 Gone` with raw HTML strings instructs search engine spi
 - **Invalid Postal Address Structuring:** In `HomeSchema.tsx`, multiple office locations are illegally combined into a single address string: `"streetAddress": "Main Office - Tucker, GA; Branch Office - Houston, TX"`. This violates schema.org syntax rules and harms Search Console LocalBusiness parsing and maps rankings.
 - **Unfavorable Client Component Execution:** Every Schema template is prefixed with `"use client"`. Structured JSON-LD graphs should execute strictly within server components or SSR pipelines to guarantee search indexing crawlers parse structured entities without relying on Javascript runtime evaluation.
 
-#### C. Total Absence of Open Graph & Twitter Social Graphs (Medium Risk)
+(FIXED) #### C. Total Absence of Open Graph & Twitter Social Graphs (Medium Risk)
 
 No route definitions (`src/app/page.tsx`, `src/app/about-us/page.tsx`, etc.) nor the root layout contain Open Graph (`openGraph`) or Twitter Card (`twitter`) object definitions within Next.js `Metadata` exports. High-value B2B proposal links forwarded through LinkedIn, email clients, Slack, or messaging services render without branded title preview graphics or descriptive abstracts.
 
@@ -181,8 +181,8 @@ Across `src/components/contactForm.tsx` and `src/components/careersForm.tsx`, al
 
 _Impact:_
 
-- **WCAG SC 3.3.2 (Labels or Instructions) & 1.3.1 (Info and Relationships) Violation:** Screen readers and assistive navigation technologies struggle to accurately announce input purposes when programmatic `<label>` associations or explicit `aria-label` attributes are absent. Relying on visual placeholders also impairs cognitive accessibility, as labels vanish the moment an applicant begins typing.
-- **WCAG SC 1.4.3 (Contrast Minimum) Violation:** Styling placeholder text at 30% opacity against light cream/white backgrounds yields an effective contrast ratio of roughly **2.2:1**, falling substantially below WCAG AA baseline thresholds (**4.5:1** for standard text and **3:1** for active user components).
+(FIXED) - **WCAG SC 3.3.2 (Labels or Instructions) & 1.3.1 (Info and Relationships) Violation:** Screen readers and assistive navigation technologies struggle to accurately announce input purposes when programmatic `<label>` associations or explicit `aria-label` attributes are absent. Relying on visual placeholders also impairs cognitive accessibility, as labels vanish the moment an applicant begins typing.
+(FIXED) - **WCAG SC 1.4.3 (Contrast Minimum) Violation:** Styling placeholder text at 30% opacity against light cream/white backgrounds yields an effective contrast ratio of roughly **2.2:1**, falling substantially below WCAG AA baseline thresholds (**4.5:1** for standard text and **3:1** for active user components).
 
 ---
 

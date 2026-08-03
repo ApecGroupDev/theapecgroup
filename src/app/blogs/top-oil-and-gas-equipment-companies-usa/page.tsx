@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.theapecgroup.com/blogs/top-oil-and-gas-equipment-companies-usa',
   },
+  openGraph: {
+    title: "Top Oil & Gas Equipment Companies in the USA",
+    description: "Meet the biggest oil and gas equipment companies in the USA. Learn who’s leading in drilling, services, and innovation.",
+  },
+  twitter: {
+    title: "Top Oil & Gas Equipment Companies in the USA",
+    description: "Meet the biggest oil and gas equipment companies in the USA. Learn who’s leading in drilling, services, and innovation.",
+  },
 };
 
 const BlogArticlePage: React.FC = () => {

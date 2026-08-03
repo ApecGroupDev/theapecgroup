@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     canonical:
       "https://www.theapecgroup.com/services/environmental-compliance-solutions",
   },
+  openGraph: {
+    title: "Environmental Compliance Solutions | APEC",
+    description: "APEC provides environmental compliance solutions for fuel stations, offering testing, training, and eco-friendly petroleum site services.",
+  },
+  twitter: {
+    title: "Environmental Compliance Solutions | APEC",
+    description: "APEC provides environmental compliance solutions for fuel stations, offering testing, training, and eco-friendly petroleum site services.",
+  },
 };
 
 const ServicesCompliance: React.FC = () => {

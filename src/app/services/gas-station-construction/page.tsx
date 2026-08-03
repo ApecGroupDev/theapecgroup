@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.theapecgroup.com/services/gas-station-construction",
   },
+  openGraph: {
+    title: "Gas Station Construction Services | APEC",
+    description: "Gas station construction services by APEC. We build durable, compliant fuel stations with full design, installation, and project management support.",
+  },
+  twitter: {
+    title: "Gas Station Construction Services | APEC",
+    description: "Gas station construction services by APEC. We build durable, compliant fuel stations with full design, installation, and project management support.",
+  },
 };
 
 const ServicesConstruction: React.FC = () => {
