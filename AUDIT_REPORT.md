@@ -153,9 +153,9 @@ _Impact:_ Returning `410 Gone` with raw HTML strings instructs search engine spi
 
 #### B. Broken Structured Schema Data & 404 Image URLs (Medium Risk)
 
-- **404 Schema Media References:** In `src/components/schema/HomeSchema.tsx` and `OrganizationSchema.tsx`, company logos point to non-existent URLs (`https://www.theapecgroup.com/images/logo.webp` and `/logo.png`). Neither file exists in the repository root or public folders (the accurate path is `/logos/APEC.webp`).
-- **Invalid Postal Address Structuring:** In `HomeSchema.tsx`, multiple office locations are illegally combined into a single address string: `"streetAddress": "Main Office - Tucker, GA; Branch Office - Houston, TX"`. This violates schema.org syntax rules and harms Search Console LocalBusiness parsing and maps rankings.
-- **Unfavorable Client Component Execution:** Every Schema template is prefixed with `"use client"`. Structured JSON-LD graphs should execute strictly within server components or SSR pipelines to guarantee search indexing crawlers parse structured entities without relying on Javascript runtime evaluation.
+(FIXED) - **404 Schema Media References:** In `src/components/schema/HomeSchema.tsx` and `OrganizationSchema.tsx`, company logos point to non-existent URLs (`https://www.theapecgroup.com/images/logo.webp` and `/logo.png`). Neither file exists in the repository root or public folders (the accurate path is `/logos/APEC.webp`).
+(FIXED) - **Invalid Postal Address Structuring:** In `HomeSchema.tsx`, multiple office locations are illegally combined into a single address string: `"streetAddress": "Main Office - Tucker, GA; Branch Office - Houston, TX"`. This violates schema.org syntax rules and harms Search Console LocalBusiness parsing and maps rankings.
+(FIXED) - **Unfavorable Client Component Execution:** Every Schema template is prefixed with `"use client"`. Structured JSON-LD graphs should execute strictly within server components or SSR pipelines to guarantee search indexing crawlers parse structured entities without relying on Javascript runtime evaluation.
 
 (FIXED) #### C. Total Absence of Open Graph & Twitter Social Graphs (Medium Risk)
 
