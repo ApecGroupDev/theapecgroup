@@ -83,47 +83,59 @@ export default function ContactForm({
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="name" className="text-xs font-semibold text-[#111]/70 pl-1">Your Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="e.g., John Doe"
+            value={formData.name}
+            onChange={handleChange}
+            className={inputClass}
+            required
+          />
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="email" className="text-xs font-semibold text-[#111]/70 pl-1">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g., john@example.com"
+            value={formData.email}
+            onChange={handleChange}
+            className={inputClass}
+            required
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="phone" className="text-xs font-semibold text-[#111]/70 pl-1">Phone Number (optional)</label>
         <input
+          id="phone"
           type="text"
-          name="name"
-          placeholder="Your Name"
-          aria-label="Your Name"
-          value={formData.name}
+          name="phone"
+          placeholder="e.g., (555) 123-4567"
+          value={formData.phone}
           onChange={handleChange}
           className={inputClass}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          aria-label="Email Address"
-          value={formData.email}
-          onChange={handleChange}
-          className={inputClass}
-          required
         />
       </div>
 
-      <input
-        type="text"
-        name="phone"
-        placeholder="Phone Number (optional)"
-        aria-label="Phone Number (optional)"
-        value={formData.phone}
-        onChange={handleChange}
-        className={inputClass}
-      />
-
-      <textarea
-        name="message"
-        placeholder={placeholder}
-        aria-label={placeholder}
-        value={formData.message}
-        onChange={handleChange}
-        className={`${inputClass} min-h-36 resize-none`}
-        required
-      />
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="message" className="text-xs font-semibold text-[#111]/70 pl-1">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder={placeholder}
+          value={formData.message}
+          onChange={handleChange}
+          className={`${inputClass} min-h-36 resize-none`}
+          required
+        />
+      </div>
 
       {/* Honeypot for spam protection */}
       <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />

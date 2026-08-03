@@ -118,59 +118,74 @@ export default function CareersForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid sm:grid-cols-2 gap-4">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          aria-label="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          className={inputClass}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email Address"
-          aria-label="Email Address"
-          value={formData.email}
-          onChange={handleChange}
-          className={inputClass}
-          required
-        />
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="name" className="text-xs font-semibold text-[#111]/70 pl-1">Your Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="e.g., John Doe"
+            value={formData.name}
+            onChange={handleChange}
+            className={inputClass}
+            required
+          />
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="email" className="text-xs font-semibold text-[#111]/70 pl-1">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="e.g., john@example.com"
+            value={formData.email}
+            onChange={handleChange}
+            className={inputClass}
+            required
+          />
+        </div>
       </div>
 
       <div className="grid sm:grid-cols-2 gap-4">
-        <input
-          type="text"
-          name="phone"
-          placeholder="Phone Number (optional)"
-          aria-label="Phone Number (optional)"
-          value={formData.phone}
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="phone" className="text-xs font-semibold text-[#111]/70 pl-1">Phone Number (optional)</label>
+          <input
+            id="phone"
+            type="text"
+            name="phone"
+            placeholder="e.g., (555) 123-4567"
+            value={formData.phone}
+            onChange={handleChange}
+            className={inputClass}
+          />
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="department" className="text-xs font-semibold text-[#111]/70 pl-1">Department</label>
+          <input
+            id="department"
+            type="text"
+            name="department"
+            placeholder="e.g., Construction"
+            value={formData.department}
+            onChange={handleChange}
+            className={inputClass}
+            required
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="message" className="text-xs font-semibold text-[#111]/70 pl-1">Tell us about yourself...</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Share your experience and why you want to join us"
+          value={formData.message}
           onChange={handleChange}
-          className={inputClass}
-        />
-        <input
-          type="text"
-          name="department"
-          placeholder="Department"
-          aria-label="Department"
-          value={formData.department}
-          onChange={handleChange}
-          className={inputClass}
+          className={`${inputClass} min-h-32 resize-none`}
           required
         />
       </div>
-
-      <textarea
-        name="message"
-        placeholder="Tell us about yourself..."
-        aria-label="Tell us about yourself..."
-        value={formData.message}
-        onChange={handleChange}
-        className={`${inputClass} min-h-32 resize-none`}
-        required
-      />
 
       {/* File upload */}
       <div className="flex items-center gap-3">
