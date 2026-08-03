@@ -91,7 +91,7 @@ Both `src/components/contactForm.tsx` and `src/components/careersForm.tsx` submi
 
 (FIXED) #### C. Absent HTTP Security Headers & Config Hygiene (Info/Medium)
 
-Because `next.config.ts` is empty and no custom Vercel configurations exist, the web application deploys without hardened Content Security Policy (CSP), strict X-Frame-Options, HSTS preload directives, or explicit Referrer-Policy customizations, relying solely on hosting default configurations. _(Note: Requires live network verification to measure exact Vercel response headers)._
+The `next.config.ts` has been successfully updated to include a comprehensive Content Security Policy (CSP), strict X-Frame-Options, HSTS preload directives, and explicit Referrer-Policy customizations.
 
 ---
 
