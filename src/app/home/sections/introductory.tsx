@@ -48,7 +48,6 @@ const Introductory: React.FC = () => (
         </div>
         <p
           className="text-3xl lg:text-4xl font-black text-[#111] leading-[1.2] tracking-tight mb-6"
-          style={{ fontFamily: "'Georgia', serif" }}
         >
           We don&apos;t just supply petroleum products —{" "}
           <span className="text-[#c62931]">
@@ -83,7 +82,6 @@ const Introductory: React.FC = () => (
           </div>
           <h2
             className="text-4xl lg:text-5xl font-black text-[#111] leading-[1.05] tracking-tight mb-8"
-            style={{ fontFamily: "'Georgia', serif" }}
           >
             Why Choose <span className="text-[#451b1d]">APEC?</span>
           </h2>
@@ -113,7 +111,6 @@ const Introductory: React.FC = () => (
           </div>
           <h2
             className="text-4xl lg:text-5xl font-black text-[#111] leading-[1.05] tracking-tight mb-8"
-            style={{ fontFamily: "'Georgia', serif" }}
           >
             Products &amp; <span className="text-[#c62931]">Services.</span>
           </h2>

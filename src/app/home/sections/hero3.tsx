@@ -66,7 +66,6 @@ const Hero3: React.FC = () => (
           <motion.h2
             {...fadeUp(0.15)}
             className="text-4xl lg:text-5xl xl:text-6xl font-black text-[#111] leading-[1.05] tracking-tight mb-6"
-            style={{ fontFamily: "'Georgia', serif" }}
           >
             Backed by <span className="text-[#c62931]">30+ Years</span> of
             Proven Excellence.
@@ -104,7 +103,6 @@ const Hero3: React.FC = () => (
                 <div className="flex flex-col items-center lg:items-start px-6 first:pl-0">
                   <span
                     className="text-3xl font-black text-[#111] tracking-tight"
-                    style={{ fontFamily: "'Georgia', serif" }}
                   >
                     {stat.value}
                   </span>

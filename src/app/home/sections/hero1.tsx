@@ -60,7 +60,6 @@ const Hero1: React.FC = () => (
           className="text-white font-black leading-[1.0] tracking-tight
             text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl
             max-w-xs md:max-w-md lg:max-w-xl xl:max-w-3xl 2xl:max-w-4xl mb-6"
-          style={{ fontFamily: "'Georgia', serif" }}
         >
           Your{" "}
           <span
@@ -122,7 +121,6 @@ const Hero1: React.FC = () => (
               <div className="flex flex-col px-6 first:pl-0">
                 <span
                   className="text-2xl font-black text-white tracking-tight"
-                  style={{ fontFamily: "'Georgia', serif" }}
                 >
                   {stat.value}
                 </span>
@@ -173,7 +171,6 @@ const Hero1: React.FC = () => (
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="text-white font-black leading-[1.05] tracking-tight text-4xl mb-5"
-          style={{ fontFamily: "'Georgia', serif" }}
         >
           Your <span className="text-[#c62931]">One-Stop Shop</span>
           <br />
@@ -232,7 +229,6 @@ const Hero1: React.FC = () => (
             >
               <span
                 className="text-2xl font-black text-white tracking-tight"
-                style={{ fontFamily: "'Georgia', serif" }}
               >
                 {stat.value}
               </span>

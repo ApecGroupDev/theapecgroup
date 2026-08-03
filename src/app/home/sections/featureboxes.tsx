@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { Users, CheckSquare, Medal, Handshake } from "lucide-react";
 
 const features = [
@@ -33,7 +32,8 @@ const features = [
 ];
 
 const FeatureBoxes: React.FC = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section
@@ -73,7 +73,6 @@ const FeatureBoxes: React.FC = () => {
             <h2
               id="features-heading"
               className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
-              style={{ fontFamily: "'Georgia', serif" }}
             >
               Why Choose <span className="text-[#c62931]">APEC?</span>
             </h2>
@@ -113,7 +112,6 @@ const FeatureBoxes: React.FC = () => {
               {/* Title */}
               <h3
                 className="text-xl font-black text-[#111] group-hover:text-[#c62931] mb-4 tracking-tight transition-colors duration-300"
-                style={{ fontFamily: "'Georgia', serif" }}
               >
                 {title}
               </h3>

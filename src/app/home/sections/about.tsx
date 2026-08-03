@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const About: React.FC = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.15 });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
     <section className="relative w-full overflow-hidden bg-[#f7f5f2] py-32">
@@ -47,7 +48,6 @@ const About: React.FC = () => {
             {/* Heading */}
             <h2
               className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight mb-4"
-              style={{ fontFamily: "'Georgia', serif" }}
             >
               Building Trust <br /> Since{" "}
               <span className="text-[#c62931]">1989.</span>

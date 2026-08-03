@@ -163,7 +163,7 @@ No route definitions (`src/app/page.tsx`, `src/app/about-us/page.tsx`, etc.) nor
 
 ---
 
-### 3.5 ACCESSIBILITY (WCAG 2.1 AA BASELINE)
+(FIXED) ### 3.5 ACCESSIBILITY (WCAG 2.1 AA BASELINE)
 
 #### A. Absent Programmatic Input Labels & Low-Contrast Placeholders (High Risk)
 
@@ -188,9 +188,9 @@ _Impact:_
 
 ### 3.6 CODE QUALITY & MAINTAINABILITY
 
-- **Redundant Intersection Observers:** Sections including `src/app/home/sections/membership.tsx` and `about.tsx` utilize `react-intersection-observer` imports while the remainder of the application consistently operates on Framer Motion's natively integrated viewport tracking methods (`whileInView` and `useInView`). Removing redundant third-party libraries simplifies bundle payloads.
-- **Inline Styling Inconsistencies:** Across prominent landing heroes (`hero1.tsx`, `hero2.tsx`, `hero3.tsx`), primary headings override defined global font architectures by applying inline DOM parameters: `style={{ fontFamily: "'Georgia', serif" }}`. Typography hierarchy should be standardized via consistent utility classes or configuration tokens.
-- **Non-Standard Robots Endpoint:** The site relies on a dedicated programmatic route (`src/app/robots.txt/route.ts`) generating raw textual responses containing legacy eCommerce prohibitions (`/cart`, `/checkout`) rather than utilizing Next.js App Router's typed `src/app/robots.ts` convention. Furthermore, incorporating `Disallow: /*?*` indiscriminately suppresses indexing across legitimate advertising attribution trails (such as marketing URLs bearing UTM parameters).
+(FIXED) - **Redundant Intersection Observers:** Sections including `src/app/home/sections/membership.tsx` and `about.tsx` utilize `react-intersection-observer` imports while the remainder of the application consistently operates on Framer Motion's natively integrated viewport tracking methods (`whileInView` and `useInView`). Removing redundant third-party libraries simplifies bundle payloads.
+(FIXED) - **Inline Styling Inconsistencies:** Across prominent landing heroes (`hero1.tsx`, `hero2.tsx`, `hero3.tsx`), primary headings override defined global font architectures by applying inline DOM parameters: `style={{ fontFamily: "'Georgia', serif" }}`. Typography hierarchy should be standardized via consistent utility classes or configuration tokens.
+(FIXED) - **Non-Standard Robots Endpoint:** The site relies on a dedicated programmatic route (`src/app/robots.txt/route.ts`) generating raw textual responses containing legacy eCommerce prohibitions (`/cart`, `/checkout`) rather than utilizing Next.js App Router's typed `src/app/robots.ts` convention. Furthermore, incorporating `Disallow: /*?*` indiscriminately suppresses indexing across legitimate advertising attribution trails (such as marketing URLs bearing UTM parameters).
 
 ---
 

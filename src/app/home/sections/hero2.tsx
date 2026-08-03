@@ -47,7 +47,6 @@ const Hero2: React.FC = () => (
         </div>
         <h2
           className="text-4xl lg:text-5xl font-black text-[#111] tracking-tight leading-[1.05]"
-          style={{ fontFamily: "'Georgia', serif" }}
         >
           Authorized Distributor <span className="text-[#c62931]">For:</span>
         </h2>

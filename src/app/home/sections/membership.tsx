@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { associations } from "../components/associations";
 
 const containerVariants = {
@@ -21,7 +21,8 @@ const itemVariants = {
 };
 
 const MembershipGrid = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section
@@ -57,7 +58,6 @@ const MembershipGrid = () => {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2
               className="text-5xl lg:text-6xl font-black text-[#111] leading-[1.0] tracking-tight"
-              style={{ fontFamily: "'Georgia', serif" }}
             >
               Proud <span className="text-[#c62931]">Member Of:</span>
             </h2>
