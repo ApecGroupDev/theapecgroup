@@ -17,7 +17,10 @@ export default function TermsOfService() {
         <h2 className="text-2xl font-bold mt-8 mb-4">4. Disclaimer</h2>
         <p className="mb-6 leading-relaxed text-gray-700">The site is provided on an as-is and as-available basis. You agree that your use of the site and our services will be at your sole risk.</p>
 
-        <h2 className="text-2xl font-bold mt-8 mb-4">5. Contact Information</h2>
+        <h2 className="text-2xl font-bold mt-8 mb-4">5. Website Accessibility</h2>
+        <p className="mb-6 leading-relaxed text-gray-700">We are committed to making our website accessible and usable for all people. While we strive to meet the Web Content Accessibility Guidelines (WCAG) 2.1 AA standards, this site is provided on an &quot;as-is&quot; basis. You agree that we are not liable for any temporary unavailability or accessibility issues that may arise, nor for any third-party content or integrations that fall outside our direct control.</p>
+
+        <h2 className="text-2xl font-bold mt-8 mb-4">6. Contact Information</h2>
         <p className="mb-6 leading-relaxed text-gray-700">In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at Sales@TheAPECgroup.com.</p>
       </div>
     </main>

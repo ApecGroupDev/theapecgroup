@@ -166,11 +166,14 @@ const Footer: React.FC = () => (
             <Link href="/privacy-policy" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
             <span className="opacity-30">|</span>
             <Link href="/terms-of-service" className="hover:text-white/60 transition-colors">Terms of Service</Link>
+            <span className="opacity-30">|</span>
+            <Link href="/accessibility" className="hover:text-white/60 transition-colors">Accessibility</Link>
           </div>
         </div>
         <p className="text-xs text-white/20 text-center lg:text-left">
           Atlanta Petroleum Equipment Company Inc.
         </p>
+        {/*
         <a
           href="https://northernware.ph"
           target="_blank"
@@ -178,7 +181,6 @@ const Footer: React.FC = () => (
           aria-label="Built by Northernware"
           className="group ft-mono relative inline-flex items-center gap-2.5"
         >
-          {/* Acid pulse dot */}
           <span aria-hidden className="relative flex h-2.5 w-2.5 flex-shrink-0">
             <span className="absolute inline-flex h-full w-full animate-ping bg-[#FF3800] opacity-40" />
             <span className="relative inline-flex h-2.5 w-2.5 bg-[#FF3800] transition-transform duration-300 group-hover:scale-125" />
@@ -199,6 +201,7 @@ const Footer: React.FC = () => (
             </span>
           </span>
         </a>
+        */}
       </div>
     </div>
   </footer>
