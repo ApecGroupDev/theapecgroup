@@ -1,11 +1,8 @@
 import Link from 'next/link';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
 
 export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen bg-[#0a0a0a]">
-      <Header />
       <main className="relative flex-grow flex flex-col items-center justify-center text-center px-4 pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
         {/* Ambient glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#c62931] opacity-[0.08] blur-[120px] pointer-events-none rounded-full" />
@@ -37,7 +34,6 @@ export default function NotFound() {
           </Link>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -1,8 +1,6 @@
-import Header from "@/components/header";
 import About from "./home/sections/about";
 import FeatureBoxes from "./home/sections/featureboxes";
 import type { Metadata } from "next";
-import Footer from "@/components/footer";
 import CTA from "@/components/cta";
 import Introductory from "./home/sections/introductory";
 import MembershipGrid from "./home/sections/membership";
@@ -35,7 +33,6 @@ export default function Page() {
     <>
       <HomeSchema />
       <main className="flex flex-col overflow-x-hidden">
-        <Header />
         <Hero1 />
         <Hero2 />
         <Hero3 />
@@ -45,7 +42,6 @@ export default function Page() {
         <FeatureBoxes />
         <CTA />
         <AccordionHome />
-        <Footer />
       </main>
     </>
   );

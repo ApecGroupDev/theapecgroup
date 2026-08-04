@@ -1,11 +1,9 @@
-import Footer from "@/components/footer";
 import MainElectrical from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import AccordionElectrical from "./sections/accordion";
 import CTA from "@/components/cta";
-import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Gas Station Electrical Contractors | APEC Electrical Services",
@@ -28,13 +26,11 @@ export const metadata: Metadata = {
 const ServicesElectrical: React.FC = () => {
   return (
     <div className="flex flex-col">
-      <Header />
       <Hero />
       <MainElectrical />
       <AccordionElectrical />
       <CTA />
       <ServicesBoxLinks />
-      <Footer />
     </div>
   );
 };

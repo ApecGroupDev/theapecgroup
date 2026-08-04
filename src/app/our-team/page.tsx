@@ -1,8 +1,6 @@
 import Hero from "./sections/hero";
 import TeamPage from "./sections/main";
 import { Metadata } from "next";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 import IntroTeam from "./sections/intro";
 
 export const metadata: Metadata = {
@@ -26,11 +24,9 @@ export const metadata: Metadata = {
 const About: React.FC = () => {
   return (
     <div className="flex flex-col">
-      <Header />
       <Hero />
       <IntroTeam />
       <TeamPage />
-      <Footer />
     </div>
   );
 };

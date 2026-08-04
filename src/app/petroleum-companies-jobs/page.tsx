@@ -1,10 +1,8 @@
 import React from "react";
 import Hero from "./sections/hero";
-import Footer from "@/components/footer";
 import { Metadata } from "next";
 import MainCareers from "./sections/main";
 import CareersSchema from "@/components/schema/CareersSchema";
-import Header from "@/components/header";
 import IntroCareers from "./sections/intro";
 import AccordionCareers from "./sections/accordion";
 
@@ -30,12 +28,10 @@ const CareersPage: React.FC = () => {
   return (
     <div className="flex flex-col">
       <CareersSchema />
-      <Header />
       <Hero />
       <IntroCareers />
       <MainCareers />
       <AccordionCareers />
-      <Footer />
     </div>
   );
 };

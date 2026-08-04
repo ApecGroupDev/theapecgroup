@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import MainCompliance from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
@@ -6,7 +5,6 @@ import AccordionCompliance from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
 import EnvironmentalComplianceSchema from "@/components/schema/EnvironmentalComplianceSchema";
-import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Environmental Compliance Solutions | APEC",
@@ -31,13 +29,11 @@ const ServicesCompliance: React.FC = () => {
   return (
     <div className="flex flex-col">
       <EnvironmentalComplianceSchema />
-      <Header />
       <Hero />
       <MainCompliance />
       <AccordionCompliance />
       <CTA />
       <ServicesBoxLinks />
-      <Footer />
     </div>
   );
 };

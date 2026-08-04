@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import CookieConsent from '@/components/cookieConsent';
 import ScrollToHash from '@/components/ScrollToHash';
 import localFont from 'next/font/local';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 const metropolis = localFont({
   src: [
@@ -68,9 +70,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="h5105p5iWJykIV1y3DbAOkWpFei5332BIw9M2XvO72s"
         />
       </head>
-      <body className="min-h-screen font-sans">
+      <body className="min-h-screen font-sans flex flex-col">
+        <Header />
         <ScrollToHash />
-        <div className="max-w-[2560px] mx-auto">{children}</div>
+        <div className="max-w-[2560px] mx-auto w-full flex-1">{children}</div>
+        <Footer />
         <ScrollToTopButton />
         <CookieConsent />
       </body>

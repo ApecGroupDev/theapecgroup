@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 import ChooseUs from "./sections/chooseus";
 import Hero from "./sections/hero";
-import Footer from "@/components/footer";
 import IntroAbout from "./sections/intro";
 import CTA from "@/components/cta";
 import OrganizationSchema from "@/components/schema/OrganizationSchema";
-import Header from "@/components/header";
 import MissionVisionValues from "./sections/main";
 
 export const metadata: Metadata = {
@@ -31,13 +29,11 @@ const About: React.FC = () => {
     <div className="flex flex-col">
       <OrganizationSchema />
       {/* Sections */}
-      <Header />
       <Hero />
       <IntroAbout />
       <MissionVisionValues />
       <ChooseUs />
       <CTA />
-      <Footer />
     </div>
   );
 };

@@ -1,11 +1,9 @@
-import Footer from "@/components/footer";
 import BlogMain from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
 import AccordionBlogs from "./sections/accordion";
 import CTA from "@/components/cta";
 import BlogSchema from "@/components/schema/BlogsSchema";
-import Header from "@/components/header";
 import IntroBlog from "./sections/intro";
 
 export const metadata: Metadata = {
@@ -30,13 +28,11 @@ const BlogsPage: React.FC = () => {
   return (
     <div className="flex flex-col">
       <BlogSchema />
-      <Header />
       <Hero />
       <IntroBlog />
       <BlogMain />
       <CTA />
       <AccordionBlogs />
-      <Footer />
     </div>
   );
 };

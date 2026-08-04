@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import MainImaging from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
@@ -6,7 +5,6 @@ import AccordionImaging from "./sections/accordion";
 import ServicesBoxLinks from "@/components/servicesLinks";
 import CTA from "@/components/cta";
 import CanopyImagingSchema from "@/components/schema/CanopyImagingSchema";
-import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Canopy Imaging Solutions | APEC",
@@ -30,13 +28,11 @@ const ServicesImaging: React.FC = () => {
   return (
     <div className="flex flex-col">
       <CanopyImagingSchema />
-      <Header />
       <Hero />
       <MainImaging />
       <AccordionImaging />
       <CTA />
       <ServicesBoxLinks />
-      <Footer />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import MainContact from "./sections/main";
 import Hero from "./sections/hero";
 import { Metadata } from "next";
@@ -8,7 +7,6 @@ import IntroContact from "./sections/intro";
 import HowWeWork from "./sections/howWeWork";
 import ContactCTA from "./sections/contactcta";
 import ContactPageSchema from "@/components/schema/ContactSchema";
-import Header from "@/components/header";
 
 export const metadata: Metadata = {
   title: "Contact The APEC Group | Petroleum Services",
@@ -32,7 +30,6 @@ const Contact: React.FC = () => {
   return (
     <div className="flex flex-col">
       <ContactPageSchema />
-      <Header />
       <Hero />
       <IntroContact />
       <OurOffices />
@@ -40,7 +37,6 @@ const Contact: React.FC = () => {
       <HowWeWork />
       <MainContact />
       <GoogleMaps />
-      <Footer />
     </div>
   );
 };
