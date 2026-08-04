@@ -34,7 +34,7 @@ export default function Page() {
   return (
     <>
       <HomeSchema />
-      <div className="flex flex-col overflow-x-hidden">
+      <main className="flex flex-col overflow-x-hidden">
         <Header />
         <Hero1 />
         <Hero2 />
@@ -46,7 +46,7 @@ export default function Page() {
         <CTA />
         <AccordionHome />
         <Footer />
-      </div>
+      </main>
     </>
   );
 }
