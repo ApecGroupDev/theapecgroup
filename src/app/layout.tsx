@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${metropolis.variable} text-gray-800`}>
+    <html lang="en" className={`${metropolis.variable} text-gray-800`} suppressHydrationWarning>
       <head>
         {/* Google Search Console */}
         <meta
@@ -70,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="h5105p5iWJykIV1y3DbAOkWpFei5332BIw9M2XvO72s"
         />
       </head>
-      <body className="min-h-screen font-sans flex flex-col">
+      <body className="min-h-screen font-sans flex flex-col" suppressHydrationWarning>
         <Header />
         <ScrollToHash />
         <div className="max-w-[2560px] mx-auto w-full flex-1">{children}</div>
